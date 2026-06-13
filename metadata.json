@@ -1,0 +1,6 @@
+{
+  "name": "Ogden 850",
+  "description": "An interactive Ogden 850 Basic English learning, testing, and AI-assisted tutoring application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
