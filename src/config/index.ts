@@ -6,9 +6,10 @@
 export const APP_CONFIG = {
   // TTS (Text-To-Speech) 发音配置
   TTS: {
-    // 默认使用 Youdao Neural TTS (国内访问稳定，发音纯正)
-    YOUDAO_BASE_URL: 'https://dict.youdao.com/dictvoice',
-    DEFAULT_TYPE: 2, // 2 for American English, 1 for British
+    // 切换到谷歌翻译原生纯正口音 AI (免费、免鉴权)
+    GOOGLE_TTS_BASE_URL: 'https://translate.google.com/translate_tts',
+    DEFAULT_LANG: 'en', // 'en' for English
+    CLIENT_TYPE: 'tw-ob', // Magic client type that allows direct access
   },
   
   // 本地存储键名
