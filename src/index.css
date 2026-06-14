@@ -7,3 +7,34 @@
   --color-primary-container: #ffeedb;
   --color-on-primary-container: #833113;
 }
+
+/* Base scaling to emulate Native App dense layout on mobile screens */
+html {
+  font-size: 14px; /* Dense mobile view */
+}
+
+@media (min-width: 640px) {
+  html {
+    font-size: 15px; /* Tablets */
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; /* Desktop */
+  }
+}
+
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  overflow: hidden; /* Prevent body scrolling entirely for app layout */
+}
+
+@utility pb-safe {
+  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+}
+
+@utility pt-safe {
+  padding-top: calc(0.5rem + env(safe-area-inset-top));
+}

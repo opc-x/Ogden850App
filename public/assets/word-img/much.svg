@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#faf8f4"/>
+  <!-- A lot of filled circles to show a large quantity -->
+  <circle cx="58" cy="54" r="9" fill="#b45309" />
+  <circle cx="86" cy="54" r="9" fill="#b45309" />
+  <circle cx="114" cy="54" r="9" fill="#b45309" />
+  <circle cx="142" cy="54" r="9" fill="#b45309" />
+  <circle cx="72" cy="78" r="9" fill="#b45309" />
+  <circle cx="100" cy="78" r="9" fill="#b45309" />
+  <circle cx="128" cy="78" r="9" fill="#b45309" />
+  <circle cx="58" cy="102" r="9" fill="#b45309" />
+  <circle cx="86" cy="102" r="9" fill="#b45309" />
+  <circle cx="114" cy="102" r="9" fill="#b45309" />
+  <circle cx="142" cy="102" r="9" fill="#b45309" />
+</svg>

@@ -1,0 +1,4268 @@
+{
+  "come": {
+    "ipa": "kʌm",
+    "cn": "来",
+    "img": "/assets/word-img/come.svg"
+  },
+  "get": {
+    "ipa": "ɡɛt",
+    "cn": "得到",
+    "img": "/assets/word-img/get.svg"
+  },
+  "give": {
+    "ipa": "ɡɪv",
+    "cn": "给予",
+    "img": "/assets/word-img/give.svg"
+  },
+  "go": {
+    "ipa": "ɡəʊ",
+    "cn": "去",
+    "img": "/assets/word-img/go.svg"
+  },
+  "keep": {
+    "ipa": "kiːp",
+    "cn": "保持",
+    "img": "/assets/word-img/keep.svg"
+  },
+  "let": {
+    "ipa": "lɛt",
+    "cn": "让",
+    "img": "/assets/word-img/let.svg"
+  },
+  "make": {
+    "ipa": "meɪk",
+    "cn": "制造",
+    "img": "/assets/word-img/make.svg"
+  },
+  "put": {
+    "ipa": "pʊt",
+    "cn": "放置",
+    "img": "/assets/word-img/put.svg"
+  },
+  "seem": {
+    "ipa": "siːm",
+    "cn": "似乎",
+    "img": "/assets/word-img/seem.svg"
+  },
+  "take": {
+    "ipa": "teɪk",
+    "cn": "拿",
+    "img": "/assets/word-img/take.svg"
+  },
+  "do": {
+    "ipa": "dʉː",
+    "cn": "做",
+    "img": "/assets/word-img/do.svg"
+  },
+  "say": {
+    "ipa": "seɪ",
+    "cn": "说",
+    "img": "/assets/word-img/say.svg"
+  },
+  "see": {
+    "ipa": "siː",
+    "cn": "看见",
+    "img": "/assets/word-img/see.svg"
+  },
+  "send": {
+    "ipa": "sɛnd",
+    "cn": "发送",
+    "img": "/assets/word-img/send.svg"
+  },
+  "may": {
+    "ipa": "meɪ",
+    "cn": "可以",
+    "img": "/assets/word-img/may.svg"
+  },
+  "will": {
+    "ipa": "wɪl",
+    "cn": "将会",
+    "img": "/assets/word-img/will.svg"
+  },
+  "about": {
+    "ipa": "əˈbɛʊt",
+    "cn": "围绕/在……周围/关于",
+    "img": "/assets/word-img/about.svg"
+  },
+  "across": {
+    "ipa": "əˈkɹɑs",
+    "cn": "横过",
+    "img": "/assets/word-img/across.svg"
+  },
+  "after": {
+    "ipa": "ˈæf.tə(ɹ)",
+    "cn": "之后",
+    "img": "/assets/word-img/after.svg"
+  },
+  "against": {
+    "ipa": "əˈɡeɪnst",
+    "cn": "靠着/逆着/顶着",
+    "img": "/assets/word-img/against.svg"
+  },
+  "among": {
+    "ipa": "əˈmɒŋ",
+    "cn": "在...中",
+    "img": "/assets/word-img/among.svg"
+  },
+  "before": {
+    "ipa": "bɪˈfɔː",
+    "cn": "之前",
+    "img": "/assets/word-img/before.svg"
+  },
+  "between": {
+    "ipa": "bɪˈtwiːn",
+    "cn": "在...之间",
+    "img": "/assets/word-img/between.svg"
+  },
+  "much": {
+    "ipa": "mʌt͡ʃ",
+    "cn": "很多",
+    "img": "/assets/word-img/much.svg"
+  },
+  "not": {
+    "ipa": "nɒt",
+    "cn": "不",
+    "img": "/assets/word-img/not.svg"
+  },
+  "only": {
+    "ipa": "ˈəʊn.li",
+    "cn": "只有",
+    "img": "/assets/word-img/only.svg"
+  },
+  "quite": {
+    "ipa": "kwaɪt",
+    "cn": "相当",
+    "img": "/assets/word-img/quite.svg"
+  },
+  "so": {
+    "ipa": "səʊ",
+    "cn": "如此",
+    "img": "/assets/word-img/so.svg"
+  },
+  "very": {
+    "ipa": "ˈvɛɹi",
+    "cn": "非常",
+    "img": "/assets/word-img/very.svg"
+  },
+  "tomorrow": {
+    "ipa": "təˈmɒɹəʊ",
+    "cn": "明天",
+    "img": "/assets/word-img/tomorrow.svg"
+  },
+  "yesterday": {
+    "ipa": "ˈjɛstədeɪ",
+    "cn": "昨天",
+    "img": "/assets/word-img/yesterday.svg"
+  },
+  "north": {
+    "ipa": "nɔːθ",
+    "cn": "北方",
+    "img": "/assets/word-img/north.svg"
+  },
+  "south": {
+    "ipa": "saʊθ",
+    "cn": "南方",
+    "img": "/assets/word-img/south.svg"
+  },
+  "east": {
+    "ipa": "iːst",
+    "cn": "东方",
+    "img": "/assets/word-img/east.svg"
+  },
+  "west": {
+    "ipa": "wɛst",
+    "cn": "西方",
+    "img": "/assets/word-img/west.svg"
+  },
+  "please": {
+    "ipa": "pliːz",
+    "cn": "请",
+    "img": "/assets/word-img/please.jpg"
+  },
+  "yes": {
+    "ipa": "jɛs",
+    "cn": "是",
+    "img": "/assets/word-img/yes.svg"
+  },
+  "account": {
+    "ipa": "ə.ˈkaʊnt",
+    "cn": "账户",
+    "img": "/assets/word-img/account.jpg"
+  },
+  "act": {
+    "ipa": "æk",
+    "cn": "行为",
+    "img": "/assets/word-img/act.svg"
+  },
+  "addition": {
+    "ipa": "æˈdɪʃən",
+    "cn": "增加",
+    "img": "/assets/word-img/addition.svg"
+  },
+  "adjustment": {
+    "ipa": "əˈdʒʌst.mənt",
+    "cn": "调整",
+    "img": "/assets/word-img/adjustment.svg"
+  },
+  "advertisement": {
+    "ipa": "ədˈvɜːtɪsmənt",
+    "cn": "广告",
+    "img": "/assets/word-img/advertisement.jpg"
+  },
+  "agreement": {
+    "ipa": "əˈɡɹiːmənt",
+    "cn": "协议",
+    "img": "/assets/word-img/agreement.jpg"
+  },
+  "air": {
+    "ipa": "ˈɛə",
+    "cn": "空气",
+    "img": "/assets/word-img/air.jpg"
+  },
+  "amount": {
+    "ipa": "əˈmaʊnt",
+    "cn": "数量",
+    "img": "/assets/word-img/amount.jpg"
+  },
+  "amusement": {
+    "ipa": "əˈmjuzmənt",
+    "cn": "娱乐",
+    "img": "/assets/word-img/amusement.jpg"
+  },
+  "animal": {
+    "ipa": "ˈænɪməl",
+    "cn": "动物",
+    "img": "/assets/word-img/animal.jpg"
+  },
+  "answer": {
+    "ipa": "ˈan.sə",
+    "cn": "回答",
+    "img": "/assets/word-img/answer.jpg"
+  },
+  "apparatus": {
+    "ipa": "æpəˈɹɑːtəs",
+    "cn": "设备",
+    "img": "/assets/word-img/apparatus.svg"
+  },
+  "approval": {
+    "ipa": "əˈpɹuːvəl",
+    "cn": "批准",
+    "img": "/assets/word-img/approval.svg"
+  },
+  "argument": {
+    "ipa": "ˈɑːɡjʊmənt",
+    "cn": "争论",
+    "img": "/assets/word-img/argument.svg"
+  },
+  "art": {
+    "ipa": "ɑːt",
+    "cn": "艺术",
+    "img": "/assets/word-img/art.jpg"
+  },
+  "attack": {
+    "ipa": "əˈtæk",
+    "cn": "攻击",
+    "img": "/assets/word-img/attack.svg"
+  },
+  "day": {
+    "ipa": "deɪ",
+    "cn": "白天",
+    "img": "/assets/word-img/day.svg"
+  },
+  "death": {
+    "ipa": "diːθ",
+    "cn": "死亡",
+    "img": "/assets/word-img/death.svg"
+  },
+  "debt": {
+    "ipa": "dɛt",
+    "cn": "债务",
+    "img": "/assets/word-img/debt.jpg"
+  },
+  "decision": {
+    "ipa": "dɪˈsɪʒən",
+    "cn": "决定",
+    "img": "/assets/word-img/decision.svg"
+  },
+  "degree": {
+    "ipa": "dɪˈɡɹiː",
+    "cn": "程度",
+    "img": "/assets/word-img/degree.svg"
+  },
+  "design": {
+    "ipa": "dɪˈzaɪn",
+    "cn": "设计",
+    "img": "/assets/word-img/design.jpg"
+  },
+  "desire": {
+    "ipa": "dɪˈzaɪə",
+    "cn": "欲望",
+    "img": "/assets/word-img/desire.svg"
+  },
+  "destruction": {
+    "ipa": "ˌdɪsˈtɹʌkʃən",
+    "cn": "破坏",
+    "img": "/assets/word-img/destruction.svg"
+  },
+  "detail": {
+    "ipa": "ˈdiːteɪl",
+    "cn": "细节",
+    "img": "/assets/word-img/detail.svg"
+  },
+  "development": {
+    "ipa": "dɪˈvɛləpmənt",
+    "cn": "发展",
+    "img": "/assets/word-img/development.svg"
+  },
+  "digestion": {
+    "ipa": "daɪˈdʒɛstʃən",
+    "cn": "消化",
+    "img": "/assets/word-img/digestion.svg"
+  },
+  "direction": {
+    "ipa": "d(a)ɪˈɹɛk.ʃən",
+    "cn": "方向",
+    "img": "/assets/word-img/direction.svg"
+  },
+  "discovery": {
+    "ipa": "dɪsˈkʌvəɹi",
+    "cn": "发现",
+    "img": "/assets/word-img/discovery.svg"
+  },
+  "discussion": {
+    "ipa": "dɪsˈkʊʃən",
+    "cn": "讨论",
+    "img": "/assets/word-img/discussion.svg"
+  },
+  "disease": {
+    "ipa": "dɪˈziːz",
+    "cn": "疾病",
+    "img": "/assets/word-img/disease.svg"
+  },
+  "disgust": {
+    "ipa": "dɪsˈɡʌst",
+    "cn": "厌恶",
+    "img": "/assets/word-img/disgust.svg"
+  },
+  "distance": {
+    "ipa": "ˈdɪs.təns",
+    "cn": "距离",
+    "img": "/assets/word-img/distance.svg"
+  },
+  "distribution": {
+    "ipa": "ˌdɪstɹəˈbjuːʃən",
+    "cn": "分配",
+    "img": "/assets/word-img/distribution.svg"
+  },
+  "division": {
+    "ipa": "dɪˈvɪʒən",
+    "cn": "分配",
+    "img": "/assets/word-img/division.svg"
+  },
+  "doubt": {
+    "ipa": "dʌʊt",
+    "cn": "怀疑",
+    "img": "/assets/word-img/doubt.svg"
+  },
+  "drink": {
+    "ipa": "dɹɪŋk",
+    "cn": "饮料/饮品",
+    "img": "/assets/word-img/drink.jpg"
+  },
+  "driving": {
+    "ipa": "ˈdɹaɪvɪŋ",
+    "cn": "驾驶",
+    "img": "/assets/word-img/driving.svg"
+  },
+  "dust": {
+    "ipa": "dʌst",
+    "cn": "灰尘",
+    "img": "/assets/word-img/dust.jpg"
+  },
+  "earth": {
+    "ipa": "ɜːθ",
+    "cn": "地球",
+    "img": "/assets/word-img/earth.svg"
+  },
+  "edge": {
+    "ipa": "ɛdʒ",
+    "cn": "边缘",
+    "img": "/assets/word-img/edge.svg"
+  },
+  "education": {
+    "ipa": "ˌɛdjʊˈkeɪʃn̩",
+    "cn": "教育",
+    "img": "/assets/word-img/education.svg"
+  },
+  "effect": {
+    "ipa": "ɪˈfɛkt",
+    "cn": "影响",
+    "img": "/assets/word-img/effect.svg"
+  },
+  "end": {
+    "ipa": "ɛnd",
+    "cn": "结尾",
+    "img": "/assets/word-img/end.svg"
+  },
+  "interest": {
+    "ipa": "ˈɪntəɹɪst",
+    "cn": "兴趣",
+    "img": "/assets/word-img/interest.svg"
+  },
+  "invention": {
+    "ipa": "ɪnˈvɛnʃən",
+    "cn": "发明",
+    "img": "/assets/word-img/invention.svg"
+  },
+  "iron": {
+    "ipa": "ˈaɪən",
+    "cn": "铁",
+    "img": "/assets/word-img/iron.jpg"
+  },
+  "jelly": {
+    "ipa": "ˈd͡ʒɛl.i",
+    "cn": "果冻",
+    "img": "/assets/word-img/jelly.svg"
+  },
+  "join": {
+    "ipa": "ˈdʒɔɪn",
+    "cn": "接合处/联结处",
+    "img": "/assets/word-img/join.svg"
+  },
+  "journey": {
+    "ipa": "ˈd͡ʒɜːni",
+    "cn": "旅行",
+    "img": "/assets/word-img/journey.svg"
+  },
+  "judge": {
+    "ipa": "d͡ʒʌd͡ʒ",
+    "cn": "法官",
+    "img": "/assets/word-img/judge.jpg"
+  },
+  "jump": {
+    "ipa": "dʒʌmp",
+    "cn": "跳跃",
+    "img": "/assets/word-img/jump.svg"
+  },
+  "kick": {
+    "ipa": "kɪk",
+    "cn": "一脚/踢的动作",
+    "img": "/assets/word-img/kick.jpg"
+  },
+  "kiss": {
+    "ipa": "kɪs",
+    "cn": "吻",
+    "img": "/assets/word-img/kiss.svg"
+  },
+  "knowledge": {
+    "ipa": "ˈnɒlɪdʒ",
+    "cn": "知识",
+    "img": "/assets/word-img/knowledge.jpg"
+  },
+  "land": {
+    "ipa": "lænd",
+    "cn": "土地",
+    "img": "/assets/word-img/land.jpg"
+  },
+  "language": {
+    "ipa": "ˈleɪŋɡwɪd͡ʒ",
+    "cn": "语言",
+    "img": "/assets/word-img/language.jpg"
+  },
+  "laugh": {
+    "ipa": "lɑːf",
+    "cn": "笑",
+    "img": "/assets/word-img/laugh.svg"
+  },
+  "law": {
+    "ipa": "lɔː",
+    "cn": "法律",
+    "img": "/assets/word-img/law.svg"
+  },
+  "lead": {
+    "ipa": "lɛd",
+    "cn": "铅",
+    "img": "/assets/word-img/lead.jpg"
+  },
+  "learning": {
+    "ipa": "ˈlɜːnɪŋ",
+    "cn": "学习",
+    "img": "/assets/word-img/learning.svg"
+  },
+  "leather": {
+    "ipa": "ˈlɛðə",
+    "cn": "皮革",
+    "img": "/assets/word-img/leather.svg"
+  },
+  "letter": {
+    "ipa": "ˈlɛtə(ɹ)",
+    "cn": "信",
+    "img": "/assets/word-img/letter.svg"
+  },
+  "level": {
+    "ipa": "ˈlɛv.əl",
+    "cn": "等级",
+    "img": "/assets/word-img/level.svg"
+  },
+  "lift": {
+    "ipa": "lɪft",
+    "cn": "电梯/举起",
+    "img": "/assets/word-img/lift.svg"
+  },
+  "light": {
+    "ipa": "laɪt",
+    "cn": "光",
+    "img": "/assets/word-img/light.jpg"
+  },
+  "limit": {
+    "ipa": "ˈlɪmt",
+    "cn": "限制",
+    "img": "/assets/word-img/limit.svg"
+  },
+  "linen": {
+    "ipa": "ˈlɪnɪn",
+    "cn": "亚麻布",
+    "img": "/assets/word-img/linen.svg"
+  },
+  "play": {
+    "ipa": "pleɪ",
+    "cn": "游戏/戏剧/娱乐",
+    "img": "/assets/word-img/play.svg"
+  },
+  "pleasure": {
+    "ipa": "ˈplɛʒə",
+    "cn": "乐趣",
+    "img": "/assets/word-img/pleasure.svg"
+  },
+  "point": {
+    "ipa": "pɔɪnt",
+    "cn": "观点",
+    "img": "/assets/word-img/point.svg"
+  },
+  "poison": {
+    "ipa": "ˈpɔɪz(ə)n",
+    "cn": "毒",
+    "img": "/assets/word-img/poison.jpg"
+  },
+  "polish": {
+    "ipa": "ˈpɒlɪʃ",
+    "cn": "上光剂/鞋油",
+    "img": "/assets/word-img/polish.svg"
+  },
+  "porter": {
+    "ipa": "ˈpɔːtə",
+    "cn": "搬运工",
+    "img": "/assets/word-img/porter.svg"
+  },
+  "position": {
+    "ipa": "pəˈzɪʃ(ə)n",
+    "cn": "位置",
+    "img": "/assets/word-img/position.svg"
+  },
+  "powder": {
+    "ipa": "ˈpaʊ.də(ɹ)",
+    "cn": "粉末",
+    "img": "/assets/word-img/powder.jpg"
+  },
+  "power": {
+    "ipa": "ˈpaʊ.ə(ɹ)",
+    "cn": "力量",
+    "img": "/assets/word-img/power.svg"
+  },
+  "price": {
+    "ipa": "pɹaɪs",
+    "cn": "价格",
+    "img": "/assets/word-img/price.svg"
+  },
+  "print": {
+    "ipa": "pɹɪnt",
+    "cn": "印刷品/印记",
+    "img": "/assets/word-img/print.svg"
+  },
+  "process": {
+    "ipa": "ˈpɹəʊsɛs",
+    "cn": "过程",
+    "img": "/assets/word-img/process.svg"
+  },
+  "produce": {
+    "ipa": "pɹəˈdjuːs",
+    "cn": "生产",
+    "img": "/assets/word-img/produce.svg"
+  },
+  "profit": {
+    "ipa": "ˈpɹɒfɪt",
+    "cn": "利润",
+    "img": "/assets/word-img/profit.svg"
+  },
+  "property": {
+    "ipa": "ˈpɹɒp.ət.i",
+    "cn": "财产",
+    "img": "/assets/word-img/property.svg"
+  },
+  "prose": {
+    "ipa": "ˈpɹəʊz",
+    "cn": "散文",
+    "img": "/assets/word-img/prose.svg"
+  },
+  "protest": {
+    "ipa": "ˈpɹəʊ.tɛst",
+    "cn": "反对",
+    "img": "/assets/word-img/protest.svg"
+  },
+  "pull": {
+    "ipa": "pʊl",
+    "cn": "拉/拉力",
+    "img": "/assets/word-img/pull.svg"
+  },
+  "punishment": {
+    "ipa": "ˈpʌnɪʃmənt",
+    "cn": "惩罚",
+    "img": "/assets/word-img/punishment.svg"
+  },
+  "purpose": {
+    "ipa": "ˈpɜːpəs",
+    "cn": "目的",
+    "img": "/assets/word-img/purpose.svg"
+  },
+  "push": {
+    "ipa": "pʷʊʃ",
+    "cn": "推/推力",
+    "img": "/assets/word-img/push.svg"
+  },
+  "quality": {
+    "ipa": "ˈkwɒlɪti",
+    "cn": "质量",
+    "img": "/assets/word-img/quality.svg"
+  },
+  "question": {
+    "ipa": "ˈkwɛstjən",
+    "cn": "问题",
+    "img": "/assets/word-img/question.svg"
+  },
+  "rain": {
+    "ipa": "ɹeɪn",
+    "cn": "雨",
+    "img": "/assets/word-img/rain.jpg"
+  },
+  "range": {
+    "ipa": "ɹeɪndʒ",
+    "cn": "范围",
+    "img": "/assets/word-img/range.svg"
+  },
+  "rate": {
+    "ipa": "ɹeɪt",
+    "cn": "速度",
+    "img": "/assets/word-img/rate.svg"
+  },
+  "ray": {
+    "ipa": "ɹeɪ",
+    "cn": "射线",
+    "img": "/assets/word-img/ray.svg"
+  },
+  "reaction": {
+    "ipa": "ɹiˈækʃən",
+    "cn": "反应",
+    "img": "/assets/word-img/reaction.svg"
+  },
+  "reading": {
+    "ipa": "ˈɹidiŋ",
+    "cn": "阅读",
+    "img": "/assets/word-img/reading.svg"
+  },
+  "reason": {
+    "ipa": "ˈɹiːzən",
+    "cn": "原因",
+    "img": "/assets/word-img/reason.svg"
+  },
+  "record": {
+    "ipa": "ˈɹɛkɔːd",
+    "cn": "记录",
+    "img": "/assets/word-img/record.svg"
+  },
+  "steel": {
+    "ipa": "stiːl",
+    "cn": "钢",
+    "img": "/assets/word-img/steel.jpg"
+  },
+  "step": {
+    "ipa": "stɛp",
+    "cn": "步",
+    "img": "/assets/word-img/step.svg"
+  },
+  "stitch": {
+    "ipa": "stɪt͡ʃ",
+    "cn": "缝",
+    "img": "/assets/word-img/stitch.svg"
+  },
+  "stone": {
+    "ipa": "stəʊn",
+    "cn": "石头",
+    "img": "/assets/word-img/stone.jpg"
+  },
+  "stop": {
+    "ipa": "stɒp",
+    "cn": "停止/车站/终止",
+    "img": "/assets/word-img/stop.svg"
+  },
+  "story": {
+    "ipa": "ˈstɔː.ɹi",
+    "cn": "故事",
+    "img": "/assets/word-img/story.svg"
+  },
+  "stretch": {
+    "ipa": "stɹɛtʃ",
+    "cn": "伸展/延伸",
+    "img": "/assets/word-img/stretch.svg"
+  },
+  "structure": {
+    "ipa": "ˈstɹʌktʃə(ɹ)",
+    "cn": "结构",
+    "img": "/assets/word-img/structure.jpg"
+  },
+  "substance": {
+    "ipa": "ˈsʌbstəns",
+    "cn": "物质",
+    "img": "/assets/word-img/substance.svg"
+  },
+  "sugar": {
+    "ipa": "ˈʃʊɡə(ɹ)",
+    "cn": "糖",
+    "img": "/assets/word-img/sugar.jpg"
+  },
+  "suggestion": {
+    "ipa": "səˈd͡ʒɛstjən",
+    "cn": "建议",
+    "img": "/assets/word-img/suggestion.svg"
+  },
+  "summer": {
+    "ipa": "ˈsʌmə(ɹ)",
+    "cn": "夏天",
+    "img": "/assets/word-img/summer.jpg"
+  },
+  "support": {
+    "ipa": "səˈpɔːt",
+    "cn": "支持",
+    "img": "/assets/word-img/support.jpg"
+  },
+  "surprise": {
+    "ipa": "səˈpɹaɪz",
+    "cn": "惊喜",
+    "img": "/assets/word-img/surprise.svg"
+  },
+  "swim": {
+    "ipa": "swɪm",
+    "cn": "游泳",
+    "img": "/assets/word-img/swim.svg"
+  },
+  "system": {
+    "ipa": "ˈsɪstəm",
+    "cn": "系统",
+    "img": "/assets/word-img/system.svg"
+  },
+  "talk": {
+    "ipa": "toːk",
+    "cn": "讲话",
+    "img": "/assets/word-img/talk.svg"
+  },
+  "taste": {
+    "ipa": "teɪst",
+    "cn": "味道/滋味/味觉",
+    "img": "/assets/word-img/taste.svg"
+  },
+  "tax": {
+    "ipa": "tæks",
+    "cn": "税",
+    "img": "/assets/word-img/tax.svg"
+  },
+  "teaching": {
+    "ipa": "ˈtiːtʃɪŋ",
+    "cn": "教学",
+    "img": "/assets/word-img/teaching.svg"
+  },
+  "tendency": {
+    "ipa": "ˈtɛndənsi",
+    "cn": "趋势",
+    "img": "/assets/word-img/tendency.svg"
+  },
+  "test": {
+    "ipa": "test",
+    "cn": "测试",
+    "img": "/assets/word-img/test.svg"
+  },
+  "theory": {
+    "ipa": "ˈθiːəɹi",
+    "cn": "理论",
+    "img": "/assets/word-img/theory.svg"
+  },
+  "thing": {
+    "ipa": "θɪŋ",
+    "cn": "事物",
+    "img": "/assets/word-img/thing.svg"
+  },
+  "thought": {
+    "ipa": "θɔːt",
+    "cn": "想法",
+    "img": "/assets/word-img/thought.svg"
+  },
+  "thunder": {
+    "ipa": "ˈθʌndə",
+    "cn": "雷",
+    "img": "/assets/word-img/thunder.svg"
+  },
+  "time": {
+    "ipa": "tɑem",
+    "cn": "时间",
+    "img": "/assets/word-img/time.jpg"
+  },
+  "tin": {
+    "ipa": "tɪn",
+    "cn": "锡",
+    "img": "/assets/word-img/tin.svg"
+  },
+  "top": {
+    "ipa": "tɒp",
+    "cn": "顶部",
+    "img": "/assets/word-img/top.svg"
+  },
+  "trade": {
+    "ipa": "tɹeɪd",
+    "cn": "贸易",
+    "img": "/assets/word-img/trade.jpg"
+  },
+  "boot": {
+    "ipa": "buːt",
+    "cn": "靴子",
+    "img": "/assets/word-img/boot.jpg"
+  },
+  "bottle": {
+    "ipa": "ˈbɒ.təl",
+    "cn": "瓶子",
+    "img": "/assets/word-img/bottle.jpg"
+  },
+  "box": {
+    "ipa": "bɒks",
+    "cn": "盒子",
+    "img": "/assets/word-img/box.jpg"
+  },
+  "boy": {
+    "ipa": "bɔːə",
+    "cn": "男孩",
+    "img": "/assets/word-img/boy.jpg"
+  },
+  "brain": {
+    "ipa": "bɹeɪn",
+    "cn": "脑",
+    "img": "/assets/word-img/brain.jpg"
+  },
+  "brake": {
+    "ipa": "bɹeɪk",
+    "cn": "制动",
+    "img": "/assets/word-img/brake.png"
+  },
+  "branch": {
+    "ipa": "bɹɑːntʃ",
+    "cn": "树枝",
+    "img": "/assets/word-img/branch.jpg"
+  },
+  "brick": {
+    "ipa": "bɹɪk",
+    "cn": "砖",
+    "img": "/assets/word-img/brick.jpg"
+  },
+  "bridge": {
+    "ipa": "bɹɪd͡ʒ",
+    "cn": "桥",
+    "img": "/assets/word-img/bridge.jpg"
+  },
+  "brush": {
+    "ipa": "bɹʌʃ",
+    "cn": "刷子",
+    "img": "/assets/word-img/brush.jpg"
+  },
+  "bucket": {
+    "ipa": "ˈbʌkɪt",
+    "cn": "桶",
+    "img": "/assets/word-img/bucket.jpg"
+  },
+  "bulb": {
+    "ipa": "bʌlb",
+    "cn": "电灯泡",
+    "img": "/assets/word-img/bulb.jpg"
+  },
+  "button": {
+    "ipa": "ˈbʌtn̩",
+    "cn": "纽扣",
+    "img": "/assets/word-img/button.jpg"
+  },
+  "cake": {
+    "ipa": "keɪk",
+    "cn": "蛋糕",
+    "img": "/assets/word-img/cake.jpg"
+  },
+  "camera": {
+    "ipa": "ˈkæməɹə",
+    "cn": "相机",
+    "img": "/assets/word-img/camera.jpg"
+  },
+  "card": {
+    "ipa": "kɑːd",
+    "cn": "卡片",
+    "img": "/assets/word-img/card.jpg"
+  },
+  "cart": {
+    "ipa": "kɑːt",
+    "cn": "大车",
+    "img": "/assets/word-img/cart.jpg"
+  },
+  "carriage": {
+    "ipa": "ˈkæɹɪdʒ",
+    "cn": "马车",
+    "img": "/assets/word-img/carriage.jpg"
+  },
+  "cat": {
+    "ipa": "kat",
+    "cn": "猫",
+    "img": "/assets/word-img/cat.jpg"
+  },
+  "chain": {
+    "ipa": "ˈt͡ʃeɪn",
+    "cn": "链条/铁链",
+    "img": "/assets/word-img/chain.jpg"
+  },
+  "cheese": {
+    "ipa": "t͡ʃiz",
+    "cn": "奶酪",
+    "img": "/assets/word-img/cheese.jpg"
+  },
+  "chest": {
+    "ipa": "t͡ʃɛst",
+    "cn": "箱子/大木箱",
+    "img": "/assets/word-img/chest.jpg"
+  },
+  "chin": {
+    "ipa": "tʃɪn",
+    "cn": "下巴",
+    "img": "/assets/word-img/chin.jpg"
+  },
+  "church": {
+    "ipa": "t͡ʃɜːt͡ʃ",
+    "cn": "教堂",
+    "img": "/assets/word-img/church.jpg"
+  },
+  "circle": {
+    "ipa": "ˈsɜɹkəl",
+    "cn": "圆圈",
+    "img": "/assets/word-img/circle.jpg"
+  },
+  "clock": {
+    "ipa": "klɒk",
+    "cn": "时钟",
+    "img": "/assets/word-img/clock.jpg"
+  },
+  "cloud": {
+    "ipa": "klaʊd",
+    "cn": "云",
+    "img": "/assets/word-img/cloud.jpg"
+  },
+  "coat": {
+    "ipa": "kəʊt",
+    "cn": "外套",
+    "img": "/assets/word-img/coat.jpg"
+  },
+  "collar": {
+    "ipa": "ˈkɒl.ə",
+    "cn": "衣领",
+    "img": "/assets/word-img/collar.jpg"
+  },
+  "comb": {
+    "ipa": "kəʊm",
+    "cn": "梳子",
+    "img": "/assets/word-img/comb.jpg"
+  },
+  "cord": {
+    "ipa": "kɔːd",
+    "cn": "细绳/绳索",
+    "img": "/assets/word-img/cord.jpg"
+  },
+  "cow": {
+    "ipa": "kaʊ",
+    "cn": "母牛",
+    "img": "/assets/word-img/cow.jpg"
+  },
+  "cup": {
+    "ipa": "kʌp",
+    "cn": "杯子",
+    "img": "/assets/word-img/cup.jpg"
+  },
+  "curtain": {
+    "ipa": "ˈkɜːtn̩",
+    "cn": "窗帘",
+    "img": "/assets/word-img/curtain.jpg"
+  },
+  "needle": {
+    "ipa": "ˈniː.dl",
+    "cn": "缝衣针/针",
+    "img": "/assets/word-img/needle.jpg"
+  },
+  "nerve": {
+    "ipa": "nɛɾv",
+    "cn": "神经",
+    "img": "/assets/word-img/nerve.jpg"
+  },
+  "nose": {
+    "ipa": "nəʊz",
+    "cn": "鼻子",
+    "img": "/assets/word-img/nose.jpg"
+  },
+  "nut": {
+    "ipa": "nɐt",
+    "cn": "坚果/螺母",
+    "img": "/assets/word-img/nut.jpg"
+  },
+  "office": {
+    "ipa": "ˈɑfɪs",
+    "cn": "办公室",
+    "img": "/assets/word-img/office.jpg"
+  },
+  "orange": {
+    "ipa": "ˈɔɹɪ̈nd͡ʒ",
+    "cn": "橙子",
+    "img": "/assets/word-img/orange.jpg"
+  },
+  "oven": {
+    "ipa": "ˈʌ.vn̩",
+    "cn": "炉灶/烤箱",
+    "img": "/assets/word-img/oven.jpg"
+  },
+  "parcel": {
+    "ipa": "ˈpʰaː.səɫ",
+    "cn": "包裹",
+    "img": "/assets/word-img/parcel.jpg"
+  },
+  "pen": {
+    "ipa": "pɛn",
+    "cn": "笔",
+    "img": "/assets/word-img/pen.jpg"
+  },
+  "pencil": {
+    "ipa": "ˈpɛnsɪl",
+    "cn": "铅笔",
+    "img": "/assets/word-img/pencil.jpg"
+  },
+  "picture": {
+    "ipa": "ˈpɪktʃə",
+    "cn": "图片",
+    "img": "/assets/word-img/picture.jpg"
+  },
+  "pig": {
+    "ipa": "ˈpɪɡ",
+    "cn": "猪",
+    "img": "/assets/word-img/pig.jpg"
+  },
+  "pin": {
+    "ipa": "pɪn",
+    "cn": "别针",
+    "img": "/assets/word-img/pin.jpg"
+  },
+  "pipe": {
+    "ipa": "paɪp",
+    "cn": "烟斗/管道",
+    "img": "/assets/word-img/pipe.jpg"
+  },
+  "plane": {
+    "ipa": "pleɪn",
+    "cn": "刨子/平面/飞机",
+    "img": "/assets/word-img/plane.jpg"
+  },
+  "plate": {
+    "ipa": "pleɪt",
+    "cn": "盘子",
+    "img": "/assets/word-img/plate.jpg"
+  },
+  "plough": {
+    "ipa": "plaʊ",
+    "cn": "犁",
+    "img": "/assets/word-img/plough.jpg"
+  },
+  "pocket": {
+    "ipa": "ˈpɒkɪt",
+    "cn": "口袋",
+    "img": "/assets/word-img/pocket.jpg"
+  },
+  "pot": {
+    "ipa": "pɒt",
+    "cn": "罐/锅/壶",
+    "img": "/assets/word-img/pot.jpg"
+  },
+  "potato": {
+    "ipa": "pəˈteɪ.təʊ",
+    "cn": "土豆",
+    "img": "/assets/word-img/potato.jpg"
+  },
+  "prison": {
+    "ipa": "ˈpɹɪzən",
+    "cn": "监狱",
+    "img": "/assets/word-img/prison.jpg"
+  },
+  "pump": {
+    "ipa": "pʌmp",
+    "cn": "泵",
+    "img": "/assets/word-img/pump.jpg"
+  },
+  "rail": {
+    "ipa": "ɹeɪl",
+    "cn": "栏杆/扶手/铁轨",
+    "img": "/assets/word-img/rail.jpg"
+  },
+  "rat": {
+    "ipa": "ɹæt",
+    "cn": "鼠",
+    "img": "/assets/word-img/rat.jpg"
+  },
+  "receipt": {
+    "ipa": "ɹɪˈsiːt",
+    "cn": "收据",
+    "img": "/assets/word-img/receipt.jpg"
+  },
+  "ring": {
+    "ipa": "ɹɪŋ",
+    "cn": "戒指",
+    "img": "/assets/word-img/ring.jpg"
+  },
+  "rod": {
+    "ipa": "ɹɒd",
+    "cn": "杆",
+    "img": "/assets/word-img/rod.jpg"
+  },
+  "roof": {
+    "ipa": "ɹuːf",
+    "cn": "屋顶",
+    "img": "/assets/word-img/roof.jpg"
+  },
+  "root": {
+    "ipa": "ɹuːt",
+    "cn": "根",
+    "img": "/assets/word-img/root.jpg"
+  },
+  "sail": {
+    "ipa": "seɪl",
+    "cn": "帆",
+    "img": "/assets/word-img/sail.jpg"
+  },
+  "school": {
+    "ipa": "skuːl",
+    "cn": "学校",
+    "img": "/assets/word-img/school.jpg"
+  },
+  "scissors": {
+    "ipa": "ˈsɪzəz",
+    "cn": "剪刀",
+    "img": "/assets/word-img/scissors.jpg"
+  },
+  "screw": {
+    "ipa": "skɹuː",
+    "cn": "螺丝钉",
+    "img": "/assets/word-img/screw.jpg"
+  },
+  "seed": {
+    "ipa": "siːd",
+    "cn": "种子",
+    "img": "/assets/word-img/seed.jpg"
+  },
+  "sheep": {
+    "ipa": "ʃiːp",
+    "cn": "绵羊",
+    "img": "/assets/word-img/sheep.jpg"
+  },
+  "shelf": {
+    "ipa": "ʃɛlf",
+    "cn": "架子",
+    "img": "/assets/word-img/shelf.jpg"
+  },
+  "ship": {
+    "ipa": "ʃɪp",
+    "cn": "轮船/大船",
+    "img": "/assets/word-img/ship.jpg"
+  },
+  "shirt": {
+    "ipa": "ʃɜːt",
+    "cn": "衬衫",
+    "img": "/assets/word-img/shirt.jpg"
+  },
+  "shoe": {
+    "ipa": "ʃuː",
+    "cn": "鞋",
+    "img": "/assets/word-img/shoe.jpg"
+  },
+  "skin": {
+    "ipa": "skɪn",
+    "cn": "皮肤",
+    "img": "/assets/word-img/skin.jpg"
+  },
+  "skirt": {
+    "ipa": "skɜːt",
+    "cn": "半身裙/裙子",
+    "img": "/assets/word-img/skirt.jpg"
+  },
+  "snake": {
+    "ipa": "ˈsneɪk",
+    "cn": "蛇",
+    "img": "/assets/word-img/snake.jpg"
+  },
+  "elastic": {
+    "ipa": "iˈlæstɪk",
+    "cn": "有弹性的",
+    "img": "/assets/word-img/elastic.svg"
+  },
+  "electric": {
+    "ipa": "əˈlɛktɹɪk",
+    "cn": "电的",
+    "img": "/assets/word-img/electric.svg"
+  },
+  "equal": {
+    "ipa": "ˈiːkwəl",
+    "cn": "相等的",
+    "img": "/assets/word-img/equal.svg"
+  },
+  "fat": {
+    "ipa": "fæt",
+    "cn": "肥胖的",
+    "img": "/assets/word-img/fat.svg"
+  },
+  "fertile": {
+    "ipa": "ˈfɝːtaɪl",
+    "cn": "肥沃的",
+    "img": "/assets/word-img/fertile.svg"
+  },
+  "first": {
+    "ipa": "fɪrst",
+    "cn": "第一的",
+    "img": "/assets/word-img/first.svg"
+  },
+  "fixed": {
+    "ipa": "fɪkst",
+    "cn": "固定的",
+    "img": "/assets/word-img/fixed.svg"
+  },
+  "flat": {
+    "ipa": "flæt",
+    "cn": "平的",
+    "img": "/assets/word-img/flat.svg"
+  },
+  "free": {
+    "ipa": "fɹiː",
+    "cn": "自由的",
+    "img": "/assets/word-img/free.svg"
+  },
+  "frequent": {
+    "ipa": "ˈfɹiː.kwənt",
+    "cn": "频繁的",
+    "img": "/assets/word-img/frequent.svg"
+  },
+  "full": {
+    "ipa": "fʊl",
+    "cn": "满的",
+    "img": "/assets/word-img/full.svg"
+  },
+  "general": {
+    "ipa": "ˈd͡ʒɛnɹəl",
+    "cn": "一般的",
+    "img": "/assets/word-img/general.svg"
+  },
+  "good": {
+    "ipa": "ɡʊ(d)",
+    "cn": "好的",
+    "img": "/assets/word-img/good.svg"
+  },
+  "great": {
+    "ipa": "ɡɹeɪt",
+    "cn": "伟大的",
+    "img": "/assets/word-img/great.svg"
+  },
+  "grey": {
+    "ipa": "ɡɹeɪ",
+    "cn": "灰色的",
+    "img": "/assets/word-img/grey.svg"
+  },
+  "hanging": {
+    "ipa": "ˈhæŋɪŋ",
+    "cn": "悬挂的",
+    "img": "/assets/word-img/hanging.svg"
+  },
+  "happy": {
+    "ipa": "ˈhæpiː",
+    "cn": "快乐的",
+    "img": "/assets/word-img/happy.svg"
+  },
+  "hard": {
+    "ipa": "hɑːd",
+    "cn": "困难的",
+    "img": "/assets/word-img/hard.svg"
+  },
+  "healthy": {
+    "ipa": "ˈhɛl.θi",
+    "cn": "健康的",
+    "img": "/assets/word-img/healthy.svg"
+  },
+  "high": {
+    "ipa": "haɪ",
+    "cn": "高的",
+    "img": "/assets/word-img/high.svg"
+  },
+  "hollow": {
+    "ipa": "ˈhɒl.əʊ",
+    "cn": "中空的",
+    "img": "/assets/word-img/hollow.svg"
+  },
+  "important": {
+    "ipa": "ɪmˈpɔːtənt",
+    "cn": "重要的",
+    "img": "/assets/word-img/important.svg"
+  },
+  "kind": {
+    "ipa": "kaɪnd",
+    "cn": "亲切的",
+    "img": "/assets/word-img/kind.svg"
+  },
+  "like": {
+    "ipa": "laɪk",
+    "cn": "喜欢的",
+    "img": "/assets/word-img/like.svg"
+  },
+  "living": {
+    "ipa": "ˈlɪvɪŋ",
+    "cn": "活的",
+    "img": "/assets/word-img/living.svg"
+  },
+  "long": {
+    "ipa": "ˈlɔːŋ",
+    "cn": "长的",
+    "img": "/assets/word-img/long.svg"
+  },
+  "male": {
+    "ipa": "meɪl",
+    "cn": "男性的",
+    "img": "/assets/word-img/male.svg"
+  },
+  "married": {
+    "ipa": "ˈmæɹ.ɪd",
+    "cn": "已婚的",
+    "img": "/assets/word-img/married.svg"
+  },
+  "material": {
+    "ipa": "məˈtɪəɹɪəl",
+    "cn": "材料的",
+    "img": "/assets/word-img/material.svg"
+  },
+  "medical": {
+    "ipa": "ˈmɛdɪkl̩",
+    "cn": "医学的",
+    "img": "/assets/word-img/medical.svg"
+  },
+  "military": {
+    "ipa": "ˈmɪl.ɪ.tɹi",
+    "cn": "军事的",
+    "img": "/assets/word-img/military.svg"
+  },
+  "natural": {
+    "ipa": "ˈnætʃəɹəl",
+    "cn": "自然的",
+    "img": "/assets/word-img/natural.svg"
+  },
+  "necessary": {
+    "ipa": "ˈnɛsəsɹɪ",
+    "cn": "必要的",
+    "img": "/assets/word-img/necessary.svg"
+  },
+  "new": {
+    "ipa": "njuː",
+    "cn": "新的",
+    "img": "/assets/word-img/new.svg"
+  },
+  "normal": {
+    "ipa": "ˈnɔːməl",
+    "cn": "正常的",
+    "img": "/assets/word-img/normal.svg"
+  },
+  "open": {
+    "ipa": "ˈəʊ.pən",
+    "cn": "开放的",
+    "img": "/assets/word-img/open.svg"
+  },
+  "parallel": {
+    "ipa": "ˈpæɹəˌlɛl",
+    "cn": "平行线",
+    "img": "/assets/word-img/parallel.svg"
+  },
+  "past": {
+    "ipa": "pɑːst",
+    "cn": "过去的",
+    "img": "/assets/word-img/past.svg"
+  },
+  "physical": {
+    "ipa": "ˈfɪzɪkəl",
+    "cn": "物理的",
+    "img": "/assets/word-img/physical.svg"
+  },
+  "political": {
+    "ipa": "pəˈlɪtɪkəl",
+    "cn": "政治的",
+    "img": "/assets/word-img/political.svg"
+  },
+  "poor": {
+    "ipa": "pɔː(ɹ)",
+    "cn": "贫穷的",
+    "img": "/assets/word-img/poor.svg"
+  },
+  "possible": {
+    "ipa": "ˈpɒsɪbl̩",
+    "cn": "可能的",
+    "img": "/assets/word-img/possible.svg"
+  },
+  "present": {
+    "ipa": "pɹəˈzɛnt",
+    "cn": "现在的",
+    "img": "/assets/word-img/present.svg"
+  },
+  "private": {
+    "ipa": "ˈpɹaɪvət",
+    "cn": "私人的",
+    "img": "/assets/word-img/private.svg"
+  },
+  "probable": {
+    "ipa": "ˈpɹɒbəbl̩",
+    "cn": "可能的",
+    "img": "/assets/word-img/probable.svg"
+  },
+  "quick": {
+    "ipa": "kwɪk",
+    "cn": "快的",
+    "img": "/assets/word-img/quick.svg"
+  },
+  "narrow": {
+    "ipa": "ˈnæɹəʊ",
+    "cn": "狭窄的",
+    "img": "/assets/word-img/narrow.svg"
+  },
+  "old": {
+    "ipa": "ˈɒʊld",
+    "cn": "老的",
+    "img": "/assets/word-img/old.svg"
+  },
+  "opposite": {
+    "ipa": "ˈɒpəsɪt",
+    "cn": "相反的",
+    "img": "/assets/word-img/opposite.svg"
+  },
+  "public": {
+    "ipa": "ˈpʌblɪk",
+    "cn": "公众的",
+    "img": "/assets/word-img/public.svg"
+  },
+  "rough": {
+    "ipa": "ɹʌf",
+    "cn": "粗糙的",
+    "img": "/assets/word-img/rough.svg"
+  },
+  "sad": {
+    "ipa": "sæd",
+    "cn": "悲伤的",
+    "img": "/assets/word-img/sad.svg"
+  },
+  "safe": {
+    "ipa": "seɪf",
+    "cn": "安全的",
+    "img": "/assets/word-img/safe.svg"
+  },
+  "secret": {
+    "ipa": "ˈsiːkɹət",
+    "cn": "秘密的",
+    "img": "/assets/word-img/secret.svg"
+  },
+  "short": {
+    "ipa": "ʃɔːt",
+    "cn": "短的",
+    "img": "/assets/word-img/short.svg"
+  },
+  "shut": {
+    "ipa": "ʃʌt",
+    "cn": "关闭",
+    "img": "/assets/word-img/shut.svg"
+  },
+  "simple": {
+    "ipa": "ˈsɪmpəl",
+    "cn": "简单的",
+    "img": "/assets/word-img/simple.svg"
+  },
+  "slow": {
+    "ipa": "sləʊ",
+    "cn": "慢的",
+    "img": "/assets/word-img/slow.svg"
+  },
+  "small": {
+    "ipa": "smɔːl",
+    "cn": "小的",
+    "img": "/assets/word-img/small.svg"
+  },
+  "soft": {
+    "ipa": "sɒft",
+    "cn": "柔软的",
+    "img": "/assets/word-img/soft.svg"
+  },
+  "solid": {
+    "ipa": "ˈsɒlɪd",
+    "cn": "坚硬的",
+    "img": "/assets/word-img/solid.svg"
+  },
+  "special": {
+    "ipa": "ˈspɛ.ʃəl",
+    "cn": "特别的",
+    "img": "/assets/word-img/special.svg"
+  },
+  "strange": {
+    "ipa": "ˈstɹeɪnd͡ʒ",
+    "cn": "奇怪的",
+    "img": "/assets/word-img/strange.svg"
+  },
+  "thin": {
+    "ipa": "ˈθɪn",
+    "cn": "薄的",
+    "img": "/assets/word-img/thin.svg"
+  },
+  "white": {
+    "ipa": "waɪt",
+    "cn": "白色的",
+    "img": "/assets/word-img/white.svg"
+  },
+  "wrong": {
+    "ipa": "ɹɒŋ",
+    "cn": "错误的",
+    "img": "/assets/word-img/wrong.svg"
+  },
+  "by": {
+    "ipa": "baɪ",
+    "cn": "在……旁边/靠近",
+    "img": "/assets/word-img/by.svg"
+  },
+  "down": {
+    "ipa": "daʊn",
+    "cn": "下",
+    "img": "/assets/word-img/down.svg"
+  },
+  "from": {
+    "ipa": "fɹɒm",
+    "cn": "来自",
+    "img": "/assets/word-img/from.svg"
+  },
+  "in": {
+    "ipa": "ɪn",
+    "cn": "在",
+    "img": "/assets/word-img/in.svg"
+  },
+  "off": {
+    "ipa": "ɒf",
+    "cn": "离开/脱离接触",
+    "img": "/assets/word-img/off.svg"
+  },
+  "on": {
+    "ipa": "ɒn",
+    "cn": "在……之上 (接触表面)",
+    "img": "/assets/word-img/on.svg"
+  },
+  "over": {
+    "ipa": "ˈəʊ.və(ɹ)",
+    "cn": "在……正上方 (无接触)/越过",
+    "img": "/assets/word-img/over.svg"
+  },
+  "through": {
+    "ipa": "θɹuː",
+    "cn": "通过",
+    "img": "/assets/word-img/through.svg"
+  },
+  "to": {
+    "ipa": "tʉː",
+    "cn": "到",
+    "img": "/assets/word-img/to.svg"
+  },
+  "under": {
+    "ipa": "ˈʊndə",
+    "cn": "在……正下方",
+    "img": "/assets/word-img/under.svg"
+  },
+  "up": {
+    "ipa": "ap",
+    "cn": "上",
+    "img": "/assets/word-img/up.svg"
+  },
+  "of": {
+    "ipa": "ɒv",
+    "cn": "的",
+    "img": "/assets/word-img/of.svg"
+  },
+  "till": {
+    "ipa": "tɪl",
+    "cn": "直到",
+    "img": "/assets/word-img/till.svg"
+  },
+  "than": {
+    "ipa": "ðæn",
+    "cn": "比",
+    "img": "/assets/word-img/than.svg"
+  },
+  "a": {
+    "ipa": "æɪ",
+    "cn": "一个",
+    "img": "/assets/word-img/a.jpg"
+  },
+  "the": {
+    "ipa": "ði",
+    "cn": "这个",
+    "img": "/assets/word-img/the.svg"
+  },
+  "all": {
+    "ipa": "ɔːl",
+    "cn": "所有",
+    "img": "/assets/word-img/all.svg"
+  },
+  "any": {
+    "ipa": "ˈæni",
+    "cn": "任何",
+    "img": "/assets/word-img/any.svg"
+  },
+  "no": {
+    "ipa": "nəʊ",
+    "cn": "没有",
+    "img": "/assets/word-img/no.svg"
+  },
+  "other": {
+    "ipa": "ʊðə",
+    "cn": "其他",
+    "img": "/assets/word-img/other.svg"
+  },
+  "some": {
+    "ipa": "sɐm",
+    "cn": "一些",
+    "img": "/assets/word-img/some.svg"
+  },
+  "such": {
+    "ipa": "sʌt͡ʃ",
+    "cn": "这样的",
+    "img": "/assets/word-img/such.svg"
+  },
+  "that": {
+    "ipa": "ˈðæt",
+    "cn": "那",
+    "img": "/assets/word-img/that.svg"
+  },
+  "this": {
+    "ipa": "ðəs",
+    "cn": "这",
+    "img": "/assets/word-img/this.svg"
+  },
+  "even": {
+    "ipa": "ˈiːvən",
+    "cn": "甚至",
+    "img": "/assets/word-img/even.svg"
+  },
+  "little": {
+    "ipa": "ˈlɪtəl",
+    "cn": "少许",
+    "img": "/assets/word-img/little.svg"
+  },
+  "attempt": {
+    "ipa": "əˈtɛmpt",
+    "cn": "试图",
+    "img": "/assets/word-img/attempt.svg"
+  },
+  "attention": {
+    "ipa": "əˈtɛn.ʃən",
+    "cn": "注意",
+    "img": "/assets/word-img/attention.svg"
+  },
+  "attraction": {
+    "ipa": "əˈtɹækʃən",
+    "cn": "景点",
+    "img": "/assets/word-img/attraction.svg"
+  },
+  "authority": {
+    "ipa": "ɔːˈθɒɹəti",
+    "cn": "权威",
+    "img": "/assets/word-img/authority.svg"
+  },
+  "back": {
+    "ipa": "bæk",
+    "cn": "背部",
+    "img": "/assets/word-img/back.svg"
+  },
+  "balance": {
+    "ipa": "ˈbæləns",
+    "cn": "平衡",
+    "img": "/assets/word-img/balance.svg"
+  },
+  "base": {
+    "ipa": "beɪs",
+    "cn": "根据",
+    "img": "/assets/word-img/base.svg"
+  },
+  "behaviour": {
+    "ipa": "bɪˈheɪvjə",
+    "cn": "行为",
+    "img": "/assets/word-img/behavior.svg"
+  },
+  "belief": {
+    "ipa": "bəˈliːf",
+    "cn": "信仰",
+    "img": "/assets/word-img/belief.svg"
+  },
+  "birth": {
+    "ipa": "bɜːθ",
+    "cn": "出生",
+    "img": "/assets/word-img/birth.svg"
+  },
+  "bit": {
+    "ipa": "bɪt",
+    "cn": "少量",
+    "img": "/assets/word-img/bit.svg"
+  },
+  "bite": {
+    "ipa": "bʌɪt",
+    "cn": "咬",
+    "img": "/assets/word-img/bite.svg"
+  },
+  "blood": {
+    "ipa": "blʌd",
+    "cn": "血",
+    "img": "/assets/word-img/blood.jpg"
+  },
+  "blow": {
+    "ipa": "bləʊ",
+    "cn": "吹",
+    "img": "/assets/word-img/blow.svg"
+  },
+  "body": {
+    "ipa": "ˈbɒdi",
+    "cn": "身体",
+    "img": "/assets/word-img/body.svg"
+  },
+  "brass": {
+    "ipa": "bɹɑːs",
+    "cn": "黄铜",
+    "img": "/assets/word-img/brass.svg"
+  },
+  "bread": {
+    "ipa": "bɹɛd",
+    "cn": "面包",
+    "img": "/assets/word-img/bread.jpg"
+  },
+  "breath": {
+    "ipa": "bɹɛθ",
+    "cn": "气息",
+    "img": "/assets/word-img/breath.svg"
+  },
+  "brother": {
+    "ipa": "ˈbɹʌðə(ɹ)",
+    "cn": "兄弟",
+    "img": "/assets/word-img/brother.svg"
+  },
+  "building": {
+    "ipa": "ˈbɪl.dɪŋ",
+    "cn": "建筑",
+    "img": "/assets/word-img/building.svg"
+  },
+  "burn": {
+    "ipa": "bɜːn",
+    "cn": "烧伤",
+    "img": "/assets/word-img/burn.svg"
+  },
+  "burst": {
+    "ipa": "bɜːst",
+    "cn": "爆裂",
+    "img": "/assets/word-img/burst.svg"
+  },
+  "business": {
+    "ipa": "ˈbɪd.nəs",
+    "cn": "生意",
+    "img": "/assets/word-img/business.jpg"
+  },
+  "butter": {
+    "ipa": "ˈbʊtə",
+    "cn": "黄油",
+    "img": "/assets/word-img/butter.svg"
+  },
+  "canvas": {
+    "ipa": "ˈkæn.vəs",
+    "cn": "帆布",
+    "img": "/assets/word-img/canvas.svg"
+  },
+  "care": {
+    "ipa": "kɛə",
+    "cn": "关心",
+    "img": "/assets/word-img/care.svg"
+  },
+  "cause": {
+    "ipa": "kɔːz",
+    "cn": "原因",
+    "img": "/assets/word-img/cause.svg"
+  },
+  "chalk": {
+    "ipa": "t͡ʃɔːk",
+    "cn": "粉笔",
+    "img": "/assets/word-img/chalk.svg"
+  },
+  "chance": {
+    "ipa": "tʃʰɑːns",
+    "cn": "机会",
+    "img": "/assets/word-img/chance.svg"
+  },
+  "change": {
+    "ipa": "tʃeɪndʒ",
+    "cn": "改变",
+    "img": "/assets/word-img/change.svg"
+  },
+  "event": {
+    "ipa": "əˈvɛnt",
+    "cn": "事件",
+    "img": "/assets/word-img/event.svg"
+  },
+  "example": {
+    "ipa": "ɪɡˈzɑːmpl̩",
+    "cn": "例子",
+    "img": "/assets/word-img/example.svg"
+  },
+  "exchange": {
+    "ipa": "ɛksˈtʃeɪndʒ",
+    "cn": "交换",
+    "img": "/assets/word-img/exchange.svg"
+  },
+  "existence": {
+    "ipa": "ɛɡ.ˈzɪs.təns",
+    "cn": "存在",
+    "img": "/assets/word-img/existence.svg"
+  },
+  "expansion": {
+    "ipa": "ɪkˈspænʃən",
+    "cn": "扩张",
+    "img": "/assets/word-img/expansion.svg"
+  },
+  "experience": {
+    "ipa": "ɪkˈspɪə.ɹɪəns",
+    "cn": "经验",
+    "img": "/assets/word-img/experience.svg"
+  },
+  "expert": {
+    "ipa": "ˈɛkspəːt",
+    "cn": "专家",
+    "img": "/assets/word-img/expert.svg"
+  },
+  "fact": {
+    "ipa": "fækt",
+    "cn": "事实",
+    "img": "/assets/word-img/fact.svg"
+  },
+  "fall": {
+    "ipa": "fɔːl",
+    "cn": "落下/跌落/秋天",
+    "img": "/assets/word-img/fall.svg"
+  },
+  "family": {
+    "ipa": "ˈfæm(ɪ)li",
+    "cn": "家庭",
+    "img": "/assets/word-img/family.svg"
+  },
+  "father": {
+    "ipa": "ˈfɑːðə(ɹ)",
+    "cn": "父亲",
+    "img": "/assets/word-img/father.svg"
+  },
+  "fear": {
+    "ipa": "fɪə",
+    "cn": "害怕",
+    "img": "/assets/word-img/fear.jpg"
+  },
+  "feeling": {
+    "ipa": "ˈfiːlɪŋ",
+    "cn": "感觉",
+    "img": "/assets/word-img/feeling.svg"
+  },
+  "fiction": {
+    "ipa": "ˈfɪk.ʃən",
+    "cn": "小说",
+    "img": "/assets/word-img/fiction.svg"
+  },
+  "field": {
+    "ipa": "fiːld",
+    "cn": "场地",
+    "img": "/assets/word-img/field.svg"
+  },
+  "fight": {
+    "ipa": "faɪt",
+    "cn": "斗争",
+    "img": "/assets/word-img/fight.jpg"
+  },
+  "fire": {
+    "ipa": "ˈfaɪə(ɹ)",
+    "cn": "火",
+    "img": "/assets/word-img/fire.jpg"
+  },
+  "flame": {
+    "ipa": "fleɪm",
+    "cn": "火焰",
+    "img": "/assets/word-img/flame.svg"
+  },
+  "flight": {
+    "ipa": "flaɪt",
+    "cn": "航班",
+    "img": "/assets/word-img/flight.svg"
+  },
+  "flower": {
+    "ipa": "ˈflaʊ.ə",
+    "cn": "花",
+    "img": "/assets/word-img/flower.svg"
+  },
+  "fold": {
+    "ipa": "fəʊld",
+    "cn": "折叠",
+    "img": "/assets/word-img/fold.svg"
+  },
+  "food": {
+    "ipa": "fuːd",
+    "cn": "食物",
+    "img": "/assets/word-img/food.jpg"
+  },
+  "force": {
+    "ipa": "fɔːs",
+    "cn": "力量",
+    "img": "/assets/word-img/force.svg"
+  },
+  "form": {
+    "ipa": "fɔːm",
+    "cn": "形式",
+    "img": "/assets/word-img/form.svg"
+  },
+  "friend": {
+    "ipa": "fɹɛnd",
+    "cn": "朋友",
+    "img": "/assets/word-img/friend.svg"
+  },
+  "front": {
+    "ipa": "fɹʌnt",
+    "cn": "正面",
+    "img": "/assets/word-img/front.svg"
+  },
+  "fruit": {
+    "ipa": "fɹuːt",
+    "cn": "水果",
+    "img": "/assets/word-img/fruit.jpg"
+  },
+  "glass": {
+    "ipa": "ɡlɑːs",
+    "cn": "玻璃",
+    "img": "/assets/word-img/glass.svg"
+  },
+  "gold": {
+    "ipa": "ɡɒʊld",
+    "cn": "金子",
+    "img": "/assets/word-img/gold.jpg"
+  },
+  "government": {
+    "ipa": "ˈɡʌvə(n)mənt",
+    "cn": "政府",
+    "img": "/assets/word-img/government.jpg"
+  },
+  "grain": {
+    "ipa": "ɡɹeɪn",
+    "cn": "粮食",
+    "img": "/assets/word-img/grain.svg"
+  },
+  "grass": {
+    "ipa": "ɡɹ̠ɑːs",
+    "cn": "草",
+    "img": "/assets/word-img/grass.svg"
+  },
+  "grip": {
+    "ipa": "ɡɹɪp",
+    "cn": "紧握/抓力",
+    "img": "/assets/word-img/grip.svg"
+  },
+  "group": {
+    "ipa": "ɡɹuːp",
+    "cn": "团体",
+    "img": "/assets/word-img/group.svg"
+  },
+  "growth": {
+    "ipa": "ɡɹəʊθ",
+    "cn": "生长",
+    "img": "/assets/word-img/growth.svg"
+  },
+  "guide": {
+    "ipa": "ɡaɪd",
+    "cn": "向导/指南",
+    "img": "/assets/word-img/guide.jpg"
+  },
+  "harbour": {
+    "ipa": "ˈhɑːbə",
+    "cn": "港口",
+    "img": "/assets/word-img/harbor.svg"
+  },
+  "harmony": {
+    "ipa": "ˈhɑːməni",
+    "cn": "和谐",
+    "img": "/assets/word-img/harmony.svg"
+  },
+  "hate": {
+    "ipa": "heɪt",
+    "cn": "憎恨/仇恨",
+    "img": "/assets/word-img/hate.svg"
+  },
+  "hearing": {
+    "ipa": "ˈhɪəɹ.ɪŋ",
+    "cn": "听力",
+    "img": "/assets/word-img/hearing.svg"
+  },
+  "heat": {
+    "ipa": "hit",
+    "cn": "热",
+    "img": "/assets/word-img/heat.svg"
+  },
+  "help": {
+    "ipa": "hɛlp",
+    "cn": "帮助",
+    "img": "/assets/word-img/help.svg"
+  },
+  "history": {
+    "ipa": "ˈhɪst(ə)ɹi",
+    "cn": "历史",
+    "img": "/assets/word-img/history.svg"
+  },
+  "hole": {
+    "ipa": "həʊl",
+    "cn": "洞",
+    "img": "/assets/word-img/hole.svg"
+  },
+  "hope": {
+    "ipa": "həʊp",
+    "cn": "希望",
+    "img": "/assets/word-img/hope.svg"
+  },
+  "hour": {
+    "ipa": "ˈaʊə(ɹ)",
+    "cn": "小时",
+    "img": "/assets/word-img/hour.svg"
+  },
+  "humour": {
+    "ipa": "ˈhjuː.mə(ɹ)",
+    "cn": "幽默",
+    "img": "/assets/word-img/humor.svg"
+  },
+  "ice": {
+    "ipa": "ʌɪs",
+    "cn": "冰",
+    "img": "/assets/word-img/ice.jpg"
+  },
+  "idea": {
+    "ipa": "aɪˈdɪə",
+    "cn": "主意",
+    "img": "/assets/word-img/idea.jpg"
+  },
+  "impulse": {
+    "ipa": "ˈɪmpʌls",
+    "cn": "冲动",
+    "img": "/assets/word-img/impulse.svg"
+  },
+  "industry": {
+    "ipa": "ˈɪndəstɹi",
+    "cn": "行业",
+    "img": "/assets/word-img/industry.svg"
+  },
+  "ink": {
+    "ipa": "ɪŋk",
+    "cn": "墨水",
+    "img": "/assets/word-img/ink.svg"
+  },
+  "insect": {
+    "ipa": "ˈɪnsɛkt",
+    "cn": "昆虫",
+    "img": "/assets/word-img/insect.svg"
+  },
+  "instrument": {
+    "ipa": "ˈɪnstɹəmənt",
+    "cn": "乐器",
+    "img": "/assets/word-img/instrument.svg"
+  },
+  "insurance": {
+    "ipa": "ɪn.ˈʃɔː.ɹəns",
+    "cn": "保险",
+    "img": "/assets/word-img/insurance.svg"
+  },
+  "liquid": {
+    "ipa": "ˈlɪkwɪd",
+    "cn": "液体",
+    "img": "/assets/word-img/liquid.svg"
+  },
+  "list": {
+    "ipa": "lɪst",
+    "cn": "列表",
+    "img": "/assets/word-img/list.svg"
+  },
+  "loss": {
+    "ipa": "lɒs",
+    "cn": "损失",
+    "img": "/assets/word-img/loss.svg"
+  },
+  "love": {
+    "ipa": "lʌv",
+    "cn": "爱",
+    "img": "/assets/word-img/love.svg"
+  },
+  "machine": {
+    "ipa": "məˈʃin",
+    "cn": "机器",
+    "img": "/assets/word-img/machine.svg"
+  },
+  "man": {
+    "ipa": "mæn",
+    "cn": "男人",
+    "img": "/assets/word-img/man.svg"
+  },
+  "manager": {
+    "ipa": "ˈmæn.ɪ.dʒə",
+    "cn": "经理",
+    "img": "/assets/word-img/manager.svg"
+  },
+  "mark": {
+    "ipa": "mɑɹk",
+    "cn": "标记",
+    "img": "/assets/word-img/mark.jpg"
+  },
+  "market": {
+    "ipa": "ˈmɑːkɪt",
+    "cn": "市场",
+    "img": "/assets/word-img/market.svg"
+  },
+  "mass": {
+    "ipa": "mæs",
+    "cn": "大量的",
+    "img": "/assets/word-img/mass.jpg"
+  },
+  "meal": {
+    "ipa": "miːl",
+    "cn": "一顿饭",
+    "img": "/assets/word-img/meal.jpg"
+  },
+  "measure": {
+    "ipa": "ˈmɛʒə",
+    "cn": "措施",
+    "img": "/assets/word-img/measure.jpg"
+  },
+  "meat": {
+    "ipa": "miːt",
+    "cn": "肉",
+    "img": "/assets/word-img/meat.jpg"
+  },
+  "order": {
+    "ipa": "ˈɔːdə",
+    "cn": "命令",
+    "img": "/assets/word-img/order.jpg"
+  },
+  "organization": {
+    "ipa": "ˌɔɹɡənaɪˈzeɪʃən",
+    "cn": "组织",
+    "img": "/assets/word-img/organization.jpg"
+  },
+  "ornament": {
+    "ipa": "ˈɔː(ɹ)nəmənt",
+    "cn": "装饰品",
+    "img": "/assets/word-img/ornament.svg"
+  },
+  "owner": {
+    "ipa": "ˈəʊnə",
+    "cn": "所有者",
+    "img": "/assets/word-img/owner.svg"
+  },
+  "page": {
+    "ipa": "peɪd͡ʒ",
+    "cn": "页",
+    "img": "/assets/word-img/page.svg"
+  },
+  "pain": {
+    "ipa": "peɪn",
+    "cn": "疼痛",
+    "img": "/assets/word-img/pain.svg"
+  },
+  "paint": {
+    "ipa": "peɪnt",
+    "cn": "油漆/颜料",
+    "img": "/assets/word-img/paint.svg"
+  },
+  "paper": {
+    "ipa": "ˈpeɪpə",
+    "cn": "纸",
+    "img": "/assets/word-img/paper.svg"
+  },
+  "part": {
+    "ipa": "pɑːt",
+    "cn": "部分",
+    "img": "/assets/word-img/part.svg"
+  },
+  "paste": {
+    "ipa": "peɪst",
+    "cn": "浆糊/糊状物",
+    "img": "/assets/word-img/paste.svg"
+  },
+  "payment": {
+    "ipa": "ˈpeɪmənt",
+    "cn": "支付",
+    "img": "/assets/word-img/payment.svg"
+  },
+  "peace": {
+    "ipa": "piːs",
+    "cn": "和平",
+    "img": "/assets/word-img/peace.svg"
+  },
+  "person": {
+    "ipa": "ˈpɜːsən",
+    "cn": "人",
+    "img": "/assets/word-img/person.svg"
+  },
+  "place": {
+    "ipa": "pleɪs",
+    "cn": "地方",
+    "img": "/assets/word-img/place.svg"
+  },
+  "plant": {
+    "ipa": "plɑːnt",
+    "cn": "植物",
+    "img": "/assets/word-img/plant.jpg"
+  },
+  "regret": {
+    "ipa": "ɹiˈɡɹɛt",
+    "cn": "遗憾/后悔",
+    "img": "/assets/word-img/regret.svg"
+  },
+  "relation": {
+    "ipa": "ɹɪˈleɪʃən",
+    "cn": "关系",
+    "img": "/assets/word-img/relation.svg"
+  },
+  "religion": {
+    "ipa": "ɹɪˈlɪdʒən",
+    "cn": "宗教",
+    "img": "/assets/word-img/religion.svg"
+  },
+  "representative": {
+    "ipa": "ˌɹɛpɹɪˈzɛnt(ət)ɪv",
+    "cn": "代表",
+    "img": "/assets/word-img/representative.svg"
+  },
+  "request": {
+    "ipa": "ɹɪˈkwɛst",
+    "cn": "要求",
+    "img": "/assets/word-img/request.svg"
+  },
+  "respect": {
+    "ipa": "ɹɪˈspɛkt",
+    "cn": "尊重",
+    "img": "/assets/word-img/respect.svg"
+  },
+  "rest": {
+    "ipa": "ɹɛst",
+    "cn": "休息",
+    "img": "/assets/word-img/rest.svg"
+  },
+  "reward": {
+    "ipa": "ɹəˈwɔːd",
+    "cn": "报酬",
+    "img": "/assets/word-img/reward.svg"
+  },
+  "rhythm": {
+    "ipa": "ˈɹɪ.ð(ə)m",
+    "cn": "韵律",
+    "img": "/assets/word-img/rhythm.svg"
+  },
+  "rice": {
+    "ipa": "ɹaɪs",
+    "cn": "米",
+    "img": "/assets/word-img/rice.jpg"
+  },
+  "river": {
+    "ipa": "ˈɹɪvə",
+    "cn": "河",
+    "img": "/assets/word-img/river.jpg"
+  },
+  "road": {
+    "ipa": "ɹəʊd",
+    "cn": "路",
+    "img": "/assets/word-img/road.svg"
+  },
+  "roll": {
+    "ipa": "ɹəʊl",
+    "cn": "卷",
+    "img": "/assets/word-img/roll.svg"
+  },
+  "room": {
+    "ipa": "ɹuːm",
+    "cn": "房间",
+    "img": "/assets/word-img/room.svg"
+  },
+  "rub": {
+    "ipa": "ɹʌb",
+    "cn": "摩擦/揉擦",
+    "img": "/assets/word-img/rub.svg"
+  },
+  "rule": {
+    "ipa": "ɹuːl",
+    "cn": "规则",
+    "img": "/assets/word-img/rule.svg"
+  },
+  "run": {
+    "ipa": "ɹʊn",
+    "cn": "跑步",
+    "img": "/assets/word-img/run.svg"
+  },
+  "salt": {
+    "ipa": "sɒlt",
+    "cn": "盐",
+    "img": "/assets/word-img/salt.jpg"
+  },
+  "sand": {
+    "ipa": "sænd",
+    "cn": "沙",
+    "img": "/assets/word-img/sand.jpg"
+  },
+  "soap": {
+    "ipa": "səʊp",
+    "cn": "肥皂",
+    "img": "/assets/word-img/soap.svg"
+  },
+  "society": {
+    "ipa": "səˈsaɪ.ə.ti",
+    "cn": "社会",
+    "img": "/assets/word-img/society.svg"
+  },
+  "son": {
+    "ipa": "sɒn",
+    "cn": "儿子",
+    "img": "/assets/word-img/son.svg"
+  },
+  "song": {
+    "ipa": "sɒŋ",
+    "cn": "歌曲",
+    "img": "/assets/word-img/song.svg"
+  },
+  "sort": {
+    "ipa": "sɔːt",
+    "cn": "种类",
+    "img": "/assets/word-img/sort.svg"
+  },
+  "sound": {
+    "ipa": "saʊnd",
+    "cn": "声音",
+    "img": "/assets/word-img/sound.svg"
+  },
+  "soup": {
+    "ipa": "suːp",
+    "cn": "汤",
+    "img": "/assets/word-img/soup.svg"
+  },
+  "space": {
+    "ipa": "speɪs",
+    "cn": "空间",
+    "img": "/assets/word-img/space.svg"
+  },
+  "stage": {
+    "ipa": "steɪd͡ʒ",
+    "cn": "阶段",
+    "img": "/assets/word-img/stage.svg"
+  },
+  "start": {
+    "ipa": "stɑːt",
+    "cn": "开始",
+    "img": "/assets/word-img/start.svg"
+  },
+  "statement": {
+    "ipa": "ˈsteɪtm(ə)nt",
+    "cn": "陈述",
+    "img": "/assets/word-img/statement.svg"
+  },
+  "steam": {
+    "ipa": "stiːm",
+    "cn": "蒸汽",
+    "img": "/assets/word-img/steam.svg"
+  },
+  "trick": {
+    "ipa": "tɹɪk",
+    "cn": "诡计",
+    "img": "/assets/word-img/trick.svg"
+  },
+  "trouble": {
+    "ipa": "ˈtɹʌb(ə)l",
+    "cn": "麻烦",
+    "img": "/assets/word-img/trouble.svg"
+  },
+  "turn": {
+    "ipa": "tɜːn",
+    "cn": "转动/轮班",
+    "img": "/assets/word-img/turn.svg"
+  },
+  "twist": {
+    "ipa": "twɪst",
+    "cn": "扭曲/捻",
+    "img": "/assets/word-img/twist.svg"
+  },
+  "unit": {
+    "ipa": "ˈjuː.nɪt",
+    "cn": "单元",
+    "img": "/assets/word-img/unit.svg"
+  },
+  "value": {
+    "ipa": "ˈvæljuː",
+    "cn": "价值",
+    "img": "/assets/word-img/value.svg"
+  },
+  "verse": {
+    "ipa": "ˈvɜːs",
+    "cn": "诗",
+    "img": "/assets/word-img/verse.svg"
+  },
+  "vessel": {
+    "ipa": "ˈvɛs.l̩",
+    "cn": "血管",
+    "img": "/assets/word-img/vessel.svg"
+  },
+  "view": {
+    "ipa": "vjuː",
+    "cn": "看法",
+    "img": "/assets/word-img/view.svg"
+  },
+  "voice": {
+    "ipa": "vɔɪs",
+    "cn": "嗓音",
+    "img": "/assets/word-img/voice.svg"
+  },
+  "walk": {
+    "ipa": "wɔːk",
+    "cn": "散步/步行",
+    "img": "/assets/word-img/walk.svg"
+  },
+  "war": {
+    "ipa": "wɔː",
+    "cn": "战争",
+    "img": "/assets/word-img/war.jpg"
+  },
+  "wash": {
+    "ipa": "wɒʃ",
+    "cn": "洗涤/盥洗",
+    "img": "/assets/word-img/wash.svg"
+  },
+  "waste": {
+    "ipa": "weɪst",
+    "cn": "废物/浪费",
+    "img": "/assets/word-img/waste.jpg"
+  },
+  "water": {
+    "ipa": "ˈwɔːtə",
+    "cn": "水",
+    "img": "/assets/word-img/water.jpg"
+  },
+  "wave": {
+    "ipa": "weɪv",
+    "cn": "海浪",
+    "img": "/assets/word-img/wave.jpg"
+  },
+  "wax": {
+    "ipa": "wæks",
+    "cn": "蜡",
+    "img": "/assets/word-img/wax.jpg"
+  },
+  "way": {
+    "ipa": "weɪ",
+    "cn": "方式",
+    "img": "/assets/word-img/way.svg"
+  },
+  "weather": {
+    "ipa": "ˈwɛðə",
+    "cn": "天气",
+    "img": "/assets/word-img/weather.jpg"
+  },
+  "week": {
+    "ipa": "wiːk",
+    "cn": "星期",
+    "img": "/assets/word-img/week.jpg"
+  },
+  "weight": {
+    "ipa": "weɪt",
+    "cn": "重量",
+    "img": "/assets/word-img/weight.jpg"
+  },
+  "wind": {
+    "ipa": "ˈwaɪnd",
+    "cn": "风",
+    "img": "/assets/word-img/wind.svg"
+  },
+  "wine": {
+    "ipa": "waɪn",
+    "cn": "葡萄酒",
+    "img": "/assets/word-img/wine.svg"
+  },
+  "winter": {
+    "ipa": "ˈwɪntɚ",
+    "cn": "冬天",
+    "img": "/assets/word-img/winter.svg"
+  },
+  "woman": {
+    "ipa": "ˈwʊmən",
+    "cn": "女士",
+    "img": "/assets/word-img/woman.svg"
+  },
+  "wood": {
+    "ipa": "wʊd",
+    "cn": "木头",
+    "img": "/assets/word-img/wood.svg"
+  },
+  "wool": {
+    "ipa": "wʊl",
+    "cn": "羊毛",
+    "img": "/assets/word-img/wool.svg"
+  },
+  "word": {
+    "ipa": "wɜːd",
+    "cn": "单词",
+    "img": "/assets/word-img/word.jpg"
+  },
+  "work": {
+    "ipa": "wɜːk",
+    "cn": "工作",
+    "img": "/assets/word-img/work.svg"
+  },
+  "wound": {
+    "ipa": "wuːnd",
+    "cn": "伤口",
+    "img": "/assets/word-img/wound.svg"
+  },
+  "writing": {
+    "ipa": "ˈɹaɪtɪŋ",
+    "cn": "书写/著作/文字",
+    "img": "/assets/word-img/writing.jpg"
+  },
+  "year": {
+    "ipa": "jɪə",
+    "cn": "年",
+    "img": "/assets/word-img/year.svg"
+  },
+  "angle": {
+    "ipa": "ˈæŋ.ɡəl",
+    "cn": "角度",
+    "img": "/assets/word-img/angle.jpg"
+  },
+  "ant": {
+    "ipa": "ɑːnt",
+    "cn": "蚂蚁",
+    "img": "/assets/word-img/ant.jpg"
+  },
+  "apple": {
+    "ipa": "ˈæp.əl",
+    "cn": "苹果",
+    "img": "/assets/word-img/apple.jpg"
+  },
+  "arch": {
+    "ipa": "ɑːt͡ʃ",
+    "cn": "拱",
+    "img": "/assets/word-img/arch.jpg"
+  },
+  "arm": {
+    "ipa": "ɑːm",
+    "cn": "手臂",
+    "img": "/assets/word-img/arm.jpg"
+  },
+  "feather": {
+    "ipa": "ˈfɛð.ə(ɹ)",
+    "cn": "羽毛",
+    "img": "/assets/word-img/feather.jpg"
+  },
+  "finger": {
+    "ipa": "ˈfɪŋəɹ",
+    "cn": "手指",
+    "img": "/assets/word-img/finger.jpg"
+  },
+  "fish": {
+    "ipa": "fɪʃ",
+    "cn": "鱼",
+    "img": "/assets/word-img/fish.jpg"
+  },
+  "flag": {
+    "ipa": "flæɡ",
+    "cn": "旗帜",
+    "img": "/assets/word-img/flag.jpg"
+  },
+  "floor": {
+    "ipa": "flɔː",
+    "cn": "地面",
+    "img": "/assets/word-img/floor.jpg"
+  },
+  "fly": {
+    "ipa": "flaɪ",
+    "cn": "苍蝇",
+    "img": "/assets/word-img/fly.jpg"
+  },
+  "foot": {
+    "ipa": "fɵʔt",
+    "cn": "脚",
+    "img": "/assets/word-img/foot.jpg"
+  },
+  "fork": {
+    "ipa": "fɔːk",
+    "cn": "餐叉/叉子",
+    "img": "/assets/word-img/fork.jpg"
+  },
+  "fowl": {
+    "ipa": "faʊl",
+    "cn": "家禽/鸟禽",
+    "img": "/assets/word-img/fowl.jpg"
+  },
+  "frame": {
+    "ipa": "fɹeɪm",
+    "cn": "框架",
+    "img": "/assets/word-img/frame.svg"
+  },
+  "garden": {
+    "ipa": "ˈɡɑːdn̩",
+    "cn": "花园",
+    "img": "/assets/word-img/garden.jpg"
+  },
+  "girl": {
+    "ipa": "ɡɵːl",
+    "cn": "女孩",
+    "img": "/assets/word-img/girl.jpg"
+  },
+  "glove": {
+    "ipa": "ɡlʌv",
+    "cn": "手套",
+    "img": "/assets/word-img/glove.jpg"
+  },
+  "goat": {
+    "ipa": "ɡɐ̟ʉt",
+    "cn": "山羊",
+    "img": "/assets/word-img/goat.jpg"
+  },
+  "gun": {
+    "ipa": "ɡʌn",
+    "cn": "枪",
+    "img": "/assets/word-img/gun.jpg"
+  },
+  "hair": {
+    "ipa": "hɛə",
+    "cn": "头发",
+    "img": "/assets/word-img/hair.jpg"
+  },
+  "hammer": {
+    "ipa": "ˈhæm.ə(ɹ)",
+    "cn": "锤子",
+    "img": "/assets/word-img/hammer.jpg"
+  },
+  "hand": {
+    "ipa": "hænd",
+    "cn": "手",
+    "img": "/assets/word-img/hand.jpg"
+  },
+  "hat": {
+    "ipa": "hat",
+    "cn": "帽子",
+    "img": "/assets/word-img/hat.jpg"
+  },
+  "head": {
+    "ipa": "hɛd",
+    "cn": "头",
+    "img": "/assets/word-img/head.jpg"
+  },
+  "heart": {
+    "ipa": "hɑːt",
+    "cn": "心",
+    "img": "/assets/word-img/heart.svg"
+  },
+  "hook": {
+    "ipa": "huːk",
+    "cn": "钩子",
+    "img": "/assets/word-img/hook.jpg"
+  },
+  "horn": {
+    "ipa": "hɔːn",
+    "cn": "兽角/喇叭",
+    "img": "/assets/word-img/horn.jpg"
+  },
+  "horse": {
+    "ipa": "hɔːs",
+    "cn": "马",
+    "img": "/assets/word-img/horse.jpg"
+  },
+  "hospital": {
+    "ipa": "ˈhɒs.pɪ.tl̩",
+    "cn": "医院",
+    "img": "/assets/word-img/hospital.jpg"
+  },
+  "house": {
+    "ipa": "haʊs",
+    "cn": "房子",
+    "img": "/assets/word-img/house.jpg"
+  },
+  "island": {
+    "ipa": "ˈaɪ̯lənd",
+    "cn": "岛",
+    "img": "/assets/word-img/island.jpg"
+  },
+  "jewel": {
+    "ipa": "dʒul",
+    "cn": "宝石",
+    "img": "/assets/word-img/jewel.jpg"
+  },
+  "kettle": {
+    "ipa": "ˈkɛ.təl",
+    "cn": "水壶",
+    "img": "/assets/word-img/kettle.jpg"
+  },
+  "key": {
+    "ipa": "kiː",
+    "cn": "钥匙",
+    "img": "/assets/word-img/key.jpg"
+  },
+  "knee": {
+    "ipa": "niː",
+    "cn": "膝盖",
+    "img": "/assets/word-img/knee.jpg"
+  },
+  "street": {
+    "ipa": "stɹiːt",
+    "cn": "街道",
+    "img": "/assets/word-img/street.jpg"
+  },
+  "sun": {
+    "ipa": "sʌn",
+    "cn": "太阳",
+    "img": "/assets/word-img/sun.jpg"
+  },
+  "table": {
+    "ipa": "ˈteɪbəl",
+    "cn": "桌子",
+    "img": "/assets/word-img/table.svg"
+  },
+  "tail": {
+    "ipa": "teɪl",
+    "cn": "尾巴",
+    "img": "/assets/word-img/tail.jpg"
+  },
+  "thread": {
+    "ipa": "θɾ̪̊ɛd",
+    "cn": "细线/线",
+    "img": "/assets/word-img/thread.jpg"
+  },
+  "throat": {
+    "ipa": "ˈθɹəʊt",
+    "cn": "喉咙",
+    "img": "/assets/word-img/throat.jpg"
+  },
+  "thumb": {
+    "ipa": "θʌm",
+    "cn": "拇指",
+    "img": "/assets/word-img/thumb.jpg"
+  },
+  "ticket": {
+    "ipa": "ˈtɪkɪt",
+    "cn": "票",
+    "img": "/assets/word-img/ticket.jpg"
+  },
+  "toe": {
+    "ipa": "təʊ",
+    "cn": "脚趾",
+    "img": "/assets/word-img/toe.jpg"
+  },
+  "tongue": {
+    "ipa": "tɒŋɡ",
+    "cn": "舌头",
+    "img": "/assets/word-img/tongue.jpg"
+  },
+  "tooth": {
+    "ipa": "tuːθ",
+    "cn": "牙齿",
+    "img": "/assets/word-img/tooth.jpg"
+  },
+  "town": {
+    "ipa": "taʊn",
+    "cn": "镇",
+    "img": "/assets/word-img/town.jpg"
+  },
+  "train": {
+    "ipa": "tɹeɪn",
+    "cn": "火车",
+    "img": "/assets/word-img/train.jpg"
+  },
+  "tray": {
+    "ipa": "tɹeɪ",
+    "cn": "托盘",
+    "img": "/assets/word-img/tray.jpg"
+  },
+  "tree": {
+    "ipa": "tɹiː",
+    "cn": "树",
+    "img": "/assets/word-img/tree.jpg"
+  },
+  "trousers": {
+    "ipa": "ˈtɹaʊzəz",
+    "cn": "裤子",
+    "img": "/assets/word-img/trousers.jpg"
+  },
+  "umbrella": {
+    "ipa": "ʌmˈbɹɛlə",
+    "cn": "伞",
+    "img": "/assets/word-img/umbrella.jpg"
+  },
+  "wall": {
+    "ipa": "wɔːl",
+    "cn": "墙",
+    "img": "/assets/word-img/wall.jpg"
+  },
+  "watch": {
+    "ipa": "wɒt͡ʃ",
+    "cn": "手表",
+    "img": "/assets/word-img/watch.jpg"
+  },
+  "wheel": {
+    "ipa": "ʍiːl",
+    "cn": "车轮",
+    "img": "/assets/word-img/wheel.jpg"
+  },
+  "whip": {
+    "ipa": "wɪp",
+    "cn": "鞭子",
+    "img": "/assets/word-img/whip.jpg"
+  },
+  "whistle": {
+    "ipa": "wɪsl̩",
+    "cn": "口哨/哨子",
+    "img": "/assets/word-img/whistle.jpg"
+  },
+  "window": {
+    "ipa": "ˈwɪndəʊ",
+    "cn": "窗户",
+    "img": "/assets/word-img/window.jpg"
+  },
+  "wing": {
+    "ipa": "wɪŋ",
+    "cn": "翅膀/翼",
+    "img": "/assets/word-img/wing.jpg"
+  },
+  "wire": {
+    "ipa": "waɪə(ɹ)",
+    "cn": "金属丝/铁丝",
+    "img": "/assets/word-img/wire.jpg"
+  },
+  "worm": {
+    "ipa": "wɜːm",
+    "cn": "蠕虫",
+    "img": "/assets/word-img/worm.jpg"
+  },
+  "able": {
+    "ipa": "ˈeɪ.bl̩",
+    "cn": "能够的",
+    "img": "/assets/word-img/able.svg"
+  },
+  "acid": {
+    "ipa": "ˈæs.ɪd",
+    "cn": "酸的",
+    "img": "/assets/word-img/acid.svg"
+  },
+  "sharp": {
+    "ipa": "ʃɑːp",
+    "cn": "锋利的",
+    "img": "/assets/word-img/sharp.svg"
+  },
+  "smooth": {
+    "ipa": "smuːð",
+    "cn": "光滑的",
+    "img": "/assets/word-img/smooth.svg"
+  },
+  "sticky": {
+    "ipa": "ˈstɪki",
+    "cn": "黏的",
+    "img": "/assets/word-img/sticky.svg"
+  },
+  "stiff": {
+    "ipa": "stɪf",
+    "cn": "僵硬的",
+    "img": "/assets/word-img/stiff.svg"
+  },
+  "straight": {
+    "ipa": "stɹeɪt",
+    "cn": "直的",
+    "img": "/assets/word-img/straight.svg"
+  },
+  "strong": {
+    "ipa": "stɹɒŋ",
+    "cn": "强壮的",
+    "img": "/assets/word-img/strong.svg"
+  },
+  "sudden": {
+    "ipa": "ˈsʌdən",
+    "cn": "突然的",
+    "img": "/assets/word-img/sudden.svg"
+  },
+  "sweet": {
+    "ipa": "swiːt",
+    "cn": "甜的",
+    "img": "/assets/word-img/sweet.svg"
+  },
+  "tall": {
+    "ipa": "tɔːl",
+    "cn": "高的",
+    "img": "/assets/word-img/tall.svg"
+  },
+  "thick": {
+    "ipa": "θɪk",
+    "cn": "厚的",
+    "img": "/assets/word-img/thick.svg"
+  },
+  "tired": {
+    "ipa": "taɪəd",
+    "cn": "疲倦的",
+    "img": "/assets/word-img/tired.svg"
+  },
+  "true": {
+    "ipa": "tɹuː",
+    "cn": "真实的",
+    "img": "/assets/word-img/true.svg"
+  },
+  "violent": {
+    "ipa": "ˈvaɪ(ə)lənt",
+    "cn": "暴力的",
+    "img": "/assets/word-img/violent.svg"
+  },
+  "waiting": {
+    "ipa": "ˈweɪ̯ɾɪŋ",
+    "cn": "等待的",
+    "img": "/assets/word-img/waiting.svg"
+  },
+  "warm": {
+    "ipa": "wɔːm",
+    "cn": "温暖的",
+    "img": "/assets/word-img/warm.svg"
+  },
+  "wet": {
+    "ipa": "wɛt",
+    "cn": "湿的",
+    "img": "/assets/word-img/wet.svg"
+  },
+  "wide": {
+    "ipa": "waɪd",
+    "cn": "宽的",
+    "img": "/assets/word-img/wide.svg"
+  },
+  "wise": {
+    "ipa": "waɪz",
+    "cn": "明智的",
+    "img": "/assets/word-img/wise.svg"
+  },
+  "yellow": {
+    "ipa": "ˈjɛl.əʊ",
+    "cn": "黄色的",
+    "img": "/assets/word-img/yellow.svg"
+  },
+  "young": {
+    "ipa": "jʌŋ",
+    "cn": "年轻的",
+    "img": "/assets/word-img/young.svg"
+  },
+  "awake": {
+    "ipa": "əˈweɪk",
+    "cn": "醒着的",
+    "img": "/assets/word-img/awake.svg"
+  },
+  "bad": {
+    "ipa": "bæd",
+    "cn": "差的",
+    "img": "/assets/word-img/bad.svg"
+  },
+  "bent": {
+    "ipa": "bɛnt",
+    "cn": "弯曲的",
+    "img": "/assets/word-img/bent.svg"
+  },
+  "bitter": {
+    "ipa": "ˈbɪtə",
+    "cn": "苦的",
+    "img": "/assets/word-img/bitter.svg"
+  },
+  "blue": {
+    "ipa": "bluː",
+    "cn": "蓝色的",
+    "img": "/assets/word-img/blue.svg"
+  },
+  "certain": {
+    "ipa": "ˈsɝtn̩",
+    "cn": "确定的",
+    "img": "/assets/word-img/certain.svg"
+  },
+  "cold": {
+    "ipa": "kɔʊld",
+    "cn": "冷的",
+    "img": "/assets/word-img/cold.svg"
+  },
+  "complete": {
+    "ipa": "kəmˈpliːt",
+    "cn": "完整的",
+    "img": "/assets/word-img/complete.svg"
+  },
+  "cruel": {
+    "ipa": "kɹuː(ə)l",
+    "cn": "残忍的",
+    "img": "/assets/word-img/cruel.svg"
+  },
+  "dark": {
+    "ipa": "dɑːk",
+    "cn": "黑暗的",
+    "img": "/assets/word-img/dark.svg"
+  },
+  "dead": {
+    "ipa": "diːd",
+    "cn": "死的",
+    "img": "/assets/word-img/dead.svg"
+  },
+  "dear": {
+    "ipa": "dɪə",
+    "cn": "亲爱的",
+    "img": "/assets/word-img/dear.svg"
+  },
+  "delicate": {
+    "ipa": "ˈdɛlɪkət",
+    "cn": "精细的",
+    "img": "/assets/word-img/delicate.svg"
+  },
+  "different": {
+    "ipa": "ˈdɪf.(ə)ɹ.ənt",
+    "cn": "不同的",
+    "img": "/assets/word-img/different.svg"
+  },
+  "dog": {
+    "ipa": "dɒɡ",
+    "cn": "狗",
+    "img": "/assets/word-img/dog.jpg"
+  },
+  "be": {
+    "cn": "是",
+    "img": "/assets/word-img/be.svg"
+  },
+  "have": {
+    "cn": "有",
+    "img": "/assets/word-img/have.svg"
+  },
+  "at": {
+    "cn": "在",
+    "img": "/assets/word-img/at.svg"
+  },
+  "with": {
+    "cn": "与",
+    "img": "/assets/word-img/with.svg"
+  },
+  "as": {
+    "cn": "如同",
+    "img": "/assets/word-img/as.svg"
+  },
+  "for": {
+    "cn": "对于",
+    "img": "/assets/word-img/for.svg"
+  },
+  "every": {
+    "cn": "每个",
+    "img": "/assets/word-img/every.svg"
+  },
+  "i": {
+    "cn": "我",
+    "img": "/assets/word-img/i.svg"
+  },
+  "he": {
+    "cn": "他",
+    "ipa": "hi",
+    "img": "/assets/word-img/he.svg"
+  },
+  "you": {
+    "cn": "你",
+    "ipa": "jʉː",
+    "img": "/assets/word-img/you.svg"
+  },
+  "who": {
+    "cn": "谁",
+    "ipa": "huː",
+    "img": "/assets/word-img/who.svg"
+  },
+  "and": {
+    "cn": "和",
+    "img": "/assets/word-img/and.svg"
+  },
+  "because": {
+    "cn": "因为",
+    "ipa": "bɪˈkɒz",
+    "img": "/assets/word-img/because.svg"
+  },
+  "but": {
+    "cn": "但是",
+    "ipa": "bʊt",
+    "img": "/assets/word-img/but.svg"
+  },
+  "or": {
+    "cn": "或者",
+    "ipa": "ɔː(ɹ)",
+    "img": "/assets/word-img/or.svg"
+  },
+  "if": {
+    "cn": "如果",
+    "ipa": "ɪf",
+    "img": "/assets/word-img/if.svg"
+  },
+  "though": {
+    "cn": "虽然",
+    "ipa": "ðəʊ",
+    "img": "/assets/word-img/though.svg"
+  },
+  "while": {
+    "cn": "当",
+    "ipa": "waɪl",
+    "img": "/assets/word-img/while.svg"
+  },
+  "how": {
+    "cn": "如何",
+    "ipa": "hæŏ",
+    "img": "/assets/word-img/how.svg"
+  },
+  "when": {
+    "cn": "什么时候",
+    "ipa": "ʍɛn",
+    "img": "/assets/word-img/when.svg"
+  },
+  "where": {
+    "cn": "在哪里",
+    "ipa": "wɛə(ɹ)",
+    "img": "/assets/word-img/where.svg"
+  },
+  "why": {
+    "cn": "为什么",
+    "ipa": "waɪ",
+    "img": "/assets/word-img/why.svg"
+  },
+  "again": {
+    "cn": "再次",
+    "ipa": "əˈɡeɪn",
+    "img": "/assets/word-img/again.svg"
+  },
+  "ever": {
+    "cn": "曾经",
+    "ipa": "ˈɛvə",
+    "img": "/assets/word-img/ever.svg"
+  },
+  "far": {
+    "cn": "远",
+    "ipa": "fɑː",
+    "img": "/assets/word-img/far.svg"
+  },
+  "forward": {
+    "cn": "向前",
+    "ipa": "ˈfoːwəd",
+    "img": "/assets/word-img/forward.svg"
+  },
+  "here": {
+    "cn": "这里",
+    "ipa": "hiːɹ",
+    "img": "/assets/word-img/here.svg"
+  },
+  "near": {
+    "cn": "附近",
+    "ipa": "nɪə(ɹ)",
+    "img": "/assets/word-img/near.svg"
+  },
+  "now": {
+    "cn": "现在",
+    "ipa": "naʊ",
+    "img": "/assets/word-img/now.svg"
+  },
+  "out": {
+    "cn": "外面",
+    "ipa": "æɔt",
+    "img": "/assets/word-img/out.svg"
+  },
+  "still": {
+    "cn": "仍然",
+    "ipa": "stɪl",
+    "img": "/assets/word-img/still.svg"
+  },
+  "then": {
+    "cn": "然后",
+    "ipa": "ðen",
+    "img": "/assets/word-img/then.svg"
+  },
+  "there": {
+    "cn": "那里",
+    "ipa": "ðeː(ɹ)",
+    "img": "/assets/word-img/there.svg"
+  },
+  "together": {
+    "cn": "在一起",
+    "ipa": "təˈɡɛð.ə(ɹ)",
+    "img": "/assets/word-img/together.svg"
+  },
+  "well": {
+    "cn": "好",
+    "ipa": "wɛl",
+    "img": "/assets/word-img/well.svg"
+  },
+  "almost": {
+    "cn": "几乎",
+    "ipa": "ɔːl.ˈməʊst",
+    "img": "/assets/word-img/almost.svg"
+  },
+  "enough": {
+    "cn": "足够",
+    "ipa": "iˈnʌf",
+    "img": "/assets/word-img/enough.svg"
+  },
+  "cloth": {
+    "cn": "布",
+    "ipa": "klɑθ",
+    "img": "/assets/word-img/cloth.svg"
+  },
+  "coal": {
+    "cn": "煤炭",
+    "ipa": "kɔʊl",
+    "img": "/assets/word-img/coal.jpg"
+  },
+  "colour": {
+    "cn": "颜色",
+    "ipa": "ˈkʌl.ə(ɹ)",
+    "img": "/assets/word-img/color.svg"
+  },
+  "comfort": {
+    "cn": "舒适",
+    "ipa": "ˈkʊm.fət",
+    "img": "/assets/word-img/comfort.svg"
+  },
+  "committee": {
+    "cn": "委员会",
+    "ipa": "kəˈmɪt.i",
+    "img": "/assets/word-img/committee.jpg"
+  },
+  "company": {
+    "cn": "公司",
+    "ipa": "ˈkʌmp(ə)ni",
+    "img": "/assets/word-img/company.jpg"
+  },
+  "comparison": {
+    "cn": "比较",
+    "ipa": "kəmˈpæɹɪsən",
+    "img": "/assets/word-img/comparison.svg"
+  },
+  "competition": {
+    "cn": "竞赛",
+    "ipa": "ˌkɒmpəˈtɪʃən",
+    "img": "/assets/word-img/competition.jpg"
+  },
+  "condition": {
+    "cn": "状况",
+    "ipa": "kənˈdɪʃən",
+    "img": "/assets/word-img/condition.svg"
+  },
+  "connection": {
+    "cn": "联系",
+    "ipa": "kəˈnɛkʃən",
+    "img": "/assets/word-img/connection.svg"
+  },
+  "control": {
+    "cn": "控制",
+    "ipa": "kənˈtɹəʊl",
+    "img": "/assets/word-img/control.svg"
+  },
+  "cook": {
+    "cn": "厨师",
+    "ipa": "kuːk",
+    "img": "/assets/word-img/cook.svg"
+  },
+  "copper": {
+    "cn": "铜",
+    "ipa": "ˈkɔp.ə",
+    "img": "/assets/word-img/copper.jpg"
+  },
+  "copy": {
+    "cn": "复制",
+    "ipa": "ˈkɒpi",
+    "img": "/assets/word-img/copy.svg"
+  },
+  "cork": {
+    "cn": "软木",
+    "ipa": "kɔːk",
+    "img": "/assets/word-img/cork.svg"
+  },
+  "cotton": {
+    "cn": "棉布",
+    "ipa": "ˈkɒt.n̩",
+    "img": "/assets/word-img/cotton.svg"
+  },
+  "cough": {
+    "cn": "咳嗽",
+    "ipa": "kɑf",
+    "img": "/assets/word-img/cough.svg"
+  },
+  "country": {
+    "cn": "国家",
+    "ipa": "ˈkɐntɹi",
+    "img": "/assets/word-img/country.svg"
+  },
+  "cover": {
+    "cn": "封面",
+    "ipa": "ˈkʌvə",
+    "img": "/assets/word-img/cover.svg"
+  },
+  "crack": {
+    "cn": "裂缝",
+    "ipa": "kɹæk",
+    "img": "/assets/word-img/crack.svg"
+  },
+  "credit": {
+    "cn": "信用",
+    "ipa": "ˈkɹɛdɪt",
+    "img": "/assets/word-img/credit.jpg"
+  },
+  "crime": {
+    "cn": "罪案",
+    "ipa": "kɹaɪm",
+    "img": "/assets/word-img/crime.jpg"
+  },
+  "crush": {
+    "cn": "压碎/拥挤人群",
+    "ipa": "kɹʌʃ",
+    "img": "/assets/word-img/crush.svg"
+  },
+  "cry": {
+    "cn": "哭泣/哭声/喊叫",
+    "ipa": "kɹaɪ̯",
+    "img": "/assets/word-img/cry.svg"
+  },
+  "current": {
+    "cn": "当前的",
+    "ipa": "ˈkʌɹənt",
+    "img": "/assets/word-img/current.svg"
+  },
+  "curve": {
+    "cn": "曲线",
+    "ipa": "kɜːv",
+    "img": "/assets/word-img/curve.jpg"
+  },
+  "damage": {
+    "cn": "损害",
+    "ipa": "ˈdæmɪdʒ",
+    "img": "/assets/word-img/damage.svg"
+  },
+  "danger": {
+    "cn": "危险",
+    "ipa": "ˈdeɪn.dʒə(ɹ)",
+    "img": "/assets/word-img/danger.jpg"
+  },
+  "daughter": {
+    "cn": "女儿",
+    "ipa": "ˈdɑ.tɚ",
+    "img": "/assets/word-img/daughter.jpg"
+  },
+  "error": {
+    "cn": "错误",
+    "ipa": "ˈɛɹə(ɹ)",
+    "img": "/assets/word-img/error.jpg"
+  },
+  "increase": {
+    "cn": "增加",
+    "ipa": "ˈɪn.kriːs",
+    "img": "/assets/word-img/increase.jpg"
+  },
+  "look": {
+    "cn": "看/眼神/外观",
+    "ipa": "lʊk",
+    "img": "/assets/word-img/look.jpg"
+  },
+  "meeting": {
+    "cn": "会议",
+    "ipa": "ˈmiːtɪŋ",
+    "img": "/assets/word-img/meeting.jpg"
+  },
+  "memory": {
+    "cn": "记忆",
+    "ipa": "ˈmɛm(ə)ɹi",
+    "img": "/assets/word-img/memory.svg"
+  },
+  "metal": {
+    "cn": "金属",
+    "ipa": "ˈmɛtəl",
+    "img": "/assets/word-img/metal.jpg"
+  },
+  "middle": {
+    "cn": "中间",
+    "ipa": "ˈmɪdəl",
+    "img": "/assets/word-img/middle.svg"
+  },
+  "milk": {
+    "cn": "牛奶",
+    "ipa": "[mɛlk]",
+    "img": "/assets/word-img/milk.jpg"
+  },
+  "mind": {
+    "cn": "头脑",
+    "ipa": "maɪnd",
+    "img": "/assets/word-img/mind.svg"
+  },
+  "mine": {
+    "cn": "矿",
+    "ipa": "maɪn",
+    "img": "/assets/word-img/mine.svg"
+  },
+  "minute": {
+    "cn": "分钟",
+    "ipa": "ˈmɪnɪt",
+    "img": "/assets/word-img/minute.svg"
+  },
+  "mist": {
+    "cn": "薄雾",
+    "ipa": "mɪst",
+    "img": "/assets/word-img/mist.svg"
+  },
+  "money": {
+    "cn": "钱",
+    "ipa": "ˈmʌni",
+    "img": "/assets/word-img/money.jpg"
+  },
+  "month": {
+    "cn": "月",
+    "ipa": "mʌnθ",
+    "img": "/assets/word-img/month.svg"
+  },
+  "morning": {
+    "cn": "早晨",
+    "ipa": "ˈmɔːnɪŋ",
+    "img": "/assets/word-img/morning.jpg"
+  },
+  "mother": {
+    "cn": "母亲",
+    "ipa": "ˈmʌðə(ɹ)",
+    "img": "/assets/word-img/mother.svg"
+  },
+  "motion": {
+    "cn": "运动",
+    "ipa": "ˈməʊʃən",
+    "img": "/assets/word-img/motion.svg"
+  },
+  "mountain": {
+    "cn": "山",
+    "ipa": "ˈmaʊntɪn",
+    "img": "/assets/word-img/mountain.svg"
+  },
+  "move": {
+    "cn": "移动",
+    "ipa": "muːv",
+    "img": "/assets/word-img/move.svg"
+  },
+  "music": {
+    "cn": "音乐",
+    "ipa": "ˈmjuːzɪk",
+    "img": "/assets/word-img/music.jpg"
+  },
+  "name": {
+    "cn": "姓名",
+    "ipa": "neɪm",
+    "img": "/assets/word-img/name.jpg"
+  },
+  "nation": {
+    "cn": "国家",
+    "ipa": "ˈneɪ.ʃən",
+    "img": "/assets/word-img/nation.svg"
+  },
+  "need": {
+    "cn": "需要",
+    "ipa": "niːd",
+    "img": "/assets/word-img/need.svg"
+  },
+  "news": {
+    "cn": "消息",
+    "ipa": "njuːz",
+    "img": "/assets/word-img/news.svg"
+  },
+  "night": {
+    "cn": "夜晚",
+    "ipa": "naɪt",
+    "img": "/assets/word-img/night.jpg"
+  },
+  "noise": {
+    "cn": "噪音",
+    "ipa": "nɔɪz",
+    "img": "/assets/word-img/noise.svg"
+  },
+  "note": {
+    "cn": "笔记",
+    "ipa": "nəʊt",
+    "img": "/assets/word-img/note.svg"
+  },
+  "number": {
+    "cn": "数字",
+    "ipa": "ˈnʌmbə",
+    "img": "/assets/word-img/number.svg"
+  },
+  "observation": {
+    "cn": "观察",
+    "ipa": "ˌɒbzəˈveɪʃ(ə)n",
+    "img": "/assets/word-img/observation.jpg"
+  },
+  "offer": {
+    "cn": "提议/报价",
+    "ipa": "ˈɑfɚ",
+    "img": "/assets/word-img/offer.svg"
+  },
+  "oil": {
+    "cn": "油",
+    "ipa": "ɔɪl",
+    "img": "/assets/word-img/oil.svg"
+  },
+  "operation": {
+    "cn": "手术",
+    "ipa": "ˌɒpəˈɹeɪʃən",
+    "img": "/assets/word-img/operation.svg"
+  },
+  "opinion": {
+    "cn": "观点",
+    "ipa": "əˈpɪnjən",
+    "img": "/assets/word-img/opinion.svg"
+  },
+  "scale": {
+    "cn": "规模",
+    "ipa": "skeɪl",
+    "img": "/assets/word-img/scale.svg"
+  },
+  "science": {
+    "cn": "科学",
+    "ipa": "ˈsaɪəns",
+    "img": "/assets/word-img/science.svg"
+  },
+  "sea": {
+    "cn": "海",
+    "ipa": "siː",
+    "img": "/assets/word-img/sea.jpg"
+  },
+  "seat": {
+    "cn": "座位",
+    "ipa": "siːt",
+    "img": "/assets/word-img/seat.svg"
+  },
+  "secretary": {
+    "cn": "秘书",
+    "ipa": "ˈsɛk.ɹə.tɹi",
+    "img": "/assets/word-img/secretary.svg"
+  },
+  "selection": {
+    "cn": "选择",
+    "ipa": "səˈlɛkʃən",
+    "img": "/assets/word-img/selection.svg"
+  },
+  "self": {
+    "cn": "自己",
+    "ipa": "sɛlf",
+    "img": "/assets/word-img/self.svg"
+  },
+  "sense": {
+    "cn": "感觉",
+    "ipa": "sɛn(t)s",
+    "img": "/assets/word-img/sense.svg"
+  },
+  "servant": {
+    "cn": "仆人",
+    "ipa": "ˈsɜːvənt",
+    "img": "/assets/word-img/servant.svg"
+  },
+  "sex": {
+    "cn": "性别",
+    "ipa": "sɛks",
+    "img": "/assets/word-img/sex.jpg"
+  },
+  "shade": {
+    "cn": "阴影",
+    "ipa": "ʃeɪd",
+    "img": "/assets/word-img/shade.svg"
+  },
+  "shake": {
+    "cn": "摇动/握手",
+    "ipa": "ˈʃeɪk",
+    "img": "/assets/word-img/shake.svg"
+  },
+  "shame": {
+    "cn": "耻辱",
+    "ipa": "ʃeɪm",
+    "img": "/assets/word-img/shame.svg"
+  },
+  "shock": {
+    "cn": "震惊",
+    "ipa": "ʃɒk",
+    "img": "/assets/word-img/shock.svg"
+  },
+  "side": {
+    "cn": "边",
+    "ipa": "saɪd",
+    "img": "/assets/word-img/side.svg"
+  },
+  "sign": {
+    "cn": "符号",
+    "ipa": "saɪn",
+    "img": "/assets/word-img/sign.svg"
+  },
+  "silk": {
+    "cn": "丝绸",
+    "ipa": "sɪlk",
+    "img": "/assets/word-img/silk.svg"
+  },
+  "silver": {
+    "cn": "银",
+    "ipa": "ˈsɪl.və",
+    "img": "/assets/word-img/silver.svg"
+  },
+  "sister": {
+    "cn": "姐姐",
+    "ipa": "ˈsɪs.tə",
+    "img": "/assets/word-img/sister.svg"
+  },
+  "size": {
+    "cn": "尺寸",
+    "ipa": "saɪz",
+    "img": "/assets/word-img/size.svg"
+  },
+  "sky": {
+    "cn": "天空",
+    "ipa": "skaɪ",
+    "img": "/assets/word-img/sky.svg"
+  },
+  "sleep": {
+    "cn": "睡觉",
+    "ipa": "sliːp",
+    "img": "/assets/word-img/sleep.jpg"
+  },
+  "slip": {
+    "cn": "滑动/滑跤/纸条",
+    "ipa": "slɪp",
+    "img": "/assets/word-img/slip.svg"
+  },
+  "slope": {
+    "cn": "坡",
+    "ipa": "sləʊp",
+    "img": "/assets/word-img/slope.svg"
+  },
+  "smash": {
+    "cn": "粉碎/撞击",
+    "ipa": "smæʃ",
+    "img": "/assets/word-img/smash.svg"
+  },
+  "smell": {
+    "cn": "气味/嗅觉",
+    "ipa": "smɛl",
+    "img": "/assets/word-img/smell.svg"
+  },
+  "smile": {
+    "cn": "微笑",
+    "ipa": "ˈsmaɪ.əl",
+    "img": "/assets/word-img/smile.svg"
+  },
+  "smoke": {
+    "cn": "烟/烟雾",
+    "ipa": "sməʊk",
+    "img": "/assets/word-img/smoke.jpg"
+  },
+  "sneeze": {
+    "cn": "喷嚏",
+    "ipa": "sniːz",
+    "img": "/assets/word-img/sneeze.svg"
+  },
+  "snow": {
+    "cn": "雪",
+    "ipa": "snəʊ",
+    "img": "/assets/word-img/snow.jpg"
+  },
+  "touch": {
+    "cn": "触摸/触觉",
+    "ipa": "tʌtʃ",
+    "img": "/assets/word-img/touch.svg"
+  },
+  "transport": {
+    "cn": "运输",
+    "ipa": "ˈtræn.spɔːt",
+    "img": "/assets/word-img/transport.jpg"
+  },
+  "use": {
+    "cn": "使用",
+    "ipa": "juːs",
+    "img": "/assets/word-img/use.svg"
+  },
+  "army": {
+    "cn": "军队",
+    "ipa": "ˈɑː.miː",
+    "img": "/assets/word-img/army.jpg"
+  },
+  "baby": {
+    "cn": "婴儿",
+    "ipa": "ˈbeɪbi",
+    "img": "/assets/word-img/baby.jpg"
+  },
+  "bag": {
+    "cn": "袋子",
+    "ipa": "ˈbæːɡ",
+    "img": "/assets/word-img/bag.jpg"
+  },
+  "ball": {
+    "cn": "球",
+    "ipa": "bɔːl",
+    "img": "/assets/word-img/ball.jpg"
+  },
+  "band": {
+    "cn": "带子/条带",
+    "ipa": "bænd",
+    "img": "/assets/word-img/band.jpg"
+  },
+  "basin": {
+    "cn": "脸盆",
+    "ipa": "ˈbeɪsɪn",
+    "img": "/assets/word-img/basin.jpg"
+  },
+  "basket": {
+    "cn": "篮子",
+    "ipa": "ˈbaːskət",
+    "img": "/assets/word-img/basket.jpg"
+  },
+  "bath": {
+    "cn": "浴缸",
+    "ipa": "bɐːθ",
+    "img": "/assets/word-img/bath.jpg"
+  },
+  "bed": {
+    "cn": "床",
+    "ipa": "bed",
+    "img": "/assets/word-img/bed.jpg"
+  },
+  "bee": {
+    "cn": "蜜蜂",
+    "ipa": "ˈbiː",
+    "img": "/assets/word-img/bee.jpg"
+  },
+  "bell": {
+    "cn": "铃铛",
+    "ipa": "bɛl",
+    "img": "/assets/word-img/bell.jpg"
+  },
+  "berry": {
+    "cn": "浆果",
+    "ipa": "ˈbɛɹi",
+    "img": "/assets/word-img/berry.jpg"
+  },
+  "bird": {
+    "cn": "鸟",
+    "ipa": "bɜd",
+    "img": "/assets/word-img/bird.jpg"
+  },
+  "blade": {
+    "cn": "刀刃",
+    "ipa": "bleɪd",
+    "img": "/assets/word-img/blade.jpg"
+  },
+  "board": {
+    "cn": "木板",
+    "ipa": "bɔːd",
+    "img": "/assets/word-img/board.jpg"
+  },
+  "boat": {
+    "cn": "小船",
+    "ipa": "bəʊt",
+    "img": "/assets/word-img/boat.jpg"
+  },
+  "bone": {
+    "cn": "骨头",
+    "ipa": "bəʉn",
+    "img": "/assets/word-img/bone.jpg"
+  },
+  "book": {
+    "cn": "书",
+    "ipa": "buːk",
+    "img": "/assets/word-img/book.jpg"
+  },
+  "cushion": {
+    "cn": "软垫",
+    "ipa": "ˈkʊʃən",
+    "img": "/assets/word-img/cushion.jpg"
+  },
+  "door": {
+    "cn": "门",
+    "ipa": "dɔː",
+    "img": "/assets/word-img/door.jpg"
+  },
+  "drain": {
+    "cn": "排水沟",
+    "ipa": "dɹeɪn",
+    "img": "/assets/word-img/drain.jpg"
+  },
+  "drawer": {
+    "cn": "抽屉",
+    "ipa": "dɹɔː(ɹ)",
+    "img": "/assets/word-img/drawer.jpg"
+  },
+  "dress": {
+    "cn": "连衣裙",
+    "ipa": "dɹɛs",
+    "img": "/assets/word-img/dress.jpg"
+  },
+  "drop": {
+    "cn": "水滴",
+    "ipa": "dɹɒp",
+    "img": "/assets/word-img/drop.jpg"
+  },
+  "ear": {
+    "cn": "耳朵",
+    "ipa": "ɪə̯",
+    "img": "/assets/word-img/ear.jpg"
+  },
+  "egg": {
+    "cn": "蛋",
+    "ipa": "eɪɡ",
+    "img": "/assets/word-img/egg.jpg"
+  },
+  "engine": {
+    "cn": "引擎",
+    "ipa": "end͡ʒən",
+    "img": "/assets/word-img/engine.jpg"
+  },
+  "eye": {
+    "cn": "眼睛",
+    "ipa": "aɪ",
+    "img": "/assets/word-img/eye.jpg"
+  },
+  "face": {
+    "cn": "脸",
+    "ipa": "feɪs",
+    "img": "/assets/word-img/face.jpg"
+  },
+  "farm": {
+    "cn": "农场",
+    "ipa": "fɑːɹm",
+    "img": "/assets/word-img/farm.jpg"
+  },
+  "knife": {
+    "cn": "小刀/刀",
+    "ipa": "naɪf",
+    "img": "/assets/word-img/knife.jpg"
+  },
+  "knot": {
+    "cn": "绳结/结",
+    "ipa": "nɒt",
+    "img": "/assets/word-img/knot.jpg"
+  },
+  "leaf": {
+    "cn": "叶子",
+    "ipa": "liːf",
+    "img": "/assets/word-img/leaf.svg"
+  },
+  "leg": {
+    "cn": "腿",
+    "ipa": "leɪɡ",
+    "img": "/assets/word-img/leg.jpg"
+  },
+  "library": {
+    "cn": "图书馆",
+    "ipa": "ˈlaɪbɹi",
+    "img": "/assets/word-img/library.jpg"
+  },
+  "line": {
+    "cn": "线",
+    "ipa": "laɪn",
+    "img": "/assets/word-img/line.jpg"
+  },
+  "lip": {
+    "cn": "唇",
+    "ipa": "lɪp",
+    "img": "/assets/word-img/lip.jpg"
+  },
+  "lock": {
+    "cn": "锁",
+    "ipa": "lɒk",
+    "img": "/assets/word-img/lock.jpg"
+  },
+  "map": {
+    "cn": "地图",
+    "ipa": "mæp",
+    "img": "/assets/word-img/map.jpg"
+  },
+  "match": {
+    "cn": "火柴",
+    "ipa": "mæt͡ʃ",
+    "img": "/assets/word-img/match.jpg"
+  },
+  "monkey": {
+    "cn": "猴子",
+    "ipa": "ˈmʌŋki",
+    "img": "/assets/word-img/monkey.jpg"
+  },
+  "moon": {
+    "cn": "月亮",
+    "ipa": "muːn",
+    "img": "/assets/word-img/moon.jpg"
+  },
+  "mouth": {
+    "cn": "嘴巴",
+    "ipa": "mʌʊθ",
+    "img": "/assets/word-img/mouth.jpg"
+  },
+  "muscle": {
+    "cn": "肌肉",
+    "ipa": "ˈmʌs.əl",
+    "img": "/assets/word-img/muscle.jpg"
+  },
+  "nail": {
+    "cn": "指甲/钉子",
+    "ipa": "neɪl",
+    "img": "/assets/word-img/nail.svg"
+  },
+  "neck": {
+    "cn": "脖子",
+    "ipa": "nɛk",
+    "img": "/assets/word-img/neck.jpg"
+  },
+  "net": {
+    "cn": "网",
+    "ipa": "net",
+    "img": "/assets/word-img/net.jpg"
+  },
+  "sock": {
+    "cn": "短袜",
+    "ipa": "sɒk",
+    "img": "/assets/word-img/sock.jpg"
+  },
+  "spade": {
+    "cn": "铁锹/铲子",
+    "ipa": "speɪd",
+    "img": "/assets/word-img/spade.jpg"
+  },
+  "sponge": {
+    "cn": "海绵",
+    "ipa": "spʌnd͡ʒ",
+    "img": "/assets/word-img/sponge.jpg"
+  },
+  "spoon": {
+    "cn": "勺子",
+    "ipa": "spuːn",
+    "img": "/assets/word-img/spoon.jpg"
+  },
+  "spring": {
+    "cn": "弹簧",
+    "ipa": "spɹɪŋ",
+    "img": "/assets/word-img/spring.jpg"
+  },
+  "square": {
+    "cn": "正方形",
+    "ipa": "skwɛə(ɹ)",
+    "img": "/assets/word-img/square.jpg"
+  },
+  "stamp": {
+    "cn": "邮票",
+    "ipa": "stæmp",
+    "img": "/assets/word-img/stamp.jpg"
+  },
+  "star": {
+    "cn": "星星",
+    "ipa": "stɑː(ɹ)",
+    "img": "/assets/word-img/star.jpg"
+  },
+  "station": {
+    "cn": "车站",
+    "ipa": "ˈsteɪʃən",
+    "img": "/assets/word-img/station.jpg"
+  },
+  "stem": {
+    "cn": "茎/茎干",
+    "ipa": "stɛm",
+    "img": "/assets/word-img/stem.jpg"
+  },
+  "stick": {
+    "cn": "木棍",
+    "ipa": "stɪk",
+    "img": "/assets/word-img/stick.jpg"
+  },
+  "stocking": {
+    "cn": "长筒袜",
+    "ipa": "ˈstɒkɪŋ",
+    "img": "/assets/word-img/stocking.jpg"
+  },
+  "stomach": {
+    "cn": "胃",
+    "ipa": "ˈstʌmək",
+    "img": "/assets/word-img/stomach.jpg"
+  },
+  "store": {
+    "cn": "店铺",
+    "ipa": "stɔː",
+    "img": "/assets/word-img/store.jpg"
+  },
+  "angry": {
+    "cn": "生气的",
+    "ipa": "ˈæŋ.ɡɹi",
+    "img": "/assets/word-img/angry.svg"
+  },
+  "automatic": {
+    "cn": "自动的",
+    "ipa": "ˌɔːtəˈmætɪk",
+    "img": "/assets/word-img/automatic.svg"
+  },
+  "beautiful": {
+    "cn": "美丽的",
+    "ipa": "ˈbjuːtɪfəl",
+    "img": "/assets/word-img/beautiful.svg"
+  },
+  "black": {
+    "cn": "黑色的",
+    "ipa": "blak",
+    "img": "/assets/word-img/black.svg"
+  },
+  "boiling": {
+    "cn": "沸腾的",
+    "ipa": "ˈbɔɪlɪŋ",
+    "img": "/assets/word-img/boiling.svg"
+  },
+  "bright": {
+    "cn": "明亮的",
+    "ipa": "bɹaɪt",
+    "img": "/assets/word-img/bright.svg"
+  },
+  "broken": {
+    "cn": "破碎的",
+    "ipa": "ˈbɹəʊkən",
+    "img": "/assets/word-img/broken.svg"
+  },
+  "brown": {
+    "cn": "棕色的",
+    "ipa": "bɹaʊn",
+    "img": "/assets/word-img/brown.svg"
+  },
+  "cheap": {
+    "cn": "便宜的",
+    "ipa": "t͡ʃiːp",
+    "img": "/assets/word-img/cheap.svg"
+  },
+  "chemical": {
+    "cn": "化学的",
+    "ipa": "ˈkɛmɪkəl",
+    "img": "/assets/word-img/chemical.svg"
+  },
+  "chief": {
+    "cn": "主要的",
+    "ipa": "tʃiːf",
+    "img": "/assets/word-img/chief.svg"
+  },
+  "clean": {
+    "cn": "干净的",
+    "ipa": "kleːn",
+    "img": "/assets/word-img/clean.svg"
+  },
+  "clear": {
+    "cn": "清晰的",
+    "ipa": "klɪə(ɹ)",
+    "img": "/assets/word-img/clear.svg"
+  },
+  "common": {
+    "cn": "常见的",
+    "ipa": "ˈkɒmən",
+    "img": "/assets/word-img/common.svg"
+  },
+  "complex": {
+    "cn": "复杂的",
+    "ipa": "ˈkɒm.pleks",
+    "img": "/assets/word-img/complex.svg"
+  },
+  "conscious": {
+    "cn": "有意识的",
+    "ipa": "ˈkɒn.ʃəs",
+    "img": "/assets/word-img/conscious.svg"
+  },
+  "cut": {
+    "cn": "切割的",
+    "ipa": "kʌt",
+    "img": "/assets/word-img/cut.svg"
+  },
+  "deep": {
+    "cn": "深的",
+    "ipa": "diːp",
+    "img": "/assets/word-img/deep.svg"
+  },
+  "dependent": {
+    "cn": "依赖的",
+    "ipa": "dɪˈpɛndənt",
+    "img": "/assets/word-img/dependent.svg"
+  },
+  "early": {
+    "cn": "早的",
+    "ipa": "ˈɜː.li",
+    "img": "/assets/word-img/early.svg"
+  },
+  "quiet": {
+    "cn": "安静的",
+    "ipa": "ˈkwaɪ.ət",
+    "img": "/assets/word-img/quiet.svg"
+  },
+  "ready": {
+    "cn": "准备好的",
+    "ipa": "ˈɹɛdi",
+    "img": "/assets/word-img/ready.svg"
+  },
+  "red": {
+    "cn": "红色的",
+    "ipa": "ɹɛd",
+    "img": "/assets/word-img/red.svg"
+  },
+  "regular": {
+    "cn": "规则的",
+    "ipa": "ˈɹɛɡjʊlə",
+    "img": "/assets/word-img/regular.svg"
+  },
+  "responsible": {
+    "cn": "负责任的",
+    "ipa": "ɹɪˈspɒnsəbl̩",
+    "img": "/assets/word-img/responsible.svg"
+  },
+  "right": {
+    "cn": "正确的",
+    "ipa": "ˈɹaɪt",
+    "img": "/assets/word-img/right.svg"
+  },
+  "round": {
+    "cn": "圆的",
+    "ipa": "ˈɹaʊnd",
+    "img": "/assets/word-img/round.svg"
+  },
+  "same": {
+    "cn": "相同的",
+    "ipa": "seɪm",
+    "img": "/assets/word-img/same.svg"
+  },
+  "second": {
+    "cn": "第二的",
+    "ipa": "ˈsɛkɪnd",
+    "img": "/assets/word-img/second.svg"
+  },
+  "separate": {
+    "cn": "分离的",
+    "ipa": "ˈsɛpəɹət",
+    "img": "/assets/word-img/separate.svg"
+  },
+  "serious": {
+    "cn": "严肃的",
+    "ipa": "ˈsɪə.ɹi.əs",
+    "img": "/assets/word-img/serious.svg"
+  },
+  "tight": {
+    "cn": "紧的",
+    "ipa": "taɪt",
+    "img": "/assets/word-img/tight.svg"
+  },
+  "dirty": {
+    "cn": "脏的",
+    "ipa": "ˈdɜːti",
+    "img": "/assets/word-img/dirty.svg"
+  },
+  "dry": {
+    "cn": "干的",
+    "ipa": "dɹaɪ",
+    "img": "/assets/word-img/dry.svg"
+  },
+  "false": {
+    "cn": "错误的",
+    "ipa": "fɒls",
+    "img": "/assets/word-img/false.svg"
+  },
+  "feeble": {
+    "cn": "无力的",
+    "ipa": "ˈfiːbəl",
+    "img": "/assets/word-img/feeble.svg"
+  },
+  "female": {
+    "cn": "女性的",
+    "ipa": "ˈfiː.meɪl",
+    "img": "/assets/word-img/female.svg"
+  },
+  "foolish": {
+    "cn": "愚蠢的",
+    "ipa": "ˈfuː.lɪʃ",
+    "img": "/assets/word-img/foolish.svg"
+  },
+  "future": {
+    "cn": "未来的",
+    "ipa": "ˈfjuːt͡ʃə",
+    "img": "/assets/word-img/future.svg"
+  },
+  "green": {
+    "cn": "绿色的",
+    "ipa": "ɡɹiːn",
+    "img": "/assets/word-img/green.svg"
+  },
+  "ill": {
+    "cn": "生病的",
+    "ipa": "ɪl",
+    "img": "/assets/word-img/ill.svg"
+  },
+  "last": {
+    "cn": "最后的",
+    "ipa": "last",
+    "img": "/assets/word-img/last.svg"
+  },
+  "late": {
+    "cn": "晚的",
+    "ipa": "leɪt",
+    "img": "/assets/word-img/late.svg"
+  },
+  "left": {
+    "cn": "左边的",
+    "ipa": "lɛft",
+    "img": "/assets/word-img/left.svg"
+  },
+  "loose": {
+    "cn": "松的",
+    "ipa": "luːs",
+    "img": "/assets/word-img/loose.svg"
+  },
+  "loud": {
+    "cn": "大声的",
+    "ipa": "laʊd",
+    "img": "/assets/word-img/loud.svg"
+  },
+  "low": {
+    "cn": "低的",
+    "ipa": "ləʊ",
+    "img": "/assets/word-img/low.svg"
+  },
+  "mixed": {
+    "cn": "混合的",
+    "ipa": "mɪkst",
+    "img": "/assets/word-img/mixed.svg"
+  },
+  "behavior": {
+    "ipa": "bɪˈheɪvjə",
+    "cn": "行为",
+    "img": "/assets/word-img/behavior.svg"
+  },
+  "color": {
+    "cn": "颜色",
+    "ipa": "ˈkʌl.ə(ɹ)",
+    "img": "/assets/word-img/color.svg"
+  },
+  "harbor": {
+    "ipa": "ˈhɑːbə",
+    "cn": "港口",
+    "img": "/assets/word-img/harbor.svg"
+  },
+  "humor": {
+    "ipa": "ˈhjuː.mə(ɹ)",
+    "cn": "幽默",
+    "img": "/assets/word-img/humor.svg"
+  },
+  "I": {
+    "ipa": "aɪ",
+    "cn": "我",
+    "img": "/assets/word-img/I.svg"
+  }
+}

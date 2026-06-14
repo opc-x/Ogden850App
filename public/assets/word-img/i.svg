@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+  <rect width="200" height="150" fill="#faf8f4"/>
+  <circle cx="100" cy="55" r="18" fill="#2c2825"/>
+  <path d="M70 120 Q100 80 130 120" fill="#2c2825"/>
+  <!-- An arrow pointing to the self (chest) to emphasize "I" -->
+  <line x1="36" y1="75" x2="72" y2="90" stroke="#b45309" stroke-width="4" stroke-linecap="round" />
+  <path d="M62.3 92.5 L72 90 L66.8 81.3" fill="none" stroke="#b45309" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <text x="100" y="138" text-anchor="middle" font-size="13" fill="#b45309" font-family="sans-serif">我</text>
+</svg>
