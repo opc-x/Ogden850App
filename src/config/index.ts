@@ -6,10 +6,9 @@
 export const APP_CONFIG = {
   // TTS (Text-To-Speech) 发音配置
   TTS: {
-    // 切换到谷歌翻译原生纯正口音 AI (免费、免鉴权)
-    GOOGLE_TTS_BASE_URL: 'https://translate.google.com/translate_tts',
-    DEFAULT_LANG: 'en', // 'en' for English
-    CLIENT_TYPE: 'tw-ob', // Magic client type that allows direct access
+    // 使用有道词典真人发音接口（国内网络友好，发音纯正）
+    YOUDAO_TTS_BASE_URL: 'https://dict.youdao.com/dictvoice',
+    DEFAULT_TYPE: 2, // 1: 英音, 2: 美音
   },
   
   // 本地存储键名

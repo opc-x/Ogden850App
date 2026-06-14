@@ -67,17 +67,27 @@ export const BrowserView: React.FC<BrowserViewProps> = ({
         <div className="flex flex-col sm:flex-row gap-3">
           <div className="flex-1 overflow-x-auto pb-1 hide-scrollbar">
             <div className="flex gap-2 min-w-max">
-              {['all', 'operators', 'actions', 'things', 'picturables', 'generals', 'qualities', 'opposites'].map(cat => (
+              {['all', 'operators', 'actions', 'picturables', 'generals', 'qualities', 'opposites'].map(cat => (
                 <button
                   key={cat}
                   onClick={() => setBrowserCategory(cat)}
-                  className={`px-4 py-2 rounded-xl text-xs font-black transition-all cursor-pointer border ${
+                  className={`px-4 py-2 rounded-xl text-xs font-black transition-all cursor-pointer border flex items-center gap-1.5 ${
                     browserCategory === cat 
-                    ? 'bg-slate-800 text-white border-slate-800 shadow-md' 
+                    ? 'bg-cyan-50 text-cyan-600 border-cyan-200 shadow-sm' 
                     : 'bg-white text-slate-500 border-slate-200 hover:bg-slate-50'
                   }`}
                 >
-                  {cat === 'all' ? '全部分类' : CATEGORY_LABELS[cat]?.zh}
+                  <span>{cat === 'all' ? '全部分类' : CATEGORY_LABELS[cat]?.zh}</span>
+                  {cat !== 'all' && CATEGORY_LABELS[cat]?.count && (
+                    <span className={`text-[10px] ${browserCategory === cat ? 'text-cyan-600/60' : 'text-slate-400'}`}>
+                      {CATEGORY_LABELS[cat].count}
+                    </span>
+                  )}
+                  {cat === 'all' && (
+                    <span className={`text-[10px] ${browserCategory === cat ? 'text-cyan-600/60' : 'text-slate-400'}`}>
+                      850
+                    </span>
+                  )}
                 </button>
               ))}
             </div>
@@ -87,16 +97,31 @@ export const BrowserView: React.FC<BrowserViewProps> = ({
               <button
                 key={status}
                 onClick={() => setBrowserStatus(status)}
-                className={`px-4 py-2 rounded-xl text-xs font-black transition-all cursor-pointer border ${
+                className={`px-4 py-2 rounded-xl text-xs font-black transition-all cursor-pointer border flex items-center gap-1.5 ${
                   browserStatus === status
                   ? 'bg-cyan-50 text-cyan-600 border-cyan-200 shadow-sm'
                   : 'bg-white text-slate-500 border-slate-200 hover:bg-slate-50'
                 }`}
               >
                 {status === 'all' && '全状态'}
-                {status === 'starred' && '已收藏'}
-                {status === 'learning' && '正在学'}
-                {status === 'mastered' && '已掌握'}
+                {status === 'starred' && (
+                  <>
+                    <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+                    已收藏
+                  </>
+                )}
+                {status === 'learning' && (
+                  <>
+                    <div className="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-sm" />
+                    正在学
+                  </>
+                )}
+                {status === 'mastered' && (
+                  <>
+                    <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 shadow-sm" />
+                    已掌握
+                  </>
+                )}
               </button>
             ))}
           </div>
@@ -129,33 +154,66 @@ export const BrowserView: React.FC<BrowserViewProps> = ({
                     : 'border-slate-100 hover:border-slate-200 shadow-sm'
                   }`}
                 >
-                  <div className="p-4 sm:p-5">
-                    <div className="flex justify-between items-start mb-2">
-                      <span className="text-[9px] sm:text-[10px] font-black text-slate-400 uppercase tracking-widest bg-slate-50 px-2 py-0.5 rounded-md border border-slate-100">
-                        {CATEGORY_LABELS[word.category]?.zh}
-                      </span>
-                      {isStarred && <Star className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-amber-400 fill-amber-400" />}
+                  <div className="flex w-full p-4 sm:p-5 items-center">
+                    {/* Left: Image */}
+                    <div className="flex items-center justify-center w-20 sm:w-24 shrink-0 mr-8 sm:mr-10">
+                      {(() => {
+                        const annotation = (wordAnnotations as any)[word.word.toLowerCase()];
+                        const img = annotation?.img;
+                        return img ? (
+                          <div className="w-full h-16 sm:h-20 bg-white flex items-center justify-center">
+                            <img 
+                              src={img.replace(/\/200px-/g, '/120px-')} 
+                              alt="" 
+                              className="w-full h-full object-contain bg-white"
+                              onError={(e) => { e.currentTarget.src = img; }}
+                            />
+                          </div>
+                        ) : (
+                          <div className="w-full h-16 sm:h-20 bg-white flex items-center justify-center opacity-10">
+                          </div>
+                        );
+                      })()}
                     </div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <h3 className="text-xl sm:text-2xl font-black text-slate-800 tracking-tight">{word.word}</h3>
-                      <button 
-                        onClick={(e) => { e.stopPropagation(); playSpeech(word.word); }}
-                        className="p-1 sm:p-1.5 text-cyan-600/50 hover:text-white hover:bg-cyan-500 rounded-full transition-colors cursor-pointer"
-                        title="发音"
-                      >
-                        <Volume2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                      </button>
-                    </div>
-                    <p className="text-[11px] sm:text-xs font-bold text-slate-500 truncate">{word.translation}</p>
-                    
-                    {/* Status Badge */}
-                    {status && (
-                      <div className="absolute bottom-0 right-0 p-2 sm:p-3">
-                        <div className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full ${
-                          status === 'mastered' ? 'bg-emerald-400' : 'bg-cyan-400'
-                        } shadow-sm ring-2 ring-white`} />
+
+                    {/* Right: Word info */}
+                    <div className="flex-1 min-w-0 flex flex-col justify-center py-1">
+                      <div className="flex items-center justify-between mb-1">
+                        <div className="flex items-center gap-2 pr-2">
+                          <div className="flex items-baseline gap-2">
+                            <h3 className="text-xl sm:text-2xl font-black text-slate-800 tracking-tight">{word.word}</h3>
+                            {word.ipa && (
+                              <span className="text-sm sm:text-base font-semibold text-slate-400 font-mono tracking-tight">/{word.ipa}/</span>
+                            )}
+                          </div>
+                          <button 
+                            onClick={(e) => { e.stopPropagation(); playSpeech(word.word); }}
+                            className="p-1 sm:p-1.5 text-cyan-600/50 hover:text-white hover:bg-cyan-500 rounded-full transition-colors cursor-pointer shrink-0"
+                            title="发音"
+                          >
+                            <Volume2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                          </button>
+                        </div>
+                        
+                        {/* Top Right: Star & Status */}
+                        <div className="flex items-center gap-2 shrink-0 self-start mt-1">
+                          {isStarred ? (
+                            <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
+                          ) : (
+                            <Star className="w-4 h-4 text-slate-200" />
+                          )}
+                          {status ? (
+                            <div className={`w-2.5 h-2.5 rounded-full ${
+                              status === 'mastered' ? 'bg-emerald-400' : 'bg-cyan-400'
+                            } shadow-sm ring-2 ring-white`} />
+                          ) : (
+                            <div className="w-2.5 h-2.5 rounded-full border-[2px] border-slate-200 bg-transparent" />
+                          )}
+                        </div>
                       </div>
-                    )}
+                      
+                      <p className="text-[11px] sm:text-xs font-bold text-slate-500 mt-1 line-clamp-2">{word.translation}</p>
+                    </div>
                   </div>
                 </motion.div>
               );

@@ -7,6 +7,7 @@ export interface Word {
   translation: string;
   category: 'operators' | 'actions' | 'picturables' | 'generals' | 'qualities' | 'opposites';
   definition_en: string;
+  ipa?: string;
 }
 
 export const CATEGORY_LABELS: Record<string, { zh: string; en: string; icon: string; bg: string; text: string; border: string; count: number }> = {
@@ -93,6 +94,7 @@ export const wordsData: Word[] = WORDS.map(w => {
     word: w.w,
     translation: w.cn || w.w,
     category,
-    definition_en: definition
+    definition_en: definition,
+    ipa: w.ipa
   };
 });

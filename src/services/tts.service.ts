@@ -13,8 +13,8 @@ export const TTSService = {
     if (!text.trim()) return;
 
     try {
-      // 使用全新 Google Translate 纯正免费神经网络发音
-      const url = `${APP_CONFIG.TTS.GOOGLE_TTS_BASE_URL}?ie=UTF-8&q=${encodeURIComponent(text)}&tl=${APP_CONFIG.TTS.DEFAULT_LANG}&client=${APP_CONFIG.TTS.CLIENT_TYPE}`;
+      // 优先使用有道词典真人发音接口（国内直连无障碍）
+      const url = `${APP_CONFIG.TTS.YOUDAO_TTS_BASE_URL}?audio=${encodeURIComponent(text)}&type=${APP_CONFIG.TTS.DEFAULT_TYPE}`;
       const audio = new Audio(url);
       
       // 添加错误降级处理

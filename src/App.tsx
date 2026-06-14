@@ -48,6 +48,7 @@ import { BrowserView } from './views/BrowserView';
 import { PracticeView } from './views/PracticeView';
 import { StatsView } from './views/StatsView';
 import { HomeView } from './views/HomeView';
+import { AppLogo } from './components/AppLogo';
 
 function AppContent() {
   // Navigation & UI States
@@ -594,16 +595,11 @@ function AppContent() {
           {/* Top Header App Bar */}
           <header className="flex-none w-full bg-white/90 backdrop-blur-xl flex items-center justify-between px-4 sm:px-6 py-3 border-b border-slate-200/60 z-40 pt-safe">
         <div className="flex items-center gap-3">
-          <div 
-            onClick={() => setActiveTab('home')}
-            className="w-10 h-10 rounded-xl bg-orange-600/10 flex items-center justify-center cursor-pointer active:scale-95 transition-all shadow-sm border border-orange-500/10"
-          >
-            <BookMarked className="w-6 h-6 text-[#c65a30]" />
-          </div>
           <div>
             <h1 
               onClick={() => setActiveTab('home')}
-              className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#c65a30] cursor-pointer hover:opacity-90 select-none"
+              style={{ fontFamily: "'Pacifico', cursive", fontSize: "1.75rem" }}
+              className="font-extrabold tracking-tight text-[#c65a30] cursor-pointer hover:opacity-90 select-none pb-1"
             >
               Ogden 850
             </h1>
@@ -644,6 +640,8 @@ function AppContent() {
             setActiveTab={setActiveTab}
             loadWordAiContext={loadWordAiContext}
             totalWords={totalWords}
+            setBrowserCategory={setBrowserCategory}
+            setBrowserStatus={setBrowserStatus as any}
           />
         )}
 
@@ -846,10 +844,10 @@ function AppContent() {
         <button 
           id="nav-home"
           onClick={() => setActiveTab('home')}
-          className={`flex flex-col items-center justify-center transition-all duration-300 outline-none w-14 cursor-pointer ${
+          className={`flex flex-col items-center justify-center transition-all duration-300 outline-none w-14 py-1.5 rounded-2xl cursor-pointer ${
             activeTab === 'home' 
-            ? 'text-[#c65a30] scale-105 font-black' 
-            : 'text-orange-800/40 hover:text-orange-950'
+            ? 'bg-orange-50 text-[#c65a30] scale-105 font-black shadow-sm' 
+            : 'text-orange-800/40 hover:text-orange-950 hover:bg-orange-50/50'
           }`}
         >
           <Home className="w-5 h-5" />
@@ -864,10 +862,10 @@ function AppContent() {
             setBrowserStatus('all');
             setActiveTab('browser');
           }}
-          className={`flex flex-col items-center justify-center transition-all duration-300 outline-none w-14 cursor-pointer ${
+          className={`flex flex-col items-center justify-center transition-all duration-300 outline-none w-14 py-1.5 rounded-2xl cursor-pointer ${
             activeTab === 'browser'
-            ? 'text-[#c65a30] scale-105 font-black'
-            : 'text-orange-800/40 hover:text-orange-950'
+            ? 'bg-orange-50 text-[#c65a30] scale-105 font-black shadow-sm'
+            : 'text-orange-800/40 hover:text-orange-950 hover:bg-orange-50/50'
           }`}
         >
           <BookOpen className="w-5 h-5" />
@@ -878,25 +876,25 @@ function AppContent() {
         <button 
           id="nav-assembler"
           onClick={() => setActiveTab('assembler')}
-          className={`flex flex-col items-center justify-center transition-all duration-300 w-14 outline-none cursor-pointer ${
+          className={`flex flex-col items-center justify-center transition-all duration-300 w-14 py-1.5 rounded-2xl outline-none cursor-pointer ${
             activeTab === 'assembler'
-            ? 'text-[#c65a30] scale-105 font-black'
-            : 'text-orange-850 hover:text-orange-950'
+            ? 'bg-orange-50 text-[#c65a30] scale-105 font-black shadow-sm'
+            : 'text-orange-800/40 hover:text-orange-950 hover:bg-orange-50/50'
           }`}
-          title="图解拼词"
+          title="造词纺"
         >
-          <BookMarked className="w-5 h-5" />
-          <span className="text-[11px] mt-1 font-bold">图谱</span>
+          <AppLogo className="w-[1.75rem] h-[1.75rem] -my-1" />
+          <span className="text-[11px] mt-1 font-bold">造词纺</span>
         </button>
 
         {/* Navigation Item 3 - Stats */}
         <button 
           id="nav-stats"
           onClick={() => setActiveTab('stats')}
-          className={`flex flex-col items-center justify-center transition-all duration-300 w-14 outline-none cursor-pointer ${
+          className={`flex flex-col items-center justify-center transition-all duration-300 w-14 py-1.5 rounded-2xl outline-none cursor-pointer ${
             activeTab === 'stats'
-            ? 'text-[#c65a30] scale-105 font-black'
-            : 'text-orange-800/40 hover:text-orange-950'
+            ? 'bg-orange-50 text-[#c65a30] scale-105 font-black shadow-sm'
+            : 'text-orange-800/40 hover:text-orange-950 hover:bg-orange-50/50'
           }`}
         >
           <BarChart3 className="w-5 h-5" />
@@ -907,10 +905,10 @@ function AppContent() {
         <button 
           id="nav-chat"
           onClick={() => setActiveTab('chat')}
-          className={`flex flex-col items-center justify-center transition-all duration-300 w-14 outline-none cursor-pointer ${
+          className={`flex flex-col items-center justify-center transition-all duration-300 w-14 py-1.5 rounded-2xl outline-none cursor-pointer ${
             activeTab === 'chat'
-            ? 'text-[#c65a30] scale-105 font-black'
-            : 'text-orange-850 hover:text-orange-950'
+            ? 'bg-orange-50 text-[#c65a30] scale-105 font-black shadow-sm'
+            : 'text-orange-800/40 hover:text-orange-950 hover:bg-orange-50/50'
           }`}
         >
           <Sparkles className="w-5 h-5" />

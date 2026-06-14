@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, BookOpen, PenTool, BarChart3, HelpCircle, ArrowRight } from 'lucide-react';
+import { Search, BookOpen, PenTool, BarChart3, HelpCircle, ArrowRight, X, ChevronRight, Brain, Sparkles, Move, Eye, Package, Palette, Blend, Star } from 'lucide-react';
 import { Word, wordsData, CATEGORY_LABELS } from '../data/wordsList';
 import { useProgress } from '../contexts/ProgressContext';
 import { DirectionGraphic } from '../components/DirectionsVisual';
 import OperatorVisual from '../components/OperatorVisual';
+import wordAnnotations from '../data/word-annotations.json';
 
 interface HomeViewProps {
   searchQuery: string;
@@ -16,14 +17,23 @@ interface HomeViewProps {
   setActiveTab: (tab: string) => void;
   loadWordAiContext: (word: Word) => void;
   totalWords: number;
+  setBrowserCategory: (val: string) => void;
+  setBrowserStatus: (val: string) => void;
 }
 
 export const HomeView: React.FC<HomeViewProps> = ({
   searchQuery, setSearchQuery, filteredWords,
   selectedWord, setSelectedWord, startOperatorsRoutine,
-  setActiveTab, loadWordAiContext, totalWords
+  setActiveTab, loadWordAiContext, totalWords,
+  setBrowserCategory, setBrowserStatus
 }) => {
   const { starredWords, learningStatus, masteredCount, learningCount, starredCount, progressPercent } = useProgress();
+
+  const handleCategoryClick = (categoryKey: string) => {
+    setBrowserCategory(categoryKey);
+    setBrowserStatus('all');
+    setActiveTab('browser');
+  };
 
   return (
     <>
