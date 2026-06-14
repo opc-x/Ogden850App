@@ -11,6 +11,9 @@ export default defineConfig(() => {
       tailwindcss(),
       VitePWA({
         registerType: 'autoUpdate',
+        workbox: {
+          maximumFileSizeToCacheInBytes: 5000000
+        },
         manifest: {
           name: 'Ogden 850 Basic English',
           short_name: 'Ogden850',
