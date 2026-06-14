@@ -10,7 +10,7 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
-const databaseId = import.meta.env.VITE_FIREBASE_DATABASE_ID || '(default)';
+const databaseId = '(default)';
 
 let app;
 let db;

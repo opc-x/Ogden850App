@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, doc, setDoc } from 'firebase/firestore';
-import OpenAI from 'openai';
+import { GoogleGenAI } from '@google/genai';
 import * as dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
@@ -18,19 +18,16 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const databaseId = process.env.VITE_FIREBASE_DATABASE_ID || '(default)';
+const databaseId = '(default)';
 const db = getFirestore(app, databaseId);
 
-// Initialize OpenAI client for DeepSeek
-if (!process.env.DEEPSEEK_API_KEY) {
-  console.error("❌ 缺少 DEEPSEEK_API_KEY！请在 .env.local 中配置。");
+// Initialize Gemini SDK
+if (!process.env.GEMINI_API_KEY) {
+  console.error("❌ 缺少 GEMINI_API_KEY！请在 .env.local 中配置。");
   process.exit(1);
 }
 
-const openai = new OpenAI({
-  baseURL: 'https://api.deepseek.com/v1',
-  apiKey: process.env.DEEPSEEK_API_KEY
-});
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 const promptTemplate = `
 You are an expert in Ogden's Basic English (BE850).
@@ -57,7 +54,7 @@ Output ONLY valid JSON without Markdown block markers. Output format:
     {
       "en": "...",
       "cn": "...",
-      "parts": [["word", "role"]]
+      "parts": [{"chunk": "word", "role": "role"}]
     }
   ]
 }
@@ -66,20 +63,19 @@ Output ONLY valid JSON without Markdown block markers. Output format:
 async function processWord(word: string, category: string) {
   console.log(`[Processing] ${word}...`);
   try {
-    const completion = await openai.chat.completions.create({
-      model: 'deepseek-chat',
-      messages: [
-        { role: 'system', content: 'You are an AI that strictly returns JSON.' },
-        { role: 'user', content: promptTemplate.replace('{word}', word) }
-      ],
-      response_format: { type: 'json_object' }
+    const response = await ai.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: promptTemplate.replace('{word}', word),
+      config: {
+        responseMimeType: "application/json",
+      }
     });
     
-    const text = completion.choices[0].message.content || '{}';
+    let text = response.text || '{}';
     const data = JSON.parse(text);
     
     // Save to Firestore
-    await setDoc(doc(db, 'word_guides', word.toLowerCase()), {
+    await setDoc(doc(db, 'ogden_word_guides', word.toLowerCase()), {
       word: word,
       category: category,
       hook: data.hook,
@@ -105,12 +101,12 @@ async function main() {
 
   console.log(`Total words found: ${words.length}`);
   
-  // Dry run: process only the first word
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < words.length; i++) {
     await processWord(words[i].word, words[i].category);
+    await new Promise(r => setTimeout(r, 4100)); // ~15 RPM limit
   }
   
-  console.log("🎉 Test completed!");
+  console.log("🎉 All words processed and saved to Firebase!");
 }
 
 main();
