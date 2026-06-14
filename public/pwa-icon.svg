@@ -1,0 +1,53 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @font-face {
+        font-family: 'Pacifico';
+        src: url(data:font/ttf;base64,${b64}) format('truetype');
+      }
+    </style>
+    <!-- Background Gradient (More visible) -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#fff1eb" />
+      <stop offset="100%" stop-color="#f9d5c1" />
+    </linearGradient>
+    
+    <!-- Colored Gradient Border -->
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb380" />
+      <stop offset="50%" stop-color="#f78f65" />
+      <stop offset="100%" stop-color="#d65725" />
+    </linearGradient>
+
+    <!-- Text Gradient -->
+    <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d45b27" />
+      <stop offset="100%" stop-color="#9a3a12" />
+    </linearGradient>
+
+    <!-- Soft Inner Glow/Shadow for Text -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#c65a30" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" fill="url(#bg)" />
+  
+  <!-- Thin Colored Gradient Border Rectangle -->
+  <rect x="24" y="24" width="464" height="464" rx="100" fill="none" stroke="url(#border)" stroke-width="5" />
+
+  <!-- Much Larger Text "Ogden" -->
+  <text 
+    x="256" y="250" 
+    font-family="Pacifico, cursive" 
+    font-size="180" 
+    fill="url(#text)" 
+    filter="url(#shadow)"
+    text-anchor="middle" 
+    dominant-baseline="central"
+  >
+    Ogden
+  </text>
+</svg>

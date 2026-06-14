@@ -158,6 +158,21 @@ export const BrowserView: React.FC<BrowserViewProps> = ({
                     {/* Left: Image */}
                     <div className="flex items-center justify-center w-20 sm:w-24 shrink-0 mr-8 sm:mr-10">
                       {(() => {
+                        if (word.category === 'operators') {
+                          return (
+                            <div className="w-full h-16 sm:h-20 bg-white flex items-center justify-center">
+                              <OperatorVisual type={word.word} />
+                            </div>
+                          );
+                        }
+                        if (word.category === 'actions') {
+                          return (
+                            <div className="w-full h-16 sm:h-20 bg-white flex items-center justify-center">
+                              <DirectionGraphic type={word.word} />
+                            </div>
+                          );
+                        }
+                        
                         const annotation = (wordAnnotations as any)[word.word.toLowerCase()];
                         const img = annotation?.img;
                         return img ? (

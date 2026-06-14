@@ -70,28 +70,34 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         </div>
         
         {/* Cover/Splash area */}
-        <div className="bg-slate-50 p-5 sm:p-6 border-b border-slate-100 flex justify-between items-start">
-          <div>
+        <div className="bg-white px-6 sm:px-8 pt-6 sm:pt-8 pb-2 flex justify-between items-start">
+          <div className="space-y-3">
             <div className="flex items-center gap-2">
               <span className="text-[10px] sm:text-xs font-black text-cyan-600 uppercase tracking-wider bg-cyan-50 px-2.5 py-0.5 rounded-full border border-cyan-200">
                 {CATEGORY_LABELS[selectedWord.category]?.zh}
               </span>
-              <span className="text-[10px] sm:text-xs text-slate-400 font-bold font-mono uppercase">ID: {selectedWord.id}</span>
             </div>
             
-            <div className="flex items-center gap-3 mt-2">
-              <h2 className="text-3xl sm:text-4xl font-black text-slate-800 tracking-tight">{selectedWord.word}</h2>
+            <div className="flex flex-wrap items-center gap-3">
+              <h2 className="text-4xl sm:text-5xl font-black text-slate-800 tracking-tight">{selectedWord.word}</h2>
+              {selectedWord.ipa && (
+                <span className="text-lg sm:text-xl font-semibold text-slate-400 font-mono tracking-tight self-end mb-1 sm:mb-1.5">
+                  /{selectedWord.ipa}/
+                </span>
+              )}
               <button 
                 onClick={() => onPlaySpeech(selectedWord.word)}
-                className="p-1.5 bg-cyan-50 text-cyan-600 hover:text-white hover:bg-cyan-500 transition-all rounded-full shadow-sm active:scale-90 cursor-pointer border border-cyan-200"
+                className="p-2 bg-cyan-50 text-cyan-600 hover:text-white hover:bg-cyan-500 transition-all rounded-full shadow-sm active:scale-90 cursor-pointer border border-cyan-200 ml-1"
                 title="朗读发音"
               >
-                <Volume2 className="w-5 h-5" />
+                <Volume2 className="w-5 h-5 sm:w-6 sm:h-6" />
               </button>
             </div>
+
+            <p className="text-xl sm:text-2xl font-black text-slate-600 tracking-tight pt-1">{selectedWord.translation}</p>
           </div>
 
-          <div className="flex gap-2">
+          <div className="flex gap-2 shrink-0">
             {/* Star toggle button */}
             <button 
               onClick={(e) => onToggleStar(selectedWord.id, e)}
@@ -110,17 +116,11 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         </div>
 
         {/* Main definitions & scrollable content */}
-        <div className="p-5 sm:p-6 overflow-y-auto space-y-5 sm:space-y-6 flex-1 bg-white overscroll-y-contain pb-32 sm:pb-6">
-          
-          {/* Chinese translations */}
-          <div className="space-y-1">
-            <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest block mb-1">中文释义</span>
-            <p className="text-xl sm:text-2xl font-black text-slate-800 tracking-tight">{selectedWord.translation}</p>
-          </div>
+        <div className="px-6 sm:px-8 pb-32 sm:pb-8 overflow-y-auto space-y-6 sm:space-y-8 flex-1 bg-white overscroll-y-contain">
 
           {/* SVG Visual Focus */}
-          <div className="w-full flex justify-center py-4 relative min-h-[140px] items-center">
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-50/50 to-white rounded-3xl -z-10" />
+          <div className="w-full flex justify-center py-6 sm:py-8 relative min-h-[140px] items-center">
+            <div className="absolute inset-0 bg-slate-50/60 rounded-3xl -z-10" />
             {selectedWord.category === 'operators' && (
               <div className="w-full max-w-[220px] aspect-square flex items-center justify-center">
                 <OperatorVisual type={selectedWord.word} />

@@ -8,6 +8,16 @@
   --color-on-primary-container: #833113;
 }
 
+:root {
+  --ink: #1e293b;
+  --border: #cbd5e1;
+  --accent: #06b6d4;
+  --accent-warm: #f59e0b;
+  --accent-soft: #cffafe;
+  --mono: "SF Mono", "Fira Code", monospace;
+  --serif: "Georgia", serif;
+}
+
 /* Base scaling to emulate Native App dense layout on mobile screens */
 html {
   font-size: 14px; /* Dense mobile view */

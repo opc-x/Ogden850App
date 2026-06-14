@@ -1,18 +1,19 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { 
-  Home, 
   BookOpen, 
-  BarChart3, 
   Search, 
-  Menu, 
   ChevronRight, 
-  Sparkles, 
+  BarChart3, 
   Volume2, 
   Star, 
+  CheckCircle, 
+  ArrowRight, 
+  Sparkles, 
+  Home, 
+  MessageSquare, 
+  Blocks,
   Brain, 
   Trash2, 
-  ArrowRight, 
-  CheckCircle, 
   Activity, 
   Move, 
   Eye, 
@@ -883,7 +884,7 @@ function AppContent() {
           }`}
           title="造词纺"
         >
-          <AppLogo className="w-[1.75rem] h-[1.75rem] -my-1" />
+          <Blocks className="w-5 h-5" />
           <span className="text-[11px] mt-1 font-bold">造词纺</span>
         </button>
 
