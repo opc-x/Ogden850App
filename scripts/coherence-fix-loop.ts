@@ -20,8 +20,18 @@ function arg(name: string): string | undefined {
 }
 
 function runMechanical(): { closing: string; duplicates: string } {
-  const closing = execSync('npm run audit:closing 2>&1', { encoding: 'utf8', cwd: process.cwd() });
-  const duplicates = execSync('npm run audit:duplicates 2>&1', { encoding: 'utf8', cwd: process.cwd() });
+  let closing = '';
+  let duplicates = '';
+  try {
+    closing = execSync('npm run audit:closing 2>&1', { encoding: 'utf8', cwd: process.cwd() });
+  } catch (e) {
+    closing = (e as { stdout?: string }).stdout ?? '';
+  }
+  try {
+    duplicates = execSync('npm run audit:duplicates 2>&1', { encoding: 'utf8', cwd: process.cwd() });
+  } catch (e) {
+    duplicates = (e as { stdout?: string }).stdout ?? '';
+  }
   const closingMatch = closing.match(/(\d+)\/(\d+)/);
   const dupMatch = duplicates.match(/(\d+)\/(\d+)/);
   return {

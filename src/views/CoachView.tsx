@@ -51,7 +51,7 @@ function ThreadBubble({ item }: { item: CoachThreadItem }) {
           {item.en && (
             <button
               type="button"
-              onClick={() => speakText(item.en!)}
+              onClick={() => speakText(item.en!, item.dialogueTurnId)}
               className="mt-2 text-[10px] font-bold text-cyan-600 flex items-center gap-1"
             >
               <Volume2 className="w-3 h-3" /> 再听一遍

@@ -134,21 +134,46 @@ async function main() {
       }
     }
 
-    if (!ok && backup.length > 0 && !sceneFilter) {
-      dialogues = [...dialogues.filter((d) => d.scene !== sceneKey), ...backup];
-      lastResult = {
-        sceneKey,
-        ok: backupScore === 0,
-        total: backup.length,
-        qualityIssues: backupScore === 0 ? [] : [`保留旧稿（新稿未过门禁 score=${bestNewScore}）`],
-        closingHits: validateDuplicateClosingPhrases(backup.map((r) => ({ en: r.sentence }))).length,
-        kept: 'previous',
-      };
-      console.log(`  ↩ 保留旧稿（新稿未过门禁）`);
-    } else if (!ok && sceneFilter && bestNewRows.length > 0) {
-      dialogues = [...dialogues.filter((d) => d.scene !== sceneKey), ...bestNewRows];
-      saveDialogues(dialogues);
-      console.log(`  ⚠ 单场景模式：保留 score 最低的新稿 (score=${bestNewScore})`);
+    if (!ok && backup.length > 0) {
+      const backupClosing = validateDuplicateClosingPhrases(backup.map((r) => ({ en: r.sentence }))).length;
+      const backupDup = validateExactDuplicateLines(
+        backup.map((r) => ({ seq: r.seq, en: r.sentence })),
+      ).length;
+      const backupClean = backupClosing === 0 && backupDup === 0;
+
+      if (sceneFilter && bestNewRows.length > 0 && !backupClean) {
+        dialogues = [...dialogues.filter((d) => d.scene !== sceneKey), ...bestNewRows];
+        lastResult = {
+          sceneKey,
+          ok: false,
+          total: bestNewRows.length,
+          qualityIssues: [`单场景：旧稿亦未过门禁，保留 score=${bestNewScore} 的新稿`],
+          closingHits: validateDuplicateClosingPhrases(bestNewRows.map((r) => ({ en: r.sentence }))).length,
+          kept: 'new',
+        };
+        console.log(`  ⚠ 旧稿亦未过门禁，保留 score 最低新稿 (score=${bestNewScore})`);
+      } else if (backupClean || !sceneFilter) {
+        dialogues = [...dialogues.filter((d) => d.scene !== sceneKey), ...backup];
+        lastResult = {
+          sceneKey,
+          ok: backupScore === 0,
+          total: backup.length,
+          qualityIssues: backupScore === 0 ? [] : [`保留旧稿（新稿未过门禁 score=${bestNewScore}）`],
+          closingHits: backupClosing,
+          kept: 'previous',
+        };
+        console.log(`  ↩ 保留旧稿（新稿未过 closing/duplicates 门禁）`);
+      } else if (sceneFilter && bestNewRows.length > 0) {
+        dialogues = [...dialogues.filter((d) => d.scene !== sceneKey), ...bestNewRows];
+        lastResult = {
+          sceneKey,
+          ok: false,
+          total: bestNewRows.length,
+          qualityIssues: [`保留 score=${bestNewScore} 新稿`],
+          closingHits: validateDuplicateClosingPhrases(bestNewRows.map((r) => ({ en: r.sentence }))).length,
+          kept: 'new',
+        };
+      }
     } else if (lastResult) {
       lastResult.kept = 'new';
     }

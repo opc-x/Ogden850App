@@ -64,7 +64,7 @@ function ProceduralVisual({ word }: { word: WordVisualInput }) {
   return <GrammarWordVisual type={w} />;
 }
 
-/** 850 词插图统一路由 — PNG 优先，程序化 SVG 回退 */
+/** 850 词插图统一路由 — PNG 静态图，缺失时程序化 SVG 回退 */
 export default function WordCardVisual({
   word,
   size = 'thumb',
@@ -77,6 +77,7 @@ export default function WordCardVisual({
       <WordIllustrationImg
         word={word.word}
         fallback={<ProceduralVisual word={word} />}
+        eager={size === 'detail'}
       />
     </VisualShell>
   );

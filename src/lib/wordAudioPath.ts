@@ -38,3 +38,11 @@ export const PROD_AUDIO_ORIGIN = 'https://ogden-basic-english-omega.vercel.app';
 export function prodAudioUrl(word: string): string {
   return `${PROD_AUDIO_ORIGIN}${wordToAudioPath(word)}`;
 }
+
+export function prodGuideAudioUrl(wordId: string, index: number): string {
+  return `${PROD_AUDIO_ORIGIN}${guideAudioPath(wordId, index)}`;
+}
+
+export function prodSentenceAudioUrl(sentenceId: number | string): string {
+  return `${PROD_AUDIO_ORIGIN}${sentenceAudioPath(sentenceId)}`;
+}

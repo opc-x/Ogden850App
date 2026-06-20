@@ -22,7 +22,7 @@ src/
 │   └── api.ts           # Mapping for backend API routes
 ├── services/            # 🧠 (Model/Logic) Pure business logic & External API calls
 │   ├── ai.service.ts    # AI Evaluation and LLM Prompts
-│   ├── tts.service.ts   # Audio processing and Text-To-Speech engine
+│   ├── tts.service.ts   # Sonia Neural 预录 MP3（本地 → CDN），无 Web Speech
 │   ├── firebase.ts      # Cloud database connectivity
 │   └── progress.ts      # State syncing managers
 ├── views/               # 🎨 (View) Pure UI Layout Pages

@@ -1,5 +1,4 @@
 import { WORDS, isOperator } from './words850Legacy';
-import wordGuides from './word-guides.json';
 import type { Word } from '../types/word';
 
 export type { Word } from '../types/word';
@@ -20,19 +19,12 @@ export const wordsData: Word[] = WORDS.map(w => {
     category = 'opposites';
   }
 
-  const lowerW = w.w.toLowerCase();
-  const guide = (wordGuides as Record<string, any>)[lowerW];
-  let definition = `Basic English word: ${w.w}`;
-  if (guide && guide.hook) {
-    definition = `【秒懂】${guide.hook} 【解析】${guide.concept || ''}`;
-  }
-
   return {
-    id: lowerW,
+    id: w.w.toLowerCase(),
     word: w.w,
     translation: w.cn || w.w,
     category,
-    definition_en: definition,
+    definition_en: `Basic English word: ${w.w}`,
     ipa: w.ipa
   };
 });

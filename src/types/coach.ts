@@ -20,6 +20,7 @@ export interface CoachThreadItem {
   en?: string;
   zh?: string;
   speaker?: 'A' | 'B';
+  dialogueTurnId?: number;
   eval?: CoachEvalResult;
   userRaw?: string;
 }

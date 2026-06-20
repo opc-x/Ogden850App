@@ -46,12 +46,17 @@ export interface GuideQualityIssue {
   sentenceIndex?: number;
 }
 
-const TEMPLATE_PATTERNS: Array<{ re: RegExp; label: string }> = [
+export const TEMPLATE_PATTERNS: Array<{ re: RegExp; label: string }> = [
   { re: /^I have [a-z]+\.$/i, label: '模板句 I have N.' },
   { re: /^Give [a-z]+ to /i, label: '模板句 Give N to…' },
   { re: /^This [a-z]+ is important\.$/i, label: '模板句 This N is important.' },
   { re: /^I take [a-z]+\.$/i, label: '模板句 I take N.' },
   { re: /^Make [a-z]+\.$/i, label: '模板句 Make N.' },
+  { re: /^This is an? [a-z]+ book\.$/i, label: '模板句 This is a X book.' },
+  { re: /^He is an? [a-z]+ man\.$/i, label: '模板句 He is a X man.' },
+  { re: /^It is very [a-z]+\.$/i, label: '模板句 It is very X.' },
+  { re: /^It is [a-z]+, not /i, label: '模板句 It is X, not Y.' },
+  { re: /^This side is [a-z]+\.$/i, label: '模板句 This side is X.' },
 ];
 
 export function auditGuideSentence(
@@ -125,4 +130,17 @@ export function auditWordGuide(wordId: string, guide: WordGuide): GuideQualityIs
 
 export function guideNeedsRepair(issues: GuideQualityIssue[]): boolean {
   return issues.length > 0;
+}
+
+/** 仅模板病句触发修复（超纲词不作为修复条件） */
+export function guideNeedsTemplateRepair(issues: GuideQualityIssue[]): boolean {
+  return issues.some((i) => i.kind === 'template');
+}
+
+export function guideHasTemplateIssue(wordId: string, guide: WordGuide): boolean {
+  return auditWordGuide(wordId, guide).some((i) => i.kind === 'template');
+}
+
+export function countTemplateIssuesInGuide(wordId: string, guide: WordGuide): number {
+  return auditWordGuide(wordId, guide).filter((i) => i.kind === 'template').length;
 }

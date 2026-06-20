@@ -1,27 +1,23 @@
 /**
- * LLM 修复单词详情例句 → word-guides.json → 可选入库
+ * LLM 修复单词详情例句 → 直接写回 Supabase ogden_word_guides
  *
  * Usage:
  *   npm run audit:guides
  *   npm run repair:guides -- --limit 20
  *   npm run repair:guides -- --word account
- *   npm run repair:guides -- --sync
  */
 import * as dotenv from 'dotenv';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
 import { wordsData } from '../src/data/wordsList';
-import { auditWordGuide, guideNeedsRepair, type WordGuide } from './lib/guideQuality';
+import {
+  auditWordGuide,
+  guideNeedsTemplateRepair,
+  type WordGuide,
+} from './lib/guideQuality';
+import { loadAllGuidesFromSupabase, saveGuidePatchesToSupabase } from './lib/guideSupabase';
 import { repairGuidesBatchWithLlm } from './lib/llmRepairGuide';
 import type { Word } from '../src/types/word';
 
 dotenv.config({ path: '.env.local' });
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const GUIDES_PATH = path.join(__dirname, '../src/components/word-guides.json');
-
-type GuideFile = Record<string, Record<string, unknown>>;
 
 function arg(name: string): string | undefined {
   const i = process.argv.indexOf(name);
@@ -41,30 +37,18 @@ function sleep(ms: number) {
 async function main() {
   const limit = arg('--limit') ? Number(arg('--limit')) : undefined;
   const wordFilter = arg('--word');
-  const batchSize = Number(arg('--batch') ?? 6);
-  const doSync = process.argv.includes('--sync');
+  const batchSize = Number(arg('--batch') ?? 15);
 
-  function loadGuides(): GuideFile {
-    return JSON.parse(fs.readFileSync(GUIDES_PATH, 'utf8')) as GuideFile;
-  }
-
-  function savePatches(patches: Record<string, WordGuide>) {
-    const latest = loadGuides();
-    for (const [id, guide] of Object.entries(patches)) {
-      latest[id] = { ...latest[id], ...guide };
-    }
-    fs.writeFileSync(GUIDES_PATH, JSON.stringify(latest, null, 2));
-  }
+  const guides = await loadAllGuidesFromSupabase();
 
   function buildTodo(): Array<{ word: Word; guide: WordGuide; issues: ReturnType<typeof auditWordGuide> }> {
-    const guides = loadGuides();
     let todo = wordsData
       .map((word) => {
-        const guide = guides[word.id] ?? {};
+        const guide = guides.get(word.id) ?? {};
         const issues = auditWordGuide(word.id, guide);
         return { word, guide, issues };
       })
-      .filter((x) => guideNeedsRepair(x.issues));
+      .filter((x) => guideNeedsTemplateRepair(x.issues));
     if (wordFilter) {
       todo = todo.filter((x) => x.word.id === wordFilter || x.word.word === wordFilter);
     }
@@ -72,29 +56,34 @@ async function main() {
     return todo;
   }
 
-  let todo = buildTodo();
+  const todo = buildTodo();
 
-  console.log(`待修复: ${todo.length} 词, batch=${batchSize}`);
+  console.log(`待修复（模板病句）: ${todo.length} 词, batch=${batchSize}`);
 
   let repaired = 0;
   let failed = 0;
 
   for (const [bi, batch] of chunk(todo, batchSize).entries()) {
     const ids = batch.map((b) => b.word.id).join(', ');
-    process.stdout.write(`[${bi + 1}] ${ids} … `);
+    process.stdout.write(`[${bi + 1}/${Math.ceil(todo.length / batchSize)}] ${ids} … `);
     try {
       const patches = await repairGuidesBatchWithLlm({ items: batch });
-      savePatches(patches);
+      await saveGuidePatchesToSupabase(patches);
+      for (const [id, guide] of Object.entries(patches)) {
+        guides.set(id, guide);
+      }
       repaired += batch.length;
       console.log('OK');
     } catch (err) {
       failed += batch.length;
       console.log('FAIL', err instanceof Error ? err.message : err);
-      // 单词级重试
       for (const item of batch) {
         try {
           const single = await repairGuidesBatchWithLlm({ items: [item] });
-          savePatches(single);
+          await saveGuidePatchesToSupabase(single);
+          for (const [id, guide] of Object.entries(single)) {
+            guides.set(id, guide);
+          }
           repaired++;
           failed--;
           console.log(`  ↳ 重试 OK: ${item.word.id}`);
@@ -108,11 +97,6 @@ async function main() {
   }
 
   console.log(`完成: 修复 ${repaired}, 失败 ${failed}`);
-
-  if (doSync && repaired > 0) {
-    const { execSync } = await import('child_process');
-    execSync('npm run import:vocab', { stdio: 'inherit', cwd: path.join(__dirname, '..') });
-  }
 }
 
 main().catch((e) => {

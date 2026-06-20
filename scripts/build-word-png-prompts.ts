@@ -5,11 +5,16 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import * as dotenv from 'dotenv';
 import { wordsData } from '../src/data/wordsList';
-import wordGuides from '../src/components/word-guides.json';
+import { loadGuidesRecordForScripts } from './lib/guideSupabase';
+
+dotenv.config({ path: '.env.local' });
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(__dirname, 'word-png-prompts.ts');
+
+let wordGuides: Record<string, { hook?: string; concept?: string; opposite?: string }> = {};
 
 // Direction prompts — spatial context, not bare arrows
 const DIRECTION_PROMPTS: Record<string, string> = {
@@ -941,27 +946,30 @@ const ALL_PROMPTS: Record<string, string> = {
   ...DIRECTION_PROMPTS,
 };
 
-for (const w of wordsData) {
-  const id = w.id;
-  if (ALL_PROMPTS[id]) continue;
-  if (w.category === 'generals') {
-    ALL_PROMPTS[id] = buildGeneralPrompt(id, w.translation);
-  } else if (w.category === 'qualities') {
-    ALL_PROMPTS[id] = buildQualityPrompt(id, w.translation);
-  } else if (w.category === 'opposites') {
-    ALL_PROMPTS[id] = buildOppositePrompt(id, w.translation);
+async function main() {
+  wordGuides = await loadGuidesRecordForScripts();
+
+  for (const w of wordsData) {
+    const id = w.id;
+    if (ALL_PROMPTS[id]) continue;
+    if (w.category === 'generals') {
+      ALL_PROMPTS[id] = buildGeneralPrompt(id, w.translation);
+    } else if (w.category === 'qualities') {
+      ALL_PROMPTS[id] = buildQualityPrompt(id, w.translation);
+    } else if (w.category === 'opposites') {
+      ALL_PROMPTS[id] = buildOppositePrompt(id, w.translation);
+    }
   }
-}
 
-function recordToTs(name: string, obj: Record<string, string>): string {
-  const entries = Object.entries(obj)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([k, v]) => `  ${k}: '${v.replace(/'/g, "\\'")}',`)
-    .join('\n');
-  return `export const ${name}: Record<string, string> = {\n${entries}\n};`;
-}
+  function recordToTs(name: string, obj: Record<string, string>): string {
+    const entries = Object.entries(obj)
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([k, v]) => `  ${k}: '${v.replace(/'/g, "\\'")}',`)
+      .join('\n');
+    return `export const ${name}: Record<string, string> = {\n${entries}\n};`;
+  }
 
-const ts = `/**
+  const ts = `/**
  * Cursor GenerateImage 提示词表 — 与 come.png 风格一致。
  * 用法：在 Cursor 中对每个词调用 GenerateImage，保存到 public/assets/word-img/{slug}.png
  * 完成后运行：npm run sync:word-png-manifest
@@ -999,5 +1007,11 @@ export function buildPrompt(word: string, semantic?: string): string {
 }
 `;
 
-fs.writeFileSync(OUT, ts);
-console.log(`Wrote ${OUT} with ${Object.keys(ALL_PROMPTS).length} prompts`);
+  fs.writeFileSync(OUT, ts);
+  console.log(`Wrote ${OUT} with ${Object.keys(ALL_PROMPTS).length} prompts`);
+}
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});

@@ -24,9 +24,11 @@ function partSurface(p: GuideSentence['parts'][number] | [string, string]): stri
   return p.surface ?? (p as { chunk?: string }).chunk ?? '';
 }
 
-function partRole(p: GuideSentence['parts'][number] | [string, string]): string {
-  if (Array.isArray(p)) return String(p[1] ?? 'misc');
-  return String(p.role ?? 'misc');
+function guideSentenceEn(item: GuideSentence): string {
+  if (item.parts?.length) {
+    return item.parts.map((p) => partSurface(p)).join(' ').replace(/\s+/g, ' ').trim();
+  }
+  return item.en?.trim() ?? '';
 }
 
 function WordHeroStage({ word }: { word: Word }) {
@@ -266,7 +268,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                             type="button"
                             onClick={(e) => {
                               e.stopPropagation();
-                              speakGuideSentence(selectedWord.id, idx, item.en);
+                              speakGuideSentence(selectedWord.id, idx, guideSentenceEn(item));
                             }}
                             className="p-1.5 rounded-lg text-slate-300 hover:text-slate-500 hover:bg-slate-50 transition-colors cursor-pointer active:scale-95"
                             title="朗读例句"

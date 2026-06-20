@@ -6,10 +6,25 @@ import { AuthProvider } from './contexts/AuthContext.tsx';
 import { WordsProvider } from './contexts/WordsContext.tsx';
 import './index.css';
 
-if (import.meta.env.DEV && 'serviceWorker' in navigator) {
-  navigator.serviceWorker.getRegistrations().then((regs) => {
-    regs.forEach((reg) => reg.unregister());
-  });
+const GUIDE_DATA_VERSION = '2026-06-21';
+const guideDataVersionKey = 'ogden850_guide_data_version';
+
+async function clearStaleClientCaches() {
+  if ('serviceWorker' in navigator) {
+    const regs = await navigator.serviceWorker.getRegistrations();
+    await Promise.all(regs.map((reg) => reg.unregister()));
+  }
+  if ('caches' in window) {
+    const keys = await caches.keys();
+    await Promise.all(keys.map((key) => caches.delete(key)));
+  }
+}
+
+if (import.meta.env.DEV) {
+  void clearStaleClientCaches();
+} else if (localStorage.getItem(guideDataVersionKey) !== GUIDE_DATA_VERSION) {
+  localStorage.setItem(guideDataVersionKey, GUIDE_DATA_VERSION);
+  void clearStaleClientCaches();
 }
 
 createRoot(document.getElementById('root')!).render(

@@ -18,8 +18,6 @@ import { useWords } from './contexts/WordsContext';
 import { ASSEMBLER_NAV_HINT, ASSEMBLER_NAV_LABEL } from './data/marketing';
 import { MobileWrapper } from './components/layout/MobileWrapper';
 import { useAuth } from './contexts/AuthContext';
-import { VoiceAuditionView } from './views/VoiceAuditionView';
-
 const HomeView = lazy(() => import('./views/HomeView').then(m => ({ default: m.HomeView })));
 const BrowserView = lazy(() => import('./views/BrowserView').then(m => ({ default: m.BrowserView })));
 const StatsView = lazy(() => import('./views/StatsView').then(m => ({ default: m.StatsView })));
@@ -62,10 +60,6 @@ function AppContent() {
 
   const activeTab = location.pathname === '/' ? 'onboarding' : location.pathname.substring(1);
   const setActiveTab = (tab: string) => navigate(tab === 'onboarding' ? '/' : `/${tab}`);
-
-  if (location.pathname === '/voice-audit') {
-    return <VoiceAuditionView />;
-  }
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedWord, setSelectedWord] = useState<Word | null>(null);
@@ -121,8 +115,8 @@ function AppContent() {
   }, []);
 
   useEffect(() => {
-    TTSService.warmupVoices();
-    VocabService.prefetchAllGuides();
+    VocabService.invalidateGuideCache();
+    void VocabService.prefetchAllGuides();
   }, []);
 
   const totalWords = words.length;
@@ -130,13 +124,13 @@ function AppContent() {
     TTSService.playSpeech(text);
   }, []);
 
-  const dynamicGuideRef = useRef(dynamicGuide);
-  dynamicGuideRef.current = dynamicGuide;
-
-  // Fetch AI Context for word
   const loadWordAiContext = useCallback(async (word: Word) => {
-    if (dynamicGuideRef.current?.id === word.id) return;
-
+    const cached = VocabService.getCachedGuide(word.id);
+    if (cached) {
+      setDynamicGuide(cached);
+      setGeneratingForId(null);
+      return;
+    }
     setDynamicGuide(null);
     setGeneratingForId(word.id);
     const requestId = ++guideRequestRef.current;

@@ -1,9 +1,12 @@
-/** 发音：Sonia Neural 预生成 MP3（与生产站一致）+ Web Speech 降级 */
+/** 发音：Sonia Neural 预录 MP3（本地 → CDN），无 Web Speech */
 import { TTSService } from '../services/tts.service';
 
-export function isSpeechSupported(): boolean {
+export function isAudioPlaybackSupported(): boolean {
   return TTSService.isSupported();
 }
+
+/** @deprecated 使用 isAudioPlaybackSupported */
+export const isSpeechSupported = isAudioPlaybackSupported;
 
 export function speak(word: string): Promise<void> {
   TTSService.playSpeech(word);
@@ -19,14 +22,6 @@ export function speakText(text: string, sentenceId?: number): Promise<void> {
 export function speakGuideSentence(wordId: string, index: number, text: string): Promise<void> {
   TTSService.playGuideSentence(wordId, index, text);
   return Promise.resolve();
-}
-
-export function hasSoniaAudio(_word: string): Promise<boolean> {
-  return Promise.resolve(true);
-}
-
-export function hasSentenceAudio(_text: string, sentenceId?: number): Promise<boolean> {
-  return Promise.resolve(sentenceId != null);
 }
 
 export const VOICE_ID = 'en-GB-SoniaNeural';

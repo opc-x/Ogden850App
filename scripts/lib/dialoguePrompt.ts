@@ -181,7 +181,7 @@ STRICT RULES:
 6. Chinese (zh): natural spoken Mandarin, matching the emotion and situation. No fragments like 一衣.
 7. beat field per line: 开场 for act 1 lines, 进行 for act 2 lines, 收束 for act 3 lines — must follow the act order above exactly, in one pass, no jumping back.
 8. Output exactly ${opts.target} lines total. MINIMUM beat counts: 开场 ≥4, 进行 ≥12, 收束 ≥3. Assign beats as you write — do NOT tag everything as one act.
-9. CLOSING RULE (critical): The entire scene may contain ONLY ONE farewell/closing moment. Words like goodbye, bye, see you, good night, sleep well, rest well, have a good day, take care (not "take care of"), or "thank you…goodbye" may appear AT MOST ONCE, and ONLY in the final 3 lines. NEVER say goodbye in the middle and then continue the conversation. Never re-ask facts already confirmed earlier in the same scene.
+9. CLOSING RULE (critical): The entire scene may contain ONLY ONE farewell/closing moment in ONE line only (even within the last 3 lines, never stack goodbye + see you + take care on separate lines). Words like goodbye, bye, see you, good night, sleep well, rest well, have a good day, take care (not "take care of"), or "thank you…goodbye" may appear AT MOST ONCE in the whole scene, and ONLY in the final 1-3 lines. NEVER say goodbye in the middle and then continue the conversation. Never re-ask facts already confirmed earlier in the same scene.
 10. COHERENCE (critical): Each concrete action (send a file/paper, open a document, pay, sign, download) must go start → progress → done in ONE arc — never say "I am sending it now" twice without finishing the first send. Thank for help at most ONCE in the whole scene (mid-scene "thanks" is OK once, not four variations of "thanks for your help").
 11. OGDEN WORD SUBSTITUTES (never use the left column):
    - gas → oil | car → machine | trip → journey | fill (verb) → make full / put in
@@ -263,6 +263,8 @@ export function buildFreshStoryPrompt(opts: {
     'Internet',
     'App',
     'WiFi',
+    'Making a Phone Call',
+    'Going to the Store',
   ]);
   const extra =
     noFarewellMidStory.has(opts.sceneKey)

@@ -12,6 +12,7 @@ import { wordsData } from '../src/data/wordsList';
 import wordAnnotations from '../src/data/word-annotations.json';
 import { audioUrlForWord, resolveVisualType } from '../src/data/ogdenGrammar';
 import { resolveSupabaseEnv } from '../src/lib/supabaseConfig';
+import { normalizeIpa } from './lib/normalizeIpa';
 
 dotenv.config({ path: '.env.local' });
 
@@ -31,7 +32,6 @@ if (!serviceRoleKey) {
 const supabase = createClient(url, apiKey);
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const guidesPath = path.join(__dirname, '../src/components/word-guides.json');
 
 function chunk<T>(arr: T[], size: number): T[][] {
   const out: T[][] = [];
@@ -41,7 +41,7 @@ function chunk<T>(arr: T[], size: number): T[][] {
 
 async function importWords() {
   const rows = wordsData.map((w, i) => {
-    const ann = (wordAnnotations as Record<string, { img?: string; ipa?: string }>)[w.id];
+    const ann = (wordAnnotations as Record<string, { img?: string }>)[w.id];
     let { visual_type, visual_ref } = resolveVisualType(w.category, w.word);
     if (visual_type === 'image' && ann?.img) {
       visual_ref = ann.img;
@@ -51,7 +51,7 @@ async function importWords() {
       word: w.word,
       category: w.category,
       translation: w.translation,
-      ipa: w.ipa ?? ann?.ipa ?? null,
+      ipa: normalizeIpa(w.ipa ?? '') || null,
       definition_en: w.definition_en,
       visual_type,
       visual_ref,
@@ -112,62 +112,8 @@ async function importInflections() {
   console.log(`Imported ${list.length} inflections`);
 }
 
-function normalizeGuideParts(parts: unknown): { surface: string; word_id: string | null; role: string }[] {
-  if (!Array.isArray(parts)) return [];
-  return parts.map((p) => {
-    if (Array.isArray(p)) {
-      const [surface, role] = p;
-      const bare = String(surface).toLowerCase().replace(/[.,!?]/g, '');
-      const word = wordsData.find((w) => w.id === bare || w.word.toLowerCase() === bare);
-      return { surface: String(surface), word_id: word?.id ?? null, role: String(role) };
-    }
-    if (p && typeof p === 'object' && 'chunk' in p) {
-      const bare = String((p as { chunk: string }).chunk).toLowerCase().replace(/[.,!?]/g, '');
-      const word = wordsData.find((w) => w.id === bare);
-      return {
-        surface: (p as { chunk: string }).chunk,
-        word_id: word?.id ?? null,
-        role: String((p as { role?: string }).role ?? 'misc'),
-      };
-    }
-    return { surface: '', word_id: null, role: 'misc' };
-  });
-}
-
 async function importGuides() {
-  if (!fs.existsSync(guidesPath)) {
-    console.warn('word-guides.json not found, skipping guides');
-    return;
-  }
-  const guides = JSON.parse(fs.readFileSync(guidesPath, 'utf8')) as Record<string, {
-    hook?: string;
-    concept?: string;
-    equation?: string;
-    combine?: string;
-    ogdenTip?: string;
-    sentences?: { en: string; cn?: string; parts?: unknown }[];
-  }>;
-
-  const rows = Object.entries(guides).map(([id, g]) => ({
-    id: id.toLowerCase(),
-    hook: g.hook ?? null,
-    concept: g.concept ?? null,
-    equation: g.equation ?? null,
-    combine: g.combine ?? null,
-    ogden_tip: g.ogdenTip ?? null,
-    guide_sentences: (g.sentences ?? []).map((s) => ({
-      en: s.en,
-      cn: s.cn,
-      parts: normalizeGuideParts(s.parts),
-    })),
-    updated_at: new Date().toISOString(),
-  }));
-
-  for (const batch of chunk(rows, 50)) {
-    const { error } = await supabase.from('ogden_word_guides').upsert(batch, { onConflict: 'id' });
-    if (error) throw new Error(`ogden_word_guides: ${error.message}`);
-  }
-  console.log(`Imported ${rows.length} guides`);
+  console.warn('ogden_word_guides: 跳过 JSON 导入（数据源为 Supabase，使用 repair:guides 维护）');
 }
 
 async function main() {

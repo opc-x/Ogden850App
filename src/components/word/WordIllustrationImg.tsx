@@ -5,10 +5,11 @@ type Props = {
   word: string;
   fallback: ReactNode;
   className?: string;
+  eager?: boolean;
 };
 
-/** 优先渲染 public/assets/word-img/{word}.png，缺失时回退程序化 SVG */
-export default function WordIllustrationImg({ word, fallback, className }: Props) {
+/** 渲染 public/assets/word-img/{word}.png；缺失时回退程序化 SVG 组件 */
+export default function WordIllustrationImg({ word, fallback, className, eager }: Props) {
   const candidates = wordIllustrationCandidates(word);
   const [idx, setIdx] = useState(0);
 
@@ -23,7 +24,7 @@ export default function WordIllustrationImg({ word, fallback, className }: Props
       aria-hidden
       width={128}
       height={128}
-      loading="lazy"
+      loading={eager ? 'eager' : 'lazy'}
       decoding="async"
       className={className ?? 'word-illustration-img'}
       onError={() => setIdx((i) => i + 1)}

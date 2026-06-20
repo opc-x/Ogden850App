@@ -31,17 +31,18 @@ export function buildGuideRepairPrompt(opts: {
 ${current ? `- 当前例句（有问题的，勿照抄）:\n${current}` : ''}`;
   }).join('\n\n');
 
-  return `你是 Ogden Basic English 850 词教学编剧。为下列单词各写 **恰好 3 条** 英中例句。
+  return `你是英语基础词教学编剧。为下列单词各写 **恰好 3 条** 英中例句。
 
 ## 铁律
-1. **英文每个实词必须在 Ogden 850 词表内**（约 850 个基础词）。禁止：bank, trip, into, can, could, happened 等超纲词，除非该词本身就在 850 表中。
-2. 常用替代：用 money 代替 dollar；用 cart/train 代替 car；用 house/room 代替 kitchen；用 ill 代替 weak/sore；用 man 代替 men；用 wind and rain 代替 storm；用 give money 代替 pay；用 in 代替 into；用 meeting 代替 party；用 teaching 代替 teacher；数字用 one/two/ten；禁止 God/London 等地名宗教专名。
-3. 必须包含目标词（或其 -s 变形）。
-4. 三条例句 **语境不同**（陈述 / 疑问 / 祈使，或日常 / 工作 / 抽象），让学习者秒懂。
-5. **严禁**模板病句：「I have N.」「Give N to him.」「This N is important.」
-6. 可数名词加 a/an/the。
-7. 中文自然口语，与英文严格对齐。
-8. 每句 4–12 个英文词。
+1. **句子质量优先**：可用基础常用英语词（the, can, into, people 等），不必严格限定 Ogden 850 词表；避免生僻词与专有地名。
+2. 必须包含目标词（或其常见变形，如 -s / -ed）。
+3. 三条例句 **语境不同**（陈述 / 疑问 / 祈使，或日常 / 工作 / 抽象），让学习者秒懂。
+4. **严禁**以下机械模板病句：
+   - 「This is a/an X book.」「He is a/an X man.」「It is very X.」
+   - 「This side is X.」「It is X, not Y.」「I have N.」「Give N to…」
+   - 「This N is important.」「I take N.」「Make N.」
+5. 可数名词加 a/an/the；中文自然口语，与英文严格对齐。
+6. 每句 4–12 个英文词。
 
 ## 范例（account）
 {

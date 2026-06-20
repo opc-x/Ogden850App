@@ -63,6 +63,11 @@ export const VocabService = {
   _guideCache: null as Map<string, WordGuideRow> | null,
   _guidePrefetchPromise: null as Promise<void> | null,
 
+  invalidateGuideCache() {
+    this._guideCache = null;
+    this._guidePrefetchPromise = null;
+  },
+
   async prefetchAllGuides(): Promise<void> {
     if (this._guideCache) return;
     if (this._guidePrefetchPromise) return this._guidePrefetchPromise;
@@ -72,7 +77,7 @@ export const VocabService = {
         .select('*');
       if (error) throw new Error(`ogden_word_guides prefetch: ${error.message}`);
       const map = new Map<string, WordGuideRow>();
-      for (const row of (data ?? [])) {
+      for (const row of data ?? []) {
         map.set((row as WordGuideRow).id, row as WordGuideRow);
       }
       this._guideCache = map;
@@ -80,11 +85,26 @@ export const VocabService = {
     return this._guidePrefetchPromise;
   },
 
+  getCachedGuide(wordId: string): WordGuideRow | null {
+    return this._guideCache?.get(wordId.toLowerCase()) ?? null;
+  },
+
   async fetchGuide(wordId: string): Promise<WordGuideRow | null> {
     const id = wordId.toLowerCase();
-    if (this._guideCache) return this._guideCache.get(id) ?? null;
-    await this.prefetchAllGuides();
-    return this._guideCache?.get(id) ?? null;
+
+    if (this._guidePrefetchPromise) await this._guidePrefetchPromise;
+    if (this._guideCache?.has(id)) return this._guideCache.get(id)!;
+
+    const { data, error } = await supabase
+      .from('ogden_word_guides')
+      .select('*')
+      .eq('id', id)
+      .maybeSingle();
+    if (error) throw new Error(`ogden_word_guides: ${error.message}`);
+    if (!data) return null;
+    const row = data as WordGuideRow;
+    if (this._guideCache) this._guideCache.set(id, row);
+    return row;
   },
 
   async loadInflections(): Promise<void> {
@@ -99,3 +119,9 @@ export const VocabService = {
     setInflectionOverrides(map);
   },
 };
+
+if (import.meta.hot) {
+  import.meta.hot.dispose(() => {
+    VocabService.invalidateGuideCache();
+  });
+}

@@ -55,6 +55,7 @@ export function useSceneCoach() {
           en: t.en,
           zh: t.zh,
           speaker: t.speaker,
+          dialogueTurnId: t.id,
         });
         idx++;
       }
@@ -62,7 +63,7 @@ export function useSceneCoach() {
       if (additions.length) {
         appendThread(additions);
         const last = additions[additions.length - 1];
-        if (last.en) await speakText(last.en);
+        if (last.en) await speakText(last.en, last.dialogueTurnId);
       }
 
       setPlayhead(idx);
