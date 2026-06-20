@@ -18,10 +18,10 @@ import { useWords } from './contexts/WordsContext';
 import { ASSEMBLER_NAV_HINT, ASSEMBLER_NAV_LABEL } from './data/marketing';
 import { MobileWrapper } from './components/layout/MobileWrapper';
 import { useAuth } from './contexts/AuthContext';
+import { VoiceAuditionView } from './views/VoiceAuditionView';
 
 const HomeView = lazy(() => import('./views/HomeView').then(m => ({ default: m.HomeView })));
 const BrowserView = lazy(() => import('./views/BrowserView').then(m => ({ default: m.BrowserView })));
-const PracticeView = lazy(() => import('./views/PracticeView').then(m => ({ default: m.PracticeView })));
 const StatsView = lazy(() => import('./views/StatsView').then(m => ({ default: m.StatsView })));
 const AssemblerView = lazy(() => import('./views/AssemblerView').then(m => ({ default: m.AssemblerView })));
 const CoachView = lazy(() => import('./views/CoachView').then(m => ({ default: m.CoachView })));
@@ -63,6 +63,10 @@ function AppContent() {
   const activeTab = location.pathname === '/' ? 'onboarding' : location.pathname.substring(1);
   const setActiveTab = (tab: string) => navigate(tab === 'onboarding' ? '/' : `/${tab}`);
 
+  if (location.pathname === '/voice-audit') {
+    return <VoiceAuditionView />;
+  }
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedWord, setSelectedWord] = useState<Word | null>(null);
   const [dynamicGuide, setDynamicGuide] = useState<WordGuideRow | null>(null);
@@ -70,6 +74,7 @@ function AppContent() {
   const [browserStatus, setBrowserStatus] = useState<'all' | 'starred' | 'learning' | 'mastered'>('all');
   const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
   const [showIOSInstallPrompt, setShowIOSInstallPrompt] = useState(false);
+  const [assemblerSceneDetailOpen, setAssemblerSceneDetailOpen] = useState(false);
   const guideRequestRef = useRef(0);
 
   const { words, loading: wordsLoading, ready: wordsReady, error: wordsError } = useWords();
@@ -77,7 +82,10 @@ function AppContent() {
   const wordsById = useMemo(() => new Map(words.map((w) => [w.id, w])), [words]);
 
   useEffect(() => {
-    // Chrome / Android install prompt
+    if (activeTab !== 'assembler') setAssemblerSceneDetailOpen(false);
+  }, [activeTab]);
+
+  useEffect(() => {
     const handler = (e: any) => {
       e.preventDefault();
       setDeferredPrompt(e);
@@ -110,6 +118,11 @@ function AppContent() {
     if (localStorage.getItem('ogden850_has_seen_onboarding') === 'true' && activeTab === 'onboarding') {
       setActiveTab('home');
     }
+  }, []);
+
+  useEffect(() => {
+    TTSService.warmupVoices();
+    VocabService.prefetchAllGuides();
   }, []);
 
   const totalWords = words.length;
@@ -255,7 +268,13 @@ function AppContent() {
       </header>
 
       {/* Main Container */}
-      <main className="flex-1 overflow-y-auto overscroll-y-contain w-full px-4 sm:px-6 py-6 pb-28">
+      <main
+        className={
+          assemblerSceneDetailOpen && activeTab === 'assembler'
+            ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full px-4 sm:px-6 py-6 pb-28'
+            : 'flex-1 overflow-y-auto overscroll-y-contain w-full px-4 sm:px-6 py-6 pb-28'
+        }
+      >
         
         {/* TAB 1: HOME PANEL */}
         {activeTab === 'home' && (
@@ -291,12 +310,6 @@ function AppContent() {
           </Suspense>
         )}
 
-        {activeTab === 'practice' && (
-          <Suspense fallback={<ViewFallback />}>
-            <PracticeView />
-          </Suspense>
-        )}
-
         {activeTab === 'profile' && (
           <Suspense fallback={<ViewFallback />}>
             <ProfileView totalWords={totalWords} setActiveTab={setActiveTab} />
@@ -319,7 +332,10 @@ function AppContent() {
 
         {activeTab === 'assembler' && (
           <Suspense fallback={<ViewFallback />}>
-            <AssemblerView onWordClick={openWordById} />
+            <AssemblerView
+              onWordClick={openWordById}
+              onSceneDetailChange={setAssemblerSceneDetailOpen}
+            />
           </Suspense>
         )}
 
@@ -369,11 +385,7 @@ function AppContent() {
         <button
           id="nav-assembler"
           onClick={() => setActiveTab('assembler')}
-          className={`${mobileNavItemClass(activeTab === 'assembler')} ${
-            activeTab === 'assembler'
-              ? 'bg-[#fff3ec] rounded-2xl outline outline-1 outline-orange-100 shadow-sm'
-              : ''
-          }`}
+          className={mobileNavItemClass(activeTab === 'assembler')}
           title={ASSEMBLER_NAV_HINT}
         >
           <MobileNavIcon active={activeTab === 'assembler'}><Blocks className="w-5 h-5" strokeWidth={activeTab === 'assembler' ? 2.25 : 1.75} /></MobileNavIcon>

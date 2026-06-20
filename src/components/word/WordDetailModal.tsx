@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
-import { 
-  Volume2, 
-  Star, 
-  X, 
-  Sparkles, 
+import {
+  Volume2,
+  Star,
+  X,
   BookMarked,
   RefreshCw,
-  CheckCircle,
-  Activity
+  CheckCircle2,
+  GraduationCap,
+  Languages,
 } from 'lucide-react';
-import { Word, CATEGORY_LABELS } from '../../data/wordsList';
+import { Word, CATEGORY_LABELS } from '../../types/word';
 import type { GuideSentence } from '../../types/vocab';
 import WordCardVisual from './WordCardVisual';
+import { speakGuideSentence } from '../../data/speak';
 
 function guideSentences(guide: { guide_sentences?: GuideSentence[]; sentences?: GuideSentence[] }): GuideSentence[] {
   return guide.guide_sentences ?? guide.sentences ?? [];
@@ -26,6 +27,55 @@ function partSurface(p: GuideSentence['parts'][number] | [string, string]): stri
 function partRole(p: GuideSentence['parts'][number] | [string, string]): string {
   if (Array.isArray(p)) return String(p[1] ?? 'misc');
   return String(p.role ?? 'misc');
+}
+
+function WordHeroStage({ word }: { word: Word }) {
+  return (
+    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-slate-50 via-white to-white border border-slate-100/80 px-6 py-7 sm:py-8">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-cyan-50/40 to-transparent" />
+      <div className="relative mx-auto w-full max-w-[13.5rem] sm:max-w-[15rem] aspect-square flex items-center justify-center">
+        <WordCardVisual word={word} size="detail" />
+      </div>
+    </div>
+  );
+}
+
+function HookAside({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="rounded-2xl border border-slate-100 bg-slate-50/60 px-4 py-3.5">
+      <p className="text-[10px] font-bold text-slate-400 tracking-wide mb-1.5">一秒秒懂</p>
+      {children}
+    </div>
+  );
+}
+
+function StatusActionButton({
+  active,
+  activeClass,
+  inactiveClass,
+  icon,
+  label,
+  onClick,
+}: {
+  active: boolean;
+  activeClass: string;
+  inactiveClass: string;
+  icon: React.ReactNode;
+  label: string;
+  onClick: (e: React.MouseEvent) => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`flex-1 h-12 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 transition-all cursor-pointer active:scale-[0.98] ${
+        active ? activeClass : inactiveClass
+      }`}
+    >
+      {icon}
+      {label}
+    </button>
+  );
 }
 
 interface WordDetailModalProps {
@@ -51,212 +101,224 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   onToggleStar,
   onSetStatus,
   onPlaySpeech,
-  onLoadContext
+  onLoadContext,
 }) => {
   const isLearning = learningStatus[selectedWord.id] === 'learning';
   const isMastered = learningStatus[selectedWord.id] === 'mastered';
+  const [revealedCn, setRevealedCn] = useState<Set<number>>(() => new Set());
+
+  useEffect(() => {
+    setRevealedCn(new Set());
+  }, [selectedWord.id]);
+
+  const toggleCnReveal = (idx: number, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setRevealedCn((prev) => {
+      const next = new Set(prev);
+      if (next.has(idx)) next.delete(idx);
+      else next.add(idx);
+      return next;
+    });
+  };
 
   return (
     <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-0 sm:p-4 select-none">
-      {/* Backdrop cover */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         onClick={onClose}
-        className="absolute inset-0 bg-slate-900/60 backdrop-blur-xs"
+        className="absolute inset-0 bg-slate-900/55 backdrop-blur-[2px]"
       />
-      
-      {/* Modal Box */}
-      <motion.div 
-        initial={{ y: '100%', scale: 0.95, opacity: 0 }}
+
+      <motion.div
+        initial={{ y: '100%', scale: 0.98, opacity: 0 }}
         animate={{ y: 0, scale: 1, opacity: 1 }}
-        exit={{ y: '100dvh', scale: 0.95, opacity: 0 }}
+        exit={{ y: '100dvh', scale: 0.98, opacity: 0 }}
         transition={{ type: 'spring', damping: 28, stiffness: 300, mass: 0.8 }}
-        className="relative w-full sm:max-w-xl bg-white sm:rounded-3xl rounded-t-[2.5rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] border border-slate-100 overflow-hidden max-h-[85vh] sm:max-h-[90vh] flex flex-col"
+        className="relative w-full sm:max-w-xl bg-white sm:rounded-[1.75rem] rounded-t-[1.75rem] shadow-[0_24px_64px_-20px_rgba(15,23,42,0.35)] border border-slate-200/80 overflow-hidden max-h-[88vh] sm:max-h-[90vh] flex flex-col"
       >
-        {/* Drag handle */}
-        <div className="w-full flex justify-center pt-3 pb-1">
-          <div className="w-12 h-1.5 bg-slate-300 rounded-full"></div>
+        <div className="w-full flex justify-center pt-3 pb-1 shrink-0">
+          <div className="w-10 h-1 rounded-full bg-slate-200" />
         </div>
-        
-        {/* Cover/Splash area */}
-        <div className="bg-white px-6 sm:px-8 pt-6 sm:pt-8 pb-2 flex justify-between items-start">
-          <div className="space-y-3">
-            <div className="flex items-center gap-2">
-              <span className="text-[10px] sm:text-xs font-black text-cyan-600 uppercase tracking-wider bg-cyan-50 px-2.5 py-0.5 rounded-full border border-cyan-200">
-                {CATEGORY_LABELS[selectedWord.category]?.zh}
-              </span>
-            </div>
-            
-            <div className="flex flex-wrap items-center gap-3">
-              <h2 className="text-4xl sm:text-5xl font-black text-slate-800 tracking-tight">{selectedWord.word}</h2>
+
+        <header className="shrink-0 px-5 sm:px-7 pb-4 flex justify-between items-start gap-4 border-b border-slate-100">
+          <div className="min-w-0 space-y-2.5">
+            <span className="inline-flex text-[10px] font-bold text-cyan-700 bg-cyan-50 px-2 py-0.5 rounded-md border border-cyan-100">
+              {CATEGORY_LABELS[selectedWord.category]?.zh}
+            </span>
+
+            <div className="flex flex-wrap items-end gap-x-2.5 gap-y-1">
+              <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-none">
+                {selectedWord.word}
+              </h2>
               {selectedWord.ipa && (
-                <span className="text-lg sm:text-xl font-semibold text-slate-400 font-mono tracking-tight self-end mb-1 sm:mb-1.5">
+                <span className="font-ipa ipa-badge text-base sm:text-lg pb-0.5">
                   /{selectedWord.ipa}/
                 </span>
               )}
-              <button 
+              <button
+                type="button"
                 onClick={() => onPlaySpeech(selectedWord.word)}
-                className="p-2 bg-cyan-50 text-cyan-600 hover:text-white hover:bg-cyan-500 transition-all rounded-full shadow-sm active:scale-90 cursor-pointer border border-cyan-200 ml-1"
+                className="p-2 bg-cyan-500 text-white hover:bg-cyan-600 transition-colors rounded-xl shadow-sm shadow-cyan-500/25 active:scale-95 cursor-pointer"
                 title="朗读发音"
               >
-                <Volume2 className="w-5 h-5 sm:w-6 sm:h-6" />
+                <Volume2 className="w-4 h-4" />
               </button>
             </div>
 
-            <p className="text-xl sm:text-2xl font-black text-slate-600 tracking-tight pt-1">{selectedWord.translation}</p>
+            <p className="text-base sm:text-lg font-semibold text-slate-500 leading-snug">{selectedWord.translation}</p>
           </div>
 
-          <div className="flex gap-2 shrink-0">
-            {/* Star toggle button */}
-            <button 
+          <div className="flex gap-1.5 shrink-0">
+            <button
+              type="button"
               onClick={(e) => onToggleStar(selectedWord.id, e)}
-              className="p-2 bg-white text-slate-500 hover:text-amber-500 hover:bg-slate-50 rounded-full shadow-sm active:scale-90 transition-all border border-slate-200 cursor-pointer"
+              className="p-2 text-slate-400 hover:text-amber-500 hover:bg-amber-50 rounded-xl transition-colors cursor-pointer"
             >
               <Star className={`w-5 h-5 ${starredWords[selectedWord.id] ? 'fill-amber-400 text-amber-400' : ''}`} />
             </button>
-            {/* Close button */}
-            <button 
+            <button
+              type="button"
               onClick={onClose}
-              className="p-2 bg-white text-slate-500 hover:text-rose-500 hover:bg-slate-50 rounded-full shadow-sm active:scale-90 transition-all border border-slate-200 cursor-pointer"
+              className="p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-xl transition-colors cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
           </div>
-        </div>
+        </header>
 
-        {/* Main definitions & scrollable content */}
-        <div className="px-6 sm:px-8 pb-32 sm:pb-8 overflow-y-auto space-y-6 sm:space-y-8 flex-1 bg-white overscroll-y-contain">
-
-          {/* SVG Visual Focus */}
-          <div className="w-full flex justify-center py-6 sm:py-8 relative min-h-[140px] items-center">
-            <div className="absolute inset-0 bg-slate-50/60 rounded-3xl -z-10" />
-            <WordCardVisual word={selectedWord} size="detail" />
-          </div>
-
-          {/* AI Guide Block */}
-          <div className="border-t pt-5 sm:pt-6 border-slate-100 space-y-4">
-            {dynamicGuide ? (
-              <motion.div 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="space-y-5 sm:space-y-6"
-              >
-                {/* Hook */}
-                <div className="p-4 sm:p-5 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-2xl sm:rounded-3xl space-y-2 sm:space-y-3 shadow-sm">
-                  <span className="text-[10px] font-black text-indigo-500 uppercase tracking-widest flex items-center gap-1">
-                    <Sparkles className="w-3.5 h-3.5 text-indigo-400" />
-                    一秒秒懂
-                  </span>
-                  <div className="text-sm font-medium text-slate-700 leading-relaxed space-y-1 sm:space-y-2">
-                    {(dynamicGuide.hook ?? '')
-                      .split('\n')
-                      .filter((line) => line.trim())
-                      .map((line: string, i: number) => (
+        <div className="flex-1 min-h-0 overflow-y-auto overscroll-y-contain px-5 sm:px-7 py-5 space-y-5">
+          {dynamicGuide ? (
+            <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
+              <WordHeroStage word={selectedWord} />
+              <HookAside>
+                <div className="text-[13px] sm:text-sm text-slate-600 leading-relaxed font-medium space-y-1.5">
+                  {(dynamicGuide.hook ?? '')
+                    .split('\n')
+                    .filter((line) => line.trim())
+                    .map((line: string, i: number) => (
                       <p key={i}>{line}</p>
                     ))}
-                  </div>
                 </div>
-
-                {/* Sentences */}
-                <div className="space-y-2 sm:space-y-3">
-                  <span className="text-[10px] font-black text-cyan-500 uppercase tracking-widest flex items-center gap-1">
-                    <BookMarked className="w-3.5 h-3.5" />
-                    绝佳搭配例句
-                  </span>
-                  <div className="grid gap-2 sm:gap-3">
-                    {guideSentences(dynamicGuide).map((item, idx) => (
-                      <motion.div 
-                        whileHover={{ scale: 1.015, y: -2 }}
-                        whileTap={{ scale: 0.98 }}
-                        key={idx} 
-                        className="p-3 sm:p-4 bg-white rounded-xl sm:rounded-2xl border border-slate-100 shadow-sm hover:shadow-md hover:border-cyan-300 transition-all group cursor-pointer"
-                        onClick={() => onPlaySpeech(item.en)}
-                      >
-                        <div className="flex justify-between items-start mb-2 gap-2 sm:gap-4">
-                          <p className="text-sm sm:text-base font-extrabold text-slate-800 leading-snug">
-                            {item.parts?.length ? item.parts.map((p, i) => {
-                              const role = partRole(p as GuideSentence['parts'][number] | [string, string]);
-                              return (
-                              <span key={i} className={role === 'op' ? 'text-[#c65a30]' : role === 'dir' ? 'text-cyan-600' : ''}>
-                                {partSurface(p as GuideSentence['parts'][number] | [string, string])}{' '}
-                              </span>
-                            );}) : item.en}
-                          </p>
-                          <button 
-                            onClick={(e) => { e.stopPropagation(); onPlaySpeech(item.en); }}
-                            className="p-1.5 sm:p-2 -mt-1 -mr-1 rounded-full text-cyan-500 hover:text-white hover:bg-cyan-500 cursor-pointer transition-colors shrink-0 bg-cyan-50 shadow-sm"
-                            title="原汁原味发音"
-                          >
-                            <Volume2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                          </button>
-                        </div>
-                        <p className="text-[11px] sm:text-xs text-slate-500 font-semibold">{item.cn}</p>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-              </motion.div>
-            ) : generatingForId === selectedWord.id ? (
-              <div className="space-y-4 p-5 sm:p-6 bg-slate-50 rounded-2xl sm:rounded-3xl border border-slate-100 animate-pulse">
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-cyan-200/50 animate-bounce"></div>
-                  <span className="text-xs font-bold text-cyan-600">正在从云端提取完美解析...</span>
-                </div>
-                <div className="space-y-2">
-                  <div className="h-4 bg-slate-200 rounded w-3/4"></div>
-                  <div className="h-4 bg-slate-200 rounded w-1/2"></div>
-                </div>
+              </HookAside>
+            </motion.div>
+          ) : generatingForId === selectedWord.id ? (
+            <div className="space-y-4">
+              <WordHeroStage word={selectedWord} />
+              <div className="rounded-2xl border border-slate-100 bg-slate-50/60 px-4 py-3.5 animate-pulse space-y-2">
+                <div className="h-3 bg-slate-200 rounded w-16" />
+                <div className="h-3 bg-slate-100 rounded w-full" />
+                <div className="h-3 bg-slate-100 rounded w-4/5" />
               </div>
-            ) : (
-              <div className="text-center p-6 sm:p-8 bg-slate-50 rounded-2xl sm:rounded-3xl border border-dashed border-slate-200">
-                <p className="text-xs sm:text-sm text-slate-500 font-medium mb-4">
-                  当前词汇尚未加载完毕或网络断开。
-                </p>
-                <button 
+            </div>
+          ) : (
+            <div className="space-y-4">
+              <WordHeroStage word={selectedWord} />
+              <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/50 px-4 py-4 text-center space-y-3">
+                <p className="text-sm text-slate-500 font-medium">解析尚未加载，或网络已断开</p>
+                <button
+                  type="button"
                   onClick={() => onLoadContext(selectedWord)}
-                  className="px-5 py-2.5 bg-gradient-to-tr from-[#c65a30] to-[#faa144] text-white font-bold text-xs sm:text-sm rounded-full hover:shadow-lg hover:-translate-y-0.5 active:scale-95 transition-all cursor-pointer flex items-center gap-2 mx-auto"
+                  className="px-5 py-2.5 bg-[#c65a30] text-white font-bold text-sm rounded-xl hover:bg-[#b5522c] active:scale-95 transition-all cursor-pointer inline-flex items-center gap-2 shadow-sm shadow-orange-500/20"
                 >
                   <RefreshCw className="w-4 h-4" />
                   立刻加载
                 </button>
               </div>
-            )}
-          </div>
-          
-          {/* Footer Action Cards: Learning / Mastered */}
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 border-t pt-5 sm:pt-6 border-slate-100 mt-6 pb-8">
-            <button
-              onClick={(e) => onSetStatus(selectedWord.id, isLearning ? null : 'learning', e)}
-              className={`flex flex-col items-center justify-center p-4 rounded-2xl sm:rounded-3xl border-2 transition-all group ${
-                isLearning 
-                ? 'bg-cyan-50 border-cyan-400 text-cyan-700 shadow-md shadow-cyan-500/10' 
-                : 'bg-white border-slate-100 text-slate-400 hover:border-cyan-200 hover:bg-cyan-50/50'
-              }`}
-            >
-              <div className={`w-10 h-10 rounded-full flex items-center justify-center mb-2 ${isLearning ? 'bg-cyan-100 text-cyan-600' : 'bg-slate-50 text-slate-300 group-hover:bg-cyan-100/50 group-hover:text-cyan-500'}`}>
-                <Activity className="w-5 h-5" />
-              </div>
-              <span className="font-extrabold text-sm tracking-wide">学习中</span>
-            </button>
-            
-            <button
-              onClick={(e) => onSetStatus(selectedWord.id, isMastered ? null : 'mastered', e)}
-              className={`flex flex-col items-center justify-center p-4 rounded-2xl sm:rounded-3xl border-2 transition-all group ${
-                isMastered 
-                ? 'bg-emerald-50 border-emerald-400 text-emerald-700 shadow-md shadow-emerald-500/10' 
-                : 'bg-white border-slate-100 text-slate-400 hover:border-emerald-200 hover:bg-emerald-50/50'
-              }`}
-            >
-              <div className={`w-10 h-10 rounded-full flex items-center justify-center mb-2 ${isMastered ? 'bg-emerald-100 text-emerald-600' : 'bg-slate-50 text-slate-300 group-hover:bg-emerald-100/50 group-hover:text-emerald-500'}`}>
-                <CheckCircle className="w-5 h-5" />
-              </div>
-              <span className="font-extrabold text-sm tracking-wide">已掌握</span>
-            </button>
-          </div>
+            </div>
+          )}
 
+          {dynamicGuide && (
+            <section className="space-y-3 pt-1">
+              <h3 className="text-[11px] font-bold text-slate-400 tracking-wide flex items-center gap-1.5">
+                <BookMarked className="w-3.5 h-3.5 text-cyan-500" />
+                绝佳搭配例句
+              </h3>
+              <div className="space-y-2.5">
+                {guideSentences(dynamicGuide).map((item, idx) => {
+                  const cnVisible = revealedCn.has(idx);
+                  return (
+                    <div
+                      key={idx}
+                      className="w-full text-left p-4 rounded-2xl bg-white border border-slate-200/90 hover:border-slate-300/80 transition-colors"
+                    >
+                      <div className="flex items-start gap-2.5">
+                        <p className="flex-1 min-w-0 text-[15px] font-bold text-slate-800 leading-snug">
+                          {item.parts?.length
+                            ? item.parts.map((p, i) => {
+                                const surface = partSurface(p as GuideSentence['parts'][number] | [string, string]);
+                                const words = surface.replace(/[^a-zA-Z\s]/g, '').toLowerCase().split(/\s+/);
+                                const isTarget = words.includes(selectedWord.word.toLowerCase());
+                                return (
+                                  <span
+                                    key={i}
+                                    className={isTarget ? 'text-[#c65a30]' : ''}
+                                  >
+                                    {surface}{' '}
+                                  </span>
+                                );
+                              })
+                            : item.en}
+                        </p>
+                        <div className="flex items-center gap-0.5 shrink-0 pt-0.5">
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              speakGuideSentence(selectedWord.id, idx, item.en);
+                            }}
+                            className="p-1.5 rounded-lg text-slate-300 hover:text-slate-500 hover:bg-slate-50 transition-colors cursor-pointer active:scale-95"
+                            title="朗读例句"
+                          >
+                            <Volume2 className="w-3.5 h-3.5" />
+                          </button>
+                          <button
+                            type="button"
+                            onClick={(e) => toggleCnReveal(idx, e)}
+                            className={`p-1.5 rounded-lg transition-colors cursor-pointer active:scale-95 ${
+                              cnVisible
+                                ? 'text-slate-400 bg-slate-50'
+                                : 'text-slate-300 hover:text-slate-400 hover:bg-slate-50'
+                            }`}
+                            title={cnVisible ? '隐藏中文' : '看中文'}
+                            aria-pressed={cnVisible}
+                          >
+                            <Languages
+                              className={`w-3.5 h-3.5 ${cnVisible ? 'fill-slate-200/80' : ''}`}
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      {cnVisible && (
+                        <p className="mt-2 text-xs text-slate-400 leading-relaxed">{item.cn}</p>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          )}
         </div>
+
+        <footer className="shrink-0 px-5 sm:px-7 py-4 border-t border-slate-100 bg-white/95 backdrop-blur-sm flex gap-3 pb-safe">
+          <StatusActionButton
+            active={isLearning}
+            label={isLearning ? '学习中 ✓' : '标记学习中'}
+            icon={<GraduationCap className="w-4 h-4" />}
+            onClick={(e) => onSetStatus(selectedWord.id, isLearning ? null : 'learning', e)}
+            activeClass="bg-cyan-500 text-white shadow-md shadow-cyan-500/30 ring-2 ring-cyan-100"
+            inactiveClass="bg-slate-100 text-slate-700 border border-slate-200 hover:bg-cyan-50 hover:text-cyan-700 hover:border-cyan-200"
+          />
+          <StatusActionButton
+            active={isMastered}
+            label={isMastered ? '已掌握 ✓' : '标记已掌握'}
+            icon={<CheckCircle2 className="w-4 h-4" />}
+            onClick={(e) => onSetStatus(selectedWord.id, isMastered ? null : 'mastered', e)}
+            activeClass="bg-emerald-500 text-white shadow-md shadow-emerald-500/30 ring-2 ring-emerald-100"
+            inactiveClass="bg-slate-100 text-slate-700 border border-slate-200 hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-200"
+          />
+        </footer>
       </motion.div>
     </div>
   );

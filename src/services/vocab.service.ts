@@ -13,6 +13,7 @@ function rowToWord(row: OgdenWordRow): Word {
     ipa: row.ipa ?? undefined,
     visual_type: row.visual_type,
     visual_ref: row.visual_ref,
+    audio_url: row.audio_url ?? null,
   };
 }
 
@@ -59,16 +60,31 @@ export const VocabService = {
     return rowToWord(data as OgdenWordRow);
   },
 
+  _guideCache: null as Map<string, WordGuideRow> | null,
+  _guidePrefetchPromise: null as Promise<void> | null,
+
+  async prefetchAllGuides(): Promise<void> {
+    if (this._guideCache) return;
+    if (this._guidePrefetchPromise) return this._guidePrefetchPromise;
+    this._guidePrefetchPromise = (async () => {
+      const { data, error } = await supabase
+        .from('ogden_word_guides')
+        .select('*');
+      if (error) throw new Error(`ogden_word_guides prefetch: ${error.message}`);
+      const map = new Map<string, WordGuideRow>();
+      for (const row of (data ?? [])) {
+        map.set((row as WordGuideRow).id, row as WordGuideRow);
+      }
+      this._guideCache = map;
+    })();
+    return this._guidePrefetchPromise;
+  },
+
   async fetchGuide(wordId: string): Promise<WordGuideRow | null> {
     const id = wordId.toLowerCase();
-    const { data, error } = await supabase
-      .from('ogden_word_guides')
-      .select('*')
-      .eq('id', id)
-      .maybeSingle();
-    if (error) throw new Error(`ogden_word_guides: ${error.message}`);
-    if (!data) return null;
-    return data as WordGuideRow;
+    if (this._guideCache) return this._guideCache.get(id) ?? null;
+    await this.prefetchAllGuides();
+    return this._guideCache?.get(id) ?? null;
   },
 
   async loadInflections(): Promise<void> {
