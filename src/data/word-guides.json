@@ -1410,6 +1410,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "The light is off.",
+        "cn": "灯关了。",
+        "parts": [
+          [
+            "The light",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "off.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "come off · go off · put off · take off",
@@ -1461,6 +1479,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "The light is on.",
+        "cn": "灯亮着。",
+        "parts": [
+          [
+            "The light",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "on.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "come on · go on · put on · take on",
@@ -1506,6 +1542,28 @@
           [
             "here.",
             "dir"
+          ]
+        ]
+      },
+      {
+        "en": "The bird is over the house.",
+        "cn": "鸟在房子上方。",
+        "parts": [
+          [
+            "The bird",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "over",
+            "dir"
+          ],
+          [
+            "the house.",
+            "n"
           ]
         ]
       }
@@ -1555,6 +1613,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "Run through the field.",
+        "cn": "跑过田野。",
+        "parts": [
+          [
+            "Run",
+            "op"
+          ],
+          [
+            "through",
+            "dir"
+          ],
+          [
+            "the field.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "come through · go through · put through · take through",
@@ -1596,6 +1672,24 @@
           [
             "it",
             "pron"
+          ],
+          [
+            "to",
+            "dir"
+          ],
+          [
+            "me.",
+            "pron"
+          ]
+        ]
+      },
+      {
+        "en": "Come to me.",
+        "cn": "到我这来。",
+        "parts": [
+          [
+            "Come",
+            "op"
           ],
           [
             "to",
@@ -1653,6 +1747,28 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "The cat is under the bed.",
+        "cn": "猫在床底下。",
+        "parts": [
+          [
+            "The cat",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "under",
+            "dir"
+          ],
+          [
+            "the bed.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "come under · go under · put under · take under",
@@ -1690,6 +1806,20 @@
           [
             "it",
             "pron"
+          ],
+          [
+            "up.",
+            "dir"
+          ]
+        ]
+      },
+      {
+        "en": "Look up.",
+        "cn": "往上看。",
+        "parts": [
+          [
+            "Look",
+            "op"
           ],
           [
             "up.",
@@ -1745,6 +1875,24 @@
           [
             "care.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "Go with him.",
+        "cn": "跟他一起走。",
+        "parts": [
+          [
+            "Go",
+            "op"
+          ],
+          [
+            "with",
+            "dir"
+          ],
+          [
+            "him.",
+            "pron"
           ]
         ]
       }
@@ -1810,6 +1958,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "Take it as it is.",
+        "cn": "就原样收下吧。",
+        "parts": [
+          [
+            "Take",
+            "op"
+          ],
+          [
+            "it",
+            "pron"
+          ],
+          [
+            "as",
+            "conj"
+          ],
+          [
+            "it is.",
+            "op"
+          ]
+        ]
       }
     ],
     "combine": "短句 + as + 短句",
@@ -1865,6 +2035,28 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "Do it for me.",
+        "cn": "替我做了吧。",
+        "parts": [
+          [
+            "Do",
+            "op"
+          ],
+          [
+            "it",
+            "pron"
+          ],
+          [
+            "for",
+            "conj"
+          ],
+          [
+            "me.",
+            "pron"
+          ]
+        ]
       }
     ],
     "combine": "短句 + for + 短句",
@@ -1910,6 +2102,24 @@
           [
             "mine.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "One of them.",
+        "cn": "他们中的一个。",
+        "parts": [
+          [
+            "One",
+            "n"
+          ],
+          [
+            "of",
+            "misc"
+          ],
+          [
+            "them.",
+            "pron"
           ]
         ]
       }
@@ -1965,6 +2175,28 @@
           [
             "night.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "Wait till I come.",
+        "cn": "等到我来。",
+        "parts": [
+          [
+            "Wait",
+            "op"
+          ],
+          [
+            "till",
+            "misc"
+          ],
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "come.",
+            "op"
           ]
         ]
       }
@@ -2030,6 +2262,32 @@
             "pron"
           ]
         ]
+      },
+      {
+        "en": "She is older than he.",
+        "cn": "她比他大。",
+        "parts": [
+          [
+            "She",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "older",
+            "adj"
+          ],
+          [
+            "than",
+            "conj"
+          ],
+          [
+            "he.",
+            "pron"
+          ]
+        ]
       }
     ],
     "combine": "短句 + than + 短句",
@@ -2081,6 +2339,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "I have a dog.",
+        "cn": "我有一只狗。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "have",
+            "op"
+          ],
+          [
+            "a dog.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -2121,6 +2397,20 @@
           ],
           [
             "the key.",
+            "n"
+          ]
+        ]
+      },
+      {
+        "en": "Open the door.",
+        "cn": "把门打开。",
+        "parts": [
+          [
+            "Open",
+            "op"
+          ],
+          [
+            "the door.",
             "n"
           ]
         ]
@@ -2169,6 +2459,24 @@
           [
             "it.",
             "pron"
+          ]
+        ]
+      },
+      {
+        "en": "All is good.",
+        "cn": "一切都好。",
+        "parts": [
+          [
+            "All",
+            "det"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "good.",
+            "adj"
           ]
         ]
       }
@@ -2226,6 +2534,28 @@
             "det"
           ]
         ]
+      },
+      {
+        "en": "Do you have any food?",
+        "cn": "你有吃的吗？",
+        "parts": [
+          [
+            "Do",
+            "op"
+          ],
+          [
+            "you",
+            "pron"
+          ],
+          [
+            "have",
+            "op"
+          ],
+          [
+            "any food?",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "any + 名词",
@@ -2267,6 +2597,20 @@
           [
             "new.",
             "adj"
+          ]
+        ]
+      },
+      {
+        "en": "Every one goes.",
+        "cn": "每个人都走。",
+        "parts": [
+          [
+            "Every one",
+            "n"
+          ],
+          [
+            "goes.",
+            "op"
           ]
         ]
       }
@@ -2324,6 +2668,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "A little is enough.",
+        "cn": "一点点就够了。",
+        "parts": [
+          [
+            "A little",
+            "misc"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "enough.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "little + 名词",
@@ -2373,6 +2735,24 @@
           [
             "much time.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "Too much is bad.",
+        "cn": "太多就不好。",
+        "parts": [
+          [
+            "Too much",
+            "misc"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "bad.",
+            "adj"
           ]
         ]
       }
@@ -2434,6 +2814,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "There is no water.",
+        "cn": "没有水。",
+        "parts": [
+          [
+            "There",
+            "dir"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "no",
+            "neg"
+          ],
+          [
+            "water.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "短句 + no + 短句",
@@ -2477,6 +2879,24 @@
             "det"
           ]
         ]
+      },
+      {
+        "en": "The other is here.",
+        "cn": "另一个在这里。",
+        "parts": [
+          [
+            "The other",
+            "det"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "here.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "other + 名词",
@@ -2518,6 +2938,20 @@
           [
             "some money.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "Take some.",
+        "cn": "拿一些吧。",
+        "parts": [
+          [
+            "Take",
+            "op"
+          ],
+          [
+            "some.",
+            "det"
           ]
         ]
       }
@@ -2571,6 +3005,20 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "No such thing.",
+        "cn": "没这回事。",
+        "parts": [
+          [
+            "No",
+            "neg"
+          ],
+          [
+            "such thing.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "such + 名词",
@@ -2618,6 +3066,24 @@
             "pron"
           ]
         ]
+      },
+      {
+        "en": "I want that.",
+        "cn": "我想要那个。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "want",
+            "op"
+          ],
+          [
+            "that.",
+            "pron"
+          ]
+        ]
       }
     ],
     "combine": "that + see/go/have/make…",
@@ -2654,6 +3120,24 @@
         "parts": [
           [
             "Take",
+            "op"
+          ],
+          [
+            "this.",
+            "pron"
+          ]
+        ]
+      },
+      {
+        "en": "I like this.",
+        "cn": "我喜欢这个。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "like",
             "op"
           ],
           [
@@ -2708,6 +3192,24 @@
             "op"
           ]
         ]
+      },
+      {
+        "en": "I am here.",
+        "cn": "我在这里。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "am",
+            "op"
+          ],
+          [
+            "here.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "i + see/go/have/make…",
@@ -2753,6 +3255,24 @@
           [
             "go.",
             "op"
+          ]
+        ]
+      },
+      {
+        "en": "He is here.",
+        "cn": "他在这里。",
+        "parts": [
+          [
+            "He",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "here.",
+            "dir"
           ]
         ]
       }
@@ -2802,6 +3322,24 @@
             "op"
           ]
         ]
+      },
+      {
+        "en": "You are here.",
+        "cn": "你在这里。",
+        "parts": [
+          [
+            "You",
+            "pron"
+          ],
+          [
+            "are",
+            "op"
+          ],
+          [
+            "here.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "you + see/go/have/make…",
@@ -2847,6 +3385,24 @@
           [
             "the key?",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "Who are you?",
+        "cn": "你是谁？",
+        "parts": [
+          [
+            "Who",
+            "pron"
+          ],
+          [
+            "are",
+            "op"
+          ],
+          [
+            "you?",
+            "pron"
           ]
         ]
       }
