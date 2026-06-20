@@ -32,6 +32,20 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "Come here.",
+        "cn": "过来。",
+        "parts": [
+          [
+            "Come",
+            "op"
+          ],
+          [
+            "here.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "Operator + 方向/名词：come + in = 进来",
@@ -69,6 +83,20 @@
           [
             "the key.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "Get up.",
+        "cn": "起来。",
+        "parts": [
+          [
+            "Get",
+            "op"
+          ],
+          [
+            "up.",
+            "dir"
           ]
         ]
       }
@@ -118,6 +146,20 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "Give help.",
+        "cn": "帮忙。",
+        "parts": [
+          [
+            "Give",
+            "op"
+          ],
+          [
+            "help.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "Operator + 方向/名词：give + back = 归还",
@@ -155,6 +197,24 @@
           [
             "back.",
             "dir"
+          ]
+        ]
+      },
+      {
+        "en": "Go to the house.",
+        "cn": "去那座房子。",
+        "parts": [
+          [
+            "Go",
+            "op"
+          ],
+          [
+            "to",
+            "dir"
+          ],
+          [
+            "the house.",
+            "n"
           ]
         ]
       }
@@ -196,6 +256,20 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "Keep quiet.",
+        "cn": "保持安静。",
+        "parts": [
+          [
+            "Keep",
+            "op"
+          ],
+          [
+            "quiet.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "Operator + 方向/名词：keep + out = 挡在外面",
@@ -233,6 +307,24 @@
           [
             "Let",
             "op"
+          ],
+          [
+            "go.",
+            "op"
+          ]
+        ]
+      },
+      {
+        "en": "Let him go.",
+        "cn": "让他走。",
+        "parts": [
+          [
+            "Let",
+            "op"
+          ],
+          [
+            "him",
+            "pron"
           ],
           [
             "go.",
@@ -282,6 +374,20 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "Make the bed.",
+        "cn": "整理床铺。",
+        "parts": [
+          [
+            "Make",
+            "op"
+          ],
+          [
+            "the bed.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "Operator + 方向/名词：make + ready = 准备好",
@@ -327,6 +433,24 @@
           [
             "your hat.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "Put it here.",
+        "cn": "放这儿。",
+        "parts": [
+          [
+            "Put",
+            "op"
+          ],
+          [
+            "it",
+            "pron"
+          ],
+          [
+            "here.",
+            "dir"
           ]
         ]
       }
@@ -376,6 +500,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "They seem happy.",
+        "cn": "他们看起来很开心。",
+        "parts": [
+          [
+            "They",
+            "pron"
+          ],
+          [
+            "seem",
+            "op"
+          ],
+          [
+            "happy.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "Operator + 方向/名词：seem + like = 好像",
@@ -417,6 +559,20 @@
           [
             "my hand.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "Take this.",
+        "cn": "拿着这个。",
+        "parts": [
+          [
+            "Take",
+            "op"
+          ],
+          [
+            "this.",
+            "pron"
           ]
         ]
       }
@@ -462,6 +618,20 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "Be good.",
+        "cn": "乖一点。",
+        "parts": [
+          [
+            "Be",
+            "op"
+          ],
+          [
+            "good.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "Operator + 方向/名词：be + in = 在里面",
@@ -502,6 +672,24 @@
           ],
           [
             "again.",
+            "misc"
+          ]
+        ]
+      },
+      {
+        "en": "Do it now.",
+        "cn": "现在就做。",
+        "parts": [
+          [
+            "Do",
+            "op"
+          ],
+          [
+            "it",
+            "pron"
+          ],
+          [
+            "now.",
             "misc"
           ]
         ]
@@ -548,6 +736,20 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "Have time.",
+        "cn": "有时间。",
+        "parts": [
+          [
+            "Have",
+            "op"
+          ],
+          [
+            "time.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "Operator + 方向/名词：have + a look = 看一眼",
@@ -588,6 +790,20 @@
           ],
           [
             "again.",
+            "misc"
+          ]
+        ]
+      },
+      {
+        "en": "Say no.",
+        "cn": "说「不」。",
+        "parts": [
+          [
+            "Say",
+            "op"
+          ],
+          [
+            "no.",
             "misc"
           ]
         ]
@@ -634,6 +850,20 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "See you.",
+        "cn": "回头见。",
+        "parts": [
+          [
+            "See",
+            "op"
+          ],
+          [
+            "you.",
+            "pron"
+          ]
+        ]
       }
     ],
     "combine": "Operator + 方向/名词：see + clearly = 看清",
@@ -675,6 +905,20 @@
           [
             "back.",
             "dir"
+          ]
+        ]
+      },
+      {
+        "en": "Send help.",
+        "cn": "派人帮忙。",
+        "parts": [
+          [
+            "Send",
+            "op"
+          ],
+          [
+            "help.",
+            "n"
           ]
         ]
       }
@@ -724,6 +968,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "May I come?",
+        "cn": "我可以来吗？",
+        "parts": [
+          [
+            "May",
+            "op"
+          ],
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "come?",
+            "op"
+          ]
+        ]
       }
     ],
     "combine": "Operator + 方向/名词：may + be = 也许是",
@@ -771,6 +1033,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "We will see.",
+        "cn": "走着瞧。",
+        "parts": [
+          [
+            "We",
+            "pron"
+          ],
+          [
+            "will",
+            "op"
+          ],
+          [
+            "see.",
+            "op"
+          ]
+        ]
       }
     ],
     "combine": "Operator + 方向/名词：will + go = 将去",
@@ -812,6 +1092,24 @@
           [
             "something",
             "misc"
+          ],
+          [
+            "about",
+            "dir"
+          ],
+          [
+            "it.",
+            "pron"
+          ]
+        ]
+      },
+      {
+        "en": "Talk about it.",
+        "cn": "说说这件事。",
+        "parts": [
+          [
+            "Talk",
+            "op"
           ],
           [
             "about",
@@ -873,6 +1171,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "Run across the road.",
+        "cn": "跑过马路。",
+        "parts": [
+          [
+            "Run",
+            "op"
+          ],
+          [
+            "across",
+            "dir"
+          ],
+          [
+            "the road.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "come across · go across · put across · take across",
@@ -917,6 +1233,24 @@
           ],
           [
             "the dog.",
+            "n"
+          ]
+        ]
+      },
+      {
+        "en": "Come after work.",
+        "cn": "下班后来。",
+        "parts": [
+          [
+            "Come",
+            "op"
+          ],
+          [
+            "after",
+            "dir"
+          ],
+          [
+            "work.",
             "n"
           ]
         ]
@@ -975,6 +1309,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "Go against the wind.",
+        "cn": "逆风走。",
+        "parts": [
+          [
+            "Go",
+            "op"
+          ],
+          [
+            "against",
+            "dir"
+          ],
+          [
+            "the wind.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "come against · go against · put against · take against",
@@ -1020,6 +1372,24 @@
           [
             "friends.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "Walk among them.",
+        "cn": "在他们中间走。",
+        "parts": [
+          [
+            "Walk",
+            "op"
+          ],
+          [
+            "among",
+            "dir"
+          ],
+          [
+            "them.",
+            "pron"
           ]
         ]
       }
@@ -1073,6 +1443,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "Look at me.",
+        "cn": "看着我。",
+        "parts": [
+          [
+            "Look",
+            "op"
+          ],
+          [
+            "at",
+            "dir"
+          ],
+          [
+            "me.",
+            "pron"
+          ]
+        ]
       }
     ],
     "combine": "come at · go at · put at · take at",
@@ -1117,6 +1505,28 @@
           ],
           [
             "night.",
+            "n"
+          ]
+        ]
+      },
+      {
+        "en": "Do it before dark.",
+        "cn": "天黑前做。",
+        "parts": [
+          [
+            "Do",
+            "op"
+          ],
+          [
+            "it",
+            "pron"
+          ],
+          [
+            "before",
+            "dir"
+          ],
+          [
+            "dark.",
             "n"
           ]
         ]
@@ -1171,6 +1581,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "Come between us.",
+        "cn": "站到我们中间来。",
+        "parts": [
+          [
+            "Come",
+            "op"
+          ],
+          [
+            "between",
+            "dir"
+          ],
+          [
+            "us.",
+            "pron"
+          ]
+        ]
       }
     ],
     "combine": "come between · go between · put between · take between",
@@ -1218,6 +1646,24 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "Be by me.",
+        "cn": "在我旁边。",
+        "parts": [
+          [
+            "Be",
+            "op"
+          ],
+          [
+            "by",
+            "dir"
+          ],
+          [
+            "me.",
+            "pron"
+          ]
+        ]
       }
     ],
     "combine": "come by · go by · put by · take by",
@@ -1255,6 +1701,20 @@
           [
             "it",
             "pron"
+          ],
+          [
+            "down.",
+            "dir"
+          ]
+        ]
+      },
+      {
+        "en": "Come down.",
+        "cn": "下来。",
+        "parts": [
+          [
+            "Come",
+            "op"
           ],
           [
             "down.",
@@ -1312,6 +1772,24 @@
             "pron"
           ]
         ]
+      },
+      {
+        "en": "Go from here.",
+        "cn": "从这里走。",
+        "parts": [
+          [
+            "Go",
+            "op"
+          ],
+          [
+            "from",
+            "dir"
+          ],
+          [
+            "here.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "come from · go from · put from · take from",
@@ -1361,6 +1839,20 @@
           [
             "the box.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "Get in.",
+        "cn": "进去。",
+        "parts": [
+          [
+            "Get",
+            "op"
+          ],
+          [
+            "in.",
+            "dir"
           ]
         ]
       }
