@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
-  <rect width="200" height="150" fill="#faf8f4"/>
-  <!-- Only 2 filled circles, showing a small quantity -->
-  <circle cx="90" cy="75" r="9" fill="#b45309" />
-  <circle cx="114" cy="75" r="9" fill="#b45309" />
-  <!-- Outline circles to show the potential capacity, contrasting the small amount -->
-  <circle cx="66" cy="75" r="9" fill="none" stroke="#c9c2b6" stroke-width="2.5" />
-  <circle cx="138" cy="75" r="9" fill="none" stroke="#c9c2b6" stroke-width="2.5" />
-</svg>

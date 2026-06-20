@@ -23,6 +23,16 @@ Designs/
 # Vite PWA dev service worker (regenerated on dev)
 dev-dist/
 
+# 废弃：本地 mp3 已全删，发音走有道 TTS
+public/audio/
+public/assets/audio/
+
+# 废弃格式：插画只保留 PNG，场景只保留 WebP
+public/assets/word-img/*.svg
+public/assets/word-img/*.jpg
+public/assets/scenes/*.svg
+public/assets/scenes/*.png
+
 # Pipeline backups & audit reports
 *.bak-batch
 *.report.json
