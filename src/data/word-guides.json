@@ -6410,6 +6410,36 @@
             "pron"
           ]
         ]
+      },
+      {
+        "en": "I need food, so I eat.",
+        "cn": "我饿了，所以吃饭。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "need",
+            "op"
+          ],
+          [
+            "food,",
+            "n"
+          ],
+          [
+            "so",
+            "conj"
+          ],
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "eat.",
+            "op"
+          ]
+        ]
       }
     ],
     "combine": "短句 + so + 短句",
@@ -6417,7 +6447,7 @@
     "ogdenTip": "语法骨架见 01-foundations/grammar-rules.md"
   },
   "very": {
-    "hook": "骨架词：非常（very）—— 撑起句子的功能词。",
+    "hook": "指程度：非常（very）。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "very + operator / noun",
@@ -6465,6 +6495,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The water is very cold.",
+        "cn": "水非常冷。",
+        "parts": [
+          [
+            "The water",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "very",
+            "misc"
+          ],
+          [
+            "cold.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -6472,7 +6524,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "tomorrow": {
-    "hook": "骨架词：明天（tomorrow）—— 撑起句子的功能词。",
+    "hook": "指时间：明天（tomorrow）。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "tomorrow + operator / noun",
@@ -6512,6 +6564,28 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "I will go tomorrow.",
+        "cn": "我明天去。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "will",
+            "op"
+          ],
+          [
+            "go",
+            "op"
+          ],
+          [
+            "tomorrow.",
+            "misc"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -6519,7 +6593,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "yesterday": {
-    "hook": "骨架词：昨天（yesterday）—— 撑起句子的功能词。",
+    "hook": "指时间：昨天（yesterday）。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "yesterday + operator / noun",
@@ -6559,6 +6633,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "I did it yesterday.",
+        "cn": "我昨天做了。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "did",
+            "op"
+          ],
+          [
+            "it",
+            "pron"
+          ],
+          [
+            "yesterday.",
+            "misc"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -6566,7 +6662,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "north": {
-    "hook": "骨架词：北方（north）—— 撑起句子的功能词。",
+    "hook": "指方向：北方（north）。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "north + operator / noun",
@@ -6606,6 +6702,28 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "The house is to the north.",
+        "cn": "房子在北边。",
+        "parts": [
+          [
+            "The house",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "to",
+            "dir"
+          ],
+          [
+            "the north.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -6613,7 +6731,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "south": {
-    "hook": "骨架词：南方（south）—— 撑起句子的功能词。",
+    "hook": "指方向：南方（south）。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "south + operator / noun",
@@ -6649,6 +6767,32 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "Birds fly south in winter.",
+        "cn": "鸟儿冬天往南飞。",
+        "parts": [
+          [
+            "Birds",
+            "n"
+          ],
+          [
+            "fly",
+            "op"
+          ],
+          [
+            "south",
+            "dir"
+          ],
+          [
+            "in",
+            "dir"
+          ],
+          [
+            "winter.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -6656,7 +6800,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "east": {
-    "hook": "骨架词：东方（east）—— 撑起句子的功能词。",
+    "hook": "指方向：东方（east）。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "east + operator / noun",
@@ -6700,6 +6844,24 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "Look to the east.",
+        "cn": "往东边看。",
+        "parts": [
+          [
+            "Look",
+            "op"
+          ],
+          [
+            "to",
+            "dir"
+          ],
+          [
+            "the east.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -6707,7 +6869,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "west": {
-    "hook": "骨架词：西方（west）—— 撑起句子的功能词。",
+    "hook": "指方向：西方（west）。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "west + operator / noun",
@@ -6751,6 +6913,28 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "The sun sets in the west.",
+        "cn": "太阳在西边落下。",
+        "parts": [
+          [
+            "The sun",
+            "n"
+          ],
+          [
+            "sets",
+            "op"
+          ],
+          [
+            "in",
+            "dir"
+          ],
+          [
+            "the west.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -6758,7 +6942,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "please": {
-    "hook": "骨架词：请（please）—— 撑起句子的功能词。",
+    "hook": "指礼貌：请（please）。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "please + operator / noun",
@@ -6804,6 +6988,24 @@
           [
             "me.",
             "pron"
+          ]
+        ]
+      },
+      {
+        "en": "Please sit down.",
+        "cn": "请坐下。",
+        "parts": [
+          [
+            "Please",
+            "misc"
+          ],
+          [
+            "sit",
+            "op"
+          ],
+          [
+            "down.",
+            "dir"
           ]
         ]
       }
@@ -6859,6 +7061,28 @@
           [
             "no.",
             "neg"
+          ]
+        ]
+      },
+      {
+        "en": "Yes, I will go.",
+        "cn": "好，我去。",
+        "parts": [
+          [
+            "Yes,",
+            "misc"
+          ],
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "will",
+            "op"
+          ],
+          [
+            "go.",
+            "op"
           ]
         ]
       }
@@ -57656,7 +57880,7 @@
     "ogdenTip": "性质词 + 200 picturable 名词 = 大量具体描述"
   },
   "awake": {
-    "hook": "与 睡觉（sleep） 成对 —— 醒着的（awake）。",
+    "hook": "醒着的（awake），反义 sleep。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "awake ↔ sleep",
@@ -57708,6 +57932,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "I am awake now.",
+        "cn": "我现在醒了。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "am",
+            "op"
+          ],
+          [
+            "awake",
+            "adj"
+          ],
+          [
+            "now.",
+            "misc"
+          ]
+        ]
       }
     ],
     "combine": "not awake · awake and not sleep",
@@ -57715,7 +57961,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "bad": {
-    "hook": "与 好的（good） 成对 —— 差的（bad）。",
+    "hook": "差的（bad），反义 good。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "bad ↔ good",
@@ -57767,6 +58013,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The food is bad.",
+        "cn": "食物不好。",
+        "parts": [
+          [
+            "The food",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "bad.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not bad · bad and not good",
@@ -57774,7 +58038,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "bent": {
-    "hook": "与 其反义 qual 词 成对 —— 弯曲的（bent）。",
+    "hook": "弯曲的（bent）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "bent ↔ ?",
@@ -57826,6 +58090,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The wire is bent.",
+        "cn": "铁丝弯了。",
+        "parts": [
+          [
+            "The wire",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "bent.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not bent · bent and not …",
@@ -57833,7 +58115,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "bitter": {
-    "hook": "与 其反义 qual 词 成对 —— 苦的（bitter）。",
+    "hook": "苦的（bitter）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "bitter ↔ ?",
@@ -57885,6 +58167,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The medicine is bitter.",
+        "cn": "药很苦。",
+        "parts": [
+          [
+            "The medicine",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "bitter.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not bitter · bitter and not …",
@@ -57892,7 +58192,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "blue": {
-    "hook": "与 其反义 qual 词 成对 —— 蓝色的（blue）。",
+    "hook": "蓝色的（blue）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "blue ↔ ?",
@@ -57944,6 +58244,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The sky is blue.",
+        "cn": "天是蓝的。",
+        "parts": [
+          [
+            "The sky",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "blue.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not blue · blue and not …",
@@ -57951,7 +58269,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "certain": {
-    "hook": "与 其反义 qual 词 成对 —— 确定的（certain）。",
+    "hook": "确定的（certain）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "certain ↔ ?",
@@ -58003,6 +58321,32 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "I am certain of it.",
+        "cn": "我确定这事。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "am",
+            "op"
+          ],
+          [
+            "certain",
+            "adj"
+          ],
+          [
+            "of",
+            "dir"
+          ],
+          [
+            "it.",
+            "pron"
+          ]
+        ]
       }
     ],
     "combine": "not certain · certain and not …",
@@ -58010,7 +58354,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "cold": {
-    "hook": "与 温暖的（warm） 成对 —— 冷的（cold）。",
+    "hook": "冷的（cold），反义 warm。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "cold ↔ warm",
@@ -58062,6 +58406,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The water is cold.",
+        "cn": "水很冷。",
+        "parts": [
+          [
+            "The water",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "cold.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not cold · cold and not warm",
@@ -58069,7 +58431,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "complete": {
-    "hook": "与 其反义 qual 词 成对 —— 完整的（complete）。",
+    "hook": "完整的（complete）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "complete ↔ ?",
@@ -58121,6 +58483,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The work is complete.",
+        "cn": "工作完成了。",
+        "parts": [
+          [
+            "The work",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "complete.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not complete · complete and not …",
@@ -58128,7 +58508,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "cruel": {
-    "hook": "与 其反义 qual 词 成对 —— 残忍的（cruel）。",
+    "hook": "残忍的（cruel）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "cruel ↔ ?",
@@ -58180,6 +58560,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "That man is cruel.",
+        "cn": "那人很残忍。",
+        "parts": [
+          [
+            "That man",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "cruel.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not cruel · cruel and not …",
@@ -58187,7 +58585,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "dark": {
-    "hook": "与 其反义 qual 词 成对 —— 黑暗的（dark）。",
+    "hook": "黑暗的（dark）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "dark ↔ ?",
@@ -58239,6 +58637,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The room is dark.",
+        "cn": "房间很暗。",
+        "parts": [
+          [
+            "The room",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "dark.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not dark · dark and not …",
@@ -58246,7 +58662,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "dead": {
-    "hook": "与 活的（living） 成对 —— 死的（dead）。",
+    "hook": "死的（dead），反义 living。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "dead ↔ living",
@@ -58298,6 +58714,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The flower is dead.",
+        "cn": "花枯了。",
+        "parts": [
+          [
+            "The flower",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "dead.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not dead · dead and not living",
@@ -58305,7 +58739,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "dear": {
-    "hook": "与 其反义 qual 词 成对 —— 亲爱的（dear）。",
+    "hook": "亲爱的（dear）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "dear ↔ ?",
@@ -58357,6 +58791,32 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "She is dear to me.",
+        "cn": "她对我很亲。",
+        "parts": [
+          [
+            "She",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "dear",
+            "adj"
+          ],
+          [
+            "to",
+            "dir"
+          ],
+          [
+            "me.",
+            "pron"
+          ]
+        ]
       }
     ],
     "combine": "not dear · dear and not …",
@@ -58364,7 +58824,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "delicate": {
-    "hook": "与 其反义 qual 词 成对 —— 精细的（delicate）。",
+    "hook": "精细的（delicate）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "delicate ↔ ?",
@@ -58416,6 +58876,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The glass is delicate.",
+        "cn": "玻璃很易碎。",
+        "parts": [
+          [
+            "The glass",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "delicate.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not delicate · delicate and not …",
@@ -58423,7 +58901,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "different": {
-    "hook": "与 相同的（same） 成对 —— 不同的（different）。",
+    "hook": "不同的（different），反义 same。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "different ↔ same",
@@ -58475,6 +58953,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "They are different.",
+        "cn": "它们不同。",
+        "parts": [
+          [
+            "They",
+            "pron"
+          ],
+          [
+            "are",
+            "op"
+          ],
+          [
+            "different.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not different · different and not same",
@@ -58482,7 +58978,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "dirty": {
-    "hook": "与 其反义 qual 词 成对 —— 脏的（dirty）。",
+    "hook": "脏的（dirty）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "dirty ↔ ?",
@@ -58534,6 +59030,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "My hands are dirty.",
+        "cn": "我手很脏。",
+        "parts": [
+          [
+            "My hands",
+            "n"
+          ],
+          [
+            "are",
+            "op"
+          ],
+          [
+            "dirty.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not dirty · dirty and not …",
@@ -58541,7 +59055,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "dry": {
-    "hook": "与 湿的（wet） 成对 —— 干的（dry）。",
+    "hook": "干的（dry），反义 wet。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "dry ↔ wet",
@@ -58593,6 +59107,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The land is dry.",
+        "cn": "土地很干。",
+        "parts": [
+          [
+            "The land",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "dry.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not dry · dry and not wet",
@@ -58600,7 +59132,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "false": {
-    "hook": "与 真实的（true） 成对 —— 错误的（false）。",
+    "hook": "假的（false），反义 true。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "false ↔ true",
@@ -58652,6 +59184,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "That story is false.",
+        "cn": "那故事是假的。",
+        "parts": [
+          [
+            "That story",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "false.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not false · false and not true",
@@ -58659,7 +59209,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "feeble": {
-    "hook": "与 其反义 qual 词 成对 —— 无力的（feeble）。",
+    "hook": "无力的（feeble）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "feeble ↔ ?",
@@ -58711,6 +59261,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "He is very feeble.",
+        "cn": "他很虚弱。",
+        "parts": [
+          [
+            "He",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "very",
+            "misc"
+          ],
+          [
+            "feeble.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not feeble · feeble and not …",
@@ -58718,7 +59290,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "female": {
-    "hook": "与 男性的（male） 成对 —— 女性的（female）。",
+    "hook": "女性的（female），反义 male。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "female ↔ male",
@@ -58770,6 +59342,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "She is a female cat.",
+        "cn": "她是母猫。",
+        "parts": [
+          [
+            "She",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "a female",
+            "adj"
+          ],
+          [
+            "cat.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "not female · female and not male",
@@ -58777,7 +59371,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "foolish": {
-    "hook": "与 其反义 qual 词 成对 —— 愚蠢的（foolish）。",
+    "hook": "愚蠢的（foolish）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "foolish ↔ ?",
@@ -58822,6 +59416,24 @@
           ],
           [
             "is",
+            "op"
+          ],
+          [
+            "foolish.",
+            "adj"
+          ]
+        ]
+      },
+      {
+        "en": "That was foolish.",
+        "cn": "那很傻。",
+        "parts": [
+          [
+            "That",
+            "pron"
+          ],
+          [
+            "was",
             "op"
           ],
           [
