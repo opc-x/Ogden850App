@@ -1,6 +1,6 @@
 {
   "come": {
-    "hook": "指着动作本身：来 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指动作：来（朝这边动）。",
     "method": "Operator · 18 个动作根",
     "concept": "身体朝说话人/观察点移动。 与方向词相乘：come/go + in/out/back 取代 enter/leave/return。",
     "equation": "come + in = 进来",
@@ -53,7 +53,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "get": {
-    "hook": "指着动作本身：得到 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指动作：得到（拿到手）。",
     "method": "Operator · 18 个动作根",
     "concept": "接收、得到某物，或进入某种状态。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "get + in = 进来",
@@ -106,7 +106,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "give": {
-    "hook": "指着动作本身：给予 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指动作：给（交到对方手里）。",
     "method": "Operator · 18 个动作根",
     "concept": "将自己持有的东西传递给对方。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "give + back = 归还",
@@ -167,7 +167,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "go": {
-    "hook": "指着动作本身：去 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指动作：去（朝那边走）。",
     "method": "Operator · 18 个动作根",
     "concept": "身体离开当前位置向外移动。 与方向词相乘：come/go + in/out/back 取代 enter/leave/return。",
     "equation": "go + out = 出去",
@@ -224,7 +224,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "keep": {
-    "hook": "指着动作本身：保持 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指动作：保持（维持原样）。",
     "method": "Operator · 18 个动作根",
     "concept": "维持其现有位置或状态不跑掉。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "keep + out = 挡在外面",
@@ -277,7 +277,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "let": {
-    "hook": "指着动作本身：让 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指动作：让（允许发生）。",
     "method": "Operator · 18 个动作根",
     "concept": "撤销阻碍，放任通行。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "let + in = 放进来",
@@ -338,7 +338,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "make": {
-    "hook": "指着动作本身：制造 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指动作：做/使（弄出结果）。",
     "method": "Operator · 18 个动作根",
     "concept": "动手改造原材料，塑造出新形态。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "make + ready = 准备好",
@@ -395,7 +395,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "put": {
-    "hook": "指着动作本身：放置 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指动作：放（搁到某处）。",
     "method": "Operator · 18 个动作根",
     "concept": "手持物体并使其在某处安放。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "put + down = 放下",
@@ -460,7 +460,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "seem": {
-    "hook": "指着动作本身：似乎 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指感觉：似乎（看起来是这样）。",
     "method": "Operator · 18 个动作根",
     "concept": "感官呈现的样子，不一定是实情。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "seem + like = 好像",
@@ -525,7 +525,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "take": {
-    "hook": "指着动作本身：拿 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指动作：拿（从别处取来）。",
     "method": "Operator · 18 个动作根",
     "concept": "伸手握住物体并使之脱离原位。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "take + out = 拿出去",
@@ -582,7 +582,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "be": {
-    "hook": "指着动作本身：是 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指状态：是/在（存在或性质）。",
     "method": "Operator · 18 个动作根",
     "concept": "静态地存在于某处或某种性质中。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "be + in = 在里面",
@@ -639,7 +639,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "do": {
-    "hook": "指着动作本身：做 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指动作：做（执行某事）。",
     "method": "Operator · 18 个动作根",
     "concept": "执行活动过程，关注动作本身。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "do + again = 再做",
@@ -700,7 +700,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "have": {
-    "hook": "指着动作本身：有 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指拥有：有（在自己这边）。",
     "method": "Operator · 18 个动作根",
     "concept": "占有某物或正经历某种状态。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "have + a look = 看一眼",
@@ -757,7 +757,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "say": {
-    "hook": "指着动作本身：说 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指说话：说（用嘴表达）。",
     "method": "Operator · 18 个动作根",
     "concept": "将思想转化为声波输出。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "say + again = 再说",
@@ -814,7 +814,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "see": {
-    "hook": "指着动作本身：看见 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指看见：看（眼睛察觉到）。",
     "method": "Operator · 18 个动作根",
     "concept": "视觉器官接收外界光波信号。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "see + clearly = 看清",
@@ -871,7 +871,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "send": {
-    "hook": "指着动作本身：发送 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指发送：送/寄（送出去）。",
     "method": "Operator · 18 个动作根",
     "concept": "借助媒介将物品或信息送往远处。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "send + out = 发出",
@@ -928,7 +928,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "may": {
-    "hook": "指着动作本身：可以 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指许可/可能：可以/也许。",
     "method": "Operator · 18 个动作根",
     "concept": "表示许可或推测可能发生。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "may + be = 也许是",
@@ -993,7 +993,7 @@
     "ogdenTip": "见 01-foundations/operators-18.md · 18 × 方向 = 上千动词"
   },
   "will": {
-    "hook": "指着动作本身：将会 —— BE850 用这一个词取代一整类复杂动词。",
+    "hook": "指将来：会/将要（未来会做）。",
     "method": "Operator · 18 个动作根",
     "concept": "表示将要发生或主观意愿。 Ogden 动词消除：这一个 operator 配名词或方向，覆盖一整类复杂说法。",
     "equation": "will + go = 将去",
@@ -58836,7 +58836,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "future": {
-    "hook": "与 其反义 qual 词 成对 —— 未来的（future）。",
+    "hook": "与 过去的（past） 成对 —— 未来的（future）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "future ↔ ?",
@@ -58888,6 +58888,32 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The time is in the future.",
+        "cn": "时间在将来。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "time",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "in",
+            "dir"
+          ],
+          [
+            "the future.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not future · future and not …",
@@ -58895,7 +58921,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "green": {
-    "hook": "与 其反义 qual 词 成对 —— 绿色的（green）。",
+    "hook": "绿色（green）—— 草叶常是这个色。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "green ↔ ?",
@@ -58947,6 +58973,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The grass is green.",
+        "cn": "草是绿的。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "grass",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "green.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not green · green and not …",
@@ -58954,7 +59002,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "ill": {
-    "hook": "与 其反义 qual 词 成对 —— 生病的（ill）。",
+    "hook": "与 好的（well） 成对 —— 生病的（ill）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "ill ↔ ?",
@@ -59004,6 +59052,28 @@
           [
             "ill.",
             "adj"
+          ]
+        ]
+      },
+      {
+        "en": "He is ill today.",
+        "cn": "他今天病了。",
+        "parts": [
+          [
+            "He",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "ill",
+            "adj"
+          ],
+          [
+            "today.",
+            "misc"
           ]
         ]
       }
@@ -59065,6 +59135,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "This is the last day.",
+        "cn": "这是最后一天。",
+        "parts": [
+          [
+            "This",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "the last",
+            "adj"
+          ],
+          [
+            "day.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "not last · last and not first",
@@ -59072,7 +59164,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "late": {
-    "hook": "与 其反义 qual 词 成对 —— 晚的（late）。",
+    "hook": "与 早的（early） 成对 —— 晚的（late）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "late ↔ ?",
@@ -59124,6 +59216,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "He is late again.",
+        "cn": "他又迟到了。",
+        "parts": [
+          [
+            "He",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "late",
+            "adj"
+          ],
+          [
+            "again.",
+            "misc"
+          ]
+        ]
       }
     ],
     "combine": "not late · late and not …",
@@ -59131,7 +59245,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "left": {
-    "hook": "与 其反义 qual 词 成对 —— 左边的（left）。",
+    "hook": "在左边 —— 左边的（left）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "left ↔ ?",
@@ -59183,6 +59297,24 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "Turn to the left.",
+        "cn": "往左转。",
+        "parts": [
+          [
+            "Turn",
+            "op"
+          ],
+          [
+            "to",
+            "dir"
+          ],
+          [
+            "the left.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not left · left and not …",
@@ -59231,6 +59363,28 @@
           ],
           [
             "side",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "loose.",
+            "adj"
+          ]
+        ]
+      },
+      {
+        "en": "The knot is loose.",
+        "cn": "结松了。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "knot",
             "n"
           ],
           [
@@ -59301,6 +59455,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The sound is loud.",
+        "cn": "声音很大。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "sound",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "loud.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not loud · loud and not quiet",
@@ -59360,6 +59536,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The sun is low.",
+        "cn": "太阳很低。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "sun",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "low.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not low · low and not high",
@@ -59367,7 +59565,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "mixed": {
-    "hook": "与 其反义 qual 词 成对 —— 混合的（mixed）。",
+    "hook": "混在一起的（mixed）—— 几种掺到一块。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "mixed ↔ ?",
@@ -59419,6 +59617,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The colors are mixed.",
+        "cn": "颜色混在一起了。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "colors",
+            "n"
+          ],
+          [
+            "are",
+            "op"
+          ],
+          [
+            "mixed.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not mixed · mixed and not …",
@@ -59426,7 +59646,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "narrow": {
-    "hook": "与 其反义 qual 词 成对 —— 狭窄的（narrow）。",
+    "hook": "与 宽的（wide） 成对 —— 狭窄的（narrow）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "narrow ↔ ?",
@@ -59467,6 +59687,28 @@
           ],
           [
             "side",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "narrow.",
+            "adj"
+          ]
+        ]
+      },
+      {
+        "en": "The road is narrow.",
+        "cn": "路很窄。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "road",
             "n"
           ],
           [
@@ -59537,6 +59779,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "This is an old house.",
+        "cn": "这是座老房子。",
+        "parts": [
+          [
+            "This",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "an old",
+            "adj"
+          ],
+          [
+            "house.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "not old · old and not young",
@@ -59544,7 +59808,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "opposite": {
-    "hook": "与 其反义 qual 词 成对 —— 相反的（opposite）。",
+    "hook": "在另一面 —— 相反的（opposite）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "opposite ↔ ?",
@@ -59596,6 +59860,32 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "They are on opposite sides.",
+        "cn": "他们在对面。",
+        "parts": [
+          [
+            "They",
+            "pron"
+          ],
+          [
+            "are",
+            "op"
+          ],
+          [
+            "on",
+            "dir"
+          ],
+          [
+            "opposite",
+            "adj"
+          ],
+          [
+            "sides.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "not opposite · opposite and not …",
@@ -59603,7 +59893,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "public": {
-    "hook": "与 其反义 qual 词 成对 —— 公众的（public）。",
+    "hook": "给大家的（public）—— 谁都能看。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "public ↔ ?",
@@ -59655,6 +59945,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "It is public news.",
+        "cn": "这是公开的消息。",
+        "parts": [
+          [
+            "It",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "public",
+            "adj"
+          ],
+          [
+            "news.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "not public · public and not …",
@@ -59662,7 +59974,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "rough": {
-    "hook": "与 其反义 qual 词 成对 —— 粗糙的（rough）。",
+    "hook": "与 滑的（smooth） 成对 —— 粗糙的（rough）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "rough ↔ ?",
@@ -59714,6 +60026,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The paper is rough.",
+        "cn": "纸很粗糙。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "paper",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "rough.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not rough · rough and not …",
@@ -59721,7 +60055,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "sad": {
-    "hook": "与 其反义 qual 词 成对 —— 悲伤的（sad）。",
+    "hook": "与 快乐的（happy） 成对 —— 悲伤的（sad）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "sad ↔ ?",
@@ -59773,6 +60107,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "She has a sad face.",
+        "cn": "她一脸悲伤。",
+        "parts": [
+          [
+            "She",
+            "pron"
+          ],
+          [
+            "has",
+            "op"
+          ],
+          [
+            "a sad",
+            "adj"
+          ],
+          [
+            "face.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "not sad · sad and not …",
@@ -59780,7 +60136,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "safe": {
-    "hook": "与 其反义 qual 词 成对 —— 安全的（safe）。",
+    "hook": "安全的（safe）—— 不会出事。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "safe ↔ ?",
@@ -59832,6 +60188,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "You are safe here.",
+        "cn": "你在这里很安全。",
+        "parts": [
+          [
+            "You",
+            "pron"
+          ],
+          [
+            "are",
+            "op"
+          ],
+          [
+            "safe",
+            "adj"
+          ],
+          [
+            "here.",
+            "misc"
+          ]
+        ]
       }
     ],
     "combine": "not safe · safe and not …",
@@ -59839,7 +60217,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "secret": {
-    "hook": "与 其反义 qual 词 成对 —— 秘密的（secret）。",
+    "hook": "秘密的（secret）—— 不能外传。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "secret ↔ ?",
@@ -59889,6 +60267,28 @@
           [
             "secret.",
             "adj"
+          ]
+        ]
+      },
+      {
+        "en": "It is a secret place.",
+        "cn": "那是个秘密地方。",
+        "parts": [
+          [
+            "It",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "a secret",
+            "adj"
+          ],
+          [
+            "place.",
+            "n"
           ]
         ]
       }
@@ -59950,6 +60350,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "It is a short time.",
+        "cn": "时间很短。",
+        "parts": [
+          [
+            "It",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "a short",
+            "adj"
+          ],
+          [
+            "time.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "not short · short and not long",
@@ -60009,6 +60431,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The door is shut.",
+        "cn": "门关着。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "door",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "shut.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not shut · shut and not open",
@@ -60016,7 +60460,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "simple": {
-    "hook": "与 其反义 qual 词 成对 —— 简单的（simple）。",
+    "hook": "简单的（simple）—— 不复杂。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "simple ↔ ?",
@@ -60057,6 +60501,28 @@
           ],
           [
             "side",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "simple.",
+            "adj"
+          ]
+        ]
+      },
+      {
+        "en": "The answer is simple.",
+        "cn": "答案很简单。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "answer",
             "n"
           ],
           [
@@ -60127,6 +60593,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The train is slow.",
+        "cn": "火车很慢。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "train",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "slow.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not slow · slow and not quick",
@@ -60134,7 +60622,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "small": {
-    "hook": "与 其反义 qual 词 成对 —— 小的（small）。",
+    "hook": "与 少的（little） 成对 —— 小的（small）。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "small ↔ ?",
@@ -60184,6 +60672,28 @@
           [
             "small.",
             "adj"
+          ]
+        ]
+      },
+      {
+        "en": "It is a small box.",
+        "cn": "是个小盒子。",
+        "parts": [
+          [
+            "It",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "a small",
+            "adj"
+          ],
+          [
+            "box.",
+            "n"
           ]
         ]
       }
@@ -60245,6 +60755,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The bed is soft.",
+        "cn": "床很软。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "bed",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "soft.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not soft · soft and not hard",
@@ -60252,7 +60784,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "solid": {
-    "hook": "与 其反义 qual 词 成对 —— 坚硬的（solid）。",
+    "hook": "坚硬的（solid）—— 结实不虚。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "solid ↔ ?",
@@ -60304,6 +60836,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The wall is solid.",
+        "cn": "墙很结实。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "wall",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "solid.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not solid · solid and not …",
@@ -60311,7 +60865,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "special": {
-    "hook": "与 其反义 qual 词 成对 —— 特别的（special）。",
+    "hook": "特别的（special）—— 跟平常不一样。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "special ↔ ?",
@@ -60363,6 +60917,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "This is a special day.",
+        "cn": "今天是特别的日子。",
+        "parts": [
+          [
+            "This",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "a special",
+            "adj"
+          ],
+          [
+            "day.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "not special · special and not …",
@@ -60370,7 +60946,7 @@
     "ogdenTip": "反义对记忆：一次记两个，效率翻倍"
   },
   "strange": {
-    "hook": "与 其反义 qual 词 成对 —— 奇怪的（strange）。",
+    "hook": "奇怪的（strange）—— 不寻常。",
     "method": "Opposite · 反义 50",
     "concept": "Ogden 第 5 类：把常见反义单独列出，与第 4 类性质词对照记忆，秒懂对比。",
     "equation": "strange ↔ ?",
@@ -60422,6 +60998,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "That is a strange sound.",
+        "cn": "那声音很奇怪。",
+        "parts": [
+          [
+            "That",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "a strange",
+            "adj"
+          ],
+          [
+            "sound.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "not strange · strange and not …",
@@ -60470,6 +61068,28 @@
           ],
           [
             "side",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "thin.",
+            "adj"
+          ]
+        ]
+      },
+      {
+        "en": "The paper is thin.",
+        "cn": "纸很薄。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "paper",
             "n"
           ],
           [
@@ -60540,6 +61160,28 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "The snow is white.",
+        "cn": "雪是白的。",
+        "parts": [
+          [
+            "The",
+            "det"
+          ],
+          [
+            "snow",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "white.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "not white · white and not black",
@@ -60597,6 +61239,28 @@
           [
             "wrong.",
             "adj"
+          ]
+        ]
+      },
+      {
+        "en": "That is the wrong answer.",
+        "cn": "那是错的答案。",
+        "parts": [
+          [
+            "That",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "the wrong",
+            "adj"
+          ],
+          [
+            "answer.",
+            "n"
           ]
         ]
       }
