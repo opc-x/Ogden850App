@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="haircut">
+  <defs>
+    <linearGradient id="bg-haircut" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgb(247,207,225)"/>
+      <stop offset="100%" stop-color="rgb(233,125,173)"/>
+    </linearGradient>
+    <radialGradient id="glow-haircut" cx="32%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg-haircut)"/>
+  <rect width="400" height="240" fill="url(#glow-haircut)"/>
+  <circle cx="350" cy="32" r="60" fill="#db2777" opacity="0.10"/>
+  <circle cx="40" cy="210" r="70" fill="rgb(186,33,101)" opacity="0.08"/>
+  <circle cx="160" cy="120" r="78" fill="#ffffff" opacity="0.55"/>
+  <g transform="translate(122,64) scale(1.12)" fill="none" stroke="rgb(186,33,101)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" color="rgb(186,33,101)">
+    <path d="M16 12v26h32V12"/><path d="M16 38v14"/><path d="M48 38v14"/><path d="M16 38h32"/><path d="M20 52v4"/><path d="M44 52v4"/>
+  </g>
+</svg>

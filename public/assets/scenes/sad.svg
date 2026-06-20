@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="sad">
+  <defs>
+    <linearGradient id="bg-sad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgb(221,221,252)"/>
+      <stop offset="100%" stop-color="rgb(161,163,247)"/>
+    </linearGradient>
+    <radialGradient id="glow-sad" cx="32%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg-sad)"/>
+  <rect width="400" height="240" fill="url(#glow-sad)"/>
+  <circle cx="350" cy="32" r="60" fill="#6366f1" opacity="0.10"/>
+  <circle cx="40" cy="210" r="70" fill="rgb(84,87,205)" opacity="0.08"/>
+  <circle cx="160" cy="120" r="78" fill="#ffffff" opacity="0.55"/>
+  <g transform="translate(122,64) scale(1.12)" fill="none" stroke="rgb(84,87,205)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" color="rgb(84,87,205)">
+    <path d="M18 28a12 12 0 0 1 1-24 14 14 0 0 1 27-3 12 12 0 0 1 2 24z"/><line x1="20" y1="42" x2="16" y2="54"/><line x1="32" y1="42" x2="28" y2="54"/><line x1="44" y1="42" x2="40" y2="54"/>
+  </g>
+</svg>

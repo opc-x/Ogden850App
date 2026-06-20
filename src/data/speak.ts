@@ -1,8 +1,10 @@
-/** 发音：edge-tts MP3（en-GB-SoniaNeural）优先；仅无音频时回退英式 TTS */
+/** 发音：预生成 MP3 优先；句子用有道英音真人声；最后才回退浏览器 TTS */
 import { WORDS } from "./words850";
+import { APP_CONFIG } from "../config";
 
 const AUDIO_BASE = "/audio";
 const VOICE_ID = "en-GB-SoniaNeural";
+const YOUDAO_BRITISH = 1;
 
 const CORE_WORDS = new Set(WORDS.map((w) => w.w.toLowerCase()));
 
@@ -46,6 +48,15 @@ function pickBritishVoice(voices: SpeechSynthesisVoice[]): SpeechSynthesisVoice 
   );
 }
 
+function youdaoUrl(text: string, type = YOUDAO_BRITISH): string {
+  return `${APP_CONFIG.TTS.YOUDAO_TTS_BASE_URL}?audio=${encodeURIComponent(text)}&type=${type}`;
+}
+
+function speakWithYoudao(text: string): Promise<void> {
+  return playMp3(youdaoUrl(text)).catch(() => {
+    speakWithBrowser(text);
+  });
+}
 function speakWithBrowser(text: string): void {
   if (typeof window === "undefined" || !window.speechSynthesis) return;
   const u = new SpeechSynthesisUtterance(text);
@@ -103,9 +114,7 @@ export function speakText(text: string, sentenceId?: number): Promise<void> {
   stop();
   
   if (sentenceId) {
-    return playMp3(`/audio/sentences/${sentenceId}.mp3`).catch(() => {
-      speakWithBrowser(text);
-    });
+    return playMp3(`/audio/sentences/${sentenceId}.mp3`).catch(() => speakWithYoudao(text));
   }
 
   const trimmed = text.trim();
@@ -113,14 +122,11 @@ export function speakText(text: string, sentenceId?: number): Promise<void> {
   if (words.length === 1) {
     const normalized = words[0].toLowerCase().replace(/^[("'[]+|[)"'\],.!?;:]+$/g, "");
     if (CORE_WORDS.has(normalized)) {
-      return playMp3(audioUrl(normalized)).catch(() => {
-        speakWithBrowser(trimmed);
-      });
+      return playMp3(audioUrl(normalized)).catch(() => speakWithYoudao(trimmed));
     }
   }
 
-  speakWithBrowser(trimmed);
-  return Promise.resolve();
+  return speakWithYoudao(trimmed);
 }
 
 export { VOICE_ID };

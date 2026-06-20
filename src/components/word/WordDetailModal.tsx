@@ -7,15 +7,26 @@ import {
   Sparkles, 
   BookMarked,
   RefreshCw,
-  Package,
-  Palette,
   CheckCircle,
   Activity
 } from 'lucide-react';
 import { Word, CATEGORY_LABELS } from '../../data/wordsList';
-import wordAnnotations from '../../data/word-annotations.json';
-import OperatorVisual from '../OperatorVisual';
-import { DirectionGraphic } from '../DirectionsVisual';
+import type { GuideSentence } from '../../types/vocab';
+import WordCardVisual from './WordCardVisual';
+
+function guideSentences(guide: { guide_sentences?: GuideSentence[]; sentences?: GuideSentence[] }): GuideSentence[] {
+  return guide.guide_sentences ?? guide.sentences ?? [];
+}
+
+function partSurface(p: GuideSentence['parts'][number] | [string, string]): string {
+  if (Array.isArray(p)) return String(p[0]);
+  return p.surface ?? (p as { chunk?: string }).chunk ?? '';
+}
+
+function partRole(p: GuideSentence['parts'][number] | [string, string]): string {
+  if (Array.isArray(p)) return String(p[1] ?? 'misc');
+  return String(p.role ?? 'misc');
+}
 
 interface WordDetailModalProps {
   selectedWord: Word;
@@ -121,45 +132,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
           {/* SVG Visual Focus */}
           <div className="w-full flex justify-center py-6 sm:py-8 relative min-h-[140px] items-center">
             <div className="absolute inset-0 bg-slate-50/60 rounded-3xl -z-10" />
-            {selectedWord.category === 'operators' && (
-              <div className="w-full max-w-[220px] aspect-square flex items-center justify-center">
-                <OperatorVisual type={selectedWord.word} />
-              </div>
-            )}
-            {selectedWord.category === 'actions' && (
-              <div className="w-full max-w-[220px] aspect-square flex items-center justify-center">
-                <DirectionGraphic type={selectedWord.word} />
-              </div>
-            )}
-            {(selectedWord.category === 'picturables' || selectedWord.category === 'generals' || selectedWord.category === 'qualities' || selectedWord.category === 'opposites') && (
-              <div className="flex flex-col items-center justify-center w-full max-w-[220px] aspect-square">
-                {(() => {
-                  const annotation = (wordAnnotations as any)[selectedWord.word.toLowerCase()];
-                  const img = annotation?.img;
-                  return img ? (
-                    <img 
-                      src={img} 
-                      alt={selectedWord.word} 
-                      className="w-full h-full object-contain mix-blend-multiply drop-shadow-sm"
-                    />
-                  ) : (
-                    <div className="flex flex-col items-center opacity-40 justify-center">
-                      {selectedWord.category === 'picturables' || selectedWord.category === 'generals' ? (
-                        <>
-                          <Package className="w-16 h-16 text-slate-400 drop-shadow-sm mb-2" strokeWidth={1} />
-                          <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">名词图谱</span>
-                        </>
-                      ) : (
-                        <>
-                          <Palette className="w-16 h-16 text-slate-400 drop-shadow-sm mb-2" strokeWidth={1} />
-                          <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">性质图谱</span>
-                        </>
-                      )}
-                    </div>
-                  );
-                })()}
-              </div>
-            )}
+            <WordCardVisual word={selectedWord} size="detail" />
           </div>
 
           {/* AI Guide Block */}
@@ -177,7 +150,10 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                     一秒秒懂
                   </span>
                   <div className="text-sm font-medium text-slate-700 leading-relaxed space-y-1 sm:space-y-2">
-                    {dynamicGuide.hook.split('\n').map((line: string, i: number) => (
+                    {(dynamicGuide.hook ?? '')
+                      .split('\n')
+                      .filter((line) => line.trim())
+                      .map((line: string, i: number) => (
                       <p key={i}>{line}</p>
                     ))}
                   </div>
@@ -190,7 +166,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                     绝佳搭配例句
                   </span>
                   <div className="grid gap-2 sm:gap-3">
-                    {dynamicGuide.sentences.map((item: any, idx: number) => (
+                    {guideSentences(dynamicGuide).map((item, idx) => (
                       <motion.div 
                         whileHover={{ scale: 1.015, y: -2 }}
                         whileTap={{ scale: 0.98 }}
@@ -200,11 +176,13 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                       >
                         <div className="flex justify-between items-start mb-2 gap-2 sm:gap-4">
                           <p className="text-sm sm:text-base font-extrabold text-slate-800 leading-snug">
-                            {item.parts ? item.parts.map((p: any, i: number) => (
-                              <span key={i} className={p.role === 'op' ? 'text-[#c65a30]' : p.role === 'dir' ? 'text-cyan-600' : ''}>
-                                {p.chunk}{' '}
+                            {item.parts?.length ? item.parts.map((p, i) => {
+                              const role = partRole(p as GuideSentence['parts'][number] | [string, string]);
+                              return (
+                              <span key={i} className={role === 'op' ? 'text-[#c65a30]' : role === 'dir' ? 'text-cyan-600' : ''}>
+                                {partSurface(p as GuideSentence['parts'][number] | [string, string])}{' '}
                               </span>
-                            )) : item.en}
+                            );}) : item.en}
                           </p>
                           <button 
                             onClick={(e) => { e.stopPropagation(); onPlaySpeech(item.en); }}

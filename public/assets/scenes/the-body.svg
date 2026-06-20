@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="the-body">
+  <defs>
+    <linearGradient id="bg-the-body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgb(248,205,215)"/>
+      <stop offset="100%" stop-color="rgb(237,119,145)"/>
+    </linearGradient>
+    <radialGradient id="glow-the-body" cx="32%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg-the-body)"/>
+  <rect width="400" height="240" fill="url(#glow-the-body)"/>
+  <circle cx="350" cy="32" r="60" fill="#e11d48" opacity="0.10"/>
+  <circle cx="40" cy="210" r="70" fill="rgb(191,25,61)" opacity="0.08"/>
+  <circle cx="160" cy="120" r="78" fill="#ffffff" opacity="0.55"/>
+  <g transform="translate(122,64) scale(1.12)" fill="none" stroke="rgb(191,25,61)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" color="rgb(191,25,61)">
+    <circle cx="32" cy="14" r="8"/><path d="M32 22v20"/><path d="M32 26l-14 10"/><path d="M32 26l14 10"/><path d="M32 42l-10 14"/><path d="M32 42l10 14"/>
+  </g>
+</svg>

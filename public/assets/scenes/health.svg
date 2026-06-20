@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="health">
+  <defs>
+    <linearGradient id="bg-health" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgb(204,235,215)"/>
+      <stop offset="100%" stop-color="rgb(115,200,146)"/>
+    </linearGradient>
+    <radialGradient id="glow-health" cx="32%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg-health)"/>
+  <rect width="400" height="240" fill="url(#glow-health)"/>
+  <circle cx="350" cy="32" r="60" fill="#16a34a" opacity="0.10"/>
+  <circle cx="40" cy="210" r="70" fill="rgb(19,139,63)" opacity="0.08"/>
+  <circle cx="160" cy="120" r="78" fill="#ffffff" opacity="0.55"/>
+  <g transform="translate(122,64) scale(1.12)" fill="none" stroke="rgb(19,139,63)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" color="rgb(19,139,63)">
+    <rect x="8" y="30" width="48" height="14" rx="3"/><line x1="8" y1="44" x2="8" y2="52"/><line x1="56" y1="44" x2="56" y2="52"/><path d="M10 30v-8a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v8"/><circle cx="20" cy="22" r="4"/>
+  </g>
+</svg>

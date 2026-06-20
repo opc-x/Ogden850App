@@ -1,32 +1,68 @@
-import React, { createContext, useContext, useState, useEffect, useMemo, ReactNode } from 'react';
-import { Word, wordsData } from '../data/wordsList';
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useMemo,
+  useCallback,
+  ReactNode,
+} from 'react';
+import { useWords } from './WordsContext';
 
-interface ProgressContextType {
-  learningStatus: Record<string, 'learning' | 'mastered'>;
-  starredWords: Record<string, boolean>;
-  isInitialized: boolean;
+type LearningStatusMap = Record<string, 'learning' | 'mastered'>;
+type StarredWordsMap = Record<string, boolean>;
+type PracticedScenesMap = Record<string, boolean>;
+
+interface ProgressActions {
   setWordStatus: (wordId: string, status: 'learning' | 'mastered' | null, e?: React.MouseEvent) => void;
   toggleStar: (wordId: string, e?: React.MouseEvent) => void;
+  toggleScenePracticed: (sceneKey: string, e?: React.MouseEvent) => void;
+  resetProgressData: () => void;
+}
+
+interface ProgressStats {
   masteredCount: number;
   learningCount: number;
   starredCount: number;
+  practicedSceneCount: number;
   progressPercent: number;
 }
 
-const ProgressContext = createContext<ProgressContextType | undefined>(undefined);
+interface ProgressMeta {
+  isInitialized: boolean;
+}
+
+interface ProgressContextType extends ProgressActions, ProgressStats, ProgressMeta {
+  learningStatus: LearningStatusMap;
+  starredWords: StarredWordsMap;
+  practicedScenes: PracticedScenesMap;
+  isScenePracticed: (sceneKey: string) => boolean;
+}
+
+const LearningStatusContext = createContext<LearningStatusMap | undefined>(undefined);
+const StarredWordsContext = createContext<StarredWordsMap | undefined>(undefined);
+const PracticedScenesContext = createContext<PracticedScenesMap | undefined>(undefined);
+const ProgressActionsContext = createContext<ProgressActions | undefined>(undefined);
+const ProgressStatsContext = createContext<ProgressStats | undefined>(undefined);
+const ProgressMetaContext = createContext<ProgressMeta | undefined>(undefined);
 
 export const ProgressProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
+  const { words } = useWords();
   const [isInitialized, setIsInitialized] = useState(false);
-  const [learningStatus, setLearningStatus] = useState<Record<string, 'learning' | 'mastered'>>({});
-  const [starredWords, setStarredWords] = useState<Record<string, boolean>>({});
+  const [learningStatus, setLearningStatus] = useState<LearningStatusMap>({});
+  const [starredWords, setStarredWords] = useState<StarredWordsMap>({});
+  const [practicedScenes, setPracticedScenes] = useState<PracticedScenesMap>({});
 
   useEffect(() => {
     try {
       const storedStatus = localStorage.getItem('ogden850_learning_status');
       if (storedStatus) setLearningStatus(JSON.parse(storedStatus));
-      
+
       const storedStarred = localStorage.getItem('ogden850_starred');
       if (storedStarred) setStarredWords(JSON.parse(storedStarred));
+
+      const storedScenes = localStorage.getItem('ogden850_practiced_scenes');
+      if (storedScenes) setPracticedScenes(JSON.parse(storedScenes));
     } catch (e) {
       console.warn('Could not load progress from local storage', e);
     }
@@ -43,39 +79,145 @@ export const ProgressProvider: React.FC<{ children: ReactNode }> = ({ children }
     localStorage.setItem('ogden850_starred', JSON.stringify(starredWords));
   }, [starredWords, isInitialized]);
 
-  const toggleStar = (wordId: string, e?: React.MouseEvent) => {
-    if (e) e.stopPropagation();
-    setStarredWords(prev => ({ ...prev, [wordId]: !prev[wordId] }));
-  };
+  useEffect(() => {
+    if (!isInitialized) return;
+    localStorage.setItem('ogden850_practiced_scenes', JSON.stringify(practicedScenes));
+  }, [practicedScenes, isInitialized]);
 
-  const setWordStatus = (wordId: string, status: 'learning' | 'mastered' | null, e?: React.MouseEvent) => {
+  const toggleStar = useCallback((wordId: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
-    setLearningStatus(prev => {
-      const updated = { ...prev };
-      if (status === null) delete updated[wordId];
-      else updated[wordId] = status;
-      return updated;
+    setStarredWords((prev) => ({ ...prev, [wordId]: !prev[wordId] }));
+  }, []);
+
+  const setWordStatus = useCallback(
+    (wordId: string, status: 'learning' | 'mastered' | null, e?: React.MouseEvent) => {
+      if (e) e.stopPropagation();
+      setLearningStatus((prev) => {
+        const updated = { ...prev };
+        if (status === null) delete updated[wordId];
+        else updated[wordId] = status;
+        return updated;
+      });
+    },
+    [],
+  );
+
+  const toggleScenePracticed = useCallback((sceneKey: string, e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    setPracticedScenes((prev) => {
+      const next = { ...prev };
+      if (next[sceneKey]) delete next[sceneKey];
+      else next[sceneKey] = true;
+      return next;
     });
-  };
+  }, []);
 
-  const masteredCount = useMemo(() => Object.values(learningStatus).filter(s => s === 'mastered').length, [learningStatus]);
-  const learningCount = useMemo(() => Object.values(learningStatus).filter(s => s === 'learning').length, [learningStatus]);
-  const starredCount = useMemo(() => Object.values(starredWords).filter(s => s).length, [starredWords]);
-  const progressPercent = useMemo(() => Math.round((masteredCount / wordsData.length) * 100) || 0, [masteredCount]);
+  const resetProgressData = useCallback(() => {
+    if (!confirm('警告：这将会清除您在本地保存的所有学习进度与收藏夹。确认重置？')) return;
+    setLearningStatus({});
+    setStarredWords({});
+    setPracticedScenes({});
+    localStorage.removeItem('ogden850_learning_status');
+    localStorage.removeItem('ogden850_starred');
+    localStorage.removeItem('ogden850_practiced_scenes');
+  }, []);
+
+  const masteredCount = useMemo(
+    () => Object.values(learningStatus).filter((s) => s === 'mastered').length,
+    [learningStatus],
+  );
+  const learningCount = useMemo(
+    () => Object.values(learningStatus).filter((s) => s === 'learning').length,
+    [learningStatus],
+  );
+  const starredCount = useMemo(
+    () => Object.values(starredWords).filter(Boolean).length,
+    [starredWords],
+  );
+  const practicedSceneCount = useMemo(
+    () => Object.values(practicedScenes).filter(Boolean).length,
+    [practicedScenes],
+  );
+  const progressPercent = useMemo(
+    () => (words.length ? Math.round((masteredCount / words.length) * 100) || 0 : 0),
+    [masteredCount, words.length],
+  );
+
+  const actions = useMemo<ProgressActions>(
+    () => ({ setWordStatus, toggleStar, toggleScenePracticed, resetProgressData }),
+    [setWordStatus, toggleStar, toggleScenePracticed, resetProgressData],
+  );
+
+  const stats = useMemo<ProgressStats>(
+    () => ({
+      masteredCount,
+      learningCount,
+      starredCount,
+      practicedSceneCount,
+      progressPercent,
+    }),
+    [masteredCount, learningCount, starredCount, practicedSceneCount, progressPercent],
+  );
+
+  const meta = useMemo<ProgressMeta>(() => ({ isInitialized }), [isInitialized]);
 
   return (
-    <ProgressContext.Provider value={{
-      learningStatus, starredWords, isInitialized,
-      setWordStatus, toggleStar,
-      masteredCount, learningCount, starredCount, progressPercent
-    }}>
-      {children}
-    </ProgressContext.Provider>
+    <LearningStatusContext.Provider value={learningStatus}>
+      <StarredWordsContext.Provider value={starredWords}>
+        <PracticedScenesContext.Provider value={practicedScenes}>
+          <ProgressActionsContext.Provider value={actions}>
+            <ProgressStatsContext.Provider value={stats}>
+              <ProgressMetaContext.Provider value={meta}>{children}</ProgressMetaContext.Provider>
+            </ProgressStatsContext.Provider>
+          </ProgressActionsContext.Provider>
+        </PracticedScenesContext.Provider>
+      </StarredWordsContext.Provider>
+    </LearningStatusContext.Provider>
   );
 };
 
-export const useProgress = () => {
-  const context = useContext(ProgressContext);
-  if (!context) throw new Error("useProgress must be used within ProgressProvider");
-  return context;
+function useContextOrThrow<T>(ctx: React.Context<T | undefined>, name: string): T {
+  const value = useContext(ctx);
+  if (value === undefined) throw new Error(`${name} must be used within ProgressProvider`);
+  return value;
+}
+
+export const useLearningStatus = (): LearningStatusMap =>
+  useContextOrThrow(LearningStatusContext, 'useLearningStatus');
+
+export const useStarredWords = (): StarredWordsMap =>
+  useContextOrThrow(StarredWordsContext, 'useStarredWords');
+
+export const usePracticedScenes = (): PracticedScenesMap =>
+  useContextOrThrow(PracticedScenesContext, 'usePracticedScenes');
+
+export const useProgressActions = (): ProgressActions =>
+  useContextOrThrow(ProgressActionsContext, 'useProgressActions');
+
+export const useProgressStats = (): ProgressStats =>
+  useContextOrThrow(ProgressStatsContext, 'useProgressStats');
+
+export const useProgressMeta = (): ProgressMeta =>
+  useContextOrThrow(ProgressMetaContext, 'useProgressMeta');
+
+export const useProgress = (): ProgressContextType => {
+  const learningStatus = useLearningStatus();
+  const starredWords = useStarredWords();
+  const practicedScenes = usePracticedScenes();
+  const actions = useProgressActions();
+  const stats = useProgressStats();
+  const meta = useProgressMeta();
+
+  return useMemo(
+    () => ({
+      learningStatus,
+      starredWords,
+      practicedScenes,
+      ...actions,
+      isScenePracticed: (sceneKey: string) => Boolean(practicedScenes[sceneKey]),
+      ...stats,
+      ...meta,
+    }),
+    [learningStatus, starredWords, practicedScenes, actions, stats, meta],
+  );
 };

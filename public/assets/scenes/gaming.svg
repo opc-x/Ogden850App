@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="gaming">
+  <defs>
+    <linearGradient id="bg-gaming" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgb(223,208,247)"/>
+      <stop offset="100%" stop-color="rgb(167,126,232)"/>
+    </linearGradient>
+    <radialGradient id="glow-gaming" cx="32%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg-gaming)"/>
+  <rect width="400" height="240" fill="url(#glow-gaming)"/>
+  <circle cx="350" cy="32" r="60" fill="#6d28d9" opacity="0.10"/>
+  <circle cx="40" cy="210" r="70" fill="rgb(93,34,184)" opacity="0.08"/>
+  <circle cx="160" cy="120" r="78" fill="#ffffff" opacity="0.55"/>
+  <g transform="translate(122,64) scale(1.12)" fill="none" stroke="rgb(93,34,184)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" color="rgb(93,34,184)">
+    <rect x="8" y="22" width="48" height="22" rx="11"/><line x1="20" y1="29" x2="20" y2="37"/><line x1="16" y1="33" x2="24" y2="33"/><circle cx="44" cy="29" r="2.5" fill="currentColor"/><circle cx="38" cy="37" r="2.5" fill="currentColor"/>
+  </g>
+</svg>

@@ -7,3 +7,22 @@ coverage/
 .env*
 !.env.example
 .vercel
+.env*.local
+
+# IDE / agent local
+.cursor/
+.claude/
+
+# Playwright / MCP artifacts
+.playwright-mcp/
+.playwright-screenshots/
+
+# Design pilot outputs (audit JSON, not source)
+Designs/
+
+# Vite PWA dev service worker (regenerated on dev)
+dev-dist/
+
+# Pipeline backups & audit reports
+*.bak-batch
+*.report.json

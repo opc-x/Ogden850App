@@ -1,33 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { RefreshCw, Search, PenTool, CheckCircle, HelpCircle, AlertCircle, ArrowRight, X } from 'lucide-react';
-import { Word, wordsData, CATEGORY_LABELS } from '../data/wordsList';
+import {
+  RefreshCw, Search, PenTool, CheckCircle, HelpCircle, AlertCircle, ArrowRight, X,
+  BookMarked, Volume2, Sparkles, Palette, Eye, Star, Award, Trash2,
+} from 'lucide-react';
+import type { Word } from '../types/word';
+import { CATEGORY_LABELS } from '../types/word';
+import { useWords } from '../contexts/WordsContext';
 import { useProgress } from '../contexts/ProgressContext';
+import { usePractice } from '../hooks/usePractice';
+import { TTSService } from '../services/tts.service';
 
-interface PracticeViewProps {
-  practiceWords: Word[];
-  spelledRevealed: Record<string, boolean>;
-  setSpelledRevealed: React.Dispatch<React.SetStateAction<Record<string, boolean>>>;
-  spellInput: string;
-  setSpellInput: (val: string) => void;
-  sentenceInput: string;
-  setSentenceInput: (val: string) => void;
-  sentenceFeedback: string | null;
-  practiceScore: number | null;
-  isChecking: boolean;
-  randomizePracticeWords: () => void;
-  checkPracticeAnswers: () => void;
-  playSpeech: (text: string) => void;
-}
+export const PracticeView: React.FC = () => {
+  const { words } = useWords();
+  const { learningStatus } = useProgress();
+  const {
+    practiceHistory, setPracticeHistory,
+    practiceWords, practiceSentence, setPracticeSentence,
+    practiceEvaluating, practiceResult, setPracticeResult,
+    spelledRevealed, setSpelledRevealed,
+    showPracticeSearch, setShowPracticeSearch,
+    practiceSearchQuery, setPracticeSearchQuery,
+    addPracticeWord, removePracticeWord, randomizePracticeWords,
+    evaluatePracticeSentence, savePracticeToHistory, deletePracticeHistoryItem,
+  } = usePractice();
 
-export const PracticeView: React.FC<PracticeViewProps> = ({
-  practiceWords, spelledRevealed, setSpelledRevealed,
-  spellInput, setSpellInput,
-  sentenceInput, setSentenceInput,
-  sentenceFeedback, practiceScore, isChecking,
-  randomizePracticeWords, checkPracticeAnswers, playSpeech
-}) => {
-  const { learningStatus, setWordStatus } = useProgress();
+  const playSpeech = (text: string) => TTSService.playSpeech(text);
+
+  useEffect(() => {
+    if (practiceWords.length === 0) randomizePracticeWords();
+  }, []);
 
   return (
     <>
@@ -103,7 +105,7 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
                     </div>
 
                     <div className="max-h-60 overflow-y-auto divide-y divide-slate-100 pr-1">
-                      {wordsData.filter(w => {
+                      {words.filter(w => {
                         if (!practiceSearchQuery.trim()) return true;
                         const q = practiceSearchQuery.toLowerCase();
                         return w.word.toLowerCase().includes(q) || w.translation.includes(q);
@@ -143,7 +145,7 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
                             </span>
                           </div>
                         );
-                      }).concat(wordsData.filter(w => {
+                      }).concat(words.filter(w => {
                         if (!practiceSearchQuery.trim()) return true;
                         const q = practiceSearchQuery.toLowerCase();
                         return w.word.toLowerCase().includes(q) || w.translation.includes(q);
@@ -328,7 +330,7 @@ export const PracticeView: React.FC<PracticeViewProps> = ({
                       rows={5}
                       value={practiceSentence}
                       onChange={(e) => setPracticeSentence(e.target.value)}
-                      placeholder="> 请在此输入包含挑战词汇的完整英文句子_&#10;> 例: The beautiful sun guides our path."
+                      placeholder={'> 请在此输入包含挑战词汇的完整英文句子\n> 例: The sun is good.'}
                       className="w-full relative z-10 bg-slate-50 border border-slate-200 rounded-2xl p-5 text-indigo-900 text-sm font-mono leading-relaxed outline-none focus:ring-2 focus:ring-indigo-500/30 focus:border-indigo-500 placeholder-slate-400 resize-none shadow-inner"
                     />
                     {practiceSentence && (

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="online-shopping">
+  <defs>
+    <linearGradient id="bg-online-shopping" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgb(239,217,201)"/>
+      <stop offset="100%" stop-color="rgb(210,152,107)"/>
+    </linearGradient>
+    <radialGradient id="glow-online-shopping" cx="32%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg-online-shopping)"/>
+  <rect width="400" height="240" fill="url(#glow-online-shopping)"/>
+  <circle cx="350" cy="32" r="60" fill="#b45309" opacity="0.10"/>
+  <circle cx="40" cy="210" r="70" fill="rgb(153,71,8)" opacity="0.08"/>
+  <circle cx="160" cy="120" r="78" fill="#ffffff" opacity="0.55"/>
+  <g transform="translate(122,64) scale(1.12)" fill="none" stroke="rgb(153,71,8)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" color="rgb(153,71,8)">
+    <path d="M8 20l24-10 24 10-24 10z"/><path d="M8 20v24l24 10v-24z"/><path d="M56 20v24l-24 10v-24z"/>
+  </g>
+</svg>

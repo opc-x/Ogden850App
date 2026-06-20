@@ -1,0 +1,3 @@
+export function slugifySceneKey(sceneKey: string): string {
+  return sceneKey.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}

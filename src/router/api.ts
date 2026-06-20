@@ -6,10 +6,22 @@
 export const API_ROUTES = {
   // --- AI 相关接口 ---
   AI: {
-    // 评估拼词造句 (使用 Gemini 或其他大模型)
     EVALUATE_SENTENCE: '/api/evaluate-sentence',
-    // 加载单词的 AI 学习上下文提示词
+    SCENE_COACH: '/api/scene-coach',
     LOAD_WORD_CONTEXT: '/api/word-context',
+  },
+
+  // --- 词汇 & 场景对话 ---
+  VOCAB: {
+    WORDS: '/api/words',
+    WORD: (id: string) => `/api/words?id=${encodeURIComponent(id)}`,
+  },
+  SCENES: {
+    LIST: '/api/scenes',
+    DETAIL: (slug: string) => `/api/scenes?slug=${encodeURIComponent(slug)}`,
+  },
+  DIALOGUES: {
+    DETAIL: (id: string) => `/api/dialogues?id=${encodeURIComponent(id)}`,
   },
   
   // --- 用户数据同步接口 (未来接入真实云端数据库时使用) ---

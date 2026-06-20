@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Search, BookOpen, PenTool, BarChart3, HelpCircle, ArrowRight, X, ChevronRight, Brain, Sparkles, Move, Eye, Package, Palette, Blend, Star } from 'lucide-react';
 import { Word, wordsData, CATEGORY_LABELS } from '../data/wordsList';
 import { useProgress } from '../contexts/ProgressContext';
-import { DirectionGraphic } from '../components/DirectionsVisual';
-import OperatorVisual from '../components/OperatorVisual';
-import wordAnnotations from '../data/word-annotations.json';
+import WordCardVisual from '../components/word/WordCardVisual';
 
 interface HomeViewProps {
   searchQuery: string;
@@ -29,11 +27,19 @@ export const HomeView: React.FC<HomeViewProps> = ({
 }) => {
   const { starredWords, learningStatus, masteredCount, learningCount, starredCount, progressPercent } = useProgress();
 
-  const handleCategoryClick = (categoryKey: string) => {
+  const handleCategoryClick = useCallback((categoryKey: string) => {
     setBrowserCategory(categoryKey);
     setBrowserStatus('all');
     setActiveTab('browser');
-  };
+  }, [setBrowserCategory, setBrowserStatus, setActiveTab]);
+
+  const handleClearSearch = useCallback(() => setSearchQuery(''), [setSearchQuery]);
+
+  const handleBrowseAllFromSearch = useCallback(() => {
+    setBrowserCategory('all');
+    setBrowserStatus('all');
+    setActiveTab('browser');
+  }, [setBrowserCategory, setBrowserStatus, setActiveTab]);
 
   return (
     <>
@@ -55,7 +61,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 
                 {searchQuery && (
                   <button 
-                    onClick={() => setSearchQuery('')}
+                    onClick={handleClearSearch}
                     className="absolute right-4 top-1/2 -translate-y-1/2 text-orange-400 hover:text-orange-600"
                   >
                     <X className="w-5 h-5" />
@@ -75,11 +81,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     <div className="p-3 border-b border-orange-50/50 flex justify-between items-center bg-orange-50/20">
                       <span className="text-xs font-bold text-orange-850/80">匹配结果 ({filteredWords.length})</span>
                       <button 
-                        onClick={() => {
-                          setBrowserCategory('all');
-                          setBrowserStatus('all');
-                          setActiveTab('browser');
-                        }}
+                        onClick={handleBrowseAllFromSearch}
                         className="text-xs font-bold text-[#c65a30] hover:underline"
                       >
                         浏览全部
@@ -102,18 +104,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                             className="p-3.5 hover:bg-orange-500/5 flex items-center justify-between cursor-pointer group transition-colors"
                           >
                             <div className="flex items-center gap-3">
-                              {(() => {
-                                const annotation = (wordAnnotations as any)[word.word.toLowerCase()];
-                                const img = annotation?.img;
-                                return img ? (
-                                  <img 
-                                    src={img.replace(/\/200px-/g, '/120px-')} 
-                                    alt="" 
-                                    className="w-7 h-7 object-contain mix-blend-multiply opacity-90"
-                                    onError={(e) => { e.currentTarget.src = img; }}
-                                  />
-                                ) : null;
-                              })()}
+                              <WordCardVisual word={word} size="inline" />
                               <span className="font-extrabold text-orange-950 text-base">{word.word}</span>
                               <span className="text-xs text-orange-700/80 font-bold px-2.5 py-0.5 bg-orange-100/45 rounded-full">
                                 {CATEGORY_LABELS[word.category]?.zh}
@@ -278,8 +269,22 @@ export const HomeView: React.FC<HomeViewProps> = ({
                   </div>
                 </div>
 
+                {/* 拼词练习 */}
+                <div
+                  onClick={() => setActiveTab('practice')}
+                  className="bg-white p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-100 hover:border-emerald-200 transition-all cursor-pointer flex flex-col gap-3 sm:gap-4 active:scale-95 group shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_20px_rgba(16,185,129,0.1)]"
+                >
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-500 border border-emerald-100">
+                    <PenTool className="w-5 h-5 sm:w-6 sm:h-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-extrabold text-slate-800 text-sm sm:text-base group-hover:text-emerald-600 transition-colors">拼词练习</h3>
+                    <p className="text-[10px] text-emerald-600/60 font-black uppercase mt-0.5 sm:mt-1 tracking-widest">DAILY DRILL</p>
+                  </div>
+                </div>
+
                 {/* Navigation quick start card */}
-                <div 
+                <div
                   onClick={() => {
                     setBrowserCategory('all');
                     setBrowserStatus('starred');

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" role="img" aria-label="the-house">
+  <defs>
+    <linearGradient id="bg-the-house" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="rgb(221,235,202)"/>
+      <stop offset="100%" stop-color="rgb(163,200,110)"/>
+    </linearGradient>
+    <radialGradient id="glow-the-house" cx="32%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg-the-house)"/>
+  <rect width="400" height="240" fill="url(#glow-the-house)"/>
+  <circle cx="350" cy="32" r="60" fill="#65a30d" opacity="0.10"/>
+  <circle cx="40" cy="210" r="70" fill="rgb(86,139,11)" opacity="0.08"/>
+  <circle cx="160" cy="120" r="78" fill="#ffffff" opacity="0.55"/>
+  <g transform="translate(122,64) scale(1.12)" fill="none" stroke="rgb(86,139,11)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" color="rgb(86,139,11)">
+    <path d="M10 30l22-18 22 18"/><path d="M14 28v26h36v-26"/><rect x="27" y="38" width="10" height="16"/>
+  </g>
+</svg>
