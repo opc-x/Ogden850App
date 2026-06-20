@@ -3468,6 +3468,32 @@
             "misc"
           ]
         ]
+      },
+      {
+        "en": "She has a dog and a cat.",
+        "cn": "她有一只狗和一只猫。",
+        "parts": [
+          [
+            "She",
+            "pron"
+          ],
+          [
+            "has",
+            "op"
+          ],
+          [
+            "a dog",
+            "n"
+          ],
+          [
+            "and",
+            "conj"
+          ],
+          [
+            "a cat.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "短句 + and + 短句",
@@ -3551,6 +3577,40 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "I stay here because it is warm.",
+        "cn": "我留在这里，因为很暖和。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "stay",
+            "op"
+          ],
+          [
+            "here",
+            "dir"
+          ],
+          [
+            "because",
+            "conj"
+          ],
+          [
+            "it",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "warm.",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "短句 + because + 短句",
@@ -3618,6 +3678,44 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "I want it, but I have no money.",
+        "cn": "我想要，但我没有钱。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "want",
+            "op"
+          ],
+          [
+            "it,",
+            "pron"
+          ],
+          [
+            "but",
+            "conj"
+          ],
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "have",
+            "op"
+          ],
+          [
+            "no",
+            "neg"
+          ],
+          [
+            "money.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "短句 + but + 短句",
@@ -3670,6 +3768,24 @@
           ],
           [
             "later.",
+            "adj"
+          ]
+        ]
+      },
+      {
+        "en": "Black or white?",
+        "cn": "黑色还是白色？",
+        "parts": [
+          [
+            "Black",
+            "adj"
+          ],
+          [
+            "or",
+            "conj"
+          ],
+          [
+            "white?",
             "adj"
           ]
         ]
@@ -3746,6 +3862,40 @@
           [
             "the house.",
             "n"
+          ]
+        ]
+      },
+      {
+        "en": "If you are late, start without me.",
+        "cn": "如果你来晚了，别等我开始。",
+        "parts": [
+          [
+            "If",
+            "conj"
+          ],
+          [
+            "you",
+            "pron"
+          ],
+          [
+            "are",
+            "op"
+          ],
+          [
+            "late,",
+            "adj"
+          ],
+          [
+            "start",
+            "op"
+          ],
+          [
+            "without",
+            "dir"
+          ],
+          [
+            "me.",
+            "pron"
           ]
         ]
       }
@@ -3827,6 +3977,40 @@
             "adj"
           ]
         ]
+      },
+      {
+        "en": "It is cold, though the sun is out.",
+        "cn": "虽然在出太阳，但还是冷。",
+        "parts": [
+          [
+            "It",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "cold,",
+            "adj"
+          ],
+          [
+            "though",
+            "conj"
+          ],
+          [
+            "the sun",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "out.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "短句 + though + 短句",
@@ -3898,6 +4082,28 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "Read while I cook.",
+        "cn": "我做饭时你读书。",
+        "parts": [
+          [
+            "Read",
+            "op"
+          ],
+          [
+            "while",
+            "conj"
+          ],
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "cook.",
+            "op"
+          ]
+        ]
       }
     ],
     "combine": "短句 + while + 短句",
@@ -3905,7 +4111,7 @@
     "ogdenTip": "语法骨架见 01-foundations/grammar-rules.md"
   },
   "how": {
-    "hook": "骨架词：如何（how）—— 撑起句子的功能词。",
+    "hook": "问方式：怎么（how）。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "how + operator / noun",
@@ -3955,6 +4161,36 @@
           [
             "goes.",
             "op"
+          ]
+        ]
+      },
+      {
+        "en": "Tell me how you made it.",
+        "cn": "告诉我你怎么做的。",
+        "parts": [
+          [
+            "Tell",
+            "op"
+          ],
+          [
+            "me",
+            "pron"
+          ],
+          [
+            "how",
+            "misc"
+          ],
+          [
+            "you",
+            "pron"
+          ],
+          [
+            "made",
+            "op"
+          ],
+          [
+            "it.",
+            "pron"
           ]
         ]
       }
@@ -4028,6 +4264,36 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "I will go when you come.",
+        "cn": "你来时我就走。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "will",
+            "op"
+          ],
+          [
+            "go",
+            "op"
+          ],
+          [
+            "when",
+            "conj"
+          ],
+          [
+            "you",
+            "pron"
+          ],
+          [
+            "come.",
+            "op"
+          ]
+        ]
       }
     ],
     "combine": "短句 + when + 短句",
@@ -4087,6 +4353,28 @@
             "op"
           ]
         ]
+      },
+      {
+        "en": "Where do you live?",
+        "cn": "你住在哪里？",
+        "parts": [
+          [
+            "Where",
+            "conj"
+          ],
+          [
+            "do",
+            "op"
+          ],
+          [
+            "you",
+            "pron"
+          ],
+          [
+            "live?",
+            "op"
+          ]
+        ]
       }
     ],
     "combine": "短句 + where + 短句",
@@ -4094,7 +4382,7 @@
     "ogdenTip": "语法骨架见 01-foundations/grammar-rules.md"
   },
   "why": {
-    "hook": "骨架词：为什么（why）—— 撑起句子的功能词。",
+    "hook": "问原因：为什么（why）。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "why + operator / noun",
@@ -4146,6 +4434,28 @@
             "op"
           ]
         ]
+      },
+      {
+        "en": "Why is the door open?",
+        "cn": "门为什么开着？",
+        "parts": [
+          [
+            "Why",
+            "misc"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "the door",
+            "n"
+          ],
+          [
+            "open?",
+            "adj"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4153,7 +4463,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "again": {
-    "hook": "骨架词：再次（again）—— 撑起句子的功能词。",
+    "hook": "再做一次：again。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "again + operator / noun",
@@ -4193,6 +4503,28 @@
             "misc"
           ]
         ]
+      },
+      {
+        "en": "Say it again, please.",
+        "cn": "请再说一遍。",
+        "parts": [
+          [
+            "Say",
+            "op"
+          ],
+          [
+            "it",
+            "pron"
+          ],
+          [
+            "again,",
+            "misc"
+          ],
+          [
+            "please.",
+            "misc"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4200,7 +4532,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "ever": {
-    "hook": "骨架词：曾经（ever）—— 撑起句子的功能词。",
+    "hook": "曾经/有史以来：ever。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "ever + operator / noun",
@@ -4256,6 +4588,32 @@
             "pron"
           ]
         ]
+      },
+      {
+        "en": "Have you ever been there?",
+        "cn": "你去过那里吗？",
+        "parts": [
+          [
+            "Have",
+            "op"
+          ],
+          [
+            "you",
+            "pron"
+          ],
+          [
+            "ever",
+            "misc"
+          ],
+          [
+            "been",
+            "op"
+          ],
+          [
+            "there?",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4263,7 +4621,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "far": {
-    "hook": "骨架词：远（far）—— 撑起句子的功能词。",
+    "hook": "距离远：far。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "far + operator / noun",
@@ -4315,6 +4673,28 @@
             "misc"
           ]
         ]
+      },
+      {
+        "en": "The town is far away.",
+        "cn": "镇子很远。",
+        "parts": [
+          [
+            "The town",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "far",
+            "misc"
+          ],
+          [
+            "away.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4322,7 +4702,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "forward": {
-    "hook": "骨架词：向前（forward）—— 撑起句子的功能词。",
+    "hook": "朝前：forward。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "forward + operator / noun",
@@ -4358,6 +4738,20 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "Look forward.",
+        "cn": "向前看。",
+        "parts": [
+          [
+            "Look",
+            "op"
+          ],
+          [
+            "forward.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4365,7 +4759,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "here": {
-    "hook": "骨架词：这里（here）—— 撑起句子的功能词。",
+    "hook": "在这里：here。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "here + operator / noun",
@@ -4401,6 +4795,24 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "Put it here.",
+        "cn": "放这里。",
+        "parts": [
+          [
+            "Put",
+            "op"
+          ],
+          [
+            "it",
+            "pron"
+          ],
+          [
+            "here.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4408,7 +4820,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "near": {
-    "hook": "骨架词：附近（near）—— 撑起句子的功能词。",
+    "hook": "在近处：near。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "near + operator / noun",
@@ -4448,6 +4860,28 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "Is the store near here?",
+        "cn": "商店离这近吗？",
+        "parts": [
+          [
+            "Is",
+            "op"
+          ],
+          [
+            "the store",
+            "n"
+          ],
+          [
+            "near",
+            "misc"
+          ],
+          [
+            "here?",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4455,7 +4889,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "now": {
-    "hook": "骨架词：现在（now）—— 撑起句子的功能词。",
+    "hook": "此刻：now。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "now + operator / noun",
@@ -4499,6 +4933,32 @@
             "misc"
           ]
         ]
+      },
+      {
+        "en": "Now is the time to go.",
+        "cn": "现在是出发的时候了。",
+        "parts": [
+          [
+            "Now",
+            "misc"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "the time",
+            "n"
+          ],
+          [
+            "to",
+            "dir"
+          ],
+          [
+            "go.",
+            "op"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4506,7 +4966,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "out": {
-    "hook": "骨架词：外面（out）—— 撑起句子的功能词。",
+    "hook": "向外/外面：out。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "out + operator / noun",
@@ -4542,6 +5002,24 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "The dog is out.",
+        "cn": "狗在外面。",
+        "parts": [
+          [
+            "The dog",
+            "n"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "out.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4549,7 +5027,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "still": {
-    "hook": "骨架词：仍然（still）—— 撑起句子的功能词。",
+    "hook": "仍然/不动：still。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "still + operator / noun",
@@ -4589,6 +5067,28 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "Are you still waiting?",
+        "cn": "你还在等吗？",
+        "parts": [
+          [
+            "Are",
+            "op"
+          ],
+          [
+            "you",
+            "pron"
+          ],
+          [
+            "still",
+            "misc"
+          ],
+          [
+            "waiting?",
+            "op"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4596,7 +5096,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "then": {
-    "hook": "骨架词：然后（then）—— 撑起句子的功能词。",
+    "hook": "然后/那时：then。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "then + operator / noun",
@@ -4644,6 +5144,32 @@
             "misc"
           ]
         ]
+      },
+      {
+        "en": "Do this, then go home.",
+        "cn": "做完这个，然后回家。",
+        "parts": [
+          [
+            "Do",
+            "op"
+          ],
+          [
+            "this,",
+            "pron"
+          ],
+          [
+            "then",
+            "misc"
+          ],
+          [
+            "go",
+            "op"
+          ],
+          [
+            "home.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4651,7 +5177,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "there": {
-    "hook": "骨架词：那里（there）—— 撑起句子的功能词。",
+    "hook": "在那边：there。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "there + operator / noun",
@@ -4687,6 +5213,28 @@
             "dir"
           ]
         ]
+      },
+      {
+        "en": "There is a tree there.",
+        "cn": "那边有一棵树。",
+        "parts": [
+          [
+            "There",
+            "misc"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "a tree",
+            "n"
+          ],
+          [
+            "there.",
+            "dir"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4694,7 +5242,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "together": {
-    "hook": "骨架词：在一起（together）—— 撑起句子的功能词。",
+    "hook": "一起：together。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "together + operator / noun",
@@ -4734,6 +5282,28 @@
             "misc"
           ]
         ]
+      },
+      {
+        "en": "We are happy together.",
+        "cn": "我们在一起很开心。",
+        "parts": [
+          [
+            "We",
+            "pron"
+          ],
+          [
+            "are",
+            "op"
+          ],
+          [
+            "happy",
+            "adj"
+          ],
+          [
+            "together.",
+            "misc"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4741,7 +5311,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "well": {
-    "hook": "骨架词：好（well）—— 撑起句子的功能词。",
+    "hook": "做得好：well。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "well + operator / noun",
@@ -4781,6 +5351,24 @@
             "misc"
           ]
         ]
+      },
+      {
+        "en": "She sings well.",
+        "cn": "她唱得很好。",
+        "parts": [
+          [
+            "She",
+            "pron"
+          ],
+          [
+            "sings",
+            "op"
+          ],
+          [
+            "well.",
+            "misc"
+          ]
+        ]
       }
     ],
     "combine": "与 operator、名词组合造句",
@@ -4788,7 +5376,7 @@
     "ogdenTip": "见 02-vocabulary/tier-guide.md 第 1 层"
   },
   "almost": {
-    "hook": "骨架词：几乎（almost）—— 撑起句子的功能词。",
+    "hook": "差不多：almost。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "almost + operator / noun",
@@ -4834,6 +5422,28 @@
           [
             "ready.",
             "adj"
+          ]
+        ]
+      },
+      {
+        "en": "We are almost there.",
+        "cn": "我们快到了。",
+        "parts": [
+          [
+            "We",
+            "pron"
+          ],
+          [
+            "are",
+            "op"
+          ],
+          [
+            "almost",
+            "misc"
+          ],
+          [
+            "there.",
+            "dir"
           ]
         ]
       }
@@ -4887,6 +5497,32 @@
             "misc"
           ]
         ]
+      },
+      {
+        "en": "That is enough for me.",
+        "cn": "对我来说够了。",
+        "parts": [
+          [
+            "That",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "enough",
+            "misc"
+          ],
+          [
+            "for",
+            "dir"
+          ],
+          [
+            "me.",
+            "pron"
+          ]
+        ]
       }
     ],
     "combine": "enough + 名词",
@@ -4894,7 +5530,7 @@
     "ogdenTip": "量词修饰名词，不单独成句。"
   },
   "even": {
-    "hook": "骨架词：甚至（even）—— 撑起句子的功能词。",
+    "hook": "甚至：even。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "even + operator / noun",
@@ -4944,6 +5580,32 @@
           [
             "better.",
             "adj"
+          ]
+        ]
+      },
+      {
+        "en": "He did not even try.",
+        "cn": "他连试都没试。",
+        "parts": [
+          [
+            "He",
+            "pron"
+          ],
+          [
+            "did",
+            "op"
+          ],
+          [
+            "not",
+            "neg"
+          ],
+          [
+            "even",
+            "misc"
+          ],
+          [
+            "try.",
+            "op"
           ]
         ]
       }
@@ -4997,6 +5659,32 @@
             "op"
           ]
         ]
+      },
+      {
+        "en": "She is not at home.",
+        "cn": "她不在家。",
+        "parts": [
+          [
+            "She",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "not",
+            "neg"
+          ],
+          [
+            "at",
+            "dir"
+          ],
+          [
+            "home.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "短句 + not + 短句",
@@ -5048,6 +5736,28 @@
             "n"
           ]
         ]
+      },
+      {
+        "en": "I have only two coins.",
+        "cn": "我只有两枚硬币。",
+        "parts": [
+          [
+            "I",
+            "pron"
+          ],
+          [
+            "have",
+            "op"
+          ],
+          [
+            "only",
+            "misc"
+          ],
+          [
+            "two coins.",
+            "n"
+          ]
+        ]
       }
     ],
     "combine": "only + 名词",
@@ -5055,7 +5765,7 @@
     "ogdenTip": "量词修饰名词，不单独成句。"
   },
   "quite": {
-    "hook": "骨架词：相当（quite）—— 撑起句子的功能词。",
+    "hook": "相当：quite。",
     "method": "Ops · 功能词",
     "concept": "Ogden 第 1 类（Operators + 方向 + 功能词）是句子的乘法基础，850 词里这一层最少但最关键。",
     "equation": "quite + operator / noun",
@@ -5100,6 +5810,28 @@
           ],
           [
             "ready.",
+            "adj"
+          ]
+        ]
+      },
+      {
+        "en": "That is quite true.",
+        "cn": "那相当属实。",
+        "parts": [
+          [
+            "That",
+            "pron"
+          ],
+          [
+            "is",
+            "op"
+          ],
+          [
+            "quite",
+            "misc"
+          ],
+          [
+            "true.",
             "adj"
           ]
         ]
