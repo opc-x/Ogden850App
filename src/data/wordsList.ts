@@ -1,5 +1,5 @@
 import { WORDS, isOperator } from './words850Legacy';
-import wordGuides from '../components/word-guides.json';
+import wordGuides from './word-guides.json';
 import type { Word } from '../types/word';
 
 export type { Word } from '../types/word';
