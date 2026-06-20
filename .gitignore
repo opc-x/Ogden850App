@@ -23,9 +23,13 @@ Designs/
 # Vite PWA dev service worker (regenerated on dev)
 dev-dist/
 
-# 废弃：本地 mp3 已全删，发音走有道 TTS
+# 场景对话句 MP3（从 omega 同步，体积大，不提交）
 public/audio/
-public/assets/audio/
+
+# 850 词 MP3 不提交（生产走 omega CDN fallback）
+public/assets/audio/*
+!public/assets/audio/guides/
+!public/assets/audio/guides/**
 
 # 废弃格式：插画只保留 PNG，场景只保留 WebP
 public/assets/word-img/*.svg
