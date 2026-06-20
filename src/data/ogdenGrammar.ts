@@ -125,9 +125,9 @@ export function resolveVisualType(category: string, word: string): {
   return { visual_type: 'grammar', visual_ref: word };
 }
 
-export function audioUrlForWord(word: string): string {
-  const slug = word.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60) || 'word';
-  return `/audio/${slug}.mp3`;
-}
-
 export { isOperator };
+
+/** @deprecated 本地 mp3 已废弃；保留函数签名供 import 脚本兼容，始终写 null */
+export function audioUrlForWord(_word: string): null {
+  return null;
+}

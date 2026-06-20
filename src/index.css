@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -16,6 +15,28 @@
   --accent-soft: #cffafe;
   --mono: "SF Mono", "Fira Code", monospace;
   --serif: "Georgia", serif;
+  /* IPA 音标：Charis SIL 斜体 + Noto Sans 兜底（覆盖更多 IPA 字形） */
+  --font-ipa: "Charis SIL", "Noto Sans", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --ipa-color: #0e7490;
+}
+
+.font-ipa {
+  font-family: var(--font-ipa);
+  font-style: italic;
+  font-weight: 400;
+  font-variant-ligatures: none;
+  letter-spacing: 0.05em;
+  color: var(--ipa-color);
+}
+
+.ipa-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.08rem 0.4rem;
+  border-radius: 0.375rem;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(6, 182, 212, 0.03) 100%);
+  border: 1px solid rgba(6, 182, 212, 0.18);
+  line-height: 1.2;
 }
 
 /* Base scaling to emulate Native App dense layout on mobile screens */
@@ -85,9 +106,9 @@ body {
 
 .word-card-visual--detail {
   width: 100%;
-  max-width: 220px;
+  max-width: 100%;
   aspect-ratio: 1;
-  margin-inline: auto;
+  margin-inline: 0;
 }
 
 .word-card-visual--inline {
@@ -107,4 +128,35 @@ body {
   border: none;
   box-shadow: none;
   border-radius: 0;
+}
+
+/* 词典词卡 — 插画区无边框，仅尺寸容器 */
+.browser-word-card__stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.75rem;
+  height: 4.75rem;
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.browser-word-card__stage .word-card-visual--thumb {
+  width: 100%;
+  height: 100%;
+}
+
+.browser-word-card__stage .word-illustration-img {
+  transform: scale(1.08);
+  transform-origin: center;
+}
+
+@media (min-width: 640px) {
+  .browser-word-card__stage {
+    width: 5.25rem;
+    height: 5.25rem;
+  }
 }

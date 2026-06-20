@@ -15,6 +15,7 @@ export interface Word {
   ipa?: string;
   visual_type?: string;
   visual_ref?: string | null;
+  audio_url?: string | null;
 }
 
 /** UI skin — category chrome only; counts come from DB at runtime */

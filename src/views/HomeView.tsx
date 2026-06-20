@@ -1,6 +1,19 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, BookOpen, PenTool, BarChart3, HelpCircle, ArrowRight, X, ChevronRight, Brain, Sparkles, Move, Eye, Package, Palette, Blend, Star } from 'lucide-react';
+import {
+  Search,
+  X,
+  ChevronRight,
+  Brain,
+  Sparkles,
+  Move,
+  Eye,
+  Package,
+  Palette,
+  Blend,
+  Star,
+  type LucideIcon,
+} from 'lucide-react';
 import { Word, wordsData, CATEGORY_LABELS } from '../data/wordsList';
 import { useProgress } from '../contexts/ProgressContext';
 import WordCardVisual from '../components/word/WordCardVisual';
@@ -19,19 +32,101 @@ interface HomeViewProps {
   setBrowserStatus: (val: string) => void;
 }
 
-export const HomeView: React.FC<HomeViewProps> = ({
-  searchQuery, setSearchQuery, filteredWords,
-  selectedWord, setSelectedWord, startOperatorsRoutine,
-  setActiveTab, loadWordAiContext, totalWords,
-  setBrowserCategory, setBrowserStatus
-}) => {
-  const { starredWords, learningStatus, masteredCount, learningCount, starredCount, progressPercent } = useProgress();
+type CategoryTile = {
+  key: string;
+  label: string;
+  icon: LucideIcon;
+  hoverBorder: string;
+  iconBg: string;
+  iconText: string;
+  countTone: string;
+};
 
-  const handleCategoryClick = useCallback((categoryKey: string) => {
-    setBrowserCategory(categoryKey);
-    setBrowserStatus('all');
-    setActiveTab('browser');
-  }, [setBrowserCategory, setBrowserStatus, setActiveTab]);
+const CATEGORY_TILES: CategoryTile[] = [
+  {
+    key: 'actions',
+    label: '动作与方向',
+    icon: Move,
+    hoverBorder: 'hover:border-cyan-200/80',
+    iconBg: 'bg-cyan-50',
+    iconText: 'text-cyan-500',
+    countTone: 'text-cyan-600/60',
+  },
+  {
+    key: 'picturables',
+    label: '可见物/实物',
+    icon: Eye,
+    hoverBorder: 'hover:border-amber-200/80',
+    iconBg: 'bg-amber-50',
+    iconText: 'text-amber-500',
+    countTone: 'text-amber-600/60',
+  },
+  {
+    key: 'generals',
+    label: '普通名词',
+    icon: Package,
+    hoverBorder: 'hover:border-rose-200/80',
+    iconBg: 'bg-rose-50',
+    iconText: 'text-rose-500',
+    countTone: 'text-rose-600/60',
+  },
+  {
+    key: 'qualities',
+    label: '性质词',
+    icon: Palette,
+    hoverBorder: 'hover:border-purple-200/80',
+    iconBg: 'bg-purple-50',
+    iconText: 'text-purple-500',
+    countTone: 'text-purple-600/60',
+  },
+  {
+    key: 'opposites',
+    label: '反义词',
+    icon: Blend,
+    hoverBorder: 'hover:border-red-200/80',
+    iconBg: 'bg-red-50',
+    iconText: 'text-red-500',
+    countTone: 'text-red-600/60',
+  },
+];
+
+function SectionTitle({ children, trailing }: { children: React.ReactNode; trailing?: React.ReactNode }) {
+  return (
+    <div className="flex items-center justify-between gap-3 px-0.5">
+      <h2 className="text-[15px] font-black text-slate-800 tracking-tight">{children}</h2>
+      {trailing}
+    </div>
+  );
+}
+
+export const HomeView: React.FC<HomeViewProps> = ({
+  searchQuery,
+  setSearchQuery,
+  filteredWords,
+  setSelectedWord,
+  startOperatorsRoutine,
+  setActiveTab,
+  loadWordAiContext,
+  totalWords,
+  setBrowserCategory,
+  setBrowserStatus,
+}) => {
+  const { starredCount, masteredCount, learningCount, progressPercent } = useProgress();
+
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const w of wordsData) counts[w.category] = (counts[w.category] ?? 0) + 1;
+    return counts;
+  }, []);
+
+  const handleCategoryClick = useCallback(
+    (categoryKey: string) => {
+      setBrowserCategory(categoryKey);
+      setBrowserStatus('all');
+      setActiveTab('browser');
+    },
+    [setBrowserCategory, setBrowserStatus, setActiveTab],
+  );
 
   const handleClearSearch = useCallback(() => setSearchQuery(''), [setSearchQuery]);
 
@@ -41,269 +136,196 @@ export const HomeView: React.FC<HomeViewProps> = ({
     setActiveTab('browser');
   }, [setBrowserCategory, setBrowserStatus, setActiveTab]);
 
+  const openStarred = useCallback(() => {
+    setBrowserCategory('all');
+    setBrowserStatus('starred');
+    setActiveTab('browser');
+  }, [setBrowserCategory, setBrowserStatus, setActiveTab]);
+
   return (
-    <>
-      {/* TAB 1: HOME PANEL */}
-        
-          <div className="space-y-6">
-            
-            {/* Search Section */}
-            <div className="relative">
-              <div className="relative group">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-cyan-400 transition-colors w-5 h-5" />
-                <input 
-                  type="text"
-                  placeholder="搜索 850 个核心词汇 (如: hand, warm, build)..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-white backdrop-blur-md border border-slate-200 rounded-2xl py-4 pl-12 pr-4 shadow-sm focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none transition-all text-base placeholder-slate-400 text-slate-800 font-medium"
-                />
-                
-                {searchQuery && (
-                  <button 
-                    onClick={handleClearSearch}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 text-orange-400 hover:text-orange-600"
-                  >
-                    <X className="w-5 h-5" />
-                  </button>
-                )}
+    <div className="space-y-6 pb-3">
+      <header className="px-0.5 pt-0.5">
+        <h1 className="text-2xl font-black text-slate-800 tracking-tight">学习中心</h1>
+        <p className="text-sm font-normal mt-1.5 tracking-wide bg-gradient-to-r from-slate-400 via-slate-500/75 to-slate-400/55 bg-clip-text text-transparent">
+          850 词根 · 场景对话 · 精准检索
+        </p>
+      </header>
+
+      {/* Search */}
+      <div className="relative">
+        <div className="relative group">
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-300 group-focus-within:text-cyan-400 transition-colors w-[18px] h-[18px]" />
+          <input
+            type="text"
+            placeholder="搜索 850 个核心词汇 (如: hand, warm, build)..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full bg-white border border-slate-200/90 rounded-2xl py-3.5 pl-11 pr-4 text-sm text-slate-800 font-medium shadow-sm placeholder:font-normal placeholder:text-slate-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/15 outline-none transition-all"
+          />
+          {searchQuery && (
+            <button
+              onClick={handleClearSearch}
+              className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-300 hover:text-slate-500"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          )}
+        </div>
+
+        <AnimatePresence>
+          {searchQuery.trim().length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 8 }}
+              className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-[0_8px_30px_rgba(15,23,42,0.08)] border border-slate-100 z-50 overflow-hidden"
+            >
+              <div className="px-4 py-2.5 border-b border-slate-50 flex justify-between items-center">
+                <span className="text-xs font-semibold text-slate-500">匹配 {filteredWords.length} 词</span>
+                <button
+                  onClick={handleBrowseAllFromSearch}
+                  className="text-xs font-semibold text-[#c65a30] hover:underline"
+                >
+                  浏览全部
+                </button>
               </div>
-
-              {/* Instant Search Results Dropdown */}
-              <AnimatePresence>
-                {searchQuery.trim().length > 0 && (
-                  <motion.div 
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    className="absolute top-full left-0 right-0 mt-2 bg-white rounded-2xl shadow-xl border border-slate-100 z-50 overflow-hidden"
-                  >
-                    <div className="p-3 border-b border-orange-50/50 flex justify-between items-center bg-orange-50/20">
-                      <span className="text-xs font-bold text-orange-850/80">匹配结果 ({filteredWords.length})</span>
-                      <button 
-                        onClick={handleBrowseAllFromSearch}
-                        className="text-xs font-bold text-[#c65a30] hover:underline"
-                      >
-                        浏览全部
-                      </button>
+              {filteredWords.length === 0 ? (
+                <div className="p-8 text-center text-slate-400 text-sm">未找到与 “{searchQuery}” 相关的词汇</div>
+              ) : (
+                <div className="divide-y divide-slate-50 max-h-56 overflow-y-auto">
+                  {filteredWords.map((word) => (
+                    <div
+                      key={word.id}
+                      onClick={() => {
+                        setSelectedWord(word);
+                        loadWordAiContext(word);
+                        setSearchQuery('');
+                      }}
+                      className="px-4 py-3 hover:bg-slate-50/80 flex items-center justify-between cursor-pointer group"
+                    >
+                      <div className="flex items-center gap-3 min-w-0">
+                        <WordCardVisual word={word} size="inline" />
+                        <span className="font-bold text-slate-800 text-sm">{word.word}</span>
+                        <span className="text-[10px] text-slate-500 font-medium px-2 py-0.5 bg-slate-100 rounded-full shrink-0">
+                          {CATEGORY_LABELS[word.category]?.zh}
+                        </span>
+                      </div>
+                      <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-[#c65a30] shrink-0" />
                     </div>
-                    {filteredWords.length === 0 ? (
-                      <div className="p-8 text-center text-orange-900/40 text-sm font-medium">
-                        未找到与 “{searchQuery}” 相关的词汇
-                      </div>
-                    ) : (
-                      <div className="divide-y divide-orange-100/30 max-h-60 overflow-y-auto">
-                        {filteredWords.map(word => (
-                          <div 
-                            key={word.id}
-                            onClick={() => {
-                              setSelectedWord(word);
-                              loadWordAiContext(word);
-                              setSearchQuery('');
-                            }}
-                            className="p-3.5 hover:bg-orange-500/5 flex items-center justify-between cursor-pointer group transition-colors"
-                          >
-                            <div className="flex items-center gap-3">
-                              <WordCardVisual word={word} size="inline" />
-                              <span className="font-extrabold text-orange-950 text-base">{word.word}</span>
-                              <span className="text-xs text-orange-700/80 font-bold px-2.5 py-0.5 bg-orange-100/45 rounded-full">
-                                {CATEGORY_LABELS[word.category]?.zh}
-                              </span>
-                            </div>
-                            <div className="flex items-center gap-3">
-                              <span className="text-sm text-orange-900/60 font-medium">{word.translation}</span>
-                              <ChevronRight className="w-4 h-4 text-orange-300 group-hover:text-[#c65a30] transition-transform group-hover:translate-x-0.5" />
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-
-            {/* Smart Learning Progress Card */}
-            <section className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm flex flex-col md:flex-row md:items-center md:justify-between gap-6 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-full blur-3xl"></div>
-              <div className="space-y-2 flex-1 relative z-10">
-                <div className="flex items-center gap-2">
-                  <span className="text-[10px] font-black text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full tracking-wider uppercase border border-emerald-100">学习进度</span>
-                  <p className="text-xs text-slate-400 font-bold tracking-widest uppercase">Ogden 850</p>
+                  ))}
                 </div>
-                <h3 className="text-2xl font-black text-slate-800 mt-2">
-                  已掌握 <span className="text-emerald-600 text-3xl">{masteredCount}</span> <span className="text-slate-400">/ {totalWords}</span>
-                </h3>
-                <p className="text-xs text-slate-500 font-medium mt-1">
-                  正在学 <span className="text-emerald-500 font-bold">{learningCount}</span> 词 · 
-                  已收藏 <span className="text-amber-500 font-bold">{starredCount}</span> 词
+              )}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+
+      {/* Progress */}
+      <section className="bg-white rounded-3xl px-5 py-4 border border-slate-200/80 shadow-[0_2px_14px_rgba(15,23,42,0.04)]">
+        <div className="flex items-start justify-between gap-4">
+          <div className="min-w-0 space-y-1">
+            <p className="text-[11px] font-semibold text-emerald-600/85 uppercase tracking-[0.12em]">学习进度</p>
+            <p className="text-xl font-black text-slate-800 leading-tight">
+              已掌握 <span className="text-emerald-600">{masteredCount}</span>
+              <span className="text-slate-400 font-bold text-base"> / {totalWords}</span>
+            </p>
+            <p className="text-xs text-slate-400 font-medium">
+              正在学 {learningCount} · 收藏 {starredCount}
+            </p>
+          </div>
+          <div className="text-right shrink-0 pt-0.5">
+            <span className="text-3xl font-black text-[#c65a30] tabular-nums leading-none">{progressPercent}%</span>
+            <p className="text-[10px] text-slate-400 font-medium mt-1">词汇覆盖率</p>
+          </div>
+        </div>
+        <div className="w-full h-2 bg-orange-100/40 rounded-full overflow-hidden mt-4">
+          <motion.div
+            initial={{ width: 0 }}
+            animate={{ width: `${progressPercent}%` }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="h-full bg-gradient-to-r from-[#c65a30] to-[#faa144] rounded-full"
+          />
+        </div>
+      </section>
+
+      {/* Core operators */}
+      <section className="space-y-3">
+        <SectionTitle
+          trailing={
+            <span className="text-[11px] font-semibold text-orange-700/75 bg-orange-50 px-2.5 py-1 rounded-full border border-orange-100/80">
+              18 词
+            </span>
+          }
+        >
+          <span className="inline-flex items-center gap-2">
+            <Brain className="w-[18px] h-[18px] text-orange-500" />
+            核心动词
+          </span>
+        </SectionTitle>
+        <button
+          type="button"
+          onClick={startOperatorsRoutine}
+          className="relative w-full h-[7.75rem] sm:h-[8.75rem] rounded-2xl overflow-hidden border border-orange-100/90 text-left group active:scale-[0.99] transition-transform shadow-sm"
+        >
+          <img
+            alt=""
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA67Z_foag2kUgf83Cki6FUcrkpIy1uxkVg5KKhduemzlJKdZaVVBnknU6ttRReZHcSdPmgjUxJ0-Hlh8Ob9LwsLnMhuEWghK6m-Nz3nmdVSGR_Z_bqXl41yTfdyG-kXNzY90SD95b6nIL9-rvi9yZFHtfS9GHVLCq3wPWi7t6cfWzgm9CcShrewK756MNR6ifoe3g1VVx4iLJJ8FXJ-iBjP5DcQvB_Qz1_dPf6WoDw-LWuu0bhjsfT5KkAxnWl6Siod6DuFgvvDrws"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-orange-950/78 via-orange-900/20 to-transparent flex flex-col justify-end p-5">
+            <p className="text-white font-bold text-[17px] flex items-center gap-1.5 leading-tight">
+              掌握语言的引擎 <Sparkles className="w-4 h-4 text-amber-300" />
+            </p>
+            <p className="text-white/88 text-xs leading-relaxed mt-1.5 max-w-[92%]">
+              come, get, give, let… 18 个决定 Basic English 句式的核心动词
+            </p>
+          </div>
+        </button>
+      </section>
+
+      {/* Categories + starred — grouped panel */}
+      <section className="bg-white rounded-3xl border border-slate-200/80 shadow-[0_2px_14px_rgba(15,23,42,0.04)] overflow-hidden">
+        <div className="px-5 pt-5 pb-1">
+          <SectionTitle>核心词汇分类</SectionTitle>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3 p-5 pt-3">
+          {CATEGORY_TILES.map(({ key, label, icon: Icon, hoverBorder, iconBg, iconText, countTone }) => (
+            <button
+              key={key}
+              type="button"
+              onClick={() => handleCategoryClick(key)}
+              className={`bg-slate-50/60 p-4 rounded-2xl border border-slate-100/90 ${hoverBorder} hover:bg-white transition-all cursor-pointer flex flex-col gap-3 active:scale-[0.98] text-left min-h-[5.5rem]`}
+            >
+              <div className={`w-10 h-10 rounded-xl ${iconBg} flex items-center justify-center ${iconText}`}>
+                <Icon className="w-[18px] h-[18px]" />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-800 text-sm leading-snug">{label}</h3>
+                <p className={`text-xs font-semibold tabular-nums mt-1 ${countTone}`}>
+                  {categoryCounts[key] ?? 0} 词
                 </p>
               </div>
-              
-              <div className="md:w-64 space-y-2">
-                <div className="flex justify-between items-baseline">
-                  <span className="text-xs text-orange-900/50 font-semibold">词汇覆盖率</span>
-                  <span className="text-3xl font-black text-[#c65a30]">{progressPercent}%</span>
-                </div>
-                <div className="w-full h-3 bg-orange-100/30 rounded-full overflow-hidden">
-                  <motion.div 
-                    initial={{ width: 0 }}
-                    animate={{ width: `${progressPercent}%` }}
-                    transition={{ duration: 1, ease: 'easeOut' }}
-                    className="h-full bg-gradient-to-r from-[#c65a30] to-[#faa144] rounded-full"
-                  />
-                </div>
-              </div>
-            </section>
+            </button>
+          ))}
+        </div>
 
-            {/* Core Operators Section */}
-            <section className="space-y-3">
-              <div className="flex items-center justify-between">
-                <h2 className="text-lg font-bold text-orange-950 flex items-center gap-2">
-                  <Brain className="w-5 h-5 text-orange-500" />
-                  核心动词 <span className="text-xs text-orange-900/50 font-normal">Operators</span>
-                </h2>
-                <span className="text-xs font-semibold bg-orange-100 text-orange-800 px-3 py-1 rounded-full">
-                  18 个关键
-                </span>
-              </div>
-              
-              <div 
-                onClick={startOperatorsRoutine}
-                className="relative w-full h-36 sm:h-52 rounded-2xl overflow-hidden shadow-sm group active:scale-[0.99] hover:shadow-md transition-all duration-300 cursor-pointer border border-orange-150/55"
-              >
-                <img 
-                  alt="Minimal digital workspace learning zen"
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA67Z_foag2kUgf83Cki6FUcrkpIy1uxkVg5KKhduemzlJKdZaVVBnknU6ttRReZHcSdPmgjUxJ0-Hlh8Ob9LwsLnMhuEWghK6m-Nz3nmdVSGR_Z_bqXl41yTfdyG-kXNzY90SD95b6nIL9-rvi9yZFHtfS9GHVLCq3wPWi7t6cfWzgm9CcShrewK756MNR6ifoe3g1VVx4iLJJ8FXJ-iBjP5DcQvB_Qz1_dPf6WoDw-LWuu0bhjsfT5KkAxnWl6Siod6DuFgvvDrws"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-orange-950/80 via-orange-900/40 to-transparent flex flex-col justify-end p-6">
-                  <p className="text-white font-extrabold text-xl sm:text-2xl mb-1 flex items-center gap-2">
-                    掌握语言的引擎 <Sparkles className="w-5 h-5 text-amber-300 animate-pulse" />
-                  </p>
-                  <p className="text-white/90 text-xs sm:text-sm leading-relaxed max-w-xl font-medium">
-                    点击强化演练这 18 个决定 Basic English 句式结构的核心动词（如 come, get, give, let 等），松弛掌控句法灵魂。
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            {/* Categorized Bento Grid */}
-            <section className="space-y-4">
-              <h2 className="text-lg font-black text-slate-800 flex items-center gap-2">
-                核心词汇分类
-                <div className="h-px bg-slate-200 flex-1 ml-2"></div>
-              </h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                
-                {/* 动作词 */}
-                <div 
-                  onClick={() => handleCategoryClick('actions')}
-                  className="bg-white p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-100 hover:border-cyan-200 transition-all cursor-pointer flex flex-col gap-3 sm:gap-4 active:scale-95 group shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_20px_rgba(6,182,212,0.1)]"
-                >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-cyan-50 flex items-center justify-center text-cyan-500 border border-cyan-100">
-                    <Move className="w-5 h-5 sm:w-6 sm:h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-extrabold text-slate-800 text-sm sm:text-base group-hover:text-cyan-600 transition-colors">动作与方向</h3>
-                    <p className="text-[10px] text-cyan-600/60 font-black uppercase mt-0.5 sm:mt-1 tracking-widest">100 Words</p>
-                  </div>
-                </div>
-
-                {/* 可见物 */}
-                <div 
-                  onClick={() => handleCategoryClick('picturables')}
-                  className="bg-white p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-100 hover:border-amber-200 transition-all cursor-pointer flex flex-col gap-3 sm:gap-4 active:scale-95 group shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_20px_rgba(245,158,11,0.1)]"
-                >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-amber-50 flex items-center justify-center text-amber-500 border border-amber-100">
-                    <Eye className="w-5 h-5 sm:w-6 sm:h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-extrabold text-slate-800 text-sm sm:text-base group-hover:text-amber-600 transition-colors">可见物/实物</h3>
-                    <p className="text-[10px] text-amber-600/60 font-black uppercase mt-0.5 sm:mt-1 tracking-widest">200 Words</p>
-                  </div>
-                </div>
-
-                {/* 普通名词 */}
-                <div 
-                  onClick={() => handleCategoryClick('generals')}
-                  className="col-span-2 md:col-span-1 bg-white p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-100 hover:border-rose-200 transition-all cursor-pointer flex items-center md:flex-col md:items-start justify-between md:justify-center gap-3 sm:gap-4 active:scale-95 group shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_20px_rgba(244,63,94,0.1)]"
-                >
-                  <div className="flex items-center md:flex-col md:items-start gap-3 sm:gap-4">
-                    <div className="w-12 h-12 md:w-10 md:h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-rose-50 flex items-center justify-center text-rose-500 border border-rose-100">
-                      <Package className="w-6 h-6 md:w-5 md:h-5 sm:w-6 sm:h-6" />
-                    </div>
-                    <div>
-                      <h3 className="font-extrabold text-slate-800 text-base sm:text-lg md:text-base group-hover:text-rose-600 transition-colors">普通名词</h3>
-                      <p className="text-[10px] text-rose-600/60 font-black uppercase mt-0.5 sm:mt-1 tracking-widest">400 Words</p>
-                    </div>
-                  </div>
-                  <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-slate-300 group-hover:text-rose-400 group-hover:translate-x-1 transition-all md:hidden" />
-                </div>
-
-                {/* 性质词 */}
-                <div 
-                  onClick={() => handleCategoryClick('qualities')}
-                  className="bg-white p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-100 hover:border-purple-200 transition-all cursor-pointer flex flex-col gap-3 sm:gap-4 active:scale-95 group shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_20px_rgba(168,85,247,0.1)]"
-                >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-purple-50 flex items-center justify-center text-purple-500 border border-purple-100">
-                    <Palette className="w-5 h-5 sm:w-6 sm:h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-extrabold text-slate-800 text-sm sm:text-base group-hover:text-purple-600 transition-colors">性质词</h3>
-                    <p className="text-[10px] text-purple-600/60 font-black uppercase mt-0.5 sm:mt-1 tracking-widest">100 Words</p>
-                  </div>
-                </div>
-
-                {/* 反义词 */}
-                <div 
-                  onClick={() => handleCategoryClick('opposites')}
-                  className="bg-white p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-100 hover:border-red-200 transition-all cursor-pointer flex flex-col gap-3 sm:gap-4 active:scale-95 group shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_20px_rgba(239,68,68,0.1)]"
-                >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-red-50 flex items-center justify-center text-red-500 border border-red-100">
-                    <Blend className="w-5 h-5 sm:w-6 sm:h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-extrabold text-slate-800 text-sm sm:text-base group-hover:text-red-600 transition-colors">反义词</h3>
-                    <p className="text-[10px] text-red-600/60 font-black uppercase mt-0.5 sm:mt-1 tracking-widest">50 Words</p>
-                  </div>
-                </div>
-
-                {/* 拼词练习 */}
-                <div
-                  onClick={() => setActiveTab('practice')}
-                  className="bg-white p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-100 hover:border-emerald-200 transition-all cursor-pointer flex flex-col gap-3 sm:gap-4 active:scale-95 group shadow-[0_2px_10px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_20px_rgba(16,185,129,0.1)]"
-                >
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-emerald-50 flex items-center justify-center text-emerald-500 border border-emerald-100">
-                    <PenTool className="w-5 h-5 sm:w-6 sm:h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-extrabold text-slate-800 text-sm sm:text-base group-hover:text-emerald-600 transition-colors">拼词练习</h3>
-                    <p className="text-[10px] text-emerald-600/60 font-black uppercase mt-0.5 sm:mt-1 tracking-widest">DAILY DRILL</p>
-                  </div>
-                </div>
-
-                {/* Navigation quick start card */}
-                <div
-                  onClick={() => {
-                    setBrowserCategory('all');
-                    setBrowserStatus('starred');
-                    setActiveTab('browser');
-                  }}
-                  className="bg-amber-50 p-4 sm:p-5 rounded-2xl sm:rounded-3xl border border-amber-100 hover:bg-amber-100 transition-all cursor-pointer flex items-center justify-between active:scale-95 group shadow-sm"
-                >
-                  <div>
-                    <h3 className="font-extrabold text-amber-700 text-sm sm:text-base">收藏夹词汇</h3>
-                    <p className="text-[10px] text-amber-700/60 font-black uppercase mt-0.5 sm:mt-1 tracking-widest">{starredCount} WORDS</p>
-                  </div>
-                  <Star className="w-6 h-6 sm:w-7 sm:h-7 text-amber-500 drop-shadow-sm" />
-                </div>
-
-              </div>
-            </section>
-
+        <button
+          type="button"
+          onClick={openStarred}
+          className="w-full flex items-center gap-3 px-5 py-3.5 border-t border-slate-100 bg-amber-50/25 hover:bg-amber-50/45 transition-colors text-left active:scale-[0.995]"
+        >
+          <div className="w-9 h-9 rounded-xl bg-amber-100/70 flex items-center justify-center shrink-0">
+            <Star className="w-4 h-4 text-amber-500 fill-amber-400/35" />
           </div>
-        
-    </>
+          <div className="min-w-0 flex-1">
+            <p className="text-sm font-semibold text-amber-950/90">收藏夹词汇</p>
+            <p className="text-xs text-amber-700/55 font-medium mt-0.5">快速进入已标记的词</p>
+          </div>
+          <span className="text-xs font-semibold text-amber-700/65 tabular-nums shrink-0">{starredCount} 词</span>
+          <ChevronRight className="w-4 h-4 text-amber-400/75 shrink-0" />
+        </button>
+      </section>
+    </div>
   );
 };

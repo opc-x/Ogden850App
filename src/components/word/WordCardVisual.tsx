@@ -12,7 +12,7 @@ export type WordVisualSize = 'thumb' | 'detail' | 'inline';
 
 /** 词卡左侧图标外框 — BrowserView 等复用 */
 export const WORD_THUMB_OUTER =
-  'flex items-center justify-center w-14 sm:w-16 shrink-0 mr-4 sm:mr-5';
+  'flex items-center justify-center w-12 sm:w-14 shrink-0 mr-3.5 sm:mr-4';
 
 /** 词卡左侧图标内框 — 正方形，避免 PNG 在扁矩形里被拉伸 */
 export const WORD_THUMB_INNER = 'aspect-square w-full flex items-center justify-center';
