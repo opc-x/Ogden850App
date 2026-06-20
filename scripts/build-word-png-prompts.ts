@@ -899,6 +899,18 @@ function buildOppositePrompt(word: string, cn: string): string {
   return oppositeSemantic(word, cn);
 }
 
+/** Ogden ops 修饰词（量词/副词/否定）— 与 only.png / all.png 风格一致 */
+const OPS_MODIFIER_PROMPTS: Record<string, string> = {
+  all: 'A grid of many identical cute yellow stars filling the frame, meaning all every one, flat vector pastel illustration',
+  almost: 'A progress bar nearly full with checkmark near finish flag, almost complete quantity, flat vector pastel illustration',
+  enough: 'A white ceramic bowl filled exactly to the rim with golden rice grains, sufficient just-right quantity, clean 3D CGI illustration',
+  even: 'A single small cute child giving thumbs up with soft sparkle emphasis rays, even a child can do it adverb meaning, one character only clean 3D CGI illustration',
+  not: 'One large soft red X mark centered alone on white, simple negation symbol meaning not, clean 3D CGI illustration',
+  only: 'A single red apple alone with empty space around it, only one nothing else, flat vector pastel illustration',
+  no: 'An empty bowl with red prohibition circle slash meaning no none, flat vector pastel illustration',
+  yes: 'A friendly green checkmark character with happy face, yes affirmation, flat vector pastel illustration',
+};
+
 const OPERATOR_PROMPTS: Record<string, string> = {
   come: 'A simple person walking toward the viewer with welcoming gesture, approaching motion, flat vector pastel illustration',
   go: 'A simple person walking away from viewer into distance, departure motion, flat vector pastel illustration',
@@ -940,6 +952,7 @@ const PICTURABLE_PROMPTS: Record<string, string> = {
 };
 
 const ALL_PROMPTS: Record<string, string> = {
+  ...OPS_MODIFIER_PROMPTS,
   ...OPERATOR_PROMPTS,
   ...PICTURABLE_PROMPTS,
   ...PICTURABLE_SEMANTICS,
@@ -979,6 +992,8 @@ async function main() {
 export const WORD_ILLUSTRATION_STYLE =
   'Light flat vector illustration, soft pastel colors, clean minimal style, square 1:1 composition, centered subject, single clear concept in square frame, pure white background #FFFFFF, no border, no frame, no drop shadow, no rounded card inside image, subject only on white, no text, no labels, no watermark, friendly educational flashcard style';
 
+${recordToTs('OPS_MODIFIER_PROMPTS', OPS_MODIFIER_PROMPTS)}
+
 ${recordToTs('OPERATOR_PROMPTS', OPERATOR_PROMPTS)}
 
 ${recordToTs('PICTURABLE_PROMPTS', { ...PICTURABLE_PROMPTS, ...Object.fromEntries(Object.entries(PICTURABLE_SEMANTICS)) })}
@@ -993,6 +1008,7 @@ ${recordToTs('OPPOSITE_PROMPTS', Object.fromEntries(wordsData.filter(w => w.cate
 
 /** 全量合并表 */
 export const ALL_WORD_PNG_PROMPTS: Record<string, string> = {
+  ...OPS_MODIFIER_PROMPTS,
   ...OPERATOR_PROMPTS,
   ...PICTURABLE_PROMPTS,
   ...DIRECTION_PROMPTS,

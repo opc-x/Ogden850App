@@ -1567,14 +1567,14 @@
       "updatedAt": "2026-06-20T18:12:24.483Z"
     },
     "apple:0": {
-      "en": "I see an apple.",
-      "hash": "8d563bba396ac0de",
-      "updatedAt": "2026-06-20T18:12:24.869Z"
+      "en": "She eats an apple every morning.",
+      "hash": "dfa88449ca26694f",
+      "updatedAt": "2026-06-20T19:18:51.000Z"
     },
     "apple:1": {
-      "en": "This is an apple.",
-      "hash": "a547f4e164e6a436",
-      "updatedAt": "2026-06-20T18:12:25.366Z"
+      "en": "The apple is red and sweet.",
+      "hash": "832a985371753426",
+      "updatedAt": "2026-06-20T19:18:50.592Z"
     },
     "apparatus:1": {
       "en": "Use the apparatus carefully.",
@@ -1582,9 +1582,9 @@
       "updatedAt": "2026-06-20T18:12:25.367Z"
     },
     "apple:2": {
-      "en": "The apple is on the table.",
-      "hash": "17784410ce3c6d55",
-      "updatedAt": "2026-06-20T18:12:25.617Z"
+      "en": "Can I have an apple from the bowl?",
+      "hash": "87bd466dd358f59c",
+      "updatedAt": "2026-06-20T19:18:50.674Z"
     },
     "apparatus:2": {
       "en": "Is this apparatus for cooking?",
@@ -1597,9 +1597,9 @@
       "updatedAt": "2026-06-20T18:12:26.650Z"
     },
     "arch:0": {
-      "en": "I see an arch.",
-      "hash": "a8834d2236e8cf12",
-      "updatedAt": "2026-06-20T18:12:26.714Z"
+      "en": "The bridge has a stone arch.",
+      "hash": "3e4f47edd2012225",
+      "updatedAt": "2026-06-20T19:18:50.618Z"
     },
     "approval:0": {
       "en": "Get approval before you start.",
@@ -1612,19 +1612,19 @@
       "updatedAt": "2026-06-20T18:12:27.123Z"
     },
     "arch:1": {
-      "en": "This is an arch.",
-      "hash": "78c6cc16d759b7d6",
-      "updatedAt": "2026-06-20T18:12:27.531Z"
+      "en": "The cat's back forms an arch.",
+      "hash": "ed5e590eeba8b723",
+      "updatedAt": "2026-06-20T19:18:50.835Z"
     },
     "arch:2": {
-      "en": "The arch is on the table.",
-      "hash": "349ede4b87726c72",
-      "updatedAt": "2026-06-20T18:12:27.605Z"
+      "en": "We walked through the arch.",
+      "hash": "a4136e698dd23e1e",
+      "updatedAt": "2026-06-20T19:18:52.550Z"
     },
     "arm:0": {
-      "en": "I see an arm.",
-      "hash": "9e31bc2bbd0aba09",
-      "updatedAt": "2026-06-20T18:12:28.507Z"
+      "en": "He broke his arm in the game.",
+      "hash": "677a0a904de9410a",
+      "updatedAt": "2026-06-20T19:18:52.537Z"
     },
     "argument:1": {
       "en": "Stop this argument now.",
@@ -1642,29 +1642,29 @@
       "updatedAt": "2026-06-20T18:12:29.097Z"
     },
     "arm:1": {
-      "en": "This is an arm.",
-      "hash": "7cd98e4714a9da46",
-      "updatedAt": "2026-06-20T18:12:29.236Z"
+      "en": "She carries a bag under her arm.",
+      "hash": "5528fdb4c34b0cf3",
+      "updatedAt": "2026-06-20T19:18:52.091Z"
     },
     "army:1": {
-      "en": "This is an army.",
-      "hash": "1aea482896f99d5a",
-      "updatedAt": "2026-06-20T18:12:39.296Z"
+      "en": "He joined the army at age eighteen.",
+      "hash": "b7b5e938ed7c1369",
+      "updatedAt": "2026-06-20T19:18:53.581Z"
     },
     "army:2": {
-      "en": "The army is on the table.",
-      "hash": "68b6c95ff9de356c",
-      "updatedAt": "2026-06-20T18:12:39.325Z"
+      "en": "The army marched across the field.",
+      "hash": "b621d08e874fabe3",
+      "updatedAt": "2026-06-20T19:18:52.278Z"
     },
     "army:0": {
-      "en": "I see an army.",
-      "hash": "cb64b52d9249a787",
-      "updatedAt": "2026-06-20T18:12:39.334Z"
+      "en": "The army protects the country.",
+      "hash": "9751e408203f0ca7",
+      "updatedAt": "2026-06-20T19:18:52.098Z"
     },
     "arm:2": {
-      "en": "The arm is on the table.",
-      "hash": "a42553c22cf162e2",
-      "updatedAt": "2026-06-20T18:12:39.502Z"
+      "en": "Raise your arm if you know the answer.",
+      "hash": "3986a657a12ade4b",
+      "updatedAt": "2026-06-20T19:18:52.197Z"
     },
     "as:0": {
       "en": "Do as I say.",
@@ -1792,19 +1792,19 @@
       "updatedAt": "2026-06-20T18:12:44.996Z"
     },
     "baby:0": {
-      "en": "I see a baby.",
-      "hash": "3f26b71cc175ec9d",
-      "updatedAt": "2026-06-20T18:12:45.347Z"
+      "en": "The baby is crying for milk.",
+      "hash": "19b26ca56f8570ea",
+      "updatedAt": "2026-06-20T19:18:51.725Z"
     },
     "baby:2": {
-      "en": "The baby is on the table.",
-      "hash": "9e8ee45f0c155f1a",
-      "updatedAt": "2026-06-20T18:12:45.490Z"
+      "en": "The baby sleeps in a small bed.",
+      "hash": "c05697e8518a6a22",
+      "updatedAt": "2026-06-20T19:18:53.531Z"
     },
     "baby:1": {
-      "en": "This is a baby.",
-      "hash": "44b7e7a72087a057",
-      "updatedAt": "2026-06-20T18:12:45.496Z"
+      "en": "She holds the baby in her arms.",
+      "hash": "3546ae4cc24ec1b3",
+      "updatedAt": "2026-06-20T19:18:53.036Z"
     },
     "awake:2": {
       "en": "I stayed awake all night.",
@@ -1847,34 +1847,34 @@
       "updatedAt": "2026-06-20T18:12:46.971Z"
     },
     "bag:0": {
-      "en": "I see a bag.",
-      "hash": "52f6a44e89f3ed5f",
-      "updatedAt": "2026-06-20T18:12:47.131Z"
+      "en": "I put the books in my bag.",
+      "hash": "447d3816449016ad",
+      "updatedAt": "2026-06-20T19:18:53.365Z"
     },
     "bag:2": {
-      "en": "The bag is on the table.",
-      "hash": "f51cc4d2cd00fdcd",
-      "updatedAt": "2026-06-20T18:12:47.438Z"
+      "en": "She carries a heavy bag of groceries.",
+      "hash": "6c6005f7e2a7ce6e",
+      "updatedAt": "2026-06-20T19:18:54.268Z"
     },
     "bag:1": {
-      "en": "This is a bag.",
-      "hash": "9fcfcb10b10c570b",
-      "updatedAt": "2026-06-20T18:12:47.440Z"
+      "en": "This bag is made of leather.",
+      "hash": "8e0efc2b3004b2a2",
+      "updatedAt": "2026-06-20T19:18:53.034Z"
     },
     "ball:0": {
-      "en": "I see a ball.",
-      "hash": "7342ca3d0f886e0e",
-      "updatedAt": "2026-06-20T18:12:47.917Z"
+      "en": "The boy kicks the ball to his friend.",
+      "hash": "4beda03289c5df12",
+      "updatedAt": "2026-06-20T19:18:53.929Z"
     },
     "ball:1": {
-      "en": "This is a ball.",
-      "hash": "2060bc4f71325150",
-      "updatedAt": "2026-06-20T18:12:48.110Z"
+      "en": "The ball is round and bounces high.",
+      "hash": "af0ed9ec1e3f2aac",
+      "updatedAt": "2026-06-20T19:18:53.933Z"
     },
     "ball:2": {
-      "en": "The ball is on the table.",
-      "hash": "7903d8499a2c19fc",
-      "updatedAt": "2026-06-20T18:12:48.128Z"
+      "en": "Please throw the ball to me.",
+      "hash": "5000dfe166c0c35e",
+      "updatedAt": "2026-06-20T19:18:54.260Z"
     },
     "balance:1": {
       "en": "Keep your balance on the bike.",
@@ -1892,24 +1892,24 @@
       "updatedAt": "2026-06-20T18:12:48.540Z"
     },
     "band:0": {
-      "en": "I see a band.",
-      "hash": "0850c5d3f88b072b",
-      "updatedAt": "2026-06-20T18:12:48.613Z"
+      "en": "She tied her hair with a red band.",
+      "hash": "14270130680ec498",
+      "updatedAt": "2026-06-20T19:18:54.365Z"
     },
     "band:1": {
-      "en": "This is a band.",
-      "hash": "e41d7ec98ec79bdc",
-      "updatedAt": "2026-06-20T18:12:48.958Z"
+      "en": "The box has a metal band around it.",
+      "hash": "2ff249a7b5e36852",
+      "updatedAt": "2026-06-20T19:18:54.629Z"
     },
     "band:2": {
-      "en": "The band is on the table.",
-      "hash": "f2cc30a27fa0151d",
-      "updatedAt": "2026-06-20T18:12:49.000Z"
+      "en": "Put a rubber band on the papers.",
+      "hash": "ae902cf8e030e2a7",
+      "updatedAt": "2026-06-20T19:18:55.209Z"
     },
     "basin:0": {
-      "en": "I see a basin.",
-      "hash": "fe7ec92b2a5e4e43",
-      "updatedAt": "2026-06-20T18:12:49.248Z"
+      "en": "He washed his face in the basin.",
+      "hash": "1df9c874a01dc29a",
+      "updatedAt": "2026-06-20T19:18:54.914Z"
     },
     "base:0": {
       "en": "The base of the lamp is heavy.",
@@ -1917,14 +1917,14 @@
       "updatedAt": "2026-06-20T18:12:49.524Z"
     },
     "basin:1": {
-      "en": "This is a basin.",
-      "hash": "041ce6b568e31789",
-      "updatedAt": "2026-06-20T18:12:49.673Z"
+      "en": "Fill the basin with warm water.",
+      "hash": "eaf8cce5f21a949d",
+      "updatedAt": "2026-06-20T19:18:55.250Z"
     },
     "basin:2": {
-      "en": "The basin is on the table.",
-      "hash": "c93ad2a66a185dbd",
-      "updatedAt": "2026-06-20T18:12:49.690Z"
+      "en": "The basin is made of plastic.",
+      "hash": "b25bda71bb940320",
+      "updatedAt": "2026-06-20T19:18:55.184Z"
     },
     "base:2": {
       "en": "They set up a base camp near the river.",
@@ -1937,34 +1937,34 @@
       "updatedAt": "2026-06-20T18:12:49.849Z"
     },
     "basket:0": {
-      "en": "I see a basket.",
-      "hash": "94fe7f75f87d1244",
-      "updatedAt": "2026-06-20T18:12:49.992Z"
+      "en": "She put the apples in a basket.",
+      "hash": "e3f1915583f3ba21",
+      "updatedAt": "2026-06-20T19:18:55.727Z"
     },
     "basket:1": {
-      "en": "This is a basket.",
-      "hash": "e6051da0b2471784",
-      "updatedAt": "2026-06-20T18:12:50.187Z"
+      "en": "The basket is full of flowers.",
+      "hash": "285ba4dcad5c325e",
+      "updatedAt": "2026-06-20T19:18:55.634Z"
     },
     "basket:2": {
-      "en": "The basket is on the table.",
-      "hash": "9f68c73c5640d95e",
-      "updatedAt": "2026-06-20T18:12:50.530Z"
+      "en": "Can you carry this basket for me?",
+      "hash": "7babafac54888b51",
+      "updatedAt": "2026-06-20T19:18:55.696Z"
     },
     "bath:0": {
-      "en": "I see a bath.",
-      "hash": "532e7b7b4ae62c90",
-      "updatedAt": "2026-06-20T18:12:50.532Z"
+      "en": "I take a bath every night.",
+      "hash": "ca1c6f1f5fba60de",
+      "updatedAt": "2026-06-20T19:18:56.209Z"
     },
     "bath:1": {
-      "en": "This is a bath.",
-      "hash": "a2856c257707775d",
-      "updatedAt": "2026-06-20T18:12:50.584Z"
+      "en": "The bath is full of hot water.",
+      "hash": "8a2c8573e5f64f61",
+      "updatedAt": "2026-06-20T19:18:56.170Z"
     },
     "bath:2": {
-      "en": "The bath is on the table.",
-      "hash": "7671ebb2c57febff",
-      "updatedAt": "2026-06-20T18:12:50.586Z"
+      "en": "Clean the bath after you use it.",
+      "hash": "1524bf124b5c9d99",
+      "updatedAt": "2026-06-20T19:18:56.534Z"
     },
     "be:0": {
       "en": "Be quiet.",
@@ -1997,29 +1997,29 @@
       "updatedAt": "2026-06-20T18:12:52.117Z"
     },
     "bed:0": {
-      "en": "I see a bed.",
-      "hash": "71bc22e730efda97",
-      "updatedAt": "2026-06-20T18:12:52.120Z"
+      "en": "She goes to bed at ten.",
+      "hash": "762d8728f110b6b5",
+      "updatedAt": "2026-06-20T19:18:56.563Z"
     },
     "bed:2": {
-      "en": "The bed is on the table.",
-      "hash": "324783d074e754fe",
-      "updatedAt": "2026-06-20T18:12:52.169Z"
+      "en": "The cat is sleeping on the bed.",
+      "hash": "c7738cb1cb54bfc3",
+      "updatedAt": "2026-06-20T19:18:57.793Z"
     },
     "bee:0": {
-      "en": "I see a bee.",
-      "hash": "39a4d8ebbebead00",
-      "updatedAt": "2026-06-20T18:12:52.172Z"
+      "en": "A bee is flying around the flower.",
+      "hash": "5c716c9031648ac7",
+      "updatedAt": "2026-06-20T19:18:57.031Z"
     },
     "bed:1": {
-      "en": "This is a bed.",
-      "hash": "d61bd9d40d8ef205",
-      "updatedAt": "2026-06-20T18:12:52.181Z"
+      "en": "Make your bed every morning.",
+      "hash": "169de0295a3a646d",
+      "updatedAt": "2026-06-20T19:18:56.397Z"
     },
     "bee:1": {
-      "en": "This is a bee.",
-      "hash": "fcfa0b0288451e59",
-      "updatedAt": "2026-06-20T18:12:52.312Z"
+      "en": "The bee makes honey.",
+      "hash": "5d29ff0b2d2824cb",
+      "updatedAt": "2026-06-20T19:18:57.803Z"
     },
     "before:0": {
       "en": "Go before me.",
@@ -2027,9 +2027,9 @@
       "updatedAt": "2026-06-20T18:12:52.853Z"
     },
     "bee:2": {
-      "en": "The bee is on the table.",
-      "hash": "00d1127eaffd79f7",
-      "updatedAt": "2026-06-20T18:12:52.860Z"
+      "en": "Be careful, that bee might sting.",
+      "hash": "d599f4c5e8545316",
+      "updatedAt": "2026-06-20T19:18:57.509Z"
     },
     "before:1": {
       "en": "Come before night.",
@@ -2052,9 +2052,9 @@
       "updatedAt": "2026-06-20T18:12:53.885Z"
     },
     "bell:0": {
-      "en": "I see a bell.",
-      "hash": "7d989c184e5a28fc",
-      "updatedAt": "2026-06-20T18:12:54.259Z"
+      "en": "The bell rings at eight o'clock.",
+      "hash": "8fec588a297d82cf",
+      "updatedAt": "2026-06-20T19:18:57.549Z"
     },
     "belief:0": {
       "en": "She has a strong belief in hard work.",
@@ -2077,29 +2077,29 @@
       "updatedAt": "2026-06-20T18:12:54.589Z"
     },
     "bell:1": {
-      "en": "This is a bell.",
-      "hash": "e403e3c6a8dc5f1c",
-      "updatedAt": "2026-06-20T18:12:54.606Z"
+      "en": "Ring the bell to enter.",
+      "hash": "3ed2142a9a17b0a0",
+      "updatedAt": "2026-06-20T19:18:57.718Z"
     },
     "bell:2": {
-      "en": "The bell is on the table.",
-      "hash": "76e95a5748eb8512",
-      "updatedAt": "2026-06-20T18:12:54.924Z"
+      "en": "The cat has a small bell on its neck.",
+      "hash": "2c3ba025ffd1c351",
+      "updatedAt": "2026-06-20T19:18:57.808Z"
     },
     "berry:1": {
-      "en": "This is a berry.",
-      "hash": "89171eb122a9c481",
-      "updatedAt": "2026-06-20T18:12:55.315Z"
+      "en": "These berries taste sweet.",
+      "hash": "64760fb5606911ad",
+      "updatedAt": "2026-06-20T19:18:58.568Z"
     },
     "berry:0": {
-      "en": "I see a berry.",
-      "hash": "b6e10f3713874541",
-      "updatedAt": "2026-06-20T18:12:55.328Z"
+      "en": "She picked a red berry from the bush.",
+      "hash": "8edb6be4019d8f50",
+      "updatedAt": "2026-06-20T19:18:57.972Z"
     },
     "berry:2": {
-      "en": "The berry is on the table.",
-      "hash": "77ab9f7ccb369e8b",
-      "updatedAt": "2026-06-20T18:12:55.654Z"
+      "en": "Don't eat that berry, it might be bad.",
+      "hash": "26ea36b78fc53439",
+      "updatedAt": "2026-06-20T19:18:59.405Z"
     },
     "bent:0": {
       "en": "The nail is bent.",
@@ -2132,19 +2132,19 @@
       "updatedAt": "2026-06-20T18:12:56.337Z"
     },
     "bird:0": {
-      "en": "I see a bird.",
-      "hash": "7f89a31759f47013",
-      "updatedAt": "2026-06-20T18:12:56.528Z"
+      "en": "A bird is singing in the tree.",
+      "hash": "7e2e01d77d1e433d",
+      "updatedAt": "2026-06-20T19:18:58.822Z"
     },
     "bird:1": {
-      "en": "This is a bird.",
-      "hash": "799789e1d0634f8c",
-      "updatedAt": "2026-06-20T18:12:56.820Z"
+      "en": "The bird flies away when I come near.",
+      "hash": "9ea289515620a741",
+      "updatedAt": "2026-06-20T19:18:59.150Z"
     },
     "bird:2": {
-      "en": "The bird is on the table.",
-      "hash": "ade11dbab8e90416",
-      "updatedAt": "2026-06-20T18:12:56.821Z"
+      "en": "Feed the birds some bread.",
+      "hash": "999cf742d4270120",
+      "updatedAt": "2026-06-20T19:18:59.149Z"
     },
     "birth:1": {
       "en": "What is your date of birth?",
@@ -2202,14 +2202,14 @@
       "updatedAt": "2026-06-20T18:12:59.258Z"
     },
     "blade:0": {
-      "en": "I see a blade.",
-      "hash": "77261e21402db68d",
-      "updatedAt": "2026-06-20T18:12:59.972Z"
+      "en": "The blade of this knife is very sharp.",
+      "hash": "4749cf28226cc113",
+      "updatedAt": "2026-06-20T19:18:59.178Z"
     },
     "blade:1": {
-      "en": "This is a blade.",
-      "hash": "759df07069b0769d",
-      "updatedAt": "2026-06-20T18:13:00.015Z"
+      "en": "Be careful with the blade, it can cut you.",
+      "hash": "bdc2214bc8e80298",
+      "updatedAt": "2026-06-20T19:18:59.352Z"
     },
     "bitter:1": {
       "en": "This medicine is very bitter.",
@@ -2217,9 +2217,9 @@
       "updatedAt": "2026-06-20T18:13:00.079Z"
     },
     "blade:2": {
-      "en": "The blade is on the table.",
-      "hash": "1ec3450b3dd58dbb",
-      "updatedAt": "2026-06-20T18:13:00.199Z"
+      "en": "He cleaned the blade after cutting the meat.",
+      "hash": "8870e5536f487d01",
+      "updatedAt": "2026-06-20T19:18:59.483Z"
     },
     "blood:2": {
       "en": "The doctor tested his blood for sugar.",
@@ -2257,14 +2257,14 @@
       "updatedAt": "2026-06-20T18:13:02.057Z"
     },
     "board:0": {
-      "en": "I see a board.",
-      "hash": "a9546ab8ce2266a2",
-      "updatedAt": "2026-06-20T18:13:02.265Z"
+      "en": "Cut the vegetables on the board.",
+      "hash": "bc68f38a6895f613",
+      "updatedAt": "2026-06-20T19:19:00.109Z"
     },
     "board:1": {
-      "en": "This is a board.",
-      "hash": "9e6dd4b451b96b2f",
-      "updatedAt": "2026-06-20T18:13:02.299Z"
+      "en": "Nail the board to the wall.",
+      "hash": "6a369ab9f3cfdac4",
+      "updatedAt": "2026-06-20T19:18:59.992Z"
     },
     "blue:1": {
       "en": "She has blue eyes.",
@@ -2272,9 +2272,9 @@
       "updatedAt": "2026-06-20T18:13:02.437Z"
     },
     "board:2": {
-      "en": "The board is on the table.",
-      "hash": "b9df5c3396c4c8d1",
-      "updatedAt": "2026-06-20T18:13:02.478Z"
+      "en": "Is this board long enough?",
+      "hash": "dd7e5b9001b7d57c",
+      "updatedAt": "2026-06-20T19:19:00.923Z"
     },
     "blue:2": {
       "en": "I like the blue shirt.",
@@ -2282,19 +2282,19 @@
       "updatedAt": "2026-06-20T18:13:02.629Z"
     },
     "boat:0": {
-      "en": "I see a boat.",
-      "hash": "b9ab0b147053adb2",
-      "updatedAt": "2026-06-20T18:13:02.762Z"
+      "en": "We row the boat across the lake.",
+      "hash": "5a0773259860af8c",
+      "updatedAt": "2026-06-20T19:19:00.425Z"
     },
     "boat:1": {
-      "en": "This is a boat.",
-      "hash": "9dd0ff3ad5733b88",
-      "updatedAt": "2026-06-20T18:13:02.985Z"
+      "en": "Can you see a boat on the river?",
+      "hash": "fa0546ea685da6b1",
+      "updatedAt": "2026-06-20T19:19:00.403Z"
     },
     "boat:2": {
-      "en": "The boat is on the table.",
-      "hash": "10c82ffaa4de0b9c",
-      "updatedAt": "2026-06-20T18:13:03.096Z"
+      "en": "Put the boat in the water.",
+      "hash": "bfd2a73760de1fd3",
+      "updatedAt": "2026-06-20T19:19:00.503Z"
     },
     "body:0": {
       "en": "Exercise keeps your body healthy.",
@@ -2307,9 +2307,9 @@
       "updatedAt": "2026-06-20T18:13:03.955Z"
     },
     "bone:0": {
-      "en": "I see a bone.",
-      "hash": "8e5226bcb403271b",
-      "updatedAt": "2026-06-20T18:13:04.151Z"
+      "en": "The dog chews a bone.",
+      "hash": "c991488494a44e9c",
+      "updatedAt": "2026-06-20T19:19:00.562Z"
     },
     "body:1": {
       "en": "She has a slim body.",
@@ -2317,134 +2317,134 @@
       "updatedAt": "2026-06-20T18:13:04.152Z"
     },
     "bone:1": {
-      "en": "This is a bone.",
-      "hash": "828605b8a1e7bba2",
-      "updatedAt": "2026-06-20T18:13:04.346Z"
+      "en": "A fish has many small bones.",
+      "hash": "46c3f3891a5a3d39",
+      "updatedAt": "2026-06-20T19:19:01.054Z"
     },
     "bone:2": {
-      "en": "The bone is on the table.",
-      "hash": "f8f05ea62fbb6c45",
-      "updatedAt": "2026-06-20T18:13:04.354Z"
+      "en": "He broke a bone in his leg.",
+      "hash": "1594eef5fca109ee",
+      "updatedAt": "2026-06-20T19:19:01.447Z"
     },
     "book:0": {
-      "en": "I see a book.",
-      "hash": "7618153da78db3e6",
-      "updatedAt": "2026-06-20T18:13:04.496Z"
+      "en": "I read a book every night.",
+      "hash": "c7b494734fe1b5f4",
+      "updatedAt": "2026-06-20T19:19:01.402Z"
     },
     "book:1": {
-      "en": "This is a book.",
-      "hash": "83a30d3fbd93cbb9",
-      "updatedAt": "2026-06-20T18:13:04.666Z"
+      "en": "Open your book to page ten.",
+      "hash": "95b1c3c3cd62002e",
+      "updatedAt": "2026-06-20T19:19:01.981Z"
     },
     "boot:0": {
-      "en": "I see a boot.",
-      "hash": "1a4a59c35e0c78e7",
-      "updatedAt": "2026-06-20T18:13:04.886Z"
+      "en": "Wear your boots in the rain.",
+      "hash": "1e8c2bd7e1ff5bac",
+      "updatedAt": "2026-06-20T19:19:01.650Z"
     },
     "book:2": {
-      "en": "The book is on the table.",
-      "hash": "94a37dd68030ce6c",
-      "updatedAt": "2026-06-20T18:13:04.888Z"
+      "en": "This book has many pictures.",
+      "hash": "9454dc8dd60918fd",
+      "updatedAt": "2026-06-20T19:19:01.644Z"
     },
     "boot:1": {
-      "en": "This is a boot.",
-      "hash": "f00ef4d8feb840a4",
-      "updatedAt": "2026-06-20T18:13:05.036Z"
+      "en": "He cleaned the mud off his boots.",
+      "hash": "045a946a38e163d8",
+      "updatedAt": "2026-06-20T19:19:03.033Z"
     },
     "boot:2": {
-      "en": "The boot is on the table.",
-      "hash": "deea90c04b5fa562",
-      "updatedAt": "2026-06-20T18:13:05.092Z"
+      "en": "Are these boots too small?",
+      "hash": "1aab0121e2dd0b74",
+      "updatedAt": "2026-06-20T19:19:02.317Z"
     },
     "bottle:0": {
-      "en": "I see a bottle.",
-      "hash": "1eca2a7d84c31b4b",
-      "updatedAt": "2026-06-20T18:13:05.196Z"
+      "en": "Fill the bottle with water.",
+      "hash": "d45d76053527087b",
+      "updatedAt": "2026-06-20T19:19:02.169Z"
     },
     "bottle:1": {
-      "en": "This is a bottle.",
-      "hash": "ac8497ffc905209d",
-      "updatedAt": "2026-06-20T18:13:05.303Z"
+      "en": "The baby drinks from a bottle.",
+      "hash": "5d2b644ea3213948",
+      "updatedAt": "2026-06-20T19:19:03.031Z"
     },
     "bottle:2": {
-      "en": "The bottle is on the table.",
-      "hash": "63f939dbf6f39ae2",
-      "updatedAt": "2026-06-20T18:13:05.600Z"
+      "en": "Throw the empty bottle away.",
+      "hash": "4fc99c2c4f404e13",
+      "updatedAt": "2026-06-20T19:19:02.726Z"
     },
     "box:0": {
-      "en": "I see a box.",
-      "hash": "9b0d1da50e3616cd",
-      "updatedAt": "2026-06-20T18:13:05.718Z"
+      "en": "Put the toys in the box.",
+      "hash": "dc7ab5a92b660e6b",
+      "updatedAt": "2026-06-20T19:19:03.256Z"
     },
     "box:1": {
-      "en": "This is a box.",
-      "hash": "20c0a41922d799ed",
-      "updatedAt": "2026-06-20T18:13:05.782Z"
+      "en": "Open the box and see what's inside.",
+      "hash": "ccb4574cabd5cef5",
+      "updatedAt": "2026-06-20T19:19:03.112Z"
     },
     "box:2": {
-      "en": "The box is on the table.",
-      "hash": "c8b5d1c97232a1f5",
-      "updatedAt": "2026-06-20T18:13:05.787Z"
+      "en": "This box is made of cardboard.",
+      "hash": "f66f55ae293e41ac",
+      "updatedAt": "2026-06-20T19:19:03.725Z"
     },
     "boy:1": {
-      "en": "This is a boy.",
-      "hash": "35223cb2ba53714a",
-      "updatedAt": "2026-06-20T18:13:05.955Z"
+      "en": "Is that boy your brother?",
+      "hash": "b5a2427d0a0de69f",
+      "updatedAt": "2026-06-20T19:19:03.578Z"
     },
     "boy:0": {
-      "en": "I see a boy.",
-      "hash": "936687e5081c293b",
-      "updatedAt": "2026-06-20T18:13:05.959Z"
+      "en": "The boy plays with a ball.",
+      "hash": "66cdcde08112a781",
+      "updatedAt": "2026-06-20T19:19:03.388Z"
     },
     "boy:2": {
-      "en": "The boy is on the table.",
-      "hash": "2c7cf2d90fc9dcf0",
-      "updatedAt": "2026-06-20T18:13:06.317Z"
+      "en": "A boy and a girl are singing.",
+      "hash": "67e61f87c245b331",
+      "updatedAt": "2026-06-20T19:19:03.899Z"
     },
     "brain:2": {
-      "en": "The brain is on the table.",
-      "hash": "f3d307a56ab26fb7",
-      "updatedAt": "2026-06-20T18:13:06.443Z"
+      "en": "He has a very big brain.",
+      "hash": "8bdb27cf14482a55",
+      "updatedAt": "2026-06-20T19:19:04.430Z"
     },
     "brain:0": {
-      "en": "I see a brain.",
-      "hash": "c4ae1ad5971982af",
-      "updatedAt": "2026-06-20T18:13:06.470Z"
+      "en": "The brain controls the body.",
+      "hash": "6fdffbff9740691b",
+      "updatedAt": "2026-06-20T19:19:04.445Z"
     },
     "brain:1": {
-      "en": "This is a brain.",
-      "hash": "d495b14891ffffbd",
-      "updatedAt": "2026-06-20T18:13:06.473Z"
+      "en": "Use your brain to solve the problem.",
+      "hash": "fa17183befacd6f8",
+      "updatedAt": "2026-06-20T19:19:05.661Z"
     },
     "brake:0": {
-      "en": "I see a brake.",
-      "hash": "b5ff1e1f0db44cba",
-      "updatedAt": "2026-06-20T18:13:06.783Z"
+      "en": "Press the brake to stop the car.",
+      "hash": "ec11962ef050c33d",
+      "updatedAt": "2026-06-20T19:19:04.618Z"
     },
     "brake:1": {
-      "en": "This is a brake.",
-      "hash": "01607933999e3de1",
-      "updatedAt": "2026-06-20T18:13:06.784Z"
+      "en": "The brake on my bike is broken.",
+      "hash": "4c807955865db886",
+      "updatedAt": "2026-06-20T19:19:04.723Z"
     },
     "brake:2": {
-      "en": "The brake is on the table.",
-      "hash": "a94083a407b611f5",
-      "updatedAt": "2026-06-20T18:13:07.137Z"
+      "en": "Always check the brakes before a trip.",
+      "hash": "4c6eda9c0e156c13",
+      "updatedAt": "2026-06-20T19:19:04.893Z"
     },
     "branch:0": {
-      "en": "I see a branch.",
-      "hash": "fd8d6c46c563d367",
-      "updatedAt": "2026-06-20T18:13:07.202Z"
+      "en": "The bird sits on a branch.",
+      "hash": "96a5fdd60a86e3bb",
+      "updatedAt": "2026-06-20T19:19:05.127Z"
     },
     "branch:2": {
-      "en": "The branch is on the table.",
-      "hash": "c3bf0d216e9b609b",
-      "updatedAt": "2026-06-20T18:13:07.204Z"
+      "en": "A branch of the bank is near my home.",
+      "hash": "9ef976f8827525d7",
+      "updatedAt": "2026-06-20T19:19:05.864Z"
     },
     "branch:1": {
-      "en": "This is a branch.",
-      "hash": "f55aef8682bea3bb",
-      "updatedAt": "2026-06-20T18:13:07.297Z"
+      "en": "Cut that branch from the tree.",
+      "hash": "44e8a1e6d591c700",
+      "updatedAt": "2026-06-20T19:19:05.243Z"
     },
     "brass:0": {
       "en": "The door handle is made of brass.",
@@ -2477,9 +2477,9 @@
       "updatedAt": "2026-06-20T18:13:08.632Z"
     },
     "brick:0": {
-      "en": "I see a brick.",
-      "hash": "23562e6df9f845d2",
-      "updatedAt": "2026-06-20T18:13:09.159Z"
+      "en": "The wall is made of red bricks.",
+      "hash": "bef5553feebfdf69",
+      "updatedAt": "2026-06-20T19:19:05.743Z"
     },
     "breath:0": {
       "en": "Take a deep breath.",
@@ -2487,14 +2487,14 @@
       "updatedAt": "2026-06-20T18:13:09.194Z"
     },
     "brick:1": {
-      "en": "This is a brick.",
-      "hash": "bac09b947810ae81",
-      "updatedAt": "2026-06-20T18:13:09.384Z"
+      "en": "He carries a brick to the building site.",
+      "hash": "a0c72d363b26f14c",
+      "updatedAt": "2026-06-20T19:19:06.120Z"
     },
     "brick:2": {
-      "en": "The brick is on the table.",
-      "hash": "5238a3a4f5081127",
-      "updatedAt": "2026-06-20T18:13:09.439Z"
+      "en": "Can you pass me that brick?",
+      "hash": "46f5a38cf1acd5bc",
+      "updatedAt": "2026-06-20T19:19:06.122Z"
     },
     "breath:1": {
       "en": "He ran out of breath.",
@@ -2507,19 +2507,19 @@
       "updatedAt": "2026-06-20T18:13:09.538Z"
     },
     "bridge:0": {
-      "en": "I see a bridge.",
-      "hash": "e0b11c8a9ceac4a9",
-      "updatedAt": "2026-06-20T18:13:09.940Z"
+      "en": "We walk across the bridge every day.",
+      "hash": "8fe5a8efd7479a66",
+      "updatedAt": "2026-06-20T19:19:06.174Z"
     },
     "bridge:1": {
-      "en": "This is a bridge.",
-      "hash": "f46f5f8a4944a5cc",
-      "updatedAt": "2026-06-20T18:13:09.942Z"
+      "en": "The bridge connects the two towns.",
+      "hash": "f40af4ed64e25637",
+      "updatedAt": "2026-06-20T19:19:06.441Z"
     },
     "bridge:2": {
-      "en": "The bridge is on the table.",
-      "hash": "4fd43e78e4b777df",
-      "updatedAt": "2026-06-20T18:13:10.121Z"
+      "en": "Is the bridge safe to cross?",
+      "hash": "6c36f1d33a4b10e2",
+      "updatedAt": "2026-06-20T19:19:06.687Z"
     },
     "brother:1": {
       "en": "Do you have a brother?",
@@ -2537,49 +2537,49 @@
       "updatedAt": "2026-06-20T18:13:11.746Z"
     },
     "brush:0": {
-      "en": "I see a brush.",
-      "hash": "6b40679fd24695de",
-      "updatedAt": "2026-06-20T18:13:12.260Z"
+      "en": "She brushes her hair with a brush.",
+      "hash": "90adeb69c8624f2e",
+      "updatedAt": "2026-06-20T19:19:07.052Z"
     },
     "brush:1": {
-      "en": "This is a brush.",
-      "hash": "a161099e41736514",
-      "updatedAt": "2026-06-20T18:13:12.264Z"
+      "en": "I need a brush to paint the wall.",
+      "hash": "b4705737c2df5f36",
+      "updatedAt": "2026-06-20T19:19:07.214Z"
     },
     "brush:2": {
-      "en": "The brush is on the table.",
-      "hash": "ef9741bd9b0a8451",
-      "updatedAt": "2026-06-20T18:13:12.266Z"
+      "en": "Please clean the brush after use.",
+      "hash": "b6ae37aeb7c97540",
+      "updatedAt": "2026-06-20T19:19:07.447Z"
     },
     "bucket:0": {
-      "en": "I see a bucket.",
-      "hash": "1a608cebd99eca19",
-      "updatedAt": "2026-06-20T18:13:12.268Z"
+      "en": "Fill the bucket with water.",
+      "hash": "6373a1b9017deaf1",
+      "updatedAt": "2026-06-20T19:19:07.404Z"
     },
     "bucket:1": {
-      "en": "This is a bucket.",
-      "hash": "455c4d237bf22108",
-      "updatedAt": "2026-06-20T18:13:12.547Z"
+      "en": "He carries a bucket of sand.",
+      "hash": "0849371fd1990619",
+      "updatedAt": "2026-06-20T19:19:07.322Z"
     },
     "bucket:2": {
-      "en": "The bucket is on the table.",
-      "hash": "ce7c8b28825f7c42",
-      "updatedAt": "2026-06-20T18:13:12.549Z"
+      "en": "The bucket has a hole in it.",
+      "hash": "7b37073bc58aff57",
+      "updatedAt": "2026-06-20T19:19:07.371Z"
     },
     "bulb:0": {
-      "en": "I see a bulb.",
-      "hash": "67c3fffbc44ee4f8",
-      "updatedAt": "2026-06-20T18:13:13.139Z"
+      "en": "The bulb in the lamp is broken.",
+      "hash": "435e19fe7fc14bee",
+      "updatedAt": "2026-06-20T19:19:07.802Z"
     },
     "bulb:1": {
-      "en": "This is a bulb.",
-      "hash": "2a749fde9766bed4",
-      "updatedAt": "2026-06-20T18:13:13.258Z"
+      "en": "Please change the light bulb.",
+      "hash": "38ff4289d6a3baa3",
+      "updatedAt": "2026-06-20T19:19:07.905Z"
     },
     "bulb:2": {
-      "en": "The bulb is on the table.",
-      "hash": "b5016601c34faa33",
-      "updatedAt": "2026-06-20T18:13:13.282Z"
+      "en": "This bulb gives a warm light.",
+      "hash": "2a8ce1bcec427af6",
+      "updatedAt": "2026-06-20T19:19:08.274Z"
     },
     "building:1": {
       "en": "They are building a new school.",
@@ -2662,9 +2662,9 @@
       "updatedAt": "2026-06-20T18:13:16.943Z"
     },
     "button:1": {
-      "en": "This is a button.",
-      "hash": "2dfaeefd5eeaaccf",
-      "updatedAt": "2026-06-20T18:13:17.017Z"
+      "en": "Press the button to start the machine.",
+      "hash": "c1cea5523dda98a4",
+      "updatedAt": "2026-06-20T19:19:08.911Z"
     },
     "butter:0": {
       "en": "Spread butter on the bread.",
@@ -2672,9 +2672,9 @@
       "updatedAt": "2026-06-20T18:13:17.049Z"
     },
     "button:0": {
-      "en": "I see a button.",
-      "hash": "d95dce87b1b3c17d",
-      "updatedAt": "2026-06-20T18:13:17.059Z"
+      "en": "She sews a button on her shirt.",
+      "hash": "c69c60a8a2ab66fd",
+      "updatedAt": "2026-06-20T19:19:10.111Z"
     },
     "butter:2": {
       "en": "Can you pass the butter?",
@@ -2682,9 +2682,9 @@
       "updatedAt": "2026-06-20T18:13:17.159Z"
     },
     "button:2": {
-      "en": "The button is on the table.",
-      "hash": "56e467f7bdf642bb",
-      "updatedAt": "2026-06-20T18:13:17.596Z"
+      "en": "Your button is undone.",
+      "hash": "825e2ac534bb39a2",
+      "updatedAt": "2026-06-20T19:19:09.156Z"
     },
     "by:0": {
       "en": "Go by the house.",
@@ -2697,9 +2697,9 @@
       "updatedAt": "2026-06-20T18:13:17.806Z"
     },
     "cake:0": {
-      "en": "I see a cake.",
-      "hash": "6c606f056948ee43",
-      "updatedAt": "2026-06-20T18:13:17.808Z"
+      "en": "She bakes a cake for my birthday.",
+      "hash": "a209c51a97b2ef77",
+      "updatedAt": "2026-06-20T19:19:08.805Z"
     },
     "by:2": {
       "en": "Be by me.",
@@ -2707,29 +2707,29 @@
       "updatedAt": "2026-06-20T18:13:17.810Z"
     },
     "cake:1": {
-      "en": "This is a cake.",
-      "hash": "d589efa9b020e399",
-      "updatedAt": "2026-06-20T18:13:17.853Z"
+      "en": "Would you like a piece of cake?",
+      "hash": "b888607e88c542d5",
+      "updatedAt": "2026-06-20T19:19:08.803Z"
     },
     "cake:2": {
-      "en": "The cake is on the table.",
-      "hash": "445971babc6bd939",
-      "updatedAt": "2026-06-20T18:13:18.381Z"
+      "en": "The cake tastes very sweet.",
+      "hash": "1c7aeab4dedb1d88",
+      "updatedAt": "2026-06-20T19:19:09.254Z"
     },
     "camera:1": {
-      "en": "This is a camera.",
-      "hash": "4380c309e1bf0b96",
-      "updatedAt": "2026-06-20T18:13:18.477Z"
+      "en": "My camera is out of battery.",
+      "hash": "dc7270ea33bcfaba",
+      "updatedAt": "2026-06-20T19:19:09.861Z"
     },
     "camera:2": {
-      "en": "The camera is on the table.",
-      "hash": "478e97eb2cae68d6",
-      "updatedAt": "2026-06-20T18:13:18.512Z"
+      "en": "Can I use your camera?",
+      "hash": "91665fa14e404088",
+      "updatedAt": "2026-06-20T19:19:09.953Z"
     },
     "camera:0": {
-      "en": "I see a camera.",
-      "hash": "a6cb7d10019a3566",
-      "updatedAt": "2026-06-20T18:13:18.533Z"
+      "en": "He takes a photo with his camera.",
+      "hash": "f0afcbbeb04f79ba",
+      "updatedAt": "2026-06-20T19:19:09.316Z"
     },
     "canvas:1": {
       "en": "This bag is made of canvas.",
@@ -2742,19 +2742,19 @@
       "updatedAt": "2026-06-20T18:13:19.145Z"
     },
     "card:0": {
-      "en": "I see a card.",
-      "hash": "eac5868e7cfbfadd",
-      "updatedAt": "2026-06-20T18:13:19.210Z"
+      "en": "She sends me a birthday card.",
+      "hash": "81ba406a2f7e4f9c",
+      "updatedAt": "2026-06-20T19:19:11.162Z"
     },
     "card:1": {
-      "en": "This is a card.",
-      "hash": "ef7d5f652e49a433",
-      "updatedAt": "2026-06-20T18:13:19.253Z"
+      "en": "I pay with a credit card.",
+      "hash": "3ff2b95296a76ac1",
+      "updatedAt": "2026-06-20T19:19:10.359Z"
     },
     "card:2": {
-      "en": "The card is on the table.",
-      "hash": "2ded43af947972fc",
-      "updatedAt": "2026-06-20T18:13:19.408Z"
+      "en": "Write your name on the card.",
+      "hash": "9043b326404c8c78",
+      "updatedAt": "2026-06-20T19:19:10.536Z"
     },
     "canvas:2": {
       "en": "He stretched the canvas on a frame.",
@@ -2762,14 +2762,14 @@
       "updatedAt": "2026-06-20T18:13:19.637Z"
     },
     "carriage:0": {
-      "en": "I see a carriage.",
-      "hash": "cdb6ec82ca6e68b0",
-      "updatedAt": "2026-06-20T18:13:19.942Z"
+      "en": "The carriage stops at the gate.",
+      "hash": "c01dbe224f20117b",
+      "updatedAt": "2026-06-20T19:19:10.558Z"
     },
     "carriage:1": {
-      "en": "This is a carriage.",
-      "hash": "3271bf8d36817e3e",
-      "updatedAt": "2026-06-20T18:13:20.090Z"
+      "en": "Does this carriage go to the castle?",
+      "hash": "f1346d01fa8fc619",
+      "updatedAt": "2026-06-20T19:19:10.668Z"
     },
     "care:0": {
       "en": "Take care of yourself.",
@@ -2782,9 +2782,9 @@
       "updatedAt": "2026-06-20T18:13:20.430Z"
     },
     "carriage:2": {
-      "en": "The carriage is on the table.",
-      "hash": "40b6fd0848837848",
-      "updatedAt": "2026-06-20T18:13:20.432Z"
+      "en": "Get into the carriage quickly.",
+      "hash": "8efa4eeb5d5d47cc",
+      "updatedAt": "2026-06-20T19:19:11.080Z"
     },
     "care:2": {
       "en": "The baby needs a lot of care.",
@@ -2792,34 +2792,34 @@
       "updatedAt": "2026-06-20T18:13:20.486Z"
     },
     "cart:0": {
-      "en": "I see a cart.",
-      "hash": "356fab0e60d2268e",
-      "updatedAt": "2026-06-20T18:13:20.645Z"
+      "en": "He pushes the cart to the market.",
+      "hash": "5079d3d58fa743c9",
+      "updatedAt": "2026-06-20T19:19:11.269Z"
     },
     "cart:1": {
-      "en": "This is a cart.",
-      "hash": "ade1306b5c04a0f3",
-      "updatedAt": "2026-06-20T18:13:20.933Z"
+      "en": "Is the cart full of apples?",
+      "hash": "37a8574f5bb81bd1",
+      "updatedAt": "2026-06-20T19:19:11.486Z"
     },
     "cart:2": {
-      "en": "The cart is on the table.",
-      "hash": "90e522e36ae0c7cc",
-      "updatedAt": "2026-06-20T18:13:21.153Z"
+      "en": "Put the boxes into the cart.",
+      "hash": "6f3c04862f0da0de",
+      "updatedAt": "2026-06-20T19:19:11.599Z"
     },
     "cat:1": {
-      "en": "This is a cat.",
-      "hash": "5c8a08ae0d9ae336",
-      "updatedAt": "2026-06-20T18:13:21.157Z"
+      "en": "Can the cat open the door?",
+      "hash": "0b5b2606e67c1f88",
+      "updatedAt": "2026-06-20T19:19:11.955Z"
     },
     "cat:0": {
-      "en": "I see a cat.",
-      "hash": "e0cb56b6383aa1d3",
-      "updatedAt": "2026-06-20T18:13:21.161Z"
+      "en": "The cat sleeps on the sofa.",
+      "hash": "f3592bb5e5a66e46",
+      "updatedAt": "2026-06-20T19:19:11.961Z"
     },
     "cat:2": {
-      "en": "The cat is on the table.",
-      "hash": "75915024288fbffc",
-      "updatedAt": "2026-06-20T18:13:21.196Z"
+      "en": "Feed the cat at seven.",
+      "hash": "aa35ebf26710f859",
+      "updatedAt": "2026-06-20T19:19:11.953Z"
     },
     "cause:0": {
       "en": "What is the cause of the fire?",
@@ -2827,9 +2827,9 @@
       "updatedAt": "2026-06-20T18:13:21.453Z"
     },
     "chain:0": {
-      "en": "I see a chain.",
-      "hash": "381e8de661851394",
-      "updatedAt": "2026-06-20T18:13:22.223Z"
+      "en": "The dog is tied to a chain.",
+      "hash": "e171e3ed9696c4e4",
+      "updatedAt": "2026-06-20T19:19:12.306Z"
     },
     "cause:1": {
       "en": "He fought for a good cause.",
@@ -2857,14 +2857,14 @@
       "updatedAt": "2026-06-20T18:13:22.704Z"
     },
     "chain:1": {
-      "en": "This is a chain.",
-      "hash": "d7cf8186e0013029",
-      "updatedAt": "2026-06-20T18:13:23.035Z"
+      "en": "Is this chain strong enough?",
+      "hash": "9f6b78006f33f205",
+      "updatedAt": "2026-06-20T19:19:12.509Z"
     },
     "chain:2": {
-      "en": "The chain is on the table.",
-      "hash": "d180c09a959b0974",
-      "updatedAt": "2026-06-20T18:13:23.078Z"
+      "en": "Put the chain on the door.",
+      "hash": "160f234b71d0235e",
+      "updatedAt": "2026-06-20T19:19:12.612Z"
     },
     "chalk:2": {
       "en": "Can you hand me a piece of chalk?",
@@ -2912,109 +2912,109 @@
       "updatedAt": "2026-06-20T18:13:25.222Z"
     },
     "cheese:0": {
-      "en": "I see a cheese.",
-      "hash": "e539b0982b0d1281",
-      "updatedAt": "2026-06-20T18:13:25.641Z"
+      "en": "The mouse eats the cheese.",
+      "hash": "fd2fb6cc69bf03e7",
+      "updatedAt": "2026-06-20T19:19:12.650Z"
     },
     "cheese:2": {
-      "en": "The cheese is on the table.",
-      "hash": "94c3d40a2bbc1c2a",
-      "updatedAt": "2026-06-20T18:13:25.863Z"
+      "en": "Cut the cheese into small pieces.",
+      "hash": "d46da57a3d7a719a",
+      "updatedAt": "2026-06-20T19:19:13.512Z"
     },
     "cheese:1": {
-      "en": "This is a cheese.",
-      "hash": "9b00cde1a2814852",
-      "updatedAt": "2026-06-20T18:13:25.878Z"
+      "en": "Do you like cheese on bread?",
+      "hash": "153767b9ed537d37",
+      "updatedAt": "2026-06-20T19:19:12.926Z"
     },
     "chest:0": {
-      "en": "I see a chest.",
-      "hash": "a2da7e046145b4cc",
-      "updatedAt": "2026-06-20T18:13:26.374Z"
+      "en": "The chest is full of gold.",
+      "hash": "1f1fe2fe5e519bc7",
+      "updatedAt": "2026-06-20T19:19:13.185Z"
     },
     "chest:1": {
-      "en": "This is a chest.",
-      "hash": "8fdd94dd8409196b",
-      "updatedAt": "2026-06-20T18:13:26.706Z"
+      "en": "Can you open the chest?",
+      "hash": "12694083203f18cd",
+      "updatedAt": "2026-06-20T19:19:13.266Z"
     },
     "chest:2": {
-      "en": "The chest is on the table.",
-      "hash": "1b682afa787cc289",
-      "updatedAt": "2026-06-20T18:13:26.707Z"
+      "en": "Put the clothes into the chest.",
+      "hash": "3ae2fee57cf4d06e",
+      "updatedAt": "2026-06-20T19:19:13.511Z"
     },
     "chin:0": {
-      "en": "I see a chin.",
-      "hash": "1e7286149178ec80",
-      "updatedAt": "2026-06-20T18:13:27.008Z"
+      "en": "He touches his chin.",
+      "hash": "5d9106c418bbe7e4",
+      "updatedAt": "2026-06-20T19:19:14.062Z"
     },
     "chin:1": {
-      "en": "This is a chin.",
-      "hash": "7919fd8794841361",
-      "updatedAt": "2026-06-20T18:13:27.441Z"
+      "en": "Is your chin hurt?",
+      "hash": "dd085b4852094f0a",
+      "updatedAt": "2026-06-20T19:19:13.809Z"
     },
     "chin:2": {
-      "en": "The chin is on the table.",
-      "hash": "69e7f8c5f03e8789",
-      "updatedAt": "2026-06-20T18:13:27.457Z"
+      "en": "Rest your chin on your hand.",
+      "hash": "89981f713fc974a7",
+      "updatedAt": "2026-06-20T19:19:14.027Z"
     },
     "church:0": {
-      "en": "I see a church.",
-      "hash": "e9b8ae0e11eb0da4",
-      "updatedAt": "2026-06-20T18:13:27.461Z"
+      "en": "They go to church on Sunday.",
+      "hash": "0a269e46203d4901",
+      "updatedAt": "2026-06-20T19:19:14.727Z"
     },
     "church:2": {
-      "en": "The church is on the table.",
-      "hash": "914d4159f5d34dc7",
-      "updatedAt": "2026-06-20T18:13:27.649Z"
+      "en": "The church has a tall tower.",
+      "hash": "9ce140fe11150174",
+      "updatedAt": "2026-06-20T19:19:14.503Z"
     },
     "circle:0": {
-      "en": "I see a circle.",
-      "hash": "504400974f6fb436",
-      "updatedAt": "2026-06-20T18:13:27.751Z"
+      "en": "Draw a circle on the paper.",
+      "hash": "5847b84d7476249b",
+      "updatedAt": "2026-06-20T19:19:15.126Z"
     },
     "church:1": {
-      "en": "This is a church.",
-      "hash": "b7190ac4143e77c0",
-      "updatedAt": "2026-06-20T18:13:27.752Z"
+      "en": "Is the church near the school?",
+      "hash": "a0c66e99038415da",
+      "updatedAt": "2026-06-20T19:19:15.276Z"
     },
     "circle:1": {
-      "en": "This is a circle.",
-      "hash": "94f19a0e04c4609d",
-      "updatedAt": "2026-06-20T18:13:28.290Z"
+      "en": "The children stand in a circle.",
+      "hash": "de2c35184ca77d90",
+      "updatedAt": "2026-06-20T19:19:14.930Z"
     },
     "circle:2": {
-      "en": "The circle is on the table.",
-      "hash": "1f5ed1764cbf827a",
-      "updatedAt": "2026-06-20T18:13:28.291Z"
+      "en": "Is this shape a circle?",
+      "hash": "116e09e19f32e3c7",
+      "updatedAt": "2026-06-20T19:19:14.907Z"
     },
     "clock:0": {
-      "en": "I see a clock.",
-      "hash": "50d905762f8ca026",
-      "updatedAt": "2026-06-20T18:13:29.031Z"
+      "en": "The clock says three o'clock.",
+      "hash": "f0fa2db838162616",
+      "updatedAt": "2026-06-20T19:19:15.250Z"
     },
     "clock:1": {
-      "en": "This is a clock.",
-      "hash": "97700233359dbdd0",
-      "updatedAt": "2026-06-20T18:13:29.071Z"
+      "en": "Can you see the clock from here?",
+      "hash": "54e963392e0d0632",
+      "updatedAt": "2026-06-20T19:19:15.351Z"
     },
     "clock:2": {
-      "en": "The clock is on the table.",
-      "hash": "b20cca2e1f07ca77",
-      "updatedAt": "2026-06-20T18:13:29.311Z"
+      "en": "Set the clock to the right time.",
+      "hash": "e4cc4dd024bc3ede",
+      "updatedAt": "2026-06-20T19:19:15.912Z"
     },
     "cloud:1": {
-      "en": "This is a cloud.",
-      "hash": "e9038f6ee110e988",
-      "updatedAt": "2026-06-20T18:13:29.869Z"
+      "en": "Can you see a cloud over there?",
+      "hash": "4769e56bc4621109",
+      "updatedAt": "2026-06-20T19:19:16.414Z"
     },
     "cloud:0": {
-      "en": "I see a cloud.",
-      "hash": "82ace7c1acb93686",
-      "updatedAt": "2026-06-20T18:13:29.871Z"
+      "en": "A white cloud floats in the sky.",
+      "hash": "87a1e2c9e0ee4a2b",
+      "updatedAt": "2026-06-20T19:19:16.282Z"
     },
     "cloud:2": {
-      "en": "The cloud is on the table.",
-      "hash": "73933318e560800b",
-      "updatedAt": "2026-06-20T18:13:30.051Z"
+      "en": "The cloud looks like a rabbit.",
+      "hash": "544259bcae3b72f5",
+      "updatedAt": "2026-06-20T19:19:16.398Z"
     },
     "cloth:2": {
       "en": "Is this cloth soft?",
@@ -3032,9 +3032,9 @@
       "updatedAt": "2026-06-20T18:13:31.030Z"
     },
     "coat:0": {
-      "en": "I see a coat.",
-      "hash": "b45eb181af2bd7ff",
-      "updatedAt": "2026-06-20T18:13:31.096Z"
+      "en": "Put on your coat before you go out.",
+      "hash": "310bfa755f2af35a",
+      "updatedAt": "2026-06-20T19:19:16.399Z"
     },
     "coal:0": {
       "en": "We burn coal to keep warm.",
@@ -3052,14 +3052,14 @@
       "updatedAt": "2026-06-20T18:13:31.322Z"
     },
     "coat:1": {
-      "en": "This is a coat.",
-      "hash": "68d72c7216737ab9",
-      "updatedAt": "2026-06-20T18:13:31.427Z"
+      "en": "This coat is too small for me.",
+      "hash": "ec69eb5915e1cb2d",
+      "updatedAt": "2026-06-20T19:19:16.601Z"
     },
     "coat:2": {
-      "en": "The coat is on the table.",
-      "hash": "1994cded493f1287",
-      "updatedAt": "2026-06-20T18:13:31.774Z"
+      "en": "Is your coat in the closet?",
+      "hash": "5e416fa7f42cc146",
+      "updatedAt": "2026-06-20T19:19:16.658Z"
     },
     "cold:0": {
       "en": "The water is cold.",
@@ -3067,14 +3067,14 @@
       "updatedAt": "2026-06-20T18:13:31.938Z"
     },
     "collar:0": {
-      "en": "I see a collar.",
-      "hash": "3eccc6299c025f5f",
-      "updatedAt": "2026-06-20T18:13:32.006Z"
+      "en": "The collar of my shirt is dirty.",
+      "hash": "3902aec663e9c5ff",
+      "updatedAt": "2026-06-20T19:19:16.708Z"
     },
     "collar:1": {
-      "en": "This is a collar.",
-      "hash": "4fc588d7c0bdbe99",
-      "updatedAt": "2026-06-20T18:13:32.142Z"
+      "en": "Please turn up your collar.",
+      "hash": "a437fb939a219378",
+      "updatedAt": "2026-06-20T19:19:17.128Z"
     },
     "cold:1": {
       "en": "It is cold outside.",
@@ -3082,9 +3082,9 @@
       "updatedAt": "2026-06-20T18:13:32.333Z"
     },
     "collar:2": {
-      "en": "The collar is on the table.",
-      "hash": "22e3964668883f38",
-      "updatedAt": "2026-06-20T18:13:32.558Z"
+      "en": "Does this coat have a collar?",
+      "hash": "fe16233e5202edfb",
+      "updatedAt": "2026-06-20T19:19:17.674Z"
     },
     "cold:2": {
       "en": "I feel cold.",
@@ -3092,9 +3092,9 @@
       "updatedAt": "2026-06-20T18:13:32.621Z"
     },
     "comb:0": {
-      "en": "I see a comb.",
-      "hash": "f78eb65e12f4ebad",
-      "updatedAt": "2026-06-20T18:13:33.061Z"
+      "en": "She uses a comb to brush her hair.",
+      "hash": "5daf7fad3b0d59d6",
+      "updatedAt": "2026-06-20T19:19:17.735Z"
     },
     "color:0": {
       "en": "What color is your car?",
@@ -3107,14 +3107,14 @@
       "updatedAt": "2026-06-20T18:13:33.209Z"
     },
     "comb:1": {
-      "en": "This is a comb.",
-      "hash": "5f95815584a14b08",
-      "updatedAt": "2026-06-20T18:13:33.251Z"
+      "en": "Can I borrow your comb?",
+      "hash": "8682645c04fa15ff",
+      "updatedAt": "2026-06-20T19:19:17.672Z"
     },
     "comb:2": {
-      "en": "The comb is on the table.",
-      "hash": "26defb4ebc6129db",
-      "updatedAt": "2026-06-20T18:13:33.276Z"
+      "en": "This comb has a broken tooth.",
+      "hash": "f85c3d1dd18bc588",
+      "updatedAt": "2026-06-20T19:19:17.742Z"
     },
     "color:2": {
       "en": "The leaves change color in fall.",
@@ -3292,14 +3292,14 @@
       "updatedAt": "2026-06-20T18:13:42.717Z"
     },
     "cord:0": {
-      "en": "I see a cord.",
-      "hash": "2c9c5563160bf004",
-      "updatedAt": "2026-06-20T18:13:42.749Z"
+      "en": "Tie the box with a cord.",
+      "hash": "b4e8293091157bbe",
+      "updatedAt": "2026-06-20T19:19:17.815Z"
     },
     "cord:1": {
-      "en": "This is a cord.",
-      "hash": "a6c0e49a732d4909",
-      "updatedAt": "2026-06-20T18:13:42.942Z"
+      "en": "The cord is too short to reach.",
+      "hash": "07354a88e91c29a2",
+      "updatedAt": "2026-06-20T19:19:18.054Z"
     },
     "copy:2": {
       "en": "Is this the original or a copy?",
@@ -3307,9 +3307,9 @@
       "updatedAt": "2026-06-20T18:13:43.017Z"
     },
     "cord:2": {
-      "en": "The cord is on the table.",
-      "hash": "961d22f6941fde9b",
-      "updatedAt": "2026-06-20T18:13:43.200Z"
+      "en": "Pull the cord to start the engine.",
+      "hash": "04afa7747a1686f1",
+      "updatedAt": "2026-06-20T19:19:17.908Z"
     },
     "copy:1": {
       "en": "I have a copy of that book.",
@@ -3377,9 +3377,9 @@
       "updatedAt": "2026-06-20T18:13:46.521Z"
     },
     "cow:0": {
-      "en": "I see a cow.",
-      "hash": "ad56bae7996f4be3",
-      "updatedAt": "2026-06-20T18:13:46.616Z"
+      "en": "The cow eats grass in the field.",
+      "hash": "78b9136b9567f0ae",
+      "updatedAt": "2026-06-20T19:19:17.911Z"
     },
     "cover:2": {
       "en": "She read the cover before buying.",
@@ -3387,14 +3387,14 @@
       "updatedAt": "2026-06-20T18:13:47.208Z"
     },
     "cow:1": {
-      "en": "This is a cow.",
-      "hash": "9f1453a163740d9d",
-      "updatedAt": "2026-06-20T18:13:47.211Z"
+      "en": "A cow gives us milk.",
+      "hash": "6e861ed37e592fea",
+      "updatedAt": "2026-06-20T19:19:19.052Z"
     },
     "cow:2": {
-      "en": "The cow is on the table.",
-      "hash": "435dc2e659bb62c2",
-      "updatedAt": "2026-06-20T18:13:47.273Z"
+      "en": "How many cows are on the farm?",
+      "hash": "5a583f7461cf8414",
+      "updatedAt": "2026-06-20T19:19:19.098Z"
     },
     "cover:1": {
       "en": "Put the cover on the pot.",
@@ -3487,19 +3487,19 @@
       "updatedAt": "2026-06-20T18:13:51.347Z"
     },
     "cup:0": {
-      "en": "I see a cup.",
-      "hash": "6f29e2c5c1fba3fd",
-      "updatedAt": "2026-06-20T18:13:51.348Z"
+      "en": "I drink tea from a cup.",
+      "hash": "de970dada1d98058",
+      "updatedAt": "2026-06-20T19:19:19.460Z"
     },
     "cup:1": {
-      "en": "This is a cup.",
-      "hash": "5c1ee511feaa041f",
-      "updatedAt": "2026-06-20T18:13:51.891Z"
+      "en": "Please fill my cup with water.",
+      "hash": "74a3fde053e75346",
+      "updatedAt": "2026-06-20T19:19:19.290Z"
     },
     "cup:2": {
-      "en": "The cup is on the table.",
-      "hash": "d8e135c290f93152",
-      "updatedAt": "2026-06-20T18:13:51.932Z"
+      "en": "This cup has a blue handle.",
+      "hash": "dcf6436dade636af",
+      "updatedAt": "2026-06-20T19:19:19.359Z"
     },
     "cry:0": {
       "en": "The baby is crying for milk.",
@@ -3517,19 +3517,19 @@
       "updatedAt": "2026-06-20T18:13:52.550Z"
     },
     "curtain:0": {
-      "en": "I see a curtain.",
-      "hash": "6af46452ea46ee34",
-      "updatedAt": "2026-06-20T18:13:52.603Z"
+      "en": "Draw the curtain to let in light.",
+      "hash": "b81a4c2cb8ef7d9e",
+      "updatedAt": "2026-06-20T19:19:19.546Z"
     },
     "curtain:1": {
-      "en": "This is a curtain.",
-      "hash": "acea510f40e32136",
-      "updatedAt": "2026-06-20T18:13:52.617Z"
+      "en": "The curtain is made of silk.",
+      "hash": "85232f8410c12363",
+      "updatedAt": "2026-06-20T19:19:19.292Z"
     },
     "curtain:2": {
-      "en": "The curtain is on the table.",
-      "hash": "36ca994a9c60c4c4",
-      "updatedAt": "2026-06-20T18:13:52.712Z"
+      "en": "Close the curtain before you sleep.",
+      "hash": "2168f9a275e3e95a",
+      "updatedAt": "2026-06-20T19:19:19.544Z"
     },
     "current:1": {
       "en": "The current situation is bad.",
@@ -3542,9 +3542,9 @@
       "updatedAt": "2026-06-20T18:13:53.284Z"
     },
     "cushion:0": {
-      "en": "I see a cushion.",
-      "hash": "21a82334fbb77cb8",
-      "updatedAt": "2026-06-20T18:13:53.436Z"
+      "en": "Sit on the cushion on the floor.",
+      "hash": "bfaa439dccf373e9",
+      "updatedAt": "2026-06-20T19:19:20.327Z"
     },
     "curve:0": {
       "en": "The road has a sharp curve.",
@@ -3552,14 +3552,14 @@
       "updatedAt": "2026-06-20T18:13:53.845Z"
     },
     "cushion:1": {
-      "en": "This is a cushion.",
-      "hash": "6ef8b75141286894",
-      "updatedAt": "2026-06-20T18:13:53.958Z"
+      "en": "This cushion is very soft.",
+      "hash": "3e63da4fd2c29a99",
+      "updatedAt": "2026-06-20T19:19:20.474Z"
     },
     "cushion:2": {
-      "en": "The cushion is on the table.",
-      "hash": "ed27db2661f16f35",
-      "updatedAt": "2026-06-20T18:13:54.018Z"
+      "en": "Put a cushion behind your back.",
+      "hash": "782a8c575cfff658",
+      "updatedAt": "2026-06-20T19:19:20.674Z"
     },
     "curve:1": {
       "en": "She drew a curve on the paper.",
@@ -4002,9 +4002,9 @@
       "updatedAt": "2026-06-20T18:14:15.923Z"
     },
     "dog:0": {
-      "en": "I see a dog.",
-      "hash": "273a8ff142ac4206",
-      "updatedAt": "2026-06-20T18:14:15.962Z"
+      "en": "The dog runs in the park.",
+      "hash": "ed8c8d0a9e512ee2",
+      "updatedAt": "2026-06-20T19:19:20.638Z"
     },
     "division:2": {
       "en": "Do you agree with this division?",
@@ -4012,29 +4012,29 @@
       "updatedAt": "2026-06-20T18:14:16.133Z"
     },
     "dog:2": {
-      "en": "The dog is on the table.",
-      "hash": "3a306134a72cb1dc",
-      "updatedAt": "2026-06-20T18:14:16.355Z"
+      "en": "Feed the dog at six o'clock.",
+      "hash": "f49bb43b6d85bf3e",
+      "updatedAt": "2026-06-20T19:19:20.868Z"
     },
     "dog:1": {
-      "en": "This is a dog.",
-      "hash": "46ac0f403babf55e",
-      "updatedAt": "2026-06-20T18:14:16.475Z"
+      "en": "Is your dog friendly?",
+      "hash": "05d33e308514add6",
+      "updatedAt": "2026-06-20T19:19:20.810Z"
     },
     "door:0": {
-      "en": "I see a door.",
-      "hash": "93a5283569b8ad25",
-      "updatedAt": "2026-06-20T18:14:16.504Z"
+      "en": "Please open the door.",
+      "hash": "106606dfa8b58b7b",
+      "updatedAt": "2026-06-20T19:19:20.970Z"
     },
     "door:1": {
-      "en": "This is a door.",
-      "hash": "002fb9b8f1b350fd",
-      "updatedAt": "2026-06-20T18:14:16.998Z"
+      "en": "Who closed the door?",
+      "hash": "35ffb2297da81b52",
+      "updatedAt": "2026-06-20T19:19:20.866Z"
     },
     "door:2": {
-      "en": "The door is on the table.",
-      "hash": "8194135a7e39a218",
-      "updatedAt": "2026-06-20T18:14:17.008Z"
+      "en": "The door is made of wood.",
+      "hash": "7e974b38c4d12fb0",
+      "updatedAt": "2026-06-20T19:19:21.575Z"
     },
     "doubt:0": {
       "en": "I have a doubt about his story.",
@@ -4067,49 +4067,49 @@
       "updatedAt": "2026-06-20T18:14:18.048Z"
     },
     "drain:0": {
-      "en": "I see a drain.",
-      "hash": "461f78fc8fe0ee6e",
-      "updatedAt": "2026-06-20T18:14:18.533Z"
+      "en": "The water goes down the drain.",
+      "hash": "4e1fe37f3b198323",
+      "updatedAt": "2026-06-20T19:19:22.013Z"
     },
     "drain:1": {
-      "en": "This is a drain.",
-      "hash": "3835ef6d270c7041",
-      "updatedAt": "2026-06-20T18:14:18.553Z"
+      "en": "Clean the drain every week.",
+      "hash": "a09444fd8c03d732",
+      "updatedAt": "2026-06-20T19:19:21.939Z"
     },
     "drawer:0": {
-      "en": "I see a drawer.",
-      "hash": "d091daa298d4de32",
-      "updatedAt": "2026-06-20T18:14:18.776Z"
+      "en": "Put the socks in the drawer.",
+      "hash": "6c8aae5578334cf5",
+      "updatedAt": "2026-06-20T19:19:22.110Z"
     },
     "drain:2": {
-      "en": "The drain is on the table.",
-      "hash": "f7c14069b0208206",
-      "updatedAt": "2026-06-20T18:14:18.803Z"
+      "en": "Is the drain blocked?",
+      "hash": "ba1ae276fc54dafa",
+      "updatedAt": "2026-06-20T19:19:21.896Z"
     },
     "drawer:1": {
-      "en": "This is a drawer.",
-      "hash": "b7f431b86b57e041",
-      "updatedAt": "2026-06-20T18:14:19.061Z"
+      "en": "The drawer is stuck.",
+      "hash": "3b8283011d6efcf3",
+      "updatedAt": "2026-06-20T19:19:22.241Z"
     },
     "drawer:2": {
-      "en": "The drawer is on the table.",
-      "hash": "ba2d1ef12e237f0a",
-      "updatedAt": "2026-06-20T18:14:19.082Z"
+      "en": "Can you open the drawer?",
+      "hash": "21ca9a80b5d14c5f",
+      "updatedAt": "2026-06-20T19:19:22.009Z"
     },
     "dress:0": {
-      "en": "I see a dress.",
-      "hash": "5e93cb723c6a9fa8",
-      "updatedAt": "2026-06-20T18:14:19.564Z"
+      "en": "She wears a red dress.",
+      "hash": "4092999f484b8238",
+      "updatedAt": "2026-06-20T19:19:22.237Z"
     },
     "dress:1": {
-      "en": "This is a dress.",
-      "hash": "54ee048f196e4ff9",
-      "updatedAt": "2026-06-20T18:14:19.628Z"
+      "en": "This dress is too long.",
+      "hash": "3234cb51a1a8f5ca",
+      "updatedAt": "2026-06-20T19:19:22.955Z"
     },
     "dress:2": {
-      "en": "The dress is on the table.",
-      "hash": "837b0cb3ca61d945",
-      "updatedAt": "2026-06-20T18:14:19.695Z"
+      "en": "Buy a new dress for the party.",
+      "hash": "033bc878052c71c7",
+      "updatedAt": "2026-06-20T19:19:23.475Z"
     },
     "drink:0": {
       "en": "Would you like a cold drink?",
@@ -4127,9 +4127,9 @@
       "updatedAt": "2026-06-20T18:14:20.684Z"
     },
     "drop:0": {
-      "en": "I see a drop.",
-      "hash": "540f5c77110b91a2",
-      "updatedAt": "2026-06-20T18:14:21.119Z"
+      "en": "A drop of water fell.",
+      "hash": "f76d2dec1625d328",
+      "updatedAt": "2026-06-20T19:19:23.130Z"
     },
     "driving:0": {
       "en": "Driving at night can be dangerous.",
@@ -4142,14 +4142,14 @@
       "updatedAt": "2026-06-20T18:14:21.204Z"
     },
     "drop:1": {
-      "en": "This is a drop.",
-      "hash": "4c69130c22a8cf57",
-      "updatedAt": "2026-06-20T18:14:21.347Z"
+      "en": "There is a drop of blood.",
+      "hash": "3f5fbc7193d06de3",
+      "updatedAt": "2026-06-20T19:19:23.297Z"
     },
     "drop:2": {
-      "en": "The drop is on the table.",
-      "hash": "e0de41e0c1ab5d82",
-      "updatedAt": "2026-06-20T18:14:21.406Z"
+      "en": "Add a drop of oil.",
+      "hash": "a930a1c62c364fdc",
+      "updatedAt": "2026-06-20T19:19:23.250Z"
     },
     "driving:1": {
       "en": "He is learning driving this month.",
@@ -4177,9 +4177,9 @@
       "updatedAt": "2026-06-20T18:14:22.766Z"
     },
     "ear:0": {
-      "en": "I see an ear.",
-      "hash": "71f8f40c0ed57a91",
-      "updatedAt": "2026-06-20T18:14:22.775Z"
+      "en": "He has big ears.",
+      "hash": "f9cc9890374737e5",
+      "updatedAt": "2026-06-20T19:19:23.276Z"
     },
     "dust:1": {
       "en": "The wind blew dust into my eyes.",
@@ -4192,14 +4192,14 @@
       "updatedAt": "2026-06-20T18:14:22.914Z"
     },
     "ear:1": {
-      "en": "This is an ear.",
-      "hash": "9c1e4ac4d03a7f90",
-      "updatedAt": "2026-06-20T18:14:23.293Z"
+      "en": "The rabbit's ear is long.",
+      "hash": "51c736ba474c194f",
+      "updatedAt": "2026-06-20T19:19:23.649Z"
     },
     "ear:2": {
-      "en": "The ear is on the table.",
-      "hash": "0aa81efc52bb17f2",
-      "updatedAt": "2026-06-20T18:14:23.480Z"
+      "en": "Clean your ears every day.",
+      "hash": "a103a1419555116d",
+      "updatedAt": "2026-06-20T19:19:24.159Z"
     },
     "earth:0": {
       "en": "The earth goes around the sun.",
@@ -4267,14 +4267,14 @@
       "updatedAt": "2026-06-20T18:14:26.523Z"
     },
     "egg:0": {
-      "en": "I see an egg.",
-      "hash": "6ce94b3cdb584a8c",
-      "updatedAt": "2026-06-20T18:14:26.611Z"
+      "en": "Fry an egg for breakfast.",
+      "hash": "f329d40857f0eaa4",
+      "updatedAt": "2026-06-20T19:19:24.129Z"
     },
     "egg:1": {
-      "en": "This is an egg.",
-      "hash": "dbcdc85e74539d60",
-      "updatedAt": "2026-06-20T18:14:26.613Z"
+      "en": "The bird laid an egg.",
+      "hash": "0ac256b6ebbc5b51",
+      "updatedAt": "2026-06-20T19:19:24.459Z"
     },
     "effect:1": {
       "en": "What effect does the new law have?",
@@ -4287,24 +4287,24 @@
       "updatedAt": "2026-06-20T18:14:26.978Z"
     },
     "egg:2": {
-      "en": "The egg is on the table.",
-      "hash": "f21587baa10c918c",
-      "updatedAt": "2026-06-20T18:14:27.171Z"
+      "en": "Is this egg fresh?",
+      "hash": "395abf105f3a73dc",
+      "updatedAt": "2026-06-20T19:19:24.701Z"
     },
     "engine:0": {
-      "en": "I see an engine.",
-      "hash": "044a6311d2ce6ab1",
-      "updatedAt": "2026-06-20T18:14:28.347Z"
+      "en": "The car engine is loud.",
+      "hash": "a3c3863de54a4121",
+      "updatedAt": "2026-06-20T19:19:24.535Z"
     },
     "engine:1": {
-      "en": "This is an engine.",
-      "hash": "f32dfb82cb53fd2b",
-      "updatedAt": "2026-06-20T18:14:28.453Z"
+      "en": "Start the engine.",
+      "hash": "56531c0c96d59c12",
+      "updatedAt": "2026-06-20T19:19:24.540Z"
     },
     "engine:2": {
-      "en": "The engine is on the table.",
-      "hash": "5d7da537ae681f54",
-      "updatedAt": "2026-06-20T18:14:28.663Z"
+      "en": "Does the engine work?",
+      "hash": "10a05c55c5277945",
+      "updatedAt": "2026-06-20T19:19:24.751Z"
     },
     "end:1": {
       "en": "We will meet at the end of the road.",
@@ -4487,14 +4487,14 @@
       "updatedAt": "2026-06-20T18:14:36.068Z"
     },
     "eye:0": {
-      "en": "I see an eye.",
-      "hash": "52036be5e0d137de",
-      "updatedAt": "2026-06-20T18:14:36.595Z"
+      "en": "She has blue eyes.",
+      "hash": "d655e9c9d19039d1",
+      "updatedAt": "2026-06-20T19:19:24.538Z"
     },
     "eye:1": {
-      "en": "This is an eye.",
-      "hash": "d13d6804d3bce256",
-      "updatedAt": "2026-06-20T18:14:36.624Z"
+      "en": "Close your eyes and sleep.",
+      "hash": "dc73a962fe679822",
+      "updatedAt": "2026-06-20T19:19:25.403Z"
     },
     "expert:1": {
       "en": "She is an expert in ancient history.",
@@ -4507,9 +4507,9 @@
       "updatedAt": "2026-06-20T18:14:36.694Z"
     },
     "eye:2": {
-      "en": "The eye is on the table.",
-      "hash": "42c8b3bda4ecba94",
-      "updatedAt": "2026-06-20T18:14:36.845Z"
+      "en": "I have something in my eye.",
+      "hash": "9dff16ff1d907d8d",
+      "updatedAt": "2026-06-20T19:19:25.407Z"
     },
     "expert:2": {
       "en": "Ask an expert for advice.",
@@ -4517,19 +4517,19 @@
       "updatedAt": "2026-06-20T18:14:36.903Z"
     },
     "face:1": {
-      "en": "This is a face.",
-      "hash": "743abce45ed885a2",
-      "updatedAt": "2026-06-20T18:14:37.405Z"
+      "en": "Her face is round.",
+      "hash": "c5ad8bc33840c971",
+      "updatedAt": "2026-06-20T19:19:25.594Z"
     },
     "face:2": {
-      "en": "The face is on the table.",
-      "hash": "72a8945134fa4e35",
-      "updatedAt": "2026-06-20T18:14:37.407Z"
+      "en": "He has a smile on his face.",
+      "hash": "944b9e4bc6d12ba1",
+      "updatedAt": "2026-06-20T19:19:25.809Z"
     },
     "face:0": {
-      "en": "I see a face.",
-      "hash": "ce0cd3c1cc1cc29c",
-      "updatedAt": "2026-06-20T18:14:37.408Z"
+      "en": "Wash your face in the morning.",
+      "hash": "3ddac12c866a2bb1",
+      "updatedAt": "2026-06-20T19:19:25.761Z"
     },
     "fact:0": {
       "en": "It is a fact that the earth is round.",
@@ -4607,19 +4607,19 @@
       "updatedAt": "2026-06-20T18:14:40.292Z"
     },
     "farm:0": {
-      "en": "I see a farm.",
-      "hash": "179900706440bad7",
-      "updatedAt": "2026-06-20T18:14:40.596Z"
+      "en": "We live on a small farm.",
+      "hash": "aee63a233807867c",
+      "updatedAt": "2026-06-20T19:19:25.804Z"
     },
     "farm:2": {
-      "en": "The farm is on the table.",
-      "hash": "d6f1118ecedecc42",
-      "updatedAt": "2026-06-20T18:14:40.809Z"
+      "en": "Can you see the red barn on the farm?",
+      "hash": "ab1213218d405170",
+      "updatedAt": "2026-06-20T19:19:26.166Z"
     },
     "farm:1": {
-      "en": "This is a farm.",
-      "hash": "2a35cd49d2dd0085",
-      "updatedAt": "2026-06-20T18:14:40.833Z"
+      "en": "The farmer works on the farm every day.",
+      "hash": "ae05bee6963194f8",
+      "updatedAt": "2026-06-20T19:19:26.084Z"
     },
     "father:0": {
       "en": "My father works in a bank.",
@@ -4652,19 +4652,19 @@
       "updatedAt": "2026-06-20T18:14:42.407Z"
     },
     "feather:0": {
-      "en": "I see a feather.",
-      "hash": "ca99272f39c9af02",
-      "updatedAt": "2026-06-20T18:14:42.665Z"
+      "en": "A white feather fell from the bird.",
+      "hash": "4dcc65448d54e1c9",
+      "updatedAt": "2026-06-20T19:19:26.684Z"
     },
     "feather:1": {
-      "en": "This is a feather.",
-      "hash": "9690369936790a90",
-      "updatedAt": "2026-06-20T18:14:42.819Z"
+      "en": "She put a feather in her hat.",
+      "hash": "c1a79af1c2024b69",
+      "updatedAt": "2026-06-20T19:19:26.625Z"
     },
     "feather:2": {
-      "en": "The feather is on the table.",
-      "hash": "2aca85ae6dedc25a",
-      "updatedAt": "2026-06-20T18:14:43.142Z"
+      "en": "Is this feather from a duck?",
+      "hash": "89c8a8a656d5c9c7",
+      "updatedAt": "2026-06-20T19:19:26.772Z"
     },
     "feeble:0": {
       "en": "He is very feeble.",
@@ -4747,9 +4747,9 @@
       "updatedAt": "2026-06-20T18:14:47.451Z"
     },
     "finger:0": {
-      "en": "I see a finger.",
-      "hash": "fa7fe3c4aa771612",
-      "updatedAt": "2026-06-20T18:14:47.920Z"
+      "en": "He cut his finger with a knife.",
+      "hash": "4fcd7fd3a5156e2b",
+      "updatedAt": "2026-06-20T19:19:27.157Z"
     },
     "fight:1": {
       "en": "They are fighting for freedom.",
@@ -4757,9 +4757,9 @@
       "updatedAt": "2026-06-20T18:14:47.984Z"
     },
     "finger:1": {
-      "en": "This is a finger.",
-      "hash": "e5329e54e123c880",
-      "updatedAt": "2026-06-20T18:14:48.137Z"
+      "en": "Count on your fingers from one to ten.",
+      "hash": "ad9c258a006b1454",
+      "updatedAt": "2026-06-20T19:19:27.155Z"
     },
     "fight:2": {
       "en": "Don't fight with your brother.",
@@ -4767,9 +4767,9 @@
       "updatedAt": "2026-06-20T18:14:48.144Z"
     },
     "finger:2": {
-      "en": "The finger is on the table.",
-      "hash": "71fff060b7d6194a",
-      "updatedAt": "2026-06-20T18:14:48.421Z"
+      "en": "She pointed at the picture with her finger.",
+      "hash": "ed226809e91e0c02",
+      "updatedAt": "2026-06-20T19:19:27.166Z"
     },
     "fire:0": {
       "en": "The fire is very hot.",
@@ -4782,9 +4782,9 @@
       "updatedAt": "2026-06-20T18:14:49.185Z"
     },
     "fish:0": {
-      "en": "I see a fish.",
-      "hash": "b86998018f4cf828",
-      "updatedAt": "2026-06-20T18:14:49.484Z"
+      "en": "We caught three fish in the river.",
+      "hash": "2fb385689f148581",
+      "updatedAt": "2026-06-20T19:19:27.310Z"
     },
     "fire:2": {
       "en": "Fire! Call 911!",
@@ -4792,29 +4792,29 @@
       "updatedAt": "2026-06-20T18:14:49.562Z"
     },
     "fish:1": {
-      "en": "This is a fish.",
-      "hash": "65711ff4381da3f1",
-      "updatedAt": "2026-06-20T18:14:49.645Z"
+      "en": "The cat wants to eat the fish.",
+      "hash": "3a711ea295901374",
+      "updatedAt": "2026-06-20T19:19:27.350Z"
     },
     "fish:2": {
-      "en": "The fish is on the table.",
-      "hash": "ff850687831f8111",
-      "updatedAt": "2026-06-20T18:14:49.703Z"
+      "en": "Can fish live out of water?",
+      "hash": "0488d65be8844d08",
+      "updatedAt": "2026-06-20T19:19:27.862Z"
     },
     "flag:0": {
-      "en": "I see a flag.",
-      "hash": "cc13401ad4364c20",
-      "updatedAt": "2026-06-20T18:14:50.221Z"
+      "en": "The flag of our country is red and yellow.",
+      "hash": "7b5ee7de7261a74d",
+      "updatedAt": "2026-06-20T19:19:28.003Z"
     },
     "flag:2": {
-      "en": "The flag is on the table.",
-      "hash": "24c8c4f2b30e6c07",
-      "updatedAt": "2026-06-20T18:14:50.482Z"
+      "en": "Do you know what this flag means?",
+      "hash": "d0b754cd70a8b790",
+      "updatedAt": "2026-06-20T19:19:28.653Z"
     },
     "flag:1": {
-      "en": "This is a flag.",
-      "hash": "f9cb88582b770cbc",
-      "updatedAt": "2026-06-20T18:14:50.483Z"
+      "en": "Please raise the flag in the morning.",
+      "hash": "b3a238affc3c84df",
+      "updatedAt": "2026-06-20T19:19:28.182Z"
     },
     "flame:0": {
       "en": "The candle flame flickered.",
@@ -4842,19 +4842,19 @@
       "updatedAt": "2026-06-20T18:14:51.717Z"
     },
     "floor:0": {
-      "en": "I see a floor.",
-      "hash": "69e360cf45d2e5b9",
-      "updatedAt": "2026-06-20T18:14:51.954Z"
+      "en": "The book fell on the floor.",
+      "hash": "2ae528c02e5fb443",
+      "updatedAt": "2026-06-20T19:19:28.361Z"
     },
     "floor:1": {
-      "en": "This is a floor.",
-      "hash": "dc789e7167240305",
-      "updatedAt": "2026-06-20T18:14:52.045Z"
+      "en": "Please clean the floor with a mop.",
+      "hash": "a5cbe3de4b3769b5",
+      "updatedAt": "2026-06-20T19:19:28.728Z"
     },
     "floor:2": {
-      "en": "The floor is on the table.",
-      "hash": "c5bd3f1933303248",
-      "updatedAt": "2026-06-20T18:14:52.108Z"
+      "en": "Is the floor made of wood?",
+      "hash": "bcbb4582a98caf94",
+      "updatedAt": "2026-06-20T19:19:28.536Z"
     },
     "flame:2": {
       "en": "He blew out the flame.",
@@ -4862,19 +4862,19 @@
       "updatedAt": "2026-06-20T18:14:52.119Z"
     },
     "fly:2": {
-      "en": "The fly is on the table.",
-      "hash": "e21c43e4ebe74f59",
-      "updatedAt": "2026-06-20T18:14:52.805Z"
+      "en": "How many legs does a fly have?",
+      "hash": "af46451397254332",
+      "updatedAt": "2026-06-20T19:19:29.478Z"
     },
     "fly:0": {
-      "en": "I see a fly.",
-      "hash": "79d3a532f7c515dd",
-      "updatedAt": "2026-06-20T18:14:52.807Z"
+      "en": "A fly is buzzing around the food.",
+      "hash": "c08260e231016d9e",
+      "updatedAt": "2026-06-20T19:19:28.726Z"
     },
     "fly:1": {
-      "en": "This is a fly.",
-      "hash": "68e81d07ff592f82",
-      "updatedAt": "2026-06-20T18:14:52.812Z"
+      "en": "Close the window to keep flies out.",
+      "hash": "b56026697dc32c5d",
+      "updatedAt": "2026-06-20T19:19:29.259Z"
     },
     "flower:0": {
       "en": "She picked a red flower.",
@@ -4927,19 +4927,19 @@
       "updatedAt": "2026-06-20T18:14:55.282Z"
     },
     "foot:1": {
-      "en": "This is a foot.",
-      "hash": "fddca9bc70bae09e",
-      "updatedAt": "2026-06-20T18:14:55.398Z"
+      "en": "He kicked the ball with his right foot.",
+      "hash": "b560b6a1ba7439aa",
+      "updatedAt": "2026-06-20T19:19:29.776Z"
     },
     "foot:0": {
-      "en": "I see a foot.",
-      "hash": "2b73b2a527cab4c4",
-      "updatedAt": "2026-06-20T18:14:55.415Z"
+      "en": "My foot hurts after walking all day.",
+      "hash": "2b214bd92470e2d3",
+      "updatedAt": "2026-06-20T19:19:29.725Z"
     },
     "foot:2": {
-      "en": "The foot is on the table.",
-      "hash": "3e28f933ae4732e5",
-      "updatedAt": "2026-06-20T18:14:55.483Z"
+      "en": "Put your foot on the pedal to start.",
+      "hash": "ed191f7772e16faf",
+      "updatedAt": "2026-06-20T19:19:29.826Z"
     },
     "foolish:1": {
       "en": "Don't be foolish.",
@@ -4967,14 +4967,14 @@
       "updatedAt": "2026-06-20T18:14:56.239Z"
     },
     "fork:0": {
-      "en": "I see a fork.",
-      "hash": "2ed7173ee5e06d67",
-      "updatedAt": "2026-06-20T18:14:56.788Z"
+      "en": "Use a fork to eat the salad.",
+      "hash": "eac2f77458a32932",
+      "updatedAt": "2026-06-20T19:19:30.037Z"
     },
     "fork:1": {
-      "en": "This is a fork.",
-      "hash": "0ea279b7ef95bf74",
-      "updatedAt": "2026-06-20T18:14:56.822Z"
+      "en": "The fork is next to the plate.",
+      "hash": "7756e1878595eae8",
+      "updatedAt": "2026-06-20T19:19:29.985Z"
     },
     "force:0": {
       "en": "He pushed with great force.",
@@ -4982,9 +4982,9 @@
       "updatedAt": "2026-06-20T18:14:56.973Z"
     },
     "fork:2": {
-      "en": "The fork is on the table.",
-      "hash": "725fb3ea4383a96a",
-      "updatedAt": "2026-06-20T18:14:56.979Z"
+      "en": "Can you pass me a clean fork?",
+      "hash": "ebfad1294f248440",
+      "updatedAt": "2026-06-20T19:19:29.888Z"
     },
     "force:1": {
       "en": "The force of the wind broke the tree.",
@@ -5027,34 +5027,34 @@
       "updatedAt": "2026-06-20T18:14:58.194Z"
     },
     "fowl:0": {
-      "en": "I see a bird.",
-      "hash": "7f89a31759f47013",
-      "updatedAt": "2026-06-20T18:14:58.504Z"
+      "en": "The farmer keeps fowl for eggs and meat.",
+      "hash": "412acbecc53d8380",
+      "updatedAt": "2026-06-20T19:19:30.865Z"
     },
     "fowl:1": {
-      "en": "This is a bird.",
-      "hash": "799789e1d0634f8c",
-      "updatedAt": "2026-06-20T18:14:58.532Z"
+      "en": "A duck is a kind of fowl.",
+      "hash": "489cde59a1163e2a",
+      "updatedAt": "2026-06-20T19:19:30.652Z"
     },
     "fowl:2": {
-      "en": "The bird is on the table.",
-      "hash": "ade11dbab8e90416",
-      "updatedAt": "2026-06-20T18:14:58.549Z"
+      "en": "Do you like to eat fowl for dinner?",
+      "hash": "36fcfd99462e16e6",
+      "updatedAt": "2026-06-20T19:19:31.400Z"
     },
     "frame:0": {
-      "en": "I see a frame.",
-      "hash": "03a10c72773e324f",
-      "updatedAt": "2026-06-20T18:14:58.609Z"
+      "en": "The picture frame is made of wood.",
+      "hash": "3e2329c709a14558",
+      "updatedAt": "2026-06-20T19:19:31.291Z"
     },
     "frame:1": {
-      "en": "This is a frame.",
-      "hash": "fed777b2fba50e32",
-      "updatedAt": "2026-06-20T18:14:58.864Z"
+      "en": "Can you frame this photo for me?",
+      "hash": "f762c6b254022153",
+      "updatedAt": "2026-06-20T19:19:31.003Z"
     },
     "frame:2": {
-      "en": "The frame is on the table.",
-      "hash": "6d75ebd7535a260a",
-      "updatedAt": "2026-06-20T18:14:58.914Z"
+      "en": "The window frame needs painting.",
+      "hash": "e67ca70d3dd28869",
+      "updatedAt": "2026-06-20T19:19:31.336Z"
     },
     "from:0": {
       "en": "Come from the house.",
@@ -5122,19 +5122,19 @@
       "updatedAt": "2026-06-20T18:15:03.082Z"
     },
     "garden:0": {
-      "en": "I see a garden.",
-      "hash": "93d48dec3666eda5",
-      "updatedAt": "2026-06-20T18:15:03.123Z"
+      "en": "We grow tomatoes in our garden.",
+      "hash": "c25d5d8c39505cbf",
+      "updatedAt": "2026-06-20T19:19:31.662Z"
     },
     "garden:1": {
-      "en": "This is a garden.",
-      "hash": "822b4838385c958b",
-      "updatedAt": "2026-06-20T18:15:03.389Z"
+      "en": "The children play in the garden.",
+      "hash": "de70feb22b8bee98",
+      "updatedAt": "2026-06-20T19:19:31.644Z"
     },
     "garden:2": {
-      "en": "The garden is on the table.",
-      "hash": "812136d3e7021033",
-      "updatedAt": "2026-06-20T18:15:03.407Z"
+      "en": "Please water the garden every morning.",
+      "hash": "d9f5b340cafb7f28",
+      "updatedAt": "2026-06-20T19:19:31.916Z"
     },
     "future:1": {
       "en": "I will study hard for my future.",
@@ -5162,9 +5162,9 @@
       "updatedAt": "2026-06-20T18:15:04.372Z"
     },
     "girl:1": {
-      "en": "This is a girl.",
-      "hash": "7071321b84d65e28",
-      "updatedAt": "2026-06-20T18:15:04.800Z"
+      "en": "Is that girl your sister?",
+      "hash": "36306a4e3cbe984d",
+      "updatedAt": "2026-06-20T19:19:32.394Z"
     },
     "give:0": {
       "en": "Give it back.",
@@ -5172,14 +5172,14 @@
       "updatedAt": "2026-06-20T18:15:04.883Z"
     },
     "girl:0": {
-      "en": "I see a girl.",
-      "hash": "b1ffb6e4c9c660db",
-      "updatedAt": "2026-06-20T18:15:04.895Z"
+      "en": "The girl is reading a book.",
+      "hash": "f90648ecb80d135c",
+      "updatedAt": "2026-06-20T19:19:32.333Z"
     },
     "girl:2": {
-      "en": "The girl is on the table.",
-      "hash": "7af488dad3a235eb",
-      "updatedAt": "2026-06-20T18:15:04.898Z"
+      "en": "A little girl smiled at me.",
+      "hash": "3dfb615e4d7750f4",
+      "updatedAt": "2026-06-20T19:19:32.677Z"
     },
     "give:2": {
       "en": "Give help.",
@@ -5192,9 +5192,9 @@
       "updatedAt": "2026-06-20T18:15:05.163Z"
     },
     "glove:0": {
-      "en": "I see a glove.",
-      "hash": "50e41fb0fc26fda1",
-      "updatedAt": "2026-06-20T18:15:05.710Z"
+      "en": "Put on your gloves before going out.",
+      "hash": "35ec1ccbf672b590",
+      "updatedAt": "2026-06-20T19:19:32.913Z"
     },
     "glass:1": {
       "en": "Please give me a glass of water.",
@@ -5202,14 +5202,14 @@
       "updatedAt": "2026-06-20T18:15:05.712Z"
     },
     "glove:1": {
-      "en": "This is a glove.",
-      "hash": "b535d98ecc533ebd",
-      "updatedAt": "2026-06-20T18:15:05.740Z"
+      "en": "I lost one glove on the bus.",
+      "hash": "8e28e34805d4f1f1",
+      "updatedAt": "2026-06-20T19:19:32.845Z"
     },
     "glove:2": {
-      "en": "The glove is on the table.",
-      "hash": "9a107901ed4ec622",
-      "updatedAt": "2026-06-20T18:15:05.894Z"
+      "en": "These gloves keep my hands warm.",
+      "hash": "9f70369ed8d82f2f",
+      "updatedAt": "2026-06-20T19:19:32.924Z"
     },
     "glass:0": {
       "en": "The window is made of glass.",
@@ -5222,19 +5222,19 @@
       "updatedAt": "2026-06-20T18:15:06.281Z"
     },
     "goat:0": {
-      "en": "I see a goat.",
-      "hash": "3e80bd147c635c4f",
-      "updatedAt": "2026-06-20T18:15:06.441Z"
+      "en": "The goat eats grass in the field.",
+      "hash": "79be37f311e4fa14",
+      "updatedAt": "2026-06-20T19:19:33.959Z"
     },
     "goat:1": {
-      "en": "This is a goat.",
-      "hash": "e427bcd8ae342449",
-      "updatedAt": "2026-06-20T18:15:06.474Z"
+      "en": "Does that goat have a bell?",
+      "hash": "7d1bf86af6868270",
+      "updatedAt": "2026-06-20T19:19:33.005Z"
     },
     "goat:2": {
-      "en": "The goat is on the table.",
-      "hash": "1ee771152fbc3c67",
-      "updatedAt": "2026-06-20T18:15:06.625Z"
+      "en": "A goat climbed onto the rock.",
+      "hash": "ab1aef5bc7dc5077",
+      "updatedAt": "2026-06-20T19:19:33.668Z"
     },
     "gold:0": {
       "en": "She wears a gold ring.",
@@ -5347,9 +5347,9 @@
       "updatedAt": "2026-06-20T18:15:12.578Z"
     },
     "gun:0": {
-      "en": "I see a gun.",
-      "hash": "7440c7520a47678a",
-      "updatedAt": "2026-06-20T18:15:13.289Z"
+      "en": "The soldier carries a gun.",
+      "hash": "37d4dbb18d36d1cd",
+      "updatedAt": "2026-06-20T19:19:33.552Z"
     },
     "growth:1": {
       "en": "Good food is important for growth.",
@@ -5372,19 +5372,19 @@
       "updatedAt": "2026-06-20T18:15:13.869Z"
     },
     "hair:0": {
-      "en": "I see a hair.",
-      "hash": "858f8f664e6a0ef7",
-      "updatedAt": "2026-06-20T18:15:14.089Z"
+      "en": "She has long black hair.",
+      "hash": "81ed1c99dfb78856",
+      "updatedAt": "2026-06-20T19:19:34.124Z"
     },
     "gun:2": {
-      "en": "The gun is on the table.",
-      "hash": "ec516aa0e8541617",
-      "updatedAt": "2026-06-20T18:15:14.091Z"
+      "en": "He cleaned his gun after hunting.",
+      "hash": "961ef35141ed14fd",
+      "updatedAt": "2026-06-20T19:19:34.188Z"
     },
     "gun:1": {
-      "en": "This is a gun.",
-      "hash": "c410377131e31b66",
-      "updatedAt": "2026-06-20T18:15:14.095Z"
+      "en": "Never point a gun at anyone.",
+      "hash": "f49afd63f1b02101",
+      "updatedAt": "2026-06-20T19:19:34.194Z"
     },
     "guide:0": {
       "en": "The guide took us to the museum.",
@@ -5392,44 +5392,44 @@
       "updatedAt": "2026-06-20T18:15:14.200Z"
     },
     "hair:1": {
-      "en": "This is a hair.",
-      "hash": "81ae26e3edc91993",
-      "updatedAt": "2026-06-20T18:15:14.328Z"
+      "en": "I need to wash my hair tonight.",
+      "hash": "d4f661502eb3adc9",
+      "updatedAt": "2026-06-20T19:19:34.530Z"
     },
     "hair:2": {
-      "en": "The hair is on the table.",
-      "hash": "4cdfd89322e70db4",
-      "updatedAt": "2026-06-20T18:15:14.655Z"
+      "en": "His hair is turning gray.",
+      "hash": "d60da482ffcd8d75",
+      "updatedAt": "2026-06-20T19:19:34.274Z"
     },
     "hammer:1": {
-      "en": "This is a hammer.",
-      "hash": "9ef2c17dbe3ca86d",
-      "updatedAt": "2026-06-20T18:15:14.803Z"
+      "en": "Where did you put the hammer?",
+      "hash": "fb09a9b4798e1a35",
+      "updatedAt": "2026-06-20T19:19:34.808Z"
     },
     "hammer:0": {
-      "en": "I see a hammer.",
-      "hash": "56b568ec20fc96df",
-      "updatedAt": "2026-06-20T18:15:14.821Z"
+      "en": "Use a hammer to drive the nail.",
+      "hash": "b5c2180162d59aae",
+      "updatedAt": "2026-06-20T19:19:35.004Z"
     },
     "hammer:2": {
-      "en": "The hammer is on the table.",
-      "hash": "561e835bc29ccba4",
-      "updatedAt": "2026-06-20T18:15:14.825Z"
+      "en": "This hammer is too heavy for me.",
+      "hash": "5dc10848c727209f",
+      "updatedAt": "2026-06-20T19:19:35.159Z"
     },
     "hand:0": {
-      "en": "I see a hand.",
-      "hash": "dc737c3953548cc2",
-      "updatedAt": "2026-06-20T18:15:14.904Z"
+      "en": "Wash your hands before eating.",
+      "hash": "04eab2870950ecf9",
+      "updatedAt": "2026-06-20T19:19:35.543Z"
     },
     "hand:1": {
-      "en": "This is a hand.",
-      "hash": "b343291c57417065",
-      "updatedAt": "2026-06-20T18:15:15.118Z"
+      "en": "She raised her hand to ask a question.",
+      "hash": "4158754537d0dd35",
+      "updatedAt": "2026-06-20T19:19:35.575Z"
     },
     "hand:2": {
-      "en": "The hand is on the table.",
-      "hash": "8190b7f4297fe942",
-      "updatedAt": "2026-06-20T18:15:15.346Z"
+      "en": "He hurt his hand while cooking.",
+      "hash": "462054d378474d6c",
+      "updatedAt": "2026-06-20T19:19:35.726Z"
     },
     "harbor:2": {
       "en": "The harbor was full of boats.",
@@ -5447,14 +5447,14 @@
       "updatedAt": "2026-06-20T18:15:17.173Z"
     },
     "hat:0": {
-      "en": "I see a hat.",
-      "hash": "5891ff0014e102a9",
-      "updatedAt": "2026-06-20T18:15:17.769Z"
+      "en": "Wear a hat to protect your head.",
+      "hash": "a1872801ca794618",
+      "updatedAt": "2026-06-20T19:19:35.545Z"
     },
     "hat:1": {
-      "en": "This is a hat.",
-      "hash": "ec80e6e79e722a7f",
-      "updatedAt": "2026-06-20T18:15:17.811Z"
+      "en": "That hat looks nice on you.",
+      "hash": "fcc3b2399884ee11",
+      "updatedAt": "2026-06-20T19:19:36.058Z"
     },
     "harmony:0": {
       "en": "They live in harmony with nature.",
@@ -5467,9 +5467,9 @@
       "updatedAt": "2026-06-20T18:15:17.895Z"
     },
     "hat:2": {
-      "en": "The hat is on the table.",
-      "hash": "e367765423f83151",
-      "updatedAt": "2026-06-20T18:15:17.983Z"
+      "en": "Take off your hat inside the house.",
+      "hash": "e54683547bc6ea95",
+      "updatedAt": "2026-06-20T19:19:36.316Z"
     },
     "harmony:2": {
       "en": "We need harmony in our team.",
@@ -5522,29 +5522,29 @@
       "updatedAt": "2026-06-20T18:15:19.562Z"
     },
     "head:0": {
-      "en": "I see a head.",
-      "hash": "5a9821c1522366f3",
-      "updatedAt": "2026-06-20T18:15:19.834Z"
+      "en": "She shook her head.",
+      "hash": "267be7e9fb6ef382",
+      "updatedAt": "2026-06-20T19:19:36.156Z"
     },
     "head:1": {
-      "en": "This is a head.",
-      "hash": "2adfb2ecf4731e80",
-      "updatedAt": "2026-06-20T18:15:19.888Z"
+      "en": "He has a big head.",
+      "hash": "f99b5ae96589fb24",
+      "updatedAt": "2026-06-20T19:19:36.340Z"
     },
     "head:2": {
-      "en": "The head is on the table.",
-      "hash": "be33a83950e83a71",
-      "updatedAt": "2026-06-20T18:15:20.026Z"
+      "en": "Put the hat on your head.",
+      "hash": "f1815e953fcdb586",
+      "updatedAt": "2026-06-20T19:19:36.665Z"
     },
     "heart:1": {
-      "en": "This is a heart.",
-      "hash": "2861756a232d87ad",
-      "updatedAt": "2026-06-20T18:15:20.927Z"
+      "en": "She has a kind heart.",
+      "hash": "9a26563cdb50f5a6",
+      "updatedAt": "2026-06-20T19:19:36.945Z"
     },
     "heart:0": {
-      "en": "I see a heart.",
-      "hash": "f2426de7752f3ef4",
-      "updatedAt": "2026-06-20T18:15:20.929Z"
+      "en": "My heart beats fast.",
+      "hash": "8d078fd636af9f27",
+      "updatedAt": "2026-06-20T19:19:36.748Z"
     },
     "hearing:0": {
       "en": "My hearing is not very good.",
@@ -5552,9 +5552,9 @@
       "updatedAt": "2026-06-20T18:15:21.110Z"
     },
     "heart:2": {
-      "en": "The heart is on the table.",
-      "hash": "f7f5bee2b8b397e3",
-      "updatedAt": "2026-06-20T18:15:21.119Z"
+      "en": "I love you with all my heart.",
+      "hash": "bfc674f2b9142f13",
+      "updatedAt": "2026-06-20T19:19:37.041Z"
     },
     "hearing:2": {
       "en": "The hearing test was easy.",
@@ -5637,24 +5637,24 @@
       "updatedAt": "2026-06-20T18:15:25.914Z"
     },
     "hook:0": {
-      "en": "I see a hook.",
-      "hash": "4c063664b0c7773a",
-      "updatedAt": "2026-06-20T18:15:26.136Z"
+      "en": "Hang the coat on a hook.",
+      "hash": "0ccaff0534f614ab",
+      "updatedAt": "2026-06-20T19:19:37.188Z"
     },
     "hook:1": {
-      "en": "This is a hook.",
-      "hash": "8f92d539956665cf",
-      "updatedAt": "2026-06-20T18:15:26.399Z"
+      "en": "The fish took the hook.",
+      "hash": "910af3a13639fb3b",
+      "updatedAt": "2026-06-20T19:19:37.341Z"
     },
     "hook:2": {
-      "en": "The hook is on the table.",
-      "hash": "ac66f52606cf50aa",
-      "updatedAt": "2026-06-20T18:15:26.722Z"
+      "en": "Use a hook to open the door.",
+      "hash": "25e442b58e46cb7d",
+      "updatedAt": "2026-06-20T19:19:37.469Z"
     },
     "horn:0": {
-      "en": "I see a horn.",
-      "hash": "813a0b438e2e9357",
-      "updatedAt": "2026-06-20T18:15:27.083Z"
+      "en": "The bull has two horns.",
+      "hash": "9da6e28fd4fd9675",
+      "updatedAt": "2026-06-20T19:19:37.564Z"
     },
     "hope:0": {
       "en": "I hope it doesn't rain today.",
@@ -5672,49 +5672,49 @@
       "updatedAt": "2026-06-20T18:15:27.440Z"
     },
     "horn:1": {
-      "en": "This is a horn.",
-      "hash": "8cdfddadf8fcf660",
-      "updatedAt": "2026-06-20T18:15:27.443Z"
+      "en": "He blows the horn loudly.",
+      "hash": "83c48ab2a293594d",
+      "updatedAt": "2026-06-20T19:19:38.273Z"
     },
     "horn:2": {
-      "en": "The horn is on the table.",
-      "hash": "ffb07593f9182eca",
-      "updatedAt": "2026-06-20T18:15:27.772Z"
+      "en": "The horn of the car is broken.",
+      "hash": "8ff18eda7f98e8cc",
+      "updatedAt": "2026-06-20T19:19:38.157Z"
     },
     "horse:0": {
-      "en": "I see a horse.",
-      "hash": "b0cabb870ec6f428",
-      "updatedAt": "2026-06-20T18:15:27.986Z"
+      "en": "The horse runs fast.",
+      "hash": "6c23691ea3fcbc17",
+      "updatedAt": "2026-06-20T19:19:38.159Z"
     },
     "horse:1": {
-      "en": "This is a horse.",
-      "hash": "46d513f6528ad8c1",
-      "updatedAt": "2026-06-20T18:15:28.014Z"
+      "en": "She rides a horse every day.",
+      "hash": "49279c30fc2e2e0b",
+      "updatedAt": "2026-06-20T19:19:38.330Z"
     },
     "horse:2": {
-      "en": "The horse is on the table.",
-      "hash": "3dad501bda99597e",
-      "updatedAt": "2026-06-20T18:15:28.230Z"
+      "en": "Can you draw a horse?",
+      "hash": "a97c63a04f25ad57",
+      "updatedAt": "2026-06-20T19:19:38.293Z"
     },
     "hospital:0": {
-      "en": "I see a hospital.",
-      "hash": "4f633bcae48b74bc",
-      "updatedAt": "2026-06-20T18:15:28.308Z"
+      "en": "He is in the hospital now.",
+      "hash": "91bd8110e1f6aba8",
+      "updatedAt": "2026-06-20T19:19:38.628Z"
     },
     "hospital:1": {
-      "en": "This is a hospital.",
-      "hash": "7e9c2a8d8fc52048",
-      "updatedAt": "2026-06-20T18:15:28.418Z"
+      "en": "Take her to the hospital.",
+      "hash": "3121937cb9ad2e38",
+      "updatedAt": "2026-06-20T19:19:38.850Z"
     },
     "hospital:2": {
-      "en": "The hospital is on the table.",
-      "hash": "8af818bd0a7b027e",
-      "updatedAt": "2026-06-20T18:15:28.771Z"
+      "en": "The hospital is near my house.",
+      "hash": "05319d0eaffd0795",
+      "updatedAt": "2026-06-20T19:19:38.920Z"
     },
     "house:0": {
-      "en": "I see a house.",
-      "hash": "b4823445446972bd",
-      "updatedAt": "2026-06-20T18:15:29.053Z"
+      "en": "They live in a white house.",
+      "hash": "c28ebb8f65a029fb",
+      "updatedAt": "2026-06-20T19:19:39.460Z"
     },
     "hour:0": {
       "en": "I will be back in one hour.",
@@ -5722,14 +5722,14 @@
       "updatedAt": "2026-06-20T18:15:29.358Z"
     },
     "house:1": {
-      "en": "This is a house.",
-      "hash": "e52a7874f02db479",
-      "updatedAt": "2026-06-20T18:15:29.499Z"
+      "en": "Clean the house every week.",
+      "hash": "02abdea3a7b37b62",
+      "updatedAt": "2026-06-20T19:19:39.284Z"
     },
     "house:2": {
-      "en": "The house is on the table.",
-      "hash": "f81aec48e1224a4f",
-      "updatedAt": "2026-06-20T18:15:29.816Z"
+      "en": "Is this your house?",
+      "hash": "a37e453bdebe449b",
+      "updatedAt": "2026-06-20T19:19:39.724Z"
     },
     "hour:1": {
       "en": "The movie lasts two hours.",
@@ -6007,9 +6007,9 @@
       "updatedAt": "2026-06-20T18:15:41.960Z"
     },
     "island:0": {
-      "en": "I see an island.",
-      "hash": "df108fa8b5f8d918",
-      "updatedAt": "2026-06-20T18:15:41.972Z"
+      "en": "We went to an island by boat.",
+      "hash": "a42a03ec2ffeacb4",
+      "updatedAt": "2026-06-20T19:19:39.890Z"
     },
     "iron:0": {
       "en": "The gate is made of iron.",
@@ -6017,9 +6017,9 @@
       "updatedAt": "2026-06-20T18:15:42.062Z"
     },
     "island:1": {
-      "en": "This is an island.",
-      "hash": "0fede0bb7c49c238",
-      "updatedAt": "2026-06-20T18:15:42.172Z"
+      "en": "The island has many trees.",
+      "hash": "e181c21f4282c3b3",
+      "updatedAt": "2026-06-20T19:19:39.668Z"
     },
     "iron:2": {
       "en": "She used an iron to press clothes.",
@@ -6027,14 +6027,14 @@
       "updatedAt": "2026-06-20T18:15:42.645Z"
     },
     "island:2": {
-      "en": "The island is on the table.",
-      "hash": "3ffab3f6a21a733f",
-      "updatedAt": "2026-06-20T18:15:42.662Z"
+      "en": "Can you see the island from here?",
+      "hash": "6421eb8256b3cf91",
+      "updatedAt": "2026-06-20T19:19:39.881Z"
     },
     "jewel:0": {
-      "en": "I see a jewel.",
-      "hash": "cd89e38787984f43",
-      "updatedAt": "2026-06-20T18:15:42.971Z"
+      "en": "She wears a jewel on her neck.",
+      "hash": "9ce264a8cadaa6e7",
+      "updatedAt": "2026-06-20T19:19:40.244Z"
     },
     "jelly:0": {
       "en": "The child ate some jelly.",
@@ -6047,14 +6047,14 @@
       "updatedAt": "2026-06-20T18:15:43.289Z"
     },
     "jewel:2": {
-      "en": "The jewel is on the table.",
-      "hash": "623c19d62667393d",
-      "updatedAt": "2026-06-20T18:15:43.445Z"
+      "en": "This jewel costs a lot.",
+      "hash": "e8356737ce69eb6e",
+      "updatedAt": "2026-06-20T19:19:40.607Z"
     },
     "jewel:1": {
-      "en": "This is a jewel.",
-      "hash": "bbcc637d4812e7eb",
-      "updatedAt": "2026-06-20T18:15:43.447Z"
+      "en": "The box is full of jewels.",
+      "hash": "c64f3da41c4e2f45",
+      "updatedAt": "2026-06-20T19:19:40.482Z"
     },
     "jelly:1": {
       "en": "This jelly is strawberry.",
@@ -6137,34 +6137,34 @@
       "updatedAt": "2026-06-20T18:15:46.287Z"
     },
     "kettle:0": {
-      "en": "I see a kettle.",
-      "hash": "939b74289df2c99f",
-      "updatedAt": "2026-06-20T18:15:46.363Z"
+      "en": "Boil some water in the kettle.",
+      "hash": "aa986256a9ecbd86",
+      "updatedAt": "2026-06-20T19:19:40.819Z"
     },
     "kettle:1": {
-      "en": "This is a kettle.",
-      "hash": "c76266236de6b219",
-      "updatedAt": "2026-06-20T18:15:46.810Z"
+      "en": "The kettle is on the stove.",
+      "hash": "4ff6fdf43d69a6d9",
+      "updatedAt": "2026-06-20T19:19:40.955Z"
     },
     "kettle:2": {
-      "en": "The kettle is on the table.",
-      "hash": "b1050b1237a839c9",
-      "updatedAt": "2026-06-20T18:15:46.812Z"
+      "en": "Pour the water from the kettle.",
+      "hash": "1a9536ec6c706ac1",
+      "updatedAt": "2026-06-20T19:19:41.012Z"
     },
     "key:0": {
-      "en": "I see a key.",
-      "hash": "c0b690d1d868b3c5",
-      "updatedAt": "2026-06-20T18:15:46.896Z"
+      "en": "I lost my house key.",
+      "hash": "2a1cb1ae78738330",
+      "updatedAt": "2026-06-20T19:19:41.258Z"
     },
     "key:1": {
-      "en": "This is a key.",
-      "hash": "0beb959b1f564f3e",
-      "updatedAt": "2026-06-20T18:15:47.001Z"
+      "en": "Do you have the key to this door?",
+      "hash": "831ea4330bacf3d5",
+      "updatedAt": "2026-06-20T19:19:41.096Z"
     },
     "key:2": {
-      "en": "The key is on the table.",
-      "hash": "94d56a1bacc73b77",
-      "updatedAt": "2026-06-20T18:15:47.102Z"
+      "en": "This key opens the car.",
+      "hash": "861049c0bd351dd0",
+      "updatedAt": "2026-06-20T19:19:41.394Z"
     },
     "kick:0": {
       "en": "He gave the ball a hard kick.",
@@ -6182,14 +6182,14 @@
       "updatedAt": "2026-06-20T18:15:48.547Z"
     },
     "knee:0": {
-      "en": "I see a knee.",
-      "hash": "0f651e100831adc3",
-      "updatedAt": "2026-06-20T18:15:48.674Z"
+      "en": "My knee hurts when I run.",
+      "hash": "8e0656a3db24af51",
+      "updatedAt": "2026-06-20T19:19:41.857Z"
     },
     "knee:1": {
-      "en": "This is a knee.",
-      "hash": "b7069fdadce9e11b",
-      "updatedAt": "2026-06-20T18:15:48.876Z"
+      "en": "He fell and scraped his knee.",
+      "hash": "d99378b396826918",
+      "updatedAt": "2026-06-20T19:19:41.818Z"
     },
     "kiss:0": {
       "en": "She gave him a kiss on the cheek.",
@@ -6202,29 +6202,29 @@
       "updatedAt": "2026-06-20T18:15:48.913Z"
     },
     "knee:2": {
-      "en": "The knee is on the table.",
-      "hash": "ec402328dd09a46b",
-      "updatedAt": "2026-06-20T18:15:49.274Z"
+      "en": "Bend your knees and jump.",
+      "hash": "f96b93d5db9cc106",
+      "updatedAt": "2026-06-20T19:19:42.047Z"
     },
     "knife:0": {
-      "en": "I see a knife.",
-      "hash": "ed8126f294d58ede",
-      "updatedAt": "2026-06-20T18:15:49.396Z"
+      "en": "Use a knife to cut the bread.",
+      "hash": "93aee61da6bb606b",
+      "updatedAt": "2026-06-20T19:19:42.702Z"
     },
     "knife:2": {
-      "en": "The knife is on the table.",
-      "hash": "80062c8e2640d8bb",
-      "updatedAt": "2026-06-20T18:15:49.754Z"
+      "en": "Put the knife on the cutting board.",
+      "hash": "74371623907c8389",
+      "updatedAt": "2026-06-20T19:19:42.370Z"
     },
     "knife:1": {
-      "en": "This is a knife.",
-      "hash": "a1500d0ec65a8d5a",
-      "updatedAt": "2026-06-20T18:15:49.755Z"
+      "en": "Is this knife sharp enough?",
+      "hash": "d0014fa473ca056b",
+      "updatedAt": "2026-06-20T19:19:42.368Z"
     },
     "knot:0": {
-      "en": "I see a knot.",
-      "hash": "ca67d5a72b2f2e2c",
-      "updatedAt": "2026-06-20T18:15:49.757Z"
+      "en": "Tie a knot in the rope.",
+      "hash": "81a9b700770b63bb",
+      "updatedAt": "2026-06-20T19:19:42.449Z"
     },
     "kiss:2": {
       "en": "Did you get a kiss from Mom?",
@@ -6232,14 +6232,14 @@
       "updatedAt": "2026-06-20T18:15:49.789Z"
     },
     "knot:1": {
-      "en": "This is a knot.",
-      "hash": "395fb5fed280c53e",
-      "updatedAt": "2026-06-20T18:15:49.950Z"
+      "en": "Can you undo this knot?",
+      "hash": "5474445d1b4acda5",
+      "updatedAt": "2026-06-20T19:19:42.938Z"
     },
     "knot:2": {
-      "en": "The knot is on the table.",
-      "hash": "87d9d35b56763802",
-      "updatedAt": "2026-06-20T18:15:50.027Z"
+      "en": "The knot is too tight.",
+      "hash": "300f07c34eb35203",
+      "updatedAt": "2026-06-20T19:19:42.947Z"
     },
     "knowledge:2": {
       "en": "We gain knowledge from books.",
@@ -6352,9 +6352,9 @@
       "updatedAt": "2026-06-20T18:15:55.801Z"
     },
     "leaf:0": {
-      "en": "I see a leaf.",
-      "hash": "c418755ee63d0dc5",
-      "updatedAt": "2026-06-20T18:15:55.813Z"
+      "en": "A leaf fell from the tree.",
+      "hash": "2f96b95a3bded2a9",
+      "updatedAt": "2026-06-20T19:19:43.130Z"
     },
     "law:2": {
       "en": "We must obey the law.",
@@ -6367,14 +6367,14 @@
       "updatedAt": "2026-06-20T18:15:56.024Z"
     },
     "leaf:1": {
-      "en": "This is a leaf.",
-      "hash": "e639a7d8f458a9a1",
-      "updatedAt": "2026-06-20T18:15:56.026Z"
+      "en": "The leaf is green and soft.",
+      "hash": "b6554c354f5400c1",
+      "updatedAt": "2026-06-20T19:19:43.477Z"
     },
     "leaf:2": {
-      "en": "The leaf is on the table.",
-      "hash": "ed4464d113fe4697",
-      "updatedAt": "2026-06-20T18:15:56.466Z"
+      "en": "Collect a leaf for your project.",
+      "hash": "51294396990e680b",
+      "updatedAt": "2026-06-20T19:19:43.624Z"
     },
     "learning:1": {
       "en": "She enjoys learning about animals.",
@@ -6407,9 +6407,9 @@
       "updatedAt": "2026-06-20T18:15:57.994Z"
     },
     "leg:0": {
-      "en": "I see a leg.",
-      "hash": "7f7b269cb798f86b",
-      "updatedAt": "2026-06-20T18:15:58.117Z"
+      "en": "She broke her leg skiing.",
+      "hash": "d61b42acee3fa7b6",
+      "updatedAt": "2026-06-20T19:19:43.607Z"
     },
     "left:1": {
       "en": "Turn left at the corner.",
@@ -6417,9 +6417,9 @@
       "updatedAt": "2026-06-20T18:15:58.338Z"
     },
     "leg:1": {
-      "en": "This is a leg.",
-      "hash": "d1a1385e18e9637d",
-      "updatedAt": "2026-06-20T18:15:58.452Z"
+      "en": "Stretch your legs before running.",
+      "hash": "ddc31928c21c1119",
+      "updatedAt": "2026-06-20T19:19:43.868Z"
     },
     "left:2": {
       "en": "Is the bank on the left?",
@@ -6427,9 +6427,9 @@
       "updatedAt": "2026-06-20T18:15:58.472Z"
     },
     "leg:2": {
-      "en": "The leg is on the table.",
-      "hash": "2eb2879938c10c65",
-      "updatedAt": "2026-06-20T18:15:58.751Z"
+      "en": "My left leg is longer.",
+      "hash": "8a70888b0fe73f3c",
+      "updatedAt": "2026-06-20T19:19:43.866Z"
     },
     "left:0": {
       "en": "My left hand is hurt.",
@@ -6457,9 +6457,9 @@
       "updatedAt": "2026-06-20T18:15:59.834Z"
     },
     "library:0": {
-      "en": "I see a library.",
-      "hash": "f7d12c2ab79d3796",
-      "updatedAt": "2026-06-20T18:16:00.279Z"
+      "en": "I borrow books from the library.",
+      "hash": "7e71b1d61fc9dffb",
+      "updatedAt": "2026-06-20T19:19:45.589Z"
     },
     "level:1": {
       "en": "She is at an advanced level in English.",
@@ -6467,9 +6467,9 @@
       "updatedAt": "2026-06-20T18:16:00.367Z"
     },
     "library:1": {
-      "en": "This is a library.",
-      "hash": "3c4d2b5666ee7e44",
-      "updatedAt": "2026-06-20T18:16:00.375Z"
+      "en": "The library opens at nine.",
+      "hash": "da217a1f19b69357",
+      "updatedAt": "2026-06-20T19:19:44.218Z"
     },
     "level:2": {
       "en": "This game has many levels.",
@@ -6477,9 +6477,9 @@
       "updatedAt": "2026-06-20T18:16:00.456Z"
     },
     "library:2": {
-      "en": "The library is on the table.",
-      "hash": "0687dbe787b52273",
-      "updatedAt": "2026-06-20T18:16:00.494Z"
+      "en": "Meet me at the library after school.",
+      "hash": "d6ddef83462f1d55",
+      "updatedAt": "2026-06-20T19:19:44.450Z"
     },
     "lift:0": {
       "en": "Take the lift to the fifth floor.",
@@ -6512,14 +6512,14 @@
       "updatedAt": "2026-06-20T18:16:02.329Z"
     },
     "line:0": {
-      "en": "I see a line.",
-      "hash": "f1f455ca0ef6df90",
-      "updatedAt": "2026-06-20T18:16:03.081Z"
+      "en": "Draw a straight line on the paper.",
+      "hash": "388d4e3cd7019cb8",
+      "updatedAt": "2026-06-20T19:19:44.812Z"
     },
     "line:1": {
-      "en": "This is a line.",
-      "hash": "c1310933c8161cc0",
-      "updatedAt": "2026-06-20T18:16:03.361Z"
+      "en": "Wait in line for your turn.",
+      "hash": "e4b64497584f14ac",
+      "updatedAt": "2026-06-20T19:19:44.983Z"
     },
     "limit:0": {
       "en": "There is a speed limit on this road.",
@@ -6537,19 +6537,19 @@
       "updatedAt": "2026-06-20T18:16:03.614Z"
     },
     "line:2": {
-      "en": "The line is on the table.",
-      "hash": "6329b559bc6065d2",
-      "updatedAt": "2026-06-20T18:16:03.888Z"
+      "en": "The line on the road is white.",
+      "hash": "7ddb5014e6c5d557",
+      "updatedAt": "2026-06-20T19:19:44.981Z"
     },
     "lip:0": {
-      "en": "I see a lip.",
-      "hash": "8ec1b99c4c67b6e9",
-      "updatedAt": "2026-06-20T18:16:04.428Z"
+      "en": "She bit her lip nervously.",
+      "hash": "ffe12f05410d9423",
+      "updatedAt": "2026-06-20T19:19:45.178Z"
     },
     "lip:1": {
-      "en": "This is a lip.",
-      "hash": "88f0859b13f07219",
-      "updatedAt": "2026-06-20T18:16:04.583Z"
+      "en": "Your lip is dry; use some balm.",
+      "hash": "4375828fccd6e45b",
+      "updatedAt": "2026-06-20T19:19:45.252Z"
     },
     "linen:1": {
       "en": "This shirt is made of linen.",
@@ -6567,9 +6567,9 @@
       "updatedAt": "2026-06-20T18:16:04.809Z"
     },
     "lip:2": {
-      "en": "The lip is on the table.",
-      "hash": "7756c3afb03d6223",
-      "updatedAt": "2026-06-20T18:16:05.158Z"
+      "en": "He kissed her on the lip.",
+      "hash": "d5b94fa3d68fbe77",
+      "updatedAt": "2026-06-20T19:19:45.450Z"
     },
     "liquid:0": {
       "en": "Water is a clear liquid.",
@@ -6617,19 +6617,19 @@
       "updatedAt": "2026-06-20T18:16:06.827Z"
     },
     "lock:1": {
-      "en": "This is a lock.",
-      "hash": "615a1062f8b8ce2d",
-      "updatedAt": "2026-06-20T18:16:07.593Z"
+      "en": "The lock is broken.",
+      "hash": "fda0c9ff4b9d6189",
+      "updatedAt": "2026-06-20T19:19:45.875Z"
     },
     "lock:0": {
-      "en": "I see a lock.",
-      "hash": "a77fb366e7bd71e7",
-      "updatedAt": "2026-06-20T18:16:07.597Z"
+      "en": "Lock the door before you leave.",
+      "hash": "8435de79106e90f5",
+      "updatedAt": "2026-06-20T19:19:45.969Z"
     },
     "lock:2": {
-      "en": "The lock is on the table.",
-      "hash": "e5207d07844222b5",
-      "updatedAt": "2026-06-20T18:16:07.774Z"
+      "en": "Do you have the key to this lock?",
+      "hash": "1edfd267e1bcbbc1",
+      "updatedAt": "2026-06-20T19:19:46.753Z"
     },
     "look:0": {
       "en": "Take a look at this picture.",
@@ -6767,9 +6767,9 @@
       "updatedAt": "2026-06-20T18:16:15.656Z"
     },
     "map:0": {
-      "en": "I see a map.",
-      "hash": "13edf24dfb78c4e5",
-      "updatedAt": "2026-06-20T18:16:15.949Z"
+      "en": "Can you read a map?",
+      "hash": "4d1ace28cffc1338",
+      "updatedAt": "2026-06-20T19:19:46.524Z"
     },
     "manager:0": {
       "en": "The manager is in a meeting.",
@@ -6777,9 +6777,9 @@
       "updatedAt": "2026-06-20T18:16:16.004Z"
     },
     "map:1": {
-      "en": "This is a map.",
-      "hash": "2249eb5ad3c07c34",
-      "updatedAt": "2026-06-20T18:16:16.196Z"
+      "en": "Put a map on the wall.",
+      "hash": "ab009e17403acd51",
+      "updatedAt": "2026-06-20T19:19:46.706Z"
     },
     "manager:2": {
       "en": "She became the new manager.",
@@ -6787,9 +6787,9 @@
       "updatedAt": "2026-06-20T18:16:16.367Z"
     },
     "map:2": {
-      "en": "The map is on the table.",
-      "hash": "148273102e4626bc",
-      "updatedAt": "2026-06-20T18:16:16.468Z"
+      "en": "This map shows the old city.",
+      "hash": "32884917dbea3f1c",
+      "updatedAt": "2026-06-20T19:19:46.586Z"
     },
     "mark:1": {
       "en": "Put a mark on the map.",
@@ -6822,9 +6822,9 @@
       "updatedAt": "2026-06-20T18:16:17.774Z"
     },
     "match:0": {
-      "en": "I see a match.",
-      "hash": "e1b66d64074f0c69",
-      "updatedAt": "2026-06-20T18:16:18.791Z"
+      "en": "He lights a match.",
+      "hash": "35b5131f7edfac2f",
+      "updatedAt": "2026-06-20T19:19:46.771Z"
     },
     "market:2": {
       "en": "Is there a market near here?",
@@ -6832,9 +6832,9 @@
       "updatedAt": "2026-06-20T18:16:18.892Z"
     },
     "match:1": {
-      "en": "This is a match.",
-      "hash": "7cb50e8b22a66c81",
-      "updatedAt": "2026-06-20T18:16:19.083Z"
+      "en": "Do you have a match?",
+      "hash": "e18e01c27ab8d632",
+      "updatedAt": "2026-06-20T19:19:46.756Z"
     },
     "mass:1": {
       "en": "The rock has a great mass.",
@@ -6852,9 +6852,9 @@
       "updatedAt": "2026-06-20T18:16:19.359Z"
     },
     "match:2": {
-      "en": "The match is on the table.",
-      "hash": "ac9a845fa3d82f82",
-      "updatedAt": "2026-06-20T18:16:19.621Z"
+      "en": "The match burns quickly.",
+      "hash": "90afb799b7081fe8",
+      "updatedAt": "2026-06-20T19:19:47.066Z"
     },
     "may:0": {
       "en": "You may go.",
@@ -7072,9 +7072,9 @@
       "updatedAt": "2026-06-20T18:16:30.098Z"
     },
     "monkey:0": {
-      "en": "I see a monkey.",
-      "hash": "85c1bca1a3417090",
-      "updatedAt": "2026-06-20T18:16:30.326Z"
+      "en": "The monkey eats a banana.",
+      "hash": "64a01e990dc955b0",
+      "updatedAt": "2026-06-20T19:19:47.192Z"
     },
     "money:1": {
       "en": "She saved money for a car.",
@@ -7082,14 +7082,14 @@
       "updatedAt": "2026-06-20T18:16:30.337Z"
     },
     "monkey:1": {
-      "en": "This is a monkey.",
-      "hash": "33272e885ba1b80c",
-      "updatedAt": "2026-06-20T18:16:30.630Z"
+      "en": "Can that monkey climb a tree?",
+      "hash": "ba84428b42026795",
+      "updatedAt": "2026-06-20T19:19:48.068Z"
     },
     "monkey:2": {
-      "en": "The monkey is on the table.",
-      "hash": "3c59ee2b5e5b39bc",
-      "updatedAt": "2026-06-20T18:16:30.675Z"
+      "en": "Look at the funny monkey!",
+      "hash": "e11b5792a9863d11",
+      "updatedAt": "2026-06-20T19:19:47.976Z"
     },
     "money:2": {
       "en": "Money doesn't buy happiness.",
@@ -7097,19 +7097,19 @@
       "updatedAt": "2026-06-20T18:16:30.815Z"
     },
     "moon:0": {
-      "en": "I see a moon.",
-      "hash": "16612be8051fe5b5",
-      "updatedAt": "2026-06-20T18:16:31.363Z"
+      "en": "The moon is very bright tonight.",
+      "hash": "bc30a0024b216c77",
+      "updatedAt": "2026-06-20T19:19:48.127Z"
     },
     "moon:1": {
-      "en": "This is a moon.",
-      "hash": "a4a6193e237961ee",
-      "updatedAt": "2026-06-20T18:16:31.366Z"
+      "en": "Can we see the moon in the day?",
+      "hash": "90c0792a344b5cfa",
+      "updatedAt": "2026-06-20T19:19:48.144Z"
     },
     "moon:2": {
-      "en": "The moon is on the table.",
-      "hash": "054ae852cdd71f58",
-      "updatedAt": "2026-06-20T18:16:31.447Z"
+      "en": "I love the full moon.",
+      "hash": "3cf20e7f9e690d6d",
+      "updatedAt": "2026-06-20T19:19:47.950Z"
     },
     "month:0": {
       "en": "February is the shortest month.",
@@ -7177,19 +7177,19 @@
       "updatedAt": "2026-06-20T18:16:34.452Z"
     },
     "mouth:0": {
-      "en": "I see a mouth.",
-      "hash": "972b01ef638c57ec",
-      "updatedAt": "2026-06-20T18:16:34.708Z"
+      "en": "Open your mouth wide.",
+      "hash": "3e66ff445dfbfad5",
+      "updatedAt": "2026-06-20T19:19:47.919Z"
     },
     "mouth:1": {
-      "en": "This is a mouth.",
-      "hash": "c8f8627591c5af36",
-      "updatedAt": "2026-06-20T18:16:34.884Z"
+      "en": "He has a big mouth.",
+      "hash": "be52ee3335755872",
+      "updatedAt": "2026-06-20T19:19:48.248Z"
     },
     "mouth:2": {
-      "en": "The mouth is on the table.",
-      "hash": "63b4271e632ea564",
-      "updatedAt": "2026-06-20T18:16:34.889Z"
+      "en": "Don't talk with your mouth full.",
+      "hash": "788b47318f565a65",
+      "updatedAt": "2026-06-20T19:19:48.684Z"
     },
     "mountain:2": {
       "en": "Can you see the mountain from here?",
@@ -7227,19 +7227,19 @@
       "updatedAt": "2026-06-20T18:16:36.158Z"
     },
     "muscle:0": {
-      "en": "I see a muscle.",
-      "hash": "9d65b2b287d2a55a",
-      "updatedAt": "2026-06-20T18:16:36.289Z"
+      "en": "He has strong muscles.",
+      "hash": "d4c2dc7ffa80dac6",
+      "updatedAt": "2026-06-20T19:19:49.165Z"
     },
     "muscle:1": {
-      "en": "This is a muscle.",
-      "hash": "b33209d1d108dbbc",
-      "updatedAt": "2026-06-20T18:16:36.388Z"
+      "en": "Exercise builds muscle.",
+      "hash": "ab5ce5d02e3271b7",
+      "updatedAt": "2026-06-20T19:19:49.451Z"
     },
     "muscle:2": {
-      "en": "The muscle is on the table.",
-      "hash": "838ea197121c9d79",
-      "updatedAt": "2026-06-20T18:16:36.608Z"
+      "en": "My leg muscle hurts.",
+      "hash": "2562b8406fefd3e9",
+      "updatedAt": "2026-06-20T19:19:49.267Z"
     },
     "move:1": {
       "en": "The car didn't move at all.",
@@ -7247,9 +7247,9 @@
       "updatedAt": "2026-06-20T18:16:36.621Z"
     },
     "nail:0": {
-      "en": "I see a nail.",
-      "hash": "30e58ca8f88d84a3",
-      "updatedAt": "2026-06-20T18:16:37.130Z"
+      "en": "Cut your nails short.",
+      "hash": "b09a1dd34c1a534b",
+      "updatedAt": "2026-06-20T19:19:49.658Z"
     },
     "music:0": {
       "en": "I listen to music every morning.",
@@ -7257,14 +7257,14 @@
       "updatedAt": "2026-06-20T18:16:37.197Z"
     },
     "nail:1": {
-      "en": "This is a nail.",
-      "hash": "1802065d3b7926a3",
-      "updatedAt": "2026-06-20T18:16:37.445Z"
+      "en": "He hit the nail with a hammer.",
+      "hash": "1bcffa3036a26055",
+      "updatedAt": "2026-06-20T19:19:48.912Z"
     },
     "nail:2": {
-      "en": "The nail is on the table.",
-      "hash": "101077163e28c2a2",
-      "updatedAt": "2026-06-20T18:16:37.447Z"
+      "en": "I need a nail for the picture.",
+      "hash": "12f9d7bc0df24c76",
+      "updatedAt": "2026-06-20T19:19:49.660Z"
     },
     "music:2": {
       "en": "Do you like classical music?",
@@ -7337,29 +7337,29 @@
       "updatedAt": "2026-06-20T18:16:40.583Z"
     },
     "neck:0": {
-      "en": "I see a neck.",
-      "hash": "00643e3af42b3a8f",
-      "updatedAt": "2026-06-20T18:16:41.119Z"
+      "en": "She wears a scarf around her neck.",
+      "hash": "c5f2991b12759586",
+      "updatedAt": "2026-06-20T19:19:49.869Z"
     },
     "neck:1": {
-      "en": "This is a neck.",
-      "hash": "4aea278ab210dc84",
-      "updatedAt": "2026-06-20T18:16:41.169Z"
+      "en": "My neck is stiff.",
+      "hash": "903ed827177758b1",
+      "updatedAt": "2026-06-20T19:19:50.210Z"
     },
     "neck:2": {
-      "en": "The neck is on the table.",
-      "hash": "5306bc2f4686670c",
-      "updatedAt": "2026-06-20T18:16:41.371Z"
+      "en": "The giraffe has a long neck.",
+      "hash": "495c760592dcbaad",
+      "updatedAt": "2026-06-20T19:19:50.157Z"
     },
     "needle:1": {
-      "en": "This is a needle.",
-      "hash": "a9f3bc47bfdd6254",
-      "updatedAt": "2026-06-20T18:16:41.867Z"
+      "en": "Be careful with the needle.",
+      "hash": "6123299da7376fc4",
+      "updatedAt": "2026-06-20T19:19:50.427Z"
     },
     "needle:0": {
-      "en": "I see a needle.",
-      "hash": "268ac7ee7dad65d4",
-      "updatedAt": "2026-06-20T18:16:41.868Z"
+      "en": "She threads the needle.",
+      "hash": "675fcf42a38dc441",
+      "updatedAt": "2026-06-20T19:19:50.483Z"
     },
     "need:0": {
       "en": "I need a glass of water.",
@@ -7367,9 +7367,9 @@
       "updatedAt": "2026-06-20T18:16:41.870Z"
     },
     "needle:2": {
-      "en": "The needle is on the table.",
-      "hash": "fc9a0084d2b9d747",
-      "updatedAt": "2026-06-20T18:16:42.158Z"
+      "en": "The needle is very sharp.",
+      "hash": "197c9debf895c962",
+      "updatedAt": "2026-06-20T19:19:50.739Z"
     },
     "need:2": {
       "en": "Do you need any help?",
@@ -7382,34 +7382,34 @@
       "updatedAt": "2026-06-20T18:16:42.474Z"
     },
     "nerve:1": {
-      "en": "This is a nerve.",
-      "hash": "cffd9e31238c753c",
-      "updatedAt": "2026-06-20T18:16:42.685Z"
+      "en": "He has a damaged nerve in his leg.",
+      "hash": "75312476c6cb025e",
+      "updatedAt": "2026-06-20T19:19:51.025Z"
     },
     "nerve:0": {
-      "en": "I see a nerve.",
-      "hash": "be6599bba4d678f4",
-      "updatedAt": "2026-06-20T18:16:42.686Z"
+      "en": "The nerve sends signals to the brain.",
+      "hash": "1866ba5d0f6c65d1",
+      "updatedAt": "2026-06-20T19:19:50.952Z"
     },
     "nerve:2": {
-      "en": "The nerve is on the table.",
-      "hash": "32adfaf71df19bab",
-      "updatedAt": "2026-06-20T18:16:42.736Z"
+      "en": "The dentist hits a nerve.",
+      "hash": "31d19aae35e20a78",
+      "updatedAt": "2026-06-20T19:19:51.263Z"
     },
     "net:0": {
-      "en": "I see a net.",
-      "hash": "38bde0c12bbbbcbd",
-      "updatedAt": "2026-06-20T18:16:42.867Z"
+      "en": "He caught a fish in his net.",
+      "hash": "105f997adddcd624",
+      "updatedAt": "2026-06-20T19:19:51.383Z"
     },
     "net:2": {
-      "en": "The net is on the table.",
-      "hash": "0db0abbf71b4e85f",
-      "updatedAt": "2026-06-20T18:16:43.225Z"
+      "en": "I surf the net every day.",
+      "hash": "5c9c31b7b4ec748c",
+      "updatedAt": "2026-06-20T19:19:51.787Z"
     },
     "net:1": {
-      "en": "This is a net.",
-      "hash": "544d468371f23d95",
-      "updatedAt": "2026-06-20T18:16:43.227Z"
+      "en": "The ball went into the net.",
+      "hash": "7844c2e0a685e2e7",
+      "updatedAt": "2026-06-20T19:19:51.483Z"
     },
     "news:0": {
       "en": "I heard some good news today.",
@@ -7482,9 +7482,9 @@
       "updatedAt": "2026-06-20T18:16:46.903Z"
     },
     "nose:0": {
-      "en": "I see a nose.",
-      "hash": "89c1e4218800fbc2",
-      "updatedAt": "2026-06-20T18:16:46.905Z"
+      "en": "My nose is running.",
+      "hash": "cd4f492a1454574b",
+      "updatedAt": "2026-06-20T19:19:51.793Z"
     },
     "north:1": {
       "en": "The wind is from the north.",
@@ -7492,14 +7492,14 @@
       "updatedAt": "2026-06-20T18:16:46.944Z"
     },
     "nose:1": {
-      "en": "This is a nose.",
-      "hash": "4e69ba035b780813",
-      "updatedAt": "2026-06-20T18:16:47.101Z"
+      "en": "She has a small nose.",
+      "hash": "b8bd313a37988e81",
+      "updatedAt": "2026-06-20T19:19:51.908Z"
     },
     "nose:2": {
-      "en": "The nose is on the table.",
-      "hash": "2a9ff32b2b054ede",
-      "updatedAt": "2026-06-20T18:16:47.402Z"
+      "en": "Can you touch your nose?",
+      "hash": "958b97b4b08a0672",
+      "updatedAt": "2026-06-20T19:19:52.103Z"
     },
     "not:1": {
       "en": "Do not go.",
@@ -7547,19 +7547,19 @@
       "updatedAt": "2026-06-20T18:16:48.738Z"
     },
     "nut:0": {
-      "en": "I see a nut.",
-      "hash": "f7d135d99f985002",
-      "updatedAt": "2026-06-20T18:16:49.199Z"
+      "en": "I ate a nut for a snack.",
+      "hash": "04e479b75f3e7a74",
+      "updatedAt": "2026-06-20T19:19:52.362Z"
     },
     "nut:1": {
-      "en": "This is a nut.",
-      "hash": "9a3bbefd8d5732b8",
-      "updatedAt": "2026-06-20T18:16:49.276Z"
+      "en": "Tighten the nut with a tool.",
+      "hash": "24a7e030ec8e3385",
+      "updatedAt": "2026-06-20T19:19:52.426Z"
     },
     "nut:2": {
-      "en": "The nut is on the table.",
-      "hash": "cf61d57c5ce13e20",
-      "updatedAt": "2026-06-20T18:16:49.492Z"
+      "en": "Is this nut safe to eat?",
+      "hash": "37d984af273dcf6d",
+      "updatedAt": "2026-06-20T19:19:53.444Z"
     },
     "number:0": {
       "en": "What is your phone number?",
@@ -7622,9 +7622,9 @@
       "updatedAt": "2026-06-20T18:16:51.361Z"
     },
     "office:0": {
-      "en": "I see an office.",
-      "hash": "73cc04ab58c2987d",
-      "updatedAt": "2026-06-20T18:16:52.154Z"
+      "en": "She works in an office.",
+      "hash": "2208840719f68e6a",
+      "updatedAt": "2026-06-20T19:19:52.314Z"
     },
     "offer:1": {
       "en": "The offer of a job came yesterday.",
@@ -7632,14 +7632,14 @@
       "updatedAt": "2026-06-20T18:16:52.156Z"
     },
     "office:1": {
-      "en": "This is an office.",
-      "hash": "c2a54228d4f22a03",
-      "updatedAt": "2026-06-20T18:16:52.157Z"
+      "en": "The teacher is in the office.",
+      "hash": "48b848aa12b5aaa6",
+      "updatedAt": "2026-06-20T19:19:53.033Z"
     },
     "office:2": {
-      "en": "The office is on the table.",
-      "hash": "51fe2233f785a148",
-      "updatedAt": "2026-06-20T18:16:52.202Z"
+      "en": "I need to go to the office.",
+      "hash": "a68d05c5994dc6db",
+      "updatedAt": "2026-06-20T19:19:52.982Z"
     },
     "offer:0": {
       "en": "He made an offer to help us.",
@@ -7772,19 +7772,19 @@
       "updatedAt": "2026-06-20T18:16:58.068Z"
     },
     "orange:1": {
-      "en": "This is an orange.",
-      "hash": "1e853035c535e7df",
-      "updatedAt": "2026-06-20T18:16:58.117Z"
+      "en": "This orange is very sweet.",
+      "hash": "987a1c7e396e201e",
+      "updatedAt": "2026-06-20T19:19:53.374Z"
     },
     "orange:2": {
-      "en": "The orange is on the table.",
-      "hash": "48a59c702d042e77",
-      "updatedAt": "2026-06-20T18:16:58.147Z"
+      "en": "Do you want an orange?",
+      "hash": "dba062a5a00c36a9",
+      "updatedAt": "2026-06-20T19:19:53.873Z"
     },
     "orange:0": {
-      "en": "I see an orange.",
-      "hash": "8eec7c87acb220a7",
-      "updatedAt": "2026-06-20T18:16:58.154Z"
+      "en": "I peeled an orange.",
+      "hash": "a2791b29878659f8",
+      "updatedAt": "2026-06-20T19:19:53.418Z"
     },
     "order:1": {
       "en": "Put the books in order.",
@@ -7857,19 +7857,19 @@
       "updatedAt": "2026-06-20T18:17:01.370Z"
     },
     "oven:0": {
-      "en": "I see an oven.",
-      "hash": "1225c2fc43393e78",
-      "updatedAt": "2026-06-20T18:17:01.567Z"
+      "en": "I put the bread in the oven.",
+      "hash": "bf61fb4efc4b9a9c",
+      "updatedAt": "2026-06-20T19:19:53.615Z"
     },
     "oven:1": {
-      "en": "This is an oven.",
-      "hash": "8f60bec5ba574f6f",
-      "updatedAt": "2026-06-20T18:17:01.622Z"
+      "en": "The oven is very hot.",
+      "hash": "fc075a3d109c84b6",
+      "updatedAt": "2026-06-20T19:19:54.167Z"
     },
     "oven:2": {
-      "en": "The oven is on the table.",
-      "hash": "0961be58db546e59",
-      "updatedAt": "2026-06-20T18:17:01.803Z"
+      "en": "Can you open the oven?",
+      "hash": "4236cf0503f0e393",
+      "updatedAt": "2026-06-20T19:19:54.506Z"
     },
     "over:0": {
       "en": "Go over the bridge.",
@@ -7957,9 +7957,9 @@
       "updatedAt": "2026-06-20T18:17:06.347Z"
     },
     "parcel:0": {
-      "en": "I see a parcel.",
-      "hash": "448a6929b873b454",
-      "updatedAt": "2026-06-20T18:17:07.031Z"
+      "en": "I sent a parcel to my friend.",
+      "hash": "a78e86b9697ac099",
+      "updatedAt": "2026-06-20T19:19:54.448Z"
     },
     "paper:2": {
       "en": "The paper is white.",
@@ -7967,14 +7967,14 @@
       "updatedAt": "2026-06-20T18:17:07.225Z"
     },
     "parcel:1": {
-      "en": "This is a parcel.",
-      "hash": "5f84c8adb1dfdf9e",
-      "updatedAt": "2026-06-20T18:17:07.327Z"
+      "en": "The parcel arrived today.",
+      "hash": "9d37ce3675e888f0",
+      "updatedAt": "2026-06-20T19:19:54.771Z"
     },
     "parcel:2": {
-      "en": "The parcel is on the table.",
-      "hash": "347e2fcc03715730",
-      "updatedAt": "2026-06-20T18:17:07.550Z"
+      "en": "Open the parcel carefully.",
+      "hash": "a5e14c1045efe69a",
+      "updatedAt": "2026-06-20T19:19:54.743Z"
     },
     "part:1": {
       "en": "I did my part of the work.",
@@ -8022,9 +8022,9 @@
       "updatedAt": "2026-06-20T18:17:10.872Z"
     },
     "pen:0": {
-      "en": "I see a pen.",
-      "hash": "a0b46d7f615380dc",
-      "updatedAt": "2026-06-20T18:17:11.159Z"
+      "en": "Write your name with a pen.",
+      "hash": "433b6c0028eb13c9",
+      "updatedAt": "2026-06-20T19:19:54.883Z"
     },
     "paste:2": {
       "en": "Mix the powder with water to make paste.",
@@ -8032,9 +8032,9 @@
       "updatedAt": "2026-06-20T18:17:11.196Z"
     },
     "pen:1": {
-      "en": "This is a pen.",
-      "hash": "5a3737e180810ef8",
-      "updatedAt": "2026-06-20T18:17:11.596Z"
+      "en": "I lost my pen.",
+      "hash": "c34f8a75e3479093",
+      "updatedAt": "2026-06-20T19:19:54.885Z"
     },
     "peace:1": {
       "en": "I need some peace and quiet.",
@@ -8047,14 +8047,14 @@
       "updatedAt": "2026-06-20T18:17:11.696Z"
     },
     "pen:2": {
-      "en": "The pen is on the table.",
-      "hash": "8997f94fc3b22b8b",
-      "updatedAt": "2026-06-20T18:17:11.835Z"
+      "en": "Is this pen blue or black?",
+      "hash": "8207f9002917c4f9",
+      "updatedAt": "2026-06-20T19:19:55.026Z"
     },
     "pencil:0": {
-      "en": "I see a pencil.",
-      "hash": "d0c34fd6490ea534",
-      "updatedAt": "2026-06-20T18:17:12.041Z"
+      "en": "Sharpen the pencil before you write.",
+      "hash": "b2994471a13abb56",
+      "updatedAt": "2026-06-20T19:19:55.501Z"
     },
     "peace:0": {
       "en": "We all want peace in the world.",
@@ -8062,14 +8062,14 @@
       "updatedAt": "2026-06-20T18:17:12.096Z"
     },
     "pencil:1": {
-      "en": "This is a pencil.",
-      "hash": "0a3a3ca7b4c7a5c3",
-      "updatedAt": "2026-06-20T18:17:12.274Z"
+      "en": "I draw with a pencil.",
+      "hash": "5b0357726f2e519c",
+      "updatedAt": "2026-06-20T19:19:55.583Z"
     },
     "pencil:2": {
-      "en": "The pencil is on the table.",
-      "hash": "c211fdbfd6f2fa90",
-      "updatedAt": "2026-06-20T18:17:12.359Z"
+      "en": "Do you have a pencil?",
+      "hash": "afdfb9446a17278d",
+      "updatedAt": "2026-06-20T19:19:55.668Z"
     },
     "person:1": {
       "en": "Every person has a name.",
@@ -8087,74 +8087,74 @@
       "updatedAt": "2026-06-20T18:17:13.430Z"
     },
     "picture:0": {
-      "en": "I see a picture.",
-      "hash": "bed1bdb35d9ef478",
-      "updatedAt": "2026-06-20T18:17:13.613Z"
+      "en": "I took a picture of the flower.",
+      "hash": "ce17e26f6e45122f",
+      "updatedAt": "2026-06-20T19:19:56.009Z"
     },
     "picture:1": {
-      "en": "This is a picture.",
-      "hash": "20d46bd1e03c0458",
-      "updatedAt": "2026-06-20T18:17:13.815Z"
+      "en": "This picture is beautiful.",
+      "hash": "fad97cba7c951b19",
+      "updatedAt": "2026-06-20T19:19:55.970Z"
     },
     "pig:0": {
-      "en": "I see a pig.",
-      "hash": "dfd497e2d42d0a2e",
-      "updatedAt": "2026-06-20T18:17:13.849Z"
+      "en": "The pig eats from a big bowl.",
+      "hash": "a77d6ed690c70742",
+      "updatedAt": "2026-06-20T19:19:56.439Z"
     },
     "picture:2": {
-      "en": "The picture is on the table.",
-      "hash": "1cddf32c321a6d38",
-      "updatedAt": "2026-06-20T18:17:13.851Z"
+      "en": "Draw a picture of your house.",
+      "hash": "fb82e43a744963e7",
+      "updatedAt": "2026-06-20T19:19:56.095Z"
     },
     "pig:1": {
-      "en": "This is a pig.",
-      "hash": "3b69a78b6404e785",
-      "updatedAt": "2026-06-20T18:17:13.880Z"
+      "en": "Can you see the pig in the mud?",
+      "hash": "14c2b351b8b01901",
+      "updatedAt": "2026-06-20T19:19:56.192Z"
     },
     "pig:2": {
-      "en": "The pig is on the table.",
-      "hash": "7a7f848625a4e28e",
-      "updatedAt": "2026-06-20T18:17:14.196Z"
+      "en": "Do not feed the pig too much.",
+      "hash": "03bf8e1a7694bdc4",
+      "updatedAt": "2026-06-20T19:19:56.713Z"
     },
     "pin:0": {
-      "en": "I see a pin.",
-      "hash": "6776298eb7fde6d3",
-      "updatedAt": "2026-06-20T18:17:14.342Z"
+      "en": "She uses a pin to fix the cloth.",
+      "hash": "0786ef08577cb40c",
+      "updatedAt": "2026-06-20T19:19:57.581Z"
     },
     "pipe:1": {
-      "en": "This is a pipe.",
-      "hash": "408689dd3ce36bc2",
-      "updatedAt": "2026-06-20T18:17:14.681Z"
+      "en": "He lights his pipe and smokes.",
+      "hash": "f150a9c674679690",
+      "updatedAt": "2026-06-20T19:19:57.397Z"
     },
     "pin:1": {
-      "en": "This is a pin.",
-      "hash": "f5e321cf3a4df673",
-      "updatedAt": "2026-06-20T18:17:14.682Z"
+      "en": "Put the pin in the box.",
+      "hash": "a84375360ee9c460",
+      "updatedAt": "2026-06-20T19:19:56.834Z"
     },
     "pin:2": {
-      "en": "The pin is on the table.",
-      "hash": "181996d03eeadcfd",
-      "updatedAt": "2026-06-20T18:17:14.743Z"
+      "en": "Is this pin sharp enough?",
+      "hash": "016ce1ba9c7007eb",
+      "updatedAt": "2026-06-20T19:19:57.764Z"
     },
     "pipe:0": {
-      "en": "I see a pipe.",
-      "hash": "44115068767f31c2",
-      "updatedAt": "2026-06-20T18:17:14.747Z"
+      "en": "Water comes out of the pipe.",
+      "hash": "c5d55e2b5ecb24b6",
+      "updatedAt": "2026-06-20T19:19:57.511Z"
     },
     "pipe:2": {
-      "en": "The pipe is on the table.",
-      "hash": "96c29b36491b615e",
-      "updatedAt": "2026-06-20T18:17:14.893Z"
+      "en": "The pipe under the sink is broken.",
+      "hash": "3467aff42724a6e0",
+      "updatedAt": "2026-06-20T19:19:57.649Z"
     },
     "plane:1": {
-      "en": "This is a plane.",
-      "hash": "06d584b6e9f15af7",
-      "updatedAt": "2026-06-20T18:17:15.479Z"
+      "en": "He uses a plane to make the wood smooth.",
+      "hash": "2d670f191fdaa81f",
+      "updatedAt": "2026-06-20T19:19:58.261Z"
     },
     "plane:0": {
-      "en": "I see a plane.",
-      "hash": "bf93ac893dd3ea61",
-      "updatedAt": "2026-06-20T18:17:15.484Z"
+      "en": "The plane flies high in the sky.",
+      "hash": "fde8d7ee3b18b3fb",
+      "updatedAt": "2026-06-20T19:19:57.783Z"
     },
     "place:0": {
       "en": "This is a quiet place.",
@@ -8162,9 +8162,9 @@
       "updatedAt": "2026-06-20T18:17:15.517Z"
     },
     "plane:2": {
-      "en": "The plane is on the table.",
-      "hash": "61513dfc31b62968",
-      "updatedAt": "2026-06-20T18:17:15.768Z"
+      "en": "Is the plane on time?",
+      "hash": "236a648e8304a6b0",
+      "updatedAt": "2026-06-20T19:19:58.263Z"
     },
     "place:1": {
       "en": "Put the book in its place.",
@@ -8177,14 +8177,14 @@
       "updatedAt": "2026-06-20T18:17:16.411Z"
     },
     "plate:0": {
-      "en": "I see a plate.",
-      "hash": "ea194df4c72ee5e0",
-      "updatedAt": "2026-06-20T18:17:16.434Z"
+      "en": "Put the food on a clean plate.",
+      "hash": "64f4f46db078f97c",
+      "updatedAt": "2026-06-20T19:19:58.826Z"
     },
     "plate:1": {
-      "en": "This is a plate.",
-      "hash": "e87eea41f6663e3e",
-      "updatedAt": "2026-06-20T18:17:16.577Z"
+      "en": "She breaks a plate by accident.",
+      "hash": "8bc6c5755d7a1444",
+      "updatedAt": "2026-06-20T19:19:58.847Z"
     },
     "plant:1": {
       "en": "This plant grows in the sun.",
@@ -8202,9 +8202,9 @@
       "updatedAt": "2026-06-20T18:17:16.885Z"
     },
     "plate:2": {
-      "en": "The plate is on the table.",
-      "hash": "a4ff5d5ff759f192",
-      "updatedAt": "2026-06-20T18:17:17.200Z"
+      "en": "How many plates do we need?",
+      "hash": "bb3ed6ec211854a4",
+      "updatedAt": "2026-06-20T19:19:58.744Z"
     },
     "please:0": {
       "en": "Come in, please.",
@@ -8232,9 +8232,9 @@
       "updatedAt": "2026-06-20T18:17:18.522Z"
     },
     "plough:0": {
-      "en": "I see a plough.",
-      "hash": "2cda2a70d468bd10",
-      "updatedAt": "2026-06-20T18:17:18.700Z"
+      "en": "The farmer uses a plough in the field.",
+      "hash": "2b0193aced3d2a17",
+      "updatedAt": "2026-06-20T19:19:59.328Z"
     },
     "pleasure:0": {
       "en": "Reading gives me great pleasure.",
@@ -8257,29 +8257,29 @@
       "updatedAt": "2026-06-20T18:17:19.130Z"
     },
     "plough:1": {
-      "en": "This is a plough.",
-      "hash": "3f515a34e049a322",
-      "updatedAt": "2026-06-20T18:17:19.452Z"
+      "en": "A horse pulls the old plough.",
+      "hash": "23a48c84bc9f33aa",
+      "updatedAt": "2026-06-20T19:19:59.201Z"
     },
     "plough:2": {
-      "en": "The plough is on the table.",
-      "hash": "65404760f3cb71b8",
-      "updatedAt": "2026-06-20T18:17:19.454Z"
+      "en": "Can you fix the plough?",
+      "hash": "296245e5833baf6b",
+      "updatedAt": "2026-06-20T19:19:59.132Z"
     },
     "pocket:0": {
-      "en": "I see a pocket.",
-      "hash": "fda9e615a1a5a379",
-      "updatedAt": "2026-06-20T18:17:19.611Z"
+      "en": "He puts his keys in his pocket.",
+      "hash": "b461d4f73fd4c954",
+      "updatedAt": "2026-06-20T19:19:59.752Z"
     },
     "pocket:1": {
-      "en": "This is a pocket.",
-      "hash": "cd1ec482ed23fc4d",
-      "updatedAt": "2026-06-20T18:17:19.712Z"
+      "en": "My pocket has a hole in it.",
+      "hash": "2577a5900cb2ebf4",
+      "updatedAt": "2026-06-20T19:19:59.736Z"
     },
     "pocket:2": {
-      "en": "The pocket is on the table.",
-      "hash": "cac0f9722bfd823a",
-      "updatedAt": "2026-06-20T18:17:19.961Z"
+      "en": "Is there anything in your pocket?",
+      "hash": "e4ffbbb1505ed28b",
+      "updatedAt": "2026-06-20T19:20:00.190Z"
     },
     "point:0": {
       "en": "I see your point now.",
@@ -8357,34 +8357,34 @@
       "updatedAt": "2026-06-20T18:17:24.187Z"
     },
     "pot:0": {
-      "en": "I see a pot.",
-      "hash": "eac6edd4c0f5cde7",
-      "updatedAt": "2026-06-20T18:17:24.630Z"
+      "en": "She cooks soup in a big pot.",
+      "hash": "b075924e504388b0",
+      "updatedAt": "2026-06-20T19:20:00.182Z"
     },
     "pot:2": {
-      "en": "The pot is on the table.",
-      "hash": "9b67632e2f7c507f",
-      "updatedAt": "2026-06-20T18:17:24.935Z"
+      "en": "Put the pot on the fire.",
+      "hash": "1e9c47ad5adb3729",
+      "updatedAt": "2026-06-20T19:20:00.446Z"
     },
     "pot:1": {
-      "en": "This is a pot.",
-      "hash": "3d0626adfbdcb4c0",
-      "updatedAt": "2026-06-20T18:17:24.939Z"
+      "en": "The pot is full of water.",
+      "hash": "1bc0c3cd2ed032e4",
+      "updatedAt": "2026-06-20T19:20:00.117Z"
     },
     "potato:0": {
-      "en": "I see a potato.",
-      "hash": "27d5d146422720c5",
-      "updatedAt": "2026-06-20T18:17:24.978Z"
+      "en": "I like to eat a baked potato.",
+      "hash": "bb3126ee1ec45b72",
+      "updatedAt": "2026-06-20T19:20:00.499Z"
     },
     "potato:1": {
-      "en": "This is a potato.",
-      "hash": "d21b5dc45a7282be",
-      "updatedAt": "2026-06-20T18:17:25.018Z"
+      "en": "She peels the potato with a knife.",
+      "hash": "eea3c9f2dc05dbee",
+      "updatedAt": "2026-06-20T19:20:00.710Z"
     },
     "potato:2": {
-      "en": "The potato is on the table.",
-      "hash": "406f1b8cde9b0ef9",
-      "updatedAt": "2026-06-20T18:17:25.163Z"
+      "en": "How many potatoes do we have?",
+      "hash": "4144e5886b3d92ff",
+      "updatedAt": "2026-06-20T19:20:01.473Z"
     },
     "powder:0": {
       "en": "She put powder on her face.",
@@ -8442,9 +8442,9 @@
       "updatedAt": "2026-06-20T18:17:28.508Z"
     },
     "prison:0": {
-      "en": "I see a prison.",
-      "hash": "ffe3c7d4e35c7e98",
-      "updatedAt": "2026-06-20T18:17:28.544Z"
+      "en": "The thief is sent to prison.",
+      "hash": "771a45867a38b3f8",
+      "updatedAt": "2026-06-20T19:20:01.041Z"
     },
     "print:0": {
       "en": "The print is too small to read.",
@@ -8452,14 +8452,14 @@
       "updatedAt": "2026-06-20T18:17:28.547Z"
     },
     "prison:1": {
-      "en": "This is a prison.",
-      "hash": "15345609063961c8",
-      "updatedAt": "2026-06-20T18:17:28.567Z"
+      "en": "He spends five years in prison.",
+      "hash": "6e8029ce63750ff1",
+      "updatedAt": "2026-06-20T19:20:01.517Z"
     },
     "prison:2": {
-      "en": "The prison is on the table.",
-      "hash": "46eafdc79af9a812",
-      "updatedAt": "2026-06-20T18:17:28.640Z"
+      "en": "The prison has high walls.",
+      "hash": "bd33bf0008b1731a",
+      "updatedAt": "2026-06-20T19:20:02.118Z"
     },
     "process:0": {
       "en": "The process takes two hours.",
@@ -8577,14 +8577,14 @@
       "updatedAt": "2026-06-20T18:17:35.719Z"
     },
     "pump:0": {
-      "en": "I see a pump.",
-      "hash": "e0c9c3b91b78ce12",
-      "updatedAt": "2026-06-20T18:17:35.927Z"
+      "en": "Use the pump to fill the tire.",
+      "hash": "e290e93684aa252b",
+      "updatedAt": "2026-06-20T19:20:02.034Z"
     },
     "pump:1": {
-      "en": "This is a pump.",
-      "hash": "2e89924a40b65447",
-      "updatedAt": "2026-06-20T18:17:35.936Z"
+      "en": "Does this pump work?",
+      "hash": "3dcefee16a636888",
+      "updatedAt": "2026-06-20T19:20:01.738Z"
     },
     "pull:2": {
       "en": "Can you feel the pull?",
@@ -8592,9 +8592,9 @@
       "updatedAt": "2026-06-20T18:17:36.099Z"
     },
     "pump:2": {
-      "en": "The pump is on the table.",
-      "hash": "2921d79bddf7c5b4",
-      "updatedAt": "2026-06-20T18:17:36.245Z"
+      "en": "He pumped water from the well.",
+      "hash": "5a271d387d52354f",
+      "updatedAt": "2026-06-20T19:20:02.267Z"
     },
     "punishment:0": {
       "en": "The punishment for stealing is jail.",
@@ -8702,19 +8702,19 @@
       "updatedAt": "2026-06-20T18:17:41.133Z"
     },
     "rail:0": {
-      "en": "I see a rail.",
-      "hash": "fbc489687001579b",
-      "updatedAt": "2026-06-20T18:17:41.406Z"
+      "en": "Hold the rail when you go down.",
+      "hash": "fd9de3fc5f00d6d6",
+      "updatedAt": "2026-06-20T19:20:02.317Z"
     },
     "rail:2": {
-      "en": "The rail is on the table.",
-      "hash": "81ced76854baa913",
-      "updatedAt": "2026-06-20T18:17:41.474Z"
+      "en": "Don't lean on the rail.",
+      "hash": "db4e7de441aa8f8a",
+      "updatedAt": "2026-06-20T19:20:02.745Z"
     },
     "rail:1": {
-      "en": "This is a rail.",
-      "hash": "4db9215294099fb0",
-      "updatedAt": "2026-06-20T18:17:41.476Z"
+      "en": "The train runs on rails.",
+      "hash": "e046d2031e0620d0",
+      "updatedAt": "2026-06-20T19:20:02.955Z"
     },
     "rain:0": {
       "en": "The rain is falling heavily.",
@@ -8737,19 +8737,19 @@
       "updatedAt": "2026-06-20T18:17:42.849Z"
     },
     "rat:0": {
-      "en": "I see a rat.",
-      "hash": "8a9007286b4c36df",
-      "updatedAt": "2026-06-20T18:17:42.978Z"
+      "en": "A rat ran across the floor.",
+      "hash": "90a8f0268cfbcbe4",
+      "updatedAt": "2026-06-20T19:20:02.790Z"
     },
     "rat:1": {
-      "en": "This is a rat.",
-      "hash": "d9d731b24657a2cb",
-      "updatedAt": "2026-06-20T18:17:43.074Z"
+      "en": "The cat caught a rat.",
+      "hash": "5133b9f3ab20be95",
+      "updatedAt": "2026-06-20T19:20:02.900Z"
     },
     "rat:2": {
-      "en": "The rat is on the table.",
-      "hash": "703632dddfdcfc8b",
-      "updatedAt": "2026-06-20T18:17:43.228Z"
+      "en": "Do rats live in the walls?",
+      "hash": "7d061f4607305de5",
+      "updatedAt": "2026-06-20T19:20:03.991Z"
     },
     "range:0": {
       "en": "The price range is from $10 to $50.",
@@ -8822,19 +8822,19 @@
       "updatedAt": "2026-06-20T18:17:46.733Z"
     },
     "receipt:0": {
-      "en": "I see a receipt.",
-      "hash": "0d054bed44811367",
-      "updatedAt": "2026-06-20T18:17:47.401Z"
+      "en": "Keep the receipt for the shoes.",
+      "hash": "21158b60c1816d00",
+      "updatedAt": "2026-06-20T19:20:03.536Z"
     },
     "receipt:1": {
-      "en": "This is a receipt.",
-      "hash": "d898633e6476125d",
-      "updatedAt": "2026-06-20T18:17:47.428Z"
+      "en": "Can I have a receipt, please?",
+      "hash": "513ddc0f179d840e",
+      "updatedAt": "2026-06-20T19:20:03.517Z"
     },
     "receipt:2": {
-      "en": "The receipt is on the table.",
-      "hash": "c6c3566474c82853",
-      "updatedAt": "2026-06-20T18:17:47.453Z"
+      "en": "She showed the receipt at the door.",
+      "hash": "3b11fbc948b80881",
+      "updatedAt": "2026-06-20T19:20:03.628Z"
     },
     "reason:1": {
       "en": "There is no reason to be afraid.",
@@ -9012,9 +9012,9 @@
       "updatedAt": "2026-06-20T18:17:57.407Z"
     },
     "ring:0": {
-      "en": "I see a ring.",
-      "hash": "a4dff462ad4d9745",
-      "updatedAt": "2026-06-20T18:17:57.742Z"
+      "en": "She wears a gold ring on her finger.",
+      "hash": "61f657882574446c",
+      "updatedAt": "2026-06-20T19:20:04.051Z"
     },
     "rice:2": {
       "en": "Rice grows in water fields.",
@@ -9022,14 +9022,14 @@
       "updatedAt": "2026-06-20T18:17:57.864Z"
     },
     "ring:2": {
-      "en": "The ring is on the table.",
-      "hash": "fed86261b9cc8cd6",
-      "updatedAt": "2026-06-20T18:17:58.212Z"
+      "en": "Is that ring real silver?",
+      "hash": "2d39270b203d25e8",
+      "updatedAt": "2026-06-20T19:20:04.154Z"
     },
     "ring:1": {
-      "en": "This is a ring.",
-      "hash": "1c6f3db448ab6bfe",
-      "updatedAt": "2026-06-20T18:17:58.214Z"
+      "en": "He gave her a diamond ring.",
+      "hash": "e9d07cf8b54918bd",
+      "updatedAt": "2026-06-20T19:20:04.309Z"
     },
     "river:1": {
       "en": "Can we swim in the river?",
@@ -9062,34 +9062,34 @@
       "updatedAt": "2026-06-20T18:17:59.781Z"
     },
     "rod:2": {
-      "en": "The rod is on the table.",
-      "hash": "c2a55f0815c3697d",
-      "updatedAt": "2026-06-20T18:17:59.783Z"
+      "en": "Hold the rod steady.",
+      "hash": "43d214d1892c3e60",
+      "updatedAt": "2026-06-20T19:20:04.898Z"
     },
     "rod:0": {
-      "en": "I see a rod.",
-      "hash": "229d8672971a2f70",
-      "updatedAt": "2026-06-20T18:17:59.835Z"
+      "en": "He uses a fishing rod by the river.",
+      "hash": "5cad155cb950b59d",
+      "updatedAt": "2026-06-20T19:20:04.381Z"
     },
     "rod:1": {
-      "en": "This is a rod.",
-      "hash": "affce95fd38b5d55",
-      "updatedAt": "2026-06-20T18:17:59.839Z"
+      "en": "The curtain rod is too long.",
+      "hash": "10dc50dc05ac14ef",
+      "updatedAt": "2026-06-20T19:20:04.958Z"
     },
     "roof:0": {
-      "en": "I see a roof.",
-      "hash": "d7b9c9a8b310b7cb",
-      "updatedAt": "2026-06-20T18:18:00.540Z"
+      "en": "The roof leaks when it rains.",
+      "hash": "dec6c97220d91b94",
+      "updatedAt": "2026-06-20T19:20:04.897Z"
     },
     "roof:1": {
-      "en": "This is a roof.",
-      "hash": "0e57ad8770048f16",
-      "updatedAt": "2026-06-20T18:18:00.576Z"
+      "en": "They fixed the roof last week.",
+      "hash": "c031a56e7262997f",
+      "updatedAt": "2026-06-20T19:20:05.232Z"
     },
     "roof:2": {
-      "en": "The roof is on the table.",
-      "hash": "a4091050e38dc50f",
-      "updatedAt": "2026-06-20T18:18:00.603Z"
+      "en": "A bird sits on the roof.",
+      "hash": "fdc9e2105a7422d7",
+      "updatedAt": "2026-06-20T19:20:05.583Z"
     },
     "roll:1": {
       "en": "She ate a bread roll for breakfast.",
@@ -9102,14 +9102,14 @@
       "updatedAt": "2026-06-20T18:18:00.900Z"
     },
     "root:0": {
-      "en": "I see a root.",
-      "hash": "b3eb59b2fabb679d",
-      "updatedAt": "2026-06-20T18:18:01.536Z"
+      "en": "The tree has deep roots.",
+      "hash": "ee0419028320335c",
+      "updatedAt": "2026-06-20T19:20:05.430Z"
     },
     "root:1": {
-      "en": "This is a root.",
-      "hash": "a9f7d168bd14b86a",
-      "updatedAt": "2026-06-20T18:18:01.637Z"
+      "en": "Pull the weed out by the root.",
+      "hash": "28ede88ae42956f0",
+      "updatedAt": "2026-06-20T19:20:05.653Z"
     },
     "roll:2": {
       "en": "The film is on a roll of plastic.",
@@ -9132,9 +9132,9 @@
       "updatedAt": "2026-06-20T18:18:01.953Z"
     },
     "root:2": {
-      "en": "The root is on the table.",
-      "hash": "cd5c450d485446cb",
-      "updatedAt": "2026-06-20T18:18:02.436Z"
+      "en": "Do carrots have a long root?",
+      "hash": "5ad589467d257fc5",
+      "updatedAt": "2026-06-20T19:20:05.518Z"
     },
     "rough:0": {
       "en": "The sandpaper is very rough.",
@@ -9207,14 +9207,14 @@
       "updatedAt": "2026-06-20T18:18:05.733Z"
     },
     "sail:1": {
-      "en": "This is a sail.",
-      "hash": "40f9bb88733ffbaf",
-      "updatedAt": "2026-06-20T18:18:06.597Z"
+      "en": "Raise the sail to catch the wind.",
+      "hash": "55d70dc9209672b2",
+      "updatedAt": "2026-06-20T19:20:06.273Z"
     },
     "sail:0": {
-      "en": "I see a sail.",
-      "hash": "b6497f87d8dc99e1",
-      "updatedAt": "2026-06-20T18:18:06.598Z"
+      "en": "The boat has a white sail.",
+      "hash": "2ec9b6773f669b1a",
+      "updatedAt": "2026-06-20T19:20:06.855Z"
     },
     "safe:2": {
       "en": "The children are safe at home.",
@@ -9232,9 +9232,9 @@
       "updatedAt": "2026-06-20T18:18:06.979Z"
     },
     "sail:2": {
-      "en": "The sail is on the table.",
-      "hash": "cad7bdd2f900d23c",
-      "updatedAt": "2026-06-20T18:18:07.646Z"
+      "en": "The sail tore in the storm.",
+      "hash": "11cfd8144333272c",
+      "updatedAt": "2026-06-20T19:20:06.569Z"
     },
     "safe:1": {
       "en": "Is it safe to swim here?",
@@ -9287,19 +9287,19 @@
       "updatedAt": "2026-06-20T18:18:09.788Z"
     },
     "school:0": {
-      "en": "I see a school.",
-      "hash": "ecea3d843cf67d9d",
-      "updatedAt": "2026-06-20T18:18:09.919Z"
+      "en": "She goes to school by bus.",
+      "hash": "86d5add2d99b3d08",
+      "updatedAt": "2026-06-20T19:20:06.461Z"
     },
     "school:1": {
-      "en": "This is a school.",
-      "hash": "963b280e1c6ed1b0",
-      "updatedAt": "2026-06-20T18:18:09.998Z"
+      "en": "The school has a big playground.",
+      "hash": "c339137b568089cf",
+      "updatedAt": "2026-06-20T19:20:07.029Z"
     },
     "school:2": {
-      "en": "The school is on the table.",
-      "hash": "5715c968b8cdf97f",
-      "updatedAt": "2026-06-20T18:18:10.468Z"
+      "en": "Is the school open today?",
+      "hash": "abba791003231724",
+      "updatedAt": "2026-06-20T19:20:06.803Z"
     },
     "scale:2": {
       "en": "What is the scale of this map?",
@@ -9317,14 +9317,14 @@
       "updatedAt": "2026-06-20T18:18:10.660Z"
     },
     "scissors:1": {
-      "en": "This is a scissors.",
-      "hash": "0705347e0c217a95",
-      "updatedAt": "2026-06-20T18:18:11.404Z"
+      "en": "Where are the scissors?",
+      "hash": "e1421b7c41eb480c",
+      "updatedAt": "2026-06-20T19:20:06.799Z"
     },
     "scissors:0": {
-      "en": "I see a scissors.",
-      "hash": "5932d9f6f93c1626",
-      "updatedAt": "2026-06-20T18:18:11.407Z"
+      "en": "These scissors cut paper well.",
+      "hash": "a73c4f2d9ac9fc3e",
+      "updatedAt": "2026-06-20T19:20:07.021Z"
     },
     "science:1": {
       "en": "Science helps us understand nature.",
@@ -9332,9 +9332,9 @@
       "updatedAt": "2026-06-20T18:18:11.442Z"
     },
     "scissors:2": {
-      "en": "The scissors is on the table.",
-      "hash": "03efa0d78d705469",
-      "updatedAt": "2026-06-20T18:18:11.473Z"
+      "en": "Use scissors to open the bag.",
+      "hash": "9aef47a148bc84be",
+      "updatedAt": "2026-06-20T19:20:07.595Z"
     },
     "science:0": {
       "en": "She studies science at school.",
@@ -9347,19 +9347,19 @@
       "updatedAt": "2026-06-20T18:18:11.998Z"
     },
     "screw:1": {
-      "en": "This is a screw.",
-      "hash": "a0b3ba5a31917f14",
-      "updatedAt": "2026-06-20T18:18:12.366Z"
+      "en": "This screw is too small for the hole.",
+      "hash": "e7d06d3e843e613a",
+      "updatedAt": "2026-06-20T19:20:08.276Z"
     },
     "screw:0": {
-      "en": "I see a screw.",
-      "hash": "cb67bdd0019e74a1",
-      "updatedAt": "2026-06-20T18:18:12.367Z"
+      "en": "Turn the screw with a screwdriver.",
+      "hash": "6df1ba34babdf5c0",
+      "updatedAt": "2026-06-20T19:20:07.727Z"
     },
     "screw:2": {
-      "en": "The screw is on the table.",
-      "hash": "ccdae79a65e9877d",
-      "updatedAt": "2026-06-20T18:18:12.427Z"
+      "en": "Can you find a screw for the chair?",
+      "hash": "f34a2951abc1376c",
+      "updatedAt": "2026-06-20T19:20:08.109Z"
     },
     "seat:1": {
       "en": "Is this seat taken?",
@@ -9417,14 +9417,14 @@
       "updatedAt": "2026-06-20T18:18:15.641Z"
     },
     "see:0": {
-      "en": "I see a dog.",
-      "hash": "273a8ff142ac4206",
-      "updatedAt": "2026-06-20T18:18:15.715Z"
+      "en": "I see a bird in the tree.",
+      "hash": "32e347a4f86d7159",
+      "updatedAt": "2026-06-20T19:20:08.209Z"
     },
     "see:1": {
-      "en": "See the picture.",
-      "hash": "aa95563b336b4734",
-      "updatedAt": "2026-06-20T18:18:15.851Z"
+      "en": "Do you see what I mean?",
+      "hash": "3416c7618f8dc839",
+      "updatedAt": "2026-06-20T19:20:08.203Z"
     },
     "secretary:2": {
       "en": "She works as a secretary in a hospital.",
@@ -9432,24 +9432,24 @@
       "updatedAt": "2026-06-20T18:18:15.853Z"
     },
     "seed:0": {
-      "en": "I see a seed.",
-      "hash": "42d59ee57df5c658",
-      "updatedAt": "2026-06-20T18:18:16.097Z"
+      "en": "Plant the seed in the soil.",
+      "hash": "0a666648411af24f",
+      "updatedAt": "2026-06-20T19:20:08.347Z"
     },
     "see:2": {
-      "en": "See you.",
-      "hash": "61adafbd65d80ba4",
-      "updatedAt": "2026-06-20T18:18:16.243Z"
+      "en": "See you at the park.",
+      "hash": "47ba94660410a84f",
+      "updatedAt": "2026-06-20T19:20:08.225Z"
     },
     "seed:1": {
-      "en": "This is a seed.",
-      "hash": "517ff2931af6f4b4",
-      "updatedAt": "2026-06-20T18:18:16.366Z"
+      "en": "A seed grows into a flower.",
+      "hash": "f936ef00c592ed57",
+      "updatedAt": "2026-06-20T19:20:09.132Z"
     },
     "seed:2": {
-      "en": "The seed is on the table.",
-      "hash": "a5ccc3e2d8ac7aa8",
-      "updatedAt": "2026-06-20T18:18:16.533Z"
+      "en": "Do you have sunflower seeds?",
+      "hash": "834860a9838de788",
+      "updatedAt": "2026-06-20T19:20:09.043Z"
     },
     "seem:0": {
       "en": "It seems good.",
@@ -9602,79 +9602,79 @@
       "updatedAt": "2026-06-20T18:18:23.942Z"
     },
     "sheep:0": {
-      "en": "I see a sheep.",
-      "hash": "8bc11b3cb0acbe2a",
-      "updatedAt": "2026-06-20T18:18:24.491Z"
+      "en": "The sheep eats grass in the field.",
+      "hash": "845f37d5087b8a3d",
+      "updatedAt": "2026-06-20T19:20:09.649Z"
     },
     "sheep:2": {
-      "en": "The sheep is on the table.",
-      "hash": "a4b2c60dad8edebd",
-      "updatedAt": "2026-06-20T18:18:24.511Z"
+      "en": "Sheep give us wool for clothes.",
+      "hash": "d9a2d51dd6f7d5a1",
+      "updatedAt": "2026-06-20T19:20:09.770Z"
     },
     "sheep:1": {
-      "en": "This is a sheep.",
-      "hash": "f780d6f4a25dc0f3",
-      "updatedAt": "2026-06-20T18:18:24.643Z"
+      "en": "How many sheep are on the farm?",
+      "hash": "29f24dc23a69f8f6",
+      "updatedAt": "2026-06-20T19:20:09.747Z"
     },
     "shelf:0": {
-      "en": "I see a shelf.",
-      "hash": "e5a445f6075103c7",
-      "updatedAt": "2026-06-20T18:18:24.795Z"
+      "en": "Put the book on the shelf.",
+      "hash": "16b3f30e27f903ea",
+      "updatedAt": "2026-06-20T19:20:09.415Z"
     },
     "shelf:1": {
-      "en": "This is a shelf.",
-      "hash": "a53f0b701a243501",
-      "updatedAt": "2026-06-20T18:18:24.977Z"
+      "en": "The shelf is full of toys.",
+      "hash": "02ba009acc8d3f4e",
+      "updatedAt": "2026-06-20T19:20:09.671Z"
     },
     "shelf:2": {
-      "en": "The shelf is on the table.",
-      "hash": "9a0906a87324e5d3",
-      "updatedAt": "2026-06-20T18:18:25.472Z"
+      "en": "Can you reach the top shelf?",
+      "hash": "a322a62eff03f531",
+      "updatedAt": "2026-06-20T19:20:09.668Z"
     },
     "ship:0": {
-      "en": "I see a ship.",
-      "hash": "3dc4e85c4ff95c59",
-      "updatedAt": "2026-06-20T18:18:25.473Z"
+      "en": "The ship sails across the ocean.",
+      "hash": "adc1266127dae443",
+      "updatedAt": "2026-06-20T19:20:10.407Z"
     },
     "ship:1": {
-      "en": "This is a ship.",
-      "hash": "e390f55dc1e1a5f6",
-      "updatedAt": "2026-06-20T18:18:25.520Z"
+      "en": "When does the ship leave?",
+      "hash": "dd9aaac00d1a1848",
+      "updatedAt": "2026-06-20T19:20:10.227Z"
     },
     "ship:2": {
-      "en": "The ship is on the table.",
-      "hash": "7c35a1729d3a42e0",
-      "updatedAt": "2026-06-20T18:18:25.561Z"
+      "en": "They load cargo onto the ship.",
+      "hash": "a04c011eca3f4a06",
+      "updatedAt": "2026-06-20T19:20:10.835Z"
     },
     "shirt:0": {
-      "en": "I see a shirt.",
-      "hash": "e9252e2a62a40230",
-      "updatedAt": "2026-06-20T18:18:25.681Z"
+      "en": "Wear a clean shirt today.",
+      "hash": "f4138a016c114e00",
+      "updatedAt": "2026-06-20T19:20:10.853Z"
     },
     "shirt:1": {
-      "en": "This is a shirt.",
-      "hash": "7320085efa8f3c2f",
-      "updatedAt": "2026-06-20T18:18:25.690Z"
+      "en": "This shirt is too big for me.",
+      "hash": "0b137ed3b1f4077a",
+      "updatedAt": "2026-06-20T19:20:11.218Z"
     },
     "shirt:2": {
-      "en": "The shirt is on the table.",
-      "hash": "c32b4e97a86df459",
-      "updatedAt": "2026-06-20T18:18:26.202Z"
+      "en": "He buttons his shirt quickly.",
+      "hash": "a7a6c2600564e0da",
+      "updatedAt": "2026-06-20T19:20:11.524Z"
     },
     "shoe:1": {
-      "en": "This is a shoe.",
-      "hash": "304fa9d86e4520d8",
-      "updatedAt": "2026-06-20T18:18:26.520Z"
+      "en": "I need a new pair of shoes.",
+      "hash": "dc55b30e4b279174",
+      "updatedAt": "2026-06-20T19:20:11.184Z"
     },
     "shoe:0": {
-      "en": "I see a shoe.",
-      "hash": "7557ed4e32622aae",
-      "updatedAt": "2026-06-20T18:18:26.523Z"
+      "en": "Tie your shoe before you run.",
+      "hash": "f6998873adf661f4",
+      "updatedAt": "2026-06-20T19:20:11.130Z"
     },
     "shoe:2": {
-      "en": "The shoe is on the table.",
-      "hash": "9aa579339efce239",
-      "updatedAt": "2026-06-20T18:18:27.092Z"
+      "en": "Your shoe is under the bed.",
+      "hash": "af86081f20330ea1",
+      "updatedAt": "2026-06-20T19:20:11.410Z"
     },
     "shock:0": {
       "en": "The news gave us a shock.",
@@ -9817,14 +9817,14 @@
       "updatedAt": "2026-06-20T18:18:32.965Z"
     },
     "skin:0": {
-      "en": "I see a skin.",
-      "hash": "2316e409e044d69e",
-      "updatedAt": "2026-06-20T18:18:33.334Z"
+      "en": "Wash your skin with soap.",
+      "hash": "f946cc20bc20afae",
+      "updatedAt": "2026-06-20T19:20:12.037Z"
     },
     "skin:1": {
-      "en": "This is a skin.",
-      "hash": "c852cc38cb865884",
-      "updatedAt": "2026-06-20T18:18:33.336Z"
+      "en": "Her skin is soft and smooth.",
+      "hash": "e20d21276351f9e7",
+      "updatedAt": "2026-06-20T19:20:12.508Z"
     },
     "size:1": {
       "en": "The box is the right size.",
@@ -9832,9 +9832,9 @@
       "updatedAt": "2026-06-20T18:18:33.415Z"
     },
     "skin:2": {
-      "en": "The skin is on the table.",
-      "hash": "8a13b300e7a27359",
-      "updatedAt": "2026-06-20T18:18:33.589Z"
+      "en": "The sun can burn your skin.",
+      "hash": "dc92982755bf452e",
+      "updatedAt": "2026-06-20T19:20:12.176Z"
     },
     "size:2": {
       "en": "Compare the size of these two.",
@@ -9842,19 +9842,19 @@
       "updatedAt": "2026-06-20T18:18:33.608Z"
     },
     "skirt:0": {
-      "en": "I see a skirt.",
-      "hash": "dbd5d4c4461aed79",
-      "updatedAt": "2026-06-20T18:18:33.660Z"
+      "en": "She wears a long skirt today.",
+      "hash": "53a8e4e5e9ab453a",
+      "updatedAt": "2026-06-20T19:20:12.957Z"
     },
     "skirt:2": {
-      "en": "The skirt is on the table.",
-      "hash": "104f6e5d0c308b40",
-      "updatedAt": "2026-06-20T18:18:34.100Z"
+      "en": "How much is this skirt?",
+      "hash": "4a2f16af4ca3e005",
+      "updatedAt": "2026-06-20T19:20:12.434Z"
     },
     "skirt:1": {
-      "en": "This is a skirt.",
-      "hash": "6964cd616dedfa9f",
-      "updatedAt": "2026-06-20T18:18:34.104Z"
+      "en": "This skirt has blue flowers.",
+      "hash": "a74b32a14b9e43dc",
+      "updatedAt": "2026-06-20T19:20:12.427Z"
     },
     "sky:0": {
       "en": "The sky is blue today.",
@@ -10007,19 +10007,19 @@
       "updatedAt": "2026-06-20T18:18:41.238Z"
     },
     "snake:0": {
-      "en": "I see a snake.",
-      "hash": "55163e43f7455cef",
-      "updatedAt": "2026-06-20T18:18:41.549Z"
+      "en": "A snake lives in the grass.",
+      "hash": "c36dd20cfd4568e7",
+      "updatedAt": "2026-06-20T19:20:12.692Z"
     },
     "snake:2": {
-      "en": "The snake is on the table.",
-      "hash": "785a1b774af08544",
-      "updatedAt": "2026-06-20T18:18:41.711Z"
+      "en": "Watch out for that snake!",
+      "hash": "9cea6f8ec5a561b7",
+      "updatedAt": "2026-06-20T19:20:13.282Z"
     },
     "snake:1": {
-      "en": "This is a snake.",
-      "hash": "8297d3cc692ecd11",
-      "updatedAt": "2026-06-20T18:18:41.713Z"
+      "en": "Did you see the snake move?",
+      "hash": "57d82076173b1743",
+      "updatedAt": "2026-06-20T19:20:12.748Z"
     },
     "sneeze:0": {
       "en": "He let out a loud sneeze.",
@@ -10082,9 +10082,9 @@
       "updatedAt": "2026-06-20T18:18:44.465Z"
     },
     "sock:0": {
-      "en": "I see a sock.",
-      "hash": "50c6d98bdce53437",
-      "updatedAt": "2026-06-20T18:18:44.527Z"
+      "en": "He wears a blue sock on each foot.",
+      "hash": "e8d59abcdf905370",
+      "updatedAt": "2026-06-20T19:20:13.516Z"
     },
     "society:0": {
       "en": "We live in a modern society.",
@@ -10092,9 +10092,9 @@
       "updatedAt": "2026-06-20T18:18:44.577Z"
     },
     "sock:1": {
-      "en": "This is a sock.",
-      "hash": "8b6845e938ae68cc",
-      "updatedAt": "2026-06-20T18:18:44.860Z"
+      "en": "Can you find the other sock?",
+      "hash": "7361fef36a9a0249",
+      "updatedAt": "2026-06-20T19:20:13.855Z"
     },
     "society:2": {
       "en": "What is the role of law in society?",
@@ -10107,9 +10107,9 @@
       "updatedAt": "2026-06-20T18:18:45.052Z"
     },
     "sock:2": {
-      "en": "The sock is on the table.",
-      "hash": "9c69d6abb57bafe8",
-      "updatedAt": "2026-06-20T18:18:45.202Z"
+      "en": "Put your socks in the drawer.",
+      "hash": "02eb007465a4f6dd",
+      "updatedAt": "2026-06-20T19:20:14.117Z"
     },
     "soft:1": {
       "en": "She has soft hands.",
@@ -10247,14 +10247,14 @@
       "updatedAt": "2026-06-20T18:18:50.918Z"
     },
     "spade:0": {
-      "en": "I see a spade.",
-      "hash": "e2b7c928f028668a",
-      "updatedAt": "2026-06-20T18:18:51.151Z"
+      "en": "He uses a spade to dig a hole.",
+      "hash": "182bd7e026133aaf",
+      "updatedAt": "2026-06-20T19:20:13.823Z"
     },
     "spade:1": {
-      "en": "This is a spade.",
-      "hash": "42b1c1c8480c84ae",
-      "updatedAt": "2026-06-20T18:18:51.153Z"
+      "en": "Is that spade sharp enough?",
+      "hash": "07a5f3d423a0d3eb",
+      "updatedAt": "2026-06-20T19:20:13.923Z"
     },
     "space:0": {
       "en": "There is no space in this room.",
@@ -10262,9 +10262,9 @@
       "updatedAt": "2026-06-20T18:18:51.537Z"
     },
     "spade:2": {
-      "en": "The spade is on the table.",
-      "hash": "b9c8c4a9b9445529",
-      "updatedAt": "2026-06-20T18:18:51.668Z"
+      "en": "Put the spade back in the shed.",
+      "hash": "206462e989819420",
+      "updatedAt": "2026-06-20T19:20:14.070Z"
     },
     "space:1": {
       "en": "Please leave some space between the chairs.",
@@ -10277,14 +10277,14 @@
       "updatedAt": "2026-06-20T18:18:52.071Z"
     },
     "sponge:0": {
-      "en": "I see a sponge.",
-      "hash": "8db1026bde2fb49a",
-      "updatedAt": "2026-06-20T18:18:52.409Z"
+      "en": "She cleans the table with a sponge.",
+      "hash": "30d035f58888307c",
+      "updatedAt": "2026-06-20T19:20:14.404Z"
     },
     "sponge:1": {
-      "en": "This is a sponge.",
-      "hash": "0106ef937e57c6a6",
-      "updatedAt": "2026-06-20T18:18:52.462Z"
+      "en": "Can you wet the sponge for me?",
+      "hash": "b590f72e57c68cc8",
+      "updatedAt": "2026-06-20T19:20:15.006Z"
     },
     "special:1": {
       "en": "She has a special gift.",
@@ -10302,64 +10302,64 @@
       "updatedAt": "2026-06-20T18:18:52.802Z"
     },
     "sponge:2": {
-      "en": "The sponge is on the table.",
-      "hash": "b04f2dab91b84bad",
-      "updatedAt": "2026-06-20T18:18:52.814Z"
+      "en": "The sponge is full of water.",
+      "hash": "76a2ad09a33d77c9",
+      "updatedAt": "2026-06-20T19:20:14.314Z"
     },
     "spoon:2": {
-      "en": "The spoon is on the table.",
-      "hash": "b8947763104c4bb9",
-      "updatedAt": "2026-06-20T18:18:53.268Z"
+      "en": "Stir the coffee with a spoon.",
+      "hash": "a6ff428a635bbabc",
+      "updatedAt": "2026-06-20T19:20:15.383Z"
     },
     "spoon:0": {
-      "en": "I see a spoon.",
-      "hash": "1fbcd568536910f6",
-      "updatedAt": "2026-06-20T18:18:53.270Z"
+      "en": "He eats soup with a spoon.",
+      "hash": "41dc35a256b8bc90",
+      "updatedAt": "2026-06-20T19:20:15.385Z"
     },
     "spoon:1": {
-      "en": "This is a spoon.",
-      "hash": "51bc4667e9667961",
-      "updatedAt": "2026-06-20T18:18:53.315Z"
+      "en": "Do you have a clean spoon?",
+      "hash": "c49ccd56b612bc84",
+      "updatedAt": "2026-06-20T19:20:15.380Z"
     },
     "spring:0": {
-      "en": "I see a spring.",
-      "hash": "409cb344fc6684f8",
-      "updatedAt": "2026-06-20T18:18:53.504Z"
+      "en": "The spring in the pen is broken.",
+      "hash": "7e453699fa9aa2b6",
+      "updatedAt": "2026-06-20T19:20:15.948Z"
     },
     "spring:2": {
-      "en": "The spring is on the table.",
-      "hash": "4cdc20e81ff502aa",
-      "updatedAt": "2026-06-20T18:18:53.590Z"
+      "en": "The spring pushes the door open.",
+      "hash": "f3e501e51d43e4fd",
+      "updatedAt": "2026-06-20T19:20:15.685Z"
     },
     "spring:1": {
-      "en": "This is a spring.",
-      "hash": "6b9a6409942ae085",
-      "updatedAt": "2026-06-20T18:18:53.614Z"
+      "en": "Can you stretch this spring?",
+      "hash": "1a9c8883ba02769e",
+      "updatedAt": "2026-06-20T19:20:15.435Z"
     },
     "square:0": {
-      "en": "I see a square.",
-      "hash": "d2c78cb03a2f9b7e",
-      "updatedAt": "2026-06-20T18:18:54.051Z"
+      "en": "Draw a square on the paper.",
+      "hash": "badbb04ab0ac9f02",
+      "updatedAt": "2026-06-20T19:20:15.695Z"
     },
     "square:1": {
-      "en": "This is a square.",
-      "hash": "13dfd6e4e67ca226",
-      "updatedAt": "2026-06-20T18:18:54.075Z"
+      "en": "Is this box a square?",
+      "hash": "119391bb64077bcd",
+      "updatedAt": "2026-06-20T19:20:16.382Z"
     },
     "square:2": {
-      "en": "The square is on the table.",
-      "hash": "9783f1178cf72436",
-      "updatedAt": "2026-06-20T18:18:54.299Z"
+      "en": "The table has a square top.",
+      "hash": "1055bfdbb63d4f0d",
+      "updatedAt": "2026-06-20T19:20:17.468Z"
     },
     "stamp:1": {
-      "en": "This is a stamp.",
-      "hash": "a0c5ea2756177862",
-      "updatedAt": "2026-06-20T18:18:54.842Z"
+      "en": "Do you collect stamps?",
+      "hash": "c30cf8feca841ce6",
+      "updatedAt": "2026-06-20T19:20:16.642Z"
     },
     "stamp:0": {
-      "en": "I see a stamp.",
-      "hash": "7654b625dc84cb6b",
-      "updatedAt": "2026-06-20T18:18:54.843Z"
+      "en": "I need a stamp for this letter.",
+      "hash": "b2094c0f94b078df",
+      "updatedAt": "2026-06-20T19:20:16.733Z"
     },
     "stage:1": {
       "en": "She is at an early stage of learning English.",
@@ -10372,19 +10372,19 @@
       "updatedAt": "2026-06-20T18:18:54.972Z"
     },
     "stamp:2": {
-      "en": "The stamp is on the table.",
-      "hash": "354696e13364cf4f",
-      "updatedAt": "2026-06-20T18:18:55.031Z"
+      "en": "Put a stamp on the envelope.",
+      "hash": "753f1d84bb94f10c",
+      "updatedAt": "2026-06-20T19:20:16.940Z"
     },
     "star:1": {
-      "en": "This is a star.",
-      "hash": "3cf4d81a1322635a",
-      "updatedAt": "2026-06-20T18:18:55.556Z"
+      "en": "Can you see a star in the sky?",
+      "hash": "262756d233d7c97b",
+      "updatedAt": "2026-06-20T19:20:17.031Z"
     },
     "star:0": {
-      "en": "I see a star.",
-      "hash": "38b3d4b7ea259990",
-      "updatedAt": "2026-06-20T18:18:55.592Z"
+      "en": "The stars shine at night.",
+      "hash": "ac8b33f792f74560",
+      "updatedAt": "2026-06-20T19:20:17.005Z"
     },
     "stage:2": {
       "en": "The actors are on the stage.",
@@ -10392,9 +10392,9 @@
       "updatedAt": "2026-06-20T18:18:55.706Z"
     },
     "star:2": {
-      "en": "The star is on the table.",
-      "hash": "ca920e6499dbd261",
-      "updatedAt": "2026-06-20T18:18:55.865Z"
+      "en": "She drew a star on the card.",
+      "hash": "2abb287d3e9b9ea0",
+      "updatedAt": "2026-06-20T19:20:17.202Z"
     },
     "start:1": {
       "en": "Let's start the meeting now.",
@@ -10427,19 +10427,19 @@
       "updatedAt": "2026-06-20T18:18:57.564Z"
     },
     "station:0": {
-      "en": "I see a station.",
-      "hash": "6aa305c616ad1027",
-      "updatedAt": "2026-06-20T18:18:57.651Z"
+      "en": "The train arrives at the station.",
+      "hash": "75c10fdac8bccb31",
+      "updatedAt": "2026-06-20T19:20:17.757Z"
     },
     "station:1": {
-      "en": "This is a station.",
-      "hash": "21fb62929b5e6189",
-      "updatedAt": "2026-06-20T18:18:57.745Z"
+      "en": "Where is the bus station?",
+      "hash": "fba161c913d0c548",
+      "updatedAt": "2026-06-20T19:20:17.938Z"
     },
     "station:2": {
-      "en": "The station is on the table.",
-      "hash": "68fcd5b924452b26",
-      "updatedAt": "2026-06-20T18:18:58.013Z"
+      "en": "Wait for me at the station.",
+      "hash": "555ffbed2631d96a",
+      "updatedAt": "2026-06-20T19:20:17.994Z"
     },
     "steam:1": {
       "en": "The train runs on steam.",
@@ -10467,9 +10467,9 @@
       "updatedAt": "2026-06-20T18:18:59.308Z"
     },
     "stem:0": {
-      "en": "I see a stem.",
-      "hash": "e1fb206c459283c9",
-      "updatedAt": "2026-06-20T18:18:59.594Z"
+      "en": "The rose has a long green stem.",
+      "hash": "cfd9c5a0e6c3940d",
+      "updatedAt": "2026-06-20T19:20:18.264Z"
     },
     "steel:1": {
       "en": "Steel is stronger than iron.",
@@ -10477,14 +10477,14 @@
       "updatedAt": "2026-06-20T18:18:59.721Z"
     },
     "stem:1": {
-      "en": "This is a stem.",
-      "hash": "9054981cb1801c52",
-      "updatedAt": "2026-06-20T18:18:59.756Z"
+      "en": "Cut the stem of the leaf.",
+      "hash": "77b1f28176fa5eb8",
+      "updatedAt": "2026-06-20T19:20:18.181Z"
     },
     "stem:2": {
-      "en": "The stem is on the table.",
-      "hash": "5a0084697f486acb",
-      "updatedAt": "2026-06-20T18:18:59.812Z"
+      "en": "A stem can grow into a new plant.",
+      "hash": "9925924d763e126d",
+      "updatedAt": "2026-06-20T19:20:18.862Z"
     },
     "step:0": {
       "en": "Take one step forward.",
@@ -10492,19 +10492,19 @@
       "updatedAt": "2026-06-20T18:19:00.362Z"
     },
     "stick:0": {
-      "en": "I see a stick.",
-      "hash": "809e8cfe662c56e2",
-      "updatedAt": "2026-06-20T18:19:00.611Z"
+      "en": "He picked up a stick from the ground.",
+      "hash": "c2990ec915a2e717",
+      "updatedAt": "2026-06-20T19:20:18.542Z"
     },
     "stick:1": {
-      "en": "This is a stick.",
-      "hash": "1b49136ad264b683",
-      "updatedAt": "2026-06-20T18:19:00.614Z"
+      "en": "Use a stick to draw in the sand.",
+      "hash": "3aa27e2464a89e80",
+      "updatedAt": "2026-06-20T19:20:18.747Z"
     },
     "stick:2": {
-      "en": "The stick is on the table.",
-      "hash": "45251db3550db070",
-      "updatedAt": "2026-06-20T18:19:00.615Z"
+      "en": "The dog ran with a stick in its mouth.",
+      "hash": "69d8e478f051baba",
+      "updatedAt": "2026-06-20T19:20:19.064Z"
     },
     "step:1": {
       "en": "He heard a step behind him.",
@@ -10532,9 +10532,9 @@
       "updatedAt": "2026-06-20T18:19:02.246Z"
     },
     "stocking:0": {
-      "en": "I see a stocking.",
-      "hash": "8de0febfc8e2f938",
-      "updatedAt": "2026-06-20T18:19:02.694Z"
+      "en": "She wears a red stocking on her left leg.",
+      "hash": "7b1010a85d3ba6f4",
+      "updatedAt": "2026-06-20T19:20:19.327Z"
     },
     "stitch:0": {
       "en": "The doctor put a stitch in the cut.",
@@ -10542,14 +10542,14 @@
       "updatedAt": "2026-06-20T18:19:02.760Z"
     },
     "stocking:1": {
-      "en": "This is a stocking.",
-      "hash": "2caf6d196cb29e7c",
-      "updatedAt": "2026-06-20T18:19:02.933Z"
+      "en": "Hang your stocking by the fireplace.",
+      "hash": "eafe08e29cb1fee3",
+      "updatedAt": "2026-06-20T19:20:20.050Z"
     },
     "stocking:2": {
-      "en": "The stocking is on the table.",
-      "hash": "f663e5727a7a54ce",
-      "updatedAt": "2026-06-20T18:19:02.967Z"
+      "en": "I need a new pair of stockings.",
+      "hash": "d1cde75f370a3441",
+      "updatedAt": "2026-06-20T19:20:19.564Z"
     },
     "stitch:1": {
       "en": "She made a small stitch in the cloth.",
@@ -10562,19 +10562,19 @@
       "updatedAt": "2026-06-20T18:19:02.996Z"
     },
     "stomach:0": {
-      "en": "I see a stomach.",
-      "hash": "2751cba87688eab4",
-      "updatedAt": "2026-06-20T18:19:03.445Z"
+      "en": "My stomach hurts after eating too much.",
+      "hash": "0fd0c860cd8fce56",
+      "updatedAt": "2026-06-20T19:20:19.111Z"
     },
     "stomach:1": {
-      "en": "This is a stomach.",
-      "hash": "64d850cae3164924",
-      "updatedAt": "2026-06-20T18:19:03.466Z"
+      "en": "Food goes into your stomach.",
+      "hash": "fcdd90f700634d82",
+      "updatedAt": "2026-06-20T19:20:19.872Z"
     },
     "stomach:2": {
-      "en": "The stomach is on the table.",
-      "hash": "f4d8392c3b0a646a",
-      "updatedAt": "2026-06-20T18:19:03.730Z"
+      "en": "He has a strong stomach.",
+      "hash": "48752f57ac6e8183",
+      "updatedAt": "2026-06-20T19:20:20.049Z"
     },
     "stone:0": {
       "en": "He threw a stone into the water.",
@@ -10602,14 +10602,14 @@
       "updatedAt": "2026-06-20T18:19:05.015Z"
     },
     "store:1": {
-      "en": "This is a store.",
-      "hash": "fc3369fbf772a54a",
-      "updatedAt": "2026-06-20T18:19:05.041Z"
+      "en": "The store opens at nine.",
+      "hash": "06b487c8385db3af",
+      "updatedAt": "2026-06-20T19:20:20.308Z"
     },
     "store:0": {
-      "en": "I see a store.",
-      "hash": "b20da8d453e76579",
-      "updatedAt": "2026-06-20T18:19:05.045Z"
+      "en": "I buy milk at the store.",
+      "hash": "dcad5c54d9329323",
+      "updatedAt": "2026-06-20T19:20:20.097Z"
     },
     "stop:2": {
       "en": "We came to a sudden stop.",
@@ -10617,9 +10617,9 @@
       "updatedAt": "2026-06-20T18:19:05.051Z"
     },
     "store:2": {
-      "en": "The store is on the table.",
-      "hash": "7b3e424278e95861",
-      "updatedAt": "2026-06-20T18:19:05.309Z"
+      "en": "Is there a store near here?",
+      "hash": "3902d476d262dc6f",
+      "updatedAt": "2026-06-20T19:20:20.262Z"
     },
     "story:0": {
       "en": "Tell me a story before bed.",
@@ -10637,9 +10637,9 @@
       "updatedAt": "2026-06-20T18:19:06.790Z"
     },
     "street:0": {
-      "en": "I see a street.",
-      "hash": "14b15b60b069b0af",
-      "updatedAt": "2026-06-20T18:19:06.900Z"
+      "en": "Walk along this street.",
+      "hash": "5e7ef00784fb37bb",
+      "updatedAt": "2026-06-20T19:20:20.618Z"
     },
     "strange:1": {
       "en": "That man looks strange.",
@@ -10647,9 +10647,9 @@
       "updatedAt": "2026-06-20T18:19:07.037Z"
     },
     "street:1": {
-      "en": "This is a street.",
-      "hash": "e901cb337091ca87",
-      "updatedAt": "2026-06-20T18:19:07.117Z"
+      "en": "The street is very busy.",
+      "hash": "3dcc0fba2289b245",
+      "updatedAt": "2026-06-20T19:20:20.844Z"
     },
     "strange:0": {
       "en": "I heard a strange noise.",
@@ -10662,9 +10662,9 @@
       "updatedAt": "2026-06-20T18:19:07.408Z"
     },
     "street:2": {
-      "en": "The street is on the table.",
-      "hash": "db0485fbe40240a3",
-      "updatedAt": "2026-06-20T18:19:07.657Z"
+      "en": "She lives on a quiet street.",
+      "hash": "2293e792f39b5ad4",
+      "updatedAt": "2026-06-20T19:20:21.148Z"
     },
     "stretch:0": {
       "en": "Stretch your arms up high.",
@@ -10762,9 +10762,9 @@
       "updatedAt": "2026-06-20T18:19:12.745Z"
     },
     "sun:0": {
-      "en": "I see a sun.",
-      "hash": "1295d6ac172b7e71",
-      "updatedAt": "2026-06-20T18:19:12.850Z"
+      "en": "The sun is bright today.",
+      "hash": "4a0386da95910a1a",
+      "updatedAt": "2026-06-20T19:20:20.777Z"
     },
     "summer:0": {
       "en": "Summer is the hottest season.",
@@ -10772,14 +10772,14 @@
       "updatedAt": "2026-06-20T18:19:12.883Z"
     },
     "sun:1": {
-      "en": "This is a sun.",
-      "hash": "338bfef070a6166c",
-      "updatedAt": "2026-06-20T18:19:12.912Z"
+      "en": "Plants need the sun to grow.",
+      "hash": "211903ddf5f91a30",
+      "updatedAt": "2026-06-20T19:20:20.816Z"
     },
     "sun:2": {
-      "en": "The sun is on the table.",
-      "hash": "e4b8d8fca8f663b6",
-      "updatedAt": "2026-06-20T18:19:13.233Z"
+      "en": "Don't look at the sun.",
+      "hash": "0db53a7005e7c746",
+      "updatedAt": "2026-06-20T19:20:21.301Z"
     },
     "summer:2": {
       "en": "Last summer was very hot.",
@@ -10837,9 +10837,9 @@
       "updatedAt": "2026-06-20T18:19:16.444Z"
     },
     "table:0": {
-      "en": "I see a table.",
-      "hash": "0f27296348ff56f2",
-      "updatedAt": "2026-06-20T18:19:16.466Z"
+      "en": "Put the book on the table.",
+      "hash": "31c84cc05e4e6c15",
+      "updatedAt": "2026-06-20T19:20:21.141Z"
     },
     "system:2": {
       "en": "We need a better system for filing.",
@@ -10847,29 +10847,29 @@
       "updatedAt": "2026-06-20T18:19:16.613Z"
     },
     "table:1": {
-      "en": "This is a table.",
-      "hash": "b588692c17bbcf57",
-      "updatedAt": "2026-06-20T18:19:16.663Z"
+      "en": "We eat dinner at the table.",
+      "hash": "bfc5a110c87aefb3",
+      "updatedAt": "2026-06-20T19:20:21.456Z"
     },
     "table:2": {
-      "en": "The table is on the table.",
-      "hash": "5579c8fd71e51f46",
-      "updatedAt": "2026-06-20T18:19:17.174Z"
+      "en": "The table has four legs.",
+      "hash": "a63290f8ba1363b6",
+      "updatedAt": "2026-06-20T19:20:22.366Z"
     },
     "tail:0": {
-      "en": "I see a tail.",
-      "hash": "48bb83345ccfa0d9",
-      "updatedAt": "2026-06-20T18:19:17.186Z"
+      "en": "The dog wags its tail.",
+      "hash": "a7867b44c6b45f4d",
+      "updatedAt": "2026-06-20T19:20:22.049Z"
     },
     "tail:1": {
-      "en": "This is a tail.",
-      "hash": "4ea766f7911cb34b",
-      "updatedAt": "2026-06-20T18:19:17.371Z"
+      "en": "A cat has a long tail.",
+      "hash": "4b7dbad4d71ed9a5",
+      "updatedAt": "2026-06-20T19:20:22.246Z"
     },
     "tail:2": {
-      "en": "The tail is on the table.",
-      "hash": "0aa520f0ea88764c",
-      "updatedAt": "2026-06-20T18:19:17.460Z"
+      "en": "The fish's tail moves side to side.",
+      "hash": "cefcb313658bd66a",
+      "updatedAt": "2026-06-20T19:20:23.040Z"
     },
     "take:0": {
       "en": "Take it out.",
@@ -11132,9 +11132,9 @@
       "updatedAt": "2026-06-20T18:19:27.909Z"
     },
     "thread:0": {
-      "en": "I see a thread.",
-      "hash": "2399fb6d2bd6e414",
-      "updatedAt": "2026-06-20T18:19:28.397Z"
+      "en": "She puts thread through the needle.",
+      "hash": "f885fa824b41fce7",
+      "updatedAt": "2026-06-20T19:20:22.421Z"
     },
     "thought:0": {
       "en": "I just had a great thought.",
@@ -11142,14 +11142,14 @@
       "updatedAt": "2026-06-20T18:19:28.540Z"
     },
     "thread:1": {
-      "en": "This is a thread.",
-      "hash": "707bb327de4ef196",
-      "updatedAt": "2026-06-20T18:19:28.580Z"
+      "en": "The thread is too short.",
+      "hash": "5d7486a74c72d1af",
+      "updatedAt": "2026-06-20T19:20:22.342Z"
     },
     "thread:2": {
-      "en": "The thread is on the table.",
-      "hash": "daa5417e9ed7eb9d",
-      "updatedAt": "2026-06-20T18:19:28.602Z"
+      "en": "I need a red thread.",
+      "hash": "585be927f9b15db9",
+      "updatedAt": "2026-06-20T19:20:22.653Z"
     },
     "thought:1": {
       "en": "His thought was to help others.",
@@ -11157,14 +11157,14 @@
       "updatedAt": "2026-06-20T18:19:28.645Z"
     },
     "throat:0": {
-      "en": "I see a throat.",
-      "hash": "da27f094ea3ed1c5",
-      "updatedAt": "2026-06-20T18:19:29.125Z"
+      "en": "My throat hurts when I swallow.",
+      "hash": "88ada51e18b73a2e",
+      "updatedAt": "2026-06-20T19:20:22.214Z"
     },
     "throat:1": {
-      "en": "This is a throat.",
-      "hash": "70a80ce8c614e15d",
-      "updatedAt": "2026-06-20T18:19:29.339Z"
+      "en": "Clear your throat before you speak.",
+      "hash": "3d967afe2edfa4f9",
+      "updatedAt": "2026-06-20T19:20:23.591Z"
     },
     "through:1": {
       "en": "See through the window.",
@@ -11177,9 +11177,9 @@
       "updatedAt": "2026-06-20T18:19:29.497Z"
     },
     "throat:2": {
-      "en": "The throat is on the table.",
-      "hash": "444ee710519d8e4d",
-      "updatedAt": "2026-06-20T18:19:29.503Z"
+      "en": "He has a frog in his throat.",
+      "hash": "863a304cdf756e77",
+      "updatedAt": "2026-06-20T19:20:23.849Z"
     },
     "thought:2": {
       "en": "What are your thoughts on this plan?",
@@ -11192,34 +11192,34 @@
       "updatedAt": "2026-06-20T18:19:29.964Z"
     },
     "thumb:0": {
-      "en": "I see a thumb.",
-      "hash": "b6e7c114c30994e7",
-      "updatedAt": "2026-06-20T18:19:30.174Z"
+      "en": "She hit her thumb with a hammer.",
+      "hash": "fc57d8258452e141",
+      "updatedAt": "2026-06-20T19:20:24.293Z"
     },
     "thumb:1": {
-      "en": "This is a thumb.",
-      "hash": "da4eee2927604713",
-      "updatedAt": "2026-06-20T18:19:30.254Z"
+      "en": "Give a thumbs up if you agree.",
+      "hash": "31a56d52800f19b6",
+      "updatedAt": "2026-06-20T19:20:23.858Z"
     },
     "thumb:2": {
-      "en": "The thumb is on the table.",
-      "hash": "eda65ac3b383f56b",
-      "updatedAt": "2026-06-20T18:19:30.288Z"
+      "en": "He is all thumbs when fixing things.",
+      "hash": "15e96fc3844f72bc",
+      "updatedAt": "2026-06-20T19:20:24.093Z"
     },
     "ticket:1": {
-      "en": "This is a ticket.",
-      "hash": "6f6d66b4164287a2",
-      "updatedAt": "2026-06-20T18:19:31.029Z"
+      "en": "The ticket costs ten dollars.",
+      "hash": "57446dc8aea9c71a",
+      "updatedAt": "2026-06-20T19:20:23.966Z"
     },
     "ticket:0": {
-      "en": "I see a ticket.",
-      "hash": "e0f5b20c79882029",
-      "updatedAt": "2026-06-20T18:19:31.032Z"
+      "en": "I bought a ticket for the movie.",
+      "hash": "b79c329c436a3f6e",
+      "updatedAt": "2026-06-20T19:20:23.613Z"
     },
     "ticket:2": {
-      "en": "The ticket is on the table.",
-      "hash": "1d6a410cdb75bbc4",
-      "updatedAt": "2026-06-20T18:19:31.088Z"
+      "en": "Show your ticket at the door.",
+      "hash": "5c925c9a80050faf",
+      "updatedAt": "2026-06-20T19:20:24.503Z"
     },
     "thunder:1": {
       "en": "I am afraid of thunder.",
@@ -11277,14 +11277,14 @@
       "updatedAt": "2026-06-20T18:19:33.357Z"
     },
     "toe:0": {
-      "en": "I see a toe.",
-      "hash": "fadc8f44af8cf417",
-      "updatedAt": "2026-06-20T18:19:34.239Z"
+      "en": "I stubbed my toe on the chair.",
+      "hash": "553e4886f40e2c5c",
+      "updatedAt": "2026-06-20T19:20:24.823Z"
     },
     "toe:1": {
-      "en": "This is a toe.",
-      "hash": "7538629fe5f16365",
-      "updatedAt": "2026-06-20T18:19:34.241Z"
+      "en": "She wiggles her toes in the sand.",
+      "hash": "e5a4085b765c46d9",
+      "updatedAt": "2026-06-20T19:20:24.892Z"
     },
     "tin:2": {
       "en": "Tin is a soft metal.",
@@ -11307,9 +11307,9 @@
       "updatedAt": "2026-06-20T18:19:34.843Z"
     },
     "toe:2": {
-      "en": "The toe is on the table.",
-      "hash": "b5cc2066bc042c22",
-      "updatedAt": "2026-06-20T18:19:35.306Z"
+      "en": "He has five toes on each foot.",
+      "hash": "9b11858ee6093fdb",
+      "updatedAt": "2026-06-20T19:20:25.134Z"
     },
     "together:0": {
       "en": "We go together.",
@@ -11342,34 +11342,34 @@
       "updatedAt": "2026-06-20T18:19:36.047Z"
     },
     "tongue:0": {
-      "en": "I see a tongue.",
-      "hash": "5bab2fcf168bd45e",
-      "updatedAt": "2026-06-20T18:19:36.055Z"
+      "en": "The cat licked its tongue over the milk.",
+      "hash": "fa45cb7d9e5bb544",
+      "updatedAt": "2026-06-20T19:20:25.279Z"
     },
     "tongue:1": {
-      "en": "This is a tongue.",
-      "hash": "0f0dc9323ea76344",
-      "updatedAt": "2026-06-20T18:19:36.249Z"
+      "en": "Don't bite your tongue when you eat.",
+      "hash": "5592f9c4f0ffbe79",
+      "updatedAt": "2026-06-20T19:20:25.553Z"
     },
     "tongue:2": {
-      "en": "The tongue is on the table.",
-      "hash": "0ae13d83e5994fea",
-      "updatedAt": "2026-06-20T18:19:36.834Z"
+      "en": "She speaks with a sharp tongue.",
+      "hash": "82014a59d9da5b61",
+      "updatedAt": "2026-06-20T19:20:25.344Z"
     },
     "tooth:0": {
-      "en": "I see a tooth.",
-      "hash": "8bc992cdb7f84b86",
-      "updatedAt": "2026-06-20T18:19:36.838Z"
+      "en": "I brush my tooth every morning.",
+      "hash": "19a1dbc36fb2ae98",
+      "updatedAt": "2026-06-20T19:20:25.570Z"
     },
     "tooth:1": {
-      "en": "This is a tooth.",
-      "hash": "f4f48d18f8ed977b",
-      "updatedAt": "2026-06-20T18:19:36.841Z"
+      "en": "She lost a tooth last night.",
+      "hash": "c7c87a0d6eb750fb",
+      "updatedAt": "2026-06-20T19:20:25.871Z"
     },
     "tooth:2": {
-      "en": "The tooth is on the table.",
-      "hash": "cec8209706d1e2dc",
-      "updatedAt": "2026-06-20T18:19:36.883Z"
+      "en": "The dentist pulled out my bad tooth.",
+      "hash": "e66091a43c2fab32",
+      "updatedAt": "2026-06-20T19:20:26.407Z"
     },
     "top:0": {
       "en": "The cat is sitting on top of the roof.",
@@ -11392,19 +11392,19 @@
       "updatedAt": "2026-06-20T18:19:38.202Z"
     },
     "town:0": {
-      "en": "I see a town.",
-      "hash": "be1c48286e484825",
-      "updatedAt": "2026-06-20T18:19:38.393Z"
+      "en": "We live in a small town.",
+      "hash": "e7a2ce29a5bf216f",
+      "updatedAt": "2026-06-20T19:20:25.796Z"
     },
     "town:1": {
-      "en": "This is a town.",
-      "hash": "48dbbda28a8bc182",
-      "updatedAt": "2026-06-20T18:19:38.540Z"
+      "en": "The town has one main street.",
+      "hash": "dbb1aa232b2e7ce8",
+      "updatedAt": "2026-06-20T19:20:26.499Z"
     },
     "town:2": {
-      "en": "The town is on the table.",
-      "hash": "b6f4d670cc85fda3",
-      "updatedAt": "2026-06-20T18:19:38.868Z"
+      "en": "She went to town to buy food.",
+      "hash": "53a16b53532fd36a",
+      "updatedAt": "2026-06-20T19:20:26.743Z"
     },
     "touch:2": {
       "en": "Can you feel the touch of wind?",
@@ -11422,14 +11422,14 @@
       "updatedAt": "2026-06-20T18:19:39.479Z"
     },
     "train:0": {
-      "en": "I see a train.",
-      "hash": "89a7ac6d50722e7c",
-      "updatedAt": "2026-06-20T18:19:39.646Z"
+      "en": "The train arrives at nine o'clock.",
+      "hash": "557745d5e9b7b5cc",
+      "updatedAt": "2026-06-20T19:20:26.846Z"
     },
     "train:1": {
-      "en": "This is a train.",
-      "hash": "0f0720d01a462ecf",
-      "updatedAt": "2026-06-20T18:19:39.927Z"
+      "en": "I take the train to work every day.",
+      "hash": "a31aca2ba5120e28",
+      "updatedAt": "2026-06-20T19:20:27.566Z"
     },
     "trade:2": {
       "en": "Is trade between the two countries fair?",
@@ -11437,9 +11437,9 @@
       "updatedAt": "2026-06-20T18:19:40.196Z"
     },
     "train:2": {
-      "en": "The train is on the table.",
-      "hash": "e74b5cfe05271637",
-      "updatedAt": "2026-06-20T18:19:40.273Z"
+      "en": "The train is very fast.",
+      "hash": "c6d4f519da4090c2",
+      "updatedAt": "2026-06-20T19:20:28.493Z"
     },
     "trade:1": {
       "en": "International trade helps the economy.",
@@ -11452,19 +11452,19 @@
       "updatedAt": "2026-06-20T18:19:40.888Z"
     },
     "tray:0": {
-      "en": "I see a tray.",
-      "hash": "55d8644923187044",
-      "updatedAt": "2026-06-20T18:19:41.020Z"
+      "en": "She carried a tray of drinks.",
+      "hash": "65e14471ff16f1a6",
+      "updatedAt": "2026-06-20T19:20:27.029Z"
     },
     "tray:1": {
-      "en": "This is a tray.",
-      "hash": "a13cd708cc3a2156",
-      "updatedAt": "2026-06-20T18:19:41.052Z"
+      "en": "Put the cups on the tray.",
+      "hash": "f8c0b71719e1952b",
+      "updatedAt": "2026-06-20T19:20:27.154Z"
     },
     "tray:2": {
-      "en": "The tray is on the table.",
-      "hash": "9c304ff30c490d81",
-      "updatedAt": "2026-06-20T18:19:41.084Z"
+      "en": "The waiter dropped the tray.",
+      "hash": "79a614aaa68e250d",
+      "updatedAt": "2026-06-20T19:20:27.732Z"
     },
     "transport:2": {
       "en": "Is there any transport to the airport?",
@@ -11472,19 +11472,19 @@
       "updatedAt": "2026-06-20T18:19:41.488Z"
     },
     "tree:0": {
-      "en": "I see a tree.",
-      "hash": "ed97dbf8bc98a674",
-      "updatedAt": "2026-06-20T18:19:41.679Z"
+      "en": "The tree has green leaves.",
+      "hash": "f63672f1009f7522",
+      "updatedAt": "2026-06-20T19:20:28.194Z"
     },
     "tree:1": {
-      "en": "This is a tree.",
-      "hash": "15bb788758c338f5",
-      "updatedAt": "2026-06-20T18:19:41.745Z"
+      "en": "Birds live in that tree.",
+      "hash": "b997c158b96538ad",
+      "updatedAt": "2026-06-20T19:20:27.972Z"
     },
     "tree:2": {
-      "en": "The tree is on the table.",
-      "hash": "e3324a7132e08747",
-      "updatedAt": "2026-06-20T18:19:41.764Z"
+      "en": "We sat under a big tree.",
+      "hash": "ca382e3dd510b035",
+      "updatedAt": "2026-06-20T19:20:28.424Z"
     },
     "transport:1": {
       "en": "We transport food by truck.",
@@ -11507,9 +11507,9 @@
       "updatedAt": "2026-06-20T18:19:43.140Z"
     },
     "trousers:0": {
-      "en": "I see a trousers.",
-      "hash": "57fe897217092a90",
-      "updatedAt": "2026-06-20T18:19:43.195Z"
+      "en": "These trousers are too long for me.",
+      "hash": "540cd1dbee373c51",
+      "updatedAt": "2026-06-20T19:20:27.833Z"
     },
     "trick:2": {
       "en": "Don't fall for his trick.",
@@ -11522,14 +11522,14 @@
       "updatedAt": "2026-06-20T18:19:43.282Z"
     },
     "trousers:1": {
-      "en": "This is a trousers.",
-      "hash": "2d64576869d7b2de",
-      "updatedAt": "2026-06-20T18:19:43.682Z"
+      "en": "He put on his trousers and left.",
+      "hash": "fd1d0ec8e281681f",
+      "updatedAt": "2026-06-20T19:20:28.499Z"
     },
     "trousers:2": {
-      "en": "The trousers is on the table.",
-      "hash": "d99dd70127e24468",
-      "updatedAt": "2026-06-20T18:19:43.883Z"
+      "en": "Do you like my new trousers?",
+      "hash": "a60ba6ed74626ac2",
+      "updatedAt": "2026-06-20T19:20:29.107Z"
     },
     "turn:0": {
       "en": "It's your turn to speak.",
@@ -11557,9 +11557,9 @@
       "updatedAt": "2026-06-20T18:19:45.913Z"
     },
     "umbrella:1": {
-      "en": "This is an umbrella.",
-      "hash": "1bfc44397c782c79",
-      "updatedAt": "2026-06-20T18:19:46.267Z"
+      "en": "I left my umbrella on the bus.",
+      "hash": "e2ddc84a3f846e11",
+      "updatedAt": "2026-06-20T19:20:29.227Z"
     },
     "twist:2": {
       "en": "She put a twist in the story.",
@@ -11567,9 +11567,9 @@
       "updatedAt": "2026-06-20T18:19:46.284Z"
     },
     "umbrella:2": {
-      "en": "The umbrella is on the table.",
-      "hash": "ae8802e68bfc7874",
-      "updatedAt": "2026-06-20T18:19:46.327Z"
+      "en": "She opened her umbrella when it started to rain.",
+      "hash": "68dc9bc2cd1592bf",
+      "updatedAt": "2026-06-20T19:20:29.531Z"
     },
     "under:0": {
       "en": "Go under the bridge.",
@@ -11722,9 +11722,9 @@
       "updatedAt": "2026-06-20T18:19:55.981Z"
     },
     "umbrella:0": {
-      "en": "I see an umbrella.",
-      "hash": "e60fa5fa3de74c0f",
-      "updatedAt": "2026-06-20T18:19:56.112Z"
+      "en": "Take an umbrella, it might rain.",
+      "hash": "56eb76ec032b86ef",
+      "updatedAt": "2026-06-20T19:20:29.126Z"
     },
     "voice:2": {
       "en": "Can you hear my voice?",
@@ -11732,14 +11732,14 @@
       "updatedAt": "2026-06-20T18:19:56.361Z"
     },
     "wall:0": {
-      "en": "I see a wall.",
-      "hash": "edecbbfba133f65b",
-      "updatedAt": "2026-06-20T18:19:56.928Z"
+      "en": "There is a picture on the wall.",
+      "hash": "f058c18b2f95f98f",
+      "updatedAt": "2026-06-20T19:20:29.024Z"
     },
     "wall:1": {
-      "en": "This is a wall.",
-      "hash": "1b0306d413d124b3",
-      "updatedAt": "2026-06-20T18:19:57.224Z"
+      "en": "The wall is made of bricks.",
+      "hash": "052a9e604fedf9a7",
+      "updatedAt": "2026-06-20T19:20:29.646Z"
     },
     "walk:0": {
       "en": "Let's go for a walk in the park.",
@@ -11752,9 +11752,9 @@
       "updatedAt": "2026-06-20T18:19:57.451Z"
     },
     "wall:2": {
-      "en": "The wall is on the table.",
-      "hash": "d3cf55a780cd3858",
-      "updatedAt": "2026-06-20T18:19:57.453Z"
+      "en": "Don't lean against the wall.",
+      "hash": "21942fb9c5ad56b0",
+      "updatedAt": "2026-06-20T19:20:29.843Z"
     },
     "walk:2": {
       "en": "She takes a walk every morning.",
@@ -11807,19 +11807,19 @@
       "updatedAt": "2026-06-20T18:20:00.189Z"
     },
     "watch:0": {
-      "en": "I see a watch.",
-      "hash": "29fcd90ca7c875d9",
-      "updatedAt": "2026-06-20T18:20:00.410Z"
+      "en": "My watch is five minutes fast.",
+      "hash": "a46c3b96b560bfa9",
+      "updatedAt": "2026-06-20T19:20:29.838Z"
     },
     "watch:1": {
-      "en": "This is a watch.",
-      "hash": "d75c46bdcc349f9e",
-      "updatedAt": "2026-06-20T18:20:00.512Z"
+      "en": "He looked at his watch and hurried away.",
+      "hash": "81e3762c9a9834e9",
+      "updatedAt": "2026-06-20T19:20:30.372Z"
     },
     "watch:2": {
-      "en": "The watch is on the table.",
-      "hash": "dc67a01f920a651a",
-      "updatedAt": "2026-06-20T18:20:00.574Z"
+      "en": "Can you fix my watch?",
+      "hash": "efe15eaf3898c899",
+      "updatedAt": "2026-06-20T19:20:30.639Z"
     },
     "wave:0": {
       "en": "The waves are high today.",
@@ -11942,19 +11942,19 @@
       "updatedAt": "2026-06-20T18:20:05.309Z"
     },
     "wheel:0": {
-      "en": "I see a wheel.",
-      "hash": "8ce8950cd2058456",
-      "updatedAt": "2026-06-20T18:20:05.941Z"
+      "en": "The car has four wheels.",
+      "hash": "0c451a397538af12",
+      "updatedAt": "2026-06-20T19:20:30.394Z"
     },
     "wheel:1": {
-      "en": "This is a wheel.",
-      "hash": "efb05a1d74bf741e",
-      "updatedAt": "2026-06-20T18:20:05.961Z"
+      "en": "One wheel of the bicycle is flat.",
+      "hash": "7960ab9069e7ec2e",
+      "updatedAt": "2026-06-20T19:20:30.866Z"
     },
     "wheel:2": {
-      "en": "The wheel is on the table.",
-      "hash": "ee9a1ade9ee1c387",
-      "updatedAt": "2026-06-20T18:20:06.187Z"
+      "en": "He turned the wheel to the left.",
+      "hash": "4867fea596fb7945",
+      "updatedAt": "2026-06-20T19:20:30.747Z"
     },
     "when:0": {
       "en": "Come when you are ready.",
@@ -11992,24 +11992,24 @@
       "updatedAt": "2026-06-20T18:20:06.953Z"
     },
     "whip:0": {
-      "en": "I see a whip.",
-      "hash": "5ff402ea3e2d83f9",
-      "updatedAt": "2026-06-20T18:20:07.643Z"
+      "en": "The driver cracked his whip.",
+      "hash": "7a19fc2295919f76",
+      "updatedAt": "2026-06-20T19:20:30.899Z"
     },
     "whip:2": {
-      "en": "The whip is on the table.",
-      "hash": "c2ce5a6edf04a301",
-      "updatedAt": "2026-06-20T18:20:07.671Z"
+      "en": "Don't whip the dog.",
+      "hash": "59d20a5f49490938",
+      "updatedAt": "2026-06-20T19:20:30.940Z"
     },
     "whistle:0": {
-      "en": "I see a whistle.",
-      "hash": "17ef1aac4e6ec37d",
-      "updatedAt": "2026-06-20T18:20:07.705Z"
+      "en": "The referee blew his whistle.",
+      "hash": "617cb388b969cd4b",
+      "updatedAt": "2026-06-20T19:20:31.693Z"
     },
     "whip:1": {
-      "en": "This is a whip.",
-      "hash": "807d4aef49cfafad",
-      "updatedAt": "2026-06-20T18:20:07.872Z"
+      "en": "He used a whip to control the horse.",
+      "hash": "87d8c1475c87a77e",
+      "updatedAt": "2026-06-20T19:20:31.216Z"
     },
     "while:1": {
       "en": "He came while I was out.",
@@ -12022,9 +12022,9 @@
       "updatedAt": "2026-06-20T18:20:07.902Z"
     },
     "whistle:1": {
-      "en": "This is a whistle.",
-      "hash": "0dffa36ae1356baa",
-      "updatedAt": "2026-06-20T18:20:08.356Z"
+      "en": "He can whistle a tune.",
+      "hash": "760567c9d1c85b69",
+      "updatedAt": "2026-06-20T19:20:31.581Z"
     },
     "white:0": {
       "en": "The snow is white.",
@@ -12032,9 +12032,9 @@
       "updatedAt": "2026-06-20T18:20:08.415Z"
     },
     "whistle:2": {
-      "en": "The whistle is on the table.",
-      "hash": "61b5ab3456370cf3",
-      "updatedAt": "2026-06-20T18:20:08.484Z"
+      "en": "Please whistle when you need help.",
+      "hash": "9dbf8df661b9af89",
+      "updatedAt": "2026-06-20T19:20:32.226Z"
     },
     "who:0": {
       "en": "Who is there?",
@@ -12092,14 +12092,14 @@
       "updatedAt": "2026-06-20T18:20:10.822Z"
     },
     "window:0": {
-      "en": "I see a window.",
-      "hash": "6344fedb3e3ea5d4",
-      "updatedAt": "2026-06-20T18:20:11.057Z"
+      "en": "Open the window, please.",
+      "hash": "f5c38121d555aab2",
+      "updatedAt": "2026-06-20T19:20:32.447Z"
     },
     "window:1": {
-      "en": "This is a window.",
-      "hash": "cd70468cb5d9dfd2",
-      "updatedAt": "2026-06-20T18:20:11.287Z"
+      "en": "She looked out of the window.",
+      "hash": "7026954858e1e5af",
+      "updatedAt": "2026-06-20T19:20:32.094Z"
     },
     "wind:1": {
       "en": "A strong wind can break trees.",
@@ -12107,9 +12107,9 @@
       "updatedAt": "2026-06-20T18:20:11.606Z"
     },
     "window:2": {
-      "en": "The window is on the table.",
-      "hash": "f8a90aa2c8438f14",
-      "updatedAt": "2026-06-20T18:20:11.809Z"
+      "en": "The window is broken.",
+      "hash": "cec8550ecfe7829f",
+      "updatedAt": "2026-06-20T19:20:32.194Z"
     },
     "wind:2": {
       "en": "Close the window; the wind is cold.",
@@ -12127,14 +12127,14 @@
       "updatedAt": "2026-06-20T18:20:12.390Z"
     },
     "wing:0": {
-      "en": "I see a wing.",
-      "hash": "22b229c8b7029712",
-      "updatedAt": "2026-06-20T18:20:12.561Z"
+      "en": "Birds have two wings.",
+      "hash": "9312ae48adf8935b",
+      "updatedAt": "2026-06-20T19:20:32.192Z"
     },
     "wing:1": {
-      "en": "This is a wing.",
-      "hash": "69a8af0747aae86a",
-      "updatedAt": "2026-06-20T18:20:12.575Z"
+      "en": "The plane's left wing was damaged.",
+      "hash": "0aa85b371d32a58c",
+      "updatedAt": "2026-06-20T19:20:32.677Z"
     },
     "wine:1": {
       "en": "This wine comes from France.",
@@ -12142,9 +12142,9 @@
       "updatedAt": "2026-06-20T18:20:12.608Z"
     },
     "wing:2": {
-      "en": "The wing is on the table.",
-      "hash": "b9332628ee99227d",
-      "updatedAt": "2026-06-20T18:20:12.680Z"
+      "en": "The chicken flapped its wings.",
+      "hash": "4f3f5d56b65109b9",
+      "updatedAt": "2026-06-20T19:20:32.944Z"
     },
     "wine:2": {
       "en": "Do you like white wine or red wine?",
@@ -12152,19 +12152,19 @@
       "updatedAt": "2026-06-20T18:20:12.937Z"
     },
     "wire:0": {
-      "en": "I see a wire.",
-      "hash": "ce6e91cdb089dc5c",
-      "updatedAt": "2026-06-20T18:20:13.447Z"
+      "en": "The wire is connected to the battery.",
+      "hash": "c67c2702fcbcc061",
+      "updatedAt": "2026-06-20T19:20:33.046Z"
     },
     "wire:1": {
-      "en": "This is a wire.",
-      "hash": "704672a1f873c278",
-      "updatedAt": "2026-06-20T18:20:13.451Z"
+      "en": "Be careful, the wire is sharp.",
+      "hash": "7e3d5c3323efcf1a",
+      "updatedAt": "2026-06-20T19:20:33.525Z"
     },
     "wire:2": {
-      "en": "The wire is on the table.",
-      "hash": "e37d410fd504fedd",
-      "updatedAt": "2026-06-20T18:20:13.658Z"
+      "en": "He cut the wire with scissors.",
+      "hash": "45b22efdf7ed6a36",
+      "updatedAt": "2026-06-20T19:20:33.557Z"
     },
     "winter:0": {
       "en": "Winter is the coldest season.",
@@ -12272,19 +12272,19 @@
       "updatedAt": "2026-06-20T18:20:17.889Z"
     },
     "worm:1": {
-      "en": "This is a worm.",
-      "hash": "8b6d355b0e8cdc75",
-      "updatedAt": "2026-06-20T18:20:18.091Z"
+      "en": "Is that worm alive?",
+      "hash": "76c01ccb33d2c369",
+      "updatedAt": "2026-06-20T19:20:33.521Z"
     },
     "worm:0": {
-      "en": "I see a worm.",
-      "hash": "b5bdc6ede3320bb5",
-      "updatedAt": "2026-06-20T18:20:18.172Z"
+      "en": "The bird eats a worm.",
+      "hash": "11478229d2309f38",
+      "updatedAt": "2026-06-20T19:20:33.545Z"
     },
     "worm:2": {
-      "en": "The worm is on the table.",
-      "hash": "b2806ba4c61b239d",
-      "updatedAt": "2026-06-20T18:20:18.618Z"
+      "en": "Don't touch the worm!",
+      "hash": "2bde2a6e51bfc247",
+      "updatedAt": "2026-06-20T19:20:33.734Z"
     },
     "wound:0": {
       "en": "The wound on his arm is healing.",
@@ -12392,9 +12392,9 @@
       "updatedAt": "2026-06-20T18:20:22.582Z"
     },
     "ant:1": {
-      "en": "This is an ant.",
-      "hash": "d51bab2a7ab94d11",
-      "updatedAt": "2026-06-20T18:21:05.405Z"
+      "en": "There are many ants on the ground.",
+      "hash": "a480a05f823f1d75",
+      "updatedAt": "2026-06-20T19:18:50.613Z"
     },
     "answer:2": {
       "en": "I have no answer.",
@@ -12402,14 +12402,14 @@
       "updatedAt": "2026-06-20T18:21:05.489Z"
     },
     "ant:2": {
-      "en": "The ant is on the table.",
-      "hash": "1a7995e46f1f52aa",
-      "updatedAt": "2026-06-20T18:21:05.502Z"
+      "en": "The ant is walking on the wall.",
+      "hash": "e7621e25b2338183",
+      "updatedAt": "2026-06-20T19:18:50.630Z"
     },
     "ant:0": {
-      "en": "I see an ant.",
-      "hash": "fe98174e4b488590",
-      "updatedAt": "2026-06-20T18:21:05.514Z"
+      "en": "An ant can carry food much bigger than itself.",
+      "hash": "01e7ba2f284f5d3e",
+      "updatedAt": "2026-06-20T19:18:51.004Z"
     }
   }
 }

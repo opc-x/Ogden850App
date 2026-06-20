@@ -38,9 +38,11 @@ ${current ? `- 当前例句（有问题的，勿照抄）:\n${current}` : ''}`;
 2. 必须包含目标词（或其常见变形，如 -s / -ed）。
 3. 三条例句 **语境不同**（陈述 / 疑问 / 祈使，或日常 / 工作 / 抽象），让学习者秒懂。
 4. **严禁**以下机械模板病句：
+   - 「I see a/an X.」「This is a/an X.」「The X is on the table.」（Picturable 填空病句）
    - 「This is a/an X book.」「He is a/an X man.」「It is very X.」
    - 「This side is X.」「It is X, not Y.」「I have N.」「Give N to…」
    - 「This N is important.」「I take N.」「Make N.」
+   - 建筑/机构/抽象词（prison, hospital, church 等）禁止「在桌子上」类荒谬搭配
 5. 可数名词加 a/an/the；中文自然口语，与英文严格对齐。
 6. 每句 4–12 个英文词。
 
