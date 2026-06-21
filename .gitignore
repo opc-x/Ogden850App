@@ -40,3 +40,20 @@ public/assets/scenes/*.png
 # Pipeline backups & audit reports
 *.bak-batch
 *.report.json
+*.bak
+*.tmp
+*.swp
+*~
+
+# Design / agent scratch at repo root (app assets live under public/)
+/*.png
+/*.jpg
+/*.jpeg
+/*.gif
+/*.webp
+/*.svg
+/*.mp3
+/*.mp4
+
+# Cursor agent canvas scratch (chat artifacts, not source)
+canvases/

@@ -46,7 +46,8 @@
     "generate:covers": "tsx scripts/generate-scene-covers.ts",
     "generate:illustrations": "tsx scripts/generate-scene-illustrations.ts",
     "test": "vitest",
-    "dev:backend": "vercel dev"
+    "dev:backend": "vercel dev",
+    "prepare": "git config core.hooksPath .githooks 2>/dev/null || true"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

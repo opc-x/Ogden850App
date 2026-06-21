@@ -1,0 +1,43 @@
+#!/bin/sh
+# Reject staging temp artifacts that belong in .gitignore
+
+set -e
+
+blocked=0
+
+check_pattern() {
+  pattern="$1"
+  label="$2"
+  matches=$(git diff --cached --name-only --diff-filter=ACM | grep -E "$pattern" || true)
+  if [ -n "$matches" ]; then
+    echo "pre-commit: blocked $label:"
+    echo "$matches" | sed 's/^/  /'
+    blocked=1
+  fi
+}
+
+# Root-level media (design iterations, screenshots) — assets belong in public/
+check_pattern '^[^/]+\.(png|jpe?g|gif|webp|svg|mp3|mp4)$' 'root media scratch'
+
+# Already-gitignored artifact dirs (catch if force-added)
+check_pattern '^Designs/' 'Designs pilot output'
+check_pattern '^\.playwright-' 'Playwright MCP artifacts'
+check_pattern '^dev-dist/' 'Vite PWA dev-dist'
+check_pattern '^canvases/' 'Cursor canvas scratch'
+
+# Pipeline / audit temp files
+check_pattern '\.(bak-batch|report\.json)$' 'pipeline backup/report'
+check_pattern '\.(bak|tmp|swp)$' 'editor temp'
+check_pattern '~$' 'backup suffix'
+
+# Secrets
+check_pattern '^\.env$' '.env secret'
+check_pattern '^\.env\.local$' '.env.local secret'
+
+if [ "$blocked" -eq 1 ]; then
+  echo ""
+  echo "Move these files out of the repo or add to .gitignore, then unstage."
+  exit 1
+fi
+
+exit 0
