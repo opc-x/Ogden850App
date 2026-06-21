@@ -15,7 +15,7 @@ const fadeUp = {
 
 function GoogleIcon() {
   return (
-    <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden>
+    <svg className="w-4 h-4" viewBox="0 0 24 24" aria-hidden>
       <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
       <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
       <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
@@ -189,41 +189,36 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
         className="relative w-full px-6 pt-4 pb-6"
       >
         <button
-          onClick={handleGoogle}
+          onClick={onComplete}
           disabled={busy}
-          className="group w-full bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] hover:from-[#185532] hover:to-[#4da369] text-white font-black py-4 rounded-2xl flex justify-center items-center gap-2.5 shadow-xl shadow-emerald-500/25 active:scale-[0.97] transition-all text-lg disabled:opacity-60"
+          className="group w-full bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] hover:from-[#185532] hover:to-[#4da369] text-white font-black py-4 rounded-2xl flex justify-center items-center gap-2 shadow-xl shadow-emerald-500/25 active:scale-[0.97] transition-all text-lg disabled:opacity-60"
         >
-          {busy ? (
-            <RefreshCw className="w-5 h-5 animate-spin" />
-          ) : (
-            <span className="flex items-center justify-center rounded-full bg-white p-1">
-              <GoogleIcon />
-            </span>
-          )}
-          Google 一键登录 / 注册
+          开始体验
+          <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
         </button>
 
         {error && !emailSheet && (
           <p className="mt-2 text-center text-xs text-rose-600">{error}</p>
         )}
 
-        <button
-          onClick={() => { setError(null); setEmailMode('register'); setEmailSheet(true); }}
-          disabled={busy}
-          className="mt-3 w-full bg-white border border-emerald-200 text-[#2f7d4f] font-bold py-3.5 rounded-2xl flex justify-center items-center gap-2 active:scale-[0.97] transition-all text-sm disabled:opacity-60"
-        >
-          <Mail className="w-4 h-4" />
-          用邮箱注册 / 登录
-        </button>
-
-        <button
-          onClick={onComplete}
-          disabled={busy}
-          className="mt-3 w-full text-center text-[13px] font-bold text-slate-400 hover:text-slate-600 transition-colors flex items-center justify-center gap-1 disabled:opacity-60"
-        >
-          先随便逛逛
-          <ArrowRight className="w-3.5 h-3.5" />
-        </button>
+        <div className="mt-3 grid grid-cols-2 gap-3">
+          <button
+            onClick={handleGoogle}
+            disabled={busy}
+            className="bg-white border border-slate-200 text-slate-600 font-bold py-3 rounded-2xl flex justify-center items-center gap-2 active:scale-[0.97] transition-all text-sm disabled:opacity-60"
+          >
+            {busy ? <RefreshCw className="w-4 h-4 animate-spin" /> : <GoogleIcon />}
+            谷歌登录
+          </button>
+          <button
+            onClick={() => { setError(null); setEmailMode('register'); setEmailSheet(true); }}
+            disabled={busy}
+            className="bg-white border border-slate-200 text-slate-600 font-bold py-3 rounded-2xl flex justify-center items-center gap-2 active:scale-[0.97] transition-all text-sm disabled:opacity-60"
+          >
+            <Mail className="w-4 h-4" />
+            邮箱登录
+          </button>
+        </div>
 
         <p className="mt-3 text-center text-[11px] font-medium text-slate-400">
           已上线 {DIALOGUE_MARKETING_LABEL} 句真实场景对话 · 持续更新
