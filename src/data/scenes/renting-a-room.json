@@ -1,0 +1,825 @@
+{
+  "slug": "renting-a-room",
+  "sceneKey": "Renting a Room",
+  "titleZh": "租房看房签约",
+  "titleEn": "Renting a Flat",
+  "tier": "P0",
+  "freqRank": 17,
+  "emoji": "🏠",
+  "gradient": "linear-gradient(135deg,#fae8ff,#c084fc)",
+  "storyHook": "看房问租金，谈条件，决定租下",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "预约看房",
+      "goal": "约好到达"
+    },
+    {
+      "beat": "进行",
+      "title": "参观议价",
+      "goal": "看房间问价"
+    },
+    {
+      "beat": "进行",
+      "title": "谈条件",
+      "goal": "讨论租期"
+    },
+    {
+      "beat": "收束",
+      "title": "决定签约",
+      "goal": "约定搬入"
+    }
+  ],
+  "illustration": {
+    "label": "租房看房",
+    "motifs": [
+      "house",
+      "key",
+      "door"
+    ],
+    "accent": "#9333ea"
+  },
+  "narrative": {
+    "when": "周六下午，下周要搬出宿舍",
+    "where": "居民区出租公寓",
+    "who": "甲（租客）· 乙（房东）",
+    "how": "预约看房，实地参观",
+    "method": "看房间、问租金、谈条件、决定租期",
+    "event": "甲预算有限，要在今天定下住处"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good afternoon. I am here for the flat.",
+      "zh": "下午好，我是来看房的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Right, come in. I am Brown.",
+      "zh": "好的，请进。我是布朗。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "The steps are a bit much. But the place looks good from here.",
+      "zh": "台阶有点多，不过从这儿看房子还不错。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Yes, the view is better from the top. This way.",
+      "zh": "是的，楼上的视野更好。这边走。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "The living room gets much sun. That is a good thing.",
+      "zh": "客厅采光很好，这是个加分项。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "It does. South-facing, so warm all day.",
+      "zh": "确实，朝南，整天都暖和。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "How much for the house a month?",
+      "zh": "房子每月多少钱？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Twelve hundred. Water and heating are in that.",
+      "zh": "一千二，水费和暖气都算在里面。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "That is a bit high for me. I was hoping for nine hundred.",
+      "zh": "这对我来说有点高，我本以为九百。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Nine hundred is too low for this part. All the house things are new.",
+      "zh": "在这个地段九百太低了，家具都是新的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I see they are new. But my money is short.",
+      "zh": "我看得出来是新的，但我手头紧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "How much can you give then?",
+      "zh": "那你最多能给多少？",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Would one thousand be possible?",
+      "zh": "一千块行吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "One thousand... I would have to say no to that.",
+      "zh": "一千……那我只能说不。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "What if I give more for the first payment?",
+      "zh": "如果我首付多交点呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "What do you say?",
+      "zh": "你这话什么意思？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "I put down two months now, but the price is one thousand a month.",
+      "zh": "我现在付两个月，但每月价格是一千。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Two months now? That is two thousand up front.",
+      "zh": "先付两个月？那就是两千块现钱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Yes. And the rest month by month. That is right, is it not?",
+      "zh": "对，剩下的按月付。这样挺公平的，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "That is right. But I still need one year on the paper.",
+      "zh": "行。但我还是要在纸上写一年。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "A year is too long for me. I may move for work after six months.",
+      "zh": "一年对我来说太长了，六个月后我可能因为工作要搬。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "If you go after six months, I have to get a new man. That is trouble.",
+      "zh": "你六个月就走，我还得再找人，挺麻烦的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I will keep the place clean and in good order. No damage.",
+      "zh": "我会保持房子干净整洁，不会有损坏。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Right. Six months then. But you give me all six months now.",
+      "zh": "好吧，那就六个月。但你要一次性付清六个月房租。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Six thousand at one time? That is a great number for me.",
+      "zh": "一次性六千？对我来说太多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "I see your point. But I have my rules.",
+      "zh": "我明白你的意思，但我有我的规矩。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "What about three months now and three after?",
+      "zh": "先付三个月，后面三个月再付怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Three months now is still three thousand. That is less hard.",
+      "zh": "先付三个月就是三千，压力小点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "I would be happy with that. And you get your money safe.",
+      "zh": "这样我也乐意，你的钱也稳当。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "That is right. Three thousand now, three thousand in three months.",
+      "zh": "行吧，先付三千，三个月后再付三千。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Great! I will get the money tomorrow.",
+      "zh": "太好了！我明天去取钱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "No need. I take card or net payment.",
+      "zh": "不用，我收刷卡或网络支付。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Even better. I will do the payment now then.",
+      "zh": "那更好，我现在就付。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Let me get the payment box. One second.",
+      "zh": "我去拿刷卡机，稍等。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Take your time. I will look at the room again.",
+      "zh": "不着急，我再看看房间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Here is the box. You put your card in.",
+      "zh": "刷卡机来了，您把卡插进去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Right. Let me do that now.",
+      "zh": "好，我现在就刷。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Good. The payment went through.",
+      "zh": "好了，钱到账了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Right. So when may I come in?",
+      "zh": "好的，那我什么时候能搬进来？",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Seven days from now from ten in the morning. I will be here.",
+      "zh": "下周六上午十点起就行，我在这儿等你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "That is good. I will come on day six morning.",
+      "zh": "那好，我第六天早上过来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Do you have a car for your things?",
+      "zh": "你有车搬东西吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "No, just bags. I do not have much.",
+      "zh": "没有，就几个包，东西不多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "That is good. The lift is working, so no trouble.",
+      "zh": "那没问题，电梯能用，不费劲。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Good. One more thing: is the net connection ready?",
+      "zh": "好的，还有件事：网线通了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Yes, it is on. The name and key are on the box.",
+      "zh": "通了，账号密码在盒子上写着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Great. I will need that for my work.",
+      "zh": "太好了，我工作需要上网。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "I see. Then you will be happy here.",
+      "zh": "明白，那你在这儿会住得舒服。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I would say so. The room gets good light.",
+      "zh": "我也觉得，这房间采光好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Yes. It is a good place. be safe of it.",
+      "zh": "是啊，好地方，好好爱护。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "May we have another look at the cooking room?",
+      "zh": "我们能再看一眼厨房吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Right. This way. The water is warm, and the fire is clean.",
+      "zh": "好的，这边走。水是热的，火也干净。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "The ice box is new. That is good.",
+      "zh": "冰箱是新的，不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Yes. I put it in last month. It keeps things cold well.",
+      "zh": "对，上个月装的，制冷很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "What about the washing machine? Does it work?",
+      "zh": "洗衣机呢，好用吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "It does. I will let you see. You put the clothes in, put your finger on this, and it goes.",
+      "zh": "好用，我演示给你看。衣服放进去，按这个键就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "That is simple. I like that.",
+      "zh": "简单，我喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "The place is ready for you. No troubles so far.",
+      "zh": "房子都准备好了，目前没啥问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I am happy with it. But the price is still a bit high for me.",
+      "zh": "我挺满意的，但价格对我来说还是有点高。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "I gave you a good price. This part is in need.",
+      "zh": "我已经给你好价了，这地段抢手。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "I see. But I am learning, so my money is short.",
+      "zh": "我懂，但我在学习，所以手头紧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "What is your top number?",
+      "zh": "你最多能出多少？",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "I was hoping for nine hundred a month.",
+      "zh": "我本来希望九百一个月。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Nine hundred is too low for this place.",
+      "zh": "九百太低了，这房子不行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "What if I give you a thousand?",
+      "zh": "那要是我出一千呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "A thousand is still low, but I might say yes if you give the money for six months at one time.",
+      "zh": "一千还是低，但如果你一次性给六个月的钱，我可能同意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Six months all at one time? That is six thousand. Hard for me.",
+      "zh": "一次性付半年？那就是六千，对我来说难。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "That is the best I can do.",
+      "zh": "这是我能给的最好条件了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Let me see... I will take it. Six months, a thousand a month.",
+      "zh": "让我想想……我租了。半年，每月一千。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Good. Then it is fixed.",
+      "zh": "好，那我们说定了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Let us see the rooms again.",
+      "zh": "我们再看看房间吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Right. Take your time.",
+      "zh": "好的，慢慢看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "The room window gets good light.",
+      "zh": "房间窗户采光不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Yes, it faces south. Warm in winter.",
+      "zh": "对，朝南，冬天暖和。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Does the payment for the room cover heating?",
+      "zh": "房间的费用包含暖气吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "No, that is separate. About fifty a month.",
+      "zh": "不，另外算，大概每月五十。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Right. And the water and electric?",
+      "zh": "好的。水电呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Those are on you as well. Not much.",
+      "zh": "也是你付，不多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Quite right. The place is clean and quiet.",
+      "zh": "没错。这地方干净又安静。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "That is what I was going for. Happy you like it.",
+      "zh": "我就是想这样。很高兴你喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "So the payment is twelve hundred a month?",
+      "zh": "所以月付款是一千二？",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Yes, that is the price. Good value for this part.",
+      "zh": "对，就是这个价。这地段很值了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "I have little money. Is nine hundred possible?",
+      "zh": "我钱不多。九百可以吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Nine hundred? That is too low. The house things are all new.",
+      "zh": "九百？太低了。家里的东西都是新的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "What about one thousand? I give the first month and a safe money.",
+      "zh": "一千怎么样？我付首月并给一笔押金。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "One thousand is still low. But I might do one thousand fifty.",
+      "zh": "一千还是低。但一千零五十可以考虑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "One thousand fifty... That is still a bit much. What about one thousand, and I give you six months all at one time?",
+      "zh": "一千零五十……还是有点吃力。一千怎么样，我一次性付半年？",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Six months all at one time? That is six thousand. That would help me.",
+      "zh": "一次性付半年？那就是六千。这倒帮了我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Yes. I can get the money together. I would take good care of the place.",
+      "zh": "对。我能凑到钱。我会好好爱护房子的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "That is right. One thousand a month, six months up front. It is a go.",
+      "zh": "行。一千一个月，半年预付。成交。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "May we see the room again? I would like to be certain.",
+      "zh": "我们再看一眼房间吧？我想确认一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Right. This way. Sun comes in all afternoon.",
+      "zh": "好的。这边请。下午阳光一直照进来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "The window is good. And the bed is new, yes?",
+      "zh": "窗户不错。床是新的，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Yes, new bed, new table. I put them in last month.",
+      "zh": "对，新床新桌子。上个月刚换的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "The cooking room is clean. That is important for me.",
+      "zh": "厨房很干净。这对我来说很重要。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "I keep it clean. The last man was a cook. No trouble.",
+      "zh": "我保持得很干净。上一个租户是厨师，没出过问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Good. Then I am happy. Let us make the paper work.",
+      "zh": "好。那我满意了。我们来办手续吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Right. Let me get the paper from the drawer.",
+      "zh": "好的。我从抽屉里拿合同出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Take your time. I will have a last look at the room.",
+      "zh": "不着急。我最后再看一眼房间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Here it is. Two copies. Please go through it.",
+      "zh": "给你。一式两份。请过目。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "The price for the room is one thousand a month, six months up front. That is right.",
+      "zh": "房间的价格每月一千，半年预付。没错。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Yes. The first payment is for one moon of the room. I have the money ready.",
+      "zh": "是的。首付是一个月的房间使用费。钱我已经准备好了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Good. Put your name at the end of every page.",
+      "zh": "好的。每页末尾签上你的名字。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Done. Here is the money. Six thousand for the house, one thousand as a safe note.",
+      "zh": "签好了。这是钱。六千房费，一千押金。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I will see. ... Seven thousand. That is right.",
+      "zh": "我数一下……七千。数目对了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Here is your key. The one for the front door, the small one for your room.",
+      "zh": "这是你的钥匙。大门那把，小的是你房间的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Thank you. I will come on the day after the last day of the week with my things.",
+      "zh": "谢谢。我会在一周最后一天之后的那天带我的东西过来。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "That is good. The room will be ready for you.",
+      "zh": "没问题。房间会给你准备好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Good. I will be here about ten in the morning.",
+      "zh": "好的。我大概早上十点到。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Right. See you then. Take care of the key.",
+      "zh": "好。到时候见。保管好钥匙。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "预算紧张的租客在周六下午看房，房东开出高价，但房间条件诱人。经过一番讨价还价，双方终于达成协议。",
+  "storyScript": "【开场·预约看房】周六下午三点，甲准时来到居民区那栋灰白色公寓楼下。他抬头望了望五楼窗户，深吸一口气，按响门铃。对讲机里传来乙的声音，确认身份后，铁门咔嗒一声开了。甲爬上楼梯，心里盘算着预算：这个月生活费只剩两千，房租不能超过八百。乙已在门口等候，是个四十来岁的中年男人，穿着格子衬衫，笑容客气。简单寒暄后，乙引他进屋。\n\n【进行·参观议价】客厅不大，但采光很好，午后阳光斜照在木地板上。卧室朝南，窗外能看到小区花园。厨房和卫生间都干净整洁，热水器、冰箱、洗衣机一应俱全。甲心里满意，但脸上不露声色。他问月租多少，乙报出一千二。甲心里一沉，这远超预算。他试探性还价，说学生租房预算有限，能否降到九百。乙摇头，说这地段这个价已经很公道了，而且家具家电都是新的。甲沉默片刻，又看了看房间，确实不错。\n\n【进行·谈条件】甲提出折中方案：一千，但押一付一。乙犹豫了一下，说押金可以少点，但租金不能再降。甲又说租期只签半年，因为下学期可能实习换地方。乙皱眉，说半年太短，至少一年。甲解释自己情况特殊，但保证会爱惜房子。乙考虑了一会儿，最终同意半年，但要求甲一次性付清半年租金。甲计算了一下，半年六千，虽然压力大，但可以找朋友借点。他咬咬牙，答应了。\n\n【收束·决定签约】双方谈妥，乙从抽屉里拿出租房合同。甲仔细看了条款，确认无误后签了字。乙收了押金和半年租金，把钥匙交给甲，说下周六就可以搬进来。甲接过钥匙，心里一块石头落地。走出公寓时，夕阳西下，他掏出手机给室友发消息：房子搞定了，下周搬！"
+}

@@ -109,9 +109,6 @@ export const BrowserView: React.FC<BrowserViewProps> = ({
     <div className="space-y-5">
       <header className="px-0.5">
         <h2 className="text-3xl font-black text-slate-800 tracking-tight">850 核心词典</h2>
-        <p className="text-sm font-normal mt-1.5 tracking-wide bg-gradient-to-r from-slate-400 via-slate-500/75 to-slate-400/55 bg-clip-text text-transparent">
-          按奥格登原生分类，精准过滤与检索
-        </p>
       </header>
 
       {/* 筛选控制区 — 与词表分层 */}
@@ -135,26 +132,39 @@ export const BrowserView: React.FC<BrowserViewProps> = ({
         <div className="space-y-3 mt-2.5 pt-3 border-t border-slate-100">
           <div className="overflow-x-auto pb-0.5 hide-scrollbar -mx-0.5 px-0.5">
             <div className="flex gap-2 min-w-max">
-              {BROWSER_CATEGORIES.map((cat) => (
+              {BROWSER_CATEGORIES.map((cat) => {
+                const selected = browserCategory === cat;
+                const chipClass =
+                  cat === 'all'
+                    ? selected
+                      ? 'bg-cyan-50 text-cyan-600 border-cyan-200 shadow-sm'
+                      : 'bg-slate-50/70 text-slate-500 border-slate-200/80 hover:bg-slate-100/80'
+                    : selected
+                      ? CATEGORY_LABELS[cat].filterActive
+                      : CATEGORY_LABELS[cat].filterIdle;
+                return (
                   <button
                     key={cat}
                     onClick={() => setBrowserCategory(cat)}
-                    className={`px-4 py-2 rounded-xl text-xs font-black transition-all cursor-pointer border flex items-center gap-1.5 ${
-                      browserCategory === cat
-                        ? 'bg-cyan-50 text-cyan-600 border-cyan-200 shadow-sm'
-                        : 'bg-slate-50/70 text-slate-500 border-slate-200/80 hover:bg-slate-100/80'
-                    }`}
+                    className={`px-4 py-2 rounded-xl text-xs font-black transition-all cursor-pointer border flex items-center gap-1.5 ${chipClass}`}
                   >
+                    {cat !== 'all' ? (
+                      <span
+                        className={`h-2 w-2 shrink-0 rounded-[2px] ${CATEGORY_LABELS[cat].dot}`}
+                        aria-hidden
+                      />
+                    ) : null}
                     <span>{cat === 'all' ? '全部分类' : CATEGORY_LABELS[cat]?.zh}</span>
                     <span
                       className={`text-[10px] tabular-nums ${
-                        browserCategory === cat ? 'text-cyan-600/60' : 'text-slate-400'
+                        selected ? 'opacity-60' : 'text-slate-400'
                       }`}
                     >
                       {cat === 'all' ? wordsData.length : categoryCounts[cat]}
                     </span>
                   </button>
-                ))}
+                );
+              })}
             </div>
           </div>
 

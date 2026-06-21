@@ -1,0 +1,820 @@
+{
+  "slug": "video-call",
+  "sceneKey": "Video Call",
+  "titleZh": "视频通话见面",
+  "titleEn": "Video Chat",
+  "tier": "P2",
+  "freqRank": 26,
+  "emoji": "📹",
+  "gradient": "linear-gradient(135deg,#cffafe,#0891b2)",
+  "storyHook": "发起视频，远程寒暄，结束通话",
+  "storyBlurb": "周日上午，甲在异地房间发起视频呼叫，等待远方的父母接听。屏幕亮起，父母的笑脸出现，一场跨越距离的温馨寒暄就此展开。",
+  "storyScript": "【开场·发起呼叫】周日上午的阳光透过窗帘缝隙洒在甲的书桌上。他提前几分钟坐定，深吸一口气，指尖在键盘上敲击，向远方的父母发起视频呼叫。画面弹出父母略显模糊的脸庞，背景是熟悉的客厅。母亲的声音带着笑意传来，甲嘴角上扬，仿佛隔着屏幕也能闻到家里的味道。\n\n【进行·远程聊天】甲汇报最近的工作，说新项目顺利，同事相处融洽。母亲叮嘱按时吃饭，父亲问天气转凉有没有添衣。聊到老家院子里的柿子树，母亲说今年结了很多果，特意留了几个最大的，等甲回来吃。父亲拿来甲小时候写的作文，甲看着自己歪歪扭扭的字迹，忍不住笑出声。\n\n【收束·结束通话】不知不觉聊了近一个小时，甲主动说该去准备午饭了，父母笑着点头。甲说下周同一时间再聊，母亲叮嘱照顾好自己，父亲简短说了句挂了。甲挥手，看着屏幕上的画面缓缓变黑，房间又安静了，但心里暖融融的。",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "发起呼叫",
+      "goal": "等接听"
+    },
+    {
+      "beat": "进行",
+      "title": "远程聊天",
+      "goal": "看画面聊近况"
+    },
+    {
+      "beat": "收束",
+      "title": "结束通话",
+      "goal": "道别挂断"
+    }
+  ],
+  "illustration": {
+    "label": "视频通话",
+    "motifs": [
+      "screen",
+      "face",
+      "wave"
+    ],
+    "accent": "#0e7490"
+  },
+  "narrative": {
+    "when": "周日上午，和远方的家人约好的时间",
+    "where": "甲的房间，对着电脑屏幕",
+    "who": "甲（在外地工作的人）· 乙（家里的父母）",
+    "how": "提前发起呼叫，等对方接听",
+    "method": "发起呼叫、互相问好、聊近况、约下次再聊、挂断",
+    "event": "甲很久没回家，想跟父母视频说说最近的生活"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good morning, I am calling.",
+      "zh": "早上好，我打电话来了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Good morning, we are ready.",
+      "zh": "早上好，我们准备好了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "How are you today?",
+      "zh": "今天怎么样？",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "I am quite well, thank you.",
+      "zh": "我很好，谢谢。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "It is nice to okay.",
+      "zh": "很高兴见到你。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "I would like to talk a bit.",
+      "zh": "我想聊一会儿。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "That is fine, go on.",
+      "zh": "可以，继续说。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "What is the weather like?",
+      "zh": "天气怎么样？",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "It is quite cold today",
+      "zh": "今天比较凉",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "I will get a coat then.",
+      "zh": "我会穿上大衣。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "That is a good idea.",
+      "zh": "这是个好主意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Shall we talk about work?",
+      "zh": "我们谈谈工作吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I am not sure, what do you think?",
+      "zh": "我不确定，你觉得呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "It is up to you, of course.",
+      "zh": "当然由你决定。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Right, I will start then.",
+      "zh": "好，我开始吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "I would like to hear about your work.",
+      "zh": "我想听听你的工作情况",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "It is going well, I think.",
+      "zh": "工作进展很顺利，我想",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "That is good to hear.",
+      "zh": "这很好听",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Yes, they are quite good.",
+      "zh": "是的，他们相当不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "I am glad to hear that.",
+      "zh": "我很高兴听到这个",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "We have a new project now.",
+      "zh": "我们现在有一个新项目",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "What is the project about?",
+      "zh": "这个项目是关于什么的",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "It is about a new thing",
+      "zh": "这是关于一件新东西",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "That sounds interesting.",
+      "zh": "听起来很有趣",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Yes, it is quite interesting.",
+      "zh": "是的，这很有趣",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "I would like to know more.",
+      "zh": "我想了解更多",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "I will tell you more next time.",
+      "zh": "我下次会告诉你更多",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "That is fine, I think.",
+      "zh": "这样就好了，我想",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "We should talk about something else.",
+      "zh": "我们应该谈点别的",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "What do you think about the news?",
+      "zh": "你对新闻有什么看法",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Well, i am not sure, what do you think?",
+      "zh": "我不确定，你觉得呢",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "I think it is quite bad.",
+      "zh": "我觉得相当不好",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Yes, it is not good.",
+      "zh": "是的，不太好",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "We should be careful.",
+      "zh": "我们应该小心",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Well, that is a good idea.",
+      "zh": "这是个好主意",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "I will be careful, do not worry.",
+      "zh": "我会小心，不用担心",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "That is fine",
+      "zh": "这挺好",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "We should talk about something happy.",
+      "zh": "我们应该谈点开心的事",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "What do you think about the garden?",
+      "zh": "你对花园有什么看法",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "I think it is quite good.",
+      "zh": "我觉得相当不错",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I would like to see it now.",
+      "zh": "我现在想看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Shall we have a look at the garden?",
+      "zh": "我们去看看花园吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Right, I will show you.",
+      "zh": "好吧，我来给你看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "That is a nice tree.",
+      "zh": "那是一棵好树。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I think it is quite tall.",
+      "zh": "我觉得它相当高。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Yes, it is very tall.",
+      "zh": "是的，它很高。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "We should take a photo.",
+      "zh": "我们应该拍张照片。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "I would like to take a photo.",
+      "zh": "我想拍张照片。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Shall we take a photo now?",
+      "zh": "我们现在拍张照片吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "That is a good idea, okay.",
+      "zh": "我觉得不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Well, i think it is quite good.",
+      "zh": "我觉得它相当不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "We should talk about the weather.",
+      "zh": "我们应该谈谈天气。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "What do you think about the weather?",
+      "zh": "你对天气有什么看法？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "I think it is quite cold.",
+      "zh": "我觉得它相当冷。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Yes, it is very cold.",
+      "zh": "是的，它很冷。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "We should go inside.",
+      "zh": "我们应该进去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Shall we go inside now?",
+      "zh": "我们现在进去吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Well, that is fine.",
+      "zh": "这挺好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I would like to go inside.",
+      "zh": "我想进去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "I think it is time to eat.",
+      "zh": "我觉得该吃饭了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "What do you think about the food?",
+      "zh": "你对食物有什么看法？",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "I think it is quite good, okay.",
+      "zh": "我觉得还不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Yes, it is very good.",
+      "zh": "是的，它很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "We should eat now.",
+      "zh": "我们现在应该吃饭。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Shall we eat now?",
+      "zh": "我们现在吃吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Right, I would like some food now.",
+      "zh": "好吧，我现在想吃点东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "I would like some hot food.",
+      "zh": "我想吃点热食。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "That is fine, I will get some.",
+      "zh": "那挺好，我去拿些。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Shall we eat at the table?",
+      "zh": "我们要在桌子上吃吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Yes, that is a good idea.",
+      "zh": "是的，那是个好主意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "I would like to okay more often.",
+      "zh": "我想更常看到你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "We can talk on the phone.",
+      "zh": "我们可以通过电话聊天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Well, well, that is a good idea.",
+      "zh": "那是个好主意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "I will call you tomorrow.",
+      "zh": "我明天会给你打电话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Right, I will wait for your call.",
+      "zh": "好吧，我会等你的电话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "I am very happy to talk to you.",
+      "zh": "我很高兴跟你聊天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "We should talk more often.",
+      "zh": "我们应该更常聊天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Well, yes, that is a good idea.",
+      "zh": "对，这样挺好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "I will try to call you every day.",
+      "zh": "我会试着每天给你打电话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "That is very kind of you.",
+      "zh": "你真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I would like to see your face more often.",
+      "zh": "我想更常看到你的脸。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "We can use the box to talk.",
+      "zh": "我们可以用盒子聊天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "That is a good way to talk.",
+      "zh": "那是聊天的好方式。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "I would like to use the box more often.",
+      "zh": "我想更常用这个箱子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Right, that is a good idea.",
+      "zh": "好吧，那是个好主意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "I would like to talk to you on the machine.",
+      "zh": "我很高兴用机器跟你聊天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "We should use the box to talk more often.",
+      "zh": "我们应该更常用箱子聊天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Yes, that is a good idea, okay.",
+      "zh": "是的，这样很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "I will talk to you every day on the box.",
+      "zh": "我会试着每天用箱子跟你聊天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Well, that is very kind of you.",
+      "zh": "你太好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I would like to hear your voice more often.",
+      "zh": "我想更常听到你的声音。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "We can use the phone to talk.",
+      "zh": "我们可以用电话聊天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Well, that is a good way to talk.",
+      "zh": "这样聊天挺好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "I will try to use the phone more often.",
+      "zh": "我会试着更常用电话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Well, right, that is a good idea.",
+      "zh": "好啊，这样很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Well, i would like to okay more often.",
+      "zh": "我希望能更常看到你.",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "That is fine, we can use the box to see each other.",
+      "zh": "这样很好，我们可以用视频聊天软件看到对方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Shall we talk again next week?",
+      "zh": "我们下周再聊吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "That is fine, I will call you then.",
+      "zh": "好啊，那我下周就会打电话给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "I would like to hear about your week.",
+      "zh": "我想听听你这周的生活。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right, I will tell you all about it.",
+      "zh": "好啊，我会把一切都告诉你。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "We can talk for a long time then.",
+      "zh": "那我们下次可以长聊一会儿。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "That is a good idea, I like talking to you.",
+      "zh": "这是个好主意，我喜欢跟你聊天。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "I must go now, it is time to eat.",
+      "zh": "我现在得走了，已经到吃饭的时间了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Okay, have a good meal.",
+      "zh": "好吧，你吃饭的时候慢慢吃。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "You too, be safe of yourself.",
+      "zh": "你也一样，照顾好自己。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "I will, thank you for talking.",
+      "zh": "我会的，谢谢你今天跟我聊天。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "It was nice talking to you, sure.",
+      "zh": "跟你聊天很愉快，暂别。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "okay next week then.",
+      "zh": "下周见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "I am looking forward to it, goodbye.",
+      "zh": "我很期待，暂时再见。",
+      "beat": "收束"
+    }
+  ]
+}

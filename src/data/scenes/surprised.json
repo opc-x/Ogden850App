@@ -1,0 +1,820 @@
+{
+  "slug": "surprised",
+  "sceneKey": "Surprised",
+  "titleZh": "意外惊喜反应",
+  "titleEn": "What a Surprise",
+  "tier": "P2",
+  "freqRank": 46,
+  "emoji": "😲",
+  "gradient": "linear-gradient(135deg,#fef3c7,#f97316)",
+  "storyHook": "突然发现意外，表达惊讶，弄清缘由",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "意外发现",
+      "goal": "没想到"
+    },
+    {
+      "beat": "进行",
+      "title": "追问缘由",
+      "goal": "问怎么回事"
+    },
+    {
+      "beat": "收束",
+      "title": "接受结果",
+      "goal": "笑或感慨"
+    }
+  ],
+  "illustration": {
+    "label": "惊讶",
+    "motifs": [
+      "gift",
+      "wow",
+      "eyes"
+    ],
+    "accent": "#ea580c"
+  },
+  "narrative": {
+    "when": "周六下午，甲刚到朋友家门口",
+    "where": "乙家门口/客厅",
+    "who": "甲（被惊喜的人）· 乙（准备惊喜的朋友们）",
+    "how": "甲推门进去，发现意外的场景",
+    "method": "意外发现场景、追问是怎么回事、听完缘由、笑着接受",
+    "event": "其实是乙提前给甲准备了一个生日惊喜"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Oh! What is all this?",
+      "zh": "哦！这都是什么？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Happy day! Surprise!",
+      "zh": "生日快乐！惊喜！",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Is this for me? I did not see this coming.",
+      "zh": "这是给我的吗？我真没想到。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Yes, we put it together for you.",
+      "zh": "对，我们为你准备的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "But it is not my day today, is it?",
+      "zh": "但今天不是我生日吧？",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "It is today! You let it slip. Look at the day.",
+      "zh": "就是今天！你忘了。看看日期。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Oh, you are right! I am so surprised.",
+      "zh": "哦，你说得对！我太惊讶了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "We have been working on this for a week.",
+      "zh": "我们为这个忙了一周了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "How did you keep it secret from me?",
+      "zh": "你们怎么瞒住我的？",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "We made a group talk without you.",
+      "zh": "我们建了个群，没拉你。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I walked past your house every day and saw nothing!",
+      "zh": "我每天路过你家，啥也没看出来！",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "We got under the curtains when you came near.",
+      "zh": "你走近时我们就躲窗帘后面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "That is a good idea! I had no idea.",
+      "zh": "好主意！我完全没察觉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "We put a sign on the door: 'no laughs'.",
+      "zh": "我们在门上贴了‘没乐子’的牌子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "You tricked me well. I love it.",
+      "zh": "你们把我骗得好。我喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Right, and we put a cover on the cake box.",
+      "zh": "对了，蛋糕盒上还盖了布。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "I saw nothing strange when I came in.",
+      "zh": "我进来时啥也没觉得奇怪。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "We kept the air balls in the back room.",
+      "zh": "我们把气球藏在里屋了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "That was well done. I am surprised.",
+      "zh": "干得漂亮。我很惊喜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Now put out the lights and say what you hope for.",
+      "zh": "现在吹灭灯，说出你的愿望。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "I would like more friends like you.",
+      "zh": "我希望能有更多你们这样的朋友。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "That is a good thought. Now cut the cake.",
+      "zh": "好想法。现在切蛋糕吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Is it right to give him the things first?",
+      "zh": "要不要先把东西给他？",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Yes, open this one. It is from all of us.",
+      "zh": "好，拆这个吧。是我们一起送的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "A book and a pen! How did you see I would like these?",
+      "zh": "一本书和一支笔！你怎么看出我想要的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "We saw you looking at them in the store last week.",
+      "zh": "我们上周看到你在店里看它们了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "You have a good eye for what I need.",
+      "zh": "你对我需要的东西眼光真准。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "That is good news. Now, what about the cake?",
+      "zh": "好消息。现在，蛋糕呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "I will have a small bit, not too much.",
+      "zh": "我来一小块，别太多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Here you are. Would you like a drink with it?",
+      "zh": "给你。要喝点什么吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Yes, some water, please. This is a great get-together.",
+      "zh": "好，请来点水。这聚会太棒了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "It is not done. We have more plays after this.",
+      "zh": "还没结束呢。我们之后还有更多游戏。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Play? You have done much work on this.",
+      "zh": "游戏？你们为这花了不少功夫。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "It was a pleasure. You are our friend.",
+      "zh": "我们很乐意。你是我们的朋友。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "I am happy to have you all. Thank you.",
+      "zh": "有你们我很高兴。谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right, now let us get the cake cut.",
+      "zh": "好了，现在咱们切蛋糕吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Did you make this cake with your own hands?",
+      "zh": "这蛋糕是你亲手做的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Yes, I did. It is a simple sweet cake.",
+      "zh": "对，我做的。就是简单的甜蛋糕。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "It looks great. You are a good cook.",
+      "zh": "看着很棒。你厨艺真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Thank you. I was happy to do it.",
+      "zh": "谢谢。我很乐意做这个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I would not have thought you had the time for this.",
+      "zh": "我真没想到你还有时间弄这个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "We made time. It was a secret.",
+      "zh": "我们挤出来的时间。这是个秘密。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "How did you keep it from me?",
+      "zh": "你们怎么瞒着我？",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "We started the chat without you.",
+      "zh": "我们没等你就开始聊了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "That is a good idea. I am surprised.",
+      "zh": "真是个好主意。我挺意外的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "You almost saw us, but we kept away.",
+      "zh": "你差点发现我们，但我们躲开了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "When was that? I saw nothing.",
+      "zh": "什么时候？我什么都没看见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "You came to the door last week on day two.",
+      "zh": "上周二你来过门口。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I do not keep a record of every day.",
+      "zh": "我哪记得每天的事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "So that is why we did it. Happy day.",
+      "zh": "所以我们才这么干。快乐的日子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I still do not get how you did it.",
+      "zh": "我还是没搞懂你们怎么做到的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "We kept a secret for weeks.",
+      "zh": "我们保密了好几周。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Did you get all these things in one go?",
+      "zh": "这些东西是一次性搞来的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "No, bit by bit, so no one would see.",
+      "zh": "不是，一点点弄的，免得被人发现。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "And the cake? Who made that?",
+      "zh": "那蛋糕呢？谁做的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "My sister. She is good at cakes.",
+      "zh": "我妹妹。她做蛋糕很在行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "She kept quiet too? That is hard.",
+      "zh": "她也守口如瓶？真不容易。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "We all did that. It was the work of all of us.",
+      "zh": "我们都这样做了。这是我们所有人的工作。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I am touched. You went to such trouble.",
+      "zh": "我很感动。你们费了这么大劲。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "You are good. Now let us be happy.",
+      "zh": "你很好。现在咱们开心吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "I still can't get over it. How did you keep it secret?",
+      "zh": "我还是缓不过来。你们怎么瞒住的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "We had a secret group and only talked when you were not about.",
+      "zh": "我们建了个秘密群，只在你不在的时候聊。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "And no one let slip? Not even a word?",
+      "zh": "没人说漏嘴？一个字都没漏？",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Not a word. We were all very safe.",
+      "zh": "一个字都没有。我们都很小心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I am surprised. You are all such good friends.",
+      "zh": "我真服了。你们都是这么好的朋友。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "That is what friends do. Now come and see your presents.",
+      "zh": "朋友就该这样。快来看看你的礼物。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Oh, there are so many! Which one do I open first?",
+      "zh": "哦，这么多！我先拆哪个？",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Start with the great one. It is from all of us.",
+      "zh": "先拆那个大的。那是我们大家送的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "This is too much. You did not have to do all this.",
+      "zh": "这也太隆重了。你们不必这样的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "We were happy to. Now be quiet and open it!",
+      "zh": "我们乐意。别说了，快拆开吧！",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "All right, all right. I will open it.",
+      "zh": "好好好，我拆就是。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Go soft on the paper. Do not make holes in it.",
+      "zh": "对纸轻点，别弄出洞来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Why? Would you like to keep it?",
+      "zh": "怎么？你还想留着？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "I might use it again for another present.",
+      "zh": "可能下次包礼物还能用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "You are a wise one. Here goes... Oh!",
+      "zh": "你真会过日子。那我拆了……哦！",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Do you like it? We thought you would.",
+      "zh": "喜欢吗？我们猜你会喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "That is the book I was after! How did you see that?",
+      "zh": "这是我一直想要的那本书！你怎么知道的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Your sister let it out. She is not as safe as us.",
+      "zh": "你姐说漏嘴了。她可没我们这么小心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "I will have to give her a talking-to after.",
+      "zh": "回头我得说说她。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Be kind. She only had a desire to help.",
+      "zh": "别这么说，她也是想帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I still can't get over it. How did you keep it quiet?",
+      "zh": "我还是没缓过来。你们怎么瞒得这么好？",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "We had a secret group. You did not look at my box.",
+      "zh": "我们建了个秘密群。你从不看我手机。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "That is true. I am not one to look at things of others.",
+      "zh": "那倒是。我不是那种看别人东西的人。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "That is why it worked. You are too good a man.",
+      "zh": "所以才能成。你人太好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "So every time I came, you were not here?",
+      "zh": "所以我每次来，你们都不在？",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Yes, past the curtain. It was a bit of a laugh.",
+      "zh": "对，窗帘那边。还挺好玩的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "I saw the curtain move one time. I thought it was the wind.",
+      "zh": "我确实有次看到窗帘动了一下。还以为是风。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "That was me. I almost gave it away.",
+      "zh": "那是我。差点露馅了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Well, you did well in the end. I am very happy.",
+      "zh": "不过最后还是成功了。我很开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "That is all. Happy day, friend.",
+      "zh": "那就够了。生日快乐，兄弟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I will keep this day in mind.",
+      "zh": "我会把今天记在心里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Good. Now come, let us have cake.",
+      "zh": "好。来吧，我们切蛋糕。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Is that a sweet brown one?",
+      "zh": "那是甜棕色的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Yes, the one you like best. I made it.",
+      "zh": "对，你最爱吃的。我做的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "You are a good cook. That is a happy chance.",
+      "zh": "你厨艺真好。真是幸运。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Not so good as you say. But it is all right.",
+      "zh": "没你说的那么好。不过还行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Let us get a plate for every person.",
+      "zh": "我们给每人拿个盘子好吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Yes, I will get them from the back.",
+      "zh": "好，我去后面拿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "I will cut the cake. It is a great one.",
+      "zh": "我来切蛋糕。挺大的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Take your time. We have all day.",
+      "zh": "慢慢来。我们有一整天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "This is a great surprise. I did not see it coming.",
+      "zh": "这真是个大大的惊喜。我完全没想到。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "We kept it secret for a week. Did you have any idea?",
+      "zh": "我们保密了一周。你一点都没察觉吗？",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Not at all. You are good at keeping secrets.",
+      "zh": "完全没有。你们真会保密。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "We kept away when you came near the house.",
+      "zh": "你走近房子时我们躲开了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "That is kind of you.",
+      "zh": "你真好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "You are our friend. It is only right.",
+      "zh": "你是我们的朋友。这是应该的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "This day will keep with me.",
+      "zh": "这一天我会记得。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Now let us have some cake and play.",
+      "zh": "现在我们来吃蛋糕、玩一玩吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Yes, please. I am ready for a good time.",
+      "zh": "好的。我准备好开心一场了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Happy day, old friend.",
+      "zh": "生日快乐，老朋友。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "推开门，满屋彩带和气球，朋友们齐声喊“生日快乐”！原来大家都记得今天是我的生日。",
+  "storyScript": "【开场·意外发现】周六下午，阳光斜斜地洒在乙家门口的台阶上。甲拎着背包，像往常一样推开门，却瞬间愣住了——客厅里挂满了彩色气球和亮闪闪的彩带，桌上摆着一个大蛋糕，旁边堆着包装精美的礼物。朋友们从沙发后、门后跳出来，齐声喊道：“生日快乐！”甲瞪大眼睛，嘴巴张成了O型，背包差点滑落。他完全没想到，今天会是这样的场景。\n\n【进行·追问缘由】甲缓过神来，笑着摇头问：“你们这是……怎么回事？今天不是我生日啊。”乙走上前，拍了拍他的肩膀说：“怎么不是？你自己忙忘了，今天就是你的生日。我们早就策划好了，想给你一个惊喜。”甲挠了挠头，掏出手机一看日期，恍然大悟。他环顾四周，看着朋友们一张张笑脸，心里涌起一股暖流。\n\n【进行·继续追问】甲还是有点不敢相信，追问：“你们什么时候准备的？我怎么一点都不知道？”乙指了指角落里的装饰箱，得意地说：“上周就开始准备了，还特意建了个群瞒着你。你每次路过我家，我们都躲在窗帘后面，生怕被你发现。”甲听了，忍不住笑出声来，眼眶却有点发热。他想起最近自己一直加班，连生日都忘了，朋友们却记得这么清楚。\n\n【收束·接受结果】甲深深吸了一口气，笑着张开双臂，给了乙一个大大的拥抱。他转身对所有人说：“谢谢你们，我真的太意外了，也太开心了。”朋友们欢呼起来，拉着他切蛋糕、拆礼物。客厅里充满了欢声笑语，彩带在灯光下闪闪发光。甲看着这一切，心里暖暖的，他知道，这就是最好的生日礼物。"
+}

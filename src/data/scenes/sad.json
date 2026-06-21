@@ -1,0 +1,820 @@
+{
+  "slug": "sad",
+  "sceneKey": "Sad",
+  "titleZh": "倾诉难过事",
+  "titleEn": "When Feeling Sad",
+  "tier": "P2",
+  "freqRank": 43,
+  "emoji": "😢",
+  "gradient": "linear-gradient(135deg,#e0e7ff,#818cf8)",
+  "storyHook": "说出难过，获得安慰，慢慢好转",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "情绪低落",
+      "goal": "心里难过"
+    },
+    {
+      "beat": "进行",
+      "title": "倾听安慰",
+      "goal": "陪伴建议"
+    },
+    {
+      "beat": "收束",
+      "title": "稍感好转",
+      "goal": "平静些"
+    }
+  ],
+  "illustration": {
+    "label": "难过",
+    "motifs": [
+      "rain",
+      "tear",
+      "hug"
+    ],
+    "accent": "#6366f1"
+  },
+  "narrative": {
+    "when": "周二晚上，甲一个人在家",
+    "where": "甲家客厅，乙打电话过来",
+    "who": "甲（难过的人）· 乙（关心的朋友）",
+    "how": "语气低落地说出发生的事",
+    "method": "说出难过的原因、乙耐心倾听安慰、给一些建议、心情慢慢好转",
+    "event": "甲养的小狗今天生病了，心里很难过"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I am not well tonight.",
+      "zh": "我今晚不太好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "What is wrong?",
+      "zh": "怎么了？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "My dog is ill. It is at the animal hospital.",
+      "zh": "我的小狗病了，在宠物医院。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Oh, that is hard news. I am sad.",
+      "zh": "哦，这消息真让人难受。我很难过。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "It would not take food or drink. It was ill two times.",
+      "zh": "它不吃不喝，还吐了两次。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "You did well to take it to the doctor.",
+      "zh": "你做得对，带它去看医生了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "The doctor said it has to be there for the night.",
+      "zh": "医生说它得住院一晚。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "I have no doubt they will see to it well.",
+      "zh": "我毫不怀疑他们会把它照顾得很好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "I keep crying. The house is so without things.",
+      "zh": "我一直在哭，房子空荡荡的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "I am with you. You are not on your own.",
+      "zh": "我陪着你呢。你不是一个人。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I keep smelling its cover. It makes me more sad.",
+      "zh": "我一直闻着它的毯子，反而更难过。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "That is a hard thing. But you did all you could.",
+      "zh": "那确实难受。但你已经尽力了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I keep thinking it is in pain. That is the worst part.",
+      "zh": "我总想着它在疼，这是最难受的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "The medical men will give it something for the pain.",
+      "zh": "医生会给它止痛的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "I hope so. I do not like it to be in pain.",
+      "zh": "希望如此。我不想它疼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Would you like me to come over?",
+      "zh": "要不要我过去陪你？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "No, but thank you for asking.",
+      "zh": "不用了，但谢谢你问我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "That is a good idea. I will come with you tomorrow.",
+      "zh": "好主意。明天我陪你去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "That would be good. I would not go on my own.",
+      "zh": "那挺好的。我不想一个人去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Then that is fixed. Now, make a cup of tea for you.",
+      "zh": "那就说定了。现在，给自己泡杯茶吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "I will. I have some tea with a flower smell.",
+      "zh": "好的。我有带花香味的茶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Good. While the water gets warm, put on a light picture.",
+      "zh": "好。烧水的时候，放一部轻松的电影。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I would not like to see a picture.",
+      "zh": "我不想看电影。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Then have your tea. I am here.",
+      "zh": "那就喝茶吧。我在这儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "You are kind. Your voice gives me a bit of comfort.",
+      "zh": "你真好。你的声音让我舒服了一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "That is good. You are not on your own now.",
+      "zh": "那很好。你现在不是一个人了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Yes. I am not so shut in.",
+      "zh": "嗯。我不觉得那么闷了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "That is the way. You are strong.",
+      "zh": "这就对了。你很坚强。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "I am not strong. But I am a little better.",
+      "zh": "我不坚强。但好了一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "One step at a time. How is the tea?",
+      "zh": "一步一步来。茶怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "It is warm and soft. The room seems less hollow.",
+      "zh": "温温的，很柔和。让房间没那么空荡荡了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Good. A warm drink does that. Do you have a cover?",
+      "zh": "好。热饮就有这个效果。你有毯子吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Yes. The small dog cover is here. I keep it near.",
+      "zh": "有。小狗的毯子在这儿。我放在身边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "It will be happy to look at you tomorrow.",
+      "zh": "它明天看到你会很高兴的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "I will take the warm cover with me.",
+      "zh": "我会带上保暖的盖布。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "That is a good idea. It will have your smell.",
+      "zh": "好主意。毯子上有你的味道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Yes. I hope it will be happy here.",
+      "zh": "嗯。希望它在这里开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Dogs get comfort from what is dear to them.",
+      "zh": "狗从熟悉的东西中得到安慰。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "You are right. I will put it in my bag now.",
+      "zh": "你说得对。我现在就把它放进包里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Good. And get some rest after that. Tomorrow is a new day.",
+      "zh": "好。之后好好休息。明天是新的一天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I will do that. Thank you for your kind words.",
+      "zh": "我会的。谢谢你这么暖心的话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "No need for thanks. That is what friends are for.",
+      "zh": "不用谢。朋友就是干这个的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "I am still a bit sad, but not so much now.",
+      "zh": "我还是有点难过，但没刚才那么厉害了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "That is good. Let the sad feeling go bit by bit.",
+      "zh": "那就好。让难过一点点散掉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I will make a cup of tea and see a light picture.",
+      "zh": "我打算泡杯茶，看部轻松的电影。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "That is a good idea. A laugh will do you good.",
+      "zh": "好主意。笑一笑对你有好处。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Yes, I have a short play in mind.",
+      "zh": "嗯，我想到一部短的搞笑戏。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "That is good. Have a laugh, then get a good rest.",
+      "zh": "很好。笑一笑，然后好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I will do that. You have been a great help.",
+      "zh": "我会的。你帮了大忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Right. Give me a ring if you need a talk.",
+      "zh": "好的。想聊了就给我打电话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I will put on the kettle now.",
+      "zh": "我现在去烧水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Do you have a good short play to see?",
+      "zh": "你有没有好看的短剧推荐？",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "It is about a man and his dog. Quite a laugh.",
+      "zh": "这是关于一个男人和他的狗。挺逗的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "That sounds right for me. I will get that one.",
+      "zh": "听起来很适合我。我就看那个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Good. Keep your mind off things for a time.",
+      "zh": "好。暂时别想那些事了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Yes. I will put my box away and only see the play.",
+      "zh": "嗯。我把手机放一边，专心看剧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "That is the way. Let the story take you away.",
+      "zh": "这就对了。让故事带你走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "I hope the dog in the play gets better too.",
+      "zh": "希望剧里的狗也能好起来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I have no doubt. It is a happy play.",
+      "zh": "我毫不怀疑。那是部开心的剧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "That was a good talk. I am better now.",
+      "zh": "谢谢你陪我聊。我现在好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "It was wise to get you on the line.",
+      "zh": "还好我给你打了电话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "I am happy you did. How is your throat now?",
+      "zh": "还好你打了。现在嗓子怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Better. The tea helped a bit.",
+      "zh": "好点了。茶有点用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Good. Would you like to talk more about the dog?",
+      "zh": "那就好。你还想聊聊小狗的事吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Not now. I will watch the play.",
+      "zh": "现在不想。我要看剧了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "That is a good idea. Let your mind rest.",
+      "zh": "好主意。让脑子歇一歇。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Will you be up late? I may send a word after.",
+      "zh": "你会熬夜吗？我晚点可能发个消息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "No, I will go to bed early. But you can send a word in the morning.",
+      "zh": "不，我会早睡。但你早上可以发个消息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Right. I will say how the dog is.",
+      "zh": "好。我会告诉你小狗的情况。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Thank you. You are a good friend.",
+      "zh": "谢谢你。你是个好朋友。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "That is a good time to get my word.",
+      "zh": "你打来真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Right. What are friends for?",
+      "zh": "当然啦。朋友是做什么的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "The house is so quiet without him.",
+      "zh": "没他在，房子空荡荡的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "I see. He is with a good doctor now.",
+      "zh": "我知道。他现在由好医生照顾。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "I keep turning over if he is in fear.",
+      "zh": "我老想着他会不会害怕。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Dogs are strong. He will be all right.",
+      "zh": "狗很坚强。他会没事的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Do you say so?",
+      "zh": "你真这么想？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Yes. And you did the right thing taking him in.",
+      "zh": "是的。你及时送他去是对的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "I hope the doctor will let me see him tomorrow.",
+      "zh": "希望医生明天让我看他。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "I will come with you if you like.",
+      "zh": "如果你愿意，我陪你去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Would you? That would be good.",
+      "zh": "真的吗？那太好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Right. What time is good for you?",
+      "zh": "好的。你什么时间方便？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "After the first meal, about nine?",
+      "zh": "吃完第一餐，九点左右？",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "That is all right. I will be at your door.",
+      "zh": "没问题。我到你家门口接你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "You are a true friend. Thank you.",
+      "zh": "你真是好朋友。谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "No need for thanks. That is what friends do.",
+      "zh": "不用谢。朋友就该这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "I still have a knot in my stomach.",
+      "zh": "我心里还是堵得慌。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "That is normal. But you are not on your own now.",
+      "zh": "正常。但你现在不是一个人了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "I will keep my mind on other things.",
+      "zh": "我试着想点别的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Good idea. How about a cup of tea?",
+      "zh": "好主意。来杯茶怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I will get the kettle on.",
+      "zh": "我去烧水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Good. Do you have any tea?",
+      "zh": "好。你有茶叶吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Yes, we have some flower tea.",
+      "zh": "有，我们有花茶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "That sounds soft and warm.",
+      "zh": "听起来又香又暖。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "It is. I will make two cups.",
+      "zh": "是的。我泡两杯。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "I would like that. Take your time.",
+      "zh": "那太好了。不着急。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "The water is boiling now.",
+      "zh": "水开了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Right. The smell will do you good.",
+      "zh": "好。闻闻味道对你有好处。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Here is your cup. Mind, it is warm.",
+      "zh": "你的茶。小心烫。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "That is good. I am a bit better now.",
+      "zh": "那很好。我现在好一点了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "I am happy you are feeling a bit better.",
+      "zh": "很高兴你好一点了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Yes, talking to you is a great help.",
+      "zh": "嗯，跟你说话好多了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "We will go see the dog tomorrow.",
+      "zh": "我们明天去看小狗。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Is that right you have time?",
+      "zh": "你确定有时间吗？",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I will make time. It is no trouble.",
+      "zh": "我会腾出时间。不麻烦。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "That is very kind of you.",
+      "zh": "你真好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Get some sleep tonight.",
+      "zh": "今晚睡一会儿。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "I will. I am tired now.",
+      "zh": "我会的。我现在累了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Right. I will ring you in the morning.",
+      "zh": "好的。我早上打给你。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Thank you. Good night.",
+      "zh": "谢谢你。晚安。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "小狗生病了，甲独自在家难过。乙打来电话，耐心倾听安慰，甲心情慢慢好转。",
+  "storyScript": "【开场·情绪低落】周二晚上，客厅的灯光昏黄，甲蜷缩在沙发里，怀里抱着小狗的毯子。小狗今天突然不吃不喝，还吐了两次，甲带它去了宠物医院，医生说需要住院观察。回到家，空荡荡的房间里只剩下时钟的滴答声。甲把脸埋进毯子里，闻到小狗熟悉的气味，眼泪就止不住地往下掉。心里像压了一块石头，喘不过气来。\n\n【进行·倾听安慰】手机突然震动，是乙打来的电话。甲犹豫了一下，还是接起来，声音带着哭腔。乙立刻听出不对劲，轻声问怎么了。甲断断续续地说出小狗生病的事，乙没有打断，只是安静地听着。等甲说完，乙才温柔地说：我知道你很难过，小狗对你来说就像家人一样。乙没有说太多大道理，只是说：你做得已经很好了，及时带它去医院，现在它正在接受治疗。甲听着乙的声音，觉得心里没那么堵了。\n\n【进行·陪伴建议】乙提议：要不要我过去陪你？甲摇摇头说不用，但心里暖暖的。乙又说：明天我陪你去医院看它吧。甲犹豫了一下，答应了。乙接着建议：今晚别想太多，给自己泡杯热茶，看部轻松的电影。甲走到厨房，烧了壶水，泡了一杯茉莉花茶。茶香袅袅升起，甲轻轻啜了一口，温热的感觉从喉咙滑到胃里。乙又说了些自己以前养宠物的趣事，甲听着听着，嘴角微微上扬。\n\n【收束·稍感好转】挂掉电话后，甲坐在沙发上，手里捧着茶杯。虽然心里还是担心小狗，但不再那么绝望了。窗外的夜色很安静，甲想起乙说的话：明天会是新的一天。甲深呼吸了一下，把小狗的毯子叠好放在一旁，决定早点休息。心里那块石头似乎轻了一些，甲闭上眼睛，慢慢沉入梦乡。"
+}

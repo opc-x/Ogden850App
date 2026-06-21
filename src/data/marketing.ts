@@ -2,9 +2,19 @@
 export const WORD_COUNT = 850;
 export const COVERAGE_CLAIM = 90;
 export const SCENE_TARGET_COUNT = 50;
-export const DIALOGUE_TARGET_COUNT = 5188;
-export const DIALOGUE_MARKETING_LABEL = '5188+';
+export const DIALOGUE_TARGET_COUNT = 5410;
+export const DIALOGUE_MARKETING_LABEL = '5410+';
 export const DIALOGUE_PROGRESS_LABEL = '对话入库进度';
+
+/** App logo 品牌渐变 — 120° 深绿 → 浅绿 */
+export const BRAND_GRADIENT = 'linear-gradient(120deg, #1f6b3f 0%, #2f7d4f 45%, #5cb377 100%)';
+
+/** 卡片底：logo 同色标，左深右浅（可见渐变，非纯色） */
+export const BRAND_GRADIENT_CARD =
+  'linear-gradient(to right, #b5d4c3 0%, #c9e2d4 42%, #e0f0e8 100%)';
+
+/** 场景练完进度条 — 暖色，与绿色卡片区隔 */
+export const SCENE_PROGRESS_GRADIENT = 'linear-gradient(to right, #c2710a, #f59e0b)';
 
 /** 底部导航与页头品牌 — 统一用「场景口语」，避免与造词纺旧称混用 */
 export const ASSEMBLER_NAV_LABEL = '场景口语';

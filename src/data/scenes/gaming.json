@@ -1,0 +1,820 @@
+{
+  "slug": "gaming",
+  "sceneKey": "Gaming",
+  "titleZh": "联机打游戏",
+  "titleEn": "Playing Games",
+  "tier": "P2",
+  "freqRank": 40,
+  "emoji": "🎮",
+  "gradient": "linear-gradient(135deg,#ede9fe,#7c3aed)",
+  "storyHook": "开局匹配，协作通关，结算告别",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "开始游戏",
+      "goal": "进关卡"
+    },
+    {
+      "beat": "进行",
+      "title": "协作闯关",
+      "goal": "互相帮助"
+    },
+    {
+      "beat": "收束",
+      "title": "结束复盘",
+      "goal": "约下局"
+    }
+  ],
+  "illustration": {
+    "label": "游戏",
+    "motifs": [
+      "controller",
+      "screen",
+      "star"
+    ],
+    "accent": "#6d28d9"
+  },
+  "narrative": {
+    "when": "周六晚上八点，约好的联机时间",
+    "where": "甲的房间，电脑或游戏机前",
+    "who": "甲（玩家）· 乙（队友，语音联机）",
+    "how": "开局后用语音互相提醒配合",
+    "method": "开始游戏、互相提醒配合、闯过难关、结束后约下一局",
+    "event": "甲和乙这一关一直没通过，今晚想再试一次"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "You ready?",
+      "zh": "你准备好了吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Yes, let's go.",
+      "zh": "好了，开始吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Same man, same idea.",
+      "zh": "老样子，还是那个人。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "I will pull first.",
+      "zh": "我先拉怪。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Good, I will do damage.",
+      "zh": "好，我来输出。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Watch the red circles.",
+      "zh": "小心那些红圈。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Got it. Move left?",
+      "zh": "收到。往左移动？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Yes, three steps.",
+      "zh": "对，三步。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "When you say so.",
+      "zh": "听你指示。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Three, two, one, jump!",
+      "zh": "三，二，一，跳！",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "We did it! That was a good run.",
+      "zh": "我们做到了！这一把不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Right, but that last bit was a shock.",
+      "zh": "是啊，但最后那下真吓人。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "My picture went still for a second.",
+      "zh": "我的画面卡了一秒。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "I had to take the heat for you.",
+      "zh": "我只好替你扛着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Thanks, man. Same time seven days from now?",
+      "zh": "谢了，兄弟。一周后的老时间？",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Yes, same time. New level?",
+      "zh": "对，老时间。新关卡？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "I would like that. No more sharp bits.",
+      "zh": "行啊。别再那么刺激了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "We will be ready. I will get a better net.",
+      "zh": "我们会准备好的。我换个好点的网络。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Good. I will send you the list before then.",
+      "zh": "好。到时候提前发你清单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "We are ready for the match.",
+      "zh": "我们准备好比赛了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Right. Let us start now.",
+      "zh": "对，我们现在开始吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Good play. You did well.",
+      "zh": "玩得好，你表现不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Nice work. We won.",
+      "zh": "干得漂亮，我们赢了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Thanks. You too.",
+      "zh": "谢了。你也一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Okay, let us go.",
+      "zh": "好的，我们出发吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Right, ready for the chief?",
+      "zh": "好了，准备好见头儿了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Yes, let us go. I will pull first.",
+      "zh": "嗯，上吧。我先拉怪。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Watch the red circle on your left.",
+      "zh": "看你左边那个红圈。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Got it. I will move now.",
+      "zh": "看到了。我这就躲。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Good. I will make you well.",
+      "zh": "好。我会让你好起来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Thanks. I was feeling low.",
+      "zh": "谢了。我状态不好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Jump on three. One, two, three!",
+      "zh": "数到三跳。一，二，三！",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "We got through. His cover is down.",
+      "zh": "跳过来了。他的护具破了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Now use your strongest move.",
+      "zh": "现在用你最狠那招。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Done. He is almost dead.",
+      "zh": "放了。他快没血了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "My box is fixed. I am not moving.",
+      "zh": "我屏幕卡了。动不了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Get back! I will take the blows.",
+      "zh": "退后！我来扛。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "It is working again. I am back.",
+      "zh": "好了。我回来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Use all your power now. Quick!",
+      "zh": "现在全力输出。快！",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Yes! He is down. We did it!",
+      "zh": "成了！他倒了。我们过了！",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Well done. That was a near thing.",
+      "zh": "干得漂亮。刚才真悬。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Your quick move saved us.",
+      "zh": "你反应快救了我们。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "I thought we were done for.",
+      "zh": "我以为我们要完了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "My heart is still going quick.",
+      "zh": "我心跳还很快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Same here. Let's take a minute.",
+      "zh": "我也是。缓一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Right. Then we go again?",
+      "zh": "好。那再来一局？",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Yes, but not the same level.",
+      "zh": "嗯，但别打这关了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Right. New place?",
+      "zh": "行。换个地方？",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I would like that. Something softer.",
+      "zh": "好。打简单点的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "That is good. I will send the note.",
+      "zh": "很好。我发通知。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Ready? I will go first.",
+      "zh": "准备好了？我先上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Right. I am after you.",
+      "zh": "好。我跟在你后面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Watch out! There is a hole on your left.",
+      "zh": "小心！你左边有个坑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Got it. I jumped over it.",
+      "zh": "看到了。我跳过去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Good. Now we take down that great one.",
+      "zh": "好。现在我们拿下那个大的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "I will keep it. You go at it from the side.",
+      "zh": "我来拖住它。你从侧面打。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "That is a good idea. I am moving now.",
+      "zh": "好主意。我现在过去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "It is turning! Get back!",
+      "zh": "它在转身！快退！",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "That is too near! I have not much blood left.",
+      "zh": "那太近了！我剩下的血不多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Here, take this thing. I have one more.",
+      "zh": "给你这个。我还有一个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Great, I am full again. Let us go on.",
+      "zh": "好，我血满了。继续吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Keep still, it will make a jump. Get ready.",
+      "zh": "别动，它要跳了。准备好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Right, I see it. I will go to the side.",
+      "zh": "好，我看见了。我往旁边走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Now! It is on the earth. Give it all you have!",
+      "zh": "就是现在！它落地了。全力打！",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I am about to do my strong move. Keep it still!",
+      "zh": "我要放大招了。让它别动！",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "I will give it a shock. Three, two, one, now!",
+      "zh": "我电它一下。三、二、一，放！",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Yes! It is down! But here come more small ones.",
+      "zh": "好！它倒了！但是小怪来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "I will take the small ones. You do the great one.",
+      "zh": "小的我来。你解决大的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Done! It is dead! We did it!",
+      "zh": "搞定！死了！我们成功了！",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Well done, friend. That was a good fight.",
+      "zh": "干得好，朋友。这场打得漂亮。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Now for the last part. Are you ready?",
+      "zh": "最后一部分了。你准备好了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Yes, I am. Let us go together.",
+      "zh": "嗯，准备好了。一起上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Watch out! Fire on your left side!",
+      "zh": "小心！你左边有火！",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "I see it. I will jump over it.",
+      "zh": "看见了。我跳过去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Good. Now go at it from the back.",
+      "zh": "好。现在从后面来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "I am going. Keep it turned away.",
+      "zh": "我去了。让它背对我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "I will make a noise here. It will come to me.",
+      "zh": "我在这弄出声音。它会过来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "It is coming to you. I am ready.",
+      "zh": "它朝你去了。我准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Now! I have it. Do your strong move!",
+      "zh": "就是现在！我控住它了。放大招！",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Here it is! Take that! Yes, it is done!",
+      "zh": "来了！吃我一招！好，搞定了！",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Great work! That was a good fight.",
+      "zh": "干得漂亮！这场打得不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Your timing was good. I was almost in trouble.",
+      "zh": "你时机抓得正好。我差点有麻烦。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "You did well to keep it off me.",
+      "zh": "你把它引开做得很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "I had to. You were not well.",
+      "zh": "必须的。你状态太差了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Let us go again. I would make it quick.",
+      "zh": "再来一次？我会快点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Yes, but let me get a drink first.",
+      "zh": "好，不过我先喝口水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Right. I will keep my place here.",
+      "zh": "行。我就在这儿待着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Back. Ready when you are.",
+      "zh": "好了。你准备好了就开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Let us go quicker this time.",
+      "zh": "这次咱们快一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Right. No errors. Go!",
+      "zh": "好。别出错。开！",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "We did it at last.",
+      "zh": "我们终于过了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "That last part was a near thing.",
+      "zh": "最后那下真悬。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "That was a smart play.",
+      "zh": "那招玩得很聪明。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "We almost lost that one.",
+      "zh": "刚才差一点就输了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "But you kept your head.",
+      "zh": "但你很冷静。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Do another run?",
+      "zh": "再来一局？",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Not now. I need a rest.",
+      "zh": "现在不了。我得歇会儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "That is good. Same time seven days from now?",
+      "zh": "也行。下周老时间？",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Yes. I will be here.",
+      "zh": "好。我到时候在。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Good play. Talk later.",
+      "zh": "玩得好，回头聊。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right, that was a good fight.",
+      "zh": "嗯，打得不错。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "We won the game.",
+      "zh": "我们赢了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Your timing on the jump was right.",
+      "zh": "你跳的时机很准。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "You too. I was shaking after the fire.",
+      "zh": "你也是。火海之后我手都在抖。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I will get a drink. You would like one?",
+      "zh": "我去拿杯喝的。你要吗？",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "No, I am good. Thanks.",
+      "zh": "不用，我没事。谢了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "We will do it more quick another time.",
+      "zh": "下次咱们能打更快。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Yes, if the net is better.",
+      "zh": "对，要是网络好点的话。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I will see my connection before.",
+      "zh": "我到时候先看看连接。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Good. See you then.",
+      "zh": "好。到时候见。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周六晚八点，甲和乙准时上线，誓要攻克卡了许久的难关。协作闯关，互相提醒，最终险胜后约好下周再战。",
+  "storyScript": "【开场·开始游戏】周六晚八点，甲的房间电脑屏幕亮起。他戴上耳机，语音里传来乙的声音，两人简短确认后，一同进入游戏关卡。画面载入，熟悉的场景再次出现——这是他们卡了整整一周的Boss战。甲深吸一口气，手指搭上键盘，乙在语音里轻声说：老规矩，我先拉怪。两人默契地开始了又一次挑战。\n\n【进行·协作闯关】战斗一开始就异常激烈。甲操控的角色负责输出，乙则在前方吸引火力。甲的血条几次见底，乙及时丢来治疗技能，同时喊：躲开那个红圈！甲一个翻滚避开致命一击，反手打出连招。Boss进入第二阶段，地面出现密集的火焰陷阱。乙迅速指挥：左移三步，等我数三二一一起跳。甲屏息跟随，两人同步跃过火海，落地后合力释放大招，Boss的护盾终于碎裂。\n\n【进行·协作闯关】最后一波攻击时，甲的屏幕突然卡顿，角色僵在原地。乙立刻挡在他身前，硬扛下Boss的狂轰滥炸，语音里传来急促的呼吸声：快退后，我来顶住！甲重启网络，角色恢复控制，他咬牙输出全部技能，Boss的血条终于见底。随着一声轰鸣，屏幕弹出胜利字样。甲摘下耳机，听见乙在语音里大笑：过了！终于过了！两人都瘫在椅子上，久久没说话。\n\n【收束·结束复盘】结算界面跳出来，甲看着通关时间，发现比预计慢了三十秒。乙在语音里分析：最后那波卡顿太惊险，下周换个网络节点试试。甲点头，点开好友列表，给乙发去一条消息：下周六老时间？乙秒回：没问题，到时候开新副本。甲关掉游戏，窗外夜色已深，他拿起水杯，嘴角还带着笑意。这一关，他们终于翻过去了。"
+}

@@ -1,0 +1,825 @@
+{
+  "slug": "emergency",
+  "sceneKey": "Emergency",
+  "titleZh": "紧急求助报警",
+  "titleEn": "Emergency Help",
+  "tier": "P0",
+  "freqRank": 18,
+  "emoji": "🚨",
+  "gradient": "linear-gradient(135deg,#fee2e2,#f87171)",
+  "storyHook": "突发状况，求助路人或报警，等待救援",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "发生意外",
+      "goal": "说明需要帮助"
+    },
+    {
+      "beat": "进行",
+      "title": "求助应对",
+      "goal": "安抚打电话"
+    },
+    {
+      "beat": "进行",
+      "title": "等待救援",
+      "goal": "说明位置"
+    },
+    {
+      "beat": "收束",
+      "title": "危机解除",
+      "goal": "情况受控"
+    }
+  ],
+  "illustration": {
+    "label": "紧急求助",
+    "motifs": [
+      "alert",
+      "phone",
+      "help"
+    ],
+    "accent": "#dc2626"
+  },
+  "narrative": {
+    "when": "夜晚，路上突发状况",
+    "where": "街边 / 电话求助",
+    "who": "甲（当事人）· 乙（路人或接线员）",
+    "how": "保持冷静，清楚说明位置",
+    "method": "描述情况、请求帮助、等待救援、确认安全",
+    "event": "甲朋友摔倒受伤，需要尽快找人帮忙"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Help! My friend has had a bad fall.",
+      "zh": "救命！我朋友摔得很重。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "What is the trouble? Say it quick.",
+      "zh": "出什么事了？快告诉我。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "He is on the earth, not moving or talking.",
+      "zh": "他倒在地上，不动也不说话。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Is he breathing? Can you see his chest go up and down?",
+      "zh": "他还有呼吸吗？能看到他胸口起伏吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Yes, his chest is moving, but his eyes are shut.",
+      "zh": "有，他胸口在动，但眼睛闭着。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Good. Do not move him. I will send a car now.",
+      "zh": "好的。别移动他。我马上派车来。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Please be quick. I am very troubled.",
+      "zh": "请快点。我很不安。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "What is your place? Give me the street name.",
+      "zh": "你在什么位置？告诉我街道名字。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "I am where two roads come together.",
+      "zh": "我在两条路交叉的地方。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Is there a store or sign near you?",
+      "zh": "你附近有商店或路牌吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Yes, a place with a bright light. It is open all night.",
+      "zh": "有，一家亮灯的店，通宵营业。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Good. What is the name of the place?",
+      "zh": "好的。这家店叫什么名字？",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "The sign says 'Quick Store'. I am right here.",
+      "zh": "招牌写着‘快客商店’，我就在门口。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "I have your place. The car will be there in five minutes.",
+      "zh": "我定位到你了。救护车五分钟内到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Thank you. I will keep talking to him.",
+      "zh": "谢谢。我会一直跟他说话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Is he breathing? Put your ear near his mouth.",
+      "zh": "他有呼吸吗？把耳朵凑到他嘴边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Yes, I can get his breath on my face.",
+      "zh": "有，我能感觉到他呼出的气。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Good. Do not move his head or neck.",
+      "zh": "好。别动他的头和脖子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "I will keep still. His face is so white.",
+      "zh": "我保持不动。他脸好白。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "That is common after a fall. Keep him warm.",
+      "zh": "摔倒后常见。给他保暖。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "I put my coat over him. Is the car coming?",
+      "zh": "我给他盖了外套。车来了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Yes, two minutes. I see it on my box.",
+      "zh": "快了，还有两分钟。我盒子上能看到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I get a sound far off. Is that the car?",
+      "zh": "我听到远处有声音。是救护车吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Yes, that is the car. It will be at your road end in a short time.",
+      "zh": "对，是救护车。马上到你那条路口了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "I see the blue light now. Thank you for your help.",
+      "zh": "我看到蓝灯了。谢谢你帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "The car is here. I will go to them.",
+      "zh": "车到了。我过去接他们。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Right. I will be here with him.",
+      "zh": "好。我在这儿陪着他。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Two men are coming with a bed on wheels.",
+      "zh": "两个人推着轮床过来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "They are quick. He is still out.",
+      "zh": "他们动作很快。他还没醒。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "He is talking to me. He says, what is the news?",
+      "zh": "他在跟我说话。他问有什么消息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Say he went down and did not get up.",
+      "zh": "跟人说，他摔了，没起来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "I did. They are putting him on the bed now.",
+      "zh": "说了。他们正把他抬上床。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "They will take him to the hospital. You go with them.",
+      "zh": "他们会送他去医院。你跟着去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Yes, I will. Thank you for your time.",
+      "zh": "嗯，我会的。谢谢你花时间帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "No trouble. I hope he gets well quick.",
+      "zh": "不客气。希望他快点好起来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "The man on the bed is opening his eyes.",
+      "zh": "床上那人睁眼了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Good. That is a good sign. Is he saying anything?",
+      "zh": "好。这是好兆头。他在说什么吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "He is saying my name. He seems mixed up.",
+      "zh": "他在叫我的名字。他好像有点迷糊。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "That is normal after a fall. Let him rest.",
+      "zh": "摔倒后正常。让他休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "The door is open. The men with the bed are here.",
+      "zh": "门开了。推轮床的人到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "They will put him on the bed now.",
+      "zh": "他们现在要把他抬上轮床了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Yes. I will go with him.",
+      "zh": "嗯。我跟他一起去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "You have my number. Send word if you need anything.",
+      "zh": "你有我的号码。需要什么就传话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Thank you. I will say how he is.",
+      "zh": "谢谢。我会告诉你他的情况。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Good. Keep your head up.",
+      "zh": "好。打起精神。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "I will. He is my friend.",
+      "zh": "我会的。他是我朋友。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "The man is ready. Get in.",
+      "zh": "司机准备好了。上车吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Right. I am going now.",
+      "zh": "好。我这就走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I will be here for a bit. be safe.",
+      "zh": "我在这儿待一会儿。安全第一。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "You too. And thank you again.",
+      "zh": "你也是。再次感谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Is he breathing? I need to see.",
+      "zh": "他在呼吸吗？我得看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Yes, slow but safe. Do not move him.",
+      "zh": "是的，慢但稳。别动他。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "I put my coat over him. It's cold.",
+      "zh": "我把外套盖他身上了。天冷。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Good. The car is on its way.",
+      "zh": "好。救护车已经在路上了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "How long? It seems like hours.",
+      "zh": "要多久？感觉像过了几个小时。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "About five more minutes. Keep talking.",
+      "zh": "大概再五分钟。继续说话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "I see a light. Is that them?",
+      "zh": "我看到灯光了。是他们吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Yes, that is the car for ill persons. Wave your arm.",
+      "zh": "是的，那是病车。挥挥手。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "They are here. Thank you for your help.",
+      "zh": "他们到了。谢谢你的帮助。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "You did well. I will let them take over.",
+      "zh": "你做得很好。我让他们接手了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "The men are out now. They have a box.",
+      "zh": "他们下车了，拿着一个箱子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Good. Let them do their work. Step back a bit.",
+      "zh": "好。让他们干活，你退后一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "They are putting something over his face.",
+      "zh": "他们在他脸上放了什么东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "That is for air. It will help him get better.",
+      "zh": "那是供氧的，会让他好转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "His eyes are open now. He is looking at me.",
+      "zh": "他睁眼了，正看着我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "That is a good sign. Talk to him in a low voice.",
+      "zh": "好兆头。轻声跟他说话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "You are safe now. The men are here.",
+      "zh": "你现在安全了。他们到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "He gave a small smile. I have a feeling he sees me.",
+      "zh": "他微微笑了一下，我觉得他认出我了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Keep him warm. They will take him to the hospital now.",
+      "zh": "给他保暖。他们现在要送他去医院。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "I will go with him. Thanks for waiting.",
+      "zh": "我跟他一起去。谢谢你等着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "The door is open. Come inside.",
+      "zh": "门开了。上来吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "May I be by him?",
+      "zh": "我可以坐他旁边吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Yes, take that seat. Talk to him in a low voice.",
+      "zh": "行，坐那儿吧。低声跟他说话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "He has my hand. That is good.",
+      "zh": "他握着我的手，这很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Keep his head still. Do not let him move.",
+      "zh": "让他头别动，别让他乱动。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "I will not let go. How long to the hospital?",
+      "zh": "我不会松手的。到医院还要多久？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "About ten minutes. We are almost there.",
+      "zh": "大约十分钟，快到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "His color is coming back. That is a good sign.",
+      "zh": "他脸色好多了，好兆头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Yes, he is getting better. You did well.",
+      "zh": "对，他在好转。你做得很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Thank you for your help. I was very much in fear.",
+      "zh": "谢谢你的帮助。我刚才吓坏了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "He is opening his eyes. Look.",
+      "zh": "他睁眼了。你看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Oh, that is a good thing. Hello there, friend.",
+      "zh": "哦，那是好事。嘿，朋友。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "He seems mixed up. Where are we?",
+      "zh": "他好像很迷糊。我们在哪儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "We are in the car. You had a fall.",
+      "zh": "我们在车上。你摔了一跤。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "My head is giving me trouble. What is the trouble?",
+      "zh": "我头疼。出什么事了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "You had a fall in the street. But you are safe now.",
+      "zh": "你在街上摔倒了。不过现在安全了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "I see it now. We were walking.",
+      "zh": "我想起来了。我们刚才在走路。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Yes, you went down hard. I was so troubled.",
+      "zh": "对，你摔得很重。我担心坏了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "I am troubled. Thank you.",
+      "zh": "给你添麻烦了。谢谢你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "No trouble at all. Just rest now.",
+      "zh": "一点不麻烦。现在好好休息吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "The man on the line said to keep talking to you.",
+      "zh": "电话那头的人让我一直跟你说话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "That is good. It keeps my mind off the pain.",
+      "zh": "那挺好。能让我不去想疼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Do you see the lights? They are getting nearer.",
+      "zh": "你看到灯光了吗？越来越近了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Yes, I see them. Red and blue. That is the car for the ill.",
+      "zh": "嗯，看到了。红蓝相间。是救护车。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "They are stopping. The door is opening.",
+      "zh": "他们停下了。门开了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Let them come. I will be all right.",
+      "zh": "让他们过来吧。我会没事的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "They are here. You are in good hands now.",
+      "zh": "他们到了。你现在有专业人员照顾了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "The men are quick. One is taking my arm.",
+      "zh": "他们动作很快。有个人扶住我的胳膊了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "They will put you on a board. Do not move.",
+      "zh": "他们会把你放上担架板。别动。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "I am on it now. It is not hard.",
+      "zh": "我已经上来了。不难受。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "They are putting you in the car. I will come with you.",
+      "zh": "他们正把你抬上车。我跟你一起去。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "You are still on the line. Say thanks to him.",
+      "zh": "你电话还通着。跟那人说声谢谢。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Thank you, sir. You were a great help.",
+      "zh": "谢谢你，先生。你帮了大忙。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "The line is dead now. They have done their part.",
+      "zh": "电话挂了。他们完成了任务。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "The man is going quick. But the car is smooth.",
+      "zh": "那人开得很快，但车很稳。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "We will be at the hospital in five minutes.",
+      "zh": "我们五分钟就到医院了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Good. I have my fingers back. That is a good sign.",
+      "zh": "太好了。我又能感觉到手指了。这是个好兆头。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "The doctor is here. You will be all right.",
+      "zh": "医生来了。你会没事的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I am with you. Do not be troubled.",
+      "zh": "我陪着你。别怕。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "The night is over. We made it.",
+      "zh": "天快亮了。我们挺过来了。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "深夜街头，朋友突然摔倒昏迷，甲惊慌失措。冷静拨打急救电话，清晰报出位置，在等待中守护朋友，最终救援赶到。",
+  "storyScript": "【开场·发生意外】夜晚的街道空旷寂静，只有路灯投下昏黄的光圈。甲和朋友并肩走着，忽然朋友脚下一滑，整个人重重摔在地上，发出一声闷响。甲蹲下身，看到朋友紧闭双眼、脸色苍白，怎么叫都没有反应。心跳瞬间加速，手掌渗出冷汗，但甲强迫自己镇定下来——必须立刻求助。\n\n【进行·求助应对】甲掏出手机，手指微颤地按下120。接通后，努力让声音平稳：这里有人摔倒昏迷，需要救护车。接线员的声音冷静而清晰，询问具体位置。甲环顾四周，看到路口的路牌和一家便利店，迅速报出街道名称和附近标志物。接线员继续引导：请保持电话畅通，不要移动伤者，注意保暖。甲脱下外套盖在朋友身上，一边回答一边留意朋友的呼吸。\n\n【进行·等待救援】时间仿佛被拉长，每一秒都格外煎熬。甲蹲在朋友身边，不断轻声呼唤名字，偶尔听到远处传来救护车的鸣笛声，却迟迟不见踪影。接线员的声音从听筒传来：救护车已出发，请保持耐心。甲深吸一口气，再次确认位置：我在XX路与XX街交叉口，旁边有一家24小时便利店。终于，红蓝灯光在街角闪烁，越来越近。\n\n【收束·危机解除】救护车停下，医护人员迅速下车检查朋友状况，抬上担架。甲向接线员道谢，挂断电话，跟着上了车。朋友被戴上氧气面罩，但呼吸渐渐平稳。甲握住朋友的手，感受到微微的回握，悬着的心终于落下。车窗外夜色依旧，但车厢里暖意渐生，危机已经过去。"
+}

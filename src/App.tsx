@@ -107,13 +107,6 @@ function AppContent() {
     }
   };
 
-  // Onboarding redirect
-  useEffect(() => {
-    if (localStorage.getItem('ogden850_has_seen_onboarding') === 'true' && activeTab === 'onboarding') {
-      setActiveTab('home');
-    }
-  }, []);
-
   useEffect(() => {
     VocabService.invalidateGuideCache();
     void VocabService.prefetchAllGuides();

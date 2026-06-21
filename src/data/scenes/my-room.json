@@ -1,0 +1,820 @@
+{
+  "slug": "my-room",
+  "sceneKey": "My Room",
+  "titleZh": "整理我的房间",
+  "titleEn": "Tidying My Room",
+  "tier": "P1",
+  "freqRank": 31,
+  "emoji": "🛏",
+  "gradient": "linear-gradient(135deg,#fff7ed,#fdba74)",
+  "storyHook": "打扫房间，归置物品，休息",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "房间很乱",
+      "goal": "决定整理"
+    },
+    {
+      "beat": "进行",
+      "title": "打扫归置",
+      "goal": "扫地放书"
+    },
+    {
+      "beat": "收束",
+      "title": "休息满意",
+      "goal": "坐干净房间"
+    }
+  ],
+  "illustration": {
+    "label": "我的房间",
+    "motifs": [
+      "bed",
+      "shelf",
+      "broom"
+    ],
+    "accent": "#ea580c"
+  },
+  "narrative": {
+    "when": "周日上午，房间已经乱了一周",
+    "where": "甲自己的房间",
+    "who": "甲（房间主人）· 乙（来串门的朋友）",
+    "how": "一边整理一边和朋友聊天",
+    "method": "打扫地面、把书放回书架、整理床铺、坐下来休息",
+    "event": "乙下午要来家里，甲想趁早把房间收拾干净"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "What a dirty room this is.",
+      "zh": "这房间真脏。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "You have not cleaned it for a week.",
+      "zh": "你一周没打扫了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "I see. I will do it now.",
+      "zh": "我知道。我现在就收拾。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "May I give you a hand?",
+      "zh": "要我帮忙吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "That is kind, but I will do it.",
+      "zh": "你真好，不过我自己来。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "You have many books on the floor.",
+      "zh": "你地上好多书。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Yes, I will put them back on the shelf.",
+      "zh": "嗯，我待会儿放回书架。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "And your bed is not made.",
+      "zh": "床也没铺。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "I will do that after the floor.",
+      "zh": "扫完地就铺。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Right. I will be here then.",
+      "zh": "行，那我在这儿等着。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Right, first the floor.",
+      "zh": "好，先扫地。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "I will get the brush.",
+      "zh": "我去拿扫帚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Good, I will move my feet.",
+      "zh": "好，我把脚挪开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "You are a great help.",
+      "zh": "你帮了大忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "That is right, I am only seated.",
+      "zh": "那当然，我只是坐着而已。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Right, here is the brush.",
+      "zh": "给，扫帚来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Thanks. I will start from the edge.",
+      "zh": "谢了，我从边上开始扫。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "May I move those books?",
+      "zh": "要我把那些书挪开吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Yes, put them on the bed for now.",
+      "zh": "好，先放床上吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "These are all over the place.",
+      "zh": "这些书扔得到处都是。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "I see. I let them be for a week.",
+      "zh": "我知道，我放任了一周。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Right. I will put them by size.",
+      "zh": "行，我按大小摞起来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Good idea. Then they go on the shelf.",
+      "zh": "好主意，然后放回书架。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "The shelf is full. What about these?",
+      "zh": "书架满了，这些怎么办？",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "I will make space. Give me a minute.",
+      "zh": "我腾个地方，等一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "I will take these to the shelf now.",
+      "zh": "我现在把这些拿上书架。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Do you have a place for them?",
+      "zh": "你有地方放它们吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Yes, I will put them on the top shelf.",
+      "zh": "有，我放最上面那层。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "That shelf is high. Do you need a hand?",
+      "zh": "那层高，要帮忙吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "No, I am tall enough. Thanks.",
+      "zh": "不用，我够高，谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I will clean the floor while you do that.",
+      "zh": "你弄那个，我来扫地。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Good. The dust is thick here.",
+      "zh": "好，这儿灰挺厚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "I will get the thing for dust. Keep the dust together.",
+      "zh": "我去拿簸箕，你把灰扫成一堆。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "I have a small group now. Ready for you.",
+      "zh": "我扫了一小堆了，等你来收。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Here I come. That is much dust.",
+      "zh": "来了，灰真不少。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right, the floor looks clean now.",
+      "zh": "好了，地板现在干净了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Good work. Now for the books on the table.",
+      "zh": "干得好。现在来弄桌上的书。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "I will put them back on the shelf.",
+      "zh": "我把它们放回书架。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Give you the ones on the left?",
+      "zh": "要我把左边的递给你吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Yes, please. Then we will make the bed.",
+      "zh": "好，谢谢。然后我们铺床。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Here are the books from the left.",
+      "zh": "左边的书给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Right. I will put them in order by size.",
+      "zh": "好，我按大小放好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "That one has a loose page. Keep it separate.",
+      "zh": "那本掉页了，单独放。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "I will put it on the end. Now for the bed.",
+      "zh": "我放最边上。现在弄床。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Let us take off the old cloth first?",
+      "zh": "先把旧布扯掉？",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Yes, and give it a good shake out the window.",
+      "zh": "对，拿到窗外抖一抖。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "The cushion is flat. I will make it soft.",
+      "zh": "垫子扁了，我拍松它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Good. Then we put on the clean cover.",
+      "zh": "好，然后套上干净被套。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Pull your side tight. That is straight now.",
+      "zh": "你那头拉紧，现在平了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Good. The room is clean and ordered.",
+      "zh": "很好，房间干净又整齐了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Now for the floor. I will get the brush.",
+      "zh": "现在弄地板，我去拿扫帚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "I will give you a hand. Where is the box for dust?",
+      "zh": "我帮你，装灰尘的盒子在哪儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Under the table. I will put the dust in a little mass.",
+      "zh": "桌子底下，我把灰扫成一堆。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Right. I will keep the box still for you.",
+      "zh": "好，我帮你扶着盒子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "That is the last of it. Now for the books on the shelf.",
+      "zh": "扫干净了，现在弄书架上的书。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Some are the wrong way. Let us put them right.",
+      "zh": "有几本放反了，我们正过来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "I will take the great ones first. They go on the lowest part.",
+      "zh": "我先拿大的，放最下面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "And the small ones on top. That looks better.",
+      "zh": "小的放上面，这样好看多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Put the clothes from the seat in the basket.",
+      "zh": "把座位上的衣服放进篮子里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "I will fold them for you. You do the rest of the room.",
+      "zh": "我帮你叠，你弄房间其他地方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Now for the bed. It is a great mass of cloth.",
+      "zh": "现在弄床，这一大团布。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Take the cover off first, yes?",
+      "zh": "先把被罩拆了吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Well, yes, and give it a good shake out the window.",
+      "zh": "对，拿到窗外抖抖。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "I will get the other side. Pull hard.",
+      "zh": "我抓那边，用力拉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Right, that is flat now. Make the head rest soft.",
+      "zh": "好了，现在平了，把枕头拍松。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "I will give it a soft touch or two. There, soft again.",
+      "zh": "我轻轻拍两下，好了，又软了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Now put the cover back. Push the ends under.",
+      "zh": "现在套上被罩，把边塞进去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "You are good at this. It is like new.",
+      "zh": "你挺在行，跟新的一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "And the floor near the door.",
+      "zh": "还有门边的地板。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "I will get the brush. You have a rest.",
+      "zh": "我去拿刷子，你歇会儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Right, the floor is clean now. What about the books?",
+      "zh": "好了，地板干净了。书怎么办？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "I will put them back on the shelf. Some are out of order.",
+      "zh": "我把它们放回书架。有些乱了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Let me give you a hand. Which ones go where?",
+      "zh": "我来帮你。哪些放哪儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Great ones on the left, small ones on the right. That is the way.",
+      "zh": "大的左边，小的右边。就这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "This one has a loose page. Do you have paste?",
+      "zh": "这本掉页了。你有胶水吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Yes, in the drawer. I will put it right in a bit.",
+      "zh": "有，在抽屉里。我一会儿弄好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Right. And the clothes on the seat?",
+      "zh": "行。那座位上的衣服呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "I will fold them and put them away. Keep going.",
+      "zh": "我叠好收起来。继续。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "You have a number of shirts. Do you put them on?",
+      "zh": "你衬衫真多。都穿吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Not all, but I keep them. One day, if I have a use.",
+      "zh": "不全穿，但留着。哪天有用再说。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Right, the floor is clean now. What about the bed?",
+      "zh": "好了，地板干净了。床呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "I will make it. Give me a minute.",
+      "zh": "我来铺。等一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "You do well with the cloth. It is flat.",
+      "zh": "你床单铺得真顺。很平整。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "It is not hard. Just a pull and a fold.",
+      "zh": "不难。一拉一叠就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Now the room looks like a room again.",
+      "zh": "现在房间总算像样了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Yes. I am happy with it. Let me get the dust off the shelf.",
+      "zh": "嗯。我很满意。我来擦擦书架上的灰。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "I will do that. You take a rest.",
+      "zh": "我来擦。你歇会儿吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "No, I am good. Two hands are quicker.",
+      "zh": "不用，我没事。两只手更快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Good. Then I will put the last books in order.",
+      "zh": "好的。那我把最后几本书排好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Done. The room is clean and the air is new.",
+      "zh": "搞定。房间干净，空气也新鲜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Right, all that is done. Let us have a rest.",
+      "zh": "好了，都弄完了。我们歇会儿吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Good idea. My back is a bit tired.",
+      "zh": "好主意。我背有点酸。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Here, take the seat. I will be on the bed.",
+      "zh": "来，你坐椅子。我坐床上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Thanks. This room is like a new place now.",
+      "zh": "谢了。这房间现在跟新的一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Yes. Hard morning, but it was good.",
+      "zh": "是啊。忙了一早上，但挺好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "I will get us some water. You look dry.",
+      "zh": "我去倒点水。你看起来渴了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "That would be great. Two cups, please.",
+      "zh": "那太好了。请拿两个杯子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Here you are. Not too cold, just right.",
+      "zh": "给你。不凉不烫，刚好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Good. So, what are you doing this week?",
+      "zh": "好的。那你这周有什么安排？",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "I have work on day two, but the other days are free.",
+      "zh": "周二有工作，但其他日子都空着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "I am free on day three. Are you free?",
+      "zh": "我周三有空。你有空吗？",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "That sounds good. Where to?",
+      "zh": "听起来不错。去哪儿？",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "What about the gardens? The sun is out.",
+      "zh": "去公园怎么样？出太阳了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Right. I will get some food.",
+      "zh": "好。我带点吃的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Great. I will make some bread with meat.",
+      "zh": "太好了。我做点夹肉的面包。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "No sharp bits, please. You have my number.",
+      "zh": "别放辣的。你知道我的口味。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Oh! Yes, I will keep it soft.",
+      "zh": "哦！好，我做得清淡点。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "You are a good friend.",
+      "zh": "你真是个好哥们。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Right back at you. Now rest a bit.",
+      "zh": "彼此彼此。现在休息会儿吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Yes. This is the best part of the day.",
+      "zh": "是啊。这是一天中最舒服的时候。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周日上午，甲的房间乱成一团，他决定趁乙来串门前彻底打扫。扫地、放书、铺床，最后两人坐在整洁的房间里，享受清爽的周日。",
+  "storyScript": "【开场·房间很乱】周日早晨的阳光透过窗帘缝隙，照在甲房间的地板上，灰尘在光柱里飞舞。一周没收拾，衣服堆在椅子上，书本散落一地，床单皱成一团。甲叹了口气，想起乙下午要来，决定动手整理。他撸起袖子，先打开窗户让新鲜空气进来，然后从角落拿起扫帚。\n\n【进行·打扫归置】甲弯下腰，扫帚划过地板，灰尘和碎屑聚成小堆。他弯腰把纸屑和头发扫进簸箕，倒进垃圾桶。接着是书桌，他把散落的书本一本本捡起，按大小排列放回书架。有几本旧书掉了页，他小心夹好，放回原处。床铺也乱得不成样子，他甩开被单，用力抖平，再把枕头拍松，叠好被子。这时乙推门进来，笑着说：你这房间终于能见人了。甲擦擦汗，继续把最后几件衣服叠好放进衣柜。\n\n【收束·休息满意】半小时后，房间焕然一新。地板干净发亮，书架整齐，床铺平整。甲和乙坐在床边，阳光洒在两人身上，空气里飘着清洁后的淡淡香味。甲倒了杯水，递给乙，自己也喝了一口。乙环顾四周，点头说：这样多舒服。甲笑着靠在床头，心里觉得这一上午的辛苦很值得。两人聊起下周的计划，房间里只有轻松的笑声和窗外偶尔传来的鸟鸣。"
+}

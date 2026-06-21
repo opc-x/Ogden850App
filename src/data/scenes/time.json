@@ -1,0 +1,819 @@
+{
+  "slug": "time",
+  "sceneKey": "Time",
+  "titleZh": "约时间见面",
+  "titleEn": "Making Plans",
+  "tier": "P1",
+  "freqRank": 14,
+  "emoji": "⏰",
+  "gradient": "linear-gradient(135deg,#f1f5f9,#94a3b8)",
+  "storyHook": "商量何时何地见面，确认准时",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "提出邀约",
+      "goal": "说哪天见面"
+    },
+    {
+      "beat": "进行",
+      "title": "敲定时间",
+      "goal": "对表定地点"
+    },
+    {
+      "beat": "收束",
+      "title": "确认提醒",
+      "goal": "重复时间"
+    }
+  ],
+  "illustration": {
+    "label": "安排时间",
+    "motifs": [
+      "clock",
+      "calendar"
+    ],
+    "accent": "#64748b"
+  },
+  "narrative": {
+    "when": "周三中午午休时间",
+    "where": "甲的办公室，用手机商量",
+    "who": "甲（发起邀约的人）· 乙（朋友）",
+    "how": "对着日历商量哪天哪个时间见面",
+    "method": "提出邀约、对比空闲时间、定下地点、互相重复确认",
+    "event": "甲想约乙这周末见面，但两人时间都很紧"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Are you free this week-end?",
+      "zh": "这周末你有空吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Right. What day did you have in mind?",
+      "zh": "好吧。你想的是哪天？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Which day at the end of the week is best for you?",
+      "zh": "周末的哪一天你最合适？",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "I have a meeting on the first day of the week-end. The second day is full.",
+      "zh": "周六上午有个会，周日全天都排满了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "I work on the day before the first day of the week, but am free after four.",
+      "zh": "我周六上午上班，但四点后有空。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "So four on day seven? That is good for me.",
+      "zh": "那第七天四点？我可以。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Great. Let us get together at the new place near the office.",
+      "zh": "好。我们在公司附近那家新店碰头？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Yes, I have had good word about their warm plates.",
+      "zh": "好，听说那家热菜不错。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "That is good. Four on the last day of the week at that place.",
+      "zh": "很好。周末那天四点那家店。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Right. Four. Do not be late.",
+      "zh": "好的。四点。别迟到。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I will put it in my box now. Day six, four, the new place.",
+      "zh": "我现在记到手机里。周六，四点，那家新店。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Good. I will do the same. alright then.",
+      "zh": "好。我也记上。到时见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "And if I am early, I will get a table.",
+      "zh": "要是我早到，我就先占个位子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "That is kind. I will do my best not to keep you waiting.",
+      "zh": "你真好。我尽量不让你等。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "No trouble. Looking forward to it.",
+      "zh": "没事。很期待。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "I will be there by four. You will see me at the door.",
+      "zh": "我四点前到。你在门口就能看到我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Let us get a table by the window?",
+      "zh": "我们坐窗边吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "If it is free, yes. I like to see the street.",
+      "zh": "有空位的话当然好。我喜欢看街景。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Me too. And I will get a warm plate for us to start.",
+      "zh": "我也是。我先点个热菜开胃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Not too sharp, please. Keep it soft.",
+      "zh": "别太辣。少放点辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "I will say that to the man there. No sharp taste.",
+      "zh": "我会跟店员说。不要辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Good. Then we can take our time with the list.",
+      "zh": "好。那我们可以慢慢看菜单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Yes. No need to be quick. The night is long.",
+      "zh": "对。不用急。晚上时间长着呢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "True. So I will okay at four sharp.",
+      "zh": "说得对。那四点整见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Four sharp. I will be there.",
+      "zh": "四点整。我会到的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Right. What time does the place open?",
+      "zh": "对了，那家店几点开门？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "It starts at twelve, I would say. But we go at four, so no trouble.",
+      "zh": "好像中午十二点开门。我们四点去，没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Good. Do we need to get a table before?",
+      "zh": "好。需要提前订位吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Not for a day off at four. It will be quiet then.",
+      "zh": "周六四点不用。那时候人少。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Right. I will put it in my box now.",
+      "zh": "行。那我记在手机里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Put it down. I will do the same. No chance to let it go.",
+      "zh": "记上。我也记一下。不会忘。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Let us get a drink first. A beer or something soft?",
+      "zh": "要不要先喝一杯？啤酒还是软饮？",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "A cold beer sounds good. But not too much before the food.",
+      "zh": "冰啤酒不错。但饭前别喝太多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "One beer for me, one for you, then a warm plate. A good start.",
+      "zh": "我一杯啤酒，你一杯，再上个热菜。这样开场挺好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Yes. I am looking forward to it. okay on day six.",
+      "zh": "嗯。我挺期待的。第六天见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right, cold plate first? Good start to the meal.",
+      "zh": "行，先来冷盘？开胃不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Good idea. Then a warm plate with bird.",
+      "zh": "好主意。然后上一道鸡肉的热菜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "I will have the same. No sharp bits for me, please.",
+      "zh": "我也一样。别放辣，谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Right. I will say it when we get there.",
+      "zh": "行。到了我跟他们说。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Right. Day six, four, cold plate first.",
+      "zh": "好的。周六四点，先冷盘。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Right, warm bird first?",
+      "zh": "好，先上热鸡肉？",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "No, cold plate first, then warm. That is the way.",
+      "zh": "不行，先冷盘再热菜。就该这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "That is right. But I am in need of food now.",
+      "zh": "行吧。可我现在需要吃东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "It is only three. We have one more hour.",
+      "zh": "才三点。还有一个小时呢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Right. What drink with the cold plate?",
+      "zh": "也是。冷盘想配什么喝？",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Water for me. Keep it simple.",
+      "zh": "我喝水。简单点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Right. I will have the same. No sharp bits on the cold plate?",
+      "zh": "行。我也一样。冷盘不放辣吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "No sharp bits. Just salt and oil.",
+      "zh": "不放辣。就盐和油。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Good. Then the warm plate with bird and no sharp bits.",
+      "zh": "好。那鸡肉热菜也不放辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Yes. I will say it when we get there.",
+      "zh": "嗯。到了我跟他们说。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Let us get together at the new place on High Street.",
+      "zh": "咱们在高街那家新店碰头吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Yes. I have word it is a good place.",
+      "zh": "好。听说那家不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "I will book a table for four. Is that right?",
+      "zh": "我订四个人的位子，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Right. Four of us. No more.",
+      "zh": "对。就咱们四个。不多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "What time do you get off work on the last day of the week?",
+      "zh": "你在一周的最后一天几点下班？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "I am free after three. So four is good.",
+      "zh": "我三点后有空。所以四点合适。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Good. I will put it in my box now.",
+      "zh": "好。我这就记在盒子里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Put me down for the same. This day week, four, High Street.",
+      "zh": "我也记下。下周六，四点，高街。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I will be there on time. You will not be late?",
+      "zh": "我会准时到。你不会迟到吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "I am not late. alright then.",
+      "zh": "我从不迟到。到时候见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Is four on day seven good for you?",
+      "zh": "第七天四点行吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Yes, four is good. Where?",
+      "zh": "行，四点没问题。在哪儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "The new place near my office. You have seen it?",
+      "zh": "我公司附近那家新店。你见过吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "I do. I have not been there.",
+      "zh": "知道。还没去过呢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "They say the warm food is good there.",
+      "zh": "听说那儿的热菜不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Good. I will have a warm plate then.",
+      "zh": "好。那我到时候点个热盘。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "What about a cold plate to start?",
+      "zh": "要不要先来个冷盘？",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Yes, that sounds good. Not too sharp, please.",
+      "zh": "行，听着不错。别太辣就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Right. I will keep that in mind.",
+      "zh": "好的。我记着了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "So, four on day seven. I will be there.",
+      "zh": "那就第七天四点。我会到的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Well, good. I will put it in my box now.",
+      "zh": "好。我现在就记在盒子里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Do that. I have it here too.",
+      "zh": "记上吧。我这边也记了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Is the door of the place a good meeting point?",
+      "zh": "店门口碰头行吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Yes. That is simple. Four at the door.",
+      "zh": "行。简单。四点，门口见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "What if I am a little late?",
+      "zh": "要是我晚到一小会儿呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Then I will get a table and start with a drink.",
+      "zh": "那我就先占座，点杯喝的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Right. I will do my best not to be late.",
+      "zh": "好的。我尽量不迟到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Good. I will be there at ten to four.",
+      "zh": "好。我三点五十到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "You are early. I will be on time.",
+      "zh": "你够早的。我准时到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Right. So, four on day seven, at the door. Done.",
+      "zh": "行。那就周六四点，门口见。定了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Right, a warm plate or a cold one?",
+      "zh": "好的，热菜还是冷盘？",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "A warm plate, I would say. The weather is cold.",
+      "zh": "热菜吧，天冷。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Right. Their meat soup is good.",
+      "zh": "没错。他们的肉汤不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "I would like that. Not too sharp, please.",
+      "zh": "我想吃那个。别太辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "And some greens?",
+      "zh": "再来点蔬菜？",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Yes, a green one. No dressing, if they have.",
+      "zh": "好，绿叶的。有的话不要酱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Right. I will put it in my notes.",
+      "zh": "好，我记在笔记里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "You keep things in order. I like that.",
+      "zh": "你安排得真清楚。我喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "It keeps things simple. So, four at the door.",
+      "zh": "省事。那就四点门口见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Four at the door. I will be there.",
+      "zh": "四点门口。我会到的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Good. I will put it in my notes now.",
+      "zh": "好，我现在记在笔记里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Do you have a place in mind?",
+      "zh": "你心里有地方吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Yes, the new place near my office. Warm plates.",
+      "zh": "有，我公司附近那家新店。热菜不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "I have not been there. Is it good?",
+      "zh": "我没去过。好吃吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Yes, a friend said the cold plate is good too.",
+      "zh": "嗯，朋友说冷盘也不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Then let us go there. Four, right?",
+      "zh": "那就去那儿。四点，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Right. Four at the door. I will be on time.",
+      "zh": "对，四点门口见。我会准时。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Well, good. I will put it in my notes now.",
+      "zh": "好，我现在记下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Well, do you have a place in mind?",
+      "zh": "你想到什么地方了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Well, yes, the new place near my office. Warm plates.",
+      "zh": "对，我公司旁边那家新开的店，热菜挺好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "I have not been there. Is it any good?",
+      "zh": "我没去过那家。好吃吗？",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Right, a friend said the cold plate is good too.",
+      "zh": "对，朋友说冷盘也挺好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Well, then let us go there. Four, right?",
+      "zh": "那我们就去那边。四点，对吧？",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Well, right. Four at the door. I will be on time.",
+      "zh": "好的。四点门口见。我准时到。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Good. alright then.",
+      "zh": "好，到时候见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "okay. Do not be late.",
+      "zh": "回头见。别迟到。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "You too. I will be there.",
+      "zh": "你也是。我会到的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Well, right. I will put it in my box now.",
+      "zh": "好的。我现在就记下来。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Good. I have it. Four, the day before the rest day.",
+      "zh": "好。我记下了。四点，休息日的前一天。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Yes. See you then. No changes.",
+      "zh": "嗯。到时候见。不改了。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周末约见，两人时间都紧。甲对着手机日历，和乙反复确认时间。",
+  "storyScript": "【开场·提出邀约】周三中午，甲在办公室吃完午饭，掏出手机给乙发消息。周末想见个面，但甲知道乙最近也很忙。他打字：这周六或周日，有空吗？发完，盯着屏幕等回复。窗外阳光正好，办公室里键盘声噼啪作响。\n\n【进行·敲定时间】乙很快回：周六上午有会，下午三点后空；周日全天忙。甲翻看自己的日程：周六上午加班，下午四点前都空。两人在手机上来回对比，最终定在周六下午四点。甲提议：去公司附近那家新开的店？乙回：好，那家听说不错。甲又补一句：或者你想吃别的？乙说：就那家吧，听说热菜很好。甲回：OK，四点见。\n\n【进行·敲定时间】甲把时间地点记在手机日历上，又发一条：周六下午四点，XX路那家店。乙回：收到，四点。甲再确认：对，四点。别迟到。乙笑回：你才别迟到。甲看着屏幕，嘴角微扬。午休快结束了，他收起手机，心里踏实了。\n\n【收束·确认提醒】下班前，甲又看了一眼日历，给乙发：明天周六，四点见。乙秒回：记得，四点。甲放心了。周末的期待在周三的午后悄悄生长。"
+}

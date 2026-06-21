@@ -1,0 +1,708 @@
+{
+  "slug": "dancing",
+  "sceneKey": "Dancing",
+  "titleZh": "学跳舞表演",
+  "titleEn": "Learning to Dance",
+  "tier": "P2",
+  "freqRank": 50,
+  "emoji": "💃",
+  "gradient": "linear-gradient(135deg,#fdf2f8,#ec4899)",
+  "storyHook": "学舞步，练习，小型表演",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "进入舞室",
+      "goal": "老师示范"
+    },
+    {
+      "beat": "进行",
+      "title": "跟练舞步",
+      "goal": "数拍纠正"
+    },
+    {
+      "beat": "收束",
+      "title": "完成表演",
+      "goal": "鼓掌休息"
+    }
+  ],
+  "illustration": {
+    "label": "跳舞",
+    "motifs": [
+      "music",
+      "dance",
+      "stage"
+    ],
+    "accent": "#db2777"
+  },
+  "narrative": {
+    "when": "周三晚上七点，舞蹈班第一次上课",
+    "where": "社区活动中心的舞蹈室",
+    "who": "甲（学员）· 乙（舞蹈老师）",
+    "how": "跟着老师的示范一步步练习",
+    "method": "老师示范舞步、跟着练习数拍子、纠正动作、完成一小段表演",
+    "event": "甲下个月有个聚会想表演一支舞，今天是第一次学"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good evening, ready to start?",
+      "zh": "晚上好，准备好了吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Yes, a bit on edge.",
+      "zh": "嗯，有点紧张。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "No need. First, watch my steps.",
+      "zh": "不用。先看我的步子。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Right, I will keep my eyes on you.",
+      "zh": "好，我看着你。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Left foot, then right. Like this.",
+      "zh": "左脚，然后右脚。像这样。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "I see. Go slow.",
+      "zh": "明白了。慢慢来。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Now you have a go. One, two, three.",
+      "zh": "现在你试试。一、二、三。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "One, two, three... Is this right?",
+      "zh": "一、二、三……这样对吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Good, but keep your back straight.",
+      "zh": "不错，但背要挺直。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Got it. Like this?",
+      "zh": "知道了。这样吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Now let us do the full steps with music.",
+      "zh": "现在跟着音乐跳完整支舞。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Right. I hope I do not go wrong.",
+      "zh": "好。希望我不会出错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "You will be all right. Take your time.",
+      "zh": "你没问题。慢慢来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "One, two, three, four. Turn, then stop.",
+      "zh": "一、二、三、四。转，然后停。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "I did it! That was not so hard.",
+      "zh": "我做到了！没那么难嘛。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Well done! Now again, but with more feeling.",
+      "zh": "做得好！再来一次，但带点感情。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "More feeling? Like a happy jump?",
+      "zh": "带感情？像快乐的跳吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Yes, see the happy time. You are the chief one.",
+      "zh": "对，想想欢乐时光。你是主角。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Right. I will smile and move my arms.",
+      "zh": "好。我会微笑，手臂也动起来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Good. And keep your head up. Ready?",
+      "zh": "很好。头抬起来。准备好了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Ready. One, two, three, four...",
+      "zh": "准备好了。一、二、三、四……",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Stop. Your turn was a bit late. Again.",
+      "zh": "停。你转得有点慢。再来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I am sad. I will keep time better.",
+      "zh": "抱歉。我会更好地把握时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "No need for that. You are learning.",
+      "zh": "不用道歉。你在学呢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Thanks. Let me have another go.",
+      "zh": "谢谢。我再试一次。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Right. From the top. One, two, three, four.",
+      "zh": "好。从头开始。一、二、三、四。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Left foot back, then turn. Keep your arms up.",
+      "zh": "左脚后退，然后转。手臂保持抬起。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Like this? Am I doing it right?",
+      "zh": "这样吗？我做得对吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Almost. You are a bit early. Keep time with the music.",
+      "zh": "差不多。你有点早。跟上音乐的拍子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "I will keep still till the third time.",
+      "zh": "我会保持不动，直到第三下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Yes. Again. One, two, three, turn. Good.",
+      "zh": "对。再来。一、二、三、转。好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "That was better. What about the arm move?",
+      "zh": "那好多了。手臂动作呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Go smooth. Not quick. Like this, see?",
+      "zh": "要流畅。别急。像这样，看到了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Yes. I will make it soft. One, two, three...",
+      "zh": "好的。我会做得柔和些。一、二、三……",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Much better. Now the last part. Smile.",
+      "zh": "好多了。现在最后部分。微笑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right. Let us do it from the top again.",
+      "zh": "好。我们从头再来一遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "One, two, three, turn. Keep your arms soft.",
+      "zh": "一、二、三、转。手臂放松。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Yes, that is the way. Now turn round.",
+      "zh": "对，就是这样。现在转一圈。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Good. You are getting it. One more time.",
+      "zh": "不错。你掌握了。再来一次。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "And that is all. Well done. You have it now.",
+      "zh": "结束了。做得好。你现在会了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Right, do it with the music now?",
+      "zh": "好，现在跟着音乐来一遍？",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Yes, I am ready. Let me take a breath.",
+      "zh": "好，我准备好了。让我喘口气。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Good. Keep your eyes up, not on your feet.",
+      "zh": "好。眼睛看前面，不要看脚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "One, two, three, four. That was a bit quick.",
+      "zh": "一、二、三、四。有点快了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Take your time. One... two... three... four.",
+      "zh": "慢下来。一……二……三……四。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Right. I will go as you go. Again from the start.",
+      "zh": "好的。我按你的速度来。从头再来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Better. Now turn on three. Yes.",
+      "zh": "好多了。现在第三拍转身。对。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "I am getting the trick of it. This is a pleasure.",
+      "zh": "我找到窍门了。挺有意思的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "You are doing well. One more time and we will have it.",
+      "zh": "你做得不错。再来一次我们就完成了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Right. Let me put my water down first.",
+      "zh": "好的。让我先把水放下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Ready? Music on three.",
+      "zh": "准备好了吗？数到三放音乐。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "One, two, three. Go.",
+      "zh": "一、二、三。开始。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Step, step, turn. Good.",
+      "zh": "走，走，转身。不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "I am keeping my eyes up now.",
+      "zh": "我现在眼睛看前面了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Yes. Arms out on the turn.",
+      "zh": "对。转身时手臂打开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Like this?",
+      "zh": "这样吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "A bit higher. There you go.",
+      "zh": "再高一点。对了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "That is more natural now.",
+      "zh": "现在感觉自然多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Good. Last eight moves. Keep with me.",
+      "zh": "好。最后八拍。跟着我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Five, six, seven, eight. And stop.",
+      "zh": "五、六、七、八。停住。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Right. Now we do it with the music.",
+      "zh": "好。现在我们跟着音乐来一遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "One, two, three, four. Step, together, step.",
+      "zh": "一、二、三、四。走，并，走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Five, six, seven, eight. Turn and look.",
+      "zh": "五、六、七、八。转身看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "I am a bit slow on the turn.",
+      "zh": "我转身有点慢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "That is good. Keep the time. Again.",
+      "zh": "没事。跟上节奏。再来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Step, turn, look back.",
+      "zh": "迈步，转身，回头看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Like this? Am I turning too early?",
+      "zh": "这样吗？我是不是转太早了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "A short time after. Keep time with the music.",
+      "zh": "过一小会儿。跟上音乐的拍子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "One, two, three, four. Turn on five.",
+      "zh": "一、二、三、四。五的时候转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Five, six, seven, eight. Yes, that is it.",
+      "zh": "五、六、七、八。对，就是这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Now the arms. Up on three, down on seven.",
+      "zh": "现在手臂。三拍举起，七拍放下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Arms up. Good. Keep them soft.",
+      "zh": "手臂举起。好。保持放松。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "One more time from the top. Ready?",
+      "zh": "从头再来一次。准备好了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Yes, let us do it.",
+      "zh": "好，我们开始吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Right, now the music again. This time you do it on your own.",
+      "zh": "好，现在音乐再放一次。这次你一个人跳。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Oh, all right. Here goes.",
+      "zh": "哦，好吧。开始了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Well, one, two, three, four. Turn on five.",
+      "zh": "一、二、三、四。到五就开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Five, six, seven, eight. That is it.",
+      "zh": "五、六、七、八。就是这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Arms up on three. Down on seven.",
+      "zh": "三拍手臂举起。七拍放下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Good. You did it all the way through.",
+      "zh": "很好。你完整跳下来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I did it! I am out of breath.",
+      "zh": "我做到了！我喘不过气了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Have some water. You did well for a first go.",
+      "zh": "喝点水。第一次跳成这样不错了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Thank you. Same time seven days from now?",
+      "zh": "谢谢。七天后同一时间？",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Yes. alright then.",
+      "zh": "好。到时候见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "I will be here.",
+      "zh": "我会来的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "That is the right way.",
+      "zh": "有这股劲儿就好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "I hope I do well at the get-together.",
+      "zh": "希望聚会上能跳好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "You will. It is in your body now.",
+      "zh": "你会的。动作已经在你身体里了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Do it one more time?",
+      "zh": "要不要再来一遍？",
+      "beat": "收束"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "No, you have done enough for today.",
+      "zh": "不了，今天练得够多了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I seem to be getting better.",
+      "zh": "我感觉自己进步了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "You are. Keep at it and you will be great.",
+      "zh": "是的。坚持练，你会跳得很好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Thank you for your help.",
+      "zh": "谢谢你的指导。",
+      "beat": "收束"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "My pleasure. See you after this week.",
+      "zh": "不客气。下周见。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "甲为下月聚会学舞，初次踏入舞室。老师耐心示范，甲笨拙跟练，最终完成一小段表演。",
+  "storyScript": "【收束·完成表演】乙重新播放音乐，这次让甲独自站在中央。灯光聚焦，甲深吸一口气，跟着拍子起步。右脚、左脚、转身、抬手——动作虽不完美，但连贯地完成了整段舞。最后一个音符落下时，甲微微喘气，嘴角不自觉上扬。乙鼓起掌来，空旷的舞室里回响着清脆的掌声。甲走到墙边拿起水瓶，喝了一口温水，看着镜子里自己泛红的脸颊。乙走过来，拍了拍她的肩，说下周同一时间继续。甲点点头，心里已经开始期待下一次练习。"
+}

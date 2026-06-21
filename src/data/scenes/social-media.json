@@ -1,0 +1,820 @@
+{
+  "slug": "social-media",
+  "sceneKey": "Social Media",
+  "titleZh": "社交媒体互动",
+  "titleEn": "Social Media",
+  "tier": "P2",
+  "freqRank": 30,
+  "emoji": "📱",
+  "gradient": "linear-gradient(135deg,#fce7f3,#db2777)",
+  "storyHook": "发帖、看评论、回复朋友",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "打开应用",
+      "goal": "看动态"
+    },
+    {
+      "beat": "进行",
+      "title": "发帖互动",
+      "goal": "写文发图"
+    },
+    {
+      "beat": "收束",
+      "title": "下线休息",
+      "goal": "关掉应用"
+    }
+  ],
+  "illustration": {
+    "label": "社交媒体",
+    "motifs": [
+      "heart",
+      "photo",
+      "comment"
+    ],
+    "accent": "#be185d"
+  },
+  "narrative": {
+    "when": "晚上十一点，准备睡觉前刷一下手机",
+    "where": "甲的床上",
+    "who": "甲（用户）· 乙（朋友，评论区互动）",
+    "how": "打开应用，浏览动态后发帖或评论",
+    "method": "打开应用看动态、发一张照片、回复朋友的评论、关掉应用",
+    "event": "甲今天去了一个好地方，想发照片分享给朋友"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I will have a look at the news.",
+      "zh": "我看看动态。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Right, do that before sleep.",
+      "zh": "行，睡前刷一下。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "That cat picture is quite good.",
+      "zh": "那张猫图挺不错的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Yes, I saw it. A little thing, quite pleasing.",
+      "zh": "嗯，我看到了。小东西挺逗的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "I would like to put up a picture.",
+      "zh": "我想发张照片。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "From your walk today?",
+      "zh": "今天出去拍的吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Yes, the field of flowers.",
+      "zh": "对，那片花海。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "I will get it from the store.",
+      "zh": "我从相册里选一下。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "The light is soft and good.",
+      "zh": "光线柔和，挺好的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Put it up then. I will keep an eye.",
+      "zh": "那就发吧，我看着。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Right, it is up now.",
+      "zh": "好了，现在发出去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "I see it. The colors are soft.",
+      "zh": "我看到了。颜色很柔和。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Yes, the sun was not too bright.",
+      "zh": "嗯，太阳不太刺眼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "A good place for a quiet day.",
+      "zh": "是个适合安静待着的好地方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "I will go to sleep now. rest up.",
+      "zh": "我要睡了。好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Where are we?",
+      "zh": "等等，这是哪儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "A secret place outside the town.",
+      "zh": "城外的一个秘密地方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Take me there another time.",
+      "zh": "下次带我去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Yes, I will. You will like it.",
+      "zh": "好，一定。你会喜欢的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Is it far from here?",
+      "zh": "离这儿远吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Not far, an hour by rail.",
+      "zh": "不远，坐火车一小时。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "That is good. I am free on day seven.",
+      "zh": "那挺好的。我第七天有空。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Good. We will go then.",
+      "zh": "好，那我们就去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "I am tired now. rest up.",
+      "zh": "我累了。睡个好觉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "You too. rest up.",
+      "zh": "你也是。好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "I will send you the place name.",
+      "zh": "我把地名发你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Right, do that. I will put it in my notes.",
+      "zh": "好，发吧。我记下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "It is a field with flowers, like a picture.",
+      "zh": "那是一片花田，像画一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Sounds soft. I would like to see it.",
+      "zh": "听起来很美。我想去看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "We can take food and make a day of it.",
+      "zh": "我们可以带吃的，玩一整天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Good idea. I will make some bread with meat.",
+      "zh": "好主意。我做些夹肉面包。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "And I will get a bottle of drink.",
+      "zh": "那我带瓶饮料。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Right. What time will we go?",
+      "zh": "行。我们几点出发？",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "How about ten in the morning?",
+      "zh": "早上十点怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "That is good. I will be ready.",
+      "zh": "好的。我会准备好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Great. I will send you the place on the net.",
+      "zh": "太好了。我把地点发给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Do that. I will keep an eye on my box.",
+      "zh": "发吧。我会盯着我的盒子看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "I have sent it now. Have a look.",
+      "zh": "我已经发过去了。你看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "I see it. It is not far from my house.",
+      "zh": "我看到了。离我家不远。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "No, it is a short walk. We will have a good time.",
+      "zh": "不远，走几步就到。我们会玩得很开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I will put a picture on the net.",
+      "zh": "我要在网上发张照片。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "What picture?",
+      "zh": "什么照片？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "The field of flowers from today.",
+      "zh": "今天那片花海的照片。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Oh, that was a good place.",
+      "zh": "哦，那地方真不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I will put a note with it.",
+      "zh": "我会配一句话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "What will you say?",
+      "zh": "你会说什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Something like 'a happy day'.",
+      "zh": "类似“快乐的一天”之类的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "That is a good note.",
+      "zh": "这句话不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I have sent it. Look now.",
+      "zh": "我发出去了。现在看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "I see it. It got a like from me.",
+      "zh": "我看到了。我点了个赞。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Oh, you said something.",
+      "zh": "哦，你说了句话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Where is this place?",
+      "zh": "这是哪里？",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "A secret place. I will take you.",
+      "zh": "秘密基地，我带你去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Well, is it far from here?",
+      "zh": "离这儿远不远？",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Not far. An hour by rail.",
+      "zh": "不远，坐火车一个钟头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "That is good. This end of the week?",
+      "zh": "不错。这周末？",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Yes, if the weather is good.",
+      "zh": "好的，如果天气好的话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "I will keep that day free.",
+      "zh": "我把那天空出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Right. I will send you the time.",
+      "zh": "好。我会发时间给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "I am looking forward to it.",
+      "zh": "我很期待。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Is it a good idea to take a camera?",
+      "zh": "带相机是个好主意吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Good idea. The light will be soft.",
+      "zh": "好主意。光线会很柔和。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "I will get my old one.",
+      "zh": "我带上我那台旧的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Do you have food for the day?",
+      "zh": "你带吃的了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I will make some bread with meat.",
+      "zh": "我会做些夹肉面包。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "And a bottle of water.",
+      "zh": "再带一瓶水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "That is enough. Simple is best.",
+      "zh": "够了。简单最好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "I will take a cloth to rest on.",
+      "zh": "我会带块布坐着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "You see to everything.",
+      "zh": "你想得真周到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "We will have a good time.",
+      "zh": "我们会玩得很开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Well, i will put a picture on the net.",
+      "zh": "我发张照片到网上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Well, what picture?",
+      "zh": "哪张照片？",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "The field of flowers I saw today.",
+      "zh": "我今天看到的那片花海。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "That sounds good. Let me see.",
+      "zh": "听起来不错。让我看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Here it is. What is your idea?",
+      "zh": "就这张。你觉得怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Very good! Where is that place?",
+      "zh": "真漂亮！那是哪里？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "A secret place. I will take you one day.",
+      "zh": "秘密基地。改天带你去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Right. I will come with you.",
+      "zh": "行。我跟你去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Good. I am tired now. I will go to sleep.",
+      "zh": "好。我困了，要睡了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Same here. rest up.",
+      "zh": "我也是。好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I will send you the place after a bit.",
+      "zh": "我过一会儿把地址发你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Do not keep it secret too long.",
+      "zh": "别保密太久哦。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "That is a word. Now I am going to rest.",
+      "zh": "说定了。现在我要休息了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Yes, you look tired. rest up.",
+      "zh": "嗯，你看起来累了。睡个好觉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Thank you. I had a good day.",
+      "zh": "谢谢。今天很开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "The flowers made it better.",
+      "zh": "那些花让今天更好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "They were soft and bright.",
+      "zh": "它们又软又亮。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "I will see them when I am sleeping.",
+      "zh": "我会在睡觉时看到它们。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "rest up then.",
+      "zh": "那祝你睡个好觉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "rest up, friend.",
+      "zh": "好好休息，朋友。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I will put the thing down now.",
+      "zh": "我现在要把这东西放下了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Yes, do that. The light is bright.",
+      "zh": "嗯，放下吧。屏幕光太亮了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "I am happy we had this talk.",
+      "zh": "很高兴我们聊了这些。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Me too. Your picture was a good thing.",
+      "zh": "我也是。你的照片真不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "I will take you there one day.",
+      "zh": "改天我带你去那儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "I would like that. Keep your word.",
+      "zh": "那可说好了。你要说话算话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I will. Now rest your eyes.",
+      "zh": "一定。现在闭上眼睛休息吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "You too. No more looking at the glass.",
+      "zh": "你也是。别再盯着玻璃看了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "rest up. okay in the morning.",
+      "zh": "好好休息。明早见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "rest up. Have a good rest.",
+      "zh": "好好休息。好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "I will turn off the light now.",
+      "zh": "我现在关灯了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Right, I will do the same.",
+      "zh": "好，我也关。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "No more looking at the bright glass.",
+      "zh": "别再盯着亮屏看了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "You are right. It is time to sleep.",
+      "zh": "你说得对。该睡了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Let us put the talking boxes away.",
+      "zh": "我们把通话盒放一边吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Yes, I will put mine on the table.",
+      "zh": "嗯，我放桌上。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Good. My eyes are tired.",
+      "zh": "好。我眼睛累了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Mine too. I will rest them now.",
+      "zh": "我也是。现在让它们歇歇。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Sleep well. See you in the light of day.",
+      "zh": "睡个好觉。天亮见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "You too. Have a good rest.",
+      "zh": "你也是。好好休息。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "深夜十一点，甲躺在床上刷手机，想分享今天去的好地方。发完照片后，朋友乙的评论让互动变得有趣，最后甲满足地关掉应用准备入睡。",
+  "storyScript": "【开场·打开应用】晚上十一点，卧室里只亮着一盏床头灯。甲裹在柔软的被子里，指尖轻触手机屏幕，解锁后自动跳转到社交媒体应用。首页上，朋友们分享着各自的日常：有人晒了晚餐，有人发了工作趣事，还有一段猫咪的视频。甲滑动屏幕，嘴角微微上扬，但心里更想分享自己今天的经历。他点开自己的主页，准备发点什么。\n\n【进行·发帖互动】甲从相册里选了一张照片——那是今天下午在郊外拍的一片花海，阳光透过云层洒在花瓣上，色彩柔和。他想了想，在描述栏里写下：今天发现了一个好地方，心情像这片花一样灿烂。点击发布后，他刷新了一下页面，看到照片已经有了几个点赞。这时，朋友乙的评论弹了出来：哇，这是哪里？下次带我去！甲笑着回复：秘密基地，下次约你。乙很快又回：一言为定！甲看着屏幕，感觉一天的疲惫都消散了。\n\n【收束·下线休息】甲又看了看其他评论，心里暖暖的。他关掉应用，把手机放在床头柜上，屏幕的亮光熄灭，房间重新陷入昏暗。他闭上眼睛，脑海里还浮现着那片花海和朋友的约定。明天醒来，也许会有更多互动，但此刻，他只想好好睡一觉。"
+}

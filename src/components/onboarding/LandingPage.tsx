@@ -138,23 +138,29 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
           transition={{ duration: 0.5, delay: 0.26 }}
           className="mt-7 rounded-2xl border border-emerald-100 bg-white/70 backdrop-blur p-4 shadow-sm"
         >
-          <div className="flex items-end justify-between">
-            <div className="flex flex-col items-center">
-              <span className="text-2xl font-black text-slate-800 tabular-nums leading-none">{WORD_COUNT}</span>
-              <span className="mt-1 text-[11px] font-medium text-slate-400">核心词根</span>
-            </div>
-            <span className="pb-4 text-lg font-light text-emerald-300">×</span>
-            <div className="flex flex-col items-center">
-              <span className="text-2xl font-black text-slate-800 tabular-nums leading-none">{SCENE_TARGET_COUNT}</span>
-              <span className="mt-1 text-[11px] font-medium text-slate-400">真实场景</span>
-            </div>
-            <span className="pb-4 text-lg font-light text-emerald-300">=</span>
-            <div className="flex flex-col items-center">
-              <span className="text-3xl font-black text-[#2f7d4f] tabular-nums leading-none tracking-tight">
+          <div className="flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1 sm:gap-x-2.5">
+            <span className="inline-flex items-baseline gap-1">
+              <span className="text-2xl font-black tabular-nums leading-none text-slate-800">{WORD_COUNT}</span>
+              <span className="text-[11px] font-medium text-slate-500">核心词根</span>
+            </span>
+            <span aria-hidden className="text-lg font-medium leading-none text-slate-300">
+              ×
+            </span>
+            <span className="inline-flex items-baseline gap-1">
+              <span className="text-2xl font-black tabular-nums leading-none text-slate-800">
+                {SCENE_TARGET_COUNT}
+              </span>
+              <span className="text-[11px] font-medium text-slate-500">真实场景</span>
+            </span>
+            <span aria-hidden className="text-lg font-medium leading-none text-slate-300">
+              ≈
+            </span>
+            <span className="inline-flex items-baseline gap-1">
+              <span className="text-2xl font-black tabular-nums leading-none text-[#2f7d4f]">
                 {DIALOGUE_MARKETING_LABEL}
               </span>
-              <span className="mt-1 text-[11px] font-bold text-[#2f7d4f]">句生活口语</span>
-            </div>
+              <span className="text-[11px] font-medium text-[#2f7d4f]">句生活口语</span>
+            </span>
           </div>
         </motion.div>
 
@@ -186,12 +192,12 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
       <motion.div
         {...fadeUp}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="relative w-full px-6 pt-4 pb-6"
+        className="relative w-full px-6 pt-4 pb-6 shrink-0"
       >
         <button
           onClick={onComplete}
           disabled={busy}
-          className="group w-full bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] hover:from-[#185532] hover:to-[#4da369] text-white font-black py-4 rounded-2xl flex justify-center items-center gap-2 shadow-xl shadow-emerald-500/25 active:scale-[0.97] transition-all text-lg disabled:opacity-60"
+          className="group w-full bg-gradient-to-r from-[#45a86a] to-[#72d492] hover:from-[#3d9660] hover:to-[#65c985] text-white font-black py-4 rounded-2xl flex justify-center items-center gap-2 shadow-lg shadow-emerald-400/20 active:scale-[0.97] transition-all text-lg disabled:opacity-60"
         >
           开始体验
           <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -283,7 +289,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
               <button
                 onClick={handleEmail}
                 disabled={busy || !email.trim() || password.length < 6}
-                className="w-full bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] text-white font-black py-3.5 rounded-2xl flex justify-center items-center gap-2 shadow-lg shadow-emerald-500/25 active:scale-[0.97] transition-all disabled:opacity-50"
+                className="w-full bg-gradient-to-r from-[#45a86a] to-[#72d492] text-white font-black py-3.5 rounded-2xl flex justify-center items-center gap-2 shadow-lg shadow-emerald-400/20 active:scale-[0.97] transition-all disabled:opacity-50"
               >
                 {busy ? <RefreshCw className="w-4 h-4 animate-spin" /> : null}
                 {emailMode === 'register' ? '注册并登录' : '登录'}

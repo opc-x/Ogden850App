@@ -1,0 +1,540 @@
+{
+  "slug": "angry",
+  "sceneKey": "Angry",
+  "titleZh": "生气与和解",
+  "titleEn": "Anger and Peace",
+  "tier": "P2",
+  "freqRank": 44,
+  "emoji": "😠",
+  "gradient": "linear-gradient(135deg,#fee2e2,#b91c1c)",
+  "storyHook": "表达不满，说明原因，达成和解",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "表达不满",
+      "goal": "为何生气"
+    },
+    {
+      "beat": "进行",
+      "title": "说明原因",
+      "goal": "听解释"
+    },
+    {
+      "beat": "收束",
+      "title": "和解",
+      "goal": "道歉谅解"
+    }
+  ],
+  "illustration": {
+    "label": "生气",
+    "motifs": [
+      "storm",
+      "talk",
+      "handshake"
+    ],
+    "accent": "#991b1b"
+  },
+  "narrative": {
+    "when": "周一晚上七点，等了很久的外卖出了问题",
+    "where": "甲家门口，和外卖员对话",
+    "who": "甲（顾客）· 乙（外卖员/店员）",
+    "how": "先表达不满，再听对方解释",
+    "method": "说明不满和原因、对方解释道歉、提出解决办法、达成和解",
+    "event": "甲等了一个多小时，结果送来的是别人的餐"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I am not happy",
+      "zh": "我不高兴",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "This is not my food",
+      "zh": "这不是我的餐",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "I waited for one hour",
+      "zh": "我等了一个多小时",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "What happened to my order",
+      "zh": "我的餐怎么了",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "I did it wrong",
+      "zh": "我做错了",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "I will fix it right now",
+      "zh": "我马上解决",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Can I have my food now",
+      "zh": "我现在可以吃我的餐吗",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "I will bring it to you",
+      "zh": "我会送给你",
+      "beat": "进行"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "How long will it take",
+      "zh": "需要多长时间",
+      "beat": "进行"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Just a few minutes, that's all",
+      "zh": "只要几分钟",
+      "beat": "进行"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I would like some food",
+      "zh": "我想吃点东西",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "I will come quickly",
+      "zh": "我会快点来",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Do you have my order now",
+      "zh": "你有我的餐吗",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Yes, I have it right here",
+      "zh": "是的，我刚刚拿到",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Finally, thank you",
+      "zh": "终于，谢谢",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "I would like food now",
+      "zh": "我现在想吃东西",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Shall we get this right then",
+      "zh": "我们应该把这件事弄对",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Right, I will check again",
+      "zh": "好，我会再次检查",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "That is fine, I will wait",
+      "zh": "那很好，我会等待",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Quite a long time, I would say",
+      "zh": "相当长的一段时间，我想",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Well then, what can I do",
+      "zh": "那么，我该怎么办",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "I would like some hot food",
+      "zh": "我想要一些热食",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Fair enough, I will get it",
+      "zh": "公平地说，我会去拿",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Oh, this place is quite far",
+      "zh": "哦，这个地方相当远",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "I will come back quickly, don't worry",
+      "zh": "我会快点回来，不用担心",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "That is good, I am glad",
+      "zh": "那很好，我很高兴",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Shall we get this sorted",
+      "zh": "我们应该把这件事解决",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Right, I will call the store",
+      "zh": "好，我会打电话给商店",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "I would like to talk to the manager",
+      "zh": "我想要跟经理说话",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Fair enough, I will get them",
+      "zh": "公平地说，我会去叫他们",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Oh, this is quite bad",
+      "zh": "哦，这相当糟糕",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Well then, what can we do",
+      "zh": "那么，我们该怎么办",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "I would like some help here",
+      "zh": "我想要一些帮助",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Quite a lot of trouble, I would say",
+      "zh": "相当多的麻烦，我想",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Right, I will try to help",
+      "zh": "好，我会尝试帮助",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "That is fine, I will wait here",
+      "zh": "那很好，我会在这里等待",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "I will come back with some food",
+      "zh": "我会带着一些食物回来",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Shall we get this over with",
+      "zh": "我们应该把这件事结束",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Fair enough, I will pay",
+      "zh": "公平地说，我会付钱",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Oh, this is thirty eight",
+      "zh": "哦，这是三十八",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I want my meal now.",
+      "zh": "我立刻要我的餐。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Well then, let us get the food",
+      "zh": "好吧，我们去拿食物",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "I would like to know what is going on",
+      "zh": "我想知道发生了什么",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Right, I will tell you everything",
+      "zh": "好，我会告诉你一切",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "That is fine, I am listening",
+      "zh": "那很好，我在听",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Shall we go to the place and get it",
+      "zh": "我们应该去那地方拿",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Fair enough, I will go with you",
+      "zh": "公平地说，我会和你一起去",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Oh, this is not what I want",
+      "zh": "哦，这不是我想要的",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I would like to get my food back",
+      "zh": "我想拿回我的食物",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "This is too much trouble.",
+      "zh": "这麻烦可够多的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Right, let us try to fix it",
+      "zh": "好，我们试着解决",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "That is fine, I will help you",
+      "zh": "那很好，我会帮助你",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Shall we call the place and ask",
+      "zh": "我们应该打电话给那地方询问",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Fair enough, I will make the call",
+      "zh": "公平地说，我会打电话",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Oh, they say it is not their business",
+      "zh": "哦，他们说这不是他们的事",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Let me talk to the chief.",
+      "zh": "让我跟负责人谈。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Well then, let us go and see",
+      "zh": "好吧，我们去看看",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Right, I will go with you now",
+      "zh": "好，我现在会和你一起去",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "That is fine, we will get it sorted",
+      "zh": "那很好，我们会解决",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Shall we just go and get the food",
+      "zh": "我们应该直接去拿食物",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Fair enough, let us just go",
+      "zh": "公平地说，我们直接去",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Oh, this is taking too long now",
+      "zh": "哦，这现在花费太多时间",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "I would like to get this over with",
+      "zh": "我想结束这件事",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Well then, let us get moving",
+      "zh": "好吧，我们赶紧",
+      "beat": "收束"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Right, I will go faster now",
+      "zh": "好，我现在会快点",
+      "beat": "收束"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "This is not what I ordered",
+      "zh": "这不是我点的",
+      "beat": "收束"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Let me check the order",
+      "zh": "让我检查一下订单",
+      "beat": "收束"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "I would like a new one",
+      "zh": "我想要一个新的",
+      "beat": "收束"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Right, I will get it now",
+      "zh": "好，我现在就去拿",
+      "beat": "收束"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Okay, I can wait.",
+      "zh": "好的，我可以等。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "外卖迟到一个多小时，打开却是别人的餐。顾客的怒火与骑手的无奈，在冬夜门口交汇。",
+  "storyScript": "【开场·表达不满】周一晚七点，甲站在家门口，手机屏幕上的订单状态早已从「配送中」变成「已送达」，但手里的袋子却装着陌生的餐食。他深吸一口气，看着面前穿着厚外套、气喘吁吁的乙，声音里压着疲惫和恼火：「我等了一个多小时，结果送来的不是我的。」乙的围巾被风吹得松散，手里还攥着另一份外卖单，脸上带着歉意和窘迫。\n\n【进行·骑手的解释】乙没有辩解，先低头看了看订单号，又抬头望向甲手里的袋子，声音有些沙哑：「对不起，刚才取餐时太乱了，我拿错了。您这份可能还在店里，我马上回去换。」甲皱眉，本想追问为什么送错，却看见乙的手套破了洞，指节冻得通红。乙继续解释：「今晚单子特别多，系统又卡了一次，我跑了两趟才把附近几个小区的送完。您的餐我其实已经取到了，但和另一单混了。」他顿了顿，声音更低：「我女儿发烧，刚才在医院接单，脑子有点乱。」\n\n【进行·提出解决办法】甲沉默了几秒，原本涌到嘴边的抱怨咽了回去。他说：「那现在怎么办？我饿着肚子等，总不能吃别人的。」乙立刻掏出手机：「我马上联系店里重新做一份，十五分钟就能好，我自费给您送过来。或者您先退款，我再补偿您一份优惠券。」甲看着乙冻僵的手指在屏幕上快速操作，又想起他刚才提到生病的女儿，心里那团火渐渐熄了。他叹了口气：「不用补偿了，你赶紧去换吧，我等你。」乙连连道谢，转身跑向电动车，背影在路灯下显得急促又单薄。\n\n【收束·和解】十五分钟后，乙再次敲门，手里提着热腾腾的餐袋，额头上沁着细汗。他递过袋子时又鞠了一躬：「真的抱歉，耽误您吃饭了。」甲接过袋子，发现里面还多了一盒热汤。乙说：「这是店里送的，赔礼。」甲终于笑了笑：「快回家看孩子吧，路上小心。」乙点头，转身时用手背抹了一下眼睛。门关上，甲打开餐盒，热气和香气扑面而来。他拿起筷子，心想：谁都不容易，算了。"
+}

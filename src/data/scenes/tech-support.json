@@ -1,0 +1,820 @@
+{
+  "slug": "tech-support",
+  "sceneKey": "Tech Support",
+  "titleZh": "报修技术支持",
+  "titleEn": "Tech Support",
+  "tier": "P2",
+  "freqRank": 34,
+  "emoji": "🛠",
+  "gradient": "linear-gradient(135deg,#e2e8f0,#1e293b)",
+  "storyHook": "描述故障，按指导操作，问题解决",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "报修求助",
+      "goal": "机器不工作"
+    },
+    {
+      "beat": "进行",
+      "title": "逐步排查",
+      "goal": "重启检查"
+    },
+    {
+      "beat": "收束",
+      "title": "恢复使用",
+      "goal": "确认好了"
+    }
+  ],
+  "illustration": {
+    "label": "技术支持",
+    "motifs": [
+      "tool",
+      "machine",
+      "check"
+    ],
+    "accent": "#1e293b"
+  },
+  "narrative": {
+    "when": "周四上午，电脑突然打不开文件",
+    "where": "甲的办公室",
+    "who": "甲（求助的人）· 乙（技术支持人员，电话里指导）",
+    "how": "打电话描述问题，按对方指示一步步操作",
+    "method": "说明故障、按指导重启检查、确认问题解决、表示感谢",
+    "event": "甲下午要交一份重要文件，电脑却出了问题"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "My machine is giving me trouble.",
+      "zh": "我的机器出问题了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "What is the trouble?",
+      "zh": "什么问题？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "I have a paper I need this afternoon, but it will not open.",
+      "zh": "我有个下午要用的文件，打不开。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "What error do you see?",
+      "zh": "你看到什么错误提示？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "A box says 'not able to get to this thing'.",
+      "zh": "弹窗说‘无法访问该东西’。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Is the record on your machine or the net?",
+      "zh": "记录在你的机器上还是网络上？",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "It is on my machine, in my work box.",
+      "zh": "在电脑上，我的工作文件夹里。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Right, let us start again first.",
+      "zh": "好，我们先重新开始一下。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Will that make it worse?",
+      "zh": "会不会更糟？",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "No, it is a safe step. It will not damage the paper.",
+      "zh": "不会，这是安全步骤，不会损坏文件。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Right, I will do it. Give me a second.",
+      "zh": "好的，我重启。稍等一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Take your time. Say when it is back.",
+      "zh": "别急。好了告诉我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "It is on now. What now?",
+      "zh": "开机了。然后呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Go to your work box and open the paper again.",
+      "zh": "去你的工作文件夹，再打开文件。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Still no. Same error box.",
+      "zh": "还是不行。同样的报错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Right, let us look at the list of running works.",
+      "zh": "好，我们看看正在运行的程序列表。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "How do I see that?",
+      "zh": "怎么看？",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Put your fingers on control, other, and cut keys all at the same time.",
+      "zh": "同时按控制、其他和剪切这三个键。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Done. I see a long list.",
+      "zh": "好了。看到一长串。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Good. End every work that is not marked 'system'.",
+      "zh": "很好。结束所有没有标‘系统’的程序。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "One by one? That will take time.",
+      "zh": "一个一个来？那要花时间了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Right, but it is safe. I will keep here.",
+      "zh": "对，但很安全。我呆在这儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "All done. Have a go now?",
+      "zh": "都完成了。现在试试吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Yes, give it two quick touches.",
+      "zh": "对，快速点两下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "It is asking if I would like to open it safe.",
+      "zh": "它问我要不要以安全方式打开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Say yes. That is a good sign.",
+      "zh": "选是。这是好迹象。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Done. It is open now. All my words are there.",
+      "zh": "好了。打开了。我写的内容都在。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Great. Now make a copy of it.",
+      "zh": "太好了。现在把它复制一份。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Where do I put the copy?",
+      "zh": "复制到哪儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "A different place, like your table top.",
+      "zh": "另一个地方，比如桌面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Right, I have done that. What now?",
+      "zh": "好的，弄好了。然后呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Let the machine have a quick look for errors.",
+      "zh": "让机器快速查看一下错误。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "How do I do that?",
+      "zh": "怎么操作？",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Go to this box, right touch on your first store.",
+      "zh": "进入‘此箱’，右键点主存储。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "I see 'properties'. Is that it?",
+      "zh": "看到‘属性’。是这个吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Yes, then go to 'box' and have a look.",
+      "zh": "对，然后点‘工具箱’，运行检查。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "It says 'see now'. Do I put my finger on it?",
+      "zh": "它写着‘现在查看’。我按它吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Yes, and put a mark in every box.",
+      "zh": "是的，每个框都打上勾。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Done. It says it will do it when I start again.",
+      "zh": "好了。它说下次启动时执行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "That is good. Let the machine do its work.",
+      "zh": "没问题。让机器做它的工作。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Right, what now?",
+      "zh": "好，现在呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Shut down again, then turn it on.",
+      "zh": "再关机，然后开机。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "I will do that now.",
+      "zh": "我现在就做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Good. What do you see?",
+      "zh": "好。你看到什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "It is starting up, same as before.",
+      "zh": "它在启动，跟之前一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Now go back to your papers.",
+      "zh": "现在再去看你的文件。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "I am there. It is still not opening.",
+      "zh": "我到了。还是打不开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Give it a right touch.",
+      "zh": "右键点它试试。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I get a list with 'open with'.",
+      "zh": "出来一个列表，有‘打开方式’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Take the first on the list.",
+      "zh": "选列表里第一个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I did that. It says 'locked'.",
+      "zh": "我点了。它说‘被锁’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Right, that is why. Let us let it go.",
+      "zh": "对了，这就是原因。我们放开它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Well, how do I do that?",
+      "zh": "我怎么做？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Open the list of running works. Stop that one.",
+      "zh": "打开运行中的工作列表。停止那个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "I see a list of work. Which one?",
+      "zh": "我看到一堆工作。哪一个？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Look for the one with your name on it.",
+      "zh": "找跟你名字一样的那个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "I see it. I will end it now.",
+      "zh": "看到了。我现在结束它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Good. Now see if you can make the thing open again.",
+      "zh": "好。现在看看你能不能让它再打开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "It is opening! Yes, it works now.",
+      "zh": "它在打开了！好了，现在能用了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Great. Keep a copy to be safe.",
+      "zh": "太好了。留一份副本以防万一。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Well, i will do that now.",
+      "zh": "我这就去办。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Good. After that, give it a full power off and on.",
+      "zh": "好。之后，彻底关机再开机。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Right. I am turning it off now.",
+      "zh": "好的。我现在关机。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Give it a minute before you start it again.",
+      "zh": "等一分钟再重新开机。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I will be here. It is starting now.",
+      "zh": "我等一下。现在开机了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Now open it again.",
+      "zh": "现在再打开它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "It is opening. No error this time.",
+      "zh": "它在打开。这次没有报错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Is the inside all there?",
+      "zh": "里面的内容都在吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Yes, everything is here. It is all good.",
+      "zh": "在，都在。没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Well done. Now make a copy to another place.",
+      "zh": "做得好。现在复制一份到别处。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "I am doing that now. Where do I put it?",
+      "zh": "我现在就复制。放哪里？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Put it on the table or another place.",
+      "zh": "放桌面或者另一个地方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Done. It is on the table now.",
+      "zh": "好了。现在桌面上有一份了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Good. Now see if the hard box is all right.",
+      "zh": "好的。现在看看硬盘有没有问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "How do I do that, okay.",
+      "zh": "这要怎么做？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Go to 'This Box', put the button on the store, and take 'Details'.",
+      "zh": "打开‘此电脑’，右键点击硬盘，选择‘属性’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "I am here. What now?",
+      "zh": "我到了。现在呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Go to the list of things for work and put a mark at 'Test'. Let it do its work.",
+      "zh": "去工作用品列表，在‘测试’处做个标记。让它运行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "It is running now. No errors came up.",
+      "zh": "正在运行。没有发现错误。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Great. Then your machine is all right. You are good to go.",
+      "zh": "太好了。那你的电脑没问题了。你可以放心用了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Would you like me to make a copy of the paper now?",
+      "zh": "你要我现在复制一份文件吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Yes, put it on another store or send it to your net space.",
+      "zh": "是的，放到另一个盘或者传到你的网盘里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Right, I will do that. What about the sharp bits?",
+      "zh": "好，我照做。那辣的东西呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Keep it soft for the food, but the machine is all right.",
+      "zh": "菜要清淡，但电脑没问题了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "I see. So the trouble is over?",
+      "zh": "明白了。所以问题解决了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Yes, a lock in the system made the error. Starting again put it right.",
+      "zh": "是的，系统锁导致了错误。重启解决了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "That is a weight off my mind. Thank you for your help.",
+      "zh": "这下我放心了。谢谢你的帮助。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Not at all. If it goes wrong again, give us a ring.",
+      "zh": "不客气。如果再出问题，给我们打电话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "I will. Have a good day.",
+      "zh": "我会的。祝你今天愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "You too. sure.",
+      "zh": "你也是。好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I will do that now, okay.",
+      "zh": "我这就去做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Good. Say if it is all right.",
+      "zh": "好的。如果没问题了告诉我一声。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "The paper is open and all there.",
+      "zh": "文件打开了，内容都在。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "That is good. Make a copy to be safe.",
+      "zh": "那就好。做个备份以防万一。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "I will put it on the cloud as well.",
+      "zh": "我也会存到云盘里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Wise. Then you are ready.",
+      "zh": "明智之举。那你就准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Thank you for your time and help.",
+      "zh": "谢谢你花时间帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "That is my work. Have a good day.",
+      "zh": "这是我的工作。祝你今天愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Well, you too. sure.",
+      "zh": "你也是。再会。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Good day.",
+      "zh": "再见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Well, well, i will do that now.",
+      "zh": "我这就做。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Good. Let me say if it goes well.",
+      "zh": "好的。如果顺利就告诉我。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "The round thing is all right. No errors.",
+      "zh": "那个圆盘没问题。没有错误。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "That is a good sign. Your machine is good.",
+      "zh": "这是个好兆头。你的机器没问题。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I have a copy on the cloud now.",
+      "zh": "我现在在云盘里存了一份。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Then you are ready for your meeting.",
+      "zh": "那你就为会议做好准备了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Yes, I am ready. Thank you again.",
+      "zh": "是的，我准备好了。再次感谢。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "You are welcome. Any time.",
+      "zh": "不客气。随时找我。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I will keep your number near.",
+      "zh": "我会把你的号码放在手边。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Good. Have a good day.",
+      "zh": "好的。祝你今天愉快。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "重要文件在电脑里打不开，下午就要交，急得团团转。一通电话，技术支持远程指导，重启后问题迎刃而解。",
+  "storyScript": "【开场·报修求助】周四上午十点，甲盯着电脑屏幕，冷汗直冒。他双击那份下午汇报要用的文件，系统却弹出错误提示，说无法访问。试了几次都一样，他赶紧拿起电话打给技术支持。电话那头传来乙沉稳的声音，甲语速飞快地描述了故障：文件打不开，提示错误代码，其他程序正常。乙安慰他别急，先确认文件路径和格式，甲一一照做，但问题依旧。乙说，可能是系统缓存冲突，需要重启电脑。甲犹豫了，怕重启后文件更打不开。乙耐心解释，重启是标准排查步骤，不会损坏文件。甲深吸一口气，按下了重启键。\n\n【进行·逐步排查】电脑重新启动，甲紧张地盯着屏幕。乙在电话里指导他，重启后先不要打开任何程序，直接去文件所在位置。甲照做，发现文件图标正常，但双击后还是报错。乙让他打开任务管理器，结束所有非系统进程，再试。甲找到进程列表，一个个结束可疑项，手有些发抖。乙的声音始终平稳，像定心丸。结束后，甲再次双击文件，这次系统弹出对话框，询问是否以安全模式打开。乙说，选择是，可能是上次非正常关闭导致的锁定。甲点击确认，文件终于缓缓打开，内容完好无损。甲长舒一口气，额头渗出细汗。\n\n【收束·恢复使用】乙让甲保存文件副本，并运行一次磁盘检查，确保没有坏道。甲一一执行，电脑运行流畅如初。他连声道谢，乙笑着说，下次遇到类似问题，先重启试试。甲挂断电话，看着屏幕上完整的文件，心里踏实了。他赶紧备份一份到云盘，然后继续准备下午的汇报。窗外阳光正好，办公室的咖啡机咕噜作响，一切恢复正常。甲心想，技术支持真是及时雨，不然今天可要抓瞎了。"
+}

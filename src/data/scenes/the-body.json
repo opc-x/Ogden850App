@@ -1,0 +1,820 @@
+{
+  "slug": "the-body",
+  "sceneKey": "The Body",
+  "titleZh": "认识身体部位",
+  "titleEn": "Parts of the Body",
+  "tier": "P1",
+  "freqRank": 33,
+  "emoji": "🧍",
+  "gradient": "linear-gradient(135deg,#ffe4e6,#fb7185)",
+  "storyHook": "指认头手脚，描述感觉与用途",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "看图指认",
+      "goal": "头手脚"
+    },
+    {
+      "beat": "进行",
+      "title": "描述感觉",
+      "goal": "哪里痛"
+    },
+    {
+      "beat": "收束",
+      "title": "小结记忆",
+      "goal": "重复名称"
+    }
+  ],
+  "illustration": {
+    "label": "身体部位",
+    "motifs": [
+      "body",
+      "hand",
+      "head"
+    ],
+    "accent": "#e11d48"
+  },
+  "narrative": {
+    "when": "周二下午，体育课刚结束",
+    "where": "学校保健室",
+    "who": "甲（学生）· 乙（校医）",
+    "how": "指着不舒服的地方说明情况",
+    "method": "指出疼痛部位、描述感觉、听校医建议、休息观察",
+    "event": "甲跑步时脚扭了一下，担心影响明天的考试"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I have a pain in my foot.",
+      "zh": "我脚疼。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Which part of the foot?",
+      "zh": "脚的哪个部位？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Here, the right foot.",
+      "zh": "这儿，右脚。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Is your head all right?",
+      "zh": "你头没事吧？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Yes, my head is all right.",
+      "zh": "没事，头不晕。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "And your hands?",
+      "zh": "那手呢？",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Hands are okay, no pain.",
+      "zh": "手没事，不疼。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "So it is only the foot.",
+      "zh": "所以只是脚的问题。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Yes, the right foot is the trouble.",
+      "zh": "对，就是右脚不舒服。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Let me have a look at your foot.",
+      "zh": "让我看看你的脚。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "It is the leg, here.",
+      "zh": "是脚，这儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Is there pain when I put my hand here?",
+      "zh": "我按这里疼不疼？",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Yes, a sharp pain there.",
+      "zh": "疼，一阵刺痛。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "No soft growth, that is good.",
+      "zh": "没有肿，那就好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "So it is a small twist, not broken.",
+      "zh": "所以只是轻微扭伤，没骨折。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Right, you will be well in a day or two.",
+      "zh": "对，一两天就能好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "But what about the test tomorrow?",
+      "zh": "但明天考试怎么办？",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Put a cold cloth on it tonight.",
+      "zh": "今晚用冷毛巾敷一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Cold cloth? I will do that.",
+      "zh": "冷毛巾？我照做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Keep your foot up when you rest.",
+      "zh": "休息时把脚抬高。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "May I put weight on it?",
+      "zh": "我能踩地吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Not much. Let it be soft.",
+      "zh": "少用力，让它放松。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I see. And if it still gives pain?",
+      "zh": "明白。要是还疼呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Come back to me in the morning.",
+      "zh": "明早再来找我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Thank you. I will do that.",
+      "zh": "谢谢，我会的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Now, let me see your foot.",
+      "zh": "来，让我看看你的脚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "It is a bit red here.",
+      "zh": "这里有点红。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Is it sharp when I put my hand here?",
+      "zh": "我按这里疼吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Yes, that is the bad place.",
+      "zh": "对，就是那个地方最疼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "It is a small twist, not broken.",
+      "zh": "只是轻微扭伤，没伤到骨头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "What is the name of this part?",
+      "zh": "这个部位叫什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "That is where the leg turns.",
+      "zh": "那是腿弯曲的地方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "And these are the toes.",
+      "zh": "这些是脚趾。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "So, head, hands, feet.",
+      "zh": "所以，头、手、脚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "You have them in your head now.",
+      "zh": "你现在记住它们了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right. What is it like when you put weight on it?",
+      "zh": "好的。你踩上去感觉怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "It is not sharp, but it is a pull when I do that.",
+      "zh": "不是刺痛，但踩的时候有拉扯感。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "That is normal for a small twist. Rest it for a day.",
+      "zh": "轻微扭伤这样正常。休息一天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Will I be ready for the test tomorrow?",
+      "zh": "明天考试能好吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Put a cold cloth on it tonight. If it still gives you pain, come back.",
+      "zh": "今晚用冷毛巾敷一下。还疼就再来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "A cold cloth will make the red part go down.",
+      "zh": "冷毛巾能让红肿消下去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Do I have to keep my foot up?",
+      "zh": "我需要把脚抬高吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "A: Yes, put it on a cushion when you are seated.",
+      "zh": "对，坐着的时候搁在垫子上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "How long do I keep the cloth on?",
+      "zh": "敷多久？",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "A: Ten minutes at a time, two or three times.",
+      "zh": "每次十分钟，敷两三次。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "No running or jumping till it is better.",
+      "zh": "好之前别跑跳。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "What about walking to the school?",
+      "zh": "走去学校行吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Walk slow. Stop if it gives pain.",
+      "zh": "慢慢走，疼就停下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "A: I will do that. Thank you.",
+      "zh": "好的。谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "You are welcome. be safe of that foot.",
+      "zh": "不客气。照顾好那只脚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "okay then.",
+      "zh": "来，让我瞧瞧你的脚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Is it up?",
+      "zh": "肿了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "A bit, but not much.",
+      "zh": "有一点，但不厉害。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Can you move your toes?",
+      "zh": "脚趾能动吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Yes, they move well.",
+      "zh": "能，动起来没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Good. That is a good sign.",
+      "zh": "好，这是好迹象。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Does it give pain when my hand is here?",
+      "zh": "我手放这里会疼吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Yes, that is the sharp point.",
+      "zh": "对，就是那个点最疼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "It is a small twist. No broken bones.",
+      "zh": "轻微扭伤，没伤到骨头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "So I can still take the test tomorrow?",
+      "zh": "那我明天还能考试吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "We will see. Let it rest first.",
+      "zh": "看情况，先让它歇着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Would you like a cold cloth on it?",
+      "zh": "要拿冷毛巾敷一下吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Yes, that is a good idea.",
+      "zh": "对，这个主意不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "How long do I keep it on?",
+      "zh": "敷多久呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Ten minutes, then take it off.",
+      "zh": "十分钟，然后拿掉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Will that make the pain go away?",
+      "zh": "这样就不疼了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "It will help. Not all the pain.",
+      "zh": "会好一些，但不会完全不疼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "What about the test in the morning?",
+      "zh": "那明天早上的考试呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "If it still gives you pain, put it off.",
+      "zh": "如果还疼，可以申请缓考。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Right. I will see how it is in the morning.",
+      "zh": "好的，我明早看看情况。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "So, what part of the body is this?",
+      "zh": "那，这个是身体的哪个部位？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "That is the part between the leg and the foot, I would say.",
+      "zh": "我觉得那是腿和脚之间的部分。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Right. And this one?",
+      "zh": "对。那这个呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "That is the foot, with toes at the end.",
+      "zh": "那是脚，末端是脚趾。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Good. Now point to your head.",
+      "zh": "好。现在指一下你的头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Here. No pain there.",
+      "zh": "这儿。头不疼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Well, and your hands?",
+      "zh": "那你的手呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Two hands are all right. See?",
+      "zh": "两只手都没事。你看？",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "So the trouble is only in the foot.",
+      "zh": "所以问题只在脚上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Yes. Foot, lower leg, toes. I will keep them in mind.",
+      "zh": "对。脚、小腿、脚趾。我会记住的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Now let me see your foot. Is it red or fat?",
+      "zh": "让我看看你的脚。有没有发红或肿起来？",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Not red. But a little fat here, near the bone.",
+      "zh": "没红。但骨头旁边这里有点肿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Is it sharp when I put my finger here?",
+      "zh": "我按这里会疼吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Yes! That is the sharp pain I had.",
+      "zh": "疼！就是刚才那种刺痛。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Good. That is the point. Turn it bit by bit.",
+      "zh": "好的。这是那个点。一点一点转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Oh. Pain when I go this way.",
+      "zh": "哎哟。往这边转就疼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Not too bad. The bone is safe. Only the soft parts.",
+      "zh": "不算严重。骨头没事，只是软组织。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "So I can still run tomorrow?",
+      "zh": "那我明天还能跑步吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Better not. Rest it with cold cloth tonight.",
+      "zh": "最好别跑。今晚用冷毛巾敷一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Right, leg. I will be safe of you.",
+      "zh": "好，腿。我会好好照顾你的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Let us go over the names again.",
+      "zh": "我们再把名称过一遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Head, hand, foot. I have them now.",
+      "zh": "头、手、脚。我记住了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Which part is damaged?",
+      "zh": "哪个部位受伤了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "The part between the foot and the leg.",
+      "zh": "脚踝，在脚和腿之间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Good. And the other two?",
+      "zh": "好。另外两个呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Head is good. Hands are good.",
+      "zh": "头没事，手没事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "So you will keep them safe tomorrow.",
+      "zh": "那你明天要保护好它们。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "I will. No running, only rest.",
+      "zh": "我会的。不跑步，只休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "If it still gives you pain, come back to me.",
+      "zh": "如果还疼，就回来找我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Thank you. Head, hand, foot. All clear.",
+      "zh": "谢谢。头、手、脚。都记住了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right, what part of the foot is the pain?",
+      "zh": "好，脚的哪个部位疼？",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "The place where leg bones join on the outer side.",
+      "zh": "腿外侧骨头相接的地方。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Is it sharp or not?",
+      "zh": "是刺痛还是钝痛？",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Like a twist, sharp when I put weight on it.",
+      "zh": "像扭了一下，踩地就刺痛。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Let me put my hand here. Is this the place?",
+      "zh": "我按一下这里。是这儿吗？",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Yes, that's the worst bit.",
+      "zh": "对，就是那儿最疼。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "No growth. It is a small turn.",
+      "zh": "没肿，是轻微扭伤。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Well, so I can still take the test tomorrow?",
+      "zh": "那我明天还能考吗？",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Rest it with a cold cloth tonight. See how it is in the morning.",
+      "zh": "今晚冷敷休息，明天早上看情况。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Right. I will keep that word in mind.",
+      "zh": "好的。我会记住那个词。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "体育课后脚扭了，校医指着头手脚教认部位。边描述疼痛边记名称，担心考试还能不能跑。",
+  "storyScript": "【开场·看图指认】周二下午第二节体育课刚结束，甲一瘸一拐地走进保健室。校医乙正坐在桌前，墙上挂着一幅人体部位图，图上的头、手、脚用红笔圈了出来。甲指着自己的右脚踝说，这里不太对劲。乙让他先坐下，指着图上的头部问，头晕吗？甲摇头。乙又指手，甲伸出双手说没事。最后乙指着脚，甲点头说就是这里。乙说，我们先看看脚。\n\n【进行·描述感觉】乙蹲下身，轻轻托起甲的右脚。甲皱眉说，脚踝外侧酸酸胀胀的，像被什么东西扯着。乙问，是刺痛还是钝痛？甲想了想说，像被拧了一下，站着就疼，坐着好一点。乙让他试着慢慢转动脚踝，甲吸了口气说，转到某个角度就疼。乙点点头，用手轻轻按压脚踝周围，甲说就是刚才按的那个点最疼。乙说，没有明显红肿，应该是轻微扭伤，不用太担心。\n\n【进行·听建议记名称】乙让甲把鞋袜脱了，把脚搁在软垫上休息。乙指着甲的脚说，这是脚踝，脚掌，脚趾。甲跟着重复了一遍。乙又说，头、手、脚这三个部位很重要，运动时要保护好。甲问，明天的体育考试怎么办？乙说，今晚回去用冷毛巾敷一敷，明天早上如果还疼就申请缓考。甲松了口气，指着自己的脚踝说，脚踝，记住了。乙笑着指了指墙上的图说，头、手、脚，你都会认了。\n\n【收束·小结记忆】甲休息了十分钟，站起来试了试，脚踝还是有点酸，但比刚才好多了。乙递给他一张纸条，上面写着：头、手、脚。乙说，回家再记一遍，明天如果还疼就来找我。甲点点头，指着自己的头说，头，不晕；又指手，手，没事；最后指脚，脚踝，扭了一下，但我知道它叫什么了。乙笑着挥手，甲慢慢走出保健室，心里默默念着：头、手、脚，脚踝，记住了。"
+}

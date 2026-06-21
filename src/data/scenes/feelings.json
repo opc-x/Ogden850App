@@ -1,0 +1,708 @@
+{
+  "slug": "feelings",
+  "sceneKey": "Feelings",
+  "titleZh": "表达内心感受",
+  "titleEn": "Sharing Feelings",
+  "tier": "P2",
+  "freqRank": 41,
+  "emoji": "💭",
+  "gradient": "linear-gradient(135deg,#f5f3ff,#a78bfa)",
+  "storyHook": "说出心情，倾听回应，互相理解",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "倾诉心情",
+      "goal": "说感觉"
+    },
+    {
+      "beat": "进行",
+      "title": "倾听回应",
+      "goal": "安慰共鸣"
+    },
+    {
+      "beat": "收束",
+      "title": "情绪平复",
+      "goal": "互相理解"
+    }
+  ],
+  "illustration": {
+    "label": "情绪感受",
+    "motifs": [
+      "heart",
+      "cloud",
+      "talk"
+    ],
+    "accent": "#7c3aed"
+  },
+  "narrative": {
+    "when": "周四晚上，甲心里有事没说出来",
+    "where": "甲和乙散步的小路上",
+    "who": "甲（倾诉的人）· 乙（好朋友）",
+    "how": "一边走一边慢慢说出心里的想法",
+    "method": "说出心情、乙耐心倾听、给出安慰或建议、心情慢慢平复",
+    "event": "甲今天工作上遇到了不顺心的事，需要找人说说"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I had a hard day at work.",
+      "zh": "今天上班很不顺。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Oh? What went wrong?",
+      "zh": "是吗？出什么事了？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "They said I did wrong, but it was not my doing.",
+      "zh": "他们说我做错了，可那不是我的问题。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "That is rough. Did you get a chance to say your side?",
+      "zh": "那真够呛。你有机会说清楚吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "No one would let me talk. I kept it all in.",
+      "zh": "没人肯听我说，我一直憋在心里。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "That is a hard thing to go through on your own.",
+      "zh": "真难过，你得一个人扛着。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "It is better now that I am talking about it.",
+      "zh": "现在说出来好多了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "That is good to say. I am here for you.",
+      "zh": "你愿意说就好，我在这儿听着呢。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "I am a bit lighter now.",
+      "zh": "我已经觉得轻松些了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Good. Let us walk a little more.",
+      "zh": "那就好，我们再走一会儿吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "It was like no one saw me.",
+      "zh": "就好像没人看得见我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "I okay and I get you.",
+      "zh": "我看见你，也明白你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I only needed one person to see.",
+      "zh": "我只需要有个人知道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Now I do. Go on if you like.",
+      "zh": "现在我知道了。你愿意就接着说。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "That is enough for now. Thank you.",
+      "zh": "现在这样就够了。谢谢你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "I am pleased you said it.",
+      "zh": "我很高兴你说出来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "It was hard to say at first.",
+      "zh": "一开始很难开口。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "But you did it. That is strong.",
+      "zh": "但你说出来了，这很勇敢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "I am not so tight now.",
+      "zh": "我现在没那么憋了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "A walk and a talk is all we need.",
+      "zh": "有时候走走说说就够了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "You are right. I will keep that in mind.",
+      "zh": "你说得对，我记住了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Right, let's get a warm drink.",
+      "zh": "好，我们去喝杯热饮吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "That sounds good. My throat is dry.",
+      "zh": "好啊，我嗓子都干了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "There is a place down the road.",
+      "zh": "前面路边有家店。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Let us go there. I am ready.",
+      "zh": "走吧，我准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "That is a good thing you said.",
+      "zh": "你说出来是好事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Me too. It was hard at first.",
+      "zh": "我也是。一开始挺难的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Let us get a cold plate as well?",
+      "zh": "要不要再加个冷盘？",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Yes, that is a good idea.",
+      "zh": "好，这个主意不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "I am pleased we came here.",
+      "zh": "很高兴我们来了这儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Me too. The air is good for talking.",
+      "zh": "我也是，这空气适合聊天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "You are a good friend.",
+      "zh": "你是个好朋友。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "So are you. Now get on with your food.",
+      "zh": "你也是。快吃你的东西吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Right. This place makes me happy.",
+      "zh": "嗯，这地方让我开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "I was not happy at work today.",
+      "zh": "我今天上班不太开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "What is the trouble? Let me have it.",
+      "zh": "怎么了？跟我说说。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "They said I did wrong. It was not my doing.",
+      "zh": "他们说我做错了。其实不是我做的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "That is hard. Did you say your side?",
+      "zh": "那挺难受的。你解释了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "I said my bit, but no one gave ear.",
+      "zh": "我说了我的想法，但没人听。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "That is a sad thing for you.",
+      "zh": "真遗憾你经历了这些。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "It helped to say it out loud.",
+      "zh": "说出来感觉好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "You see I am with you, right?",
+      "zh": "你看，我会陪着你，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Yes, I do. Thank you.",
+      "zh": "嗯，我知道。谢谢你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Let us walk a bit more.",
+      "zh": "我们再走一会儿吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I was so shut up all day.",
+      "zh": "我憋了一整天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "That is not good for the mind.",
+      "zh": "那样对心情不好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Now I see it was not so great a thing.",
+      "zh": "现在看其实不是什么大事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "But it seemed very great then.",
+      "zh": "但当时觉得天都塌了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I had the same last month.",
+      "zh": "上个月我也遇到过。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "What did you do?",
+      "zh": "那你怎么办的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I said it to a friend, like you are doing now.",
+      "zh": "我也跟朋友说了，就像你现在这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "It is good to have someone who gives ear.",
+      "zh": "有人愿意听真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "You are that someone for me.",
+      "zh": "你就是那个听我说话的人。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Then I am happy to be here.",
+      "zh": "那我真高兴我在这儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Well, i am not so tight now.",
+      "zh": "我现在没那么憋得慌了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "That is good. Talking makes it less.",
+      "zh": "那就好。说出来就轻了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "You are right. It was like a stone in my chest.",
+      "zh": "你说得对。之前像胸口压了块石头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "I have been there. It is a hard feeling.",
+      "zh": "我也有过。那种感觉很难受。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "How did you get through it?",
+      "zh": "你是怎么熬过来的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "I let time do its work. And I had a good sleep.",
+      "zh": "让时间慢慢过去，再好好睡一觉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Sleep sounds like a good idea.",
+      "zh": "睡觉听起来是个好主意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Yes. And tomorrow is a new day.",
+      "zh": "嗯，明天又是新的一天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "I will keep that in mind.",
+      "zh": "我会记住的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Good. Now let us go get some warm food.",
+      "zh": "好。那我们去吃点热乎的吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "That sounds good. I would like a warm plate.",
+      "zh": "好主意。我想吃点热菜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Right. There is a place down the road.",
+      "zh": "对。前面路上有家店。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Do they have soft food? Not too sharp.",
+      "zh": "他们有清淡的吗？不要太辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Yes, they keep it simple and soft.",
+      "zh": "有，他们做得简单清淡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Great. I am ready for some comfort.",
+      "zh": "太好了。我需要点安慰。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "A good meal will make you better.",
+      "zh": "吃顿好的你会好受些。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "I hope so. Today was a long day.",
+      "zh": "希望如此。今天真漫长。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "It is over now. You did well.",
+      "zh": "现在都过去了。你做得很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Thank you for walking with me.",
+      "zh": "谢谢你陪我走走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Any time. That is what friends are for.",
+      "zh": "随时。朋友就是干这个的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "I am feeling much better now.",
+      "zh": "我现在好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Good. Talking helps, does it not?",
+      "zh": "那就好。说出来有用吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Yes. I was keeping it all inside.",
+      "zh": "嗯，我之前都憋在心里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Do not do that. Let it out.",
+      "zh": "别那样。说出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "I will have a go. You are a good friend.",
+      "zh": "我试试。你真是好朋友。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "You are the same. We be safe of one another.",
+      "zh": "你也是。我们互相照顾。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I am ready to go to my house now.",
+      "zh": "我现在准备回我房子了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Let us get a warm drink first?",
+      "zh": "要不要先喝杯热饮？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "That sounds good. A tea would be pleasing.",
+      "zh": "听起来不错。来杯茶挺好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Come on then. My turn to put the money down.",
+      "zh": "走吧。我请客。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "I am feeling better now.",
+      "zh": "我现在感觉好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Well, good. Talking helps, does it not?",
+      "zh": "那就好。说出来有用，对吧？",
+      "beat": "收束"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Yes. I see things better.",
+      "zh": "嗯，我看事情更清楚了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "That is the way. You are strong.",
+      "zh": "就该这样。你很坚强。",
+      "beat": "收束"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Not so strong. But I have you.",
+      "zh": "也没有啦。但我有你。",
+      "beat": "收束"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "And I have you. That is what friends are for.",
+      "zh": "我也有你。朋友就是这样。",
+      "beat": "收束"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I will get some rest tonight.",
+      "zh": "我今晚会休息。",
+      "beat": "收束"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "You will. Let us get that tea now.",
+      "zh": "会的。我们现在去喝茶吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Right. Two cups of tea, please.",
+      "zh": "好。两杯茶，谢谢。",
+      "beat": "收束"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Coming up. You are all right now.",
+      "zh": "马上来。你现在没事了。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "甲在工作中受了委屈，却一直闷在心里。直到周四晚上散步时，才在好友乙的倾听下慢慢说出心事，最终感到释然。",
+  "storyScript": "【开场·倾诉心情】周四的夜晚，路灯在小路上投下柔和的光。甲和乙并肩走着，脚步比平时慢了些。甲低着头，手指无意识地绞着衣角，终于开口说，今天心里堵得慌。乙没有催促，只是放慢了步子，侧过头，目光安静地落在甲的脸上。甲的声音有些发涩，断断续续地讲起白天的事——会议上被误解，明明不是自己的错，却没人听解释。那些话在喉咙里憋了一整天，现在说出来，像卸下了一块石头。乙轻轻嗯了一声，脚步没停，却离甲更近了些。\n\n【进行·倾听回应】乙没有急着给建议，只是安静地听着。偶尔问一句，后来呢？或者，你当时怎么想的？甲说着说着，声音渐渐平稳，眼眶却红了。乙从口袋里掏出一张纸巾，默默递过去。路灯下，两个人的影子拉得很长，时而交叠。乙说，我明白那种感觉，被人误会真的很难受。甲吸了吸鼻子，第一次觉得有人真的懂了。乙没有说大道理，只是分享了自己类似的经历——那次也是被冤枉，后来怎么一点点想开的。甲听着，心里的结似乎松动了些。\n\n【进行·互相理解】甲停下来，看着远处的灯火，说，其实我知道不是大事，就是需要有人说说话。乙笑了，拍拍甲的肩膀，说，以后别一个人扛着。甲也笑了，眼眶还湿着，但心里暖了。两个人继续往前走，聊起了别的事——周末的计划，喜欢的音乐。甲觉得脚步轻快了许多，连晚风都变得温柔。乙忽然说，你知道吗？你刚才说出来的时候，眼睛里有光了。甲愣了一下，然后笑出声来。\n\n【收束·情绪平复】走到路口，两人该分开了。甲深深吸了口气，说，谢谢你听我说这些。乙摆摆手，说，朋友不就是干这个的嘛。甲转身走了几步，又回头，看见乙还站在原地，冲自己挥了挥手。甲心里那点委屈，已经散得差不多了。夜风拂过，甲加快了脚步，想着明天要好好吃顿热菜。原来，把心情说出来，真的会好很多。"
+}

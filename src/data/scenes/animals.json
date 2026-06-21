@@ -1,0 +1,820 @@
+{
+  "slug": "animals",
+  "sceneKey": "Animals",
+  "titleZh": "宠物与动物",
+  "titleEn": "Pets and Animals",
+  "tier": "P2",
+  "freqRank": 48,
+  "emoji": "🐕",
+  "gradient": "linear-gradient(135deg,#fef3c7,#fcd34d)",
+  "storyHook": "看动物、喂食、聊习性",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "遇见动物",
+      "goal": "看狗鸟"
+    },
+    {
+      "beat": "进行",
+      "title": "互动喂食",
+      "goal": "给水食物"
+    },
+    {
+      "beat": "收束",
+      "title": "告别离开",
+      "goal": "说再见"
+    }
+  ],
+  "illustration": {
+    "label": "动物",
+    "motifs": [
+      "dog",
+      "bird",
+      "garden"
+    ],
+    "accent": "#d97706"
+  },
+  "narrative": {
+    "when": "周日上午，难得的晴天",
+    "where": "小区附近的公园",
+    "who": "甲（遛狗的人）· 乙（邻居，也带着宠物）",
+    "how": "一边遛狗一边和邻居聊起各自的宠物",
+    "method": "遇见对方的动物、互动喂食、聊起动物的习性、道别离开",
+    "event": "甲新养的小狗第一次出门，有点紧张"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good morning! What a good day.",
+      "zh": "早上好！天气真好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Right, your dog is new, is it?",
+      "zh": "对哦，你的狗是新来的？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Yes, his first time out. He is not quite solid.",
+      "zh": "是的，它第一次出门。有点不稳。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "My cat is old and slow. See her?",
+      "zh": "我的猫又老又慢。看见它了吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "She is beautiful. What is her name?",
+      "zh": "它真漂亮。叫什么名字？",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "But she is soft, not sharp.",
+      "zh": "但它很温柔，不凶。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "My dog has no name. Any ideas?",
+      "zh": "我的狗还没名字。有什么建议吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "What about 'Bright'? For this clear day.",
+      "zh": "也许叫‘明亮’？为了这晴朗的一天。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "That is a good name. I will keep it.",
+      "zh": "好名字。我记下了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Let them get used to one another.",
+      "zh": "让它们彼此熟悉一下吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "He is shaking a bit. Does your cat ever get fear?",
+      "zh": "它有点发抖。你的猫也会害怕吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Not much. She has seen it all.",
+      "zh": "不太会。它什么都见过了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "He may be like that one day.",
+      "zh": "也许有一天它也会那样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Give him time. He is young.",
+      "zh": "给它点时间。它还小。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "True. I will take him out more.",
+      "zh": "也是。我会多带它出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Have you got any food for them?",
+      "zh": "你带吃的了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "I have some dry meat bits. Would you like some?",
+      "zh": "带了点肉干，要试试吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "He would like that. He is a bit in need of food.",
+      "zh": "它应该会喜欢。它有点饿了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Here, put a bit on your hand.",
+      "zh": "来，放一点在手心上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "He took it! That is a good sign.",
+      "zh": "它吃了！好兆头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "My cat only has food after a long smell.",
+      "zh": "我家猫闻半天才吃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Dogs are not so detailed. They take it in.",
+      "zh": "狗没那么多讲究，直接吞。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "True. But he is still learning to be strong.",
+      "zh": "是啊。不过它还在学勇敢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Give him water too. The sun is warm.",
+      "zh": "也给它喝点水。太阳挺暖的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Good idea. I have a small bowl here.",
+      "zh": "好主意。我带了小碗。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Here, put some water in the bowl.",
+      "zh": "来，倒点水在碗里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "He is drinking now. That is good.",
+      "zh": "它在喝了，挺好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "My cat will only take water that is moving.",
+      "zh": "我家猫只喝流动的水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Oh! That cat is hard to please.",
+      "zh": "哦！这猫还挺难伺候。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Yes, he will not touch still water.",
+      "zh": "是啊，静水它不碰。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Your dog is getting used to the place.",
+      "zh": "你的狗开始适应这儿了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "He even gave my cat a look just now.",
+      "zh": "它刚才还瞅了我家猫一眼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Cats are not so quick to make friends.",
+      "zh": "猫交朋友可没那么快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "True. But they may get on in time.",
+      "zh": "没错，但时间长了也许能处。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "I hope so. It would be a sweet thing.",
+      "zh": "希望如此，那多好啊。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Let them be a little longer?",
+      "zh": "要不让它们再待会儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Good idea. I have some cheese bits.",
+      "zh": "好主意，我这儿有点奶酪粒。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "My dog takes any food, but that cat is hard to please.",
+      "zh": "我家狗什么都吃，那猫可真挑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "He only takes the soft bits. Hard food is no good.",
+      "zh": "它只吃软的，硬的一点不碰。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Right. Every animal has its own way.",
+      "zh": "有道理，每个动物都有自己的脾气。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "My dog will take anything, even grass.",
+      "zh": "我家狗什么都吃，连草都啃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "That is a laugh. Does he get ill?",
+      "zh": "那倒有趣。它不会生病吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Not so far. But he did take a stone.",
+      "zh": "目前还没有。不过它吃过石头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "A stone? That is not good for his body.",
+      "zh": "石头？那对身体可不好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I took it from his mouth in time.",
+      "zh": "我及时从它嘴里拿出来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "You were quick. My cat is slow and soft.",
+      "zh": "你反应快。我家猫又慢又温和。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Cats are wise. Dogs are happy simple ones.",
+      "zh": "猫聪明，狗是快乐的简单家伙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "That is a good way to put it.",
+      "zh": "说得真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Give them a bit more time?",
+      "zh": "再让它们多待一会儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Yes, let them get used to one another.",
+      "zh": "好，让它们慢慢熟悉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I have some food for them.",
+      "zh": "我带了点吃的给它们。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "What is it? My dog is hard to please.",
+      "zh": "是什么？我家狗很难伺候。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Small bits of meat. Your dog may like them.",
+      "zh": "小肉块。你家狗可能会喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "He is looking at your hand now.",
+      "zh": "它现在正盯着你的手看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Here you go, little one. Take it slow.",
+      "zh": "来，小家伙。慢慢吃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "He took it. That is a good sign.",
+      "zh": "它吃了。这是个好兆头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "My cat will only take food if I put it on the floor first.",
+      "zh": "我家猫非得我先放地上才肯吃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Cats are like that. They have their own way.",
+      "zh": "猫就那样。它们有自己的规矩。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Your dog is more at rest now.",
+      "zh": "你家狗现在放松多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Yes, the food and your cat helped.",
+      "zh": "是啊，食物和你家猫帮了忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "My cat is watching a bird up there.",
+      "zh": "我家猫在看上面那只鸟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Your dog is looking at the bird too.",
+      "zh": "你家狗也在看那只鸟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "He has not seen a bird so near before.",
+      "zh": "它以前没这么近看过鸟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "My cat will watch birds for hours.",
+      "zh": "我家猫能看鸟看几个小时。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Does she ever make an attempt to get them?",
+      "zh": "它有没有试过抓它们？",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "No, she only looks. She is not after anything.",
+      "zh": "没有，它只是看。它不追捕任何东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Your dog has more nerve now.",
+      "zh": "你家狗现在胆子大了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Yes, he is walking with his tail up.",
+      "zh": "是啊，它尾巴翘起来走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "My cat is going to the grass.",
+      "zh": "我家猫要去草地上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Let them have a little play.",
+      "zh": "让它们玩一会儿吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Your cat seems quite at peace.",
+      "zh": "你家猫看起来挺自在的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "She is. The garden is her place.",
+      "zh": "是啊，它把整个花园当自己家了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "My dog is still not happy with this place.",
+      "zh": "我家狗还是不太喜欢这个地方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Give him time. He will get used to it.",
+      "zh": "给它点时间，它会习惯的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "I hope so. He would not take water from my hand.",
+      "zh": "希望如此吧。它连我手上的水都不肯喝。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Here, let me put some in this little thing.",
+      "zh": "来，我倒一点在这个小东西里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "That is very kind of you. He is looking at it now.",
+      "zh": "你真好。它现在在看了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "He will come to it when he is ready.",
+      "zh": "等它准备好了就会过来喝的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "He took a drink! That is a good sign.",
+      "zh": "它喝了一口！好兆头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "See? Animals have their own way of doing things.",
+      "zh": "看吧？动物有自己的行事方式。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "My cat is watching a bird in that tree.",
+      "zh": "我家的猫在看那棵树上的鸟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "She does that for hours. Not moving.",
+      "zh": "它能看几个小时，一动不动。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "My dog would make a noise at it right away.",
+      "zh": "我家的狗会立刻叫起来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Cats go quiet when they get food. Dogs make a noise.",
+      "zh": "猫抓食物时不出声，狗会吵闹。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "True. He even made noise at his own face in a glass.",
+      "zh": "没错，它甚至对着镜子里的自己叫。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "That is a laugh. My cat has no care for glass.",
+      "zh": "真逗。我家猫才不在乎镜子呢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "He is more ready now. See his tail?",
+      "zh": "它现在胆子大了点。看它的尾巴？",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Yes, it is up a bit. He is feeling better.",
+      "zh": "嗯，翘起来一点了。它感觉好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Your cat has no fear of him at all.",
+      "zh": "你家猫根本不怕它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "No, she is used to dogs. She will walk away if she has had enough.",
+      "zh": "不怕，它习惯狗了。受够了就会走开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I had better go. It is time for the meal.",
+      "zh": "我得走了，该吃饭了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Right, I will get going too. He needs a rest.",
+      "zh": "好，我也该走了。它需要休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Let us do this again one week from now?",
+      "zh": "下周还一起遛吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Yes, that would be good. Same time?",
+      "zh": "好啊，挺好的。同一时间？",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Yes, the first day of the week in the morning is best for me.",
+      "zh": "嗯，周日早上我最方便。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Keep walking. be safe of him.",
+      "zh": "继续走。照顾好它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "You too. Give her a soft touch for me.",
+      "zh": "你也是。替我轻轻摸摸它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "I will. get some rest.",
+      "zh": "我会的。休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Look. He is walking better now.",
+      "zh": "看，它现在走得好些了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Yes, he is getting used to it. Go slow.",
+      "zh": "对，它在适应了。慢慢走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right, time to go. He will be tired after this.",
+      "zh": "好了，该走了。它走完这趟会累的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Yes, first walks are hard work. Rest now.",
+      "zh": "是的，第一次散步不容易。休息吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Yes, same place, same time. I will be here.",
+      "zh": "嗯，老地方，老时间。我会来的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Good. Give him a rest when you get back.",
+      "zh": "好的。回去让它歇会儿。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I will. He will get some rest tonight, I am certain.",
+      "zh": "我会的。我确定它今晚会休息得很好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Oh yes. My cat will sleep on my bed as ever.",
+      "zh": "哈，是啊。我家猫照旧睡我床上。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "That is good. They keep us company.",
+      "zh": "那挺好。它们陪着我们。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "True. Well then, I will go this way.",
+      "zh": "没错。那行，我走这边了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "And I will go that way. Have a good rest of the day.",
+      "zh": "我走那边。周末愉快。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "You too. See you after this week.",
+      "zh": "你也是。下周见。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周日上午公园里，甲的新狗第一次出门紧张发抖，乙的宠物猫却淡定围观。两人喂食互动间，聊起动物习性，最后道别离开。",
+  "storyScript": "【开场·遇见动物】周日上午的阳光暖洋洋地洒在公园的草坪上，甲牵着一条毛茸茸的小狗，小狗四腿微微打颤，尾巴夹在腿间，对周围的一切充满警惕。不远处，乙正蹲在地上，面前一只虎斑猫慵懒地舔着爪子，偶尔抬头瞥一眼新来的小家伙。两人目光相遇，乙笑着招手，甲牵着小狗慢慢走近。小狗在猫面前停下，鼻子抽动，却不敢上前，猫则漫不经心地甩了甩尾巴。\n\n【进行·互动喂食】乙从口袋里掏出一小袋冻干，倒了几粒在掌心，先喂给自家猫，猫优雅地叼走一块。乙又朝小狗伸出手，小狗犹豫着，甲轻声鼓励，它终于凑上前，小心地舔走一粒。乙笑着说，猫和狗吃东西的习惯真不一样，猫总是先闻半天，狗却直接吞。甲点头，说小狗第一次出门，什么都怕，连喝水都要哄。乙递过一个小碗，甲倒了些水，小狗低头喝起来，猫则跳到旁边的长椅上，居高临下地看着。\n\n【进行·聊习性】两人聊起动物的趣事，乙说自家猫最爱在窗台上看鸟，一看就是一下午，但真见到鸟又懒得动。甲说小狗昨晚啃坏了拖鞋，还对着镜子里的自己狂吠。乙哈哈大笑，说动物各有各的脾气，猫独立，狗黏人，但都让人牵肠挂肚。阳光渐暖，小狗放松了些，开始试探着嗅猫的尾巴，猫不耐烦地走开，小狗又追上去，两人看着这一幕，会心一笑。\n\n【收束·告别离开】乙看了看手表，说该回家做午饭了。甲也拉起狗绳，小狗似乎有些依依不舍，回头看了猫一眼。乙抱起猫，挥手道别，说下次再一起遛。甲牵着狗慢慢走远，小狗的脚步比来时稳当多了，尾巴也微微翘起。阳光依旧温暖，公园里留下一串浅浅的脚印。"
+}
