@@ -233,8 +233,8 @@ function AppContent() {
           <div>
             <h1 
               onClick={() => setActiveTab('home')}
-              style={{ fontFamily: "'Pacifico', cursive", fontSize: "1.75rem" }}
-              className="font-extrabold tracking-tight text-[#2f7d4f] cursor-pointer hover:opacity-90 select-none pb-1"
+              style={{ fontFamily: "'Pacifico', cursive", fontSize: "1.75rem", backgroundImage: "linear-gradient(120deg, #1f6b3f 0%, #2f7d4f 45%, #5cb377 100%)" }}
+              className="font-extrabold tracking-tight bg-clip-text text-transparent cursor-pointer hover:opacity-90 select-none pb-1"
             >
               Ogden 850
             </h1>
@@ -250,11 +250,11 @@ function AppContent() {
           </div>
           <div 
             onClick={() => setActiveTab('profile')}
-            className="w-10 h-10 rounded-xl border border-emerald-200/50 shadow-sm bg-gradient-to-tr from-[#2f7d4f] to-[#5cb377] flex items-center justify-center text-white cursor-pointer relative group active:scale-95 transition-all"
+            className="w-10 h-10 flex items-center justify-center text-[#2f7d4f] cursor-pointer relative group active:scale-95 transition-all hover:opacity-80"
             title={isAuthenticated ? '我的账号' : '登录 / 注册'}
           >
-            <User className="w-5 h-5 text-white" />
-            <span className={`absolute bottom-0 right-0 w-3 h-3 rounded-full border-2 border-[#fffbf6] ${
+            <User className="w-6 h-6" strokeWidth={2.25} />
+            <span className={`absolute bottom-0.5 right-0.5 w-2.5 h-2.5 rounded-full border-2 border-white ${
               isAuthenticated ? 'bg-emerald-500' : 'bg-slate-300'
             }`} />
           </div>

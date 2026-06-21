@@ -52,18 +52,22 @@ export function SceneStatsSummary({ recommendedSceneTitle, onStart }: SceneStats
             </p>
 
             {onStart && (
-              <button
-                type="button"
-                onClick={onStart}
-                className="group mt-5 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[#2f7d4f] px-6 py-3.5 text-sm font-black text-white shadow-lg shadow-emerald-600/20 transition-all hover:bg-[#266641] active:scale-[0.98] sm:w-auto"
-              >
-                <Play className="w-4 h-4 fill-white" />
-                <span>随便挑个场景开练</span>
+              <div className="mt-5">
+                <button
+                  type="button"
+                  onClick={onStart}
+                  className="group inline-flex w-full items-center justify-center gap-2.5 rounded-2xl bg-[#2f7d4f] px-7 py-3.5 text-base font-black text-white shadow-lg shadow-emerald-600/25 transition-all hover:bg-[#266641] hover:shadow-emerald-600/30 active:scale-[0.97] sm:w-auto"
+                >
+                  <Play className="w-4 h-4 fill-white" />
+                  <span>开始开口练</span>
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </button>
                 {recommendedSceneTitle && (
-                  <span className="font-bold text-white/80">· {recommendedSceneTitle}</span>
+                  <p className="mt-2 text-xs font-semibold text-slate-400">
+                    推荐从「{recommendedSceneTitle}」开始
+                  </p>
                 )}
-                <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
-              </button>
+              </div>
             )}
           </div>
 
