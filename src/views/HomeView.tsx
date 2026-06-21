@@ -47,46 +47,46 @@ const CATEGORY_TILES: CategoryTile[] = [
     key: 'actions',
     label: '动作与方向',
     icon: Move,
-    hoverBorder: 'hover:border-cyan-200/80',
-    iconBg: 'bg-cyan-50',
-    iconText: 'text-cyan-500',
-    countTone: 'text-cyan-600/60',
+    hoverBorder: 'hover:border-emerald-200',
+    iconBg: 'bg-emerald-50',
+    iconText: 'text-[#2f7d4f]',
+    countTone: 'text-emerald-600/60',
   },
   {
     key: 'picturables',
     label: '可见物/实物',
     icon: Eye,
-    hoverBorder: 'hover:border-amber-200/80',
-    iconBg: 'bg-amber-50',
-    iconText: 'text-amber-500',
-    countTone: 'text-amber-600/60',
+    hoverBorder: 'hover:border-emerald-200',
+    iconBg: 'bg-emerald-50',
+    iconText: 'text-[#2f7d4f]',
+    countTone: 'text-emerald-600/60',
   },
   {
     key: 'generals',
     label: '普通名词',
     icon: Package,
-    hoverBorder: 'hover:border-rose-200/80',
-    iconBg: 'bg-rose-50',
-    iconText: 'text-rose-500',
-    countTone: 'text-rose-600/60',
+    hoverBorder: 'hover:border-emerald-200',
+    iconBg: 'bg-emerald-50',
+    iconText: 'text-[#2f7d4f]',
+    countTone: 'text-emerald-600/60',
   },
   {
     key: 'qualities',
     label: '性质词',
     icon: Palette,
-    hoverBorder: 'hover:border-purple-200/80',
-    iconBg: 'bg-purple-50',
-    iconText: 'text-purple-500',
-    countTone: 'text-purple-600/60',
+    hoverBorder: 'hover:border-emerald-200',
+    iconBg: 'bg-emerald-50',
+    iconText: 'text-[#2f7d4f]',
+    countTone: 'text-emerald-600/60',
   },
   {
     key: 'opposites',
     label: '反义词',
     icon: Blend,
-    hoverBorder: 'hover:border-red-200/80',
-    iconBg: 'bg-red-50',
-    iconText: 'text-red-500',
-    countTone: 'text-red-600/60',
+    hoverBorder: 'hover:border-emerald-200',
+    iconBg: 'bg-emerald-50',
+    iconText: 'text-[#2f7d4f]',
+    countTone: 'text-emerald-600/60',
   },
 ];
 
@@ -265,20 +265,45 @@ export const HomeView: React.FC<HomeViewProps> = ({
         <button
           type="button"
           onClick={startOperatorsRoutine}
-          className="relative w-full h-[7.75rem] sm:h-[8.75rem] rounded-2xl overflow-hidden border border-emerald-100/90 text-left group active:scale-[0.99] transition-transform shadow-sm"
+          className="relative w-full rounded-2xl overflow-hidden text-left group active:scale-[0.99] transition-transform shadow-[0_6px_24px_rgba(31,107,63,0.22)]"
+          style={{ backgroundImage: 'linear-gradient(135deg, #1f6b3f 0%, #2f7d4f 55%, #3f9460 100%)' }}
         >
-          <img
-            alt=""
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA67Z_foag2kUgf83Cki6FUcrkpIy1uxkVg5KKhduemzlJKdZaVVBnknU6ttRReZHcSdPmgjUxJ0-Hlh8Ob9LwsLnMhuEWghK6m-Nz3nmdVSGR_Z_bqXl41yTfdyG-kXNzY90SD95b6nIL9-rvi9yZFHtfS9GHVLCq3wPWi7t6cfWzgm9CcShrewK756MNR6ifoe3g1VVx4iLJJ8FXJ-iBjP5DcQvB_Qz1_dPf6WoDw-LWuu0bhjsfT5KkAxnWl6Siod6DuFgvvDrws"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/78 via-emerald-900/20 to-transparent flex flex-col justify-end p-5">
-            <p className="text-white font-bold text-[17px] flex items-center gap-1.5 leading-tight">
-              掌握语言的引擎 <Sparkles className="w-4 h-4 text-amber-300" />
-            </p>
-            <p className="text-white/88 text-xs leading-relaxed mt-1.5 max-w-[92%]">
-              come, get, give, let… 18 个决定 Basic English 句式的核心动词
-            </p>
+          {/* 装饰光晕 */}
+          <span className="pointer-events-none absolute -right-10 -top-12 w-40 h-40 rounded-full bg-white/10 blur-2xl" />
+          <span className="pointer-events-none absolute -right-2 bottom-0 w-28 h-28 rounded-full bg-[#5cb377]/30 blur-2xl" />
+
+          <div className="relative flex items-stretch">
+            {/* 左：文案 */}
+            <div className="flex-1 p-5 sm:p-6">
+              <p className="text-white font-black text-lg flex items-center gap-1.5 leading-tight">
+                掌握语言的引擎 <Sparkles className="w-4 h-4 text-amber-300" />
+              </p>
+              <p className="text-emerald-50/85 text-xs leading-relaxed mt-2 max-w-[20rem]">
+                只需 18 个核心动词，就能拼出 Basic English 的绝大多数句式
+              </p>
+              <span className="mt-3.5 inline-flex items-center gap-1 text-[13px] font-bold text-white/95">
+                开始学习
+                <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
+              </span>
+            </div>
+
+            {/* 右：动词词块 */}
+            <div className="flex w-[40%] max-w-[14rem] items-center p-3 pr-4">
+              <div className="flex flex-wrap gap-1.5 justify-end content-center">
+                {['come', 'get', 'give', 'go', 'let', 'make', 'put', 'take'].map((v, i) => (
+                  <span
+                    key={v}
+                    className={`rounded-lg px-2 py-1 text-[11px] font-bold tabular-nums backdrop-blur-sm ${
+                      i % 3 === 0
+                        ? 'bg-white/95 text-[#1f6b3f]'
+                        : 'bg-white/15 text-white border border-white/25'
+                    }`}
+                  >
+                    {v}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </button>
       </section>
