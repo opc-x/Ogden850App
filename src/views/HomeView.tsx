@@ -49,44 +49,44 @@ const CATEGORY_TILES: CategoryTile[] = [
     icon: Move,
     hoverBorder: 'hover:border-emerald-200',
     iconBg: 'bg-emerald-50',
-    iconText: 'text-[#2f7d4f]',
-    countTone: 'text-emerald-600/60',
+    iconText: 'text-emerald-600',
+    countTone: 'text-emerald-700/55',
   },
   {
     key: 'picturables',
     label: '可见物/实物',
     icon: Eye,
-    hoverBorder: 'hover:border-emerald-200',
-    iconBg: 'bg-emerald-50',
-    iconText: 'text-[#2f7d4f]',
-    countTone: 'text-emerald-600/60',
+    hoverBorder: 'hover:border-amber-200',
+    iconBg: 'bg-amber-50',
+    iconText: 'text-amber-600',
+    countTone: 'text-amber-700/55',
   },
   {
     key: 'generals',
     label: '普通名词',
     icon: Package,
-    hoverBorder: 'hover:border-emerald-200',
-    iconBg: 'bg-emerald-50',
-    iconText: 'text-[#2f7d4f]',
-    countTone: 'text-emerald-600/60',
+    hoverBorder: 'hover:border-orange-200',
+    iconBg: 'bg-orange-50',
+    iconText: 'text-orange-600',
+    countTone: 'text-orange-700/55',
   },
   {
     key: 'qualities',
     label: '性质词',
     icon: Palette,
-    hoverBorder: 'hover:border-emerald-200',
-    iconBg: 'bg-emerald-50',
-    iconText: 'text-[#2f7d4f]',
-    countTone: 'text-emerald-600/60',
+    hoverBorder: 'hover:border-sky-200',
+    iconBg: 'bg-sky-50',
+    iconText: 'text-sky-600',
+    countTone: 'text-sky-700/55',
   },
   {
     key: 'opposites',
     label: '反义词',
     icon: Blend,
-    hoverBorder: 'hover:border-emerald-200',
-    iconBg: 'bg-emerald-50',
-    iconText: 'text-[#2f7d4f]',
-    countTone: 'text-emerald-600/60',
+    hoverBorder: 'hover:border-rose-200',
+    iconBg: 'bg-rose-50',
+    iconText: 'text-rose-500',
+    countTone: 'text-rose-600/55',
   },
 ];
 
@@ -266,11 +266,16 @@ export const HomeView: React.FC<HomeViewProps> = ({
           type="button"
           onClick={startOperatorsRoutine}
           className="relative w-full rounded-2xl overflow-hidden text-left group active:scale-[0.99] transition-transform shadow-[0_6px_24px_rgba(31,107,63,0.22)]"
-          style={{ backgroundImage: 'linear-gradient(135deg, #1f6b3f 0%, #2f7d4f 55%, #3f9460 100%)' }}
         >
-          {/* 装饰光晕 */}
-          <span className="pointer-events-none absolute -right-10 -top-12 w-40 h-40 rounded-full bg-white/10 blur-2xl" />
-          <span className="pointer-events-none absolute -right-2 bottom-0 w-28 h-28 rounded-full bg-[#5cb377]/30 blur-2xl" />
+          {/* 品牌背景图 */}
+          <img
+            src="/verbs-banner.png"
+            alt=""
+            aria-hidden
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+          />
+          {/* 渐变遮罩：左侧压暗保证文字可读 */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f3622]/92 via-[#15412a]/70 to-[#1f6b3f]/35" />
 
           <div className="relative flex items-stretch">
             {/* 左：文案 */}
