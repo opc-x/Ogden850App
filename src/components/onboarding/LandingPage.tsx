@@ -70,7 +70,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
       >
         <button 
           onClick={onComplete}
-          className="w-full bg-gradient-to-r from-[#2f7d4f] to-[#e6754b] hover:from-[#b54a20] hover:to-[#d6653b] text-white font-black py-4 rounded-2xl flex justify-center items-center gap-2 shadow-xl shadow-emerald-500/20 active:scale-95 transition-all text-lg"
+          className="w-full bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] hover:from-[#185532] hover:to-[#4da369] text-white font-black py-4 rounded-2xl flex justify-center items-center gap-2 shadow-xl shadow-emerald-500/20 active:scale-95 transition-all text-lg"
         >
           开启极简英语之旅 <ArrowRight className="w-5 h-5" />
         </button>
