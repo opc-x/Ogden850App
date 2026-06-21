@@ -177,7 +177,7 @@ export function UserAuthForm({ compact, onSuccess }: UserAuthFormProps) {
               : auth.signUpWithEmail(email, password, displayName),
           )
         }
-        className="w-full py-3 rounded-xl bg-gradient-to-r from-[#2f7d4f] to-[#e07a3a] text-white font-black text-sm disabled:opacity-50 flex items-center justify-center gap-2"
+        className="w-full py-3 rounded-xl bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] text-white font-black text-sm disabled:opacity-50 flex items-center justify-center gap-2"
       >
         {busy ? <RefreshCw className="w-4 h-4 animate-spin" /> : null}
         {tab === 'login' ? '登录' : '注册并登录'}

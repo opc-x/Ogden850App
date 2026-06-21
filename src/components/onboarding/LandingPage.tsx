@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Headphones, Mic, BrainCircuit } from 'lucide-react';
+import { ArrowRight, Headphones, Mic, BrainCircuit, RefreshCw } from 'lucide-react';
 import {
   WORD_COUNT,
   SCENE_TARGET_COUNT,
   DIALOGUE_MARKETING_LABEL,
 } from '../../data/marketing';
+import { useAuth } from '../../contexts/AuthContext';
 
 const fadeUp = {
   initial: { opacity: 0, y: 18 },
   animate: { opacity: 1, y: 0 },
 };
+
+function GoogleIcon() {
+  return (
+    <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden>
+      <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+      <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+      <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+      <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+    </svg>
+  );
+}
 
 const FEATURES = [
   {
@@ -37,6 +49,23 @@ const FEATURES = [
 ];
 
 export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
+  const auth = useAuth();
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleGoogle = async () => {
+    setBusy(true);
+    setError(null);
+    try {
+      // 记下已看过引导，OAuth 回跳后直接进首页
+      localStorage.setItem('ogden850_has_seen_onboarding', 'true');
+      await auth.signInWithGoogle();
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Google 登录失败，请重试');
+      setBusy(false);
+    }
+  };
+
   return (
     <div className="relative w-full h-full overflow-hidden bg-gradient-to-b from-[#e6f4ea] via-[#f0f9f2] to-[#f8f9fa] flex flex-col pt-safe pb-safe">
       {/* 柔和光晕背景 */}
@@ -136,12 +165,33 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
         className="relative w-full px-6 pt-4 pb-6"
       >
         <button
-          onClick={onComplete}
-          className="group w-full bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] hover:from-[#185532] hover:to-[#4da369] text-white font-black py-4 rounded-2xl flex justify-center items-center gap-2 shadow-xl shadow-emerald-500/25 active:scale-[0.97] transition-all text-lg"
+          onClick={handleGoogle}
+          disabled={busy}
+          className="group w-full bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] hover:from-[#185532] hover:to-[#4da369] text-white font-black py-4 rounded-2xl flex justify-center items-center gap-2.5 shadow-xl shadow-emerald-500/25 active:scale-[0.97] transition-all text-lg disabled:opacity-60"
         >
-          开启极简英语之旅
-          <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+          {busy ? (
+            <RefreshCw className="w-5 h-5 animate-spin" />
+          ) : (
+            <span className="flex items-center justify-center rounded-full bg-white p-1">
+              <GoogleIcon />
+            </span>
+          )}
+          Google 一键登录 / 注册
         </button>
+
+        {error && (
+          <p className="mt-2 text-center text-xs text-rose-600">{error}</p>
+        )}
+
+        <button
+          onClick={onComplete}
+          disabled={busy}
+          className="mt-3 w-full text-center text-[13px] font-bold text-slate-400 hover:text-slate-600 transition-colors flex items-center justify-center gap-1 disabled:opacity-60"
+        >
+          先随便逛逛
+          <ArrowRight className="w-3.5 h-3.5" />
+        </button>
+
         <p className="mt-3 text-center text-[11px] font-medium text-slate-400">
           已上线 {DIALOGUE_MARKETING_LABEL} 句真实场景对话 · 持续更新
         </p>
