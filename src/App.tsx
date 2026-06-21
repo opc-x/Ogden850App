@@ -28,7 +28,7 @@ const ProfileView = lazy(() => import('./views/ProfileView').then(m => ({ defaul
 function ViewFallback() {
   return (
     <div className="flex items-center justify-center py-24">
-      <RefreshCw className="w-6 h-6 animate-spin text-orange-400" />
+      <RefreshCw className="w-6 h-6 animate-spin text-emerald-400" />
     </div>
   );
 }
@@ -38,8 +38,8 @@ function mobileNavItemClass(isActive: boolean) {
     'flex flex-col items-center justify-center gap-0.5',
     'transition-colors duration-200 outline-none w-14 py-2 cursor-pointer',
     isActive
-      ? 'text-[#c65a30]'
-      : 'text-[#c65a30]/45 hover:text-[#c65a30]/70 active:text-[#c65a30]/60',
+      ? 'text-[#2f7d4f]'
+      : 'text-[#2f7d4f]/45 hover:text-[#2f7d4f]/70 active:text-[#2f7d4f]/60',
   ].join(' ');
 }
 
@@ -203,7 +203,7 @@ function AppContent() {
           <header className="flex-none w-full bg-white/90 backdrop-blur-xl flex items-center justify-between px-4 sm:px-6 py-3 border-b border-slate-200/60 z-40 pt-safe">
             <h1
               style={{ fontFamily: "'Pacifico', cursive", fontSize: '1.75rem' }}
-              className="font-extrabold tracking-tight text-[#c65a30] select-none pb-1"
+              className="font-extrabold tracking-tight text-[#2f7d4f] select-none pb-1"
             >
               Ogden 850
             </h1>
@@ -234,23 +234,23 @@ function AppContent() {
             <h1 
               onClick={() => setActiveTab('home')}
               style={{ fontFamily: "'Pacifico', cursive", fontSize: "1.75rem" }}
-              className="font-extrabold tracking-tight text-[#c65a30] cursor-pointer hover:opacity-90 select-none pb-1"
+              className="font-extrabold tracking-tight text-[#2f7d4f] cursor-pointer hover:opacity-90 select-none pb-1"
             >
               Ogden 850
             </h1>
-            <p className="text-[10px] text-orange-800/60 font-semibold tracking-wider -mt-1 scale-90 origin-left hidden">温馨基本英语 · 暖心伴读</p>
+            <p className="text-[10px] text-emerald-800/60 font-semibold tracking-wider -mt-1 scale-90 origin-left hidden">温馨基本英语 · 暖心伴读</p>
           </div>
         </div>
         
         {/* User avatar and profile status with cumulative scores */}
         <div className="flex items-center gap-3">
           <div className="text-right hidden">
-            <p className="text-xs text-orange-800/60 font-bold">语言掌握中</p>
-            <p className="text-sm font-extrabold text-[#c65a30]">{masteredCount + learningCount} / 850 词</p>
+            <p className="text-xs text-emerald-800/60 font-bold">语言掌握中</p>
+            <p className="text-sm font-extrabold text-[#2f7d4f]">{masteredCount + learningCount} / 850 词</p>
           </div>
           <div 
             onClick={() => setActiveTab('profile')}
-            className="w-10 h-10 rounded-xl border border-orange-200/50 shadow-sm bg-gradient-to-tr from-[#c65a30] to-[#faa144] flex items-center justify-center text-white cursor-pointer relative group active:scale-95 transition-all"
+            className="w-10 h-10 rounded-xl border border-emerald-200/50 shadow-sm bg-gradient-to-tr from-[#2f7d4f] to-[#5cb377] flex items-center justify-center text-white cursor-pointer relative group active:scale-95 transition-all"
             title={isAuthenticated ? '我的账号' : '登录 / 注册'}
           >
             <User className="w-5 h-5 text-white" />

@@ -31,7 +31,7 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
   if (catalogLoading) {
     return (
       <div className="flex justify-center py-16">
-        <RefreshCw className="w-6 h-6 animate-spin text-orange-400" />
+        <RefreshCw className="w-6 h-6 animate-spin text-emerald-400" />
       </div>
     );
   }
@@ -49,13 +49,13 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
         <button
           type="button"
           onClick={() => setActive(null)}
-          className="shrink-0 flex items-center gap-1.5 text-sm font-bold text-[#c65a30] cursor-pointer"
+          className="shrink-0 flex items-center gap-1.5 text-sm font-bold text-[#2f7d4f] cursor-pointer"
         >
           <ChevronLeft className="w-4 h-4" />
           返回全部 {allScenes.length} 场景
         </button>
 
-        <div className="flex flex-col flex-1 min-h-0 bg-white border border-orange-100 rounded-3xl overflow-hidden shadow-sm">
+        <div className="flex flex-col flex-1 min-h-0 bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-sm">
           <SceneCover
             slug={active.slug}
             gradient={active.gradient}
@@ -98,7 +98,7 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
                     <div className={`flex gap-3 ${t.speaker === 'A' ? '' : 'flex-row-reverse text-right'}`}>
                       <div
                         className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-xs font-black ${
-                          t.speaker === 'A' ? 'bg-cyan-100 text-cyan-700' : 'bg-orange-100 text-[#c65a30]'
+                          t.speaker === 'A' ? 'bg-cyan-100 text-cyan-700' : 'bg-emerald-100 text-[#2f7d4f]'
                         }`}
                       >
                         {t.speakerZh}
@@ -107,7 +107,7 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
                         className={`max-w-[85%] rounded-2xl px-4 py-3 border ${
                           t.speaker === 'A'
                             ? 'bg-slate-50 border-slate-200 rounded-tl-sm'
-                            : 'bg-[#fff8f5] border-orange-100 rounded-tr-sm'
+                            : 'bg-[#fff8f5] border-emerald-100 rounded-tr-sm'
                         }`}
                       >
                         <p className="text-sm font-semibold text-slate-800 leading-relaxed">
@@ -139,7 +139,7 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
               className={`mt-6 w-full flex items-center justify-center gap-2 py-3.5 rounded-2xl text-sm font-black transition-all cursor-pointer border ${
                 practiced
                   ? 'bg-emerald-50 text-emerald-700 border-emerald-200 hover:bg-emerald-100'
-                  : 'bg-white text-slate-600 border-slate-200 hover:border-orange-200 hover:text-[#c65a30]'
+                  : 'bg-white text-slate-600 border-slate-200 hover:border-emerald-200 hover:text-[#2f7d4f]'
               }`}
             >
               {practiced ? (

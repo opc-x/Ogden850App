@@ -20,7 +20,7 @@ function MoodBadge({ mood, score }: { mood: string; score: number }) {
       ? 'bg-amber-50 text-amber-700 border-amber-200'
       : mood === 'good'
         ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
-        : 'bg-orange-50 text-[#c65a30] border-orange-200';
+        : 'bg-emerald-50 text-[#2f7d4f] border-emerald-200';
   return (
     <span className={`text-[10px] font-black px-2 py-0.5 rounded-lg border ${styles}`}>
       {score} 分
@@ -65,7 +65,7 @@ function ThreadBubble({ item }: { item: CoachThreadItem }) {
   if (item.kind === 'user') {
     return (
       <div className="flex justify-end">
-        <div className="max-w-[88%] bg-gradient-to-br from-[#c65a30] to-[#e07a3a] text-white rounded-2xl rounded-tr-md px-4 py-3 shadow-md">
+        <div className="max-w-[88%] bg-gradient-to-br from-[#2f7d4f] to-[#e07a3a] text-white rounded-2xl rounded-tr-md px-4 py-3 shadow-md">
           <p className="text-[10px] font-black text-white/80 mb-1">你的尝试</p>
           <p className="text-sm font-bold leading-relaxed">{item.en}</p>
         </div>
@@ -80,7 +80,7 @@ function ThreadBubble({ item }: { item: CoachThreadItem }) {
       animate={{ opacity: 1, y: 0 }}
       className="flex justify-center"
     >
-      <div className="max-w-[95%] bg-gradient-to-br from-indigo-50 via-white to-orange-50 border border-indigo-100 rounded-2xl px-4 py-3.5 shadow-sm space-y-2">
+      <div className="max-w-[95%] bg-gradient-to-br from-indigo-50 via-white to-emerald-50 border border-indigo-100 rounded-2xl px-4 py-3.5 shadow-sm space-y-2">
         <div className="flex items-center justify-between gap-2">
           <span className="text-[10px] font-black text-indigo-600 flex items-center gap-1">
             <Heart className="w-3.5 h-3.5" /> AI 陪练点评
@@ -96,7 +96,7 @@ function ThreadBubble({ item }: { item: CoachThreadItem }) {
         <p className="text-[11px] text-slate-600 leading-relaxed">{ev.analysis}</p>
         <p className="text-[11px] text-indigo-700 font-semibold">💡 {ev.tip}</p>
         {!ev.passed && (
-          <p className="text-[10px] text-[#c65a30] font-black">未达 70 分，再试一次这句吧～</p>
+          <p className="text-[10px] text-[#2f7d4f] font-black">未达 70 分，再试一次这句吧～</p>
         )}
       </div>
     </motion.div>
@@ -136,7 +136,7 @@ function ScenePicker({
   if (loading) {
     return (
       <div className="flex justify-center py-20">
-        <RefreshCw className="w-6 h-6 animate-spin text-orange-400" />
+        <RefreshCw className="w-6 h-6 animate-spin text-emerald-400" />
       </div>
     );
   }
@@ -144,7 +144,7 @@ function ScenePicker({
 
   return (
     <div className="space-y-4">
-      <header className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-violet-600 to-[#c65a30] p-5 shadow-lg">
+      <header className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-violet-600 to-[#2f7d4f] p-5 shadow-lg">
         <div className="absolute -right-6 -top-6 w-28 h-28 bg-white/10 rounded-full blur-2xl" />
         <div className="relative z-10">
           <div className="flex items-center gap-2 mb-2">
@@ -196,12 +196,12 @@ function BriefingPanel({
       <button
         type="button"
         onClick={onBack}
-        className="flex items-center gap-1.5 text-sm font-bold text-[#c65a30]"
+        className="flex items-center gap-1.5 text-sm font-bold text-[#2f7d4f]"
       >
         <ChevronLeft className="w-4 h-4" /> 换场景
       </button>
 
-      <div className="bg-white border border-orange-100 rounded-3xl overflow-hidden shadow-sm">
+      <div className="bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-sm">
         <SceneCover
           slug={scene.slug}
           gradient={scene.gradient}
@@ -215,7 +215,7 @@ function BriefingPanel({
           </div>
 
           <div className="flex items-center gap-2 text-xs text-slate-600 bg-slate-50 rounded-xl px-3 py-2 border border-slate-100">
-            <Target className="w-4 h-4 text-[#c65a30] shrink-0" />
+            <Target className="w-4 h-4 text-[#2f7d4f] shrink-0" />
             <span>
               陪练范围锁定本场景
               {turnsLoading ? '…' : ` ${turnCount} 句`}台词，不跑题、不闲聊。
@@ -236,7 +236,7 @@ function BriefingPanel({
                   onClick={() => onRoleChange(r)}
                   className={`flex-1 py-3 rounded-xl text-sm font-black border transition-all ${
                     userRole === r
-                      ? 'bg-[#c65a30] text-white border-[#c65a30] shadow-md'
+                      ? 'bg-[#2f7d4f] text-white border-[#2f7d4f] shadow-md'
                       : 'bg-white text-slate-600 border-slate-200'
                   }`}
                 >
@@ -308,7 +308,7 @@ export function CoachView() {
           <button
             type="button"
             onClick={coach.reset}
-            className="mt-6 w-full py-3.5 rounded-xl bg-[#c65a30] text-white font-black text-sm"
+            className="mt-6 w-full py-3.5 rounded-xl bg-[#2f7d4f] text-white font-black text-sm"
           >
             再选一个场景
           </button>
@@ -320,11 +320,11 @@ export function CoachView() {
   if (coach.phase === 'practice') {
     return (
       <div className="max-w-2xl mx-auto flex flex-col h-[calc(100vh-14rem)] md:h-[72vh] gap-3">
-        <div className="bg-white rounded-2xl border border-orange-100 px-4 py-3 shadow-sm flex items-center justify-between gap-3">
+        <div className="bg-white rounded-2xl border border-emerald-100 px-4 py-3 shadow-sm flex items-center justify-between gap-3">
           <button
             type="button"
             onClick={coach.reset}
-            className="text-[#c65a30] font-bold text-xs flex items-center gap-0.5 shrink-0"
+            className="text-[#2f7d4f] font-bold text-xs flex items-center gap-0.5 shrink-0"
           >
             <ChevronLeft className="w-4 h-4" /> 退出
           </button>
@@ -339,7 +339,7 @@ export function CoachView() {
 
         <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
           <motion.div
-            className="h-full bg-gradient-to-r from-indigo-500 to-[#c65a30]"
+            className="h-full bg-gradient-to-r from-indigo-500 to-[#2f7d4f]"
             animate={{ width: `${coach.progressPct}%` }}
           />
         </div>
@@ -430,7 +430,7 @@ export function CoachView() {
               type="button"
               onClick={() => void coach.submitAttempt()}
               disabled={!coach.isUserTurn || !coach.input.trim() || coach.evaluating}
-              className="px-5 rounded-xl bg-[#c65a30] text-white disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all"
+              className="px-5 rounded-xl bg-[#2f7d4f] text-white disabled:opacity-40 disabled:cursor-not-allowed active:scale-95 transition-all"
             >
               <Send className="w-5 h-5" />
             </button>

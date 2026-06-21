@@ -29,7 +29,7 @@ function MiniBar({
       <div className={`h-2 rounded-full ${track} overflow-hidden`}>
         <div
           className={`h-full rounded-full transition-all duration-700 ${
-            accent === 'text-[#c65a30]' ? 'bg-[#c65a30]' : 'bg-indigo-500'
+            accent === 'text-[#2f7d4f]' ? 'bg-[#2f7d4f]' : 'bg-indigo-500'
           }`}
           style={{ width: `${Math.min(100, percent)}%` }}
         />
@@ -91,8 +91,8 @@ export function CompactProgressStrip({
             current={sceneCurrent}
             total={sceneTotal}
             percent={scenePercent}
-            accent="text-[#c65a30]"
-            track="bg-orange-50"
+            accent="text-[#2f7d4f]"
+            track="bg-emerald-50"
           />
         </button>
       </div>

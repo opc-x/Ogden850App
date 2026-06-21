@@ -4,16 +4,16 @@ import { ArrowRight, BookOpen, Compass, Sparkles, BrainCircuit } from 'lucide-re
 
 export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }) => {
   return (
-    <div className="w-full h-full bg-gradient-to-b from-[#ffeedb] to-[#f8f9fa] flex flex-col items-center justify-between overflow-hidden pt-safe pb-safe">
+    <div className="w-full h-full bg-gradient-to-b from-[#e6f4ea] to-[#f8f9fa] flex flex-col items-center justify-between overflow-hidden pt-safe pb-safe">
       
       <div className="flex-1 w-full flex flex-col items-center justify-center px-6 py-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="w-24 h-24 bg-white rounded-3xl shadow-xl flex items-center justify-center mb-8 border border-orange-100"
+          className="w-24 h-24 bg-white rounded-3xl shadow-xl flex items-center justify-center mb-8 border border-emerald-100"
         >
-          <BookOpen className="w-12 h-12 text-[#c65a30]" />
+          <BookOpen className="w-12 h-12 text-[#2f7d4f]" />
         </motion.div>
 
         <motion.h1 
@@ -22,7 +22,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-3xl sm:text-4xl font-black text-slate-800 text-center mb-4 leading-tight"
         >
-          掌握语言的 <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#c65a30] to-[#faa144]">核心引擎</span>
+          掌握语言的 <br/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2f7d4f] to-[#5cb377]">核心引擎</span>
         </motion.h1>
 
         <motion.p 
@@ -40,9 +40,9 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
           transition={{ duration: 0.6, delay: 0.5 }}
           className="w-full space-y-4"
         >
-          <div className="bg-white/80 backdrop-blur rounded-2xl p-4 shadow-sm border border-orange-100/50 flex items-start gap-4">
-            <div className="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center shrink-0">
-              <Compass className="w-5 h-5 text-[#c65a30]" />
+          <div className="bg-white/80 backdrop-blur rounded-2xl p-4 shadow-sm border border-emerald-100/50 flex items-start gap-4">
+            <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center shrink-0">
+              <Compass className="w-5 h-5 text-[#2f7d4f]" />
             </div>
             <div>
               <h3 className="font-bold text-slate-800 text-sm">每天学一点</h3>
@@ -50,7 +50,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
             </div>
           </div>
           
-          <div className="bg-white/80 backdrop-blur rounded-2xl p-4 shadow-sm border border-orange-100/50 flex items-start gap-4">
+          <div className="bg-white/80 backdrop-blur rounded-2xl p-4 shadow-sm border border-emerald-100/50 flex items-start gap-4">
             <div className="w-10 h-10 rounded-xl bg-indigo-100 flex items-center justify-center shrink-0">
               <BrainCircuit className="w-5 h-5 text-indigo-600" />
             </div>
@@ -70,7 +70,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
       >
         <button 
           onClick={onComplete}
-          className="w-full bg-gradient-to-r from-[#c65a30] to-[#e6754b] hover:from-[#b54a20] hover:to-[#d6653b] text-white font-black py-4 rounded-2xl flex justify-center items-center gap-2 shadow-xl shadow-orange-500/20 active:scale-95 transition-all text-lg"
+          className="w-full bg-gradient-to-r from-[#2f7d4f] to-[#e6754b] hover:from-[#b54a20] hover:to-[#d6653b] text-white font-black py-4 rounded-2xl flex justify-center items-center gap-2 shadow-xl shadow-emerald-500/20 active:scale-95 transition-all text-lg"
         >
           开启极简英语之旅 <ArrowRight className="w-5 h-5" />
         </button>

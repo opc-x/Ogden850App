@@ -88,9 +88,9 @@ export const StatsView: React.FC<StatsViewProps> = ({ totalWords, setActiveTab }
           </button>
         </section>
 
-        <section className="bg-white rounded-3xl border border-orange-100 shadow-sm p-6 flex flex-col items-center text-center">
+        <section className="bg-white rounded-3xl border border-emerald-100 shadow-sm p-6 flex flex-col items-center text-center">
           <div className="flex items-center gap-2 mb-6 self-start">
-            <Blocks className="w-5 h-5 text-[#c65a30]" />
+            <Blocks className="w-5 h-5 text-[#2f7d4f]" />
             <h3 className="text-base font-black text-slate-800">场景掌握</h3>
           </div>
 
@@ -98,17 +98,17 @@ export const StatsView: React.FC<StatsViewProps> = ({ totalWords, setActiveTab }
             current={sceneStats.practicedSceneCount}
             total={sceneStats.totalSceneCount || 0}
             percent={sceneStats.scenePercent}
-            accentClass="stroke-[#c65a30]"
-            trackClass="stroke-orange-100"
+            accentClass="stroke-[#2f7d4f]"
+            trackClass="stroke-emerald-100"
           />
 
-          <p className="mt-5 text-2xl font-black text-[#c65a30] tabular-nums">{sceneStats.scenePercent}%</p>
+          <p className="mt-5 text-2xl font-black text-[#2f7d4f] tabular-nums">{sceneStats.scenePercent}%</p>
           <p className="text-xs text-slate-500 font-medium mt-1">在场景里标记「已练完」</p>
 
           <button
             type="button"
             onClick={() => setActiveTab('assembler')}
-            className="mt-5 text-xs font-black text-[#c65a30] hover:opacity-80 cursor-pointer"
+            className="mt-5 text-xs font-black text-[#2f7d4f] hover:opacity-80 cursor-pointer"
           >
             去练场景 →
           </button>
