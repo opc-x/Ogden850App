@@ -1,0 +1,820 @@
+{
+  "slug": "app",
+  "sceneKey": "App",
+  "titleZh": "安装使用应用",
+  "titleEn": "Using an App",
+  "tier": "P2",
+  "freqRank": 36,
+  "emoji": "📲",
+  "gradient": "linear-gradient(135deg,#dbeafe,#2563eb)",
+  "storyHook": "下载安装，注册使用，学会基本操作",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "获取应用",
+      "goal": "下载打开"
+    },
+    {
+      "beat": "进行",
+      "title": "注册使用",
+      "goal": "填名字学按钮"
+    },
+    {
+      "beat": "收束",
+      "title": "熟练操作",
+      "goal": "完成任务"
+    }
+  ],
+  "illustration": {
+    "label": "应用",
+    "motifs": [
+      "app",
+      "download",
+      "tap"
+    ],
+    "accent": "#1d4ed8"
+  },
+  "narrative": {
+    "when": "周三晚上，朋友推荐了一个新软件",
+    "where": "甲的房间，手机前",
+    "who": "甲（新用户）· 乙（推荐软件的朋友，电话指导）",
+    "how": "下载安装后跟着朋友的指导操作",
+    "method": "下载安装、注册账户、学习基本按钮、完成第一个任务",
+    "event": "甲想用这个软件管理这周的工作安排"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I have the thing on my hand now.",
+      "zh": "我现在手上有这个工具了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Good, open it and see what you get.",
+      "zh": "好，打开看看有什么。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "It is asking for my name on the net and a secret word.",
+      "zh": "它问我要网上的名字和一个秘密词。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Put your net name first, then make a secret word.",
+      "zh": "先输入你的网络名称，再设一个密码。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Done. It is asking for my account name.",
+      "zh": "好了。它在问我的账户名字。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Use your first name, that is good.",
+      "zh": "用你的名字就行。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "I see a button for a new work.",
+      "zh": "我看到一个新建工作的按钮。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Give it a name and a day.",
+      "zh": "给它一个名字和一个日子。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "I put 'work list' for tomorrow.",
+      "zh": "我写了'工作清单'，截止明天。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Well done. You have your first bit of work on the list.",
+      "zh": "做得好。列表里有了第一个任务。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I see a button with days. What is that for?",
+      "zh": "我看到一个带日期的按钮，那是干嘛的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "It puts your work day by day. Give it a push.",
+      "zh": "它按天列出你的工作，按一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Oh, it is all in colored squares. That is clear.",
+      "zh": "哦，全是彩色方块，很清楚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Now go back and make a note for the day after.",
+      "zh": "现在回去，给后天也记一个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Right. I will put 'meeting' for the day after the second day.",
+      "zh": "好，我写个‘会议’在第二天之后那天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Now put a time on that meeting.",
+      "zh": "现在给那个会议加个时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "I put it at ten in the morning.",
+      "zh": "我设成早上十点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Good. Now see if you can make it give you a note before.",
+      "zh": "好。现在试试能不能让它提前提醒你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "I see a bell sign. I will give it a push.",
+      "zh": "我看到一个铃铛图标，点了一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "That is the note bell. Put it for one day before.",
+      "zh": "那就是提醒铃。设成提前一天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Done. It says 'note in one day'.",
+      "zh": "好了，显示‘一天后提醒’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "You are getting the way of it. Now go to the list view.",
+      "zh": "你开始上手了。现在去列表视图。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Where is that? I only see the day view.",
+      "zh": "在哪？我只看到日视图。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Look at the top. There is a button with lines.",
+      "zh": "看顶部，有个带线条的按钮。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Yes, I see it. I will give it a push.",
+      "zh": "嗯，看到了。我点一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Good. Now you see all your work in a list.",
+      "zh": "好。现在你看到所有工作列表了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "That is much clearer. What is the circle on the left?",
+      "zh": "清楚多了。左边那个圆圈是什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "That is to mark it done. Give it a push on the first one.",
+      "zh": "那是标记完成的。点一下第一个任务。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "I will. There, it has a line through it now.",
+      "zh": "我点一下。好了，现在它被划掉了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Right. That is done. How are you?",
+      "zh": "对。做完了。你怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Quite good. I may do the rest this week.",
+      "zh": "挺不错的。这周剩下的我可能也能搞定。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "You will. Now make a new one for tomorrow.",
+      "zh": "你会的。现在为明天新建一个任务。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Do I do the same steps?",
+      "zh": "我要按同样的步骤来吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Yes. Put my name, then make it tomorrow.",
+      "zh": "对。写我的名字，然后设成明天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Done. It is on the list for tomorrow.",
+      "zh": "好了。它出现在明天的列表里了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right. Now see the bell sign at the top?",
+      "zh": "对。看到顶上的铃铛图标了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Yes, I see it. What is that for?",
+      "zh": "看到了。那是干嘛的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "That is for a note. Push it to get a note before the time.",
+      "zh": "那是提醒用的。点一下就能提前收到通知。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "I will give it a push. There, it says 'a day before'.",
+      "zh": "我点一下。好了，它写着“提前一天”。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Good. Now you have two things on your list.",
+      "zh": "好。现在你的列表上有两个任务了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "What about the other button with a square?",
+      "zh": "那个带方块的按钮是干嘛的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "That is the list of days. Push it to see your time.",
+      "zh": "那是日期表。点一下就能看到你的时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Oh, I see little bits of color on it.",
+      "zh": "哦，我看到上面有彩色小块。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Yes, every shade is for a different thing.",
+      "zh": "对，每种颜色代表不同的事情。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Can I put this thing on another day?",
+      "zh": "我能把这个东西放到另一天吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Yes, put your finger on it and pull it.",
+      "zh": "可以，用手指按住它然后拖动。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "That is simple. I will do that now.",
+      "zh": "挺简单的。我现在就试试。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Good. Now you have the idea of how it works.",
+      "zh": "好。现在你明白它怎么用了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Let us make one more thing for this week?",
+      "zh": "我们要不要再给这周加个任务？",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Yes. Put 'get food' for the day before the rest day.",
+      "zh": "好。写个“买吃的”在休息日之前那天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Right. What day is the rest day?",
+      "zh": "对。休息日是星期几？",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "The last day of the week is the day of rest.",
+      "zh": "一周的最后一天是休息日。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "So I put 'get food' on the day after that?",
+      "zh": "那我把它放在那天之后？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Yes, that is a good idea.",
+      "zh": "对，这主意不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "I will do that now. Done.",
+      "zh": "我现在就做。好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Good. Now you have the third thing on your list.",
+      "zh": "好的。现在列表里有第三项了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "What about a note for the time?",
+      "zh": "要不要加个时间备注？",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Put a time under the day.",
+      "zh": "在日期下面加个时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I will put 'ten in the morning' for the first thing.",
+      "zh": "我在第一项下面写“上午十点”。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "That is a good start. You are getting the idea.",
+      "zh": "这是个好的开始。你慢慢明白了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Right, now have a look at the time list.",
+      "zh": "好，现在看看时间列表。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "I see it. The things are colored bits.",
+      "zh": "我看到了。这些是彩色小块。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Yes. That makes your week clear.",
+      "zh": "对。这样一周的安排就清楚了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Can I make a note on a day?",
+      "zh": "我能在某天加个备注吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Yes, put your finger on the day and a note box comes up.",
+      "zh": "可以，点一下那天就会弹出备注框。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "I will put 'meeting at three' two days from now.",
+      "zh": "我将在后天写上“三点开会”。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Good. Let us make a note for that.",
+      "zh": "好。我们来记个那个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "I see a note at the lower part. One day before?",
+      "zh": "我看到下面有个提示。提前一天？",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Yes, that is good. Touch it.",
+      "zh": "对，那样就行。点它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Done. It says 'note is fixed'.",
+      "zh": "好了。显示‘备忘已定’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Now let us see the week view.",
+      "zh": "现在我们看看周视图。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "I will put my finger on the top right.",
+      "zh": "我点一下右上角。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Good, that gives you all seven days.",
+      "zh": "好，这样就能看到七天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "I see my note on the third day.",
+      "zh": "我看到第三天的备注了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "You may put a thing on another day.",
+      "zh": "你可以把一件事放到另一天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "How do I do that?",
+      "zh": "怎么操作？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Put your finger on the work and pull it.",
+      "zh": "按住这个任务，然后拖动它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "I will have a go now.",
+      "zh": "我现在试试。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Did it go to the new day?",
+      "zh": "它到新的一天了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Yes, it is there. That is simple.",
+      "zh": "是的，它在那里。很简单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Now put a bell on it for the day before.",
+      "zh": "现在给它设个提醒，提前一天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "A bell? Where is that?",
+      "zh": "提醒？在哪里设置？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Open the work and look for 'bell'.",
+      "zh": "打开这个任务，找‘提醒’选项。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "I see it. I will put the bell on.",
+      "zh": "看到了，我打开提醒。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Good. Now go back to the first page.",
+      "zh": "好，现在回到主页面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "I am there. What is this blue button?",
+      "zh": "我到了。这个蓝色按钮是什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "That is for a list of all your works.",
+      "zh": "那是查看所有任务的列表。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "I will give it a push.",
+      "zh": "我点一下看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Do you see all your works there?",
+      "zh": "你看到所有任务了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Yes, and I see the one I did.",
+      "zh": "是的，而且我看到了已完成的那个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Now mark that one as done.",
+      "zh": "现在把那个标记为完成。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "I push the button. It is not there.",
+      "zh": "我按了按钮，它不见了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Good. You have your first work done.",
+      "zh": "好，你完成了第一个任务。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "That was quick. I like this place.",
+      "zh": "真快，我喜欢这个软件。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "It is simple, is it not?",
+      "zh": "很简单，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Yes. I will put in more works for the week.",
+      "zh": "对，我打算把这周的工作都加进去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Do that. You will see them on the day list.",
+      "zh": "加吧，你会在日历上看到它们。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "I will. Thanks for your help.",
+      "zh": "好的，谢谢你的帮助。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "No trouble. Say if they say no.",
+      "zh": "不客气。他们要是拦你，就说一声。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "I will. get some rest.",
+      "zh": "我会的。休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right. I will make a list for the week.",
+      "zh": "好，我这就列个周计划。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Good. Put the days and times.",
+      "zh": "不错，把日期和时间填上。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Done. Five days a week, nine to five.",
+      "zh": "搞定了，一周五天，朝九晚五。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "That is a full week. Do not work too hard.",
+      "zh": "这一周排满了，别太累。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I will take a rest at night.",
+      "zh": "晚上我会休息的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "That is clear now.",
+      "zh": "现在清楚了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Yes. I can see all my work in one place.",
+      "zh": "是的，所有工作一目了然。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "That is the idea. Keep it simple.",
+      "zh": "就是这个意思，简单就好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I will. rest up, and thank you again.",
+      "zh": "我会的，好好休息，再次感谢。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Good night. Sleep well.",
+      "zh": "晚安，睡个好觉。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "甲在朋友乙的电话指导下下载了一个新软件，从注册到完成第一个任务，逐渐掌握基本操作。",
+  "storyScript": "【开场·获取应用】周三晚上，甲坐在书桌前，手机屏幕亮着。朋友乙在电话那头推荐了一款管理软件，说能帮他理清这周的工作安排。甲点开应用商店，搜索软件名，点击下载。进度条缓缓移动，他盯着屏幕，心里有些期待。下载完成，图标出现在桌面，他深吸一口气，点开它。\n\n【进行·注册使用】软件打开，弹出注册页面。乙在电话里一步步指导：先输入邮箱，再设置密码。甲的手指在键盘上敲击，偶尔出错，乙耐心地重复。接着是填写昵称，甲想了想，输入自己的名字。页面跳转，出现几个基本按钮：新建任务、日历、设置。乙告诉他，先点新建任务，输入标题和截止日期。甲照做，屏幕上出现第一个任务条目。\n\n【进行·熟练操作】甲开始尝试其他功能。乙让他点开日历，看看任务在日期上的分布。甲滑动屏幕，发现任务以彩色块显示，一目了然。乙又教他如何设置提醒，甲在任务详情页找到提醒选项，选择提前一天通知。他感到自己越来越熟练，手指在屏幕上滑动得流畅起来。\n\n【收束·完成任务】甲回到主界面，看着刚才创建的任务，心里涌起一股成就感。乙说，现在试着完成一个简单任务。甲点开任务，标记为已完成，看到它被划掉，感到一阵轻松。他道谢挂断电话，盯着屏幕上的任务列表，知道这周的工作安排已经有了条理。窗外夜色深沉，甲关掉手机，嘴角带着微笑。"
+}

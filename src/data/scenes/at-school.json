@@ -1,0 +1,825 @@
+{
+  "slug": "at-school",
+  "sceneKey": "At School",
+  "titleZh": "课堂与作业",
+  "titleEn": "School Day",
+  "tier": "P0",
+  "freqRank": 8,
+  "emoji": "🏫",
+  "gradient": "linear-gradient(135deg,#dbeafe,#60a5fa)",
+  "storyHook": "上课听讲，做练习，放学回家",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "到校上课",
+      "goal": "进教室"
+    },
+    {
+      "beat": "进行",
+      "title": "听讲练习",
+      "goal": "学新词做作业"
+    },
+    {
+      "beat": "进行",
+      "title": "提问回答",
+      "goal": "举手问答"
+    },
+    {
+      "beat": "收束",
+      "title": "放学回家",
+      "goal": "收拾离开"
+    }
+  ],
+  "illustration": {
+    "label": "在学校",
+    "motifs": [
+      "book",
+      "pen",
+      "school"
+    ],
+    "accent": "#2563eb"
+  },
+  "narrative": {
+    "when": "周四上午第二节课",
+    "where": "学校教室，讲台与课桌",
+    "who": "甲（学生）· 乙（老师）",
+    "how": "听讲、记笔记、举手发言",
+    "method": "听讲解、做练习、提问回答、收拾书包放学",
+    "event": "甲没听懂作业要求，想在放学前问清楚"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good morning. Please take your seats.",
+      "zh": "大家早上好，请坐好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Good morning, sir. I am a bit late. My error.",
+      "zh": "老师早。我迟了一点点。是我的错。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "That is all right. Take your seat and get ready.",
+      "zh": "没事，坐下准备上课吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Right. I have my book and pen here.",
+      "zh": "好的，我带了书和笔。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Today we get some new words.",
+      "zh": "今天我们来学几个新词。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "New words? I hope they are not too hard.",
+      "zh": "新词？希望别太难。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "They are simple. I will put them on the board.",
+      "zh": "不难，我写到黑板上。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "We say them after you, right?",
+      "zh": "我们跟着您念一遍，行吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Yes, that is a good idea. Let me say it, then you say it back.",
+      "zh": "好主意，我先说，然后你跟着说。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "I am ready. Let's start.",
+      "zh": "我准备好了，开始吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Now I will give you a paper with some work to do.",
+      "zh": "现在发一张练习纸给你们做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "A paper? What do we do with it?",
+      "zh": "练习纸？要我们做什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Make new words say things. It is not hard.",
+      "zh": "用新词表达意思，不难的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "I see. I will give it a go.",
+      "zh": "明白了，我试试看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Good. Take your time and do your best.",
+      "zh": "好，慢慢做，尽力就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "I am looking at the last one. It is not clear to me.",
+      "zh": "我在看最后一道题，不太明白。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Which bit is hard? Say it for me.",
+      "zh": "哪部分卡住了？念给我听听。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "It says 'make a story with these words.' But how long?",
+      "zh": "它说‘用这些词编个故事’，但要多长呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Ah, good question. Three or four lines is enough.",
+      "zh": "啊，问得好。三四行就够了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "And do we have to use all the words on the list?",
+      "zh": "那得用上列表里所有的词吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "No, take three or four. The rest are for you to take what you like.",
+      "zh": "不用，拿三四个就行，剩下的你随便拿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Right, that makes sense now. Thank you, Miss.",
+      "zh": "好了，这下清楚了。谢谢老师。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "You are welcome. Now get on with it, time is short.",
+      "zh": "不客气。赶紧写吧，时间不多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "I will put it down now. I have a thought for a short story.",
+      "zh": "我现在就写，有个小故事的思路了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Good. I will come round to see your work in a minute.",
+      "zh": "好，我一会儿过来看看你写的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "I have a story about a cat and a bird.",
+      "zh": "我有个关于猫和鸟的故事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "That sounds good. Let me see what you have.",
+      "zh": "听起来不错。让我看看你写的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Here it is. The cat saw a bird in the tree.",
+      "zh": "写好了。猫看见树上有只鸟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Good start. What is after that?",
+      "zh": "开头不错。之后呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "The bird said, 'I am not for your meal.'",
+      "zh": "鸟说：‘我才不是你的午餐。’",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Oh, a bird that talks. That is a laugh.",
+      "zh": "哦，一只会说话的鸟。真好笑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Yes, the cat was surprised and went off.",
+      "zh": "嗯，猫吓了一跳，就跑掉了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "A short story with a smile. Well done.",
+      "zh": "一个让人会心一笑的小故事，写得不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Thank you, Miss. I will put it down clean now.",
+      "zh": "谢谢老师。我现在把它清楚地写下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Do that. Then hand it in before the bell.",
+      "zh": "好，然后在下课前交上来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Miss, I have a question about the last one.",
+      "zh": "老师，最后一题我有问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Yes, what is troubling you?",
+      "zh": "说吧，哪里不明白？",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "The words say 'make a new story'. But how long?",
+      "zh": "题目说‘编一个新故事’，但要多长呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Three or four lines is enough. Keep it simple.",
+      "zh": "三四行就够了，简单写就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Ah, I see. So a short one like the cat story.",
+      "zh": "哦，明白了。那就写个像猫故事那样短的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Right. I will make one about a dog and a ball.",
+      "zh": "好，我写一个关于狗和球的故事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "A good start. What will the dog do with the ball?",
+      "zh": "开头不错。狗会拿球做什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "The dog sees the ball in the garden. He runs and gets it.",
+      "zh": "狗在花园里看到球，跑过去叼起来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Then what? Does he give it back?",
+      "zh": "然后呢？他会把球还回去吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "No, he takes it to his bed and plays with it there.",
+      "zh": "不，他把球叼回窝里，在那儿玩。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "That story is simple. Put it down now.",
+      "zh": "那故事很简单。现在写下来吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "I have done it. Here is my paper.",
+      "zh": "我写好了，给您。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Let me see... Good. The words are clear and the story is short.",
+      "zh": "我看看……不错，字迹清楚，故事也简短。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Thank you, Miss. I was not clear about the last question.",
+      "zh": "谢谢老师，我刚才对最后一题不太清楚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "That was a good question. Now put your things away.",
+      "zh": "问得好，现在把东西收起来吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Miss, I still have a question about the last part.",
+      "zh": "老师，我最后一题还有点问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Which part? The one about the dog?",
+      "zh": "哪部分？关于狗的那题吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Yes. The paper says 'put what the dog does after that'.",
+      "zh": "对，要求写‘狗之后做什么’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "That is right. You made a good start.",
+      "zh": "没错，你开头写得挺好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "But I am not certain if I need to put in more words.",
+      "zh": "但我不确定要不要多写几句。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "A short story is good. Three or four lines will do.",
+      "zh": "短故事就行，三四行就够了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "So I can say 'He goes to sleep after the play'?",
+      "zh": "那我可以写‘玩完后他就去睡觉’？",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "That works well. Keep it simple and clear.",
+      "zh": "可以，简单清楚就好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I will put that down now. Thank you, Miss.",
+      "zh": "我现在就记下来，谢谢老师。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Good. Take your time. No need to go quick.",
+      "zh": "好，慢慢来，不用着急。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "I have it now. 'He goes to sleep after the play.'",
+      "zh": "我写好了，‘玩完后他就去睡觉’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Very good. You see? Not so hard.",
+      "zh": "很好，你看，没那么难吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Yes. I was troubled for no reason.",
+      "zh": "嗯，我白担心了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "That is normal. New words take time.",
+      "zh": "正常，新词总要花时间消化。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "May I say my story out loud?",
+      "zh": "我能大声说出我的故事吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Right. Let us have it.",
+      "zh": "好，说来听听。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "'The dog runs and plays. He goes to sleep after the play.'",
+      "zh": "‘小狗跑啊玩啊，玩完后他就去睡觉。’",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Clear and true. Well done.",
+      "zh": "清楚又真实，写得不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Do the other words now?",
+      "zh": "我现在写其他词吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Yes. You have ten more minutes. Go on.",
+      "zh": "好，还有十分钟，继续吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "I will do the word 'jump'.",
+      "zh": "我来写‘跳’这个词。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Good. Make a short story with it.",
+      "zh": "好，用它编个小故事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "The cat jumps on the wall. Then it jumps down.",
+      "zh": "猫跳上墙，又跳下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Do the one after this.",
+      "zh": "做这个之后的一个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "What about 'run'? I have a story.",
+      "zh": "那‘跑’呢？我有个故事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Let me get that.",
+      "zh": "说来听听。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "The boy runs to the door. He is late.",
+      "zh": "男孩跑到门口，他迟到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Right. Now do 'sleep'.",
+      "zh": "好。现在写‘睡觉’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "The baby sleeps in the bed. It is soft.",
+      "zh": "宝宝睡在床上，床很软。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Very good. You are quick today.",
+      "zh": "非常好，你今天反应很快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I am not clear on the last one.",
+      "zh": "最后一题我没搞明白。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Which bit is not clear?",
+      "zh": "哪部分不清楚？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Do I make a story from what comes after 'put down'?",
+      "zh": "'写'后面的词。是要我编个故事吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Yes, a short story with the new words.",
+      "zh": "对，用新词写个小故事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Oh, I see. So I put them all in one story?",
+      "zh": "哦，懂了。所以我把它们都放进一个故事里？",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "That is the idea. Keep it short.",
+      "zh": "就是这个意思。写短点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Right. I will have a go now.",
+      "zh": "好，我现在试试。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Take your time. No need to go quick.",
+      "zh": "慢慢来，不用着急。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "I have it. 'The cat sleeps on the soft bed.'",
+      "zh": "我写好了：‘猫在软床上睡觉。’",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Good. That works well.",
+      "zh": "不错，这样写可以。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "What about the word after that? 'Warm'?",
+      "zh": "那再下一个词呢？‘温暖’？",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Yes. Put 'warm' in a line too.",
+      "zh": "对，也用‘温暖’造个句。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "I put 'The sun is warm today.'",
+      "zh": "我写‘今天太阳很温暖。’",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Simple and clear. Good work.",
+      "zh": "简单明了。写得不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Now I need to put all words in one story.",
+      "zh": "现在我得把所有词放进一个故事里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "That is the last step. You can do it.",
+      "zh": "这是最后一步。你能做到的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I will have a go. 'The warm sun and the soft bed...'",
+      "zh": "我试试：‘温暖的阳光和软软的床……’",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "That is a good start. Keep going.",
+      "zh": "开头不错，继续写。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "I do not see how to end it.",
+      "zh": "我不知道怎么结尾。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "What do you do after you get up?",
+      "zh": "起床后你做什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "I get up and go to school.",
+      "zh": "我起床去上学。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "There you go. Put that in.",
+      "zh": "这不就对了，写进去。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Right. 'I get up and go to school.' That is the end.",
+      "zh": "好的，‘我起床去上学。’这就是结尾。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "The bell is about to go. Time to go back.",
+      "zh": "快打铃了，该回去了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I will put my paper in my bag. Thank you for your help.",
+      "zh": "我把卷子收进书包。谢谢您帮忙。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "You are welcome. Have a good day.",
+      "zh": "不客气。下午愉快。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "You too. I will leave.",
+      "zh": "您也是。我先走了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "See you tomorrow. And do your best on that last question.",
+      "zh": "明天见。最后那道题好好做。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I will. I get it now. Thanks again.",
+      "zh": "我会的。现在懂了。再次感谢。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Good. Off you go. Do not be late for the one after this.",
+      "zh": "好。快走吧。后面的别迟到。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "甲没听懂作业要求，放学前鼓起勇气举手提问。乙耐心解答，甲终于安心收拾书包回家。",
+  "storyScript": "【开场·到校上课】周四上午第二节课的铃声响起，甲抱着课本匆匆走进教室。阳光斜斜地照在讲台上，乙老师已经站在黑板前，微笑着等待同学们坐定。甲找到自己的座位，翻开笔记本，笔尖轻轻抵着纸面，准备开始今天的课程。\n\n【进行·听讲练习】乙老师转身在黑板上写下几个新词，粉笔划过黑板发出清脆的声响。她一边讲解词义，一边举例造句。甲认真听着，手指随着老师的节奏在笔记本上移动，记下每一个要点。随后，乙发下一张练习纸，让同学们试着用新词完成句子。教室里安静下来，只有笔尖摩擦纸张的沙沙声。甲盯着题目，前几题还算顺利，可最后一题的说明让他皱起了眉头——他不太明白到底要写什么。他反复读了几遍要求，还是觉得模糊。\n\n【进行·提问回答】时间一分一秒过去，眼看就要下课了。甲犹豫着，手指在练习纸边缘来回摩挲。终于，他深吸一口气，举起了手。乙老师看见，点头示意他发言。甲站起来，指着练习纸上的说明，小声说出自己的困惑。乙老师走近，俯身看了看题目，然后微笑着用更简单的例子重新解释了一遍。甲听着，眼睛渐渐亮起来，连连点头。他坐下后，迅速在纸上写下了答案，心里踏实了许多。\n\n【收束·放学回家】下课铃响了，乙老师宣布放学。甲收拾好书包，把练习纸小心地夹进课本里。他走到门口时，回头看了一眼黑板上的新词，嘴角微微上扬。阳光依然明亮，他快步走出教室，心里想着回家后要把今天的作业认真完成。"
+}

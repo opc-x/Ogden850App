@@ -1,0 +1,820 @@
+{
+  "slug": "mailing",
+  "sceneKey": "Mailing",
+  "titleZh": "邮局寄包裹",
+  "titleEn": "Sending a Parcel",
+  "tier": "P1",
+  "freqRank": 20,
+  "emoji": "📮",
+  "gradient": "linear-gradient(135deg,#fef9c3,#facc15)",
+  "storyHook": "打包填单，称重付费，拿到回执",
+  "storyBlurb": "一份重要文件，必须在截止日前寄到。柜台前，称重、填单、付费，每一步都牵动着寄件人的心。",
+  "storyScript": "【开场·到达邮局】下午两点的社区邮局，柜台前只有零星几个人。甲抱着一个牛皮纸信封，快步走到乙的窗口前。信封已经提前封好，贴着透明胶带，上面用粗笔写着收件地址。甲把信封放在台面上，声音里带着一丝急切：要寄加急，今天必须寄出。乙点点头，接过信封，先检查了封口是否牢固。\n\n【进行·打包称重】乙把信封放到电子秤上，显示屏跳出数字。他一边在系统里输入重量，一边问：里面是什么？甲回答：文件，重要的合同。乙随即打印出一张面单，推到甲面前：请填写收件人和寄件人信息，地址要详细。甲掏出笔，手指微微发颤，一笔一划地填上公司地址和对方的名字。填完，乙核对了一遍，又提醒：电话号码也写上，方便联系。甲赶紧补上号码，然后看着乙计算邮费。\n\n【进行·付费拿回执】乙报出价格，甲从钱包里抽出几张钞票递过去。乙接过钱，在机器上操作一番，撕下一张回执单，连同找零一起递出：这是您的收据，请收好。甲接过回执，仔细看了看上面的单号和日期，确认无误后，折好放进口袋。乙又叮嘱：建议您保留好这张单子，可以跟踪物流。甲点头，心里那块石头总算落了地。\n\n【收束·离开邮局】甲转身离开柜台，走到门口时又回头看了一眼。邮局里的时钟指向两点二十分，距离下班还有时间。他掏出手机，拍了张回执的照片发给同事，附带一句：寄出去了。然后推开门，走进下午的阳光里。",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "到达邮局",
+      "goal": "说明要寄"
+    },
+    {
+      "beat": "进行",
+      "title": "打包称重",
+      "goal": "填地址付钱"
+    },
+    {
+      "beat": "收束",
+      "title": "拿到回执",
+      "goal": "收好单据"
+    }
+  ],
+  "illustration": {
+    "label": "寄信寄件",
+    "motifs": [
+      "box",
+      "letter",
+      "stamp"
+    ],
+    "accent": "#ca8a04"
+  },
+  "narrative": {
+    "when": "周二下午两点，赶在邮局下班前",
+    "where": "社区邮局柜台",
+    "who": "甲（寄件人）· 乙（邮局工作人员）",
+    "how": "提前打包好东西，到柜台办理",
+    "method": "说明要寄什么、称重、填写地址、付费、拿回执",
+    "event": "甲要把一份重要文件寄到外地，怕超过截止日期"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I need to send this today.",
+      "zh": "我需要今天寄出。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "What is in it?",
+      "zh": "里面是什么？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Important papers, I must send it today.",
+      "zh": "重要的文件，我必须今天寄出。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Let me check the weight.",
+      "zh": "让我检查一下重量。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Is it a present?",
+      "zh": "这是礼物吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "It is an agreement",
+      "zh": "不是，合同",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "I see, let me get the form.",
+      "zh": "我明白了，让我拿一下单据。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Please fill in the address.",
+      "zh": "请填写收件人地址。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "And who is it from?",
+      "zh": "以及是谁寄的?",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "How much is it?",
+      "zh": "多少钱？",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I'll work it out for you.",
+      "zh": "我帮你算一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Do you want to pay now or after",
+      "zh": "你要现在付款还是以后付款",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I'll pay by money",
+      "zh": "我用现金付款",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "That will be thirty eight",
+      "zh": "要三十八",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Here is the money.",
+      "zh": "这里是钱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Here is the change.",
+      "zh": "找零给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Do you want a receipt?",
+      "zh": "要发票吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Yes, please.",
+      "zh": "是的，请给我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "It is thirty eight.",
+      "zh": "一共是三十八。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "I will give you the money.",
+      "zh": "我给你钱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Do you have a bag?",
+      "zh": "你有袋子吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "No, I do not.",
+      "zh": "没有。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I will give you one.",
+      "zh": "我给你一个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Thank you.",
+      "zh": "谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "You are welcome.",
+      "zh": "不客气。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Is that all?",
+      "zh": "就这样吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Yes, that is all.",
+      "zh": "是的，就这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "I will take it.",
+      "zh": "我拿走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Be careful.",
+      "zh": "小心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "I will.",
+      "zh": "我会的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Shall we follow it",
+      "zh": "我们要跟踪物流吗",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Yes, I do.",
+      "zh": "是的，我要。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "I will give you the number.",
+      "zh": "我给你单号。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Thank you.",
+      "zh": "非常感谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "No problem at all.",
+      "zh": "随时都可以",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "I will write it down.",
+      "zh": "我记下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "sure.",
+      "zh": "好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "okay soon",
+      "zh": "一会儿见",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Have a good day.",
+      "zh": "祝你有美好的一天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "You too.",
+      "zh": "你也是。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I need to send this parcel today.",
+      "zh": "我需要今天寄出这个包裹。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Well, let me check the weight",
+      "zh": "我去称一下",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "What is inside the parcel?",
+      "zh": "包裹里是什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "It is a document, very important.",
+      "zh": "这是一个文件，非常重要。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I will print the shipping label.",
+      "zh": "我会打印出运单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Please fill in the name and address.",
+      "zh": "请填写名字和地址。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "I will fill it in now.",
+      "zh": "我现在就填写。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Remember to write the phone number.",
+      "zh": "别忘了写电话号码。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "How much to send it",
+      "zh": "运费多少",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "It is twenty five",
+      "zh": "费用是二十五",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Here is the payment.",
+      "zh": "这里是付款。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "I will give you the change.",
+      "zh": "我会给你找零。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Here is your receipt.",
+      "zh": "这里是你的收据。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Please keep it safe.",
+      "zh": "请妥善保管。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "I will look at the parcel now and then.",
+      "zh": "我会不时查看包裹的情况。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "You can check how things are going.",
+      "zh": "你可以随时检查状态。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "What is the number for it",
+      "zh": "它的号码是什么",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Well, i will give you the number.",
+      "zh": "我会给你这个号码。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Thank you for your help.",
+      "zh": "谢谢你的帮助。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "You are welcome, have a good day.",
+      "zh": "不客气，祝你有美好的一天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "I hope the parcel comes soon",
+      "zh": "希望包裹能尽快到达",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "We will get it to you quickly",
+      "zh": "我们会尽快送到",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "I will wait for the word.",
+      "zh": "我会等待确认。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "We will let you know when it gets here",
+      "zh": "当它到达时我们会通知你",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "That is fine, thank you.",
+      "zh": "那样就好了，谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Now, let me check the weight.",
+      "zh": "现在，我来检查一下重量。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Shall we fill in the form now?",
+      "zh": "我们现在填写表格吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "I would like to pay by money",
+      "zh": "我想用现金付款",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Well, that will be thirty eight",
+      "zh": "那将是三十八",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Here is your receipt, please check it.",
+      "zh": "这是你的收据，请检查一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "How much is it now",
+      "zh": "现在的费用是多少",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "That will be thirty eight, okay.",
+      "zh": "那是三十八块",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "I would like to pay by card",
+      "zh": "我想用卡付款",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Put card in",
+      "zh": "请将卡插入",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Do I need to fill in the form?",
+      "zh": "我需要填写表格吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Yes, please fill in the form",
+      "zh": "是的，请填写表格",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "What is the address for this parcel",
+      "zh": "这个包裹的地址是什么",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "It says on the cover",
+      "zh": "已经写在信封上了",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "I will check the address",
+      "zh": "我会检查一下地址",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Is the phone number correct?",
+      "zh": "电话号码正确吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Yes, it is correct",
+      "zh": "是的，它是正确的",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "I will give you the receipt",
+      "zh": "我会给你收据",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Please check the receipt",
+      "zh": "请检查收据",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Is everything okay?",
+      "zh": "一切都好了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Yes, everything is fine",
+      "zh": "是的，一切都好了",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "I will take the receipt",
+      "zh": "我会拿收据",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Please keep the receipt safe",
+      "zh": "请保管好收据",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "I will keep it safe",
+      "zh": "我会保管好它",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Is there anything else?",
+      "zh": "还有其他事情吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "No, that is all",
+      "zh": "不，那就是全部",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I will help you with something else",
+      "zh": "我会帮助你做其他事情",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "No, I do not need anything else",
+      "zh": "不，我不需要其他事情",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Okay, you can go now",
+      "zh": "好了，你可以走了",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Thank you for helping me.",
+      "zh": "谢谢你的帮助",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Do not mention it.",
+      "zh": "不客气",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "I would like to pay now",
+      "zh": "我现在要付钱",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "That is fine, I will tell you the price",
+      "zh": "可以，我会告诉你价格",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Well, how much is it?",
+      "zh": "要多少钱？",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "The price is thirty eight",
+      "zh": "价格是三十八",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Well, i would like to pay now",
+      "zh": "我准备付款了",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Well, here is the money",
+      "zh": "这里是钱",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Thank you, I will give you the change",
+      "zh": "谢谢，我会给你找零",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "And here is your receipt",
+      "zh": "还有这是你的收据",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Well, i will keep it safe",
+      "zh": "我会妥善保管",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "You can follow the parcel with this number",
+      "zh": "你可以用这个号码跟踪包裹",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "That is a good idea",
+      "zh": "这是个好主意",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "I hope it comes on time",
+      "zh": "我希望它能按时到达",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Do not worry, it will be fine",
+      "zh": "不要担心，它会没问题的",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I am glad I came here early",
+      "zh": "我很高兴我早点来了这里",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Well, no problem at all.",
+      "zh": "不客气，祝你有美好的一天",
+      "beat": "收束"
+    }
+  ]
+}

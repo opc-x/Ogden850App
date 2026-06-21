@@ -116,7 +116,7 @@ export const TTSService = {
     playMp3([wordToAudioPath(t), prodAudioUrl(t)], { kind: 'word', text: t });
   },
 
-  /** 场景对话句：/audio/sentences/{id}.mp3 → CDN；无 id 则报错 */
+  /** 场景对话句：/audio/sentences/{id}.mp3 → CDN；与 guide 例句同为 Sonia Neural 预录 */
   playSentence(text: string, sentenceId?: number | string): void {
     const t = text.trim();
     if (!t) return;

@@ -32,10 +32,10 @@ export const SceneCard = React.memo(function SceneCard({ scene, onClick }: Scene
         slug={scene.slug}
         gradient={scene.gradient}
         titleZh={scene.titleZh}
-        className="aspect-[5/2] w-full"
+        className="aspect-[3/1] w-full"
       />
-      <div className="flex items-center justify-between gap-2 px-3 py-2.5">
-        <p className="font-black text-slate-800 text-sm truncate group-hover:text-[#2f7d4f] transition-colors min-w-0">
+      <div className="flex items-center justify-between gap-2 px-2.5 py-2">
+        <p className="text-xs font-bold text-slate-700 truncate group-hover:text-[#2f7d4f] transition-colors min-w-0">
           {scene.titleZh}
         </p>
         <span

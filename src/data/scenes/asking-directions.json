@@ -1,0 +1,825 @@
+{
+  "slug": "asking-directions",
+  "sceneKey": "Asking Directions",
+  "titleZh": "街头问路",
+  "titleEn": "Asking the Way",
+  "tier": "P0",
+  "freqRank": 9,
+  "emoji": "🧭",
+  "gradient": "linear-gradient(135deg,#cffafe,#22d3ee)",
+  "storyHook": "迷路求助，对方指路，找到目的地",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "迷路求助",
+      "goal": "说明要找的地方"
+    },
+    {
+      "beat": "进行",
+      "title": "指路说明",
+      "goal": "指方向说路名"
+    },
+    {
+      "beat": "进行",
+      "title": "确认理解",
+      "goal": "重复路线"
+    },
+    {
+      "beat": "收束",
+      "title": "找到地点",
+      "goal": "道谢到达"
+    }
+  ],
+  "illustration": {
+    "label": "问路指路",
+    "motifs": [
+      "map",
+      "road",
+      "finger"
+    ],
+    "accent": "#0891b2"
+  },
+  "narrative": {
+    "when": "下午三点，约在陌生街区见面",
+    "where": "十字路口街角",
+    "who": "甲（路人/游客）· 乙（本地居民）",
+    "how": "礼貌停下问路，对方用手指方向",
+    "method": "说明目的地、听指路、重复确认、道谢离开",
+    "event": "甲手机没电，找不到约好的咖啡馆"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I am turned round, sir.",
+      "zh": "先生，我转向了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Oh, no trouble. Where are you going?",
+      "zh": "哦，没事。你要去哪儿？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "I am looking for a place named 'Afternoon' that has drink.",
+      "zh": "我在找一家叫‘午后’的店，有饮料的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Right, I see. Your phone is dead?",
+      "zh": "好的，我知道了。你手机没电了？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Yes, it went dark. I am new to this town.",
+      "zh": "对，没电了。我刚来这个镇子。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "That is good. Go two streets that way.",
+      "zh": "没问题。往那边走两个路口。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Two streets? And then what do I do?",
+      "zh": "两个路口？然后呢？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Turn right at the bakery. Then go about a hundred steps.",
+      "zh": "在面包店右转，再走大约一百步。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "A hundred steps. And the sign is green, is that right?",
+      "zh": "一百步。招牌是绿色的，对吧？",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "That's it. Green sign on the left side. You will see it.",
+      "zh": "没错。左边绿色招牌。你会看到的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Right. I will go that way now.",
+      "zh": "好的，我现在就走那边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Best of hope. It is not far.",
+      "zh": "祝你好运。不远。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Thank you for your help.",
+      "zh": "谢谢你的帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "No trouble. Have a good day.",
+      "zh": "不客气。祝你愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "You too. okay.",
+      "zh": "你也是。好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "You are kind. I will go now.",
+      "zh": "您真是太好了。我现在就走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Take the second street on your right.",
+      "zh": "在你右边第二条街拐弯。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Second right. Got it.",
+      "zh": "右边第二条。记住了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Then walk straight for a bit.",
+      "zh": "然后直走一小段。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "How far is a bit?",
+      "zh": "一小段是多远？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "About three minutes, no more.",
+      "zh": "大概三分钟，不会更多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Three minutes. That is short.",
+      "zh": "三分钟。那很近。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Yes. The place is on the left.",
+      "zh": "是的。那地方在左边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Left side. With a green sign.",
+      "zh": "左边。有个绿色招牌。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "That is right. You will not miss it.",
+      "zh": "没错。你不会错过的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "So I go two roads, then right.",
+      "zh": "所以走两个路口，然后右转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Yes. At the bakery.",
+      "zh": "对。在面包店那里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Then walk for three minutes.",
+      "zh": "然后走三分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "About that. Not more.",
+      "zh": "差不多。不会多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "And the place is on the left.",
+      "zh": "地方在左边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "With a green sign. You will see it.",
+      "zh": "有个绿色招牌。你会看到的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "What if I go past it?",
+      "zh": "要是走过了怎么办？",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Then you see a place for disease. Too far.",
+      "zh": "那你会看到药店。就走过了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Good. I will keep an eye out.",
+      "zh": "好的。我会留意的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "You will be all right. sure.",
+      "zh": "你会没事的。好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right. Two roads across, then turn right at the bakery.",
+      "zh": "对。两个路口，然后在面包店右转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Yes. And then a hundred steps, more or less.",
+      "zh": "是的。然后走一百步左右。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Left side, green sign. That is clear.",
+      "zh": "左边，绿色招牌。清楚了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "You have it. No need to be troubled.",
+      "zh": "你记住了。不用着急。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Thank you. I will go now.",
+      "zh": "谢谢。我现在就走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I will walk on now. Two roads, then right.",
+      "zh": "我现在就走。两个路口，然后右转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "That is right. Keep your eyes open for the bakery.",
+      "zh": "没错。留意面包店。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "And after that, a hundred steps. Left side, green sign.",
+      "zh": "然后走一百步。左边，绿色招牌。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "You have it all in your head. No need for a box.",
+      "zh": "你都记住了。不需要手机。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I hope I do not get mixed up. The streets all look the same.",
+      "zh": "希望我不会搞混。这些街道看起来都一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Do not be troubled. The bakery has a red front. Hard to miss.",
+      "zh": "别担心。面包店门面是红色的。很难错过。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Oh, red front. That is a good sign. I will look for that.",
+      "zh": "哦，红色门面。那是个好标志。我会找那个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Yes. And after the turn, the green sign will be clear.",
+      "zh": "是的。转弯后，绿色招牌就会很显眼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Right. I am off now. Thank you for your help.",
+      "zh": "好的。我现在出发了。谢谢你的帮助。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Go on. You will be at the cafe in no time.",
+      "zh": "去吧。你很快就到饮品店了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I am walking now. Two streets, then right.",
+      "zh": "我现在走了。两条街，然后右转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "That is the way. Keep your eyes on the red front.",
+      "zh": "就是那条路。眼睛盯着红色门面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "I see a red front. Is that the bakery?",
+      "zh": "我看到一个红色门面。那是面包店吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Yes, that is it. Turn right there.",
+      "zh": "对，就是它。在那儿右转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "I am at the turn now. The street is quiet.",
+      "zh": "我现在在转弯处。这条街很安静。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Good. Now look for the green sign on the left.",
+      "zh": "好。现在找左边的绿色招牌。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "I see a green sign! It is about a hundred steps away.",
+      "zh": "我看到一个绿色招牌！大约一百步远。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "That is the place. You are almost there.",
+      "zh": "就是那个地方。你马上就到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I am at the door now. The sign says 'Afternoon'.",
+      "zh": "我现在在门口了。招牌上写着‘午后’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Well done. You got it without a box.",
+      "zh": "干得好。你没用手机就找到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "I will go in now. Thank you for your help.",
+      "zh": "我现在进去了。谢谢你的帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "No trouble at all. Have a good time.",
+      "zh": "不麻烦。祝你开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "The drink smells good from here.",
+      "zh": "这里就能闻到饮品的香气了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "They make a good cup. I go there now and then.",
+      "zh": "他们家的咖啡不错。我偶尔去那儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I will have their special today.",
+      "zh": "我今天试试他们的特调。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "The one with milk and a bit of sweet? That is mine.",
+      "zh": "加牛奶和一点甜的那种？那是我的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "I will keep that in mind. Thanks again.",
+      "zh": "我记住了。再次感谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "That is all right. Have a good drink.",
+      "zh": "不客气。好好喝吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "I will. sure for now.",
+      "zh": "我会的。先告辞了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "sure. be safe.",
+      "zh": "好的。安全第一。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "I will start walking now.",
+      "zh": "我这就动身了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Have a safe walk. It is a nice day.",
+      "zh": "路上小心。今天天气不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "The sun is bright, I do not mind the walk.",
+      "zh": "阳光很好，我不介意走一走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Yes, and the street is quiet today.",
+      "zh": "是的，而且今天街上挺安静的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "I see the red front of the bakery now.",
+      "zh": "我现在看到面包店的红色门面了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "That is it! Turn right there.",
+      "zh": "就是那里！在那儿右转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "I am turning now. I see the green sign.",
+      "zh": "我这转弯了。我看到绿色招牌了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Perfect. You will find the door easily.",
+      "zh": "很好。你会很容易找到门口的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "I am at the door now. The sign says Afternoon.",
+      "zh": "我现在到门口了。招牌写着“午后”。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Great. Enjoy your drink inside.",
+      "zh": "太好了。去里面喝点饮料吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I will. Thank you for your kind help.",
+      "zh": "我会的。谢谢您热心的帮助。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "You are welcome. Have a wonderful day.",
+      "zh": "不客气。祝你今天过得愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "I will go inside now.",
+      "zh": "我现在进去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Sure. It is warm inside.",
+      "zh": "好。里面挺暖和的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "The door is open.",
+      "zh": "门开着呢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "The server is waiting.",
+      "zh": "服务员在等着了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "I see a clean table near the window.",
+      "zh": "我看到窗户旁有一张干净的桌子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "That is a good spot.",
+      "zh": "那是张好桌子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "I will sit there.",
+      "zh": "我就坐那儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Enjoy the tea.",
+      "zh": "好好喝杯茶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "The place has a nice feeling.",
+      "zh": "这地方感觉真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Yes, it is very popular.",
+      "zh": "是的，这儿挺受欢迎的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "I see my friend now.",
+      "zh": "我现在看到我朋友了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Oh, good. Have fun.",
+      "zh": "哦，太好了。祝你们玩得开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "He is waving at me.",
+      "zh": "他正在向我招手。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Go say hello.",
+      "zh": "快去打个招呼吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I will. Thanks again for your time.",
+      "zh": "我会的。再次感谢您的时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "That is the way. You will see it.",
+      "zh": "就是那样。你会看到的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Good. I will go now. Thank you for your help.",
+      "zh": "好的。我现在就走。谢谢你的帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "That is all right. Have a good day.",
+      "zh": "没问题。祝你今天愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Well, you too. okay.",
+      "zh": "你也是。回头见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "sure. Go straight, then right.",
+      "zh": "好的。直走，然后右转。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Yes, I have it in my head now.",
+      "zh": "是的，我现在记住了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Good. Off you go.",
+      "zh": "好。去吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I am at the red door. Is this the place?",
+      "zh": "我到红色门了。是这里吗？",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Yes, that is it. The place for drink is inside.",
+      "zh": "对，就是这里。喝东西的地方在里面。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Great! I made it. Thanks again.",
+      "zh": "太好了！我到了。再次感谢。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "You are welcome. Go in and have a good rest.",
+      "zh": "不客气。进去好好休息一下。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I will. The drink will be good after that walk.",
+      "zh": "我会的。走了这么久，那杯饮料一定很香。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Have your drink. Goodbye for now.",
+      "zh": "喝你的饮品吧。再见。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "手机没电，街角迷路。路人一指，转角遇到咖啡馆。",
+  "storyScript": "【开场·迷路求助】下午三点的阳光斜斜洒在十字路口，甲站在街角，手里攥着没电的手机，眉头微蹙。他环顾四周，陌生的街景让心里有些发慌。约定的咖啡馆就在附近，可导航一黑，方向全乱了。他看见一位本地居民模样的乙正悠闲地走过，便快步迎上去，礼貌地欠身，语气里带着歉意：您好，请问这附近有家叫‘午后’的咖啡馆吗？我手机没电了，找不到路。\n\n【进行·指路说明】乙停下脚步，微微一笑，抬手朝东边指了指。他说话不紧不慢，声音温和：你往前走两个路口，看到一家面包店右转，再走一百米左右，左手边就是。那家店门口有个绿色的招牌，很好认。甲顺着乙的手指望去，目光落在远处的楼宇间，心里默默记下路线。乙又补了一句：大概走五分钟就到了。\n\n【进行·确认理解】甲点点头，重复了一遍：两个路口右转，面包店那里，再走一百米，左手边绿色招牌。乙点头肯定，又补充道：对，没错。要是走到药店就过头了。甲心里踏实了些，再次道谢，脸上露出感激的笑容。乙摆摆手，转身继续自己的路。\n\n【收束·找到地点】甲按照指引快步前行，穿过两个路口，果然看到面包店的橱窗。右转后数着步子，一百米左右，左手边那抹绿色招牌映入眼帘。咖啡馆的门半掩着，暖黄的灯光透出来。他推门而入，熟悉的咖啡香扑面而来。手机没电的焦虑一扫而空，只剩找到目的地的安心与对那位路人的感谢。"
+}

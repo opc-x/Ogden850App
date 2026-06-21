@@ -1,0 +1,820 @@
+{
+  "slug": "nervous",
+  "sceneKey": "Nervous",
+  "titleZh": "考前紧张缓解",
+  "titleEn": "Feeling Nervous",
+  "tier": "P2",
+  "freqRank": 45,
+  "emoji": "😰",
+  "gradient": "linear-gradient(135deg,#f3e8ff,#9333ea)",
+  "storyHook": "考试前焦虑，朋友鼓励，镇定上场",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "承认紧张",
+      "goal": "怕考不好"
+    },
+    {
+      "beat": "进行",
+      "title": "鼓励准备",
+      "goal": "复习呼吸"
+    },
+    {
+      "beat": "收束",
+      "title": "镇定出发",
+      "goal": "去考场"
+    }
+  ],
+  "illustration": {
+    "label": "紧张",
+    "motifs": [
+      "clock",
+      "book",
+      "breath"
+    ],
+    "accent": "#7e22ce"
+  },
+  "narrative": {
+    "when": "周五早上，一小时后就要进考场",
+    "where": "甲家门口，出发去考试前",
+    "who": "甲（考生）· 乙（家人/朋友）",
+    "how": "甲说出心里的紧张，乙在旁边鼓励",
+    "method": "说出紧张的原因、复习要点、深呼吸放松、出发去考场",
+    "event": "甲这次考试很重要，担心自己复习得不够"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I am so on edge.",
+      "zh": "我紧张得要命。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "What is wrong?",
+      "zh": "怎么了？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "I have a test in one hour.",
+      "zh": "我一小时后就要考试了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "You have been working hard.",
+      "zh": "你一直很努力。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "I am not certain I will do well.",
+      "zh": "我不确定我能考好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "That is a normal feeling.",
+      "zh": "有这种感觉很正常。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "What if my memory is gone?",
+      "zh": "万一我全忘了怎么办？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "You will not. You are ready.",
+      "zh": "你不会的。你准备好了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "I have my notes here.",
+      "zh": "我带了复习要点。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Good. Let us go through them.",
+      "zh": "好。我们过一遍。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I am still ill at heart.",
+      "zh": "我还是担心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "That is all right. Have a look at the first line.",
+      "zh": "没事。看一眼第一行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "First part: the chief ideas.",
+      "zh": "第一部分：主要概念。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Good. Now take a slow breath.",
+      "zh": "好。现在慢慢吸一口气。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Take air in... out... That is better.",
+      "zh": "吸……呼……好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "You see? You have it well.",
+      "zh": "你看？你掌握得很熟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "I do, but my head is full of doubt.",
+      "zh": "是，但我脑子里全是怀疑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Doubt is only a sign you care.",
+      "zh": "怀疑只是你在意的表现。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "What if I have nothing in my head in the room?",
+      "zh": "万一我在房间里脑子里什么都没了呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Then you take three slow breaths again.",
+      "zh": "那你就再慢慢做三次深呼吸。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "And if the words will not come?",
+      "zh": "要是想不起来怎么说呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "You have the key points on that paper.",
+      "zh": "你那张纸上有关键要点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "True. I will keep it on my table.",
+      "zh": "对。我会把它放在桌上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "And have some water now. It will help.",
+      "zh": "现在喝点水。会有帮助的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Right. One more breath, and I am ready.",
+      "zh": "好。再吸一口气，我就准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Good. You look a bit better now.",
+      "zh": "好。你现在看起来好一点了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Yes, the water did help a bit.",
+      "zh": "嗯，水确实有点用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Now, say the first point out loud.",
+      "zh": "现在，把第一条大声说出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "The first part of the first division.",
+      "zh": "第一个部分的第一部分。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "That is right. You have it clear.",
+      "zh": "没错。你记得很清楚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "And the second point? The hard one.",
+      "zh": "那第二点呢？那个难的部分。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "The rules for the long division.",
+      "zh": "长除法的规则。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Good. You see? It is all there.",
+      "zh": "好。你看吧？都在脑子里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "I am more ready now, yes.",
+      "zh": "我现在确实更有准备了，是的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Then we go. Time to do this.",
+      "zh": "那我们走吧。是时候上场了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Good. Now, take a deep breath with me.",
+      "zh": "好。现在，跟我一起深呼吸。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "In for four, out for six. Like the slow bell.",
+      "zh": "吸四秒，呼六秒。像慢钟声一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "The stiff feeling is going.",
+      "zh": "僵硬的感觉在消失。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "That is the way. One more time, together.",
+      "zh": "就是这样。再来一次，一起。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Better. Now, have some water before we go.",
+      "zh": "好多了。现在，出发前喝点水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Here, take this cup. It is warm, not cold.",
+      "zh": "来，拿着这杯。是温的，不是凉的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Thank you. My mouth was dry.",
+      "zh": "谢谢。我嘴巴都干了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "That is normal. The water will help your body.",
+      "zh": "正常。水能让身体稳下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "I still have a knot here, in my stomach.",
+      "zh": "我这里还是有个结，在胃里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "That knot will go when you start writing.",
+      "zh": "等你开始写，那个结就解开了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Is that so? I hope you are right.",
+      "zh": "你确定吗？希望你说得对。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "I have been through this before. Take my word.",
+      "zh": "我以前也经历过。信我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "What if I see a question I do not have the answer to?",
+      "zh": "万一碰到不会的题怎么办？",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Then do another one. Come back after.",
+      "zh": "那就先做另一题，回头再来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Yes. Go past and come back. That is a good idea.",
+      "zh": "对。先过再回来。好主意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Right. Now say your notes out loud. That will keep them in your head.",
+      "zh": "好了。现在把笔记大声说出来。这样就能记在脑子里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "I will have a go. 'Part three, chief points...'",
+      "zh": "我试试。‘第三部分，要点……’",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Good. Your voice is getting stronger. Keep going.",
+      "zh": "好。你的声音越来越稳了。继续。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "I did it. I am a bit better now.",
+      "zh": "念完了。现在感觉好一点了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "See? You are good at this. Now do it with me. In... keep... out.",
+      "zh": "看吧？你擅长这个。现在跟我做。吸……屏住……呼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "In... keep... out. My chest is less tight.",
+      "zh": "吸……屏住……呼。胸口没那么紧了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "One more time. In... keep... out. There. You are ready.",
+      "zh": "再来一次。吸……屏住……呼。好了。你准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Let us go now? The sun is up and the air is clean.",
+      "zh": "我们现在走吗？太阳出来了，空气很干净。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Yes. I have my pen and my ticket. Let us go.",
+      "zh": "好。我带了笔和准考证。走吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "That is the way. One step at a time. You have got this.",
+      "zh": "这才像话。一步一步来。你行的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Right. Now, one last thing. A drink of water.",
+      "zh": "好。最后一件事，喝口水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Here. Not too cold. It will help your throat.",
+      "zh": "给。不太凉。对喉咙好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Thanks. My mouth was dry.",
+      "zh": "谢了。我嘴巴刚才很干。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "That is normal. Now, what is the first thing you will do?",
+      "zh": "正常。现在，你进去第一件事做什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Look at the questions. All of them.",
+      "zh": "看问题。全部看一遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Good. Then what?",
+      "zh": "好。然后呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Do the ones I see first. Keep the hard ones for after.",
+      "zh": "先做会的。难的放后面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Good. You have a way. That is a start.",
+      "zh": "很好。你有办法了。这是个开始。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "I will not let the time get to me.",
+      "zh": "我不会让时间压垮我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "That is the way. Now, let us go and do it.",
+      "zh": "这才像话。走吧，去把它搞定。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Right. One more deep breath before we go.",
+      "zh": "好。走之前再来一次深呼吸。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "In through the nose, out through the mouth.",
+      "zh": "鼻子吸，嘴巴呼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "I am a bit better now.",
+      "zh": "我现在感觉好点了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Good. Your mind is clear. That is what you need.",
+      "zh": "好。脑子清楚了。这就是你需要的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "What if I get a question I have not seen?",
+      "zh": "要是碰到没见过的题怎么办？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Then take a breath and do what you can. No one has all the answers.",
+      "zh": "那就吸口气，能做多少做多少。没人全知道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "You are right. I have done my best.",
+      "zh": "你说得对。我已经尽力了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "And that is enough. Now, are you ready?",
+      "zh": "那就够了。现在，准备好了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Yes. Let us go.",
+      "zh": "好了。走吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "That is right. I will be here when you come out.",
+      "zh": "这才像样。我在这儿等你出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Let us go over the key points again.",
+      "zh": "咱们再过一遍重点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Yes, that might help. Start with the first part.",
+      "zh": "好，可能有帮助。从第一部分开始吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Right. The chief ideas are clear now.",
+      "zh": "对。主要想法现在清楚了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Good. Now take a slow breath in, and out.",
+      "zh": "好。现在慢慢吸气，再呼出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "I am a bit quieter after that.",
+      "zh": "做完这个我感觉平静些了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Have some water. It will keep your throat wet.",
+      "zh": "喝点水，润润嗓子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Thanks. My heart is slower now.",
+      "zh": "谢谢。现在心跳慢些了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "You have done your best. Be certain of that.",
+      "zh": "你该做的都做了。相信自己。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "I will keep that in mind.",
+      "zh": "我会记住这话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "That is the way. Now let us go.",
+      "zh": "这才像话。咱们走吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I am ready now.",
+      "zh": "我现在准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Good. Let us go to the test place.",
+      "zh": "好。咱们去考场吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "I will do my best.",
+      "zh": "我会尽力的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "That is all a man can do.",
+      "zh": "每个人都只能这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "The sun is bright today.",
+      "zh": "今天阳光真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "A good sign, I would say.",
+      "zh": "我觉得是个好兆头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Yes, a good sign.",
+      "zh": "嗯，好兆头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Keep your head up.",
+      "zh": "抬起头来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "I will. Go after the test.",
+      "zh": "我会的。考完就去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Talk then. Go on.",
+      "zh": "考完再聊。去吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right, off you go.",
+      "zh": "好了，走吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Thanks for being here.",
+      "zh": "谢谢你陪着我。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "That is what family does.",
+      "zh": "家人就该这样。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "I will not let you down.",
+      "zh": "我不会让你失望的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "You will not let you down.",
+      "zh": "你不会让自己失望的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "This pen is my good sign.",
+      "zh": "这支笔是我的好兆头。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Good. Use it well.",
+      "zh": "好。好好用。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "I will take my time.",
+      "zh": "我会慢慢来。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "That is the way.",
+      "zh": "就该这样。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "See you in two hours.",
+      "zh": "两小时后见。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "考前焦虑如潮水般涌来，朋友一句鼓励却成了定心丸。深呼吸后，他带着信心踏进考场。",
+  "storyScript": "【开场·承认紧张】清晨的阳光斜斜地照在门垫上，甲却无心欣赏。他攥着准考证，指节发白。一小时后就要进考场，可那些公式和定义像捉迷藏似的在脑海里躲闪。他低声对乙说：怕考不好，怕这几个月的努力白费。声音里带着一丝颤抖，像秋天最后一片叶子。乙没有打断，只是静静听着，眼神里满是理解。\n\n【进行·鼓励准备】乙轻轻拍了拍甲的肩膀，说紧张很正常，说明在乎。然后从包里掏出一张纸条，上面是甲自己写的复习要点：重点章节的框架、易错题的提醒、还有那句“相信自己”。乙让他对着纸条念一遍，声音从微弱渐渐变得坚定。接着，乙示范起深呼吸：吸气四秒，屏住四秒，呼气六秒。甲跟着做，胸腔里的闷气一点点散开，像晨雾被阳光驱散。乙又递来一杯温水，说喝下去能稳住心跳。甲喝了一口，温热的液体顺着喉咙滑下，紧绷的神经松弛了些。\n\n【收束·镇定出发】时间到了。甲站起身，把准考证小心地收进笔袋。乙帮他理了理衣领，笑着说：你复习了那么多遍，该会的都会了。甲深吸一口气，推开门。外面的空气带着青草味，阳光正好。他回头冲乙点点头，然后大步朝考场走去。脚步不再迟疑，背影里多了一份从容。他知道，无论结果如何，这一刻他已经准备好了。"
+}

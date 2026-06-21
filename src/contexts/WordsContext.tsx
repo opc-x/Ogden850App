@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import type { Word } from '../types/word';
 import { VocabService } from '../services/vocab.service';
-import { setLemmaIds } from '../lib/wordTokens';
+import { setLemmaIds, setLemmaCategories } from '../lib/wordTokens';
 
 interface WordsContextType {
   words: Word[];
@@ -32,6 +32,7 @@ export function WordsProvider({ children }: { children: ReactNode }) {
           setWords([]);
         } else {
           setLemmaIds(new Set(rows.map((w) => w.id)));
+          setLemmaCategories(new Map(rows.map((w) => [w.id, w.category])));
           setWords(rows);
           setError(null);
         }

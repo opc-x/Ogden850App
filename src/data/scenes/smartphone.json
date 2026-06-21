@@ -1,0 +1,820 @@
+{
+  "slug": "smartphone",
+  "sceneKey": "Smartphone",
+  "titleZh": "手机日常用法",
+  "titleEn": "Using a Phone",
+  "tier": "P2",
+  "freqRank": 24,
+  "emoji": "📲",
+  "gradient": "linear-gradient(135deg,#f3f4f6,#6b7280)",
+  "storyHook": "开机设铃声，拍照发图，查信息",
+  "storyBlurb": "手机电量告急，甲一边充电一边忙着拍照发图，终于充好电收好手机。",
+  "storyScript": "【开场·拿出手机】晚上八点，甲电量只剩百分之二十，赶紧找充电线，插上才安心。\n\n【进行·拍照发信】甲把今天拍的照片发给朋友乙，一起决定明天的拍照计划，顺手换了铃声。\n\n【收束·充电收好】电量涨到三十，甲挂断通话，把充电线绕好留着过夜充电。",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "拿出手机",
+      "goal": "开机看电量"
+    },
+    {
+      "beat": "进行",
+      "title": "使用功能",
+      "goal": "拍照发信"
+    },
+    {
+      "beat": "收束",
+      "title": "充电收好",
+      "goal": "插电放回"
+    }
+  ],
+  "illustration": {
+    "label": "智能手机",
+    "motifs": [
+      "phone",
+      "picture",
+      "message"
+    ],
+    "accent": "#4b5563"
+  },
+  "narrative": {
+    "when": "晚上八点，手机电量只剩百分之二十",
+    "where": "甲的房间，沙发上",
+    "who": "甲（手机主人）· 乙（朋友，视频里聊天）",
+    "how": "一边充电一边操作手机",
+    "method": "拍照发给朋友、查看消息、设置铃声、充好电收好",
+    "event": "甲想把今天拍的照片发给朋友，又怕手机没电关机"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "My phone is almost dead. Twenty parts in a hundred.",
+      "zh": "我手机快没电了，只剩百分之二十。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Already? You only charged it this morning.",
+      "zh": "已经没了？你早上才充过的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "I know. The old ones go fast.",
+      "zh": "我知道，旧手机掉电快。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Find your wire before it dies.",
+      "zh": "赶紧找充电线，别让它关机。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "I am looking. It is always somewhere behind the seat.",
+      "zh": "找呢，总是在沙发后面。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Did you check under the side thing?",
+      "zh": "有没有看沙发侧面？",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Found it. Behind the soft part, as always.",
+      "zh": "找到了，在靠垫后面，一贯如此。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Some things never change.",
+      "zh": "有些事永远不会变。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "The charging sign is on. Good.",
+      "zh": "充电图标亮了，好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Now we can talk. I was waiting for those pictures.",
+      "zh": "现在我们可以聊了，我等你的照片等了好久。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Right, the pictures. Let me open the picture book.",
+      "zh": "对，照片。让我打开相册。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "How many did you take today?",
+      "zh": "今天拍了几张？",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "A lot. Mostly the evening sky and a small cat.",
+      "zh": "很多，大部分是傍晚的天空和一只小猫。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "A cat? Where?",
+      "zh": "猫？在哪？",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "On the road near the restaurant. It was sitting on a box.",
+      "zh": "在餐馆旁边的路上，它坐在一个箱子上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Send me that one first.",
+      "zh": "先发那张给我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Sending now. It is a good one.",
+      "zh": "发了，这张拍得不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Oh! It is so small and round.",
+      "zh": "哇！它好小好圆。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "It came right up to me. No fear at all.",
+      "zh": "它径直走过来，一点都不怕人。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Can I use this as my screen picture?",
+      "zh": "我可以用这个当我的屏幕壁纸吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Of course. Now the sky picture.",
+      "zh": "当然可以，现在发天空那张。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Oh, the color. What time was this?",
+      "zh": "哇，这颜色！这是几点拍的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Just before the light went. About six.",
+      "zh": "太阳刚下去的时候，大概六点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "You caught it at the right moment.",
+      "zh": "你抓到了最好的那一刻。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "I almost missed it. I was in the restaurant and saw the color through the door.",
+      "zh": "我差点错过了，在餐馆里透过门看到颜色，赶紧出来拍的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Worth going outside for.",
+      "zh": "值得出去拍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "My food went cold.",
+      "zh": "我的饭都冷了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "A small price.",
+      "zh": "小小的代价。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "My phone is at fifteen now. Going down fast.",
+      "zh": "手机到百分之十五了，掉得很快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Is it plugged in?",
+      "zh": "充电线插了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Yes, but the wire is short and I have to sit by the wall.",
+      "zh": "插了，但线太短，我只能坐在墙边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "You need a longer wire.",
+      "zh": "你需要一根长一点的线。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "I keep saying that.",
+      "zh": "我一直这么说。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Say it to the shop.",
+      "zh": "去店里说。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Ha. True. Now, I want to change my bell sound.",
+      "zh": "哈，说得对。好了，我想换铃声。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "The one you have now is very loud.",
+      "zh": "你现在这个铃声太响了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "I know. It goes off and everyone looks at me.",
+      "zh": "我知道，响起来所有人都看我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Open the settings. Go to sound.",
+      "zh": "打开设置，找到声音。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "I am in sound now. There are so many to pick from.",
+      "zh": "我进声音设置了，有好多可以选。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Try the short light ones. Not the long deep ones.",
+      "zh": "试试短促轻快的，别选那种长低音的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "This one sounds like morning birds.",
+      "zh": "这个听起来像早晨的鸟叫声。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Not bad. Try the next.",
+      "zh": "不错，再试试下一个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Oh, that one is too happy. Like a game.",
+      "zh": "哦，那个太欢快了，像游戏声音。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "The bird one was better.",
+      "zh": "鸟叫那个更好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Agreed. I will go back to the bird one.",
+      "zh": "同意，我换回鸟叫那个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Good. Now I can call you and not feel bad for the room.",
+      "zh": "好，这样我打电话给你，不会让全屋的人都知道了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Ha. It is set. Done.",
+      "zh": "哈，设好了，搞定。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "What is your phone up to now?",
+      "zh": "你手机电量到多少了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Twenty-two. Going up slowly.",
+      "zh": "百分之二十二，慢慢在涨。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Slow charger.",
+      "zh": "充电器充得慢啊。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Old wire. I really do need a new one.",
+      "zh": "线老了，我真的需要换一根新的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Get one tomorrow at the corner shop.",
+      "zh": "明天去街角的店买一根。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Are you going out tomorrow?",
+      "zh": "你明天出门吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Yes, I thought we could meet at the open space near the trees.",
+      "zh": "是的，我想我们可以在树边的空地碰面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "The green place by the road?",
+      "zh": "路边那块绿地？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "That one. Bring your picture machine.",
+      "zh": "对，带上你的相机。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "For the cat?",
+      "zh": "为了拍猫？",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "For everything. I want to try that water glass trick you showed me.",
+      "zh": "拍什么都行，我想试试你给我看的那个水杯技巧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "The one where you put the glass in front of the sun?",
+      "zh": "就是把水杯放在太阳前面那个？",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Yes. I tried it alone and it looked wrong.",
+      "zh": "对，我自己试过，拍出来不对。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "You have to hold the glass very still and get low.",
+      "zh": "你要把杯子拿得很稳，还要蹲低一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Get low?",
+      "zh": "蹲低？",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Yes. Get on one knee. The picture comes out much better.",
+      "zh": "对，单腿跪下，拍出来好看很多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "That is going to look strange in public.",
+      "zh": "在外面这么做会很奇怪吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "People who take pictures always look strange.",
+      "zh": "拍照的人看起来都奇奇怪怪的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Fair point.",
+      "zh": "说得也是。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "I will show you the right way tomorrow. It is easier in person.",
+      "zh": "我明天当面教你，当面教容易多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Good. What time?",
+      "zh": "好，几点？",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Morning is best. Before the sun gets high.",
+      "zh": "早上最好，在太阳变高之前。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Eight? Nine?",
+      "zh": "八点？九点？",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Nine is fine. I need time for food first.",
+      "zh": "九点可以，我要先吃个东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Nine at the green place. Done.",
+      "zh": "九点在绿地，说定了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "I will put it in my phone now so I do not forget.",
+      "zh": "我现在就存进手机，免得忘了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Good idea. Your phone is at what now?",
+      "zh": "好主意，你手机到多少了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Twenty-eight. Still going slow.",
+      "zh": "二十八了，还是充得慢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "You should sleep soon anyway.",
+      "zh": "你也该睡了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "I know. I just want to check my messages first.",
+      "zh": "我知道，先看看消息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Anyone interesting?",
+      "zh": "有什么有趣的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "My sister sent a picture of her new place.",
+      "zh": "我姐姐发来一张她新家的照片。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Nice?",
+      "zh": "好看吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Very. Big windows and a lot of light.",
+      "zh": "很好看，大窗户，光线很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Where did she move to?",
+      "zh": "她搬到哪里了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Near the station. The trip to work is much shorter now.",
+      "zh": "在车站附近，她说上班路程短多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "That is the best thing about a new place.",
+      "zh": "这是搬新家最好的事情之一。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "She sounded happy in her message.",
+      "zh": "她消息里听起来很开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Did you write back?",
+      "zh": "你回了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Not yet. I will do it now.",
+      "zh": "还没，我现在回。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "I will wait.",
+      "zh": "我等你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Done. Told her the new place looks great.",
+      "zh": "发完了，跟她说新家看起来很棒。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Now put down the phone.",
+      "zh": "好了，放下手机吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "One more thing.",
+      "zh": "还有一件事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "There is always one more thing with you.",
+      "zh": "你总是有一件事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "I need to set my morning sound.",
+      "zh": "我要设置早上的闹钟声音。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "What do you use now?",
+      "zh": "你现在用的什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "A very loud bell. It hits me like a wall.",
+      "zh": "一个很响的铃声，像撞墙一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "That is why you are always in a bad way in the morning.",
+      "zh": "难怪你早上总是状态不好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Ha. Maybe the bird sound for mornings too.",
+      "zh": "哈，也许早上也换成鸟叫声。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Much better idea.",
+      "zh": "这主意好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Set. Now I can sleep.",
+      "zh": "设好了，现在可以睡了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Phone at thirty now?",
+      "zh": "手机现在到三十了吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Thirty. Close enough for tonight.",
+      "zh": "三十，今晚够了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Leave it on the wire. It will charge while you sleep.",
+      "zh": "就挂在充电线上，睡觉的时候自己充。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Good idea. I always forget to do that.",
+      "zh": "好主意，我总忘了这么做。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Go. I will okay at nine tomorrow.",
+      "zh": "去睡吧，明天九点见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Nine. And bring something warm to drink.",
+      "zh": "九点，记得带杯热饮。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "I will. Goodnight.",
+      "zh": "我带，晚安。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Goodnight. And thanks for waiting for the pictures.",
+      "zh": "晚安，谢谢你等着看我的照片。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "The cat made it worth the wait.",
+      "zh": "那只猫让等待变得值得了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I thought you would say that.",
+      "zh": "我就知道你会这么说。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Sleep well.",
+      "zh": "好好睡。",
+      "beat": "收束"
+    }
+  ]
+}

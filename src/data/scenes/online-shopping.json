@@ -1,0 +1,825 @@
+{
+  "slug": "online-shopping",
+  "sceneKey": "Online Shopping",
+  "titleZh": "网购下单收货",
+  "titleEn": "Online Order",
+  "tier": "P1",
+  "freqRank": 15,
+  "emoji": "🛍",
+  "gradient": "linear-gradient(135deg,#fef3c7,#f59e0b)",
+  "storyHook": "网上选商品，付款，等货到签收",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "浏览选品",
+      "goal": "看图片价格"
+    },
+    {
+      "beat": "进行",
+      "title": "下单付款",
+      "goal": "确认地址付钱"
+    },
+    {
+      "beat": "进行",
+      "title": "等待物流",
+      "goal": "问何时到"
+    },
+    {
+      "beat": "收束",
+      "title": "签收验货",
+      "goal": "收货检查"
+    }
+  ],
+  "illustration": {
+    "label": "网购收货",
+    "motifs": [
+      "box",
+      "machine",
+      "money"
+    ],
+    "accent": "#b45309"
+  },
+  "narrative": {
+    "when": "晚上十点，躺在床上刷手机",
+    "where": "甲的房间，手机屏幕前",
+    "who": "甲（买家）· 乙（朋友，帮忙看商品）",
+    "how": "滑动屏幕看图片和价格，发消息问对方意见",
+    "method": "浏览选品、比较价格、下单付款、等快递、签收检查",
+    "event": "甲的旧鞋坏了，急着网上买一双新的赶下周的旅行"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "My old shoes are broken. The base is coming off.",
+      "zh": "我旧鞋坏了，鞋底都裂了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Oh, that is bad. Do you need new shoes for your journey?",
+      "zh": "哦，那糟了。你旅行得买双新的吧？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Yes, I am looking at some now. What about this grey one?",
+      "zh": "对，我正在看。这双灰色的怎么样？",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "The look is all right. But the notes say it runs small.",
+      "zh": "款式还行，但评论说码偏小。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Right. I'll go a size up then. How about this black one?",
+      "zh": "明白，那我买大一码。这双黑的呢？",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "That is a bit dear. For that price, you might get a better one.",
+      "zh": "有点贵。那个价可以买更好的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "True. I like these white ones. The price is right and the size is good.",
+      "zh": "也是。我喜欢这双白的，价格合适，尺码也全。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "That one is good. Have you a ticket for less money?",
+      "zh": "那双不错。你有省钱券吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Good idea. I have a ticket for a cheap price.",
+      "zh": "好主意。我有一张券，能便宜点。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Great. Go for it then. You will have them for the journey.",
+      "zh": "太好了，那就买吧。旅行就能穿了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I will get the white ones. Size 42. Let me put them in the car.",
+      "zh": "我就要白的，42码。先加购物车。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "See the place name. Is this your house or work?",
+      "zh": "地址对一下。你家还是公司？",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "At my place. I will be here all day tomorrow. That is good.",
+      "zh": "在我家。明天我全天都在，没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Good. Now use that ticket. Every bit helps.",
+      "zh": "好，现在用那张券。省一点是一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Done. Ten off. I will give the money now.",
+      "zh": "好了，减了十块。我现在给钱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Did it go through?",
+      "zh": "付成功了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Yes. Payment is done. Order is in.",
+      "zh": "成了，钱付了，订单已提交。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "What does the clock say for time?",
+      "zh": "屏幕显示什么时候到？",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "It says tomorrow afternoon. That is quick.",
+      "zh": "显示明天下午，挺快的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Good. You will have them for the journey.",
+      "zh": "那就好，旅行能穿上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "I will keep an eye on it.",
+      "zh": "我会盯着它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Have another look in the morning. It may be different.",
+      "zh": "明早再看一次，可能不一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Right. I will do that. rest up.",
+      "zh": "好，那我先睡了。好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Night. rest up. New shoes tomorrow.",
+      "zh": "好好休息，睡个好觉。明天新鞋到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Oh yes. I am looking forward to it.",
+      "zh": "哦，是啊，挺期待的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Morning. Did you see the news?",
+      "zh": "早啊，看到物流更新了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Not now. Let me have a look.",
+      "zh": "还没，我看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "It says on the move. Still on time.",
+      "zh": "显示在运输中，还是准时的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Good. I hope it comes before the night meal.",
+      "zh": "那就好，希望晚饭前能到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "It will. The man said afternoon.",
+      "zh": "会的，快递员说下午到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I will be here all day. That is good.",
+      "zh": "我全天在家，没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Keep your box near. They may ring.",
+      "zh": "把盒子放身边，他们会打电话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Right. I have it here now.",
+      "zh": "嗯，手机就在手边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Any sign of the car?",
+      "zh": "看到货车了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Not now. It is only 2.",
+      "zh": "还没，不过才两点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "I see a car outside. Is that your box?",
+      "zh": "我看到外面有辆货车，是你的包裹吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Let me see. Yes, it is the man with the box.",
+      "zh": "让我看看。对，是那个带箱子的人。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Go get it. I will be here.",
+      "zh": "去拿吧，我在这儿等着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Back. The box is light. Good sign.",
+      "zh": "回来了，盒子很轻，好兆头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Open it. I would like to see the new shoes.",
+      "zh": "打开看看，我想瞧瞧新鞋。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Right. Let me cut the sticky band.",
+      "zh": "好，我来剪胶带。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Go soft. Do not cut the box.",
+      "zh": "轻点。别把盒子划坏了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "No trouble. There we go.",
+      "zh": "没事，好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Take out the shoe box.",
+      "zh": "把鞋盒拿出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Here it is. White box, clean.",
+      "zh": "在这儿呢，白盒子，挺干净。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Open it up. Let me see the color.",
+      "zh": "打开吧，让我看看颜色。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "White, as I ordered. Looks good.",
+      "zh": "白色，跟我订的一样，看着不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Have a look at the size. Is it 42?",
+      "zh": "看一下尺码，是42吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Yes, 42. Let me put one on.",
+      "zh": "对，42。我穿一只试试。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "What is it like?",
+      "zh": "感觉怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "It is a bit tight on the left foot.",
+      "zh": "左脚有点紧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Have a go at the other one. They may not be the same.",
+      "zh": "试试另一只，有时候两只不一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Right foot is good. It is a good size.",
+      "zh": "右脚没问题，大小合适。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Walk a short way. See how it is.",
+      "zh": "走一小段路。看看感觉如何。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "The base is soft. I like it.",
+      "zh": "鞋底软，我喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Take a picture for me. I would like to see the color in the light.",
+      "zh": "帮我拍张照片，我想看看光线下的颜色。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Here you go. The white is bright.",
+      "zh": "给你，白色挺亮。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Looks good. Keep them on for a bit.",
+      "zh": "看着不错，先穿着吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I will. No marks on the shoe. Clean.",
+      "zh": "好，鞋上没瑕疵，干净。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Then you are ready for the journey.",
+      "zh": "那你可以准备旅行了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "I will put them in the box again.",
+      "zh": "我把它们放回盒子里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Why? You are not sending them back.",
+      "zh": "干嘛？你又不退货。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "No, but I would like to keep the box clean.",
+      "zh": "不，但我想保持盒子干净。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Right. Is the paper still inside?",
+      "zh": "好吧。里面的纸还在吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Yes, it is still there. The shoes are safe.",
+      "zh": "在，还在。鞋子很安全。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Good. Now, what about the old ones?",
+      "zh": "好。那旧鞋怎么办？",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "They are in the waste box. No more use.",
+      "zh": "扔垃圾桶了，不能再穿了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Right. A new start for your feet.",
+      "zh": "对，你的脚要重新开始了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Yes. I will take them for a long walk tomorrow.",
+      "zh": "是的，明天我要穿着走远路。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Make a picture of your feet in them. I would like to see.",
+      "zh": "拍张你穿着鞋的照片，我想看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "I will send you a picture now.",
+      "zh": "我现在就发照片给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Do that. I am waiting.",
+      "zh": "发吧，我等着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Here it is. What is your idea?",
+      "zh": "发过去了。你觉得怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "They look good on you. Very clean.",
+      "zh": "你穿着挺好看的，很干净。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Thanks. I am happy with them.",
+      "zh": "谢了，我很满意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "What was the last amount you gave?",
+      "zh": "最后你付了多少钱？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Two hundred thirty eight, with a note.",
+      "zh": "238，用了券。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "That is a good price for a good shoe.",
+      "zh": "这鞋质量不错，价格公道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Yes. I will keep them for a long time.",
+      "zh": "是啊，这双能穿很久。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Good. Now get some sleep. It is late.",
+      "zh": "好，早点睡吧，不早了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I will put them in the box now.",
+      "zh": "我现在把鞋放回盒子里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Keep the note for the order.",
+      "zh": "留着订单小票。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Right. I will put it in the box too.",
+      "zh": "对，我也放盒子里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Good. Then you will have no trouble if something goes wrong.",
+      "zh": "好，这样万一有问题也不怕。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "True. But I do not see any trouble.",
+      "zh": "也是，不过我觉得不会出岔子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "You may not be certain. It is wise to be safe.",
+      "zh": "你也许不确定。保险点总没错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Right. I will do that.",
+      "zh": "好的，我照做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "So, are you ready for the journey?",
+      "zh": "那，旅行准备得怎么样了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Almost. Just need to put my things in the bag now.",
+      "zh": "差不多了，就差把东西装进包里了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Well then, have a good sleep. rest up.",
+      "zh": "那行，睡个好觉。好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I will see when the car comes now.",
+      "zh": "我现在看看快递什么时候到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "The guide says it will come tomorrow afternoon.",
+      "zh": "软件说明天下午到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "That is good. I will be here then.",
+      "zh": "那挺好，到时候我在家。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "After you get the shoes, how about a walk?",
+      "zh": "等你拿到鞋后，我们出去走走？",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Yes, I would like to have a go.",
+      "zh": "好，我想试试看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Right. I will come at three.",
+      "zh": "行。我三点过来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Right. alright then.",
+      "zh": "好的。到时候见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "The car is here. I see a box at the door.",
+      "zh": "快递到了，门口有个箱子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Quick, get it inside and open it.",
+      "zh": "快拿进来拆开看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "The box is not damaged. That is good.",
+      "zh": "箱子没坏，不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Cut the band. Let us see the shoes.",
+      "zh": "划开带子，看看鞋。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Oh, the box inside is clean and white.",
+      "zh": "哦，里面的鞋盒干干净净的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Take them out. Are they the right size?",
+      "zh": "拿出来，尺码对吗？",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Yes, 42. Let me put them on.",
+      "zh": "对，42码。我穿上试试。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Are they all right? Not too tight?",
+      "zh": "感觉怎么样？不紧吧？",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "They are soft and a good size. That is all right.",
+      "zh": "软硬刚好，很合脚。完美。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Great. You are ready to go.",
+      "zh": "太好了，你准备好出发了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "I will take a picture for my friend. He will be happy.",
+      "zh": "我拍张照给朋友，他肯定高兴。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Send it. Then put the old ones in the waste box.",
+      "zh": "发吧。然后把旧鞋扔垃圾桶。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Done. New shoes for the journey. Good night.",
+      "zh": "搞定。旅行有新鞋了。晚安。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "旧鞋开胶，甲深夜刷手机急购新鞋。下单后日日盼快递，签收时忐忑开箱。",
+  "storyScript": "【开场·浏览选品】\n旧鞋的鞋底已经开裂，走路时脚底能感到地面的凉意。甲躺在床上，手机屏幕的光映在脸上。他滑动着购物页面，一双双运动鞋在指尖掠过。图片上的鞋子崭新锃亮，价格从低到高排列。他点开一双深灰色的，放大看鞋底的纹路和鞋面的材质。又退出来，对比另一双黑色的。手指在屏幕上划来划去，眉头微微皱起。他截了图，发给朋友乙：这双怎么样？乙秒回：款式可以，但你看评论说鞋码偏小。甲又翻了几页评论，犹豫着。时间一分一秒过去，窗外路灯昏黄，他打了个哈欠，但想到下周的旅行，还是强打精神继续刷。终于，他看中了一双评价不错的白色跑鞋，价格适中，尺码齐全。他点进详情页，仔细看了一遍参数，心里有了决定。\n\n【进行·下单付款】\n甲把手机举近了些，确认收货地址无误。他选了42码，白色款，加入购物车。又检查了一遍是否有优惠券可用，发现一张满减券刚好能用。他点了结算，页面跳转到支付界面。手指悬在确认付款的按钮上，犹豫了一秒，然后用力按了下去。支付宝提示支付成功，订单生成。他松了口气，截屏发给乙：下单了，希望后天能到。乙回：等着吧，别急。甲把手机放在枕边，闭上眼睛，脑海里浮现出新鞋的样子。\n\n【进行·等待物流】\n第二天早上，甲醒来第一件事就是看物流信息。显示已揽收，正在运输中。他刷新了几次，信息没有更新。上班时，他趁午休又看了一次，显示已到达中转站。他算着时间，如果顺利，明天下午就能到。晚上回家，他再次打开物流页面，发现还在中转站，心里有些焦虑。他给客服发了条消息：请问我的快递什么时候能到？客服回复：预计明天下午送达。他稍微安心了些，但睡前还是忍不住又看了一眼。\n\n【收束·签收验货】\n第三天下午，手机响了，快递员说包裹已放在门口。甲快步走过去，抱起纸箱，沉甸甸的。他拆开胶带，打开箱盖，里面是鞋盒。他拿出鞋盒，掀开盖子，新鞋静静地躺在里面，白色鞋面干净如雪。他拿起一只，捏了捏鞋底，软硬适中。又检查了鞋垫和鞋带，没有瑕疵。他穿上新鞋，走了几步，大小刚好，脚感舒适。他拍了一张照片发给乙：到了，完美！乙回：不错，旅行可以穿新鞋了。甲满意地笑了，把旧鞋扔进了垃圾桶。"
+}

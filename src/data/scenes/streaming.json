@@ -1,0 +1,820 @@
+{
+  "slug": "streaming",
+  "sceneKey": "Streaming",
+  "titleZh": "在线看视频",
+  "titleEn": "Streaming Video",
+  "tier": "P2",
+  "freqRank": 39,
+  "emoji": "📺",
+  "gradient": "linear-gradient(135deg,#1e293b,#334155)",
+  "storyHook": "选片播放，暂停讨论，看完评价",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "选片播放",
+      "goal": "点播放"
+    },
+    {
+      "beat": "进行",
+      "title": "观看讨论",
+      "goal": "暂停聊情节"
+    },
+    {
+      "beat": "收束",
+      "title": "结束评价",
+      "goal": "关播放器"
+    }
+  ],
+  "illustration": {
+    "label": "流媒体",
+    "motifs": [
+      "screen",
+      "play",
+      "popcorn"
+    ],
+    "accent": "#475569"
+  },
+  "narrative": {
+    "when": "周五晚上九点，一周工作结束",
+    "where": "甲家客厅，沙发前的屏幕",
+    "who": "甲（观众）· 乙（一起看的朋友/家人）",
+    "how": "选好节目后一起观看，中途暂停聊几句",
+    "method": "选片播放、观看中途讨论情节、看完互相评价、关掉屏幕",
+    "event": "甲一周没看新节目，今晚终于有空看完一整集"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I have not seen a new play for a week.",
+      "zh": "我一周没看新节目了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Right, what did you get?",
+      "zh": "行，你找的什么？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "This one, it looks good.",
+      "zh": "这个，看着不错。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Right, let us start now.",
+      "zh": "好，我们现在开始。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Yes, I will put it on.",
+      "zh": "好，我放了啊。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Here is your tea.",
+      "zh": "你的茶。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Thanks. Here we go.",
+      "zh": "谢了。开始吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "The first song is quite good.",
+      "zh": "片头曲挺好听的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "It is. Let us see the first bit.",
+      "zh": "是啊，看看开头。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Quiet now, it is starting.",
+      "zh": "安静，开始了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "This is a good start.",
+      "zh": "开头不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Yes, the picture is clear.",
+      "zh": "嗯，画面挺清楚的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I like the way they put the story.",
+      "zh": "我喜欢他们讲故事的方式。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "It is not too quick.",
+      "zh": "节奏不快不慢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Let us see what comes after.",
+      "zh": "看看后面怎么样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Do you see that? He is in a hard place.",
+      "zh": "你看到没？他处境挺难的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Yes, but he made his bed.",
+      "zh": "是啊，但他自己选的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "True, but the other side is not right.",
+      "zh": "话是这么说，但对方也不地道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "What would you do if you were him?",
+      "zh": "换你你会怎么选？",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "I would keep to the first idea.",
+      "zh": "我会坚持最初的想法。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "That is a good point. But look at her face.",
+      "zh": "有道理。但你瞧她那表情。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "She is not happy with what he took.",
+      "zh": "她不太满意他选的东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I have a feeling she will do something.",
+      "zh": "我觉得她会搞点事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Let us see? Put on play.",
+      "zh": "看看呗？按播放。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Right, here we go again.",
+      "zh": "行，继续看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Oh, look at that!",
+      "zh": "哦，你看那个！",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "What? That box?",
+      "zh": "什么？那个盒子？",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Yes, it was in the first picture too.",
+      "zh": "对，第一幕里也有它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "So it is a sign of something.",
+      "zh": "所以它是个暗示。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "He may open it after a time.",
+      "zh": "可能他过一会儿会打开它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Or she will. She saw it first.",
+      "zh": "或者她来开。她先看到的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "True. She gave him a look.",
+      "zh": "对。她给了他一个眼神。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "I would say she is the one in control.",
+      "zh": "我觉得她才是掌控局面的人。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Let us see if I am right.",
+      "zh": "看看我说得对不对。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Put on play again.",
+      "zh": "再按播放吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right, here we go. The end is coming.",
+      "zh": "好，来了。快结尾了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Oh, that was sudden. Did you see that?",
+      "zh": "哦，好突然。你看到了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Yes, I did not see it coming. Good twist.",
+      "zh": "看到了，没想到。反转不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "But the last bit was a bit quick.",
+      "zh": "但最后一段有点仓促。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Quite right. A good watch for a night off.",
+      "zh": "没错。休息的晚上看挺好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Still, I would have liked more time with the others.",
+      "zh": "不过，我还是希望多给其他人一点时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Yes, they were interesting but not used enough.",
+      "zh": "对，他们挺有意思的，但没怎么用上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Was the music too loud at times?",
+      "zh": "音乐有时候太吵了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "It took away the quiet bits.",
+      "zh": "它把安静的时刻给盖住了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "The night views were well done.",
+      "zh": "夜景拍得很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Same here. The light was soft and good.",
+      "zh": "我也是。光线柔和，效果不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Would you watch it again?",
+      "zh": "你会再看一遍吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Not now. But in a year or two, yes.",
+      "zh": "现在不会。不过一两年后会的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "That is right. I will look for the one after this.",
+      "zh": "有道理。我会留意后面的那集。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Let us have one more drink before bed.",
+      "zh": "睡觉前我们再来一杯吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Let us see what comes after this.",
+      "zh": "我们看看之后会发生什么。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Yes, but first, that bit with the key was strange.",
+      "zh": "好，但首先，那个钥匙的片段有点奇怪。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "I thought it was a sign for what comes after.",
+      "zh": "我觉得那是为后面埋的伏笔。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "That might be true. Or a trick to make us see that.",
+      "zh": "也许吧。或者是让我们这么想的把戏。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "The old face said he had more knowledge.",
+      "zh": "那张老脸说明他知道得更多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "He gave nothing away. Good acting.",
+      "zh": "他什么也没透露。演得好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "I would like to see his back story.",
+      "zh": "我想看看他的背景故事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "They will put it in after, I am certain.",
+      "zh": "他们后面会交代的，我肯定。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Is the girl safe now?",
+      "zh": "那个女孩现在安全吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Not with that man after her. Let us see.",
+      "zh": "有那个人追着她，不安全。我们看吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Right then, I am ready for the end.",
+      "zh": "好了，我准备好结尾了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Yes, play it. I would like to see the end.",
+      "zh": "好，放吧。我想看结局。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Here we go. Quiet now.",
+      "zh": "来了。安静看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Oh! That was sudden. Did you see that?",
+      "zh": "哦！好突然。你看到了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Yes, the man in the dark. He had a knife.",
+      "zh": "看到了，暗处那个人。他拿了把刀。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "So the girl is in danger again. Not safe at all.",
+      "zh": "所以女孩又危险了。根本不安全。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "I thought she was safe. This story keeps changing.",
+      "zh": "我以为她安全了。这故事一直在变。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "That is what makes it good. You do not see what comes.",
+      "zh": "这才好看。你猜不到后面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "True. But I hope she gets away in the end.",
+      "zh": "也是。但我希望她最后能脱身。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "We will see. One more minute and we will get the news.",
+      "zh": "等着瞧吧。再看一分钟就知道了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Keep going?",
+      "zh": "继续看？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Yes, play it. I need to see.",
+      "zh": "好，播放。我得看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "There, the door is open. Who is that?",
+      "zh": "看，门开了。那是谁？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "A friend? No, the walk is wrong.",
+      "zh": "朋友？不对，走路姿势不对。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Oh, he has a key. That is not good.",
+      "zh": "哦，他有钥匙。这不妙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "She is in the sleeping room. Does she get the sound?",
+      "zh": "她在卧室。她听到声音了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Not now. She has music on.",
+      "zh": "还没。她放着音乐。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "This is a bit tight. I would look under the bed.",
+      "zh": "这有点紧张。我会看看床底下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Quiet! He is in the room now.",
+      "zh": "嘘！他进房间了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "She sees him! What will she do?",
+      "zh": "她看见他了！她会怎么做？",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "She is not moving. Is she in fear?",
+      "zh": "她一动不动。是害怕吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "No, she is waiting to see what he does.",
+      "zh": "不，她在等着看他做什么。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "He has a knife. That is a bad sign.",
+      "zh": "他拿着刀。那可不是好兆头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "She will take a thing from the table.",
+      "zh": "她会从桌上拿个东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Yes, a light. Good idea.",
+      "zh": "对，台灯。好主意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "But he is stronger. She may not get it in time.",
+      "zh": "但他力气更大。她可能来不及拿到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "She is quick. Watch her eyes.",
+      "zh": "她动作快。看她的眼神。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "He comes near. This is the top point.",
+      "zh": "他走近了。这是高潮。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "She has it! Now she will make a move.",
+      "zh": "她拿到了！现在她要行动了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "I hope she gets away. But the door is shut.",
+      "zh": "我希望她逃掉。但门关着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "She is out. That was a good bit.",
+      "zh": "她出来了。那段拍得不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Yes, but the end was too quick.",
+      "zh": "是啊，但结尾太急了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "I would have made it longer.",
+      "zh": "我会把结尾拉长一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Right. The music was good.",
+      "zh": "有道理。音乐不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Quite. I will get the one after this one in a week.",
+      "zh": "没错。一周后我接着看下一集。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Turn it off?",
+      "zh": "关掉吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Yes, I am done for the night.",
+      "zh": "好，今晚就到这里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "That was a good end to the week.",
+      "zh": "这周这样结束挺好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Right. Enjoy the film.",
+      "zh": "对，看电影愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "You too. Talk tomorrow.",
+      "zh": "你也是，明天聊。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "I will put the box to rest.",
+      "zh": "我把屏幕关掉。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Good. That was a good watch.",
+      "zh": "好。这剧看得挺舒服。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Yes. I am happy we saw it together.",
+      "zh": "嗯。很高兴我们一起看了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Me too. You were right.",
+      "zh": "我也是。你选得对。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I will take the cups to the cooking room.",
+      "zh": "我把杯子拿到烹饪室去。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Let me give you a hand.",
+      "zh": "我来帮你一把。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "No need. I have them.",
+      "zh": "不用。我拿得了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Then I will get the lights.",
+      "zh": "那我去关灯。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Do not be long. The bed is waiting.",
+      "zh": "别太久。床在等着呢。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Two minutes. Good night.",
+      "zh": "两分钟。晚安。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周五夜，甲终于有空看完一整集新剧。乙陪看，暂停讨论，结局评价，屏幕暗下时一周的疲惫也消散。",
+  "storyScript": "【开场·选片播放】周五晚上九点，甲窝在沙发里，手指在屏幕上来回划动，终于点开一部攒了一周的剧。乙端着两杯热茶坐下，屏幕亮起，片头曲流淌在安静的客厅里。甲按播放键，画面展开，两人不约而同地调整了坐姿，目光锁定在屏幕上。\n\n【进行·观看讨论】剧情过半，主角陷入两难抉择，甲突然按下暂停键，转头看向乙：你觉得他会怎么选？乙皱眉想了想，指着画面里一个细节说，你看这里，其实早有暗示。两人你一言我一语，争论着角色动机，茶水在杯里渐渐变温。甲笑着摇头，又按播放键，画面继续流动，但讨论的余温还在空气里。\n\n【进行·观看讨论】结尾高潮处，反转来得猝不及防，乙倒吸一口气，甲忍不住拍了下沙发扶手。屏幕暗下，片尾字幕滚动，两人沉默了几秒。甲先开口：这结局有点意思，但总觉得少了点什么。乙点头：是啊，前面铺垫那么多，最后收得太急。他们交换着看法，从剧情聊到拍摄手法，像在完成一次小小的影评仪式。\n\n【收束·结束评价】甲拿起遥控器关掉屏幕，客厅陷入短暂的黑暗，只有窗外路灯的光透进来。乙伸了个懒腰，说下周继续看下一集。甲嗯了一声，心里觉得这一周的疲惫好像都随着片尾曲飘走了。他们收拾杯子，关灯，各自回房，屏幕的余温留在沙发上，等着下一个周五。"
+}

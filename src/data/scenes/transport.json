@@ -1,0 +1,825 @@
+{
+  "slug": "transport",
+  "sceneKey": "Transport",
+  "titleZh": "坐公交去目的地",
+  "titleEn": "Taking the Bus",
+  "tier": "P0",
+  "freqRank": 5,
+  "emoji": "🚌",
+  "gradient": "linear-gradient(135deg,#ccfbf1,#2dd4bf)",
+  "storyHook": "到车站买票上车，到站下车找路",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "到达车站",
+      "goal": "问哪路车"
+    },
+    {
+      "beat": "进行",
+      "title": "上车验票",
+      "goal": "买票上车"
+    },
+    {
+      "beat": "进行",
+      "title": "途中确认",
+      "goal": "看站名"
+    },
+    {
+      "beat": "收束",
+      "title": "下车抵达",
+      "goal": "下车往目的地"
+    }
+  ],
+  "illustration": {
+    "label": "公交出行",
+    "motifs": [
+      "bus",
+      "ticket",
+      "road"
+    ],
+    "accent": "#0d9488"
+  },
+  "narrative": {
+    "when": "工作日早上八点，要赶去公司开会",
+    "where": "家附近公交站台 → 市中心站",
+    "who": "甲（乘客）· 乙（公交站务员/司机）",
+    "how": "看站牌、排队上车、刷卡投币",
+    "method": "问哪路车、确认方向、到站前按铃下车",
+    "event": "甲第一次走这条路线，怕坐错车迟到"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Which car goes to the middle of town?",
+      "zh": "请问，哪路马车到市中心？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Take the number 3. It goes to the east station.",
+      "zh": "坐3路，往东站方向。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Number 3. Right. And I get on here?",
+      "zh": "3路。好的。是在这儿上车吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Yes, this stop. Keep on this side.",
+      "zh": "对，就这个站台。在这边等。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "How long does it take to get there?",
+      "zh": "到市中心大概多久？",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "About twenty minutes, if the roads are clear.",
+      "zh": "不堵车的话，二十分钟左右。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "I have a meeting at nine. Will I be on time?",
+      "zh": "我九点开会，能赶上吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "That is enough time. The car comes every ten minutes.",
+      "zh": "时间够。这路车十分钟一班。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Good. I will be here.",
+      "zh": "那就好。我在这儿等。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Keep your card ready. The man is quick.",
+      "zh": "准备好卡，那人动作快。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Here comes a car. Is that the number 3?",
+      "zh": "车来了。是3路吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Yes, that is it. Get in now.",
+      "zh": "对，就是它。快上车。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Right. I will go to the door now.",
+      "zh": "好。我这就过去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Watch your step. The man will have a look at your card.",
+      "zh": "小心脚下。司机会看你的卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Thanks. I hope the card works this time.",
+      "zh": "谢谢。希望这次卡能用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "The card is good. I saw the green light.",
+      "zh": "卡没问题。我看见绿灯亮了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Good. I will take that seat by the window.",
+      "zh": "好。我坐那个靠窗的位置。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "The car is moving now. The streets look new to me.",
+      "zh": "车开了。这街景我都不认识。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "You are going to the middle of the town, yes?",
+      "zh": "你去市中心，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Yes. I have a meeting there at nine.",
+      "zh": "对。九点有个会。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Then you have time. It is only twenty minutes away.",
+      "zh": "那来得及。就二十分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "I see the names on the board, but I am not certain.",
+      "zh": "我看了板子上的站名，但心里没底。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Look at the bell over your head. Give it a push before your stop.",
+      "zh": "看你头顶的铃。到站前推一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Right. I will keep my hand near it.",
+      "zh": "好。我手就放旁边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "The middle of the town is our stop. Get ready.",
+      "zh": "下一站是市中心。准备下车。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "I see that tall building. Is that the stop?",
+      "zh": "我看到那栋高楼了。是这站吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Yes, that is it. Push the bell now.",
+      "zh": "对，就是。现在按铃吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "I will. Thanks for your help.",
+      "zh": "我按。谢谢您帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "No trouble. I go this way every day.",
+      "zh": "没事。我每天都走这条路。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "The car is slow now. We are near.",
+      "zh": "车慢下来了。快到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Yes. Get your bag ready.",
+      "zh": "嗯。把包拿好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "I have it. I will get off first.",
+      "zh": "拿着呢。我先下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Good. The door will open on the right.",
+      "zh": "好。门会从右边开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Right. I see the door light is on.",
+      "zh": "好。我看到门灯亮了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Off you go. Have a good day.",
+      "zh": "下车吧。祝顺利。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Thanks. Which way now?",
+      "zh": "谢谢。现在往哪走？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Go straight. Two hundred steps. See the tall building?",
+      "zh": "直走。两百步。看到那栋高楼了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Yes, the one with the blue glass.",
+      "zh": "看到了，蓝色玻璃那栋。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "That's it. Your office is on the third floor.",
+      "zh": "就是那栋。你公司在三楼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Great. I made it on time. Thanks again.",
+      "zh": "太好了。我准时到了。再次感谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Right. I will go in now.",
+      "zh": "好。我现在进去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Have you got a meeting card?",
+      "zh": "你有会议卡吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Yes, I have it here.",
+      "zh": "有，在这儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Take it to the front. They will give you a card.",
+      "zh": "拿到前台去，他们会给你一张卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Good. I will do that.",
+      "zh": "好的。我这就去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "The lift is on the left. Take it to the third floor.",
+      "zh": "电梯在左边，坐到三楼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Thanks. I see the lift now.",
+      "zh": "谢谢。我看到电梯了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "That is all right. I have to go back to the car.",
+      "zh": "没关系。我得回车上去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "That is kind of you. Thanks.",
+      "zh": "你人真好。谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "That is all right. Good will with your meeting.",
+      "zh": "不客气。祝你开会顺利。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "The car is moving now. I hope I am on the right one.",
+      "zh": "车开了。希望没坐错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "You are on the right one. I saw you get on 3.",
+      "zh": "没错，我瞧见你上的是3路。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "That is a help. I am new to this road.",
+      "zh": "那就好。这条路我不熟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "No need to be troubled. I will say when we get near.",
+      "zh": "别担心。到站前我会提醒你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Thank you. How many stops to the town middle?",
+      "zh": "谢谢。到市中心还有几站？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Five more. After that is the market.",
+      "zh": "还有五站。之后是市场。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "I will keep an eye on the glass then.",
+      "zh": "那我盯着玻璃看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "You may do that. Or push the bell when you see the town house.",
+      "zh": "也行。或者看到市政大楼就按铃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Good idea. I will do that.",
+      "zh": "好主意。我就这么办。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "The town house has a clock. You will see it.",
+      "zh": "市政厅有个钟，你会看到的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "I see the clock now. Is this the stop?",
+      "zh": "我看到钟了。是这站吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Yes, this is it. Push the bell.",
+      "zh": "对，到了。按铃吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "I will. Thank you for your help.",
+      "zh": "好。谢谢您帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "No trouble. Have a good day at work.",
+      "zh": "不客气。上班顺利。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Thanks. I hope I am not late.",
+      "zh": "谢谢，希望别迟到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "You are on time. The clock says ten to nine.",
+      "zh": "来得及。钟显示八点五十。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "That is good. The door is opening.",
+      "zh": "那就放心了。门开了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Step down with care. The road is wet.",
+      "zh": "小心下车，路面湿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "I will. sure and thanks again.",
+      "zh": "好。好的，再次感谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "sure. Keep to the left side.",
+      "zh": "好的。靠左边走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Which way is the office from here?",
+      "zh": "办公室从这儿怎么走？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Turn left at the road meeting. It is the tall building.",
+      "zh": "路口左转，就是那栋高楼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "I see it. That is the one with glass walls.",
+      "zh": "看见了，就是那个玻璃墙的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Yes. You will be there in two minutes.",
+      "zh": "对，两分钟就到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Right. I will go quick.",
+      "zh": "好，我走快点儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Do not run. The floor is wet.",
+      "zh": "别跑，地滑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Right. I will take my time.",
+      "zh": "好的，我慢慢走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "That is wise. Have a good meeting.",
+      "zh": "明智。开会顺利。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Thank you. You are very kind.",
+      "zh": "谢谢，您真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "No trouble. Off you go now.",
+      "zh": "不客气，快去吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I am at the door now.",
+      "zh": "我到门口了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Good. Push the door, it is not locked.",
+      "zh": "好，推门，没锁。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "It is open. I am inside.",
+      "zh": "门开了，我进来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "The meeting room is on the first floor, second door on the right.",
+      "zh": "会议室在一楼，右手第二间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "I see a sign. Room 102.",
+      "zh": "我看到牌子了，102室。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "That is the one. Go in and take a seat.",
+      "zh": "就是那间，进去坐下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Some are in there now.",
+      "zh": "里面已经有人了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "They are early. You are on time.",
+      "zh": "他们早到，你准时。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "I will take a seat at the back.",
+      "zh": "我坐后面吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Good idea. The front is for the head man.",
+      "zh": "好主意，前面是老板的位子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "The head man is not here now.",
+      "zh": "老板还没来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "He will be here quick. He is not late.",
+      "zh": "他马上到，从不迟到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "I hope the talk is short. I have much to do.",
+      "zh": "希望会议简短，我还有很多事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "It will be quick. Only news on the new work.",
+      "zh": "很快的，就新工作汇报。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Good. I did my part last night.",
+      "zh": "那就好，我昨晚准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Then you have nothing to fear. Just say what you did.",
+      "zh": "那你没什么好怕的，照实说就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Right. I will keep it simple.",
+      "zh": "嗯，我长话短说。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "The meeting is done. You did well.",
+      "zh": "会开完了，你表现不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Thanks. I was on edge, but it went well.",
+      "zh": "谢谢，我本来紧张，但挺顺利的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "First time on this line, and you made it.",
+      "zh": "第一次坐这条线，你也赶到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Yes. I will take this line another time.",
+      "zh": "是啊，下次我还坐这路。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Now you see the way. No more fear.",
+      "zh": "现在你认路了，不用怕了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "True. But I still keep my hand near the bell.",
+      "zh": "没错，不过我还是会手放铃边。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "That is a good way for a person who goes by car.",
+      "zh": "这对任何坐马车的人来说都是个好习惯。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Let us get a drink before you go back?",
+      "zh": "你回去前要不要喝杯东西？",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "I would like that. A cup of tea will be good.",
+      "zh": "好啊，来杯茶不错。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "There is a place near here. Come on.",
+      "zh": "拐角有家店，走吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Right. But I have only ten minutes before my train comes.",
+      "zh": "行，不过十分钟后车就来了，我只能待一小会儿。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "That is enough for a quick cup. They do take-away here.",
+      "zh": "那够喝杯快的，这家店有外带杯。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Right. One tea, no sugar, and I am off again.",
+      "zh": "好的。一杯茶，不加糖，喝完我就走。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "新人甲第一次坐公交去市中心开会，怕坐错车迟到。在站台问路、刷卡上车、紧盯站牌，最终顺利抵达。",
+  "storyScript": "【开场·到达车站】早上八点，甲站在家附近的公交站台，看着陌生的站牌，手心微微出汗。他要去市中心开会，这是第一次走这条路线。站台上人不多，他看见一位穿制服的乙在值班。甲快步上前，指着站牌上模糊的线路图，问：哪路车能到市中心？乙抬头看了一眼，说：坐3路，方向是东站，别坐反了。甲连声道谢，心里默念着车号。\n\n【进行·上车验票】几分钟后，3路车缓缓进站。甲跟着几个人排队上车，车门打开，司机乙坐在驾驶座旁。甲掏出公交卡，在刷卡机上滴了一声，但机器没反应。司机乙提醒：卡要贴紧。甲重新刷了一次，听到“叮”的一声，才松了口气。他找了个靠窗的位置坐下，把包放在腿上，眼睛盯着车内的电子屏。\n\n【进行·途中确认】车开了，甲看着窗外陌生的街景，心里有些忐忑。他每隔一会儿就抬头看电子屏上的站名，生怕坐过。旁边一位老人看他紧张，主动说：小伙子，去市中心吧？还有五站。甲点点头，老人笑着指指头顶的按钮：到站前按铃，司机会停。甲感激地笑了笑，手一直放在铃边。\n\n【收束·下车抵达】当电子屏显示“市中心站”时，甲赶紧按铃。车停稳后，他快步下车，站在陌生的街道上。掏出手机导航，确认公司就在前方两百米。他深吸一口气，迈开步子，嘴角微微上扬。第一次坐公交，虽然紧张，但总算顺利到达。"
+}

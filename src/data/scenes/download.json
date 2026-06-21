@@ -1,0 +1,820 @@
+{
+  "slug": "download",
+  "sceneKey": "Download",
+  "titleZh": "下载文件资料",
+  "titleEn": "Downloading Files",
+  "tier": "P2",
+  "freqRank": 37,
+  "emoji": "⬇️",
+  "gradient": "linear-gradient(135deg,#e0f2fe,#0284c7)",
+  "storyHook": "找链接，下载等待，打开文件",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "找到资源",
+      "goal": "点击下载"
+    },
+    {
+      "beat": "进行",
+      "title": "等待完成",
+      "goal": "看进度"
+    },
+    {
+      "beat": "收束",
+      "title": "打开使用",
+      "goal": "打开文件"
+    }
+  ],
+  "illustration": {
+    "label": "下载",
+    "motifs": [
+      "arrow",
+      "file",
+      "machine"
+    ],
+    "accent": "#0369a1"
+  },
+  "narrative": {
+    "when": "周二晚上，要用到一份重要资料",
+    "where": "甲的电脑前",
+    "who": "甲（下载的人）· 乙（提供链接的同事）",
+    "how": "找到链接点击下载，等待完成",
+    "method": "找到资源、点击下载、等待进度完成、打开查看",
+    "event": "甲明天开会要用这份文件，担心下载太慢"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Right, here is the point.",
+      "zh": "好，地址在这儿。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Great, I will get it now.",
+      "zh": "太好了，我现在就下。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Put your finger there. It is a great store of words.",
+      "zh": "点那里。文件挺大。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "I see it. Two point three. That is a good amount.",
+      "zh": "看到了，2.3，真不少。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Yes, but it has all the numbers you need.",
+      "zh": "嗯，但你要的数据都在里面。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "I hope it goes quick. My meeting is at nine.",
+      "zh": "希望快点，我九点开会。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "It will be done in ten minutes, I would say.",
+      "zh": "估计十分钟能好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Ten minutes? That is not bad.",
+      "zh": "十分钟？那还行。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Let it do its work. Do not touch the net.",
+      "zh": "让它下吧，别动网络。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Right. I will keep on here.",
+      "zh": "行，我就在这儿等着。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "How far has it got now?",
+      "zh": "现在到多少了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Two in ten. Slow but safe.",
+      "zh": "十分之二。慢但稳。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "That is the slow bit. After that it goes quick.",
+      "zh": "那是最慢的时候，后面就快了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "I hope so. I would not like to be late to bed.",
+      "zh": "希望吧，我不想太晚睡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "That is all right. The paper is good.",
+      "zh": "没事的，这文件很好用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "It is at three in ten now.",
+      "zh": "现在到十分之三了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Still slow. I will get a drink.",
+      "zh": "还是慢。我去弄杯喝的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Do not be long. The net may go down.",
+      "zh": "别太久，网络可能会断。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "I will be quick. Back in a minute.",
+      "zh": "我很快，一分钟就回来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Four in ten. That is better.",
+      "zh": "十分之四了，好点了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Good. I am back. What is the time?",
+      "zh": "好，我回来了。几点了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Ten thirty. Five to ten now.",
+      "zh": "十点半。现在差十分十点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "We are at the middle point. Not bad for a great mass.",
+      "zh": "我们到中间点了。对一个大文件来说不错了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Yes. Six in ten. Getting there.",
+      "zh": "嗯，十分之六了，快到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Seven in ten. Almost done.",
+      "zh": "十分之七了，快好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Eight in ten. That is a good rate.",
+      "zh": "十分之八了，速度不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Yes, but I am still on edge.",
+      "zh": "嗯，但我还是有点紧张。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Nine in ten. Almost there.",
+      "zh": "十分之九了，快完了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "I will not be happy till it is done.",
+      "zh": "没完成前我放不下心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Almost all done. Any second now.",
+      "zh": "差不多全好了，随时会好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Come on, come on... Done!",
+      "zh": "快点，快点……好了！",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "At last! Let me open it.",
+      "zh": "终于！我来打开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Take your time. Have a look first.",
+      "zh": "别急，先看一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "It is all here. Good quality.",
+      "zh": "都在，质量不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Great. Now you are safe.",
+      "zh": "太好了，现在你安全了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right, I will put it on the table for tomorrow.",
+      "zh": "好，我把它放桌上，明天用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "You look tired. Get some rest.",
+      "zh": "你看着累了，休息一下吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "I will, after I look at it again.",
+      "zh": "会的，我再查看一遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Right. Do not be long.",
+      "zh": "行，别太久。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Two minutes. Then I am done.",
+      "zh": "两分钟，然后我就好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "That is only twenty in a hundred.",
+      "zh": "才百分之二十。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "That is slow. Is your net all right?",
+      "zh": "是挺慢的。你网络没问题吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "I would say so. But it is a very long thing.",
+      "zh": "应该没问题，但文件太大了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Yes, two point three. It will take time.",
+      "zh": "是啊，2.3，得花时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I hope it is done before 11.",
+      "zh": "希望十一点前能下完。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "It will be. Do not keep looking at it.",
+      "zh": "会的，别老盯着看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "I am at forty five now. Still going.",
+      "zh": "现在四十五了，还在走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Good. Get a drink while you are here.",
+      "zh": "不错，趁这会儿去喝杯水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "No, I will keep an eye on it. It is 80 now.",
+      "zh": "不了，我守着。现在80了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Almost there. Two more minutes.",
+      "zh": "快了，还有两分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Right, it is at 95 now.",
+      "zh": "好了，现在到95了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "One minute left, I would say.",
+      "zh": "大概还有一分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Come on, get on with it.",
+      "zh": "快点，赶紧的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "There, 100. Done.",
+      "zh": "好了，100，完成了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Great. Let me open it.",
+      "zh": "太好了，我打开看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "It is a tight box. Give it a second.",
+      "zh": "是个压缩包，等一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Yes, it is opening now.",
+      "zh": "嗯，正在解压。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "There is a paper inside. That is the one.",
+      "zh": "里面有个文件，就是这个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Good. Does it look all right?",
+      "zh": "不错，看起来没问题吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Yes, all clear. Ready for tomorrow.",
+      "zh": "没问题，明天开会妥了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Right, I will put a copy on the table.",
+      "zh": "好，我复制到桌面上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Good idea. Keep it safe.",
+      "zh": "好主意，放好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "There. Now I can rest.",
+      "zh": "好了，现在可以休息了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "You did well. We are almost done.",
+      "zh": "做得好，我们快完成了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Yes, at nine. I will be there.",
+      "zh": "嗯，九点，我会到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Let us check the download.",
+      "zh": "我们检查一下下载情况。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "You too. Thanks for the help.",
+      "zh": "你也是，谢谢帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "No trouble. All the best.",
+      "zh": "不客气，祝好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "I will need it. Good day.",
+      "zh": "我确实需要，再见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Okay, it is ready.",
+      "zh": "好的，准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Right, here it is.",
+      "zh": "好，在这里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "I will do it now.",
+      "zh": "我现在就做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "It says two point three. That is a good bit.",
+      "zh": "写着2.3，量不小。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Yes, it has all the pictures.",
+      "zh": "嗯，里面有所有图片。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "The line is moving. One part in ten now.",
+      "zh": "进度条在动，现在十分之一。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Good. It will take some time.",
+      "zh": "好，得花点时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "I hope it does not stop.",
+      "zh": "希望别卡住。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "The net is good tonight.",
+      "zh": "今晚网络挺稳的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Two in ten now. Not bad.",
+      "zh": "现在两成，还行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Keep going. I will be here.",
+      "zh": "继续，我在这儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Three in ten now. But it is slow.",
+      "zh": "现在三成了，但好慢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Right. Great lists take time.",
+      "zh": "是啊，大文件就是费时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "I will be up late at this rate.",
+      "zh": "照这速度我得熬夜了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Take your time. It will come down.",
+      "zh": "别担心，总会下完的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Four in ten. Getting near one part in two.",
+      "zh": "四成了，快一半了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "You will have it before bed.",
+      "zh": "睡前肯定能下好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "I hope so. Five in ten now.",
+      "zh": "但愿吧。现在五成了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "See? It is moving well.",
+      "zh": "看吧，进度挺顺的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Six in ten. Not long now.",
+      "zh": "六成了，快了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Almost there. Keep quiet.",
+      "zh": "马上就好，稳住。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Seven in ten. Getting there.",
+      "zh": "七成了，差不多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Good. It will be done in a bit.",
+      "zh": "好，一会儿就下完。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Eight in ten. Almost done.",
+      "zh": "八成了，快完了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Keep your eyes on it.",
+      "zh": "盯紧点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Nine in ten. One more minute.",
+      "zh": "九成了，再等一分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Then you can have a rest.",
+      "zh": "然后你就可以休息了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Done! All is taken in.",
+      "zh": "好了！全部拿进来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Open it. See if it is all there.",
+      "zh": "打开看看，文件全不全。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "That is clear, all good.",
+      "zh": "很清楚，没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Great. Now you can go to bed.",
+      "zh": "太好了，现在你可以睡了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right. I will put it on the table for tomorrow.",
+      "zh": "好的，我把它放在桌上，明天用。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Good. Do not let it get mixed up.",
+      "zh": "好，别搞混了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "No chance. I have a short name for it.",
+      "zh": "不会的，我给它起了个短名。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "What is it?",
+      "zh": "叫什么？",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Just 'Meeting'. Simple and clear.",
+      "zh": "就叫‘会议’，简单清楚。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "That is good. Now shut down and get some sleep.",
+      "zh": "行，那关机睡觉吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Yes. I will be up at seven.",
+      "zh": "嗯，我七点起。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Quite enough time. Have a good rest.",
+      "zh": "时间够，好好休息。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Thanks for your help tonight.",
+      "zh": "今晚多谢你帮忙。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "No trouble. Good night.",
+      "zh": "不客气，晚安。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周二深夜，甲急需一份明天开会用的资料，却在下载链接前焦虑不安。同事乙发来的链接能否快速完成？",
+  "storyScript": "【开场·找到资源】周二晚上十点，甲的电脑屏幕亮着，他盯着同事乙刚发来的消息，里面是一个文件下载链接。明天早上九点的重要会议，需要这份资料才能做汇报。甲深吸一口气，移动鼠标，对准链接，轻轻一点。浏览器弹出下载窗口，文件大小显示2.3GB。他按下「保存」，进度条开始从零跳动。\n\n【进行·等待完成】甲靠在椅背上，目光紧锁屏幕上的进度条。时间一分一秒过去，数字缓慢攀升：10%、15%、20%……他忍不住刷新页面，担心链接失效。乙发来消息：「在下载了吗？这个文件有点大。」甲回复：「嗯，才20%，好慢。」他站起身，在房间里踱步，又坐回电脑前，手指敲击桌面。窗外夜色深沉，只有下载进度条的光标在闪烁。甲想起明天汇报的紧张，手心微微出汗。\n\n【进行·等待完成】进度条终于爬到80%，甲的心跳似乎也加速了。他盯着剩余时间估计：还有三分钟。这三分钟却像三个世纪。他点开其他网页，又关掉，生怕影响网速。终于，100%！下载完成提示音响起，甲长舒一口气，立刻双击文件。压缩包开始解压，他等待文件夹打开，里面是几个文档和图片。\n\n【收束·打开使用】甲点开最重要的PDF，内容清晰呈现，正是他需要的图表和数据。他快速浏览一遍，确认无误后，保存到桌面。明天开会用的资料终于到手。甲关掉电脑，窗外月光洒进房间，他感到一阵轻松，终于可以安心入睡。"
+}

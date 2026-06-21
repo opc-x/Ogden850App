@@ -5,17 +5,22 @@ import {
   OP_INFLECTION_TO_LEMMA,
   type GrammarRole,
 } from '../data/ogdenGrammar';
-import type { SentenceToken } from '../types/vocab';
+import type { OgdenCategory, SentenceToken } from '../types/vocab';
 
 const BASE_LEMMA_IDS = new Set<string>(['i']);
 
 let lemmaIds = new Set<string>(BASE_LEMMA_IDS);
+let lemmaCategories = new Map<string, OgdenCategory>();
 let inflectionMap = buildInflectionMap(BASE_LEMMA_IDS);
 let extraInflections: Map<string, string> = new Map();
 
 export function setLemmaIds(ids: Set<string>): void {
   lemmaIds = ids;
   inflectionMap = buildInflectionMap(ids);
+}
+
+export function setLemmaCategories(map: Map<string, OgdenCategory>): void {
+  lemmaCategories = map;
 }
 
 export function setInflectionOverrides(map: Map<string, string>): void {
@@ -39,12 +44,13 @@ function resolveLemmaId(bare: string): string | null {
 export function tokenizeSentence(sentence: string): SentenceToken[] {
   return sentence.split(/(\s+)/).map((surface) => {
     if (/^\s+$/.test(surface)) {
-      return { surface, bare: '', wordId: null, role: 'misc', isWhitespace: true };
+      return { surface, bare: '', wordId: null, role: 'misc', category: null, isWhitespace: true };
     }
     const bare = bareToken(surface);
     const wordId = resolveLemmaId(bare);
     const role: GrammarRole = wordId ? roleOfBare(bare) : roleOfBare(bare);
-    return { surface, bare, wordId, role, isWhitespace: false };
+    const category = wordId ? (lemmaCategories.get(wordId) ?? null) : null;
+    return { surface, bare, wordId, role, category, isWhitespace: false };
   });
 }
 

@@ -1,0 +1,820 @@
+{
+  "slug": "internet",
+  "sceneKey": "Internet",
+  "titleZh": "上网查资料",
+  "titleEn": "Browsing the Web",
+  "tier": "P2",
+  "freqRank": 29,
+  "emoji": "🌐",
+  "gradient": "linear-gradient(135deg,#e0e7ff,#6366f1)",
+  "storyHook": "打开页面，搜索信息，保存结果",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "打开浏览器",
+      "goal": "连上网络"
+    },
+    {
+      "beat": "进行",
+      "title": "搜索阅读",
+      "goal": "输入看结果"
+    },
+    {
+      "beat": "收束",
+      "title": "保存关闭",
+      "goal": "记下要点"
+    }
+  ],
+  "illustration": {
+    "label": "上网",
+    "motifs": [
+      "globe",
+      "search",
+      "page"
+    ],
+    "accent": "#4f46e5"
+  },
+  "narrative": {
+    "when": "周四下午，做一份学校的报告",
+    "where": "甲的书桌，电脑屏幕前",
+    "who": "甲（学生）· 乙（同学，远程一起查资料）",
+    "how": "打开浏览器，输入关键词搜索",
+    "method": "打开页面、输入关键词、阅读结果、保存有用的信息",
+    "event": "甲的报告明天就要交，还差一些资料没查到"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Right, let me get the net going.",
+      "zh": "好了，我把网络连上。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Is it up? My side is slow today.",
+      "zh": "连上了吗？我这边今天有点慢。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Yes, it is up. I will open the net now.",
+      "zh": "连上了，我现在打开网络。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Right. What do we put in the box?",
+      "zh": "好。框里输什么？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "The name of the theory, and the year.",
+      "zh": "理论的名字，还有年份。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Right. I will put that in now.",
+      "zh": "行，我现在输进去。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Right, let us do it together.",
+      "zh": "好，我们一起输。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Right. Ready? Go.",
+      "zh": "行。准备好了吗？开始。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Done. The page is full of answers.",
+      "zh": "好了。页面全是答案。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Great. Let us look at the first one.",
+      "zh": "太好了。我们看第一个。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "This one has a good list of points.",
+      "zh": "这个列得挺清楚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Yes, but is it from a true book?",
+      "zh": "嗯，但来源靠谱吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "It says from a school library. That is good.",
+      "zh": "写着来自学校图书馆，没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Right. Let me take the key words.",
+      "zh": "行。我把关键词记下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "I will do the same on my side.",
+      "zh": "我这边也记一份。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "What about the second one?",
+      "zh": "第二个呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "It has a picture, but not much writing.",
+      "zh": "有图，但字不多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Pictures are good for our talk.",
+      "zh": "图片对我们报告有用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "True. I will keep it open.",
+      "zh": "对，我留着这个页面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Have you seen the third one?",
+      "zh": "你看到第三个了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Yes, it is a paper from a school.",
+      "zh": "看到了，是大学的一篇论文。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "That is what we need for the theory part.",
+      "zh": "这正是我们理论部分需要的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I will take the important lines.",
+      "zh": "我把重要句子摘下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "I am doing the same here.",
+      "zh": "我这边也在摘。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Good. Our work is coming together.",
+      "zh": "好，我们的内容快凑齐了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Let us put our notes together.",
+      "zh": "我们把笔记放一起吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Good idea. I will make a new list.",
+      "zh": "好主意，我建个新列表。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "I have sent you the net place.",
+      "zh": "我把网址发你了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Got it. I am copying my bits now.",
+      "zh": "收到了，我正在复制我的部分。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "This page has a good table of numbers.",
+      "zh": "这个页面有张好数据表。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I will take a picture of it with my little box.",
+      "zh": "我用小盒子拍下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Then put the picture in the paper.",
+      "zh": "然后把图片放进纸里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Right. I am doing that now.",
+      "zh": "好的，我现在就弄。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "We have enough for the paper now.",
+      "zh": "我们现在够写报告了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Yes. Let us go over the list again.",
+      "zh": "是的，我们再过一遍清单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "I have the key points here. Do you see them?",
+      "zh": "我这里有要点。你看到了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Right, I will put a note.",
+      "zh": "好的，我加个备注。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Good. This part from the third page is good.",
+      "zh": "好。第三页这部分不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "I will put it with my notes. That makes sense.",
+      "zh": "我把它放到笔记里。说得通。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Right. We are almost done. One last look?",
+      "zh": "对。我们快完了。最后再过一遍？",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I will have another look at the last page.",
+      "zh": "我再看一眼最后一页。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Do you see the table with numbers?",
+      "zh": "你看到那个数字表格了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Yes, I have it here. It is good.",
+      "zh": "看到了，我这儿有。挺好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Put that in the paper?",
+      "zh": "把这个放进报告里吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Yes, it makes the point stronger.",
+      "zh": "对，能让论点更有力。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "I will do it now. One minute.",
+      "zh": "我现在就做，一分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Take your time. I am reading the notes.",
+      "zh": "不着急，我在看笔记。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Done. It is in the paper.",
+      "zh": "好了，已经存到纸上了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Good. That is the last bit we needed.",
+      "zh": "好，这就是我们最后需要的那部分。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Right. Let us put it away and go to bed.",
+      "zh": "行，那收起来然后睡觉吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I will look at the other page now.",
+      "zh": "我现在看看另一个页面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Which one? The third one?",
+      "zh": "哪个？第三个吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Yes, it has a good table of numbers.",
+      "zh": "对，它有个不错的数字表格。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "I see it. The numbers are clear.",
+      "zh": "我看到了。数字很清楚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Put them in the paper?",
+      "zh": "把它们放进报告里？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Yes, but only the first two lines.",
+      "zh": "对，但只取前两行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Right. I will copy them now.",
+      "zh": "好的。我现在复制下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Do you have the name of the man who made it?",
+      "zh": "你有写这个东西的人的名字吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Yes, it is at the top of the page.",
+      "zh": "有，在页面顶部。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Good. That is all we need from here.",
+      "zh": "好。我们这里要的就这些了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Let us see the other page.",
+      "zh": "我们看另一页。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Yes, open it. I will see what is there.",
+      "zh": "好，打开它。我看看有什么。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "This one has a picture with notes.",
+      "zh": "这个有带注释的图片。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "The notes are short. That is good.",
+      "zh": "注释很短。那挺好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I will take the picture for my part.",
+      "zh": "我把图片用到我那一部分。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Do you have the number under it?",
+      "zh": "你记下它下面的数字了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Yes, I have it here. It is 238.",
+      "zh": "记了，在这儿。是238。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "That is a good number to put in the paper.",
+      "zh": "那个数字放进报告里不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Right. I will put it with the other notes.",
+      "zh": "好的。我把它和别的笔记放一起。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Then we are done with this page.",
+      "zh": "那这页我们就搞定了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Let us see the page after this now?",
+      "zh": "我们现在看后面那页吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Yes, open it. I will have a look at the first bit.",
+      "zh": "好，打开吧。我先看看开头部分。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "This page has a table with numbers.",
+      "zh": "这页有个带数字的表格。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "The numbers go with the notes we have.",
+      "zh": "这些数字跟我们的笔记对得上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "I will put the table in my notes.",
+      "zh": "我会把表格放进我的笔记里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Good. Do you see the day at the top?",
+      "zh": "好。你看到顶上的日期了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Yes, it is 2023. That is the right year.",
+      "zh": "看到了，是2023年。年份对。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Then we have all we need from this page.",
+      "zh": "那这页我们需要的东西都齐了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "I will put a mark here so we come back.",
+      "zh": "我在这儿做个标记，方便以后回来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Right. Now for the last page.",
+      "zh": "行。现在看最后一页。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I will put the page number at the top.",
+      "zh": "我把页码记在最上面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Good. Then we have a clean record.",
+      "zh": "好，这样记录就清楚了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Let us get the notes from page two.",
+      "zh": "我们拿第二页的笔记吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Yes, I have them open here.",
+      "zh": "嗯，我这边已经打开了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "The first part is about the old system.",
+      "zh": "第一部分讲的是旧系统。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "That is what we need to start the writing.",
+      "zh": "这正是我们开始写作所需要的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "I will take a short note on that part.",
+      "zh": "我简单记一下那部分。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Do you see the note about the new system?",
+      "zh": "你看到关于新系统的笔记了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Yes, it is in the middle of the page.",
+      "zh": "看到了，在页面中间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "I will put that in my notes as well.",
+      "zh": "我也把它记下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Right, I have all I need now.",
+      "zh": "好了，我需要的都齐了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Is it all right if we keep the rest for another time?",
+      "zh": "剩下的咱们回头再存？",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Yes, let us keep the best bits.",
+      "zh": "行，把最有用的留着就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "I will put this in a new folder.",
+      "zh": "我把这个放进新文件夹。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Good idea. Name it after the day.",
+      "zh": "好主意。用日子命名吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Done. It is safe now.",
+      "zh": "搞定。现在安全了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I will send you my notes in a bit.",
+      "zh": "我待会儿把笔记发给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "That is good. I will do the same.",
+      "zh": "没问题。我也发给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "We have enough for the notes now.",
+      "zh": "报告的资料现在够了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Right. Let us stop here.",
+      "zh": "差不多了。咱们就到这儿吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right. I will shut the other windows.",
+      "zh": "行。我把其他窗口关了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Good. Keep only the working one.",
+      "zh": "好。只留那个有用的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "I put the best bits in a box.",
+      "zh": "我把最好的部分存进盒子里了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "I will do the same now.",
+      "zh": "我现在也这么做。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Are we to send notes to one another?",
+      "zh": "我们要互相发笔记吗？",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Yes, I will send mine in a minute.",
+      "zh": "嗯，我马上发我的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "I have got your notes. They are good.",
+      "zh": "我收到你的笔记了。不错。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Those are good too. We are ready.",
+      "zh": "你的也很好。我们准备好了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I will shut down now. I will go now.",
+      "zh": "我现在关机了。明天见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "See you. Hope the talk goes well.",
+      "zh": "明天见。报告顺利。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "报告明天截止，甲还差关键资料没查。他打开浏览器，和同学乙远程协作，终于找到并保存了所需信息。",
+  "storyScript": "【开场·打开浏览器】周四下午，阳光斜照进房间。甲坐在书桌前，屏幕亮起，他双击浏览器图标，等待页面加载。网络连接成功，光标在地址栏闪烁，仿佛催促着他。甲深吸一口气，手指敲击键盘，输入搜索关键词。\n\n【进行·搜索阅读】搜索结果页面弹出，密密麻麻的链接。甲快速扫视标题，点开第一个看起来相关的页面。文字和图片加载出来，他眯起眼睛，一行行阅读。旁边手机传来乙的消息提示音——乙也在远程查找。甲把重点段落复制到文档里，又打开第二个标签页。时间一分一秒过去，他对比不同来源的信息，眉头时而紧锁时而舒展。乙发来一个截图，标注了关键数据。甲回复一个OK手势，继续筛选。\n\n【进行·搜索阅读】第三个页面是一篇论文摘要，甲读完后眼前一亮——这正是他需要的理论支撑。他滚动页面，找到引用部分，小心地复制下来。屏幕右下角弹出乙的共享文档，里面已经整理好了几个要点。甲把自己的发现也粘贴进去，两人的成果渐渐汇合。他瞥了一眼时钟，还剩两小时，但心里踏实了许多。\n\n【收束·保存关闭】甲把最后一段有用信息存入本地文件夹，文件名标注好日期和主题。他关闭多余的标签页，只留下乙的共享文档。乙发来消息：“差不多了，我这边也收工。”甲回复一个笑脸，然后点击保存按钮，确认所有资料已备份。他合上笔记本，屏幕暗下去，房间恢复安静。明天，报告就能顺利完成了。"
+}

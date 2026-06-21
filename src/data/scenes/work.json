@@ -1,0 +1,825 @@
+{
+  "slug": "work",
+  "sceneKey": "Work",
+  "titleZh": "办公室一天",
+  "titleEn": "A Day at Work",
+  "tier": "P0",
+  "freqRank": 7,
+  "emoji": "💼",
+  "gradient": "linear-gradient(135deg,#e0e7ff,#93c5fd)",
+  "storyHook": "到岗交接任务，协作完成，下班告别",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "到岗问候",
+      "goal": "进办公室"
+    },
+    {
+      "beat": "进行",
+      "title": "分配任务",
+      "goal": "领工作做文件"
+    },
+    {
+      "beat": "进行",
+      "title": "协作沟通",
+      "goal": "讨论问题"
+    },
+    {
+      "beat": "收束",
+      "title": "下班离开",
+      "goal": "道别回家"
+    }
+  ],
+  "illustration": {
+    "label": "上班工作",
+    "motifs": [
+      "desk",
+      "paper",
+      "clock"
+    ],
+    "accent": "#4f46e5"
+  },
+  "narrative": {
+    "when": "周二早上九点，新一周第一个工作日",
+    "where": "市中心办公室，开放工区",
+    "who": "甲（新员工）· 乙（部门同事）",
+    "how": "到岗打卡，面对面交接",
+    "method": "领任务、看文件、讨论问题、汇报进度、下班道别",
+    "event": "甲第一天独立负责一份文件，中午前要出初稿"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Morning. You are here early.",
+      "zh": "早啊。你来得挺早。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Good morning. First day on my own.",
+      "zh": "早上好。第一天自己干活。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Here is some water. New week, new start.",
+      "zh": "来杯水。新的一周，新的开始。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Thanks. I am a bit on edge, to be true.",
+      "zh": "谢了。说实话有点紧张。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "No need. You will do well.",
+      "zh": "没必要。你会做好的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "I hope so. What is the first thing?",
+      "zh": "希望如此。第一件事是什么？",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Here is the paper. First writing by twelve.",
+      "zh": "这份文件给你。中午前出初稿。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Right. I will have a look now.",
+      "zh": "好的。我现在就看。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Use the old paper as a guide. Any question, say so.",
+      "zh": "用旧文件做参考。有问题就说。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Got it. I will start right away.",
+      "zh": "明白。我马上开始。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I will open it now.",
+      "zh": "我现在就打开它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Good. Take your time.",
+      "zh": "好的。慢慢来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "The numbers here seem off.",
+      "zh": "这里的数字好像不对。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Which part? Let me see.",
+      "zh": "哪部分？让我看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "This line, the growth rate is wrong.",
+      "zh": "这一行，增长率算错了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Oh, I see the error. The box is wrong.",
+      "zh": "哦，我看到错误了。格子引用错了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "So we put the right one in. That is fixed.",
+      "zh": "那我们填上正确的。这就改好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Good. What about the rest of the list?",
+      "zh": "好。那列表其他地方呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "All clear. I will send it to you in a bit.",
+      "zh": "都清楚了。我一会儿发给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Take your time. No need to be quick.",
+      "zh": "慢慢来，不用赶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Here is the first attempt. Have a look.",
+      "zh": "初稿在这里。你看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Right. Let me go through it.",
+      "zh": "好的。我过一遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "The numbers all match now. Good work.",
+      "zh": "数字现在都对上了。干得好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Thanks. I am happy with it.",
+      "zh": "谢谢。我很满意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "You may send it to the chief now.",
+      "zh": "现在可以发给头儿了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Right. I will send it now.",
+      "zh": "好。我现在就发。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "One minute. Let me see first.",
+      "zh": "等一下。我先看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "What is it? Something wrong?",
+      "zh": "怎么了？有问题吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "No. Only the day on the front page.",
+      "zh": "没有。只是封面上的日子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Ah, yes. That is from last seven days.",
+      "zh": "啊，对。还是上周的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I will put down this day.",
+      "zh": "我改成今天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Good eye. I did not see that.",
+      "zh": "好眼力。我都没注意到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "All done. Ready to send now.",
+      "zh": "改好了。现在可以发了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Send it. I will say if any word comes back.",
+      "zh": "发吧。有回复我会告诉你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Thanks. I will go back to my table.",
+      "zh": "谢谢。我回座位了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right. I have another bit of work for you after that.",
+      "zh": "好。那之后我还有件事给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "What is it? More numbers?",
+      "zh": "什么事？还是数字吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Yes, but a short list. Names and numbers.",
+      "zh": "对，但很短。姓名和号码。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "That is good. I will do it now.",
+      "zh": "没问题。我现在就做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "No need to go quick. Take a rest first.",
+      "zh": "不急。先歇会儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I will get a drink first then.",
+      "zh": "那我先喝口水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Good idea. The water is in the back room.",
+      "zh": "好主意。水在后面房间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Got it. Back in a minute.",
+      "zh": "知道了。马上回来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Take your time. No need to go quick.",
+      "zh": "慢慢来。不用急。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Here I am. What is the list?",
+      "zh": "我回来了。名单是什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "A short list of new hands. Names and numbers.",
+      "zh": "新员工名单，姓名和电话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Is it right to put them in the box?",
+      "zh": "把它们放进盒子里可以吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Yes, and make a paper copy for the office wall.",
+      "zh": "对，再打印一份贴墙上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Right. I will do that now.",
+      "zh": "好。我现在就做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Good man. I will be at my table if you need me.",
+      "zh": "好样的。有事叫我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I have the list here. All names are clear.",
+      "zh": "名单在我这儿。名字都清楚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Good. Now put them in the box, one by one.",
+      "zh": "好。现在一个一个放进盒子里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "May I put them in order by first letter?",
+      "zh": "要按首字母排序吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Yes, that is best. A to end, like the book of names.",
+      "zh": "对，这样最好。按字母顺序，像电话簿一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Done. The box is full. What now?",
+      "zh": "好了。盒子满了。现在呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Make a copy for the wall. Use the great printer.",
+      "zh": "打印一份贴墙上。用那台大打印机。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "The printer has no paper. I will get more.",
+      "zh": "打印机没纸了。我去拿一些来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "There is a box under my table. Take what you need.",
+      "zh": "我桌子底下有一箱。需要多少拿多少。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Got it. I will put the list on the wall now.",
+      "zh": "拿到了。我现在就把名单贴墙上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Good. That is all for now. You did well today.",
+      "zh": "好。暂时就这些。你今天干得不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "What comes after this?",
+      "zh": "这之后是什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "We have a meeting at 11. Get ready.",
+      "zh": "十一点有个会。准备一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "What is the meeting about?",
+      "zh": "会议是关于什么的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "The new work rules. They will give a talk.",
+      "zh": "新工作规章。他们会做个说明。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Should I take notes?",
+      "zh": "需要我做笔记吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Yes, please. That would be a great help.",
+      "zh": "好的，麻烦了。那会帮大忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "I have my book here. Ready.",
+      "zh": "我带了本子。准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Good. Let us go to the room now.",
+      "zh": "好。我们现在去会议室吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Right. I will come with you.",
+      "zh": "好的。我跟你去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "After the meeting, we can have a quick rest.",
+      "zh": "开完会，我们可以小歇一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "The meeting was short. How are you?",
+      "zh": "会议很短。你怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Right. But I have a question about the new rules.",
+      "zh": "还行。不过我对新规章有个问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Go on. What is the trouble?",
+      "zh": "说吧。什么问题？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "The part about time records. Is it for all days?",
+      "zh": "关于考勤那部分。是所有日子都要吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Yes, every day. But you can do it on your little box.",
+      "zh": "是的，每天。但你可以在你的小盒子上操作。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "That is good. I will put a note in my hand box.",
+      "zh": "那就好。我在手盒里记个提醒。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Wise. Now, let us get back to your first work.",
+      "zh": "聪明。现在我们继续做你的第一份工作吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Right. I have the numbers ready for the paper.",
+      "zh": "好。纸上的数字我已经准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Let me see. Yes, these are all right. Good work.",
+      "zh": "让我看看。嗯，这些都没问题。干得好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Thank you. I will send it now.",
+      "zh": "谢谢。我现在就发出去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Good. Now, let us go through the last part together.",
+      "zh": "好。现在我们一起过最后一部分。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Which part is that?",
+      "zh": "哪部分？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "The notes at the end. They need a short statement.",
+      "zh": "最后的备注。需要一段简短说明。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "I see. What sort of statement?",
+      "zh": "明白了。什么样的说明？",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Just a line about the growth numbers. Keep it simple.",
+      "zh": "就一行关于增长数字的。简单写。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Are numbers up from last month? Is that right to say?",
+      "zh": "‘数字较上月上升’这样说可以吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Yes, that is good. Put 'by about ten parts in a hundred'.",
+      "zh": "可以，很好。加上‘约百分之十’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Done. Anything more?",
+      "zh": "写好了。还有别的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "No, that is all. You are ready to send.",
+      "zh": "没了，就这些。你可以发了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Great. I will send it now.",
+      "zh": "太好了。我现在就发。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Good. While you do that, I will get the papers for tomorrow.",
+      "zh": "好。你发的时候，我去准备明天的文件。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Right. I have sent it. All done.",
+      "zh": "好的。已经发了，全部搞定。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Good work. First list on your own, and no trouble.",
+      "zh": "干得漂亮。第一次独立做文件，没出岔子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Thanks. It was not so hard with your help.",
+      "zh": "谢谢。有你帮忙，倒也不难。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "You will get used to it. Any questions before the end of the day?",
+      "zh": "慢慢就习惯了。下班前还有问题吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "No, I am all right. Only need to put these in order.",
+      "zh": "没了，我没事。只需要把这些按顺序放好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Take your time. I will leave then.",
+      "zh": "慢慢来。那我先走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "I will leave. Have a rest up.",
+      "zh": "我先走了。晚上好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "You too. I will be here at nine.",
+      "zh": "你也是。我九点到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Great. I will have tea ready.",
+      "zh": "好。我会泡好茶等你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "That is kind. I will take some sweet cakes.",
+      "zh": "你真好。我带些甜饼来。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Good. I like a bit of sweet with my tea.",
+      "zh": "太好了。我喝茶喜欢配点甜的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Any sort you like? I will get a mix.",
+      "zh": "你喜欢哪种？我买混合的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Simple ones are good. Not too sweet.",
+      "zh": "原味的就行。不要太甜。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Got it. okay in the morning.",
+      "zh": "明白。明早见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "sure. Well done today.",
+      "zh": "好的。今天干得不错。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Thanks. It was a good first day.",
+      "zh": "谢谢。第一天很顺利。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Right. I will lock up. You go on.",
+      "zh": "行。我来锁门，你先走吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Are you certain? I have time.",
+      "zh": "你确定吗？我有时间。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "No need. See you tomorrow. Get some rest.",
+      "zh": "不用。明天见。好好休息。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "新员工甲第一天独立负责文件，在同事乙的协助下紧张赶稿。从晨会到下班，协作中完成挑战，收获成长与告别。",
+  "storyScript": "【开场·到岗问候】\n周二早晨九点，办公室的玻璃门被推开，甲背着双肩包走进来。工位上，乙已经泡好了茶，抬头朝他笑了笑。甲放下包，在打卡机前按了指纹，屏幕上跳出“欢迎”二字。他走到乙的桌前，乙递过来一杯温水，说：“新一周，加油。”甲点点头，心里有些紧张，但更多的是期待。\n\n【进行·分配任务】\n乙把一沓文件放到甲桌上，封面贴着黄色便签：“初稿，中午前。”甲翻开一看，是部门季度报告的数据汇总。乙解释道：“这是你第一次独立做，先看模板，有问题随时问我。”甲深吸一口气，打开电脑，开始逐页核对数字。键盘声噼里啪啦，他时不时对照屏幕上的旧文档，眉头微皱。\n\n【进行·协作沟通】\n半小时后，甲发现一组数据与上个月对不上。他拿着文件走到乙的工位，指着屏幕说：“这里，增长率好像算错了。”乙凑过来，看了几秒，恍然大悟：“哦，公式引用错了单元格。”两人一起修改，乙又教他如何用条件格式高亮异常值。甲认真记下步骤，回到座位继续。十一点，初稿完成，甲把文件发给乙审核，乙快速浏览后竖起大拇指：“没问题，可以提交了。”甲松了口气，嘴角扬起。\n\n【收束·下班离开】\n下午六点，夕阳透过百叶窗洒进工区。甲收拾好桌面，把文件归档。乙走过来，拍了拍他的肩膀：“今天干得不错，明天继续。”甲背上包，两人一起走向电梯。电梯门合上时，乙说：“以后有不懂的，随时找我。”甲笑着点头。走出大楼，晚风拂面，他回头看了一眼办公室的灯光，心里暖暖的。"
+}

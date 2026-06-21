@@ -1,0 +1,820 @@
+{
+  "slug": "online-banking",
+  "sceneKey": "Online Banking",
+  "titleZh": "网银转账缴费",
+  "titleEn": "Online Banking",
+  "tier": "P2",
+  "freqRank": 28,
+  "emoji": "💳",
+  "gradient": "linear-gradient(135deg,#e2e8f0,#475569)",
+  "storyHook": "登录账户，转账或缴费，确认余额",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "登录账户",
+      "goal": "输密码"
+    },
+    {
+      "beat": "进行",
+      "title": "办理转账",
+      "goal": "填金额"
+    },
+    {
+      "beat": "收束",
+      "title": "核对离开",
+      "goal": "看余额退出"
+    }
+  ],
+  "illustration": {
+    "label": "网银",
+    "motifs": [
+      "card",
+      "money",
+      "lock"
+    ],
+    "accent": "#334155"
+  },
+  "narrative": {
+    "when": "周三晚上，月底要交房租",
+    "where": "甲的房间，手机或电脑前",
+    "who": "甲（账户主人）· 乙（客服，电话里指导）",
+    "how": "登录账户，按步骤操作转账",
+    "method": "登录账户、输入金额和账号、确认转账、核对余额",
+    "event": "甲忘了这个月的房租还没交，怕超过日期"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Right, I need to get to my account.",
+      "zh": "好，我得登录账户。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Put in your name and secret word.",
+      "zh": "输入你的名字和密码。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Done. The page is getting ready.",
+      "zh": "好了，页面在准备中。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Take your time, no need to be quick.",
+      "zh": "慢慢来，不用着急。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "The money is enough for the payment.",
+      "zh": "登录了，余额够付房租。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Good, then let us go to the send money part.",
+      "zh": "很好，那我们去转账页面。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "I see the button for sending money.",
+      "zh": "我看到转账按钮了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Give it a push and we will make a start.",
+      "zh": "点一下，我们开始操作。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Right, the form is open. What is first?",
+      "zh": "好的，表格打开了。先填什么？",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "First, put in the account number of the man who gets the money.",
+      "zh": "先输入收款人的账号。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I have his number here. Let me put it in.",
+      "zh": "我这儿有他的账号，输进去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Good. Be certain every number is right.",
+      "zh": "好，每个数字都要看准。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "What is after that?",
+      "zh": "那之后呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Now the price. How much for the room?",
+      "zh": "现在填金额，房间费用是多少？",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "One thousand two hundred. I will put that down.",
+      "zh": "一千二，我填这个数。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Good. Now look at the number again.",
+      "zh": "好，再看一遍账号。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "It is the same as his note. All good.",
+      "zh": "和他给的纸条一样，没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Then put in the price. One thousand two hundred.",
+      "zh": "然后填金额，一千二。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Done. The number is in the box.",
+      "zh": "好了，数字填进去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "See the name of the man who gets it.",
+      "zh": "核对一下收款人名字。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Yes, it is Green. That is right.",
+      "zh": "嗯，是格林，对的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Now push the button to send it.",
+      "zh": "现在点发送按钮。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I will do that now. There it goes.",
+      "zh": "我这就点，发出去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Keep still till the green light. It is done.",
+      "zh": "等绿灯亮，好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "The money is sent. That is a weight off.",
+      "zh": "钱转过去了，心里一块石头落地了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Good. Now see what money you have left.",
+      "zh": "好的，现在看看你还有多少钱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "I will go back to the first page.",
+      "zh": "我回首页看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "What does it say?",
+      "zh": "上面显示多少？",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "It says eight hundred and fifty.",
+      "zh": "显示八百五十。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "That is enough for this month, then?",
+      "zh": "那这个月够用了吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I hope so. I have food and car to get.",
+      "zh": "希望吧，还得买吃的和车费。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "You will be all right. Keep the numbers in your head.",
+      "zh": "没问题的，心里有数就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Yes, I will be more wise from now on.",
+      "zh": "嗯，以后我会更小心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Is there anything more I can do for you?",
+      "zh": "还有其他需要帮忙的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "No, that is all. Thank you for your help.",
+      "zh": "没了，就这些。谢谢你的帮助。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right, now please put in the number of the account.",
+      "zh": "好，现在请输入收款账号。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "I have it here. One, two, three, four, five, six, seven, eight.",
+      "zh": "我这里有。一二三四五六七八。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Good. Now put in the amount.",
+      "zh": "好的。现在输入金额。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Eight hundred and fifty. Done.",
+      "zh": "八百五十。输好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Make certain the details are right before you say yes.",
+      "zh": "请确认信息无误再点确认。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Yes, I have looked at them. They are right.",
+      "zh": "嗯，我核对过了，没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Then go on and say yes to send it.",
+      "zh": "那就点确认发送吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "I will. There, it is done.",
+      "zh": "好。好了，发送成功了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Good. The money will go through in a short time.",
+      "zh": "好的。钱很快就会到账。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "That is a weight off my mind.",
+      "zh": "我心里一块石头落地了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "That is good. Would you like to see your balance?",
+      "zh": "很好。要看看余额吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Yes, please. Let me go back to the front page.",
+      "zh": "好的，请稍等。我返回首页。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Take your time.",
+      "zh": "不着急。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I see it now. It is lower, but still safe.",
+      "zh": "看到了。余额少了，但还算安全。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "That is good. Anything more?",
+      "zh": "那就好。还有其他需要吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Thank you for helping me.",
+      "zh": "没了，谢谢你帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "You are welcome. Have a rest up.",
+      "zh": "不客气。好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "You too. sure.",
+      "zh": "你也是。好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "sure.",
+      "zh": "好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "I will put the phone down now.",
+      "zh": "那我挂电话了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Right. be safe.",
+      "zh": "好的。安全第一。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Well, you too. sure.",
+      "zh": "你也是。再会。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Good day.",
+      "zh": "日安。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "The talk is done. I am free.",
+      "zh": "电话打完了。我轻松了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Time for a cup of tea.",
+      "zh": "该喝杯茶了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Right, I am in my account now.",
+      "zh": "好了，我现在进账户了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Good. Now go to the send money part.",
+      "zh": "好的。现在去转账功能。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "I see it. What number do I put?",
+      "zh": "看到了。我输什么账号？",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Put the number from your house owner.",
+      "zh": "输你房东给的号码。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I am putting it in now. Done.",
+      "zh": "我正在输。输好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Now the amount. How much?",
+      "zh": "现在输金额。多少？",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "One thousand two hundred fifty.",
+      "zh": "一千两百五十。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Put that in and have a look.",
+      "zh": "输进去，再核对一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "It is right. I will send it now.",
+      "zh": "没错。我现在转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Look for the done sign.",
+      "zh": "等成功提示。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "It says 'done'. That is good.",
+      "zh": "显示成功了。那就好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Yes, the money is on its way.",
+      "zh": "是的，钱已经转过去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Let us see the amount now?",
+      "zh": "我们现在看看金额？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Right, go back to the first page.",
+      "zh": "好，回到首页。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "I see it. The number is lower now.",
+      "zh": "看到了。数字变少了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Is it still enough for this month?",
+      "zh": "这个月还够用吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Yes, but not much more. I will go at a quiet rate.",
+      "zh": "够，但剩不多了。我会慢点用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Right. Any more to give?",
+      "zh": "行。还有别的要给吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "No, that is all. Thanks for your help.",
+      "zh": "没了，就这些。谢谢帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "No problem at all.",
+      "zh": "不用谢。好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Right, I will put in the account number now.",
+      "zh": "好，我现在输收款账号。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Take your time. No need to be quick.",
+      "zh": "慢慢来，不用急。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "The number is in. Now the amount.",
+      "zh": "账号输好了。现在填金额。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Is that the full payment for this month?",
+      "zh": "这是这月的整笔付款吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Yes, the full number. Here it goes.",
+      "zh": "对，整笔。我填上去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Please see the name and number again.",
+      "zh": "请再核对一下户名和账号。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "All good. I will say yes now.",
+      "zh": "没问题。我点确认了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Keep an eye on the green light.",
+      "zh": "留意绿灯。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "It says done. The money is on its way.",
+      "zh": "显示完成了。钱已经转出。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Good work. That is the last step.",
+      "zh": "干得好。这是最后一步了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Let me see the balance now.",
+      "zh": "我看看余额现在。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "It went down, but still safe.",
+      "zh": "少了，但还算安全。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Will that be all for tonight?",
+      "zh": "今晚就这些了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Yes, that is all. Thank you.",
+      "zh": "对，就这些。谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Do not mention it.",
+      "zh": "不客气。愿你晚上好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "And you. okay.",
+      "zh": "你也是。回见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I will put the page away now.",
+      "zh": "我现在把页面收起来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Keep in mind to go out.",
+      "zh": "记得退出登录。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Right, I am out. All done.",
+      "zh": "好，退出了。全好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Great. rest up after this.",
+      "zh": "很好。之后好好睡一觉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "I will turn off the light now.",
+      "zh": "我现在关灯了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Good idea. Rest your eyes.",
+      "zh": "好主意。让眼睛休息一下。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "The house payment is done. That is a weight off.",
+      "zh": "房租交了。心里一块石头落地了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Quite. You kept to the last day.",
+      "zh": "确实。你赶在了最后一天。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Yes, I almost let it go. What a simple man I am.",
+      "zh": "是啊，我差点忘了。我真傻。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "But you did it. That is what is important.",
+      "zh": "但你办到了。这才是重要的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Right. I will keep my eyes open from now.",
+      "zh": "说得对。以后我会多留神。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Good. Now get some sleep.",
+      "zh": "很好。现在去睡吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I will. rest up, and thanks for your help.",
+      "zh": "好的。好好休息，谢谢你的帮助。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "You are welcome. Good night.",
+      "zh": "别客气。晚安。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "月底房租未交，甲登录网银紧急转账。在客服电话指导下，他一步步操作，最终确认余额松了一口气。",
+  "storyScript": "【开场·登录账户】周三晚上十点，甲突然想起这个月的房租还没交。他慌忙打开手机银行，指尖在屏幕上轻点，输入那串熟悉的账号和密码。页面加载的几秒里，他的心悬着，生怕错过最后期限。终于，账户首页跳出，余额数字映入眼帘——还够付房租，但所剩不多。他深吸一口气，点开转账功能。\n\n【进行·办理转账】甲拨通客服电话，乙的声音平稳传来：请先输入收款账号。他对照房东发来的信息，一个个数字敲进框里。接着是金额，他犹豫了一下，还是填上了那个数字。乙提醒：请确认转账信息。甲仔细核对账号和金额，手指在确认键上停留片刻，然后按下。页面显示转账处理中，他盯着那个旋转的图标，直到成功提示弹出。\n\n【进行·核对余额】转账完成，甲没有立刻退出。他返回账户首页，刷新余额。数字减少了，但还在安全范围内。他想起这个月的生活费，默默计算着剩下的钱能否撑到发薪日。乙在电话里询问：还有其他需要吗？甲说没有，声音里带着一丝疲惫。\n\n【收束·核对离开】甲退出网银，手机屏幕暗下来。他靠在椅背上，窗外的夜色深沉。房租交了，这个月的压力暂时缓解。他关掉台灯，房间陷入黑暗，只有手机屏幕的微光映着他的脸。明天，又是新的一天。"
+}

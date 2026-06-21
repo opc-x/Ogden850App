@@ -1,0 +1,820 @@
+{
+  "slug": "search",
+  "sceneKey": "Search",
+  "titleZh": "搜索查信息",
+  "titleEn": "Searching Online",
+  "tier": "P2",
+  "freqRank": 38,
+  "emoji": "🔍",
+  "gradient": "linear-gradient(135deg,#f8fafc,#94a3b8)",
+  "storyHook": "输入关键词，筛选结果，找到答案",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "提出疑问",
+      "goal": "要查某事"
+    },
+    {
+      "beat": "进行",
+      "title": "输入搜索",
+      "goal": "看结果"
+    },
+    {
+      "beat": "收束",
+      "title": "找到答案",
+      "goal": "阅读记下"
+    }
+  ],
+  "illustration": {
+    "label": "搜索",
+    "motifs": [
+      "magnifier",
+      "list",
+      "page"
+    ],
+    "accent": "#64748b"
+  },
+  "narrative": {
+    "when": "周一下午，遇到一个不明白的问题",
+    "where": "甲的书桌，电脑前",
+    "who": "甲（提问的人）· 乙（同事，帮忙一起查）",
+    "how": "打开搜索页面输入关键词",
+    "method": "提出疑问、输入关键词、筛选查看结果、记下答案",
+    "event": "甲不确定一个词的意思，想尽快查清楚再继续工作"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "What is this word?",
+      "zh": "这个词是什么意思？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "I have no idea about it.",
+      "zh": "我也不知道。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Let us look it up on the net.",
+      "zh": "我们在网上查查吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Good idea. I will open a page to look for it.",
+      "zh": "好主意。我打开页面找找看。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "What is the word?",
+      "zh": "什么词？",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "That is a new word to me.",
+      "zh": "那个词我没见过。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "That is a hard one. Put it in.",
+      "zh": "那是个难词。打进去吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Right. I am putting it down now.",
+      "zh": "好，我现在写下来。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Let us see what comes up.",
+      "zh": "看看出来什么。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "The first is a long page.",
+      "zh": "第一个是长页面。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "That one is full of hard words.",
+      "zh": "那篇全是难词。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "I do not get it as well.",
+      "zh": "我也没看懂。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Let us have a go with another word?",
+      "zh": "要不要换个词试试？",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Yes, put the sense after it.",
+      "zh": "对，后面加上“意思”。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Good. Now the second one is clear.",
+      "zh": "好。现在第二条很清楚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "That is the one we need.",
+      "zh": "就是我们要找的那个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "I will say it out.",
+      "zh": "我念出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Go on, take your time.",
+      "zh": "念吧，慢慢来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "A: It says it is a short name for a thing.",
+      "zh": "上面说它是一个东西的简称。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "So it is a short word.",
+      "zh": "所以是个短词。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "A: Yes, that makes sense now.",
+      "zh": "对，现在说得通了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Good, we have the answer.",
+      "zh": "好，我们有答案了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "A: I will put it on a note.",
+      "zh": "我记在便签上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Then you may go back to work.",
+      "zh": "然后你可以继续工作了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "A: Right, thanks for the help.",
+      "zh": "好，谢谢帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Put in another word to make it clearer?",
+      "zh": "加个词让它更清楚？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "That is a good thought. What about 'sense'?",
+      "zh": "好主意。加“意思”怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Right, let us see what comes up.",
+      "zh": "好，看看出来什么。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "This one looks like a list of words.",
+      "zh": "这个看起来像词汇表。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Yes, that is a good place for a short name.",
+      "zh": "对，那是查简称的好地方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Here it is. It says 'short for a long name'.",
+      "zh": "找到了。上面写“是长名称的简称”。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "So it is not a hard word at all.",
+      "zh": "所以这个词一点也不难。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "No, it is quite simple when you see it.",
+      "zh": "对，看到就很简单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "I will make a note of that.",
+      "zh": "我记下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Then we are done. Back to work.",
+      "zh": "那就搞定了。继续干活吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Okay, let us look at the details.",
+      "zh": "好的，我们来看看细节。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "This looks like a word list.",
+      "zh": "这看起来像单词表。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Yes, this matches what we need.",
+      "zh": "对，这符合我们的需要。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Here it is. 'Short for a long name.'",
+      "zh": "就是这个。写的是‘长名的短叫法’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "So this part is very simple.",
+      "zh": "所以这一步很简单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Let us put in a better word.",
+      "zh": "我们换个更好的词搜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "What about 'short name'?",
+      "zh": "搜“简称”怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Good idea. I will do that.",
+      "zh": "好主意。我来搜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "See, the first one is a page of names.",
+      "zh": "看，第一条就是名称列表。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "That is the one. Open it.",
+      "zh": "就是这个。点开它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "It has a list of short names and their full forms.",
+      "zh": "它列了简称和全称。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Go down to the third point.",
+      "zh": "往下到第三个点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Here. The secret group keeps watch on other lands.",
+      "zh": "给。秘密组织盯着别国的情况。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "So you see how it works.",
+      "zh": "所以你明白它是怎么运行的了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Right. Let me make a note.",
+      "zh": "对。我记一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I will put it in my note book.",
+      "zh": "我记在本子上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Good. Now we have the answer.",
+      "zh": "好。现在答案有了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Yes. That was quick work.",
+      "zh": "嗯。查得挺快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "We did well together.",
+      "zh": "咱俩配合不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Let us get back to work.",
+      "zh": "我们继续干活。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Right. I have a clear head now.",
+      "zh": "好。我现在脑子清楚了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "I will go on with my writing.",
+      "zh": "我继续写我的东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "And I will go back to my numbers.",
+      "zh": "我回去看我的数字。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Say if you need help again.",
+      "zh": "再需要帮忙就叫我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "I will. Thanks for your time.",
+      "zh": "会的。谢了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Let me put in the word.",
+      "zh": "我输一下这个词。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Right. What did you put?",
+      "zh": "好。你打了什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "The strange word from the writing.",
+      "zh": "就是文本里那个怪词。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Put your finger on the look-up button. Let us see.",
+      "zh": "按一下查找键。我们看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "That is a long list of pages.",
+      "zh": "结果页面好长。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "The third one seems good.",
+      "zh": "第三个看起来不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "I will open it. One minute.",
+      "zh": "我点开。等一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Too many hard words again.",
+      "zh": "又太多难词了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "What about putting a 'sense'?",
+      "zh": "要不要加个“定义”？",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Yes. That will make it clear.",
+      "zh": "嗯。那样会更清楚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Right, the second one is short.",
+      "zh": "对，第二个简短。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "I will give it a look.",
+      "zh": "我看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "That is the sense I was after.",
+      "zh": "这就是我要的意思。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Good. Now we have it.",
+      "zh": "好。现在我们有了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "I will put it down on a bit of paper.",
+      "zh": "我记在纸条上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Do that. Then get back to work.",
+      "zh": "记下来。然后回去工作。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "The writing will be clear now.",
+      "zh": "现在文本就清楚了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Yes. No more stopping.",
+      "zh": "嗯。不用再卡住了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Thanks for your help.",
+      "zh": "多谢帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Any time. Happy to give a hand.",
+      "zh": "随时。乐意帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Right, let us put in the word.",
+      "zh": "好，我们输入这个词。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "What is the first one?",
+      "zh": "第一个是什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "A list from a book of words.",
+      "zh": "一个词典的词条。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "That seems good. Let us see.",
+      "zh": "看起来不错。点开看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Too much hard talk. Not clear.",
+      "zh": "太专业了，不清楚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Put 'sense' after it and have another look.",
+      "zh": "后面加上“定义”再看一次。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "This one is short and simple.",
+      "zh": "这个简短又明白。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Yes, that is the sense we need.",
+      "zh": "对，这就是我们要的意思。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Say it out for me.",
+      "zh": "念给我听。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "It says: 'a thing that makes a change'.",
+      "zh": "上面写着：“一个带来变化的东西”。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Right, got it. That is clear now.",
+      "zh": "好，明白了。现在清楚了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Put it down so you keep it in mind.",
+      "zh": "记下来免得忘了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "I will put it on a note.",
+      "zh": "我写在便签上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Good. Then we can go on with the work.",
+      "zh": "好，那我们可以继续干活了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Yes, that word was stopping me.",
+      "zh": "嗯，那个词卡住我了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Now the rest of the writing is smooth.",
+      "zh": "现在剩下的文字就顺了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I am glad to do this.",
+      "zh": "我很乐意这样做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "No trouble. Happy to give a hand.",
+      "zh": "不麻烦。乐意搭把手。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "I will have a drink of water and get back to it.",
+      "zh": "我喝口水就继续。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Good idea. I have my own work to do.",
+      "zh": "好主意。我也有自己的事要忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right, back to it then.",
+      "zh": "好，那就接着干吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "I will start from the top again.",
+      "zh": "我从头再看一遍。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Good. That word will not trouble you now.",
+      "zh": "好，那个词现在不会难住你了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "No, it is clear as day.",
+      "zh": "不会了，清楚得像白天一样。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I will keep my note here in view.",
+      "zh": "我把便签放在眼前。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Wise. A note is a good friend.",
+      "zh": "明智。便签是个好朋友。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Let us get a drink after work.",
+      "zh": "下班后一起去喝一杯？",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Yes, that would be a good end to the day.",
+      "zh": "好，那会是今天一个不错的收尾。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I will send you a word when I am done.",
+      "zh": "我忙完了发消息给你。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "That is good. I will be here.",
+      "zh": "很好。我就在这儿。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周一下午，甲对着屏幕皱眉，一个陌生词汇卡住了工作。乙凑过来，两人一起搜索，终于找到答案。",
+  "storyScript": "【开场·提出疑问】周一下午的办公室安静如常，只有键盘敲击声。甲盯着文档里那个加粗的术语，眉头渐渐拧紧。这个词从未见过，上下文也模糊不清，像一粒沙子卡在齿轮间，让整段文字读起来磕磕绊绊。甲的手指悬在键盘上方，犹豫片刻后，转头看向邻座的乙。乙正对着报表沉思，察觉到目光便摘下耳机。甲指了指屏幕上的词，压低声音说：这个词什么意思？查一下。乙点点头，椅子滑近，两台电脑的屏幕光映在两人脸上。\n\n【进行·输入搜索】甲打开搜索页面，光标在搜索栏里闪烁。他快速敲下那个词，回车，结果页面瞬间铺满。第一条是百科词条，第二条是论坛讨论，第三条是专业博客。乙侧过身，指着第三条说：这个看起来靠谱。甲点开链接，页面加载时两人屏息等待。内容跳出，是一篇技术解析，但术语堆叠，读了三行仍不得要领。乙摇头：太绕了，换个关键词。甲删掉原词，加上“定义”二字重搜。这次结果更直白，第二条来自一个术语库，解释简洁清晰。乙用笔尖点着屏幕：就是这个。甲滚动页面，逐句读完，脸上渐渐明朗。\n\n【收束·找到答案】甲从笔筒抽出一支便签纸，快速记下释义和出处，贴在显示器边框上。乙退回自己的座位前，拍了拍甲的肩。甲重新聚焦文档，那个词现在像被擦亮的玻璃，整段文字通透起来。他继续敲击键盘，节奏比之前轻快许多。窗外阳光斜照进办公室，尘埃在光柱里缓缓浮动。甲端起凉掉的咖啡喝了一口，嘴角微微上扬——问题解决了，工作可以继续。"
+}

@@ -1,0 +1,820 @@
+{
+  "slug": "the-family",
+  "sceneKey": "The Family",
+  "titleZh": "家人晚饭聊天",
+  "titleEn": "Family Dinner",
+  "tier": "P1",
+  "freqRank": 11,
+  "emoji": "👨‍👩‍👧",
+  "gradient": "linear-gradient(135deg,#ffedd5,#fdba74)",
+  "storyHook": "一家人吃饭，聊今天的事",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "回家团聚",
+      "goal": "桌边准备吃"
+    },
+    {
+      "beat": "进行",
+      "title": "边吃边聊",
+      "goal": "聊今天的事"
+    },
+    {
+      "beat": "收束",
+      "title": "收拾餐桌",
+      "goal": "互道晚安"
+    }
+  ],
+  "illustration": {
+    "label": "家庭晚餐",
+    "motifs": [
+      "table",
+      "food",
+      "house"
+    ],
+    "accent": "#c2410c"
+  },
+  "narrative": {
+    "when": "周日晚上七点，一周难得的全家聚餐",
+    "where": "甲家里的饭桌",
+    "who": "甲（儿子/女儿）· 乙（母亲）· 偶尔提到父亲和弟弟",
+    "how": "边吃边聊，气氛随意放松",
+    "method": "问近况、分享当天的事、商量周末安排、收拾碗筷",
+    "event": "甲这周要出差，想趁晚饭把家里的事安排好"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I am back! It smells good.",
+      "zh": "我回来了！好香啊。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Take a seat, love. The soup is warm.",
+      "zh": "快坐下，宝贝。汤还热着呢。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Long day. The work is done.",
+      "zh": "今天真长。活干完了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Well done. Have some greens.",
+      "zh": "干得好。吃点青菜。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Thanks, Mother. I am away from the first day of the week for three days.",
+      "zh": "谢谢妈。我从一周的第一天起出门三天。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Oh? Where to?",
+      "zh": "哦？去哪儿？",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "A town in the north. Work business.",
+      "zh": "北部的一个城镇。工作的事。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "It's cold up north. Take a thick coat.",
+      "zh": "那边冷。带件厚外套。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "I will put the water pipe right before I go.",
+      "zh": "好的。走之前我把水管弄好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Let that be for now. Get your food down.",
+      "zh": "现在别管那个。先把饭吃了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "The pipe is making a sound again.",
+      "zh": "水管又在响了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "I will see to it after the meal. First, your food.",
+      "zh": "吃完饭我来弄。先吃你的饭。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "How did the test go today?",
+      "zh": "今天考得怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Not so good. The numbers were hard.",
+      "zh": "不太好。数字太难了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "We will go over it at the end of the week. I will give you a hand.",
+      "zh": "周末我们一起复习。我帮你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "That is kind of you. Your brother needs help with his numbers.",
+      "zh": "你真好。你弟弟数学需要帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "I see. I will see him before I go.",
+      "zh": "我知道。走之前我会见他。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Let us get some things from the store on the third day of the week in the morning.",
+      "zh": "我们周三早上从商店买点东西吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Good idea. I will make a list after the meal.",
+      "zh": "好主意。吃完饭我列个单子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Any special needs for the work food?",
+      "zh": "出差吃的有什么特别要求吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Not at all. Keep it simple. No sharp bits.",
+      "zh": "没什么。简单点就行。别太辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Right. I will get some soft bread and cheese for you.",
+      "zh": "好。我给你买点软面包和奶酪。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "That sounds good. And some fruit too, if it's not dear.",
+      "zh": "听起来不错。再买点水果，如果不贵的话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Right. I saw apples at a good price today.",
+      "zh": "行。今天我看到苹果价格不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Good. I am ready. Thanks, Mother.",
+      "zh": "好的。我准备好了。谢谢妈妈。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Have more. You look thin.",
+      "zh": "多吃点，你看你瘦的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "I am well, Mother. I had much work today.",
+      "zh": "我没事，妈。今天工作多了点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Did you get the last bit done?",
+      "zh": "最后那部分搞定了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Yes, all done. The group was happy.",
+      "zh": "搞定了，大家挺满意的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Good. Your father said the water pipe is still letting water drop.",
+      "zh": "那就好。你爸说水管还在滴水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I will put it right before I go. Do not be troubled.",
+      "zh": "我走之前修好，别担心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "And your brother? How was his test?",
+      "zh": "你弟呢？考试怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "He said numbers are hard. I will give him a hand on the rest day.",
+      "zh": "他说数学难。休息日我帮他看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "That is kind. He will be pleased.",
+      "zh": "那敢情好，他肯定高兴。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Would we get some more soup?",
+      "zh": "要不要再来点汤？",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "There is some left. Here, take more meat as well.",
+      "zh": "还有，来，再夹点肉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Thanks, Mother. This is my last night meal before the journey.",
+      "zh": "谢谢妈。这趟出差前最后一顿晚饭了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Then we will have a good meal on day four. Little bags of meat and greens.",
+      "zh": "那周四给你包顿好的，饺子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "That sounds great. I will get the things for the inside.",
+      "zh": "太棒了，里面的东西我来准备。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "No need. I will do it. You just rest and get your things together.",
+      "zh": "不用，你只管收拾行李，我来弄。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I will get the water pipe fixed before I go.",
+      "zh": "我走之前把水龙头修好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Do not trouble. Your father will do it.",
+      "zh": "别操心了，让你爸弄。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "No, I said I would do it. It will only take a short time.",
+      "zh": "不，我说了要修，很快就好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Well then, if you are certain. I will get the things for you.",
+      "zh": "行，你要是坚持，我给你拿东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Thank you. And on the day off, may we go to the food store?",
+      "zh": "谢谢。那休息日咱们去食品店？",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Yes, we need milk, bread, and some greens.",
+      "zh": "好，要买牛奶、面包和青菜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "I will make a list. Also, get some fruit for the journey.",
+      "zh": "我列个单子。再买点水果路上吃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Good idea. I will put in some apples and oranges.",
+      "zh": "好主意，我放几个苹果和橘子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "And for the little brother, a sweet thing from the new town.",
+      "zh": "对了，给弟弟带点那边的点心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "He will be happy. You are a good brother.",
+      "zh": "他肯定高兴。你真是个好哥哥。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "So, how was your day at work?",
+      "zh": "今天上班怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Good. We are done with the work. No more late nights.",
+      "zh": "挺好，工作收尾了，不用再熬夜了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "That is a weight off your mind. Have some more meat.",
+      "zh": "那就轻松了。再吃点肉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Thanks, mother. But I have news. I have to go away for work the week after this one.",
+      "zh": "谢谢妈。不过有个事，我下周要出差。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Oh? For how long?",
+      "zh": "哦？去几天？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Three days. From day five to day one.",
+      "zh": "三天。从第五天到第一天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Then we will get your things ready. Do you have a warm coat?",
+      "zh": "那得赶紧收拾行李。你有厚外套吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Yes, I will take it. The weather there is cold, Father said.",
+      "zh": "有的，我带上。爸说那边冷。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "He is right. I will put some tea bags in your bag.",
+      "zh": "没错。我给你包里放点茶包。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "You are the best. How did the boy do in his test?",
+      "zh": "妈最好了。弟弟考试怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "He said the test on numbers was hard.",
+      "zh": "他说数字考试很难。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "I saw him working on it all week.",
+      "zh": "我看他忙了一整周。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "He is not good with numbers, is he?",
+      "zh": "他是不是不太擅长数字？",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Not quite. But he does his best.",
+      "zh": "确实不太行。不过他挺努力的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I may give him a hand on the last day of the week.",
+      "zh": "我可以在周末最后一天帮他一把。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "That would be great. He needs a push.",
+      "zh": "那太好了。他需要人推一把。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "I will put the juice right before I go.",
+      "zh": "我走前会把水龙头弄好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "The one in the cooking room? It is still dropping water.",
+      "zh": "厨房那个吗？还在滴水呢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Yes. I have it in my room.",
+      "zh": "对。我房间里有它。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Good. Then we can take the family to the store on the day of rest.",
+      "zh": "好。那周日咱们全家去超市。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Let us go in the morning?",
+      "zh": "咱们上午去？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Yes, before the others come.",
+      "zh": "嗯，赶在别人之前。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "I will make a list tonight.",
+      "zh": "我今晚列个单子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Get some meat for the cold days.",
+      "zh": "买点肉，天冷好存。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "And some greens for the soup.",
+      "zh": "再买点青菜煮汤。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "You and your greens. Right.",
+      "zh": "就你爱青菜。行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "What about the fish? Is it good here?",
+      "zh": "鱼呢？这儿的鱼新鲜吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "The man at the turn has good fish.",
+      "zh": "街角那家鱼不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Then we go there first.",
+      "zh": "那咱们先去那儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Right. I will get my coat ready.",
+      "zh": "好。我把外套准备好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I will get the list from my bag.",
+      "zh": "我去包里拿单子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "No need. I have it here, on the table.",
+      "zh": "不用，我放桌上了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Oh, good. Then we are ready.",
+      "zh": "哦，那行。都准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Almost. Your father said he would come too.",
+      "zh": "差不多。你爸说他也去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Father? That is new. He does not come to the market.",
+      "zh": "我爸？稀罕。他从来不去菜场。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "He would like some strong tea from that old place.",
+      "zh": "他想从那个老店买点浓茶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Ah, that place. I will take him there.",
+      "zh": "哦，那家店。我带他去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Good. Then I can get more things without his waiting.",
+      "zh": "好。那我就能多买点，不用他等着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "You two are together. I am only the helper.",
+      "zh": "你俩是一伙的。我就是个帮手。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "A good helper. Now, take your greens.",
+      "zh": "好帮手。来，把青菜吃了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "I will have these greens. But I have a question.",
+      "zh": "我把青菜吃完。但我有个问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Go on. What is it?",
+      "zh": "说吧。什么事？",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "I go after the middle-day meal on day five, back on day one.",
+      "zh": "我周五午饭后走，周一回来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Right. On the night before you go, we make balls of paste for you.",
+      "zh": "对。你走的前一晚我们包饺子给你饯行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "That sounds good. And I will put the water pipe right before I go.",
+      "zh": "听着不错。我走之前把水管弄好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "No need for trouble. Your father will do it.",
+      "zh": "别麻烦了。你爸能修。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I said I would. It is not a great thing.",
+      "zh": "我说了要修。不是什么大事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Well, if you say so. But do not work too hard.",
+      "zh": "行，你说了算。但别太累。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "I will not. Let me take these plates to the water drain.",
+      "zh": "不会的。我把盘子端到水槽去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Good boy. I will clean the table.",
+      "zh": "好孩子。我来擦桌子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "The water pipe is making a sound again. I will look at it tomorrow.",
+      "zh": "水管又在响了。我明天看看。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "You have a long day tomorrow. Rest first.",
+      "zh": "你明天要赶路，先休息吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "I am not tired. I will put the food in boxes first.",
+      "zh": "我不累。先把剩菜装盒。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Here is a bag of fruit for your way. Take it.",
+      "zh": "这袋水果你路上吃。拿着。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Thank you, mother. You are kind.",
+      "zh": "谢谢妈。你真好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Go to bed now. rest up.",
+      "zh": "快去睡吧。好好休息。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "rest up, Mother. okay in the morning.",
+      "zh": "好好休息，妈妈。明早见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Good night, son. Sleep well.",
+      "zh": "晚安，儿子。睡个好觉。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "You too, Mother. I will put the pipe right before I go.",
+      "zh": "您也是，妈。我走之前把水管修好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Do not be troubled. Your father will do it.",
+      "zh": "别费心了。你爸能修。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周日傍晚，一家人围坐饭桌，热菜冒着白气。甲要出差，趁晚饭把家里的事安排好。",
+  "storyScript": "【开场·回家团聚】周日晚七点，厨房的暖光混着菜香漫进客厅。甲推开家门，母亲乙正把最后一道汤端上桌，父亲和弟弟已经坐好。甲放下包，在熟悉的位置坐下，碗筷碰撞声里，一周的疲惫渐渐散开。\n\n【进行·边吃边聊】乙夹了一筷子菜到甲碗里，问起这周的工作。甲说起今天项目收尾顺利，又提到下周要出差三天。乙的手顿了顿，随即说那得提前准备行李。弟弟插嘴问出差去哪个城市，甲笑着答了个地名，父亲点点头，说那边冷，多带件外套。话题转到弟弟的考试，他抱怨数学太难，乙说周末可以一起复习。甲心里盘算着出差前要帮家里修好水龙头，周末带父母去超市采购。\n\n【进行·商量周末安排】甲咽下一口饭，说这周五下午走，下周一回来。乙立刻说那周四晚上包饺子，给甲饯行。父亲问周末要不要去钓鱼，甲说这次赶不上，下次一定陪。弟弟嚷着要甲带特产，甲答应给他带当地的点心。汤碗见底时，甲起身去盛饭，乙已经接过碗，又添了满满一碗。\n\n【收束·收拾餐桌】饭后，甲帮着收拾碗筷，乙擦桌子，父亲和弟弟去客厅看电视。水龙头滴答响着，甲说明天就修。乙说别太累，甲应着，把剩菜用保鲜膜封好。九点，甲回房整理行李，路过客厅时，乙递来一袋水果，说路上吃。互道晚安后，甲关上门，窗外夜色沉静，心里却暖融融的。"
+}

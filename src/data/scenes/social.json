@@ -1,0 +1,820 @@
+{
+  "slug": "social",
+  "sceneKey": "Social",
+  "titleZh": "朋友聚会见面",
+  "titleEn": "Meeting Friends",
+  "tier": "P1",
+  "freqRank": 12,
+  "emoji": "🎉",
+  "gradient": "linear-gradient(135deg,#ede9fe,#a78bfa)",
+  "storyHook": "约见朋友，寒暄聊天，告别约下次",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "见面寒暄",
+      "goal": "问候近况"
+    },
+    {
+      "beat": "进行",
+      "title": "聊天喝茶",
+      "goal": "谈计划趣事"
+    },
+    {
+      "beat": "收束",
+      "title": "告别再约",
+      "goal": "约下次见面"
+    }
+  ],
+  "illustration": {
+    "label": "朋友聚会",
+    "motifs": [
+      "friends",
+      "drink",
+      "music"
+    ],
+    "accent": "#7c3aed"
+  },
+  "narrative": {
+    "when": "周六下午四点，老友难得都有空",
+    "where": "甲家客厅，朋友陆续到达",
+    "who": "甲（主人）· 乙（朋友）",
+    "how": "见面寒暄、互相问候，边喝边聊",
+    "method": "问候近况、聊计划趣事、留人吃饭、约下次见面",
+    "event": "甲很久没见这位朋友，想多聊聊近来的变化"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good to okay, friend. Come in.",
+      "zh": "见到你真高兴，朋友。快进来。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "You too. Here, some fruit for you.",
+      "zh": "我也是。给你带了点水果。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Oh, you need not have. Thanks.",
+      "zh": "哎呀，不用这么客气。谢谢。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Your place looks different. New seat?",
+      "zh": "你家看起来不一样了。新座位？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Yes, got it last month. Take a seat.",
+      "zh": "对，上个月买的。坐下吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "I will. Tea would be good.",
+      "zh": "好。来杯茶不错。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Here you are. How have you been?",
+      "zh": "给你。你最近怎么样？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Not bad. Work is the same old.",
+      "zh": "还行。工作还是老样子。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "You look thin. Are you keeping well?",
+      "zh": "你看起来瘦了。身体还好吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Yes, I'm off to do my training now. It is good.",
+      "zh": "嗯，我现在去锻炼。感觉挺好的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "That is good. I have not been doing much.",
+      "zh": "那就好。我最近没怎么动。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "You come with me one day. It is a good thing.",
+      "zh": "你改天跟我一起去。那感觉真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I would like that. I need a change.",
+      "zh": "也许吧。我得换换节奏。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "How is your family? All well?",
+      "zh": "家里都好吗？大家都好吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Yes, all good. My sister got new work last week.",
+      "zh": "都挺好的。我姐上周换了新工作。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "That is good news. What sort of work?",
+      "zh": "那是好消息。什么工作？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "She works in a book store. She is happy there.",
+      "zh": "她在书店工作。她在那儿挺开心的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Books are a good thing. I need to do more of that.",
+      "zh": "书是好东西。我得多做点这个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "You have time now. Come with me to the sea one day.",
+      "zh": "你现在有时间。改天跟我去海边吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "The sea? I have not been for a long time.",
+      "zh": "海边？我很久没去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "It is quiet there. Good for the head.",
+      "zh": "那儿很安静。对脑子好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "I would like that. When are you free?",
+      "zh": "那好啊。你什么时候有空？",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I am free on day seven. And you?",
+      "zh": "我第七天有空。你呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Yes, that is good. Let us make a decision.",
+      "zh": "行，没问题。咱们定下来吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Good. I will send you a note about the time.",
+      "zh": "好。我到时候发消息告诉你时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "I will look for it. Do you have a place in mind?",
+      "zh": "我会留意的。你有想好的地方吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "There is a small town by the sea. I went there last year.",
+      "zh": "海边有个小镇。我去年去过。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Is it far? I would not be on the road all day.",
+      "zh": "离这儿远吗？我可不想一整天都在路上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Not far. Two hours by rail. We can go and come back in one day.",
+      "zh": "不远。坐火车两小时。我们可以当天来回。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "That is a good idea. I will take my camera.",
+      "zh": "好主意。我带上相机。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I will make some food for the road. Nothing sharp.",
+      "zh": "那我做些吃的带上。不辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "You are a good cook. I still have in mind the cold plate from last time.",
+      "zh": "你厨艺不错。我还记得上次的冷盘。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "That was simple. I will do something new this time.",
+      "zh": "那次很简单。这次我弄点新的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "I am looking forward to it. Let us get some drink too?",
+      "zh": "我很期待。要不要也带点喝的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Yes, some tea and water will be enough. Keep it simple.",
+      "zh": "好，带点茶和水就行。简单点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right. Simple is best. What is the new thing you have in mind?",
+      "zh": "对，简单最好。你打算弄什么新花样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "I was thinking of a warm plate with eggs and greens. Soft and good.",
+      "zh": "我在想做个热盘，有鸡蛋和青菜。清淡好吃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "That sounds good. I will take some bread to go with it.",
+      "zh": "听起来不错。我带些面包来配。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Good. Then we have a full meal. I am happy you are coming.",
+      "zh": "好，那我们就凑齐一顿了。你能来我很高兴。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "I am happy too. It has been a long time after we did something like this.",
+      "zh": "我也很高兴。我们好久没这样一起玩了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "So, what have you been up to these days?",
+      "zh": "那你最近在忙什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Not much. Work is the same. But I started running in the morning.",
+      "zh": "没什么。工作还是老样子。不过我早上开始跑步了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Running? That is new. How do you keep it up?",
+      "zh": "跑步？这可新鲜。你怎么坚持下来的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "I go slow. Only twenty minutes. It makes me happy.",
+      "zh": "我跑得慢。就二十分钟。跑完挺开心的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I might give it a go. I need to move more.",
+      "zh": "我也许试试。我得多动动。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "You can come with me one morning. We will go together.",
+      "zh": "你哪天早上可以跟我一起。咱们一块儿去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "That would be great. But I am not an early bird.",
+      "zh": "那太好了。不过我不是早起的人。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "That is good. We start at eight. Not too early.",
+      "zh": "没问题。咱们八点开始。不算太早。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "That is right. I will give it a go. What about your free days?",
+      "zh": "那行。我试试。你假期有什么计划？",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "I would like to go to the high land when the trees are red.",
+      "zh": "我想秋天去山里看红叶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "The high land is a good idea. I have been there before.",
+      "zh": "山里是个好主意。我以前去过。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Oh, you have? Which part did you see?",
+      "zh": "哦，你去过？看的哪一段？",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "The water side. Red trees like fire. Very good.",
+      "zh": "水边。红叶像火。很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "That is what I am after. We could go together if you like.",
+      "zh": "那就是我想看的。你要是愿意，咱们可以一起去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "I would like that. Let me see my free days first.",
+      "zh": "那敢情好。我先看看我哪天有空。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Take your time. The trees will be red in two months.",
+      "zh": "不急。树叶还要两个月才红。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "True. By the way, how is your new thing going? The one you said you were learning.",
+      "zh": "也是。对了，你那个新东西学得怎么样了？就是你说在学的那个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "It is going well. I am getting used to it now.",
+      "zh": "挺顺利的。我现在慢慢适应了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Good for you. I might give it a go as well. It sounds interesting.",
+      "zh": "不错啊。我也许也试试。听起来挺有意思的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "You will like it. I will send you the first bit.",
+      "zh": "你会喜欢的。我把入门部分发给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Thanks. It is not hard to start. Just a bit of time every day.",
+      "zh": "谢了。入门不难，每天花点时间就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "That is good. I have some free time after dark now.",
+      "zh": "那挺好。我现在天黑后有点空闲。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Night is best for me too. Quiet and no one to trouble you.",
+      "zh": "晚上对我也最合适。安静，没人打扰。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Right. So what is the first step? Do I need any special things?",
+      "zh": "对。那第一步是什么？需要什么特别的东西吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Just a box or a machine. I will send you a list of what you need.",
+      "zh": "就手机或电脑就行。我把需要的东西清单发给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "That is good. I have them. Send it when you are in the house.",
+      "zh": "太好了。我都有。你进屋就发过来吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Will do. It is a good way to keep the mind sharp.",
+      "zh": "没问题。这是个让脑子保持灵活的好办法。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "I could do with that. My brain is slow some days.",
+      "zh": "我正需要这个。有时候觉得脑子转得慢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "You will get used to it. The first week is the hardest.",
+      "zh": "你会习惯的。第一周最难。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Right. I am ready for a new little test.",
+      "zh": "好的。我准备好迎接新的小挑战了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Good. So how was your week?",
+      "zh": "好。那你这一周过得怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Not bad. Full but good. A strange thing came to me.",
+      "zh": "还行。忙但挺好。有件奇怪的事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Oh? Say more. I like strange things.",
+      "zh": "哦？再说说。我喜欢怪事。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "I saw a man on the street who looked just like my old school man.",
+      "zh": "我在街上看见一个人，长得跟我以前的老师一模一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Did you say hello?",
+      "zh": "你打招呼了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "No. He was gone before I made up my mind.",
+      "zh": "没有。我还没拿定主意，他就走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "That is a shame. It might have been him.",
+      "zh": "可惜了。说不定真是他。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Quite. But it made me smile. I was thinking of school days.",
+      "zh": "确实。不过让我笑了。我想起了上学的时候。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "School days. Long time back. Do you still see old friends?",
+      "zh": "上学的时候。好久以前了。你还见老同学吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "A small number. We see one another one time a year. It is good to keep in touch.",
+      "zh": "有几个。我们一年见一次。保持联系挺好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I keep in touch with a small group from my school days.",
+      "zh": "我跟几个老同学还保持联系。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "That is good. Do you see one another much?",
+      "zh": "那挺好的。你们常见面吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Not as much as I would like. Work gets in the way.",
+      "zh": "没我想的那么频繁。工作太忙了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "I see that. Time goes so quick now.",
+      "zh": "我懂。现在时间过得太快了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Yes. But I will go to the mountains this fall.",
+      "zh": "是啊。不过我今年秋天要去山里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Oh, that sounds good. I would like to come with you.",
+      "zh": "哦，听起来不错。我想跟你一起去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Would you? That would be great. We could see the red things on the trees.",
+      "zh": "真的吗？那太好了。我们可以看树上的红叶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "I am in. What day? I will make time.",
+      "zh": "算我一个。哪天？我会腾出时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "I will. It will be a good rest from the town.",
+      "zh": "一定。会是个远离城镇的好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "I am looking forward to it. Another cup of tea?",
+      "zh": "我很期待。再来杯茶？",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Yes, please. This tea is good.",
+      "zh": "好，再来一杯。这茶不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "I got it from a small store near the station.",
+      "zh": "我从车站附近的小店买的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "I will have to get some for me.",
+      "zh": "我得给自己也买点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "I will give you the name before you go.",
+      "zh": "你走之前我把名字告诉你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "By the way, do you still play that music thing?",
+      "zh": "对了，你现在还弹那个音乐玩意儿吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Not much. But I started again last week.",
+      "zh": "不常弹了。但上周我又开始练了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "That is great. We could have a music night one day.",
+      "zh": "那太好了。改天我们可以搞个音乐之夜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "That would be good. I have a new song to play.",
+      "zh": "那敢情好。我有一首新曲子要弹。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "I would like to get that. What about the day after day five?",
+      "zh": "我想听听。第五天之后的那天怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Let me see my week. Yes, the last day is free.",
+      "zh": "让我看看这周安排。嗯，周六有空。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Is the same time good? Four?",
+      "zh": "老时间？四点？",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "That is all right. I will get my music thing.",
+      "zh": "没问题。我去拿乐器。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "And I will make some warm plates for us.",
+      "zh": "那我准备些热菜。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "You are too kind. I will take a bottle of red.",
+      "zh": "你太客气了。我带瓶红酒来。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Great. I have to go now. Thanks for the tea.",
+      "zh": "太好了。我得走了。谢谢你的茶。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "You are welcome. okay on day seven then.",
+      "zh": "不客气。那第七天见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "okay. be safe.",
+      "zh": "好的。安全第一。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Right, I will be off now. Thanks for the music.",
+      "zh": "好了，我该走了。谢谢你的音乐。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "My pleasure. I will send you that list of songs.",
+      "zh": "别客气。我把那几首歌的名单发给你。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Great. Let's do this again. Goodbye.",
+      "zh": "太好了。我们很快再聚。再见。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周六下午，老友相聚客厅，茶香伴着笑声，久违的温暖在谈笑间流淌。从寒暄到告别，约定下次再见，情谊在时光里静静生长。",
+  "storyScript": "【开场·见面寒暄】周六下午四点，阳光斜斜地洒进客厅。门铃响起，甲快步去开门，乙站在门外，手里拎着一袋水果，笑容满面。两人相视一笑，甲接过袋子，拍了拍乙的肩膀，连声说好久不见。乙换了拖鞋，环顾客厅，感叹布置变了些。甲引他到沙发坐下，倒了杯热茶，两人隔着茶几，目光里都是久别重逢的暖意。乙端起茶杯抿了一口，问起甲最近工作忙不忙，甲摇摇头，说老样子，倒是你看起来瘦了。乙笑着摆摆手，说最近在健身，精神反而好了。寒暄间，窗外的阳光悄悄爬上了墙，时间仿佛慢了下来。\n\n【进行·聊天喝茶】茶续了两轮，话题从工作滑向生活。乙说起上个月去了趟海边，拍了不少照片，掏出手机翻给甲看。甲凑过去，指着屏幕上的落日，说这地方他以前也去过。两人聊起旅行计划，甲说想秋天去山里看红叶，乙立刻附和，说可以结伴。笑声里，乙又提起一件趣事：上周在超市碰见老同学，对方愣是没认出他，因为瘦了太多。甲听得直乐，端起茶壶又给乙斟满。茶几上摆着几碟冷盘和热菜，是甲提前准备的。乙夹了一筷子，夸味道不错，甲说简单弄的，你喜欢就好。聊到兴起，乙说起最近在学一门新技能，甲眼睛一亮，说自己也有兴趣，两人越说越投机，仿佛有说不完的话。\n\n【收束·告别再约】天色渐暗，客厅里的光线变得柔和。乙看了看手机，说该走了，晚上还有事。甲起身，有些不舍，挽留道再坐会儿，吃了晚饭再走。乙摇摇头，说下次一定，今天已经聊得很尽兴。甲送他到门口，乙穿上鞋，回头说下次换我做东，去我那儿喝茶。甲笑着点头，说好，一言为定。两人握了握手，乙转身下楼，甲倚在门边，看着他的背影消失在拐角。关上门，客厅里还留着茶香和笑声的余温。甲收拾茶几时，心里想着，下回见面，一定要把那个计划好好落实。"
+}

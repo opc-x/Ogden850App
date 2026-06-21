@@ -1,0 +1,820 @@
+{
+  "slug": "the-weather",
+  "sceneKey": "The Weather",
+  "titleZh": "聊天气穿衣",
+  "titleEn": "Talking Weather",
+  "tier": "P1",
+  "freqRank": 13,
+  "emoji": "🌤",
+  "gradient": "linear-gradient(135deg,#e0f2fe,#7dd3fc)",
+  "storyHook": "看天出门，谈晴雨与穿衣",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "看窗外",
+      "goal": "讨论晴雨"
+    },
+    {
+      "beat": "进行",
+      "title": "决定穿衣",
+      "goal": "选外套带伞"
+    },
+    {
+      "beat": "收束",
+      "title": "出门准备",
+      "goal": "按天气出门"
+    }
+  ],
+  "illustration": {
+    "label": "天气变化",
+    "motifs": [
+      "sun",
+      "cloud",
+      "coat"
+    ],
+    "accent": "#0ea5e9"
+  },
+  "narrative": {
+    "when": "早上七点，甲准备出门上班",
+    "where": "甲家窗边，看着外面的天空",
+    "who": "甲（出门的人）· 乙（同住的家人）",
+    "how": "看窗外天色，商量穿什么、带不带伞",
+    "method": "看天空云雨、决定穿衣、带伞或外套、出门前再确认",
+    "event": "天气预报说下午会变天，甲怕淋雨耽误下班"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Sky looks grey. What is your idea?",
+      "zh": "天灰蒙蒙的，你有什么想法？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Clouds are moving quick. It may rain after some time.",
+      "zh": "云走得急，过一阵可能要下雨。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "The earth is dry now, but the air is wet.",
+      "zh": "地面还是干的，但空气潮潮的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Yes, the weather said rain after the middle of the day.",
+      "zh": "嗯，预报说下午有雨。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "So I need a coat and an umbrella?",
+      "zh": "那我得穿外套带伞？",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "I would take a light coat. That thin one over there.",
+      "zh": "我会拿那件薄外套，就那边那件。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "But it's twenty degrees. Won't I be too warm?",
+      "zh": "可今天二十度呢，穿那个不会热吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Better warm than wet. You can take it off inside.",
+      "zh": "湿了可比热了难受，进屋还能脱。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Right. I'll take that one and the umbrella.",
+      "zh": "好的。我拿那件，再带把伞。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Good. The umbrella is by the door. I'll get it.",
+      "zh": "好，伞在门边，我去拿。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Thanks. The wind is getting up now.",
+      "zh": "谢了。这会儿风越来越大了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Yes, I saw the trees shaking. Put the coat on before you go out.",
+      "zh": "嗯，我看见树在晃。出门前把外套穿上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I will. Will the rain come before five?",
+      "zh": "好。雨五点前会下吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Hard to say. The clouds are moving quick, so it may come early.",
+      "zh": "难说。云走得快，可能来得早。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Then I'll keep the umbrella in my bag, ready.",
+      "zh": "那我伞放包里，随时能拿出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Good. Your bag has a side pocket for it.",
+      "zh": "好。你包侧面有个口袋放伞。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Yes, I put it there. The coat is light but warm.",
+      "zh": "嗯，我放那了。这外套又轻又暖。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "It is a good one for this sort of weather. Not too thick.",
+      "zh": "这种天气穿正合适，不厚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "I hope it keeps the wind out. My ears get cold.",
+      "zh": "希望它能挡风，我耳朵怕冷。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "I have a hat in the box.",
+      "zh": "我记得你有个帽子，在柜子里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "I will take that as well. Better safe than sad.",
+      "zh": "我也带上吧。有备无患。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Right. Now your hands are full. Coat, hat, umbrella.",
+      "zh": "得，现在你手上可满了。外套、帽子、伞。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I'll put the hat in my pocket. It folds flat.",
+      "zh": "帽子放口袋，能折平。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Good. You are ready for anything now.",
+      "zh": "聪明。这下啥都不怕了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Almost. I will have another look out the window.",
+      "zh": "差不多了。我再往外看一眼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "The clouds are moving quick. It will rain by three.",
+      "zh": "云走得快，三点前肯定下雨。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "I hope I am back before that. My coat is light.",
+      "zh": "但愿我能在下雨前回来。这外套有点薄。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "You have the umbrella. That is your roof for the day.",
+      "zh": "你有伞，那就是你今天的屋顶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "True. But I do not like walking with a wet head.",
+      "zh": "倒也是。可我不喜欢淋湿脑袋。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Then keep the hat on. It will keep your ears warm too.",
+      "zh": "那就把帽子戴上，耳朵也暖和。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Right. Is my bag shut? I do not like rain inside.",
+      "zh": "好。我包关好了吗？不想让雨进去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Yes, the top is tight. Your things are safe.",
+      "zh": "关紧了，东西淋不到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Good. What time is it now? I have a meeting at nine.",
+      "zh": "那就好。现在几点了？我九点有个会。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Ten to eight. You have time for a cup of tea.",
+      "zh": "差十分八点。你还能喝杯茶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "No time. I will get one on the road. okay.",
+      "zh": "来不及了。路上买一杯。回头见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Let me have a look at the weather on my little box.",
+      "zh": "等等，我看下小盒子上的天气。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "It says rain at three this afternoon.",
+      "zh": "说下午三点有雨。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "That is after my meeting. I will be on the road then.",
+      "zh": "那是我开完会之后，正好在路上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "So the umbrella is a good idea. Keep it near.",
+      "zh": "所以带伞是对的，放近处。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "I will put it in my coat pocket. Ready now.",
+      "zh": "我放外套口袋里。准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Is that coat dry in the rain?",
+      "zh": "那件外套下雨天穿着会干吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Yes, it is. The maker said it keeps water out.",
+      "zh": "防的。卖家说能挡水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Good. Then I will not take the umbrella.",
+      "zh": "好，那我就不带伞了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Better take it. The wind may be strong.",
+      "zh": "还是带上吧，风可能大。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "True. The coat has a cover for the head, though.",
+      "zh": "也是。不过外套有帽子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "A head cover is not as good as an umbrella in a hard rain.",
+      "zh": "下大雨时头罩不如伞。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Right. I will put it in my bag.",
+      "zh": "好的。我放包里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Put it where you can get it in a short time.",
+      "zh": "放在好拿的地方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I will put it in the side pocket.",
+      "zh": "我放侧袋里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Good. Now you are ready. Have a good day.",
+      "zh": "好。现在准备好了。祝你顺利。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "One more thing. Is your coat warm enough?",
+      "zh": "还有一件事。你的外套够暖和吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "It is light but warm. The wind will not get in.",
+      "zh": "轻便但保暖，风进不来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "What about your shoes? Are they good for rain?",
+      "zh": "那你的鞋呢？下雨能穿吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "They are leather. Not the best for water, but good for a short walk.",
+      "zh": "是皮的。不太防水，但走一小段没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "You could take my old boots. They are by the door.",
+      "zh": "你可以穿我的旧靴子，就在门边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "No, they are too great for me. I will be quick.",
+      "zh": "不用，太大了。我走快点就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Right. If the rain gets hard, keep back till it is soft.",
+      "zh": "行。如果雨下大了，就等雨小再走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "I will. There is a store near the office with a cover over the door.",
+      "zh": "我会的。办公室附近有家店，门口有遮雨棚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Good. Then you have a place to keep dry.",
+      "zh": "好，那你有地方避雨。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Yes. I am off now. okay this evening.",
+      "zh": "嗯，我走了。晚上见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Your coat. Is the top up?",
+      "zh": "你的外套。帽子翻出来了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Yes, it is inside the collar. I will put it up if needed.",
+      "zh": "嗯，在领子里。需要就翻出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Good. And your bag? Will it keep dry?",
+      "zh": "好。那你的包呢？能防水吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "It is cloth, but I have a cover inside made of hard material.",
+      "zh": "布的，但我里面有个硬质材料的套子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Good. You have thought of everything.",
+      "zh": "很好。你想得挺周全。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Not all. I have no gloves. But it is not so cold.",
+      "zh": "也不是。手套忘带了，不过没那么冷。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "You may take my other one. It is in the drawer.",
+      "zh": "你可以拿我另一个，在抽屉里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "No, I will be all right. My hands will be in my pockets.",
+      "zh": "不用了，没事。手放口袋里就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Do as you like. The wind may get stronger after a time.",
+      "zh": "随你。等会儿风可能会变大。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Right, I am off now.",
+      "zh": "好了，我走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Let me see the sky again.",
+      "zh": "我再看看天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "The clouds are moving quicker now.",
+      "zh": "云现在走得更快了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Yes. Rain will come before four.",
+      "zh": "嗯，四点前会下雨。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Then I will keep the coat on. And the umbrella is in my bag.",
+      "zh": "那我穿着外套，伞也放包里了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Good. Keep it where you can get it quick.",
+      "zh": "好，放在随手能拿到的地方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "It is in the side pocket. Not hard to get.",
+      "zh": "在侧袋里，不难拿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "What about your shoes? Are they good on wet earth?",
+      "zh": "你鞋子呢？湿地上不打滑吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "These are leather. They keep water out well enough.",
+      "zh": "皮的，防水还行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Right. Then you are ready. Have a good day.",
+      "zh": "行，那准备好了。祝你一天顺利。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Thanks. okay this evening.",
+      "zh": "谢了，晚上见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "One minute. The wind is getting up. Does your coat have a cover for the head?",
+      "zh": "等一下。风变大了。你那外套有头套吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Yes, it is in the collar. I can put it up if needed.",
+      "zh": "有的，在领子里，需要的话可以翻出来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Put it up now. The wind will make your hair wet.",
+      "zh": "现在就戴上吧，风会把头发打湿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Good idea. There, it is up. How do I look?",
+      "zh": "好主意。好了，戴上了。看起来怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Like a man on a ship. But it will keep you dry.",
+      "zh": "像船上的一个人，不过能保你干爽。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Right! I will take that. Better than a wet head.",
+      "zh": "对！我接受这个说法，总比淋湿头好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "The rain may come before you are part way there.",
+      "zh": "雨可能在你走到一半时就下来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Then I will go quicker. Or take a short way.",
+      "zh": "那我就走快点，或者抄近路。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "The short cut by the old wall? That gets wet and dirty.",
+      "zh": "老墙那边的近路？那里容易变得又湿又脏。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "I see. But with these shoes and the coat, I am ready.",
+      "zh": "我明白。但穿着这鞋和外套，我准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "What about your bag? Is it safe from the rain?",
+      "zh": "你的包呢？能防雨吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "It is not. But I have a cover for it inside.",
+      "zh": "不能，不过里面有个包罩。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Then put it on now. No need to keep back.",
+      "zh": "那就现在套上，不用等了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "You are right. Here, I will do it now.",
+      "zh": "说得对。来，我现在就弄。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Good. You are ready for the rain now.",
+      "zh": "好。你现在准备好应对下雨了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Yes. I am ready for anything from the sky.",
+      "zh": "是啊，天上掉什么我都不怕。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Then off you go. Have a good day at work.",
+      "zh": "那就出发吧，上班愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Thank you. I will okay this evening.",
+      "zh": "谢了，晚上见你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "be safe. And keep an eye on the sky.",
+      "zh": "路上小心，多看看天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "I will. If it gets bad, I will keep still till it is soft.",
+      "zh": "会的。要是雨大了，我就等小了再回。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "That is a good idea. No need to get wet.",
+      "zh": "好主意，没必要淋湿。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Right. Well, I am off now.",
+      "zh": "嗯，那我走啦。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Go on then. Keep your cover in mind.",
+      "zh": "去吧，别忘了包罩。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "alright then.",
+      "zh": "回头见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "sure. I will have a warm drink for you.",
+      "zh": "好的，我给你备杯热饮。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "That sounds great. sure!",
+      "zh": "太好了，好的！",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "sure! And mind the step.",
+      "zh": "拜！当心台阶。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Right. I will be back before the rain gets bad.",
+      "zh": "好，我赶在下大雨前回来。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Good. I will keep the soup warm for you.",
+      "zh": "好，我给你温着汤。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "That is kind. See you again!",
+      "zh": "你真好，回头见！",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "早上七点，甲站在窗边看天，犹豫要不要带伞。乙提醒天气预报说下午有雨，两人商量着穿什么外套出门。",
+  "storyScript": "【开场·看窗外】清晨七点，窗外的天空灰蒙蒙的，云层压得很低。甲站在窗边，手指轻轻敲着窗框，目光追随着远处一片移动的云。乙端着热茶走过来，也探头看了一眼外面：这云走得急，怕是午后要变天。甲皱眉，想起天气预报确实说过下午会有阵雨，可眼下地面还是干的，阳光偶尔从云缝里漏下来，照得窗台上的绿植叶片发亮。到底要不要带伞呢？甲犹豫着，手指无意识地摸了摸外套口袋里的手机，仿佛想从天气App里找到确切的答案。\n\n【进行·决定穿衣】乙放下茶杯，走到衣柜前，抽出一件薄风衣递给甲：穿这件吧，防风又防水，万一淋了雨也不怕。甲接过来摸了摸面料，轻软却密实，领口还有个小帽子。可今天最高气温有二十度呢，穿这个会不会热？甲把风衣抖开比了比，又看了看窗外——风把树枝吹得微微摇晃，看来风不小。乙又从抽屉里翻出一把折叠伞，塞进甲的包里：带着吧，就算不下雨，挡挡风也好。甲点点头，把风衣套上，拉链拉到一半，又觉得领口有点闷，于是把袖子挽了两圈，露出小臂。\n\n【进行·出门准备】甲背上包，在玄关换鞋时又回头看了一眼窗外。云层似乎更厚了，有一片暗灰色的云正缓缓移过来，像一块浸了水的棉絮。乙递过保温杯，甲接过来，顺手把伞从包里抽出来检查了一下——伞骨完好，伞面没有破洞。甲把伞重新塞进包侧袋，拉好拉链。乙说：要是下午雨大，你就在公司多待一会儿，等雨小了再回来。甲笑着应了一声，推开门，一阵凉风扑面而来，带着潮湿的泥土气息。甲缩了缩脖子，把风衣的拉链拉到头，迈步走进清晨的微光里。\n\n【收束·出门准备】门在身后关上，乙听见脚步声沿着走廊远去。窗外的天空又亮了一些，云层裂开一道缝，阳光斜斜地照进来，在木地板上投下一块金色的光斑。乙端起已经微凉的茶，望着窗外甲的身影渐渐走远，风衣下摆被风吹起又落下。天气预报说下午有雨，但愿那把伞用不上。乙轻轻叹了口气，转身去收拾餐桌，盘算着晚上要不要熬一锅热汤。"
+}

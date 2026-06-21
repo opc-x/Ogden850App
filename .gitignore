@@ -12,6 +12,7 @@ coverage/
 # IDE / agent local
 .cursor/
 .claude/
+.agents/
 
 # Playwright / MCP artifacts
 .playwright-mcp/
@@ -57,3 +58,10 @@ public/assets/scenes/*.png
 
 # Cursor agent canvas scratch (chat artifacts, not source)
 canvases/
+
+# One-off LLM scene repair scratch (truth source: src/data/scenes/*.json)
+scripts/repair-scenes-gemini.ts
+scripts/apply-expert-fixes.ts
+scripts/fix-dialogue-quality.ts
+scripts/diagnose-failures.ts
+scripts/generate-dialogues-openai.ts

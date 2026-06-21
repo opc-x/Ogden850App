@@ -1,0 +1,820 @@
+{
+  "slug": "moving-house",
+  "sceneKey": "Moving House",
+  "titleZh": "搬家搬行李",
+  "titleEn": "Moving Day",
+  "tier": "P1",
+  "freqRank": 23,
+  "emoji": "📦",
+  "gradient": "linear-gradient(135deg,#fed7aa,#ea580c)",
+  "storyHook": "打包箱子，搬运装车，搬进新家",
+  "storyBlurb": "周六一早，甲和乙在旧家打包行李，准备搬进新租的房子。从装箱到装车，再到新家卸货摆好，一天内必须完成。",
+  "storyScript": "【开场·开始打包】周六清晨，阳光透过旧家窗帘的缝隙洒在地板上。甲站在客厅中央，四周堆满了纸箱和杂物。他拿起一卷胶带，撕下一段，熟练地封住一个装满书籍的箱子。乙从厨房走出来，手里抱着几个易碎的相框，小心翼翼地用报纸裹好，放进另一个标有「易碎品」的箱子里。两人动作迅速，但有条不紊。甲看了一眼墙上的钟，已经八点了，他们必须在日落前把所有东西搬完。\n\n【进行·搬运装车】打包完成后，真正的体力活开始了。甲和乙合力抬起那个沉重的实木书桌，一前一后，喊着口号，一步步挪向门口。汗水顺着他们的脸颊滑落，滴在地板上。下楼时，乙提醒甲注意转角，甲咬紧牙关，调整角度，终于把书桌塞进搬家车的车厢里。接下来是沙发、床垫——每件重物都考验着他们的体力与耐心。\n\n【进行·搬进新家】下午三点，搬家车停在了一栋老式公寓楼下。甲掏出新钥匙，打开单元门，乙扛起一个箱子跟在他身后。新家空荡荡的，阳光从窗户照进来，映在木地板上。甲指挥着乙：这个放卧室，那个放客厅。两人来回穿梭，把一件件行李搬上三楼。\n\n【收束·卸货摆好】傍晚时分，所有行李都堆在了新家的各个房间里。甲打开一个箱子，取出台灯放在床头柜上，又拿出几本书塞进书架。乙在厨房拆开餐具箱，把碗碟一个个放进橱柜。甲环顾四周，虽然还是一片狼藉，但家的轮廓已经显现。两人相视一笑。新家的灯光亮起，窗外暮色渐浓，一切终于安顿下来。",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "开始打包",
+      "goal": "放进箱子"
+    },
+    {
+      "beat": "进行",
+      "title": "搬运装车",
+      "goal": "抬重物上车"
+    },
+    {
+      "beat": "收束",
+      "title": "搬进新家",
+      "goal": "卸货摆好"
+    }
+  ],
+  "illustration": {
+    "label": "搬家",
+    "motifs": [
+      "box",
+      "truck",
+      "house"
+    ],
+    "accent": "#c2410c"
+  },
+  "narrative": {
+    "when": "周六一早，新家钥匙昨天刚拿到",
+    "where": "旧家到新家之间，搬家车上下",
+    "who": "甲（搬家的人）· 乙（帮忙的朋友）",
+    "how": "把东西一件件打包装箱再搬上车",
+    "method": "打包贵重物品、抬重家具上车、卸货进新家、按房间摆好",
+    "event": "甲新租的房子下周一就要入住，东西必须今天搬完"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Right, let's get these boxes sorted.",
+      "zh": "好了，咱们把这些箱子理一理。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "I will put paper round the glass things.",
+      "zh": "我用报纸把玻璃东西裹起来。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Good idea. I'll do the books.",
+      "zh": "好主意。我来弄书。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "That box is full now. Put a cover on it.",
+      "zh": "那个箱子满了。盖上吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Let us put a mark on it?",
+      "zh": "要不要在上面做个记号？",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Yes, put 'kitchen' on the side.",
+      "zh": "行，在侧面写'厨房'。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "These cups go in a small box.",
+      "zh": "这些杯子放小箱子里。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "I have a small one here. Use this.",
+      "zh": "我这儿有个小的。用这个。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "We have six boxes now. Not bad.",
+      "zh": "现在有六个箱子了。不错。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Keep going. The sun is up.",
+      "zh": "继续干。太阳出来了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Almost done with the boxes.",
+      "zh": "差不多打包完了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Good. Let's start on the great things.",
+      "zh": "好。咱们开始搬大件吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "This table is not light. We need a way.",
+      "zh": "这张桌子不轻。得想个办法。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Lift from under. I will take the back.",
+      "zh": "从底下抬。我抬后面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Ready? One, two, three... up!",
+      "zh": "准备好了吗？一、二、三……起！",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Good, it is moving. Now go down the steps bit by bit.",
+      "zh": "好，动了。现在一级一级往下走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Watch your step. The turn is tight.",
+      "zh": "注意脚下。拐角很窄。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Right. Let's put it in the back of the car.",
+      "zh": "好的。把它放车厢后面吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "I will push it. You keep it straight.",
+      "zh": "我来推。你把它弄直。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "There. One great thing done. What is after this?",
+      "zh": "好了。一个大件搞定。这之后是什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "That seat is a weight, but we can do it.",
+      "zh": "那个座位很重，但咱们能行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Right. Lift from the ends. On three.",
+      "zh": "好。从两头抬。数到三。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "One, two, three... up! Walk forward.",
+      "zh": "一、二、三……起！往前走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Keep still. Almost at the car. A bit more.",
+      "zh": "稳住。快到车了。再来一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "In it goes. That was hard work. Well done.",
+      "zh": "进去了。真费劲。干得好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Right. Now for the boxes with glass things. be safe.",
+      "zh": "好了。现在搬那些有玻璃东西的箱子。小心点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "I will take the top one. You get the side.",
+      "zh": "我拿上面那个。你抬侧面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Got it. Walk slow. The steps are narrow.",
+      "zh": "好了。慢点走。楼梯窄。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Watch your head on the door frame.",
+      "zh": "当心头撞到门框。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Thanks. Put it here. I will get another.",
+      "zh": "谢谢。放这儿吧。我去拿另一个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "How many more boxes are there?",
+      "zh": "还有多少箱子？",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Only six. Then the bed parts.",
+      "zh": "就六个了。然后是床的零件。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Good. I am getting tired but we are near the end.",
+      "zh": "好。我有点累了，但快结束了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Same here. But this is the last time down.",
+      "zh": "我也是。但这是最后一次下楼了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Great. Let's get the last of them and go.",
+      "zh": "太好了。咱们把最后几个搬了就走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Right. I will take the one with the books.",
+      "zh": "好。我来搬那个装书的箱子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Put the bed frame across the top?",
+      "zh": "床架横着放上面吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Yes, that will keep the boxes safe under it.",
+      "zh": "行，这样箱子在下面稳当。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Watch the edge. It is a tight turn.",
+      "zh": "小心边缘。转弯很窄。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Got it. One more push and we are done.",
+      "zh": "收到。再推一把就搞定了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Right. Let's get this one in.",
+      "zh": "好。把这个塞进去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Push it to the left a bit.",
+      "zh": "往左边推一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "There. It goes in. Good.",
+      "zh": "好了。刚好放进去。不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Now the small boxes on top.",
+      "zh": "现在把小箱子放上面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I will hand them up to you.",
+      "zh": "我递给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Here, take this one.",
+      "zh": "给，接住这个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "That is all right. Give me another.",
+      "zh": "好的。给我另一个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "That is the last box.",
+      "zh": "这是最后一个箱子了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Great. Shut the door.",
+      "zh": "太好了。关上门。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Let's go. New place here we come.",
+      "zh": "走吧。新家，我们来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I will drive. You sit and rest.",
+      "zh": "我来开车，你坐着休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Are you sure you know the way?",
+      "zh": "你确定认得路吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "I went yesterday to drop off the key. I know every turn.",
+      "zh": "昨天去拿了钥匙，每个转弯都记得。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Right. I forgot you did that.",
+      "zh": "对，我忘了你去过。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "About forty minutes.",
+      "zh": "大概四十分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "The boxes will not move in the back?",
+      "zh": "箱子在后面不会滑动吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "I put a line round them. All tight.",
+      "zh": "我用绳子捆了，很稳。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Good. I do not want to hear breaking sounds from behind us.",
+      "zh": "好，我不想听到后面传来碎裂声。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Nothing in those boxes can break. The glass things are in the soft part.",
+      "zh": "那些箱子里没有易碎的，玻璃东西都在软垫里包着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "I think I may fall asleep. My arms are dead.",
+      "zh": "我可能要睡着了，手臂完全没力气了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Sleep. I will wake you when we get there.",
+      "zh": "睡吧，到了我叫你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Here we are.",
+      "zh": "到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Third floor, right side.",
+      "zh": "三楼，右边那扇门。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Open it. Let us see.",
+      "zh": "打开，我们看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "After you.",
+      "zh": "您先请。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Empty. The floor is good wood.",
+      "zh": "空荡荡的，地板是好木头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "It will fill up fast. Where do you want the big seat?",
+      "zh": "很快就会满了，大沙发放哪里？",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "By the window. I want to sit there when the sun comes in.",
+      "zh": "靠窗户那边，阳光进来的时候我想坐那儿看看外面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Good idea. I will bring it up first.",
+      "zh": "好主意，我先把它搬上来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "I will hold the door.",
+      "zh": "我来撑着门。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "This is... very... heavy.",
+      "zh": "这……真……重。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Lift from your legs, not your back.",
+      "zh": "用腿的力量，别用背。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Easy to say from where you are standing.",
+      "zh": "站在你那个位置说起来很轻松。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Do you want me to take a side?",
+      "zh": "你要我来抬一边吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Yes — the door end. Here.",
+      "zh": "要——门这边，来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Got it. On three — one, two, three.",
+      "zh": "拿好了，数三——一、二、三。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "It is through. Keep going.",
+      "zh": "过了，继续走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Turn left — the room is to the left.",
+      "zh": "往左拐，房间在左边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "I see it.",
+      "zh": "我看见了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Down — gently.",
+      "zh": "放下——轻点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "There. By the window.",
+      "zh": "好了，窗户旁边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "It looks right here.",
+      "zh": "放在这里挺对的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "It does. What is next?",
+      "zh": "确实，下一件是什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "The sleeping thing. I can not sleep on the floor tonight.",
+      "zh": "床，今晚不能睡地板。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "The frame first, then the soft part.",
+      "zh": "先拿床架，再拿床垫。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "The soft part — is that the one in the blue cover?",
+      "zh": "床垫——是套蓝色罩子的那个吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "That is the one.",
+      "zh": "就是那个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Right. I will carry the frame. You take the boxes from the car.",
+      "zh": "好，我来抬床架，你负责把箱子从车上搬下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Done.",
+      "zh": "成交。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "A",
+      "en": "Last box.",
+      "zh": "最后一个箱子了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "B",
+      "en": "Let me take it.",
+      "zh": "我来拿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "A",
+      "en": "I am all right. Just... slow.",
+      "zh": "我行，只是……慢了点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "B",
+      "en": "You did most of the work today.",
+      "zh": "你今天做了大部分了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "A",
+      "en": "That is what best friends are for.",
+      "zh": "这就是最好的朋友该做的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "B",
+      "en": "Then this best friend will make dinner. That is what I will do.",
+      "zh": "那么这个最好的朋友来做晚饭，这是我要做的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "A",
+      "en": "Done. But first — where does this box go?",
+      "zh": "成交，不过先说——这个箱子放哪儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "B",
+      "en": "That is the kitchen one. In there.",
+      "zh": "那个是厨房的，放里面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "A",
+      "en": "Done. I am sitting down now.",
+      "zh": "好了，我要坐下来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "B",
+      "en": "Sit on the seat by the window. You have earned it.",
+      "zh": "坐窗边的沙发，你赚到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "A",
+      "en": "It is a very good seat.",
+      "zh": "这沙发真不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "B",
+      "en": "I have had it for four years.",
+      "zh": "我用了四年了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "A",
+      "en": "It does not look four years old.",
+      "zh": "看起来不像用了四年的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "B",
+      "en": "I be safe of my things.",
+      "zh": "我爱护我的东西。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "A",
+      "en": "This place looks like a home already.",
+      "zh": "这地方看起来已经像个家了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "B",
+      "en": "Just from one seat?",
+      "zh": "就靠一张沙发？",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "A",
+      "en": "And the light. It is warm in here.",
+      "zh": "还有光线，这里很温暖。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "B",
+      "en": "I picked this room because of the window.",
+      "zh": "我选这个房间就是因为那扇窗户。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "A",
+      "en": "Good pick.",
+      "zh": "选得好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "B",
+      "en": "Thank you. For everything today.",
+      "zh": "谢谢你，今天的一切。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "A",
+      "en": "Well, that is what best friends are for.",
+      "zh": "这就是最好朋友的用处。",
+      "beat": "收束"
+    }
+  ]
+}

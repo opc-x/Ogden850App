@@ -1,0 +1,825 @@
+{
+  "slug": "restaurant",
+  "sceneKey": "Restaurant",
+  "titleZh": "餐厅点菜买单",
+  "titleEn": "Dining Out",
+  "tier": "P0",
+  "freqRank": 2,
+  "emoji": "🍽",
+  "gradient": "linear-gradient(135deg,#ffedd5,#fb923c)",
+  "storyHook": "入座看菜单，点餐上菜，吃完结账离开",
+  "storyBlurb": "周五晚上，小李要请同事吃顿川菜——朋友能吃辣，但不吃香菜。他提前订了靠窗的桌，推开玻璃门，服务员已经候在门口了。",
+  "storyScript": "【开场·入座看单】周五晚上七点半，甲和朋友推开玻璃门走进餐厅，服务员乙迎上前来，查了预订、带他们到靠窗的四人桌。甲接过菜单，翻了两页，心里盘算预算，悄悄问乙今天什么最鲜。乙低声说鱼是今天到的，还特别提醒红色的那道辣味可以备注减辣。\n\n【进行·点餐问菜】甲和朋友商量着点：一个凉菜少辣、一个热菜不放香菜、一碟油炒蔬菜。乙记单时问清楚每道菜的备注，还主动说今天牛肉不错，甲想了想又加了一道。等待期间，两人隔着窗玻璃看街灯一盏盏亮起，餐厅里暖融融的。\n\n【进行·上菜用餐】凉菜先来，甲夹了一块，点头说辣度刚好。热菜依次上桌，朋友扒了一碗饭之后说比上次那家好吃。甲笑着让乙再加一碗饭，乙回头说今晚牛肉是厨师特别推的，甲让朋友多吃两口。饭快吃完，朋友说肚子太撑，但还是把最后一块鱼吃完了。\n\n【收束·结账告别】甲让乙结账，看到总额比预想的少三十块——因为凉菜今天特价。甲付了钱，收了小票，让乙把剩下的零头留着。走出餐厅，朋友说下次还来，甲说那就定好，提前订个窗边桌。",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "入座看单",
+      "goal": "找位子要菜单"
+    },
+    {
+      "beat": "进行",
+      "title": "点餐上菜",
+      "goal": "点食物和饮料"
+    },
+    {
+      "beat": "进行",
+      "title": "用餐交流",
+      "goal": "评价味道"
+    },
+    {
+      "beat": "收束",
+      "title": "结账告别",
+      "goal": "付饭钱离开"
+    }
+  ],
+  "illustration": {
+    "label": "餐厅用餐",
+    "motifs": [
+      "table",
+      "plate",
+      "menu"
+    ],
+    "accent": "#ea580c"
+  },
+  "narrative": {
+    "when": "周五晚上七点半，两人约在市中心吃饭",
+    "where": "临街中餐厅，靠窗四人桌",
+    "who": "甲（请客的客人）· 乙（餐厅服务员）",
+    "how": "提前电话留了位子，到店后看纸质菜单",
+    "method": "入座、看菜单、问菜、点菜、吃饭、要单结账、收小票",
+    "event": "甲想请朋友吃顿好的，但预算有限，得在好吃和省钱之间找平衡"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good evening. Do you have a booking?",
+      "zh": "晚上好，请问有预订吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Yes, under my name. Seven thirty, two of us.",
+      "zh": "有的，我提前订了，七点半，两位。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Right, this way. Your window table is ready.",
+      "zh": "好的，请跟我来，靠窗的桌子准备好了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Oh good — my friend likes a window seat.",
+      "zh": "太好了，我朋友喜欢坐窗边。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Here you are. I will leave two lists with you.",
+      "zh": "这边请，我给你们放两份菜单。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Thank you. This place looks very good.",
+      "zh": "谢谢，这地方看着不错。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "We hope so. Take your time with the list.",
+      "zh": "希望您喜欢，慢慢看，不用着急。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Quick question — what is good tonight?",
+      "zh": "请问今天什么最好吃？",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "The fish came in today. Very good. And the cold meat plate is popular.",
+      "zh": "鱼是今天到的，非常新鲜；凉菜那道卤肉也很受欢迎。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Good. One thing — my friend does not eat cilantro.",
+      "zh": "好的，有一点要说——我朋友不吃香菜。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "No cilantro. I will make a note. Anything else?",
+      "zh": "不放香菜，我记下来，还有别的要求吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "She can not eat very spicy food. A little is fine, but not a lot.",
+      "zh": "她不能吃太辣的，少辣可以，但不能多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I can ask the cook to go easy on the spicy for any dish. Just say the word.",
+      "zh": "每道菜都可以让厨师少放辣，您告诉我哪道要备注。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Let me look at the list first. Give me five minutes.",
+      "zh": "我先看一下菜单，给我五分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Of course. I will come back when you are ready.",
+      "zh": "当然，您准备好了叫我就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Right — the cold plate first. The meat one, easy on the sharp.",
+      "zh": "好，先来个凉菜——卤肉那道，少辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Cold meat plate, easy on the sharp. Got it.",
+      "zh": "凉菜卤肉少辣，记下了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "And the fish for a warm plate. No cilantro, as I said.",
+      "zh": "热菜要那道鱼，不放香菜，就像我说的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Fish, no cilantro. Any other warm plates?",
+      "zh": "鱼不放香菜，还要别的热菜吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "What is the stir-fried vegetables? The one on the board.",
+      "zh": "那个油炒蔬菜是什么？就是黑板上写的那道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "That is a green vegetable, cooked in good oil. A little sharp at the end.",
+      "zh": "那是空心菜，用好油炒的，最后有一点点辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Sounds good. We will have one. Keep the sharp small.",
+      "zh": "听起来不错，来一份，辣味少放点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "And tonight the beef is very good — the cook did it a special way.",
+      "zh": "今晚的牛肉也很好——厨师用了特别的做法。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "The beef? How much more would that be?",
+      "zh": "牛肉？要多加多少钱？",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Sixty eight. It comes with a warm sauce on the side.",
+      "zh": "六十八，配一个热蘸酱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "All right. Add the beef. My friend loves beef.",
+      "zh": "行，加一道牛肉，我朋友最爱吃牛肉了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Beef with warm sauce. And to drink?",
+      "zh": "牛肉配热蘸酱，饮料要什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Just water — two, no ice.",
+      "zh": "就要水，两杯，不加冰。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Right. Rice for two as well?",
+      "zh": "好的，再来两份米饭吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Yes, two rice. That should be everything.",
+      "zh": "对，两碗米饭，应该齐了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Let me read it back — cold meat plate easy sharp, fish no cilantro, vegetable small sharp, beef with sauce, two rice, two water.",
+      "zh": "我复述一下——凉菜卤肉少辣、鱼不放香菜、空心菜少辣、牛肉配热酱、两碗饭、两杯水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "That is right. You got it all.",
+      "zh": "对的，都记住了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "I will put the order in now. The cold plate will come first, about five minutes.",
+      "zh": "我现在去下单，凉菜大概五分钟先上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Good. We are in no hurry tonight.",
+      "zh": "好的，我们今晚不赶时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Here is your water.",
+      "zh": "给你们水来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Thank you. This room has a nice feeling.",
+      "zh": "谢谢。这个地方氛围挺好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "We like it. We have been here eight years.",
+      "zh": "我们也喜欢，这家已经开了八年了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Eight years! We walked past before but never came in.",
+      "zh": "八年！我们之前路过几次但一直没进来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Well, you are here now. I will check on your order.",
+      "zh": "现在来了就好，我去看看您的菜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Take your time.",
+      "zh": "不用着急。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Here is your cold plate — meat, easy sharp. I told the cook no cilantro for every dish.",
+      "zh": "凉菜来了——卤肉少辣，我跟厨师说了每道菜都不放香菜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "You remembered everything. Thank you.",
+      "zh": "你把所有备注都记住了，谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Of course. I hope you enjoy it.",
+      "zh": "应该的，希望您喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "This cold plate is very good. The colour alone looks right.",
+      "zh": "这凉菜看着就好，光颜色就对了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "The cook uses an old way for the cold plate. Been the same for years.",
+      "zh": "厨师做凉菜用的是老方子，多年没变过。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "My friend already cleaned half the plate. That is the best sign.",
+      "zh": "我朋友已经吃掉一半了，这是最好的评价。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Ha! I will let the cook know.",
+      "zh": "哈！我去告诉厨师。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Not too sharp at all — just enough. She was worried.",
+      "zh": "辣度刚好，一点不过头——她之前还担心呢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Here is the fish plate. Mind — the dish is warm.",
+      "zh": "鱼来了，注意盘子烫。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Oh, it smells very good.",
+      "zh": "哦，闻着真香。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Fresh today. No cilantro, as you asked.",
+      "zh": "今天到的鱼，香菜没放，按您说的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "The fish is soft. And the sauce has a good depth.",
+      "zh": "鱼肉很嫩，酱也有层次。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "That is the cook's own sauce. He has been making it since we opened.",
+      "zh": "那是厨师自己调的酱，从开店就用到现在。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "I can tell. It is different from other places.",
+      "zh": "能尝出来，跟其他地方不一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Here is the vegetable. Small sharp, as you asked.",
+      "zh": "空心菜来了，少放辣，按您说的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "The oil smells like it was made here.",
+      "zh": "这个油香，感觉是自己做的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "It is. Old way. Been the same since we opened.",
+      "zh": "没错，老方法，从开店就是这个味道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "You keep saying that. This place has its own way of doing things.",
+      "zh": "你一直提这个，这家店有自己的坚持。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Eight years of the same way. Some things should not change.",
+      "zh": "八年如一，有些东西就是不该变。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "I agree. And here is the beef — we almost forgot.",
+      "zh": "我同意。牛肉来了，差点忘了还有这道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Here is the beef plate. Warm sauce on the side.",
+      "zh": "牛肉来了，热酱放旁边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "My friend stopped eating the fish to look at it.",
+      "zh": "我朋友放下鱼筷子看这道了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "The cook will be happy to hear that.",
+      "zh": "厨师知道了会很高兴的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Can we have more rice? One more cup, please.",
+      "zh": "可以再加一碗饭吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Of course. Right away.",
+      "zh": "当然，马上来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "I said we would not eat too much tonight.",
+      "zh": "我说今晚不多吃的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Ha. You said that five minutes ago.",
+      "zh": "哈，您五分钟前才说的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Exactly. And now we need more rice.",
+      "zh": "就是啊，结果还是要加饭。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Here is your extra rice. And more water?",
+      "zh": "加饭来了，再加点水吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Please. This meal is going very well.",
+      "zh": "要，谢谢，这顿饭吃得非常好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "I am glad. Is everything to your taste?",
+      "zh": "我很高兴听到，每道都合口味吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Better than I hoped. The beef is the best thing on the table.",
+      "zh": "比我预期的还好，牛肉是这桌最好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "It is the cook's favourite to make. He puts a lot of time into it.",
+      "zh": "这是厨师最喜欢做的一道，他花了很多心思。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Tell him it worked. My friend put her bowl down and just ate the beef for five minutes.",
+      "zh": "告诉他成功了——我朋友放下碗，光吃牛肉吃了五分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Ha! I will. Do you have room for something sweet?",
+      "zh": "哈！我会转告，还有地方吃点甜的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "What do you have?",
+      "zh": "你们有什么甜品？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Cold sweet rice in a small cup, and a fruit plate with what is in season.",
+      "zh": "有小杯的甜米糊，还有一个当季水果拼盘。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "My friend says sweet rice. She always goes for the sweet things.",
+      "zh": "我朋友说要甜米糊，她一向爱吃甜的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Two cups?",
+      "zh": "两杯吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Two cups. We said no dessert but here we are.",
+      "zh": "两杯，我们说好不吃甜品的，还是点了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Ha. That is often how it goes.",
+      "zh": "哈，经常这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Here are the sweet rice cups — cold and very sweet.",
+      "zh": "甜米糊来了——好凉好甜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Glad you like it.",
+      "zh": "您喜欢就好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "This has been a very good meal. Better than the last three places I brought her.",
+      "zh": "这顿饭吃得太满意了，比上次带她去的三家都好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "You are very kind. Would you like to see the paper now?",
+      "zh": "您太客气了，现在要看单子吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Yes, when you are ready.",
+      "zh": "好，您准备好了就拿过来吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "One moment.",
+      "zh": "稍等一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "The street lights look nice from here. My friend kept looking out all evening.",
+      "zh": "从这里看街灯很好看，我朋友一晚上一直往外看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "The window table is always the first to go. Good that you booked it.",
+      "zh": "靠窗的桌子总是最先订出去的，幸好你提前定了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "I almost forgot to book. Lucky I remembered this morning.",
+      "zh": "我差点忘记订，幸好早上想起来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Here is your paper. Two hundred and eight in all.",
+      "zh": "单子来了，一共二百零八。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Two hundred and eight? I thought it would be more.",
+      "zh": "二百零八？我以为要更多的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "The cold plate is on special today — thirty off. It worked in your favour.",
+      "zh": "今天凉菜特价，减了三十块，帮您省了点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "That is a nice surprise. Here is two fifty — keep the change.",
+      "zh": "意外之喜，给你二百五，零头不用找了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Thank you very much. Do you need a receipt?",
+      "zh": "非常感谢，需要小票吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Yes please — for the record.",
+      "zh": "要，留个记录。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "One moment. Here is your receipt.",
+      "zh": "稍等，小票来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Thank you. My friend wants to come back next week.",
+      "zh": "谢谢，我朋友说下周还要来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Please do. We are open every day.",
+      "zh": "欢迎，我们每天都开门。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Can you keep the window table for us? Same name.",
+      "zh": "能帮我们留住这个靠窗的桌子吗？同一个名字。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "I will put it down now. What day?",
+      "zh": "我现在记，哪天？",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Friday again. Seven thirty.",
+      "zh": "还是周五，七点半。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Window table, Friday, seven thirty. I have it.",
+      "zh": "靠窗桌，周五，七点半，记下了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "And please tell the cook — the beef was the best thing we have had in a long time.",
+      "zh": "还有请帮我转告厨师——牛肉是我们好久没吃到这么好的了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I will tell him tonight. He will be very pleased.",
+      "zh": "我今晚就告诉他，他会很高兴的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "And no cilantro next Friday. My friend will remember if you forget.",
+      "zh": "下周五也别放香菜，我朋友记性好，你要是忘了她会说的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Ha! I have it in the notes already. No cilantro.",
+      "zh": "哈！我备注里已经写了，不放香菜。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Perfect. Thank you for tonight.",
+      "zh": "太好了，感谢今晚的服务。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "It was our pleasure. Have a good evening.",
+      "zh": "我们也很高兴招待您，晚上好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Good night. See you Friday.",
+      "zh": "晚安，周五见。",
+      "beat": "收束"
+    }
+  ]
+}

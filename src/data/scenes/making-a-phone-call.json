@@ -1,0 +1,824 @@
+{
+  "slug": "making-a-phone-call",
+  "sceneKey": "Making a Phone Call",
+  "titleZh": "打电话预约",
+  "titleEn": "Booking by Phone",
+  "tier": "P0",
+  "freqRank": 3,
+  "emoji": "📞",
+  "gradient": "linear-gradient(135deg,#dbeafe,#3b82f6)",
+  "storyHook": "拨号问候，说明来意，确认时间后挂断",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "拨号问候",
+      "goal": "拨号接听"
+    },
+    {
+      "beat": "进行",
+      "title": "说明来意",
+      "goal": "说明要什么"
+    },
+    {
+      "beat": "进行",
+      "title": "确认细节",
+      "goal": "约时间留名字"
+    },
+    {
+      "beat": "收束",
+      "title": "礼貌挂断",
+      "goal": "道谢告别"
+    }
+  ],
+  "illustration": {
+    "label": "电话预约",
+    "motifs": [
+      "phone",
+      "clock"
+    ],
+    "accent": "#2563eb"
+  },
+  "narrative": {
+    "when": "周三下午，牙医诊所五点下班前",
+    "where": "甲在自己办公室，乙在诊所前台",
+    "who": "甲（患者）· 乙（诊所接线员）",
+    "how": "用手机拨打诊所电话，安静环境通话",
+    "method": "自报姓名、说明牙疼、选时间、记下预约、确认地址",
+    "event": "甲牙疼两天了，必须今天约上明天的号，否则耽误出差"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good day, this is the place for teeth. How may I help you?",
+      "zh": "下午好，这里是看牙的地方。有什么能帮您的？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "I would like to see someone about my tooth.",
+      "zh": "我想找个人看看我的牙。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Right, sir. What name, please?",
+      "zh": "好的，先生。请问您怎么称呼？",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Yes, that is me.",
+      "zh": "是的，是我。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Thank you, Brown. What is the trouble?",
+      "zh": "谢谢，布朗。是什么问题？",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "The pain in my right lower tooth has been two days now.",
+      "zh": "我右下边的牙疼了两天了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "I see. Is it a sharp pain or a slow pain?",
+      "zh": "我明白了。是刺痛还是隐隐作痛？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "It comes and goes, sharp at times. Having food is hard.",
+      "zh": "一阵一阵的，有时候很刺痛。吃东西都困难。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "That sounds bad. We are free tomorrow at ten in the morning.",
+      "zh": "听起来挺严重的。我们明天上午十点有空。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "That is good. I will take it.",
+      "zh": "那太好了。我就约这个时间。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Okay. Let me check our system for your card.",
+      "zh": "好的。我先在系统里查一下您的卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "I have my card ready. It is in my pocket.",
+      "zh": "我准备好卡了，就在我口袋里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Good. Have you been to our dentist office before?",
+      "zh": "好的。您以前来过我们牙医诊所吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Yes, last year. But now my lower tooth is in bad pain.",
+      "zh": "有的，去年来过。但现在我下牙疼得厉害。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "I see. We will need to check it and maybe make a picture.",
+      "zh": "我明白了。我们需要做个检查，可能还要拍个片。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "The pain is sharp. I could not sleep last night.",
+      "zh": "疼得很刺骨。我昨晚都没睡着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "That is not good. The doctor will check you tomorrow at ten.",
+      "zh": "那可不好。医生明天上午十点会给您看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Thank you. That works well for me.",
+      "zh": "谢谢。这个时间对我挺合适的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Please bring your medical card with you.",
+      "zh": "请带上您的医保卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "I will. Should I come a bit early?",
+      "zh": "我会的。我需要稍微早点来吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Yes, about five minutes early to write down your address.",
+      "zh": "是的，提前大约五分钟，来登记一下您的地址。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "I will do that. I know the street name, High Street.",
+      "zh": "我会的。我知道那条街的名字，高街。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Right. Is it a sharp pain or a slow one?",
+      "zh": "好的。是刺痛还是隐隐作痛？",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Sharp, like a shock. It keeps me up at night.",
+      "zh": "刺痛，像电击一样。晚上都睡不好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "That is not good. We will have a look tomorrow. Please come at ten.",
+      "zh": "那可不好。我们明天检查一下。请十点到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Thank you. Is there anything I need to take?",
+      "zh": "谢谢。我需要带什么东西吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Yes, your medical card and your name card, please.",
+      "zh": "是的，请带上医保卡和姓名卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Where is the place?",
+      "zh": "这个地方在哪里？",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "It is 15 High Street, near the old church.",
+      "zh": "在高街15号，老教堂附近。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Right. I will be there at ten tomorrow.",
+      "zh": "好的。我明天十点到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Good. And your number for the phone, please.",
+      "zh": "好的。请再留一下您的电话号码。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "It is 07700 900 382.",
+      "zh": "07700 900 382。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Thank you. I will leave, Brown.",
+      "zh": "谢谢。我先走了，布朗。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Thank you. sure.",
+      "zh": "谢谢你。好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "sure. be safe.",
+      "zh": "好的。安全第一。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "sure. I will put the line down now.",
+      "zh": "好的。我挂电话了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "One more thing. Please take your card.",
+      "zh": "还有一件事。请带上您的卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Yes, I have it. And my medical card too.",
+      "zh": "好的，我带着。医保卡也带着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Good. So all is ready for tomorrow.",
+      "zh": "很好。那明天的预约就都安排好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Thank you. I will okay at ten.",
+      "zh": "谢谢你。明天十点见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Right. So I will come in at ten.",
+      "zh": "好的。那我十点到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Yes, ten. Please be on time.",
+      "zh": "是的，十点。请准时。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "I will. Do I need to put my name down first?",
+      "zh": "我会的。去之前要先登记吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "No need. Just come to the front and give your name.",
+      "zh": "不用。直接来前台报名字就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Good. And what about the price for a first look?",
+      "zh": "好的。那初诊多少钱？",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "It is thirty eight for a look over.",
+      "zh": "检查费是三十八英镑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "That is good. Do I give money that day?",
+      "zh": "可以。当天付吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Yes, after the test. We take card or notes.",
+      "zh": "是的，检查后付。刷卡或现金都行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Right. I will take my card then.",
+      "zh": "好的。那我带卡来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Right. I will leave, A.",
+      "zh": "好的。我先走了，甲。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "One more thing. What if the pain gets worse tonight?",
+      "zh": "再问一句。要是今晚疼得更厉害怎么办？",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Get a medicine from the store. No more than two.",
+      "zh": "去店里买个止痛药。别超过两片。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "And if I can't get to sleep?",
+      "zh": "那要是疼得睡不着呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Put a cold cloth on your face. That helps.",
+      "zh": "拿冷毛巾敷脸。管用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "I will do that. Is there a number for night talk?",
+      "zh": "我试试。有夜间联系电话吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "No, we are shut after five. But the hospital is open.",
+      "zh": "没有，五点后关门。但医院开着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Quite. I will keep that in mind.",
+      "zh": "也行。我记下了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Good. Do you have any other questions?",
+      "zh": "好的。还有其他问题吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "No, that is all. Thank you for your help.",
+      "zh": "没了，就这些。谢谢你帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "You are welcome. I will leave at ten.",
+      "zh": "不客气。明天十点见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Right. alright then.",
+      "zh": "好。到时候见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "One small thing, sir. Please come five minutes early to put your name on a paper.",
+      "zh": "先生，还有个小事情。请提前五分钟来填张表。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Five minutes early. That is good.",
+      "zh": "提前五分钟。没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "And have your card ready.",
+      "zh": "还有请准备好证件。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I have it here. Will do.",
+      "zh": "我带着呢。会的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Great. Do you have the name of the road?",
+      "zh": "太好了。您知道那条路的名字吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Yes, I have it on paper. Road name, number 88.",
+      "zh": "知道，我记在纸上了。路名，88号。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "That is the one. Second floor, room 203.",
+      "zh": "就是那里。二楼，203室。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Second floor, 203. Got it.",
+      "zh": "二楼，203。记下了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Right. I will leave.",
+      "zh": "好的。我先走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Please take your card and papers.",
+      "zh": "请带上你的医保卡和证件。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "I will. What more?",
+      "zh": "会的。还有别的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "No, that is all. okay at ten.",
+      "zh": "没了，就这些。十点见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "alright then. By the way, do you take pictures inside the body?",
+      "zh": "到时候见。顺便问一下，你们拍身体内部的片子吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Yes. The doctor will see if you need one.",
+      "zh": "是的。医生会看您是否需要。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Good. My tooth might need a look inside.",
+      "zh": "好的。我这牙可能得看看里面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "We will be safe of it. Do you have any pain now?",
+      "zh": "我们会处理的。您现在疼吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "A bit, but that is good till tomorrow.",
+      "zh": "有点，但能忍到明天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Take a medicine if you need. I will leave.",
+      "zh": "需要的话吃点止痛药。我先走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "I will. Thank you. sure.",
+      "zh": "好的。谢谢你。好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Right. So tomorrow at ten, yes?",
+      "zh": "行。那明天十点，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "That is right. Your name is on the list.",
+      "zh": "对的。您名字已经登记上了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Do I have to take my medical card and my name card?",
+      "zh": "我还要带医保卡和身份证吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Yes, please. And any pictures if you have them.",
+      "zh": "是的，请带上。如果有片子也带上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "I have no pictures of my bones. Will you make new ones?",
+      "zh": "我没有骨头的照片。你们会拍新的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "The doctor will have a look. If we need it, we do it here.",
+      "zh": "医生会看情况。需要的话我们这里可以拍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Good. How long will the first look take?",
+      "zh": "好的。初诊大概要多久？",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "About thirty minutes. Then we see what to do after that.",
+      "zh": "大约半小时。然后看下一步怎么处理。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "That is good. I have a plane after my meal.",
+      "zh": "那时间够。我吃完饭后有航班。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "We will get you out in time. No need to be troubled.",
+      "zh": "我们会让您及时离开的。不用烦恼。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Right. I am ready for tomorrow.",
+      "zh": "好的，那我明天就准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Yes, you are. Is there anything more I can do?",
+      "zh": "是的，您都准备好了。还有什么我能帮您的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "No, that is all. But what if the pain gets worse tonight?",
+      "zh": "没了，就这些。但要是今晚疼得更厉害怎么办？",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Get a medicine from the store. Do not take more than the box says.",
+      "zh": "去药店买个止痛药。别超过药盒上的用量。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Good idea. I have some at the house. I will take one before bed.",
+      "zh": "好主意。家里有，我睡前吃一片。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "That is wise. And keep a cold cloth on your face if it is bad.",
+      "zh": "那很明智。要是疼得厉害，用冷毛巾敷脸。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I will do that. Thank you for your help. I will leave.",
+      "zh": "我会的。谢谢你的帮忙。我先走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "You are welcome. I will leave.",
+      "zh": "不客气。我先走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "sure. And thanks for the suggestion.",
+      "zh": "好的。也谢谢你的建议。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "sure. Get some rest tonight.",
+      "zh": "好的。今晚好好休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "I will. You have a good evening too.",
+      "zh": "我会的。你也晚上好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Thank you. The door is still open if you need us.",
+      "zh": "谢谢。如果你需要我们，门还开着。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "That is kind. I will keep that in mind.",
+      "zh": "你真好。我会记住的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Have a safe walk to your car.",
+      "zh": "走到推车那边注意安全。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I am still in my office, but thanks.",
+      "zh": "我还在办公室，不过谢谢。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Oh, right. Well then, rest up.",
+      "zh": "哦，对。那好吧，好好休息。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "rest up. And sure.",
+      "zh": "好好休息。好的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Well, rest up. And sure.",
+      "zh": "好。再会。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Goodbye. Get some rest tonight.",
+      "zh": "再见。今晚好好歇着。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Well, i will. You have a good evening too.",
+      "zh": "我会的。你也晚安。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "牙疼两天，明天就要出差，必须今天约上号。一通电话，能否顺利挂上明天的牙医？",
+  "storyScript": "【开场·拨号问候】周三下午四点，甲坐在办公室的转椅上，左手捂着半边脸，右手拿起手机拨出牙医诊所的号码。电话响了两声，那头传来乙清晰而温和的声音：「您好，这里是康齿牙医诊所，请问有什么可以帮您？」甲清了清嗓子，尽量让声音听起来不那么含混：「你好，我想预约看牙。」乙应声：「好的，先生，请问您怎么称呼？」甲报上姓名，乙在键盘上敲击记录。\n\n【进行·说明来意】甲说牙疼已经两天了，右边下排的牙齿一阵阵抽痛，吃东西都困难。乙询问疼痛的性质和持续时间，甲一一回答，语气里带着急切。乙安抚道：「您别急，我们明天上午十点还有一个空位，您看可以吗？」甲心里一松，连忙说可以。乙补充：「这个时间是半小时的初诊检查，如果后续需要治疗再另约时间。」甲表示理解。\n\n【进行·确认细节】乙请甲留下联系电话，并核对了一遍：「您是甲先生，明天上午十点，对吗？」甲确认。乙又说：「请您记一下我们的地址，XX路XX号，到了前台报名字就行。」甲从笔筒里抽出一支笔，在便签纸上飞快记下。乙提醒：「明天请带上医保卡和身份证。」甲应声，心里盘算着时间，明天看完牙还来得及赶下午的飞机。\n\n【收束·礼貌挂断】甲道谢：「好的，谢谢你，明天见。」乙礼貌回应：「不客气，祝您早日康复，明天见。」电话挂断，甲放下手机，长舒一口气，牙疼似乎也缓解了几分。他拿起便签纸看了一眼，小心地夹进记事本里。"
+}

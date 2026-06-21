@@ -1,0 +1,820 @@
+{
+  "slug": "sports",
+  "sceneKey": "Sports",
+  "titleZh": "操场运动健身",
+  "titleEn": "Sports and Exercise",
+  "tier": "P1",
+  "freqRank": 32,
+  "emoji": "⚽",
+  "gradient": "linear-gradient(135deg,#d1fae5,#34d399)",
+  "storyHook": "热身锻炼，比赛或跑步，放松聊天",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "到运动场",
+      "goal": "热身"
+    },
+    {
+      "beat": "进行",
+      "title": "开始锻炼",
+      "goal": "跑步打球"
+    },
+    {
+      "beat": "收束",
+      "title": "放松回家",
+      "goal": "拉伸聊赛果"
+    }
+  ],
+  "illustration": {
+    "label": "运动健身",
+    "motifs": [
+      "ball",
+      "run",
+      "water"
+    ],
+    "accent": "#059669"
+  },
+  "narrative": {
+    "when": "周六下午四点，约好的足球比赛时间",
+    "where": "学校操场",
+    "who": "甲（队员）· 乙（队友）",
+    "how": "热身后开始比赛，中场休息聊几句",
+    "method": "热身拉伸、开始比赛、跑步传球、赛后放松聊战况",
+    "event": "甲这周练习不够，担心比赛中体力跟不上"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Right, let's get started with some stretching.",
+      "zh": "好了，咱们开始拉伸吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "I have not run much this week.",
+      "zh": "我这周没怎么跑。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Oh, you will be all right after a warm-up.",
+      "zh": "哦，热热身就好了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "I hope so. My legs are a bit tired.",
+      "zh": "希望吧。我的腿有点累。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Do some leg stretches. That will help.",
+      "zh": "做几个腿部拉伸。会有帮助的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Good idea. I will do some more.",
+      "zh": "好主意。我再做一些。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "The grass smells good today.",
+      "zh": "今天的草地闻起来不错。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Yes, it is a good day for a match.",
+      "zh": "是啊，是个适合比赛的好天气。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Are you ready for the match?",
+      "zh": "你准备好比赛了吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Almost. Give me one more minute.",
+      "zh": "快了。再给我一分钟。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Right, let us get to the middle.",
+      "zh": "好，我们去中场吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "I am with you. Keep it going.",
+      "zh": "我跟着你。继续下去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Do not go too hard at first.",
+      "zh": "一开始别太猛。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Quite right. I will keep it slow.",
+      "zh": "有道理。我会慢一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Good. We have got this.",
+      "zh": "好。我们搞得定。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "The whistle is gone. Let us start.",
+      "zh": "哨声响了。我们开始吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "I will take the ball first.",
+      "zh": "我先拿球。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Good. I am here for a short time.",
+      "zh": "好的。我在这儿待一小会儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "That was a good send. Well done.",
+      "zh": "那球传得不错。干得好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Thanks. But they are pushing hard now.",
+      "zh": "谢了。但他们现在逼得很紧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Keep your head up. I will come to help.",
+      "zh": "抬起头。我来帮你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "My legs are tired.",
+      "zh": "我的腿累了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Take a breath. Do not force it.",
+      "zh": "喘口气。别硬来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "They are coming again. Watch the left side.",
+      "zh": "他们又来了。注意左边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "I see him. I will cover you.",
+      "zh": "我看见他了。我来掩护你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Good cover. You are slow today.",
+      "zh": "补得不错。你今天有点慢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "I see. I did not run much this week.",
+      "zh": "我知道。这周没怎么跑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "That is good. We will keep them back.",
+      "zh": "没事。我们能挡住他们。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "I am almost out of air.",
+      "zh": "我快喘不上气了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Keep moving. Do not stop.",
+      "zh": "继续动。别停。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Right. I will keep my place.",
+      "zh": "好。我守住位置。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Here they come. Get ready.",
+      "zh": "他们来了。准备好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "I am on him. Go for the ball.",
+      "zh": "我盯住他了。去抢球。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Good. I have it. Give it here.",
+      "zh": "好。我拿到了。给我吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Well done. That was a good play.",
+      "zh": "干得好。那一下不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "You did well to get that ball.",
+      "zh": "你抢到那个球真不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Thanks. I am still very tired.",
+      "zh": "谢了。我还是很累。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "We only have ten more minutes.",
+      "zh": "我们只剩十分钟了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Right. I will give it all I have.",
+      "zh": "好。我会拼尽全力。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "That is the way. Come on!",
+      "zh": "这才像话。加油！",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I am going to get the ball back.",
+      "zh": "我去把球抢回来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Be quick. They are coming again.",
+      "zh": "快点。他们又来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "I see him. I will go for it.",
+      "zh": "我看到他了。我去抢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Good. I am here if you need me.",
+      "zh": "好。你需要我就在这。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I have it. Give it here.",
+      "zh": "我拿到了。给我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Here you go. Keep it safe.",
+      "zh": "给你。拿稳了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "I will. Now let us go forward.",
+      "zh": "我会的。现在我们往前压。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Yes. I am with you.",
+      "zh": "好。我跟你走。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I am tired but I will keep going.",
+      "zh": "我累了，但我会继续。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "That is the way. Almost done.",
+      "zh": "这才对。快结束了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I am out of breath.",
+      "zh": "我喘不过气了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Take a rest. We have time.",
+      "zh": "歇一下，我们还有时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "My legs are like stone.",
+      "zh": "我的腿像石头一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "That is from not running this week.",
+      "zh": "那是这周没跑步的结果。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "I see. I will do better.",
+      "zh": "我明白。我会改进的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Good. Now get up and go again.",
+      "zh": "好。现在起来再战。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Right. One more push.",
+      "zh": "好。再拼一次。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "I am with you. Let us get to the end.",
+      "zh": "我陪你。我们一起走到最后。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "We did it. Not bad for a tired man.",
+      "zh": "我们做到了。对一个累坏的人来说还不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Quite right. You gave all you had.",
+      "zh": "说得对。你拼尽全力了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "I need water. My mouth is dry.",
+      "zh": "我要喝水。嘴巴都干了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Here. Take your time.",
+      "zh": "给。慢慢喝。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "That was a hard run.",
+      "zh": "那趟跑得真累。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "You did well to get the ball.",
+      "zh": "你能拿到球已经很不错了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I almost got a hard knot in my leg.",
+      "zh": "我腿差点抽筋了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Keep moving. Do not let it get stiff.",
+      "zh": "别停。别让它僵住。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "I will do some stretches.",
+      "zh": "我来做几个拉伸。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Good idea. I will join you.",
+      "zh": "好主意。我跟你一起。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "My leg muscles are tight.",
+      "zh": "我小腿绷得紧紧的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "That is normal. Stretch them out.",
+      "zh": "正常。把它们拉开就好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "I need more training before the play after this one.",
+      "zh": "下场比赛前我得加练。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "We can run together after school.",
+      "zh": "放学后我们可以一起跑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "That would be good. I am slow now.",
+      "zh": "那太好了。我现在跑得慢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "You were not slow. You kept up well.",
+      "zh": "你不慢。你跟得挺好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "But I had no power at the end.",
+      "zh": "但到最后我没力气了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "That is because you did not do enough runs.",
+      "zh": "那是因为你跑得不够多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "True. I will do three runs a week.",
+      "zh": "对。我以后一周跑三次。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Start with two. Do not push too hard.",
+      "zh": "先跑两次。别太猛。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "That is right. I will okay on the first day of the week.",
+      "zh": "有道理。那周一见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Yes. Same time, same place.",
+      "zh": "好。老时间，老地方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Right, let us get on with the second part.",
+      "zh": "好了，我们继续下半部分吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Yes, I am ready. Let us go.",
+      "zh": "嗯，准备好了。走吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Keep the ball on our side for a time.",
+      "zh": "球先控在我们这边一会儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "I will have a go. My legs are slow.",
+      "zh": "我试试。腿好沉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Just give it short. No need for long runs.",
+      "zh": "短传就好，不用长跑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Right. Here they come.",
+      "zh": "好。他们上来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "I have the ball. Who is free?",
+      "zh": "我拿到球了。谁空着？",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "I am here. Give it to me.",
+      "zh": "我在这儿。传给我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Good move. Now go up.",
+      "zh": "好传。现在压上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "I am with you. Let us get one in.",
+      "zh": "我跟上了。咱们进一个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "That was a good play. Well done.",
+      "zh": "这场踢得不错。干得好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "I am tired. My legs are like stone.",
+      "zh": "我累了，腿跟石头似的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Let us do some stretching. It will help.",
+      "zh": "咱们做点拉伸，有好处。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Right. I need to get my breath back.",
+      "zh": "好。我得缓口气。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "You did well in the second part.",
+      "zh": "你下半场踢得好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "I almost gave up. But you kept me going.",
+      "zh": "我差点放弃，但你让我坚持下来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "We will do more training after this week.",
+      "zh": "我们这周之后多练练。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Yes. I will come every day if I can.",
+      "zh": "好。我要是能，每天都来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "That is right. Let us go back now.",
+      "zh": "说定了。现在回去吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Good. I am ready for a cold drink.",
+      "zh": "好。我想喝杯凉的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "A cold drink sounds great. There is a store near the door.",
+      "zh": "来杯凉的挺好。门口附近有家店。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "I will get a bottle of water. Would you like one too?",
+      "zh": "我买瓶水。你也来一瓶？",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "A: Yes, please. My throat is dry.",
+      "zh": "好，谢谢。我嗓子干。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "We did well to keep them from getting a point.",
+      "zh": "我们没让对方得分，干得不错。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "That last stop was great. You kept us in the play.",
+      "zh": "最后那次扑救太棒了，你让我们没输。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "I was in good chance. The ball came right at me.",
+      "zh": "我运气好，球直接朝我来了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "No, it was a trick of the trade. You have a good eye.",
+      "zh": "不，那是门道。你眼力好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Thanks. We work well together.",
+      "zh": "谢谢。我们配合不错。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Yes. We will get a good one after this.",
+      "zh": "对。我们之后会赢一场好的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Right. Let us get that drink now.",
+      "zh": "好的。我们现在去喝东西吧。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周六下午，甲和乙在操场热身，准备足球比赛。甲因训练不足，担心体力不支，却在比赛中拼尽全力。",
+  "storyScript": "【开场·到运动场】周六下午四点，阳光斜照在操场上，甲和乙已经换好球衣，站在草坪边。甲弯下腰，双手触碰脚尖，拉伸大腿后侧，心里却有些发虚。这周他因为作业多，只跑了一次步，体能储备明显不足。乙在他旁边压腿，随口问：你最近练得怎么样？甲含糊地应了一声，继续做弓步压腿，试图用热身动作掩盖内心的不安。草皮散发着泥土和青草的气息，远处球门框在阳光下泛着白光，像是等着他们去征服，又像在无声地考验。\n\n【进行·开始锻炼】裁判哨响，比赛开始。甲踢中场，负责接应和传球。前十分钟，他还能跟上节奏，几次短传都准确找到队友。但很快，对手开始高位逼抢，甲接球后刚转身，对方后卫就贴了上来。他仓促出脚，球被断下，对手顺势打反击。乙在边路喊：别急，慢慢来！甲喘着粗气点头，汗水顺着脸颊滴落。他咬牙回追，但双腿像灌了铅，每一步都沉重。半场结束前，乙从后场长传，甲奋力前插，在禁区边缘勉强触到球，却因体力不支，射门绵软无力，被门将没收。他双手撑膝，大口呼吸，胸口像被压了块石头。\n\n【进行·开始锻炼】中场休息，两人坐在场边喝水。乙递过毛巾：你刚才那个跑位不错，就是最后没劲了。甲苦笑：这周没怎么练，腿都软了。乙拍拍他肩膀：没事，下半场你多跑动，不用急着进攻，先稳住防守。甲点头，心里却知道，自己连防守都吃力。下半场开始，甲刻意减少冲刺，用站位和预判来弥补体能。一次防守中，对手突破中场，甲卡住内线，用身体挡住对方去路，虽然被撞得踉跄，但成功延缓了进攻。乙趁机回防，将球解围。甲感到小腿肌肉紧绷，几乎要抽筋，但他咬牙坚持，直到终场哨响。比赛以平局告终，但甲觉得自己像打了一场胜仗。\n\n【收束·放松回家】赛后，两人在跑道边做拉伸。甲坐在地上，双腿分开，俯身向前，感受大腿内侧的酸胀。乙在旁边帮他压背：你今天后面踢得不错，硬撑下来了。甲说：差点抽筋，还好没丢人。夕阳把他们的影子拉得很长，操场上的人渐渐散去。乙提议：下周一起加练体能？甲笑着答应：好，我可不想再这么狼狈了。他们收拾好装备，并肩走出校门，晚风拂过汗湿的球衣，带着一丝凉意。甲回头看了一眼操场，心里默默盘算着明天的训练计划。"
+}

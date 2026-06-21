@@ -1,0 +1,824 @@
+{
+  "slug": "health",
+  "sceneKey": "Health",
+  "titleZh": "看医生讲症状",
+  "titleEn": "At the Doctor",
+  "tier": "P0",
+  "freqRank": 4,
+  "emoji": "🏥",
+  "gradient": "linear-gradient(135deg,#dcfce7,#4ade80)",
+  "storyHook": "描述哪里痛，医生给建议，回家休息吃药",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "到达诊所",
+      "goal": "说明不舒服"
+    },
+    {
+      "beat": "进行",
+      "title": "描述症状",
+      "goal": "说疼痛部位"
+    },
+    {
+      "beat": "进行",
+      "title": "医嘱治疗",
+      "goal": "给建议用药"
+    },
+    {
+      "beat": "收束",
+      "title": "回家休养",
+      "goal": "道谢离开"
+    }
+  ],
+  "illustration": {
+    "label": "看病就医",
+    "motifs": [
+      "bed",
+      "body"
+    ],
+    "accent": "#16a34a"
+  },
+  "narrative": {
+    "when": "周一上午，症状从昨晚开始加重",
+    "where": "社区诊所诊室",
+    "who": "甲（病人）· 乙（医生）",
+    "how": "挂号后坐在诊室，如实描述感受",
+    "method": "说哪里痛、多久了、是否发烧，听医嘱吃药休息",
+    "event": "甲喉咙痛还咳嗽，担心明天重要会议，想知道几天能好"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good morning, doctor. My voice is rough.",
+      "zh": "医生早。我嗓子哑了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Good morning. Have a seat. When did this start?",
+      "zh": "早，请坐。什么时候开始的？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Last night, after I went to bed. It got worse this morning.",
+      "zh": "昨晚躺下后，今早更严重了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Any pain in the throat? Or a cough?",
+      "zh": "喉咙痛吗？咳嗽不？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Yes, it is hard when I take food down. And I cough a good bit.",
+      "zh": "是的，咽东西难受，还咳得厉害。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Let me have a look. Open your mouth wide.",
+      "zh": "让我瞧瞧。张大嘴。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Ah... It's red inside. No high heat?",
+      "zh": "啊……里面很红。没发烧吧？",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "I am not certain. I am warm, but I have not taken a measure.",
+      "zh": "应该没有。身上热，但没量过。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "That is all right. It is a common pain in the throat. Rest and take water.",
+      "zh": "那就好。普通喉咙痛，多喝水休息。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "I have an important meeting tomorrow. Will I be better by then?",
+      "zh": "明天有个重要会议，能好吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I would not say for certain. But with rest, you will be much better.",
+      "zh": "不好说。但休息好，会好很多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "I see. So I can still go to the meeting if I rest today?",
+      "zh": "明白。那我今天休息，明天能去开会吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "If you rest and have water, yes. But no talking.",
+      "zh": "如果休息喝水，可以。但别说话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Right. I will keep quiet. What about a thing for the pain?",
+      "zh": "好的。我少说话。来点止痛的东西吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Take one after food, two times a day.",
+      "zh": "饭后吃，一天两次。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Right. I will get that. How long till I am better?",
+      "zh": "好，我去拿。大概多久能好？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Three to five days. You will be better in two.",
+      "zh": "三到五天。两天内就会好转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Two days. That is not bad. I will rest today.",
+      "zh": "两天，还行。我今天休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Good. Keep warm and drink water. No cold drinks.",
+      "zh": "好。注意保暖，多喝水。别喝冷的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "No cold drinks. Got it. What about food?",
+      "zh": "不喝冷的，记住了。吃的呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Soft food is best. Soup, rice, bread. Nothing sharp.",
+      "zh": "软食最好。汤、粥、面包。别吃辣的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "I will get some soup on the way back.",
+      "zh": "我回家路上买点汤。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "That is a good idea. And take the thing after food.",
+      "zh": "好主意。药记得饭后吃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "I will. Thank you, you have been a great help.",
+      "zh": "好的。谢谢，帮了大忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "You are welcome. be safe. okay if needed.",
+      "zh": "不客气。安全第一，有事再来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Well, i will. Thank you, you have been a great help.",
+      "zh": "我会的。谢谢你，帮了大忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "No problem at all.",
+      "zh": "不客气。安全第一，需要时好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "I will get the thing now. sure.",
+      "zh": "我现在去拿东西。好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "sure. get some rest.",
+      "zh": "好的。休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "I hope I can be better by tomorrow.",
+      "zh": "希望明天能好点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Do not push. Rest is best.",
+      "zh": "别硬撑。休息是最好的药。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "You are right. I will take the day off.",
+      "zh": "你说得对。我下午请假。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Good. Keep drinking warm water.",
+      "zh": "好。记得多喝温水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Yes. I will keep a bottle near me.",
+      "zh": "嗯。我放一瓶水在身边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "That is the way. Now go and get some rest.",
+      "zh": "这就对了。快去休息吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "I will get some fruit and soup on the way back.",
+      "zh": "我回家路上买点水果和粥。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Good idea. Soft food is best for your throat.",
+      "zh": "好主意。软的食物对你喉咙最好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "I will take it after the meal.",
+      "zh": "我吃完饭就吃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Do that. Two times a day, after food.",
+      "zh": "就这样。一天两次，饭后吃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Thank you. I am better now.",
+      "zh": "谢谢。我现在好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Good. Now, about your work tomorrow.",
+      "zh": "好。那说说你明天的工作。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "I have a key meeting at ten. I have to be there.",
+      "zh": "我十点有个重要会议。我必须去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Can you make it through the meeting without talking much?",
+      "zh": "你能撑过会议，少说话吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "I will have a go. But my voice is rough.",
+      "zh": "我试试。但我声音都哑了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Put a glass of water on the table. Take small drinks.",
+      "zh": "桌上放杯水。小口喝。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "That is a good idea. I will do that.",
+      "zh": "好主意。我会照做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "And if you cough, cover your mouth.",
+      "zh": "如果咳嗽，捂住嘴。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Quite right. I would not make a person ill.",
+      "zh": "没错。我不想传染别人。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "You are a good man. Now go and get your rest.",
+      "zh": "你是个好人。快去休息吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Thank you. I will keep your words in mind.",
+      "zh": "谢谢。我会记住你的话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Right. Here is your note for work.",
+      "zh": "好了。这是你的病假条。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Oh, you have one ready. That is kind.",
+      "zh": "哦，你已经准备好了。真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Take it to your office. Two days rest is best.",
+      "zh": "拿去公司。休息两天最好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Two days? But my meeting is tomorrow.",
+      "zh": "两天？可我明天有会。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "I see. But your body needs rest, not work.",
+      "zh": "我明白。但你的身体需要休息，不是工作。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "What if I just go for the meeting and come back?",
+      "zh": "如果我只去开会，然后回来呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "That may make it worse.",
+      "zh": "那可能会加重病情。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "I have to give a talk. No one other can.",
+      "zh": "我必须发言。没别人能替。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Then keep it short. Drink water. No loud talk.",
+      "zh": "那就简短些。多喝水。别大声说话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "That is right. I will be quick.",
+      "zh": "有道理。我尽量快点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "I will keep my voice low.",
+      "zh": "我会压低声音。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Good. Now about the thing for the disease.",
+      "zh": "好的。现在说治病的那个东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Yes, please say what to take.",
+      "zh": "好，请告诉我吃什么药。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Here is a list. One for the throat, one for the cough.",
+      "zh": "这儿有个单子。一种治喉咙，一种治咳嗽。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Do I take them after food?",
+      "zh": "是饭后吃吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Yes, with a full glass of water.",
+      "zh": "对，用一大杯水送服。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "And no cold drinks, is that right?",
+      "zh": "还有不能喝冷饮，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Right. Warm water only. And rest your voice.",
+      "zh": "没错。只喝温水。还有让嗓子休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "If it gets worse, come back?",
+      "zh": "如果加重了要回来吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "If you have a high heat, yes. But two days rest will do.",
+      "zh": "如果发高烧就来。不过休息两天应该就好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "What about work? I have a meeting tomorrow.",
+      "zh": "那工作怎么办？我明天有个会。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Say no if you can. Your voice needs rest.",
+      "zh": "能推就推掉。你的嗓子需要休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "I can't. It's important. Can I keep my voice down?",
+      "zh": "不行，很重要的会。我能小声说吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Even a soft voice is hard on the throat. Put it down.",
+      "zh": "即使小声说话也伤喉咙。记下来吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Put it on paper? That's old school.",
+      "zh": "写在纸上？那也太老派了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Or put words on your small box. Let them see it.",
+      "zh": "或者在小盒子上打字。让他们看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Right. I'll give it a go.",
+      "zh": "好吧。我试试看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Have warm sweet water between talks.",
+      "zh": "说话间隙喝点温甜水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Sweet? I have some at the house. Good idea.",
+      "zh": "蜂蜜？家里有。好主意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Right. Now go get the thing and rest.",
+      "zh": "好了。现在去取药，然后休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I'll do that. Thanks, sir.",
+      "zh": "我会照做。谢谢您。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "One more thing. How long till I'm better?",
+      "zh": "还有一件事。多久能好？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Three or four days. Rest is key.",
+      "zh": "三四天吧。休息是关键。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "So I will be well by day five?",
+      "zh": "那我到第五天能好吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "If you rest now, yes. No short cuts.",
+      "zh": "现在休息的话，可以。没有捷径。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "I'll take the afternoon off. Sleep it off.",
+      "zh": "我下午请假。睡一觉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Good man. And drink warm water, not cold.",
+      "zh": "好。喝温水，别喝凉的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Right. No cold drinks. I'll get some sweet things too.",
+      "zh": "好的。不喝凉的。我也买点甜的东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Right. Off you go. Get the thing from the store.",
+      "zh": "好的。去吧。去店里取东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Thank you, sir. I'll be good.",
+      "zh": "谢谢先生。我会好好休息的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Right. I will get the thing from the store now.",
+      "zh": "好的。我现在去店里取药。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Take it after a meal, two times a day.",
+      "zh": "饭后服用，每日两次。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Two times a day. Got it. No work today?",
+      "zh": "一天两次。记住了。今天不用上班吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "No work. Rest is best for you.",
+      "zh": "不用上班。休息对你最好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "I will send a note to the man who is responsible.",
+      "zh": "我会给负责人发个消息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Good. Keep warm and rest up.",
+      "zh": "好。保暖，好好睡觉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I will. Thanks again.",
+      "zh": "我会的。再次感谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "That is all right. be safe.",
+      "zh": "不客气。照顾好自己。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "I will. okay if it gets worse.",
+      "zh": "我会的。如果加重了再来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Good. But I hope not. Off you go.",
+      "zh": "好。但希望不会。去吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right. I'll get the thing now.",
+      "zh": "好。我现在去拿药。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "The store for medicines is down the long room, on your left.",
+      "zh": "药店在大房间那头，左手边。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Thanks. I will get it.",
+      "zh": "谢谢。我能拿到。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Keep to warm drinks, no cold food.",
+      "zh": "只喝热的，别吃凉的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "Warm drinks, yes. I'll get some tea.",
+      "zh": "喝热的，好的。我去买点茶。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "That is good. Get better quick.",
+      "zh": "很好。早日康复。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Thank you, sir. sure.",
+      "zh": "谢谢你，先生。好的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Goodbye. Take care.",
+      "zh": "再见。保重。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "I will. And thanks for your help.",
+      "zh": "我会的。谢谢你的帮助。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Not at all. Now off you go.",
+      "zh": "别客气。快去吧。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "甲喉咙痛咳嗽加重，担心明天会议，赶紧去诊所。医生检查后开药，叮嘱多休息，甲安心回家休养。",
+  "storyScript": "【收束·回家休养】甲道谢后离开诊室，去药房取药。回家路上买了些水果和粥，准备按医嘱休养。虽然喉咙还痛，但心里踏实了——明天会议只能硬撑，但至少知道不是大病。他决定下午请假，好好睡一觉。"
+}

@@ -1,0 +1,825 @@
+{
+  "slug": "shopping",
+  "sceneKey": "Shopping",
+  "titleZh": "超市买菜结账",
+  "titleEn": "Grocery Checkout",
+  "tier": "P0",
+  "freqRank": 1,
+  "emoji": "🛒",
+  "gradient": "linear-gradient(135deg,#fef3c7,#fdba74)",
+  "storyHook": "列清单进超市，挑菜问价，付款装袋回家",
+  "storyBlurb": "冰箱空了，朋友晚上要来吃饭。小李抓起购物袋冲向超市，得赶在中午前把菜备齐。",
+  "storyScript": "【开场】周六一早，小李翻开冰箱发现空空如也——晚上朋友要来家里吃饭，得赶紧去趟超市。他从抽屉里扯出一张便签纸，歪歪扭扭写下牛奶、面包、水果、鸡蛋、盐，叠好塞进口袋，拎起那只洗得发白的布袋子就出了门。走进街角那家开了十几年的小超市，推拉门哗地一响，收银台后面的王阿姨一抬头就笑了，老远就跟他打招呼，问他今天怎么来得这么早。小李说晚上有客人，得买一桌子菜回去。\n\n【进行·挑菜问价】王阿姨从柜台后面探出身子，指点他今天什么新鲜。小李先到冷藏柜拿了一盒鲜牛奶，犹豫了一下又多拿了一盒，想着可以煮个奶油蘑菇汤。接着去面包架上挑了一袋切片吐司，捏了捏确认是软的。水果区他本来想买苹果，但看到一筐红得发亮的草莓，忍不住问王阿姨多少钱一斤，听到价格觉得还行就装了一盒。鸡蛋他小心翼翼地挑了十个，一个个翻过来检查底部有没有裂的。最后差点忘了盐，在调料货架转了一圈才找到，顺手又拿了一瓶酱油。王阿姨在旁边逗他，说你这是要开饭店啊。\n\n【进行·付款装袋】东西堆到收银台上，王阿姨一样一样扫码报价，小李掏出手机准备扫码付款。王阿姨把总价报出来，小李愣了一下觉得比预想的便宜，王阿姨笑着说今天鸡蛋搞活动打了八折。小李开心地扫了码，然后把东西一样样往布袋子里装，鸡蛋放最上面怕压碎，牛奶竖着卡在角落里。王阿姨还多塞给他两根葱，说炖汤放点葱花香。\n\n【收束】小李拎着沉甸甸的布袋子道了谢，说下次再来。推开门走进阳光里，心里盘算着回去先把鸡蛋和牛奶放冰箱，然后洗菜切菜，赶在朋友到之前炖一锅热汤。布袋子在腿边一晃一晃，他脚步轻快地往家走去。",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "进超市",
+      "goal": "进店问好"
+    },
+    {
+      "beat": "进行",
+      "title": "挑选询价",
+      "goal": "找食物看价格"
+    },
+    {
+      "beat": "进行",
+      "title": "付款装袋",
+      "goal": "给钱装包"
+    },
+    {
+      "beat": "收束",
+      "title": "回家整理",
+      "goal": "离开商店回家"
+    }
+  ],
+  "illustration": {
+    "label": "超市结账",
+    "motifs": [
+      "cart",
+      "shelf",
+      "bag"
+    ],
+    "accent": "#f59e0b"
+  },
+  "narrative": {
+    "when": "周六早上九点，朋友晚上要来家里吃饭",
+    "where": "家附近社区超市，生鲜区与收银台",
+    "who": "甲（王阿姨，超市理货员）· 乙（小李，上班族）",
+    "how": "拿着手写买菜清单，步行到店，自带布袋子",
+    "method": "按清单挑菜、问新鲜度和价格、称重、扫码付钱、分袋装好",
+    "event": "家里牛奶喝完了，晚饭要做蔬菜汤，得在中午前把食材买齐回家"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Morning! You are early today.",
+      "zh": "早啊！今天来这么早。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Morning. Friends are coming for dinner tonight — need to be home before twelve.",
+      "zh": "早上好，晚上有朋友来吃饭，中午前得回去备菜。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Let me guess — the fridge at home is empty again.",
+      "zh": "我猜——冰箱又空了吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "That bad?",
+      "zh": "这么明显吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "You come in every Saturday with that same face.",
+      "zh": "你每个周六进来都是这副表情。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "I made a list this time. Milk, bread, eggs, salt...",
+      "zh": "我这次列了单子。牛奶、面包、鸡蛋、盐……",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "You forgot the fruit.",
+      "zh": "你忘了水果。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "I was getting to that.",
+      "zh": "我正要说呢。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "The milk came in fresh this morning — back shelf.",
+      "zh": "牛奶今早刚到，很新鲜，在后面那排。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Good. I will take two.",
+      "zh": "那好，我拿两盒。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Two? You opening a tea house?",
+      "zh": "两盒？你要开茶馆啊？",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "I want to make a thick white soup with the mushrooms.",
+      "zh": "我想煮奶油蘑菇汤。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Good call. The round plants are just past the bread shelf.",
+      "zh": "好主意，蘑菇就在面包架旁边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "I will swing by there. Thank you.",
+      "zh": "我去那边看看，谢谢阿姨。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "B",
+      "en": "This bag of bread — is it the soft kind?",
+      "zh": "这袋面包，是软的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "A",
+      "en": "Fresh today. I pressed it this morning — still gives.",
+      "zh": "今天新鲜的，我早上按过，软乎的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "B",
+      "en": "One bag, then.",
+      "zh": "那拿一袋。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "A",
+      "en": "The strawberry came in this morning too. Want a look?",
+      "zh": "草莓今早也到了，要看看吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "B",
+      "en": "strawberry? That was not on my list.",
+      "zh": "草莓？这个没在单子上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "A",
+      "en": "New season. Very sweet this time.",
+      "zh": "新季节到了，这次很甜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "B",
+      "en": "How much for a box?",
+      "zh": "一盒多少钱？",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "A",
+      "en": "Three fifty. That is a cheap price.",
+      "zh": "三块五，比市场便宜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "B",
+      "en": "I will take one. My friend loves these.",
+      "zh": "拿一盒，我朋友喜欢吃这个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "A",
+      "en": "Now for eggs. I keep the good ones in the front row.",
+      "zh": "去拿鸡蛋吧，好的我都放前排。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "B",
+      "en": "I need ten. Let me check each one.",
+      "zh": "我要十个，得一个个看看有没有裂的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "A",
+      "en": "No broken ones in this tray. I checked this morning.",
+      "zh": "这盘里没有裂的，我早上检查过了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "B",
+      "en": "You check every morning?",
+      "zh": "每天早上都看？",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "A",
+      "en": "Someone has to.",
+      "zh": "总得有人看嘛。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "B",
+      "en": "These look good. All ten.",
+      "zh": "这几个不错，就这十个了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "A",
+      "en": "And eggs are on offer today — twenty off.",
+      "zh": "今天鸡蛋搞活动，打八折。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "B",
+      "en": "Really? I came on the right day.",
+      "zh": "真的？今天来对了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "A",
+      "en": "Salt next. Third way, middle shelf.",
+      "zh": "接下来拿盐，三号通道中间那层。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "B",
+      "en": "Right, salt.",
+      "zh": "好，盐。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Oh — dark sauce too. Almost let it go.",
+      "zh": "哎——还有酱油，差点忘了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Same way. It is right next to the salt.",
+      "zh": "在同一排，就在盐旁边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Saves me a trip. Good.",
+      "zh": "省得再跑一趟了，太好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "B",
+      "en": "Got both.",
+      "zh": "拿到了，两个都有。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "A",
+      "en": "Quick. You knew where to go.",
+      "zh": "动作挺快的，知道在哪里拿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "B",
+      "en": "You told me once. I kept it.",
+      "zh": "您上次告诉我的，我记住了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "A",
+      "en": "The round plants — did you get them?",
+      "zh": "蘑菇拿了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "B",
+      "en": "Oh.",
+      "zh": "哎呀。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "A",
+      "en": "Third way, cold part on the left.",
+      "zh": "三号通道，左边冷藏柜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "B",
+      "en": "Back in a second.",
+      "zh": "我去一下，马上回来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "These look good — firm and dry.",
+      "zh": "这些不错，硬实，不湿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Good ones for soup. Not soft, not wet.",
+      "zh": "做汤就要选这种，不软不湿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Am I missing anything else?",
+      "zh": "还有漏的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Let us see — milk, bread, red fruit, eggs, salt, dark sauce, round plants.",
+      "zh": "我数一下——牛奶、面包、草莓、鸡蛋、盐、酱油、蘑菇。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "That is everything. Wait — green onions. For the soup.",
+      "zh": "都齐了。等等——葱，放汤里的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Plant part — small green ones or the big ones?",
+      "zh": "要哪种葱，小葱还是大葱？",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Small green ones.",
+      "zh": "小葱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Over there. Two groups should be enough.",
+      "zh": "在那边，两把够用了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "These smell very fresh.",
+      "zh": "这个闻起来很新鲜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "The delivery just came. Shall we go to the counter?",
+      "zh": "刚送到的。好，去结账了吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Yes. I think I have everything now.",
+      "zh": "好，我觉得都齐了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Milk — two boxes.",
+      "zh": "牛奶——两盒。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Right.",
+      "zh": "没错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Bread — one bag. strawberry — one box.",
+      "zh": "面包——一袋。草莓——一盒。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "A",
+      "en": "Eggs — ten. Salt, dark sauce — check.",
+      "zh": "鸡蛋——十个。盐、酱油——好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Round plants — one bag. green onions — two.",
+      "zh": "蘑菇——一袋。葱——两把。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "A",
+      "en": "With the egg offer... thirty two fifty all together.",
+      "zh": "算上鸡蛋折扣……一共三十二块五。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "B",
+      "en": "That cost less than I thought.",
+      "zh": "比我想的便宜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "A",
+      "en": "The eggs bring it down. Good day to come in.",
+      "zh": "鸡蛋折扣帮了大忙，今天来对了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "B",
+      "en": "I will pay with my phone.",
+      "zh": "我用手机付。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "A",
+      "en": "The machine is on the right.",
+      "zh": "右边那台机器。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "B",
+      "en": "Done.",
+      "zh": "好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "A",
+      "en": "All paid. Now let us put things in the bag.",
+      "zh": "付好了，来装袋。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "B",
+      "en": "Eggs on top — they go to bits so quick.",
+      "zh": "鸡蛋放最上面，它们太容易碎了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "A",
+      "en": "I know. I have been putting eggs in bags for thirty years.",
+      "zh": "我知道，我装鸡蛋装了三十年了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "B",
+      "en": "Sorry. Of course you do.",
+      "zh": "对不起，您当然知道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "A",
+      "en": "Milk goes in the corner — keeps it from rolling.",
+      "zh": "牛奶塞角落——不会滚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "B",
+      "en": "Smart.",
+      "zh": "妙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "A",
+      "en": "Bread on the side. Do not press it.",
+      "zh": "面包靠边放，别压扁。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "B",
+      "en": "It was already a bit flat on the shelf.",
+      "zh": "在架子上就有点压扁了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "A",
+      "en": "It will come back. Warm bag.",
+      "zh": "放进保温袋会恢复的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "B",
+      "en": "You have a word for everything.",
+      "zh": "什么都有门道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "A",
+      "en": "Thirty years.",
+      "zh": "三十年嘛。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "B",
+      "en": "The dark sauce — heavy. Goes at the bottom?",
+      "zh": "酱油比较重，放底部？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "A",
+      "en": "Yes. Salt too. Heavy things go below.",
+      "zh": "对，盐也是，重的放下面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "B",
+      "en": "Now I know how to do it next time.",
+      "zh": "下次我就知道怎么装了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "A",
+      "en": "You always put the eggs at the bottom before.",
+      "zh": "你以前每次都把鸡蛋放底下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "B",
+      "en": "And every time one broke.",
+      "zh": "每次都有一个碎掉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "A",
+      "en": "Here. Nice and heavy.",
+      "zh": "给，沉甸甸的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "B",
+      "en": "Thank you. This will make a good meal.",
+      "zh": "谢谢阿姨，这一顿肯定好吃。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "A",
+      "en": "Wait —",
+      "zh": "等等——",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Take these two green onions. Free. For your soup.",
+      "zh": "拿着这两根葱，送的，放汤里用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "You do not need to do that.",
+      "zh": "您不用这样的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "It is two green onions, not a gold ring.",
+      "zh": "才两根葱，又不是金戒指。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Then I will not say no. Thank you.",
+      "zh": "那我就不客气了，谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "How many friends are coming tonight?",
+      "zh": "今晚几个朋友来？",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Three. Should be enough food.",
+      "zh": "三个，应该够吃了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Three people and two boxes of milk. Quite enough.",
+      "zh": "三个人，两盒牛奶，肯定够了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "One box is for the morning. I am not that open with my things.",
+      "zh": "一盒是明天早上喝的，我没那么大方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Go home and cook. Your friends will thank you.",
+      "zh": "快回去做饭吧，朋友们会谢谢你的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "I hope so. The soup is the hard part.",
+      "zh": "希望如此，汤最难做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Low heat. Put the green onions in at the very end.",
+      "zh": "小火慢炖，葱最后才放。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "I will keep that in mind.",
+      "zh": "我记住了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "B",
+      "en": "okay next week.",
+      "zh": "下周见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "A",
+      "en": "Same time?",
+      "zh": "还是这个时间？",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "B",
+      "en": "Maybe a bit later. I am not always this well ready.",
+      "zh": "可能会晚点，我没每次都这么有准备。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "A",
+      "en": "You will come in looking lost again.",
+      "zh": "你迟早又会一脸迷茫地进来的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "B",
+      "en": "Very likely. Thank you for everything today.",
+      "zh": "很可能，今天谢谢您帮了那么多。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "A",
+      "en": "You found the round plants yourself this time.",
+      "zh": "这次蘑菇是你自己找到的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "B",
+      "en": "Barely.",
+      "zh": "勉强算。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "A",
+      "en": "One step at a time.",
+      "zh": "慢慢来嘛。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "B",
+      "en": "The soup will be good.",
+      "zh": "汤肯定好喝。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "A",
+      "en": "Tell your friends they are welcome here.",
+      "zh": "跟朋友说欢迎来买东西。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "B",
+      "en": "I will. They need food too.",
+      "zh": "会的，他们也要买菜。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "A",
+      "en": "Good. Next Saturday then.",
+      "zh": "那好，下周六见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "B",
+      "en": "Goodbye.",
+      "zh": "再见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "A",
+      "en": "Enjoy the meal.",
+      "zh": "吃好喝好。",
+      "beat": "收束"
+    }
+  ]
+}

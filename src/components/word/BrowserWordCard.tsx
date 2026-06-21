@@ -45,24 +45,26 @@ export const BrowserWordCard = React.memo(function BrowserWordCard({
         </div>
 
         <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-1.5 mb-0.5">
-            <h3 className="text-base sm:text-lg font-black text-slate-800 tracking-tight leading-none truncate">
+          <div className="flex flex-wrap items-center gap-x-1.5 gap-y-0.5 mb-0.5 min-w-0">
+            <h3 className="text-base sm:text-lg font-black text-slate-800 tracking-tight leading-tight min-w-0">
               {word.word}
             </h3>
-            {word.ipa && (
-              <span className="font-ipa ipa-badge text-[13px] sm:text-sm leading-none shrink-0">
-                /{word.ipa}/
-              </span>
-            )}
-            <button
-              type="button"
-              onClick={handlePlaySpeech}
-              className="relative z-20 p-1.5 -m-0.5 text-cyan-600/45 hover:text-white hover:bg-cyan-500 rounded-full transition-colors cursor-pointer shrink-0"
-              title="发音"
-              aria-label={`朗读 ${word.word}`}
-            >
-              <Volume2 className="w-3.5 h-3.5" />
-            </button>
+            <div className="flex items-center gap-1 shrink-0">
+              {word.ipa && (
+                <span className="font-ipa ipa-badge text-[13px] sm:text-sm leading-none">
+                  /{word.ipa}/
+                </span>
+              )}
+              <button
+                type="button"
+                onClick={handlePlaySpeech}
+                className="relative z-20 p-1.5 -m-0.5 text-cyan-600/45 hover:text-white hover:bg-cyan-500 rounded-full transition-colors cursor-pointer"
+                title="发音"
+                aria-label={`朗读 ${word.word}`}
+              >
+                <Volume2 className="w-3.5 h-3.5" />
+              </button>
+            </div>
           </div>
 
           <p className="text-[11px] sm:text-xs font-semibold text-slate-500 leading-snug line-clamp-2">

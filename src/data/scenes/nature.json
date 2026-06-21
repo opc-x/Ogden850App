@@ -1,0 +1,820 @@
+{
+  "slug": "nature",
+  "sceneKey": "Nature",
+  "titleZh": "户外自然漫步",
+  "titleEn": "Out in Nature",
+  "tier": "P2",
+  "freqRank": 49,
+  "emoji": "🌲",
+  "gradient": "linear-gradient(135deg,#dcfce7,#86efac)",
+  "storyHook": "公园散步，看树花鸟，感受天气",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "走进公园",
+      "goal": "看天空树"
+    },
+    {
+      "beat": "进行",
+      "title": "观察自然",
+      "goal": "花鸟风"
+    },
+    {
+      "beat": "收束",
+      "title": "回家回味",
+      "goal": "说今天很美"
+    }
+  ],
+  "illustration": {
+    "label": "大自然",
+    "motifs": [
+      "tree",
+      "flower",
+      "path"
+    ],
+    "accent": "#16a34a"
+  },
+  "narrative": {
+    "when": "周六下午三点，难得的好天气",
+    "where": "城市边上的公园",
+    "who": "甲（散步的人）· 乙（一起散步的朋友）",
+    "how": "慢慢走，边走边看周围的景色",
+    "method": "走进公园看天空树木、观察花草和鸟、感受当天的天气、聊起今天的感受",
+    "event": "甲最近压力很大，想趁周末出来走走放松一下"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "What a day! The sky is so blue.",
+      "zh": "今天真好啊！天这么蓝。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Right. Not a cloud in the sky.",
+      "zh": "没错。天上没有云。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "The sun through the trees is warm.",
+      "zh": "阳光透过树照下来暖暖的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Yes, it makes them look gold.",
+      "zh": "是啊，它们都变成金色了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "I needed this walk. Work has been hard.",
+      "zh": "我正需要走走。工作太累了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "A walk in the open air does good.",
+      "zh": "在户外走走对身体好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "These trees are like old friends.",
+      "zh": "这些树就像老朋友一样。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Quiet and strong. They make me quiet.",
+      "zh": "安静又结实。它们让我安静。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "The air smells of grass and earth.",
+      "zh": "空气里有青草和泥土的味道。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Let us go at a low rate and take it all in.",
+      "zh": "我们慢慢走，好好感受吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Look at that cloud. It is like a sheep.",
+      "zh": "看那朵云，像只羊。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "A sheep with a long tail. Quite a laugh.",
+      "zh": "一只长尾巴的羊，挺有趣的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I am happy we came out today.",
+      "zh": "很高兴我们今天出来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Me too. The sun is good for the mind.",
+      "zh": "我也是。阳光对心情好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Let us go that way. The road is quiet.",
+      "zh": "我们走那边吧？那条路安静。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Yes, let us go that way. It is quiet and green.",
+      "zh": "好，走那边。又安静又绿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "I see a bird on that branch. It is red and black.",
+      "zh": "我看到那根树枝上有只鸟，红黑相间的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "It is making a sweet sound. Do you get it?",
+      "zh": "它在发出好听的声音，你听到了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Yes, it is a happy sound. It makes me smile.",
+      "zh": "嗯，听起来很快乐，让我也想笑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Look at those flowers. They are all different colors.",
+      "zh": "看那些花，五颜六色的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "The red ones are bright. I like them best.",
+      "zh": "红色的那几朵很鲜艳，我最喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "The wind is soft today. It is good on my face.",
+      "zh": "今天的风很轻柔，吹在脸上很舒服。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "It takes away my tired thoughts. I am free.",
+      "zh": "它吹走了我疲惫的思绪，我自由了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Let us rest here a bit. The grass is dry.",
+      "zh": "我们在这儿歇一会儿吧，草是干的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Good idea. I will put my head back and see the sky.",
+      "zh": "好主意，我仰起头看看天空。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "The sky is very blue today. No cloud in the sky.",
+      "zh": "今天的天空真蓝，天上没有云。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "It is a good day for a walk. I am happy we came out.",
+      "zh": "真是个散步的好天气，很高兴我们出来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Look at that bird. Its front is red.",
+      "zh": "看那只鸟，它的前胸是红色的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Yes, it is a small bird. They are common here.",
+      "zh": "嗯，是小鸟，这里很常见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "The flowers smell sweet. What are those yellow ones?",
+      "zh": "这些花闻起来很香，那些黄色的是什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I see yellow flowers. They come up on their own.",
+      "zh": "我看见黄花，自己长出来的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "The wind is blowing the grass. It looks like waves.",
+      "zh": "风吹着草地，看起来像波浪。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Yes, it is a beautiful view. I could be here all day.",
+      "zh": "是啊，真美，我可以在这儿待一整天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Do you see the children playing? They are happy.",
+      "zh": "你看到那些玩耍的孩子了吗？他们很开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Yes, they make me young again. Let us go a bit more.",
+      "zh": "嗯，他们让我又年轻了。我们再走走吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "May we rest on that seat for a bit?",
+      "zh": "我们在那张椅子上歇一会儿吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Yes, that is a good idea. My legs are tired.",
+      "zh": "好主意，我腿有点累了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "The sun is warm on my face. I like this.",
+      "zh": "阳光照在脸上暖暖的，我喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "It makes me put work out of my head.",
+      "zh": "它让我把工作抛到脑后。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Let us come here again after this week.",
+      "zh": "我们下周再来这里吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Look at that cloud. It is like a horse.",
+      "zh": "看那朵云，像一匹马。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Oh, yes. I see its head and legs.",
+      "zh": "哦，是的，我看到它的头和腿了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "The wind is soft today. Not too sharp.",
+      "zh": "今天风很柔，不刺骨。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Right. It is good for a walk like this.",
+      "zh": "没错，适合这样散步。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "That bird has a sweet song.",
+      "zh": "听到那只鸟了吗？叫声很甜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Yes. It makes the place quieter.",
+      "zh": "嗯，让这里更宁静了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "I would like to rest here for a minute.",
+      "zh": "我想在这儿休息一会儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Let us get some water first?",
+      "zh": "我们先喝点水吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "That is all right. I have a bottle with me.",
+      "zh": "好，我带了水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Good. Then we can watch the flowers.",
+      "zh": "好，然后我们可以看看花。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "The flowers are bright today.",
+      "zh": "今天的花开得真艳。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Quite so. Red and yellow together.",
+      "zh": "是啊，红黄相间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "I like the smell of the grass.",
+      "zh": "我喜欢这青草的味道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "It is clean and sweet.",
+      "zh": "干净又清香。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Look at that bee on the flower.",
+      "zh": "看那只蜜蜂停在花上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "It is full of persons, like us at work.",
+      "zh": "人多得很，像我们上班一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "But it seems happy.",
+      "zh": "但它看起来挺开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "It may be happy in the sun.",
+      "zh": "也许有太阳它就高兴。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I am happy too now.",
+      "zh": "我现在也高兴了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "That is good. Let us keep walking.",
+      "zh": "那就好，我们继续走吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "The air is so soft today.",
+      "zh": "今天的风真柔和。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Yes, it is like a warm cover.",
+      "zh": "嗯，像条暖被子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "I see a bird with a red front.",
+      "zh": "我看见一只红胸的鸟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "That bird has a sweet voice.",
+      "zh": "那只鸟叫声真好听。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I would like to rest here for a time.",
+      "zh": "我想在这儿坐一会儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Let us take that seat under the tree.",
+      "zh": "我们坐树底下那张椅子吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "The shade is good. My head is not warm now.",
+      "zh": "树荫真好，我脑袋不热了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Look at the clouds. One is like a horse.",
+      "zh": "看那云，有一朵像马。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "I see it. And that one is like a ship.",
+      "zh": "我看见了，那朵像船。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "This is a good day. I am happy we came.",
+      "zh": "今天真好，我很高兴我们来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Yes, it is a good day for a walk.",
+      "zh": "是啊，今天适合散步。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "The air is good here.",
+      "zh": "这儿的空气真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "My body is less tight now.",
+      "zh": "我感觉身体没那么紧绷了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "That is good. The green does you good.",
+      "zh": "那就好。绿色对你有好处。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Look at those flowers. They are so bright.",
+      "zh": "看那些花，颜色真鲜艳。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Would you like to go nearer?",
+      "zh": "你想走近点看吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Yes, let us go and see them.",
+      "zh": "好，我们过去看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "I see a bee on that red one.",
+      "zh": "我看见一只蜜蜂在那朵红花上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "It is getting its food from the flower.",
+      "zh": "它在采花蜜。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "The open air is a good rest for the mind.",
+      "zh": "户外对心灵是很好的休息。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I like the sound of the wind in the trees.",
+      "zh": "我喜欢风吹过树的声音。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "It makes everything seem quiet and far away.",
+      "zh": "它让一切显得安静又遥远。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Look at that bird with the blue feathers.",
+      "zh": "看那只蓝色羽毛的鸟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "It is quite a bright blue, is it not?",
+      "zh": "那蓝色真亮，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Yes, it is like a bit of the sky come down.",
+      "zh": "是啊，像一小片天空落下来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "The sun is warm on my face.",
+      "zh": "太阳照在脸上暖暖的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "I am glad we are here today.",
+      "zh": "我很高兴今天咱们来这儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Me too. I was needing a change of view.",
+      "zh": "我也是。我正需要换个环境。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Do you see that cloud? It is like a small animal.",
+      "zh": "你看到那朵云了吗？像只小动物。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Oh, that is right. Or a dog with long ears.",
+      "zh": "哦，没错。或者像一只长耳朵狗。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "The air is getting a bit cold now.",
+      "zh": "现在空气有点凉了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Yes, the sun is going down. Time to go back.",
+      "zh": "是啊，太阳要下山了，该回去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Come again same time?",
+      "zh": "同一时间来？",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "I would like that. Same time?",
+      "zh": "好啊，同一时间？",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Yes, three. That is a good time.",
+      "zh": "嗯，三点，这个时间不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Look at the sky. All orange and red-blue.",
+      "zh": "看天空，全是橙色和红蓝色。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "It is a beautiful end to the day.",
+      "zh": "给这一天画了个美丽的句号。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "I am much better now. Thank you for coming.",
+      "zh": "我现在感觉好多了，谢谢你陪我来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "That is what friends are for.",
+      "zh": "朋友就是干这个的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Let us go. I will make tea at my place.",
+      "zh": "走吧，回我那儿泡茶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Tea sounds good. What do you have?",
+      "zh": "喝茶不错，你有什么茶？",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Tea with a smell like a fruit or a simple black tea.",
+      "zh": "带果香味的茶或普通红茶。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "A cup of tea with a little milk, please.",
+      "zh": "请来一杯茶，加一点奶。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Same for me. I will put the kettle on.",
+      "zh": "我也一样。我去烧水。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "This walk was what I needed.",
+      "zh": "这次散步正是我需要的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Yes, the air is so clean here.",
+      "zh": "是啊，这里的空气真干净。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "The birds make a soft sound. So quiet.",
+      "zh": "鸟儿轻声叫。真安静。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "I will come again after this week.",
+      "zh": "我下周还会再来。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Let us make it a regular thing?",
+      "zh": "我们把它变成常规活动吧？",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "That is good. Every week on the same day?",
+      "zh": "那很好。每周同一天吗？",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "压力大的甲约朋友乙去公园散步，在蓝天绿树和花草鸟鸣中，找回内心的平静。",
+  "storyScript": "【开场·走进公园】周六下午三点，难得的好天气。甲和乙并肩走进城市边上的公园，抬头望见湛蓝的天空中飘着几朵白云，阳光透过树梢洒下斑驳的光影。甲深吸一口气，感觉紧绷的神经稍稍松弛了一些。乙没有说话，只是陪着甲慢慢走，脚下的碎石路发出轻微的沙沙声。路旁的梧桐树叶子在微风中轻轻摇曳，仿佛在欢迎他们的到来。甲看着那些高大的树木，觉得它们像沉默的守护者，让人安心。\n\n【进行·观察自然】他们沿着小径走到一片花丛前，各色的花朵在阳光下绽放，有红的、黄的、紫的，蜜蜂在花间忙碌地穿梭。甲蹲下身，轻轻触碰一片花瓣，触感柔软而温暖。乙指着不远处的一只鸟，它正站在枝头婉转啼鸣，声音清脆悦耳。甲抬头望去，那只鸟的羽毛在阳光下闪着光泽。一阵风吹过，带来青草和泥土的气息，甲闭上眼睛，感受风拂过脸颊的凉意，仿佛把心里的烦恼也一并吹走了。乙轻声说，今天的天气真好，甲点点头，觉得心里轻松了许多。\n\n【进行·观察自然】他们继续往前走，来到一片开阔的草地。草地上有几棵老树，树荫下有人在野餐，孩子们在追逐嬉戏。甲和乙找了一张长椅坐下，看着远处的天际线。甲说，最近工作压力很大，但在这里待了一会儿，觉得一切都变得不那么重要了。乙微笑着倾听，没有多说什么，只是指着天边一片形状奇特的云，两人一起笑了起来。阳光暖暖地照在身上，甲感到一种久违的安宁。\n\n【收束·回家回味】傍晚时分，他们起身往回走。夕阳把天空染成了橙红色，公园里的景色笼罩在一层金色的光晕中。甲回头看了一眼，心里充满了感激。回到家后，甲坐在窗前，回味着下午的时光。那些树木、花朵、鸟鸣和微风，都成了记忆里美好的画面。甲觉得，生活虽然忙碌，但这样的时刻就像一颗糖果，让日子有了甜味。他决定，以后要多出来走走。"
+}

@@ -1,4 +1,5 @@
 import { tokenizeSentence, hasClickableWord } from '../../lib/wordTokens';
+import { categorySentenceText } from '../../types/word';
 import type { TokenRole } from '../../types/vocab';
 
 interface ClickableSentenceProps {
@@ -6,6 +7,11 @@ interface ClickableSentenceProps {
   onWordClick?: (wordId: string) => void;
   className?: string;
 }
+
+const LINK_CLASS =
+  'cursor-pointer border-0 p-0 m-0 bg-transparent font-inherit inline font-bold underline underline-offset-2 decoration-current/35 hover:brightness-90 active:opacity-90 touch-manipulation';
+
+const HIGHLIGHT_CLASS = 'font-bold';
 
 export function ClickableSentence({ sentence, onWordClick, className }: ClickableSentenceProps) {
   const tokens = tokenizeSentence(sentence);
@@ -18,12 +24,13 @@ export function ClickableSentence({ sentence, onWordClick, className }: Clickabl
         }
         const clickable = onWordClick && hasClickableWord(tok);
         const role = tok.role as TokenRole;
+        const catColor = categorySentenceText(tok.category);
         if (clickable && tok.wordId) {
           return (
             <button
               key={i}
               type="button"
-              className={`asm-chunk asm-chunk--${role} asm-chunk--ogden asm-chunk--link`}
+              className={`${LINK_CLASS} ${catColor}`}
               onClick={() => onWordClick(tok.wordId!)}
               title="查看词典详情"
             >
@@ -33,13 +40,13 @@ export function ClickableSentence({ sentence, onWordClick, className }: Clickabl
         }
         if (tok.wordId) {
           return (
-            <span key={i} className={`asm-chunk asm-chunk--${role} asm-chunk--ogden`}>
+            <span key={i} className={`${HIGHLIGHT_CLASS} ${catColor}`}>
               {tok.surface}
             </span>
           );
         }
         return (
-          <span key={i} className={`asm-chunk asm-chunk--${role}`}>
+          <span key={i} className={`asm-chunk--${role}`}>
             {tok.surface}
           </span>
         );

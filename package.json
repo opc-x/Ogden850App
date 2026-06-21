@@ -16,6 +16,7 @@
     "sync:dialogues": "tsx scripts/sync-scene-dialogues.ts",
     "tts:generate": "tsx scripts/generate-word-tts.ts",
     "audio:guides": "tsx scripts/generate-guide-audio.ts",
+    "audio:scenes": "tsx scripts/generate-scene-dialogue-audio.ts",
     "audio:audit-guides": "tsx scripts/audit-guide-audio.ts",
     "audio:sync": "tsx scripts/sync-prod-audio.ts",
     "audit:dialogues": "tsx scripts/audit-dialogue-quality.ts",

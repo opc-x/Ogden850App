@@ -1,0 +1,820 @@
+{
+  "slug": "gas-station",
+  "sceneKey": "Gas Station",
+  "titleZh": "加油站加油",
+  "titleEn": "Filling Up",
+  "tier": "P1",
+  "freqRank": 22,
+  "emoji": "⛽",
+  "gradient": "linear-gradient(135deg,#fef2f2,#ef4444)",
+  "storyHook": "停车加油，付款，继续上路",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "驶入加油站",
+      "goal": "说明加油"
+    },
+    {
+      "beat": "进行",
+      "title": "加油付款",
+      "goal": "选油付钱"
+    },
+    {
+      "beat": "收束",
+      "title": "继续行程",
+      "goal": "开车离开"
+    }
+  ],
+  "illustration": {
+    "label": "加油",
+    "motifs": [
+      "car",
+      "pump",
+      "road"
+    ],
+    "accent": "#b91c1c"
+  },
+  "narrative": {
+    "when": "周五下午，开车去外地前",
+    "where": "高速路口的加油站",
+    "who": "甲（司机）· 乙（加油站工作人员）",
+    "how": "把车停在油泵旁，下车交流",
+    "method": "说明加多少油、付款、检查车窗、继续上路",
+    "event": "甲油表快到红线了，要赶在天黑前到达目的地"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Make it full, please.",
+      "zh": "加满，谢谢。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Which sort?",
+      "zh": "哪种油？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Regular, please.",
+      "zh": "普通汽油。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Right, I will do that.",
+      "zh": "好，马上加。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "I am short of time.",
+      "zh": "我时间有点紧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Going far?",
+      "zh": "跑长途？",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Yes, two hundred before dark.",
+      "zh": "对，天黑前要跑两百多。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "That is a long way.",
+      "zh": "那可不近呢。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "I will take a bottle of water too.",
+      "zh": "再拿瓶水。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Here you go. Safe journey.",
+      "zh": "给，路上小心。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Right, let me get the window for you.",
+      "zh": "来，我帮你擦下窗户。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "That is kind, thank you.",
+      "zh": "你太客气了，谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "No trouble. Oil and water are good.",
+      "zh": "没事。机油和水都正常。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Good. What do I give you for the oil?",
+      "zh": "好的。油钱给你多少？",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Forty five even.",
+      "zh": "四十五整。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Right, here is the card box.",
+      "zh": "好，刷卡机在这儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Put it through for forty five?",
+      "zh": "刷四十五吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Yes, that is right.",
+      "zh": "对，没错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Done. Take your card.",
+      "zh": "好了，卡收好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Thanks. I will put the water in the car.",
+      "zh": "谢谢。我把水放车上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Do the wheels need a look?",
+      "zh": "要看看轮子吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "No, they are all right. I had a look before.",
+      "zh": "不用了，之前看过了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Right then, you are ready to go.",
+      "zh": "行，那可以出发了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "I will get in now. Good day to you.",
+      "zh": "我上车了，回见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Good day. Go safe.",
+      "zh": "回见，路上小心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Well, i will get in now. Good day to you.",
+      "zh": "我上车了，再见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Well, good day. Go safe.",
+      "zh": "日安。路上当心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Well, thanks. I will put the water in the car.",
+      "zh": "多谢。我把水放到车上去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Right, let us have a look at the wheels.",
+      "zh": "好，我们看看轮子吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Well, no, they are all right. I had a look before.",
+      "zh": "不用，我看过了，都还行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Well, right then, you are ready to go.",
+      "zh": "好，你准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Well, yes, that is right.",
+      "zh": "没错，是这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Right. Here is your card back.",
+      "zh": "好了，卡还您。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Right. I will put the water in the car.",
+      "zh": "好的。我把水放车上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Well, do the wheels need a look?",
+      "zh": "轮子要检查一下吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "No, they are good. I had a look before I came out.",
+      "zh": "不用，出发前看过了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Good. That is everything. Have a safe journey.",
+      "zh": "好，都齐了。一路平安。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Thanks. How much do I give you for the water?",
+      "zh": "谢谢。水多少钱？",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "No payment needed. It is free.",
+      "zh": "不用付钱，免费的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "That is very kind. Well, I will be off.",
+      "zh": "那太客气了。那我走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Right. Let me get back in.",
+      "zh": "好，那我上车了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Have you got everything?",
+      "zh": "东西都带齐了吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Yes. phone, keys, water.",
+      "zh": "齐了。通话盒、钥匙、水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Good. You look ready to go.",
+      "zh": "好，看着是准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I am ready. The sun is going down.",
+      "zh": "准备好了。太阳快下山了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Then you had better start the engine.",
+      "zh": "那你最好发动车子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Will do. Thanks for the help.",
+      "zh": "马上。谢谢帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "No trouble. Have a good journey.",
+      "zh": "不客气。旅途愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "I will. okay on the way back.",
+      "zh": "会的。回程见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "okay. Go with care.",
+      "zh": "回见。路上小心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Right, I will get the pump started.",
+      "zh": "好，我开泵了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "How much would you like?",
+      "zh": "加多少？",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Put in the normal sort, please. Full up.",
+      "zh": "请加普通的那种，加满。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "That is all right. It will be quick.",
+      "zh": "行，很快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "The number is going up quick.",
+      "zh": "数字跳得挺快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Yes, this pump is a good one.",
+      "zh": "嗯，这个泵好用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "That is full. 238.",
+      "zh": "满了，238。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "I will put it on my card.",
+      "zh": "我刷卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Put it here. Sign there.",
+      "zh": "放这儿，那边签字。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Done. Can I get a bottle of water?",
+      "zh": "好了。能拿瓶水吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Yes, take one. That will be 3.50 more.",
+      "zh": "行，拿一瓶。多付三块五。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Right, here is the note. Keep the change.",
+      "zh": "好，给你钱。不用找了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "That is kind of you. Have a good journey.",
+      "zh": "您真客气。一路顺风。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Thanks. I will be off now. Long way to go.",
+      "zh": "谢了。我这就走。路还长。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Your back window is a bit dirty.",
+      "zh": "你后窗有点脏。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Is it? I did not see that. Can you give it a rub?",
+      "zh": "是吗？我没注意。能帮我擦一下吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Yes, I have a cloth here.",
+      "zh": "是的，我这儿有块布。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "That is very good of you. Thank you.",
+      "zh": "你真好。谢谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "All done. Clean as new.",
+      "zh": "好了。跟新的一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Great. I will go now. Thanks!",
+      "zh": "太好了。那我出发了。谢啦！",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Right then, I will get the payment done.",
+      "zh": "行，那我把钱付了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "This way. The machine is inside.",
+      "zh": "这边走。机器在里面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "How much is it?",
+      "zh": "多少钱？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Fifty eight even.",
+      "zh": "正好五十八。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Here you are. Keep the change.",
+      "zh": "给你。不用找了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Oh, that is very kind. Are you certain?",
+      "zh": "哦，您太客气了。确定吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Right, no trouble. I am short on time.",
+      "zh": "没事，不麻烦。我时间紧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Right. Would you like a bottle of water?",
+      "zh": "那行。要不要来瓶水？",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Yes, please. That would be great.",
+      "zh": "好的，麻烦您。那太好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Well, here you go. Safe journey.",
+      "zh": "给您。一路平安。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Thank you. I will be off then.",
+      "zh": "谢谢，那我走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Well, your back window is a bit dirty.",
+      "zh": "你后面的窗户有点脏。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Is it? I did not see it.",
+      "zh": "是吗？我没注意到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Let me give it a quick clean.",
+      "zh": "我帮你快速擦一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "That is very good of you.",
+      "zh": "你人真好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "No trouble at all. There you go.",
+      "zh": "不麻烦。好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Right, I am ready now.",
+      "zh": "好了，我准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Have a good journey. Get there before dark.",
+      "zh": "旅途愉快。天黑前到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "I will do my best. sure.",
+      "zh": "我尽量。好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "sure. Go safe.",
+      "zh": "好的。路上小心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Right, engine on.",
+      "zh": "好了，发动引擎。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "The store is full now.",
+      "zh": "油箱现在满了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Yes, I see it on the face.",
+      "zh": "嗯，表上看到了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "You have a long way to go?",
+      "zh": "你还有很远的路？",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "About two hundred more of them.",
+      "zh": "大概还有两百多个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "That is a good stretch.",
+      "zh": "那可不近。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I will go slow.",
+      "zh": "我会慢点开。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Keep the windows up if it gets cold.",
+      "zh": "如果变冷就关窗。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Good idea. I will do that.",
+      "zh": "好主意。我会的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Off I go then. Good day!",
+      "zh": "那我走了。日安！",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right, I will be off now.",
+      "zh": "好了，我这就走了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "be safe on the road.",
+      "zh": "路上小心。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "I will. The sun is going down.",
+      "zh": "会的。太阳快下山了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "You have three hours of light.",
+      "zh": "你还有三个小时的光。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "That is enough for me.",
+      "zh": "那对我来说够了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Keep your eyes open for animals.",
+      "zh": "注意看动物。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Good point. I will be sharp.",
+      "zh": "说得对。我会留神。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Safe journey, friend.",
+      "zh": "一路平安，朋友。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Thank you. sure for now.",
+      "zh": "谢谢。先好了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "See you again.",
+      "zh": "回头见。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周五下午，甲在高速路口停车加油，油表已近红线，他必须赶在天黑前到达目的地。",
+  "storyScript": "【开场·驶入加油站】周五下午的阳光斜斜地照在高速路口的加油站上，甲把车缓缓驶入，停在空着的油泵旁。他熄了火，瞥了一眼仪表盘上的油表指针——它正颤巍巍地靠在红线上方。甲深吸一口气，推开车门，热风裹着汽油味扑面而来。他得抓紧时间，天黑前还有两百多公里的路要赶。\n\n【进行·加油付款】加油站工作人员乙从便利店走出来，手里拿着抹布，朝甲点了点头。甲指了指油箱盖说，加满，普通汽油。乙熟练地拧开盖子，插入油枪，油泵发出低沉的嗡嗡声。甲站在一旁，看着油表数字跳动，心里盘算着路程。油枪咔嗒一声跳停，乙拔出油枪，拧紧盖子，用抹布擦了擦车窗上的灰尘。甲掏出钱包，跟着乙走进便利店，扫码付款。他顺便要了一瓶水，乙笑着递给他，说路上小心。\n\n【收束·继续行程】甲回到车里，发动引擎，油表指针稳稳地指向满格。他调整了一下后视镜，系好安全带，将车缓缓驶出加油站。夕阳把路面染成金色，甲看了眼导航，还有三个小时。他轻踩油门，车子汇入高速车流，向着目的地疾驰而去。后视镜里，加油站渐渐变小，消失在地平线上。甲打开收音机，音乐响起，他放松了肩膀，嘴角露出一丝微笑。"
+}

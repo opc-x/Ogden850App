@@ -1,0 +1,820 @@
+{
+  "slug": "haircut",
+  "sceneKey": "Haircut",
+  "titleZh": "理发店剪发",
+  "titleEn": "At the Hair Salon",
+  "tier": "P1",
+  "freqRank": 21,
+  "emoji": "💇",
+  "gradient": "linear-gradient(135deg,#fce7f3,#f472b6)",
+  "storyHook": "预约剪发，沟通长度，剪完付款",
+  "storyBlurb": "周六上午，甲走进小区理发店，想为下周的重要场合剪个利落发型。乙师傅耐心沟通长度，剪刀翻飞间，甲看着镜中的自己渐渐满意。",
+  "storyScript": "【开场·进店预约】周六上午的阳光斜斜地照进小区门口的理发店，甲推门而入，店里弥漫着洗发水的清香。乙师傅正在给一位客人吹风，抬头招呼一声，甲点点头，在等候椅上坐下。几分钟后，乙师傅送走客人，甲起身走向洗头椅，乙师傅调好水温，温水淋在发丝上，指尖轻轻揉搓，泡沫泛起，甲闭上眼，享受这片刻的放松。\n\n【进行·沟通发型】甲坐回剪发椅，面前是一面大镜子，乙师傅站在身后，问想剪多长。甲用手比划着，说下周要参加一个重要场合，想剪得利落些，长度到耳下三指就好，后面修薄一点，不要碎发。乙师傅仔细听着，用梳子挑起一缕头发，示意长度，甲点头确认。剪刀咔嚓咔嚓地响起，碎发纷纷落下，乙师傅手法娴熟，时而用梳子梳理，时而用剪刀修剪，甲看着镜中的自己，头发一点点变得整齐清爽。\n\n【收束·剪完付款】甲站起身，乙师傅用海绵扫去颈间的碎发，甲走到收银台前，掏出手机扫码付款。乙师傅笑着说，下次再来。甲推门走出理发店，阳光正好，微风拂过，新发型清爽利落，甲心情愉悦，想着下周的场合一定自信满满。",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "进店预约",
+      "goal": "说明剪发"
+    },
+    {
+      "beat": "进行",
+      "title": "沟通发型",
+      "goal": "指长度"
+    },
+    {
+      "beat": "收束",
+      "title": "剪完付款",
+      "goal": "照镜子付钱"
+    }
+  ],
+  "illustration": {
+    "label": "理发",
+    "motifs": [
+      "chair",
+      "mirror",
+      "scissors"
+    ],
+    "accent": "#db2777"
+  },
+  "narrative": {
+    "when": "周六上午，提前打了电话预约",
+    "where": "小区门口的理发店",
+    "who": "甲（顾客）· 乙（理发师）",
+    "how": "坐在椅子上，对着镜子沟通",
+    "method": "说明想要的长度和样式、洗剪吹、照镜子确认、付款",
+    "event": "甲下周要参加一个重要场合，想剪个利落的发型"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good morning! You are the ten o'clock?",
+      "zh": "早上好！您是十点预约的？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "That is me. I called yesterday.",
+      "zh": "是的，我昨天打电话约的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Come in. Sit here for now. I will get the water ready.",
+      "zh": "请进，先坐这边，我去调水温。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "The water is warm. That is good.",
+      "zh": "水温刚好，很舒服。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Tell me if it is too hot.",
+      "zh": "如果水太烫请告诉我。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "It is fine. Just right.",
+      "zh": "没有，刚好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Your hair is thick. Takes a little longer to get clean.",
+      "zh": "您头发厚，洗干净要多一点时间。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Take your time. No rush.",
+      "zh": "不着急，慢慢来。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "I will use the tree plant kind. Good for the head skin.",
+      "zh": "我用茶树系列，对头皮好。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "It smells very clean.",
+      "zh": "闻起来很清新。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Now lean back. Like this.",
+      "zh": "现在向后靠，就这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "That is quite nice.",
+      "zh": "这样挺舒服的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Right. Come sit in the big chair.",
+      "zh": "好，来坐剪发椅。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "My hair is all over the place.",
+      "zh": "我头发乱成一团了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "That is fine. We start from the beginning and work up.",
+      "zh": "没关系，我们从零开始。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "I need something clean. I have an important meeting next week.",
+      "zh": "我需要一个干净利落的发型，下周有个重要会议。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "A meeting? So clean and full of feeling.",
+      "zh": "会议啊，那就干净有型。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Right. But not too short on top.",
+      "zh": "对，但头顶别剪太短。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "I will keep the top full. You have a good head for it.",
+      "zh": "头顶我会保留厚度，您头型好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "And the sides?",
+      "zh": "两边呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Short, clean, off the ears. Lines sharp.",
+      "zh": "短而干净，不盖耳朵，线条利落。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "That is exactly it.",
+      "zh": "正是我想要的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Keep still. Starting from the back.",
+      "zh": "别动，从后面开始。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "How much are you taking off?",
+      "zh": "要剪掉多少？",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "About this much.",
+      "zh": "大概这些。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "A little more than that, please.",
+      "zh": "再多一点点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Right. To here. Good?",
+      "zh": "好，剪到这里，好吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Perfect.",
+      "zh": "好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Your hair has a good feel. Easy to work with.",
+      "zh": "您的头发质地很好，好操作。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "I did not be safe of it much before.",
+      "zh": "我以前不怎么护理头发。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I can see that. But it is in good order now.",
+      "zh": "看得出，不过现在状态很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "A friend told me to use a better kind of soap for the hair.",
+      "zh": "一个朋友告诉我要用好一点的洗发水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "And you listened. Wise.",
+      "zh": "您听了，聪明。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "It took three years for that friend to win me over.",
+      "zh": "那个朋友花了三年才说服我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Some people take longer.",
+      "zh": "有些人需要更长时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "How does the back look?",
+      "zh": "后面看起来怎么样了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Like this.",
+      "zh": "这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Clean. I like it.",
+      "zh": "干净，我喜欢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Now the sides. Turn your head to the right.",
+      "zh": "现在侧面，头向右转。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Is it uneven?",
+      "zh": "是不是不均匀？",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "One side is always a little longer. I will fix it.",
+      "zh": "有一边总是会长一点，我来修。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "The left side grows faster. Always has.",
+      "zh": "左边长得快，一直都是这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "You notice these things about yourself.",
+      "zh": "您注意到自己的这些细节。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "I have had this hair all my life.",
+      "zh": "我这头发跟了我一辈子了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Fair point. Left side, coming up.",
+      "zh": "说得对，处理左边了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Not too much.",
+      "zh": "别剪太狠。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Just making it the same as the right.",
+      "zh": "只是和右边对齐。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Right.",
+      "zh": "好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Turn back. Face front.",
+      "zh": "转回来，面对前方。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "How is it looking?",
+      "zh": "现在看起来怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Very good. Clean round the ears.",
+      "zh": "很好，耳朵周围很整齐。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "The front — could you take a bit off?",
+      "zh": "刘海——前面稍微修一点？",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "How much?",
+      "zh": "修多少？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Just enough that it does not fall in my eyes.",
+      "zh": "只要不挡眼睛就好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Right. Tip your head down a little.",
+      "zh": "好，稍微低一下头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Like this?",
+      "zh": "这样吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Yes. Keep still.",
+      "zh": "对，别动。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "A",
+      "en": "One cut.",
+      "zh": "剪一刀。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "B",
+      "en": "I can feel it falling.",
+      "zh": "我能感觉到头发在掉。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "A",
+      "en": "There. Now you can see.",
+      "zh": "好了，现在看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "B",
+      "en": "Oh — that is much better.",
+      "zh": "哦——好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "A",
+      "en": "The face shows now.",
+      "zh": "脸型出来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "B",
+      "en": "I did not know that made such a difference.",
+      "zh": "我不知道这样差别这么大。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "A",
+      "en": "The front hair sets the whole look.",
+      "zh": "刘海决定了整体造型。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "B",
+      "en": "Now the top — a little?",
+      "zh": "头顶——稍微修一下吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "A",
+      "en": "I will only take off the dead ends. Keep the full feeling.",
+      "zh": "我只修发尾，保留蓬松感。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "B",
+      "en": "Good.",
+      "zh": "好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "A",
+      "en": "Your hair grows fast. Come back in five weeks.",
+      "zh": "您头发长得快，五周后就要来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "B",
+      "en": "That is sooner than I thought.",
+      "zh": "比我想的早。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "A",
+      "en": "Good hair needs regular care.",
+      "zh": "好的发型需要定期打理。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "B",
+      "en": "I usually leave it three months.",
+      "zh": "我通常等三个月才来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "A",
+      "en": "Three months is why you came in looking like you did.",
+      "zh": "三个月就是您进来时那个状态的原因。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "B",
+      "en": "That is fair.",
+      "zh": "说得对。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "A",
+      "en": "Five weeks this time. Before the next big event.",
+      "zh": "这次五周后来，下一个重要场合之前。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "B",
+      "en": "I will try. May I book now?",
+      "zh": "我争取，现在可以预约吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "A",
+      "en": "Yes. Same day in five weeks, ten o'clock, I have a good time.",
+      "zh": "可以，五周后同一天十点还有空。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "B",
+      "en": "Book it. I will do my best to keep it.",
+      "zh": "就预约了，我尽量守约。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "A",
+      "en": "Good. Now the neck. Let me clean the line.",
+      "zh": "好，接下来修脖颈的线条。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "B",
+      "en": "The small machine makes me jump.",
+      "zh": "那个小电动工具让我心跳加速。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "A",
+      "en": "It is very light. You will not feel it.",
+      "zh": "很轻的，您不会有感觉的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "B",
+      "en": "I still jumped.",
+      "zh": "我还是抖了一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "A",
+      "en": "Everyone does the first time.",
+      "zh": "每个人第一次都会这样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "B",
+      "en": "This is not my first time.",
+      "zh": "这不是我第一次剪发。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "A",
+      "en": "I know. But with this small thing, everyone jumps.",
+      "zh": "我知道，但遇到这个小工具，每个人都会。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "B",
+      "en": "Even you?",
+      "zh": "您也会吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "A",
+      "en": "When I was learning, yes.",
+      "zh": "我学的时候，会的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "B",
+      "en": "Now I feel better.",
+      "zh": "我现在感觉好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "A",
+      "en": "All done. Have a look.",
+      "zh": "全好了，您看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "B",
+      "en": "I look like I have my life in order.",
+      "zh": "我看起来像是把生活过得井井有条的人。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "A",
+      "en": "A good cut will do that.",
+      "zh": "好的发型就有这种效果。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "B",
+      "en": "I am not joking — this is the best it has looked in years.",
+      "zh": "我是认真的，这是好几年来最好看的一次。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "A",
+      "en": "You have good material to work with.",
+      "zh": "您的底子好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "B",
+      "en": "Let me pay. How much?",
+      "zh": "我来付钱，多少？",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "A",
+      "en": "Forty.",
+      "zh": "四十块。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "B",
+      "en": "That is very fair for this much work.",
+      "zh": "这么多工夫，四十块很公道。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "A",
+      "en": "Come back in five weeks and I will give you a good price.",
+      "zh": "五周后来，我给您算个好价钱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "B",
+      "en": "I am already booked.",
+      "zh": "我已经预约了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "A",
+      "en": "Good.",
+      "zh": "好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "B",
+      "en": "Phone payment — I scan here?",
+      "zh": "手机付款——在这里扫吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "A",
+      "en": "Yes. That machine.",
+      "zh": "是，那台机器。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "B",
+      "en": "Done.",
+      "zh": "好了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "A",
+      "en": "Thank you. And — go show that hair off.",
+      "zh": "谢谢。还有——去展示一下您的新发型吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "B",
+      "en": "I will. Thank you.",
+      "zh": "我会的，谢谢您。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "A",
+      "en": "Good luck with the meeting.",
+      "zh": "祝您会议顺利。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "B",
+      "en": "Thank you. I feel ready now.",
+      "zh": "谢谢，我现在感觉准备好了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "A",
+      "en": "That is the point of a good cut.",
+      "zh": "这就是好发型的意义。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "B",
+      "en": "I should have come sooner.",
+      "zh": "我早就应该来的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "A",
+      "en": "Next time, five weeks.",
+      "zh": "下次，五周后。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "B",
+      "en": "Five weeks. I give you my word.",
+      "zh": "五周，我保证。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "A",
+      "en": "See you then. Have a good day.",
+      "zh": "到时候见，祝您愉快。",
+      "beat": "收束"
+    }
+  ]
+}

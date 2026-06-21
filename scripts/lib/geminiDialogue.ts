@@ -37,7 +37,7 @@ async function callGemini(
     contents: prompt,
     config: {
       temperature: 0.55,
-      systemInstruction: `You write short play-like Ogden English dialogues for Chinese learners. Every scene must feel like a real story with time, place, people, method, and a clear event — never dry word drills. Chinese must sound spoken and natural.`,
+      systemInstruction: `You write short play-like dialogues in standard, natural American English for Chinese learners. Use Ogden Basic English as the core vocabulary, but keep the dialogue human and scene-real. Every scene must feel like a real story with time, place, people, method, and a clear event — never dry word drills. Chinese must sound spoken and natural.`,
       responseMimeType: 'application/json',
       responseSchema: {
         type: Type.OBJECT,

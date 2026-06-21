@@ -7,40 +7,28 @@ type CatalogPayload = {
   aggregate: SceneAggregateStats;
 };
 
-let sharedLoad: Promise<CatalogPayload> | null = null;
-let sharedResult: CatalogPayload | null = null;
-
-function loadSceneCatalog(): Promise<CatalogPayload> {
-  if (sharedResult) return Promise.resolve(sharedResult);
-  if (!sharedLoad) {
-    sharedLoad = (async () => {
-      const catalog = await SceneService.fetchCatalog();
-      const aggregate = await SceneService.buildAggregateStats(catalog);
-      sharedResult = { catalog, aggregate };
-      return sharedResult;
-    })().catch((err) => {
-      sharedLoad = null;
-      throw err;
-    });
-  }
-  return sharedLoad;
+async function loadSceneCatalog(): Promise<CatalogPayload> {
+  const catalog = await SceneService.fetchCatalog();
+  const aggregate = await SceneService.buildAggregateStats(catalog);
+  return { catalog, aggregate };
 }
 
 export function useSceneCatalog() {
-  const [scenes, setScenes] = useState<SceneCatalogItem[]>(sharedResult?.catalog ?? []);
-  const [stats, setStats] = useState<SceneAggregateStats | null>(sharedResult?.aggregate ?? null);
-  const [loading, setLoading] = useState(!sharedResult);
+  const [scenes, setScenes] = useState<SceneCatalogItem[]>([]);
+  const [stats, setStats] = useState<SceneAggregateStats | null>(null);
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     (async () => {
+      setLoading(true);
       try {
         const { catalog, aggregate } = await loadSceneCatalog();
         if (!cancelled) {
           setScenes(catalog);
           setStats(aggregate);
-          setError(catalog.length ? null : '场景数据为空，请先运行 npm run sync:dialogues');
+          setError(catalog.length ? null : '场景数据为空，请检查 sceneStoryScripts 与 sceneDialogues.json');
         }
       } catch (e) {
         if (!cancelled) {

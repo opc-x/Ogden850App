@@ -1,0 +1,820 @@
+{
+  "slug": "banking",
+  "sceneKey": "Banking",
+  "titleZh": "银行存取款",
+  "titleEn": "At the Bank",
+  "tier": "P1",
+  "freqRank": 16,
+  "emoji": "🏦",
+  "gradient": "linear-gradient(135deg,#e2e8f0,#64748b)",
+  "storyHook": "进银行办业务，取号等候，办完离开",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "进门取号",
+      "goal": "说明业务"
+    },
+    {
+      "beat": "进行",
+      "title": "办理业务",
+      "goal": "填纸数钱"
+    },
+    {
+      "beat": "收束",
+      "title": "确认离开",
+      "goal": "核对余额"
+    }
+  ],
+  "illustration": {
+    "label": "银行业务",
+    "motifs": [
+      "building",
+      "money",
+      "paper"
+    ],
+    "accent": "#475569"
+  },
+  "narrative": {
+    "when": "周一上午十点，银行刚开门不久",
+    "where": "社区银行营业厅",
+    "who": "甲（储户）· 乙（银行柜员）",
+    "how": "取号排队，到窗口办理",
+    "method": "说明业务、填单、核对身份、数钱、拿回单据",
+    "event": "甲要把工资存进账户，还要顺便办一张新卡"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good morning. The place is quiet today.",
+      "zh": "早上好。今天人不多。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Good morning. Yes, it is early. How can I help you?",
+      "zh": "早上好。是啊，还早。您办什么业务？",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "I would like to put my money in my account.",
+      "zh": "我想把钱存进账户。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "That is good. Do you have your card with you?",
+      "zh": "好的。您带卡了吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Yes, here it is. And I would like a new card as well.",
+      "zh": "带了，给你。我还想办一张新卡。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Right. A new card for this account?",
+      "zh": "好的。新卡也是这个账户吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Yes, that is right. A second card for this account.",
+      "zh": "对，同一个账户再办一张卡。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "Right. Take a seat. I will get the papers ready.",
+      "zh": "好的。您先坐，我准备一下表格。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Thank you. I will keep an eye for my number.",
+      "zh": "谢谢。我留意我的号码。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "No need. You are after this one. Come when I say.",
+      "zh": "不用等。您就是下一位。我叫您时过来。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Table twenty three, please. This way.",
+      "zh": "23号桌，请到这边来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "That's me. Good morning.",
+      "zh": "是我。早上好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Good morning. How can I help?",
+      "zh": "早上好。您办什么业务？",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Here is my money. I would like to put it in my account.",
+      "zh": "这是我的工资。我想存进账户。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "And you said a new card too. I have the form here.",
+      "zh": "您还说要办张新卡。表格在这儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Right. Please put your name and number here.",
+      "zh": "好的。请在这儿填上您的姓名和号码。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Right. Is this line for the number?",
+      "zh": "好的。这行是填账号吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Yes. And put your name at the end.",
+      "zh": "对。然后在末尾签名。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Done. Here is the form.",
+      "zh": "填好了。给您表格。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Let me see the money first.",
+      "zh": "我先看一下钱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Go on. It is all there.",
+      "zh": "请点。都在里面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "That number is right. Two thousand.",
+      "zh": "数目没错。两千。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Good. Now for the new card, what name?",
+      "zh": "好的。新卡用什么名字？",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Same as the account. My name.",
+      "zh": "跟账户一样。我的名字。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Right. I will make the card now.",
+      "zh": "好的。我现在制卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Here is your new card. Keep it safe.",
+      "zh": "这是您的新卡。请收好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Thank you. And the PIN? Do I get that now?",
+      "zh": "谢谢。密码呢？现在能设吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Yes. Put your finger here.",
+      "zh": "可以。请把手指放在这里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Like this? OK. What number do I put?",
+      "zh": "这样？好的。输什么数字？",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Any six numbers you keep in mind.",
+      "zh": "任何六个你记得住的数字。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I will use my birth month and day. 0 8 1 5.",
+      "zh": "我用出生月日。0815。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Good. Now put your finger on the green key. Done.",
+      "zh": "好。现在把手指放在绿色键上。好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "That was quick. Now I have the card and the money in the account.",
+      "zh": "真快。现在卡和钱都到位了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Yes. Your balance is two thousand and thirty eight.",
+      "zh": "是的。您的余额是两千零三十八。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Great. Thank you for your help. Have a good day.",
+      "zh": "太好了。谢谢帮忙。祝您愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "Here is your new card and the receipt for the money.",
+      "zh": "这是您的新卡和存款回执。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Let me see the name and number. Yes, all good.",
+      "zh": "我看看姓名和号码。嗯，没问题。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Keep the card safe. Do not give your number to another person.",
+      "zh": "保管好卡片。密码别告诉任何人。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "I will put it in my money bag now. Thanks for the word.",
+      "zh": "我这就放钱袋里。多谢提醒。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "That is all done. Anything more?",
+      "zh": "都办妥了。还有其他需要吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "No, that is all. You have been a great help.",
+      "zh": "没了，您帮了大忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Happy to help. Have a good week.",
+      "zh": "乐意效劳。祝您一周顺利。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "You too. I will come back if I need anything.",
+      "zh": "您也是。有需要我再来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Good. We are open every day from nine to five.",
+      "zh": "好的。我们每天九点到五点开门。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "I will keep that in mind. sure.",
+      "zh": "我记住了。好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "sure. be safe of your card.",
+      "zh": "好的。保管好您的卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "I will. It is in my pocket now.",
+      "zh": "会的。现在放口袋里了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Right. Have a good day.",
+      "zh": "很好。祝您愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "Thank you. You too.",
+      "zh": "谢谢。您也是。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "sure.",
+      "zh": "好的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "What do I do now?",
+      "zh": "我现在该做什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "I will take a picture of you and get your name. Please look here.",
+      "zh": "我给您拍张照，再签个字。请看这里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Right. Like this?",
+      "zh": "好的。这样行吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Right. Put your name on this line.",
+      "zh": "好的。请在这条线上签名。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Here? Or there?",
+      "zh": "这里？还是那边？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Here, at the base. Use the pen, not your finger.",
+      "zh": "这里，底部。用笔，别用手指。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "Right. Done.",
+      "zh": "好的。签好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Good. I will put the money in your account. Two thousand three hundred, yes?",
+      "zh": "好的。我把钱存进您的账户。两千三百，对吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Yes, that is the number. Please look at it again.",
+      "zh": "对，就是这个数。麻烦再看一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "All good. Here is your new card and the paper. Keep them safe.",
+      "zh": "全部没问题。这是您的新卡和回单。请收好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "This card is good. Does it have a small bit inside?",
+      "zh": "这张卡不错。里面有小芯片吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Yes, all new cards have a small bit. Safer that way.",
+      "zh": "有的，新卡都带一个小东西，更安全。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "And I can use it at any machine?",
+      "zh": "那所有机器都能用吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Any machine that takes a card. No trouble at all.",
+      "zh": "只要是能插卡的机器都行，没问题的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "What about the old account? Still open?",
+      "zh": "那老账户还开着吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Yes, still open. You have two accounts now.",
+      "zh": "开着呢，您现在有两个账户了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "Good. I will put some money in the new one by and by.",
+      "zh": "那就好。回头我再往新卡里存点钱。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "You may do that on the hand talker or at a machine.",
+      "zh": "手机银行或机器上都能操作。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Right. I have it on my hand box.",
+      "zh": "好的，我手头的小盒子里已经有了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Right. That is all done. Anything more?",
+      "zh": "好的，都办好了。还要别的吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "No, that is all. Thank you for your help.",
+      "zh": "没了，就这些。谢谢帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "You are welcome. Here is your receipt and the new card.",
+      "zh": "不客气。这是您的回单和新卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "May I put my name on the back of the card?",
+      "zh": "要不要在卡背面签个名？",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "That is a good idea. Use a pen, not a sharp thing.",
+      "zh": "好主意。用笔写，别用尖东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Right. I will do that now. Is the money all safe in the account?",
+      "zh": "好，我这就写。钱都安全进账了吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "Yes, the full amount is in. You may see it on your hand box.",
+      "zh": "是的，全额到账。您可以在手机上查看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "I will do that after this. The new card works from now?",
+      "zh": "回头查。新卡现在就能用吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "From this minute. The system is up and running.",
+      "zh": "从此刻起就能用。系统已经上线了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Good. I will keep it safe. Have a good day.",
+      "zh": "好，我收好。祝您愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "You too. be safe of your things.",
+      "zh": "您也是。保管好随身物品。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I will put the card in my money bag now.",
+      "zh": "我现在把卡放钱袋里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Do you have the receipt for the new card?",
+      "zh": "新卡的回执单您拿了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Yes, it is here. And the paper for the money.",
+      "zh": "拿了，在这儿。还有存款凭条。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Good. Keep them together, you may need them.",
+      "zh": "好，放一起，万一要用呢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "Is it right to put my name on the back now or after?",
+      "zh": "我现在在背面签名，还是等会儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Now is best. Use the pen on the table.",
+      "zh": "现在签最好。用桌上的笔。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Right. I will do it. Is this the right side?",
+      "zh": "好，我写。是这一面吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Yes, the white line. Make it clear, please.",
+      "zh": "对，白色横线。请写清楚。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Done. I will put the card away now.",
+      "zh": "写好了。我把卡收起来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "All done. Anything more?",
+      "zh": "都办妥了。还需要什么吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Thank you for helping me.",
+      "zh": "不了，就这些。谢谢帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "You are welcome. Have a good day.",
+      "zh": "不客气。祝您愉快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "You too. I will come again if I need anything.",
+      "zh": "您也是。有需要再来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Right. The door is on your right.",
+      "zh": "好的。门在您右边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Right. sure then.",
+      "zh": "好。那再会。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Well, sure. be safe of your card.",
+      "zh": "再会。保管好您的卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I will. Thanks again.",
+      "zh": "我会的。再次感谢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Right. okay after.",
+      "zh": "好。回头见。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "okay. And keep that card safe.",
+      "zh": "好的。卡要放好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "I will put it in my pocket now.",
+      "zh": "我现在就放口袋里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Good. The new card works from today.",
+      "zh": "好的。新卡今天就能用。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "That is good. I will use it for my money.",
+      "zh": "那挺好。我以后工资就用它。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "A good idea. The old one was a bit slow.",
+      "zh": "好主意。旧卡有点慢了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Yes. I hope the new one is quicker.",
+      "zh": "是啊。希望新的快一些。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "It is. Have a great week.",
+      "zh": "是快的。祝您一周愉快。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Thanks. You too. Good day.",
+      "zh": "谢谢。您也是。再见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "okay. be safe.",
+      "zh": "拜。安全第一。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "I will. sure.",
+      "zh": "我会的。好。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "See you. Take care.",
+      "zh": "回见。保重。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "You too. Good day.",
+      "zh": "您也是。再见。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周一的银行大厅里，甲攥着工资信封取号等候。窗口前，他存钱又办新卡，在乙的指引下填单、数钱，最后核对余额满意离开。",
+  "storyScript": "【开场·进门取号】周一上午十点，社区银行刚开门不久，营业厅里只有零星几位客户。甲推门而入，手里攥着刚发的工资信封。他径直走向取号机，按下“个人业务”键，取出号码条——A023。大厅里飘着淡淡的消毒水味，电子屏滚动着叫号信息。甲找了个空位坐下，目光扫过墙上的利率牌，心里盘算着存完钱再办张新卡的事。\n\n【进行·办理业务】“请A023号到3号窗口。”甲起身走向柜台，乙微笑着示意他坐下。甲说明来意：存工资，再办一张储蓄卡。乙接过身份证和信封，先递来一张开户申请表。甲低头填信息，笔尖在纸上沙沙作响。乙则熟练地清点信封里的现金，手指翻飞间，一叠钞票被送入验钞机，哗啦啦的声响清脆利落。确认无误后，乙在键盘上敲击，屏幕上的数字跳动，存款金额录入系统。接着，她为新卡录入指纹、设置密码，整个过程一气呵成。\n\n【进行·办理业务】乙将新卡和回执单递给甲，又打印出一张存款凭条。甲接过单据，目光在余额数字上停留片刻——工资到账，新卡在手，心里踏实了几分。他仔细核对姓名、卡号，确认无误后，将凭条折好放进钱包。乙提醒他保管好密码，甲点头应下，顺手把新卡插进卡槽。\n\n【收束·确认离开】甲站起身，将单据和卡收好，朝乙道了声谢。走出银行时，阳光正好，他摸了摸口袋里的新卡，脚步轻快。周一上午的这件小事，让新的一周有了个安稳的开头。"
+}

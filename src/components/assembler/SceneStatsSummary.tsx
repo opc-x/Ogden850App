@@ -1,72 +1,89 @@
+import { SCENE_PROGRESS_GRADIENT } from '../../data/marketing';
+import { useProgressStats } from '../../contexts/ProgressContext';
 import { useSceneCatalog } from '../../hooks/useSceneCatalog';
 
+function FormulaTerm({
+  label,
+  value,
+  accent,
+}: {
+  label: string;
+  value: string | number;
+  accent?: boolean;
+}) {
+  return (
+    <span className="inline-flex items-baseline gap-1">
+      <span
+        className={`text-2xl font-black tabular-nums leading-none sm:text-[1.65rem] ${
+          accent ? 'text-[#2f7d4f]' : 'text-slate-800'
+        }`}
+      >
+        {value}
+      </span>
+      <span className="text-[11px] font-medium text-slate-500">{label}</span>
+    </span>
+  );
+}
+
+function FormulaOp({ children }: { children: string }) {
+  return (
+    <span aria-hidden className="select-none text-xl font-medium leading-none text-slate-300">
+      {children}
+    </span>
+  );
+}
+
 export function SceneStatsSummary() {
-  const { stats } = useSceneCatalog();
+  const { scenes, stats } = useSceneCatalog();
+  const { practicedSceneCount } = useProgressStats();
 
   if (!stats) return null;
 
-  const dialoguePct = Math.min(100, Math.round((stats.dialogueReady / stats.dialogueTarget) * 100));
   const dialogueLabel =
     stats.dialogueReady >= stats.dialogueTarget
       ? `${stats.dialogueReady.toLocaleString()}+`
       : stats.dialogueReady.toLocaleString();
 
+  const totalScenes = scenes.length || stats.sceneTarget;
+  const learnedScenes = practicedSceneCount;
+  const sceneProgressPct =
+    totalScenes > 0 ? Math.min(100, Math.round((learnedScenes / totalScenes) * 100)) : 0;
+
   return (
-    <section className="mb-5">
-      <div className="relative overflow-hidden rounded-3xl border border-emerald-100 bg-gradient-to-br from-[#f0f9f2] via-white to-[#f4fbf6] shadow-[0_4px_24px_rgba(47,125,79,0.08)]">
+    <section className="mb-6">
+      <div
+        className="relative overflow-hidden rounded-3xl border border-slate-200/50 bg-gradient-to-b from-white via-white to-slate-50/80 px-5 py-5 sm:px-6 sm:py-6
+          shadow-[0_12px_36px_-10px_rgba(15,23,42,0.14),0_4px_10px_-4px_rgba(15,23,42,0.06),inset_0_1px_0_rgba(255,255,255,0.95),inset_0_-1px_0_rgba(15,23,42,0.04)]"
+      >
+        {/* 顶光高光 — 模拟光从上方打下来 */}
         <div
           aria-hidden
-          className="pointer-events-none absolute -top-12 -right-10 h-44 w-44 rounded-full bg-emerald-200/30 blur-3xl"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -bottom-10 -left-8 h-32 w-32 rounded-full bg-emerald-100/40 blur-3xl"
+          className="pointer-events-none absolute inset-x-0 top-0 h-[55%] bg-gradient-to-b from-white via-white/40 to-transparent"
         />
 
-        <div className="relative px-5 py-5 sm:px-6">
-          {/* 价值公式：词根 × 场景 = 句子 */}
-          <div className="flex flex-wrap items-end gap-x-3 gap-y-2 sm:gap-x-5">
-            <div className="flex flex-col">
-              <span className="text-3xl sm:text-4xl font-black text-slate-800 tabular-nums leading-none">
-                {stats.wordCount}
-              </span>
-              <span className="mt-1 text-[11px] font-medium text-slate-400">核心词根</span>
-            </div>
-
-            <span className="pb-4 text-xl font-light text-emerald-300">×</span>
-
-            <div className="flex flex-col">
-              <span className="text-3xl sm:text-4xl font-black text-slate-800 tabular-nums leading-none">
-                {stats.sceneTarget}
-              </span>
-              <span className="mt-1 text-[11px] font-medium text-slate-400">真实场景</span>
-            </div>
-
-            <span className="pb-4 text-xl font-light text-emerald-300">=</span>
-
-            <div className="flex flex-col">
-              <span className="text-4xl sm:text-5xl font-black text-[#2f7d4f] tabular-nums leading-none tracking-tight">
-                {dialogueLabel}
-              </span>
-              <span className="mt-1 text-[11px] font-bold text-[#2f7d4f]">句能听会说的口语</span>
-            </div>
+        <div className="relative">
+          <div className="flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1.5 sm:gap-x-2.5">
+            <FormulaTerm label="核心词根" value={stats.wordCount} />
+            <FormulaOp>×</FormulaOp>
+            <FormulaTerm label="真实场景" value={stats.sceneTarget} />
+            <FormulaOp>≈</FormulaOp>
+            <FormulaTerm label="句生活口语" value={dialogueLabel} accent />
           </div>
 
-          <p className="mt-4 text-[13px] font-medium text-slate-400 leading-relaxed text-pretty">
-            背 <span className="font-bold text-slate-600">850 个</span>最基础的词根，就能听懂、跟读这 <span className="font-bold text-slate-600">50 个</span>高频场景里的每一句话。
-          </p>
-
-          {/* 进度条 */}
-          <div className="mt-4 flex items-center gap-3">
-            <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-emerald-100/70">
+          <div className="mt-4">
+            <div className="mb-1.5 flex justify-end">
+              <span className="text-[11px] font-semibold tabular-nums text-slate-500">
+                <span className="text-amber-700">{learnedScenes}</span>
+                <span className="mx-0.5 font-normal text-slate-400">/</span>
+                {totalScenes}
+              </span>
+            </div>
+            <div className="h-2.5 w-full overflow-hidden rounded-full border border-slate-200/90 bg-slate-100/90 shadow-[inset_0_1px_2px_rgba(15,23,42,0.06)]">
               <div
-                className="h-full rounded-full bg-gradient-to-r from-[#5cb377] to-[#2f7d4f] transition-all duration-500"
-                style={{ width: `${dialoguePct}%` }}
+                className="h-full min-w-[0.5rem] rounded-full shadow-[0_1px_2px_rgba(180,83,9,0.3)] transition-all duration-500"
+                style={{ width: `${sceneProgressPct}%`, background: SCENE_PROGRESS_GRADIENT }}
               />
             </div>
-            <span className="shrink-0 text-[11px] font-medium text-slate-400">
-              已上线 <span className="font-bold text-[#2f7d4f] tabular-nums">{stats.dialogueReady.toLocaleString()}</span> 句 · {dialoguePct}%
-            </span>
           </div>
         </div>
       </div>

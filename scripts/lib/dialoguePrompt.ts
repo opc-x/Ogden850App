@@ -81,8 +81,8 @@ ${beatNarrativeHint(opts.beat)}
 ${prior}
 
 STRICT RULES:
-1. Ogden Basic English (850 words) only, plus standard inflections. NEVER use: menu, booking, yuan, wifi, taxi, cucumber, steamed, tasty, dishes.
-   Substitute: menu/list→paper or list; money for prices; food/meal for dishes; good for tasty.
+1. Write standard, natural American English. Use Ogden Basic English as the core vocabulary, but allow essential real-life scene words when they are the natural word a person would say (phone, app, WiFi, email, password, bus, train, gas, menu, ticket, doctor, file, download).
+   Do not force awkward substitutes like "machine" for phone/car/computer when the scene would sound unnatural.
 2. Each line is something a real person would SAY in this situation — with context, not textbook drills.
 2b. Each new line MUST introduce a NEW fact, action, or development. NEVER repeat or paraphrase the meaning of any earlier line (in either language).
 3. Speakers A and B alternate. A = learner/甲, B = local helper/乙.
@@ -172,8 +172,8 @@ ${seedBlock}
 ${opts.styleReference ?? GOOD_CLOSING_EXAMPLE}
 
 STRICT RULES:
-1. Ogden Basic English (850 words) only, plus standard inflections. NEVER use: menu, booking, yuan, wifi, taxi, cucumber, steamed, tasty, dishes.
-   Substitute: menu/list→paper or list; money for prices; food/meal for dishes; good for tasty.
+1. Write standard, natural American English. Use Ogden Basic English as the core vocabulary, but allow essential real-life scene words when they are the natural word a person would say (phone, app, WiFi, email, password, bus, train, gas, menu, ticket, doctor, file, download).
+   Do not force awkward substitutes like "machine" for phone/car/computer when the scene would sound unnatural.
 2. ONE continuous event from start to end. Every line must reference something already established (the same people, the same place, the same problem) — never introduce a second unrelated topic or restart the scene.
 3. Each new line MUST add a NEW fact, action, or development. NEVER repeat or paraphrase the meaning of any earlier line, in either language.
 4. Speakers A and B alternate. A = learner/甲, B = local helper/乙.
@@ -183,16 +183,7 @@ STRICT RULES:
 8. Output exactly ${opts.target} lines total. MINIMUM beat counts: 开场 ≥4, 进行 ≥12, 收束 ≥3. Assign beats as you write — do NOT tag everything as one act.
 9. CLOSING RULE (critical): The entire scene may contain ONLY ONE farewell/closing moment in ONE line only (even within the last 3 lines, never stack goodbye + see you + take care on separate lines). Words like goodbye, bye, see you, good night, sleep well, rest well, have a good day, take care (not "take care of"), or "thank you…goodbye" may appear AT MOST ONCE in the whole scene, and ONLY in the final 1-3 lines. NEVER say goodbye in the middle and then continue the conversation. Never re-ask facts already confirmed earlier in the same scene.
 10. COHERENCE (critical): Each concrete action (send a file/paper, open a document, pay, sign, download) must go start → progress → done in ONE arc — never say "I am sending it now" twice without finishing the first send. Thank for help at most ONCE in the whole scene (mid-scene "thanks" is OK once, not four variations of "thanks for your help").
-11. OGDEN WORD SUBSTITUTES (never use the left column):
-   - gas → oil | car → machine | trip → journey | fill (verb) → make full / put in
-   - want → need / will | check → see / look at | pay (verb) → give money
-   - wifi → network | password → secret word | menu → list / paper
-   - know → see / be clear | wait → stay / be here | tank → oil part
-   - home → house | tonight → at night / this night
-   - computer → machine | file → paper / record | download → get / take
-   - app → program | phone → machine | video → picture / film
-   - stream → play / send | online → on the network | email → letter / note
-   - doctor → man / woman | sorry → I am sad / excuse me | hear → get / listen
+11. Style target: short, smooth, spoken American lines. Avoid robotic repetition, literal word drills, and unnatural Ogden-only wording.
 12. NO proper names (no Wang, Li, Aunt Wang). Use friend, mother, man, woman, the helper, A, B only.
 
 Return JSON: {"lines":[{"speaker":"A","en":"...","zh":"...","beat":"开场"}]}`;

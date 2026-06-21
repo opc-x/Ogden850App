@@ -1,0 +1,820 @@
+{
+  "slug": "disappointed",
+  "sceneKey": "Disappointed",
+  "titleZh": "失望与调整",
+  "titleEn": "Disappointment",
+  "tier": "P2",
+  "freqRank": 47,
+  "emoji": "😞",
+  "gradient": "linear-gradient(135deg,#f1f5f9,#64748b)",
+  "storyHook": "期望落空，表达失望，重新计划",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "期望落空",
+      "goal": "没如愿"
+    },
+    {
+      "beat": "进行",
+      "title": "表达失望",
+      "goal": "谈原计划"
+    },
+    {
+      "beat": "收束",
+      "title": "调整计划",
+      "goal": "换办法"
+    }
+  ],
+  "illustration": {
+    "label": "失望",
+    "motifs": [
+      "cloud",
+      "plan",
+      "retry"
+    ],
+    "accent": "#475569"
+  },
+  "narrative": {
+    "when": "周日下午，原本计划好的出游泡汤了",
+    "where": "甲家客厅",
+    "who": "甲（满怀期待的人）· 乙（一起计划的朋友）",
+    "how": "说出原本的期待，再说现在的失落",
+    "method": "说出期望落空、谈原本的计划、表达失望、一起重新安排",
+    "event": "说好的旅行因为天气原因突然取消了"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Well, this is not what I had in mind.",
+      "zh": "唉，这可不是我想要的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "We are not going because of the rain.",
+      "zh": "因为下雨，我们不去了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "I was so looking forward to the water.",
+      "zh": "我本来特别期待去水边。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "We had a good idea, did we not?",
+      "zh": "我们之前想得多好啊，对吧？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "The little house by the water is gone.",
+      "zh": "水边的小木屋也没了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "I booked everything for this day.",
+      "zh": "我为了今天把什么都订好了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "Now it is all for nothing.",
+      "zh": "现在全白费了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "What a waste of a good idea.",
+      "zh": "多好的主意，可惜了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "I am sad, but what can we do?",
+      "zh": "我很难过，但我们能怎么办呢？",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "We may get another chance.",
+      "zh": "也许我们还有别的机会。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I was hoping for that view.",
+      "zh": "我本来一心想着那个景色。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "The weather took it all away.",
+      "zh": "天气把一切都夺走了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I was going to take your picture there.",
+      "zh": "我本来要在那儿给你拍照的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Now it is just a wet street.",
+      "zh": "现在只剩湿漉漉的街道了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "I am sad it did not go well.",
+      "zh": "真遗憾没能成行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Do you have any other idea?",
+      "zh": "你有别的想法吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Let us see what we can do.",
+      "zh": "我们看看还能做什么。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "I had a list of things to do.",
+      "zh": "我本来列了一堆事要做。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "I am sad it all went wrong.",
+      "zh": "真抱歉全搞砸了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "What about a day at the history house?",
+      "zh": "去历史馆待一天怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "That is not the same at all.",
+      "zh": "那完全不一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "I see, but it may be good.",
+      "zh": "我明白，但可能也不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "I was so ready for the walk.",
+      "zh": "我本来特别期待徒步。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "We could go to the plant house.",
+      "zh": "我们可以去植物园。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "I would like that, yes.",
+      "zh": "我愿意去，是的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Right, so the plant house it is.",
+      "zh": "行，那就植物园了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "But I had my heart on the water.",
+      "zh": "但我心心念念的还是那片水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "I am sad about that.",
+      "zh": "我知道，我也觉得遗憾。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "The weather is not our friend today.",
+      "zh": "今天天气不帮忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "No, it is not. I am tired of the rain.",
+      "zh": "是啊，烦死这雨了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "Let us look at the plant house list?",
+      "zh": "要不看看植物园的介绍？",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Yes, what do they have there?",
+      "zh": "好，那里有什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "A warm room with trees and flowers.",
+      "zh": "有个暖房，种满树和花。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "That sounds soft and quiet.",
+      "zh": "听起来又温柔又安静。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "It will be a good change.",
+      "zh": "会是个不错的调剂。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "I would like to see those flying things.",
+      "zh": "我想看那些会飞的小东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "They say there is a room for them.",
+      "zh": "听说有个专门的蝴蝶房。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "That is good. And after that, a warm drink?",
+      "zh": "好。看完再去喝杯热饮？",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "Yes, the place with the cat in the book store.",
+      "zh": "嗯，就是有猫的那家书店。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Right, I will put it on the list.",
+      "zh": "行，我记下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I am happy we have a new way.",
+      "zh": "很高兴我们有了新办法。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Yes, it is a good one.",
+      "zh": "是啊，这个计划不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "I was so sad about the old one.",
+      "zh": "之前那个泡汤了，我特别难过。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "I saw your face when you got the news.",
+      "zh": "我看到你收到消息时的表情了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "All that work for nothing.",
+      "zh": "白忙活了一场。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "But we will have a good time tomorrow.",
+      "zh": "不过明天我们照样能玩得开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "I hope the weather is better.",
+      "zh": "希望天气能好些。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "Even if it rains, we are inside.",
+      "zh": "就算下雨，我们也在室内。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "True. And the cat will be there.",
+      "zh": "也是。而且还有那只猫在。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "That makes it better.",
+      "zh": "这就让心情好多了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I keep seeing that water in my head.",
+      "zh": "我还是老想着那片水。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Me too. But the plant place has water too.",
+      "zh": "我也是。但植物园也有水啊。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Not the same. That view was special.",
+      "zh": "不一样。那个景色很特别。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "I see. But we will make new special views.",
+      "zh": "我明白。但我们会创造新的特别景色。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "You are right. What time do we go?",
+      "zh": "你说得对。我们几点出发？",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Ten in the morning. I have the tickets.",
+      "zh": "上午十点。我已经买好票了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "And the pot work group?",
+      "zh": "那陶艺小组呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "That is at two, after the meal.",
+      "zh": "下午两点，吃完饭后去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Right. Let us get food at the place near the garden.",
+      "zh": "好的。我们在花园附近那家店吃饭吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Yes. I saw a good list for it on the net.",
+      "zh": "好。我在网上看到它家菜单不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "What do they have on the list?",
+      "zh": "他们菜单上有什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Warm plates and cold plates, and a sweet list.",
+      "zh": "有热菜和冷盘，还有甜品单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "I would like a warm plate, not too sharp.",
+      "zh": "我想来份热菜，不要太辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "Same for me. And a cold plate to start.",
+      "zh": "我也一样。先来个冷盘。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Right, let's get a sweet after.",
+      "zh": "好，我们之后来份甜品吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Yes, if we have room. I saw a sweet cake.",
+      "zh": "好，如果吃得下的话。我看到有甜蛋糕。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "That is good. I will have the cake.",
+      "zh": "不错。我要那个蛋糕。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "I will get the fruit plate. Is that all right?",
+      "zh": "我来份水果拼盘。行吧？",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Right. What about the pot work?",
+      "zh": "行。那陶艺课呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "We make a pot and paint it. Simple and good.",
+      "zh": "我们做陶罐然后上色。简单又有趣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "I thought we would be at the water now.",
+      "zh": "我以为我们现在会在水边。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Yes, the view would have been great.",
+      "zh": "是啊，景色本来会很美的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "I had the walk all worked out.",
+      "zh": "我把徒步路线都规划好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "And the little house by the water.",
+      "zh": "还有水边的小木屋。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "I had a surprise for you.",
+      "zh": "我想给你个惊喜来着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "You did. I saw the map on the table.",
+      "zh": "你确实给了。我看到桌上的地图了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Now it's all for nothing.",
+      "zh": "现在一切都白费了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Not for nothing. We still have one another.",
+      "zh": "没白费。我们还有彼此。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "But the rain... it will go on for days.",
+      "zh": "但这雨……还要下好几天。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "Then we make new designs. That is what we do.",
+      "zh": "那我们就做新设计。我们一向如此。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "What new designs?",
+      "zh": "什么新设计？",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "I saw a place with trees inside a glass house.",
+      "zh": "我看到一个地方，玻璃房子里有树。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "A glass house? Like a plant house?",
+      "zh": "玻璃房子？像植物房子？",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Yes, with warm air and small flying things.",
+      "zh": "对，有暖气和会飞的小东西。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "But I had a desire for the water and the high land.",
+      "zh": "但我想要湖和山。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "I see. But this is a different sort of journey.",
+      "zh": "我明白。但这是另一种旅程。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Will there be ice?",
+      "zh": "有冰吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Better. Warm drink with a picture on top.",
+      "zh": "更好。热饮上面有图案。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Have you got a thought?",
+      "zh": "你有想法了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "I do. I made a list on my box.",
+      "zh": "有的。我在小本子上列了清单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Let me see the list.",
+      "zh": "让我看看清单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "Here. First, the plant house at ten.",
+      "zh": "给。第一站，十点去植物房子。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Then a hand work group at one.",
+      "zh": "然后一点有手工小组。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Then the book place with a cat.",
+      "zh": "之后去有猫的书店。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "The cat is a good point. I am in.",
+      "zh": "猫不错。我加入。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Great. And a warm drink with a picture at the end.",
+      "zh": "好极了。最后喝一杯有图案的热饮。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "That is a good day. Not the same, but good.",
+      "zh": "那会是美好的一天。不一样，但很好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "Right. New ideas, new memories.",
+      "zh": "没错。新想法，新回忆。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "I am happy you came over.",
+      "zh": "很高兴你过来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Me too. Let us make it a story.",
+      "zh": "我也是。我们把它变成故事吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "A: I will get the map for the plant house.",
+      "zh": "我去拿植物园的地图。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Good. I will put it on the table.",
+      "zh": "好。我把它放桌上。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "The rain is over now.",
+      "zh": "现在雨停了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Yes, the sun is out.",
+      "zh": "是的，太阳出来了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "A: Tomorrow will be a new start.",
+      "zh": "明天会是一个新的开始。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "Right. That is a good idea.",
+      "zh": "没错，那是个好主意。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "I am happy we did not give up.",
+      "zh": "我很高兴我们没有放弃。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "We do not give up.",
+      "zh": "我们不会放弃。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "A: Let us get some rest now.",
+      "zh": "我们现在休息一下吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Yes. Sleep well. See you in the morning.",
+      "zh": "好，好好睡，明早见。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "说好的旅行因天气泡汤，甲在客厅向乙倾诉失落。两人从失望中重拾希望，调整计划再出发。",
+  "storyScript": "【开场·期望落空】周日下午，甲家客厅的窗帘半掩着，光线黯淡。甲坐在沙发上，手机屏幕上那条取消旅行的通知还亮着。乙推门进来，看见甲垂着头，便知道事情不妙。甲抬起头，勉强笑了笑，说原本今天该在湖边看日落。窗外雨声淅沥，像是附和着这份失落。乙放下背包，坐到甲身旁，沉默片刻后轻声问，那现在怎么办。甲叹了口气，手指无意识地摩挲着手机边缘，说原本订好的民宿、预约的徒步路线，全都泡汤了。乙注意到茶几上摊开的旅行手册，上面用荧光笔标注着景点和餐厅，此刻那些鲜艳的标记显得格外刺眼。\n\n【进行·表达失望】甲拿起那本手册，翻到折角的一页，指着上面的照片说，这是你最想去的观景台，我特意订了附近的小木屋，想给你惊喜。乙看着照片里云雾缭绕的山峰，心里一紧。甲继续说，还有那家手工冰淇淋店，你说要尝遍所有口味；山脚下的温泉，我们约好要泡到手指发皱。乙的视线模糊了，这些细节甲都记得。甲的声音越来越低，说现在全没了，连天气预报都说未来一周都有雨。乙握住甲的手，感到对方指尖冰凉。客厅里只有雨声和偶尔的汽车驶过水洼的声响。\n\n【进行·调整计划】沉默了几分钟，乙突然站起来，走到窗边拉开窗帘。雨势渐小，天边露出一线亮光。乙转身说，要不我们换个地方？甲疑惑地抬头。乙从口袋里掏出手机，打开地图，说城市东边有个新开的室内植物园，据说有热带雨林区，还有蝴蝶温室。甲的眼睛亮了亮，但随即又暗下去，说那不一样。乙蹲下来，平视着甲说，我知道不一样，但我们可以创造新的回忆。甲犹豫着，乙已经拨通了植物园的电话，询问预约情况。放下电话，乙笑着说，明天上午有票，还能参加手工陶艺课。甲终于露出了今天的第一个真心的笑容。\n\n【收束·重新计划】甲和乙肩并肩坐在沙发上，手机屏幕的光映着两张脸。乙新建了一个行程表，把植物园、陶艺课和附近的书店咖啡馆排进去。甲在旁边补充，说那家书店有只店猫，特别亲人。乙笑着说那必须去撸猫。甲翻出收藏夹里那家咖啡馆的推荐帖，说他们的热可可上有手绘拉花。乙点头，说那就当是给明天的冒险加个甜头。窗外的雨渐渐停了，云层裂开一道缝，夕阳的余晖洒进来。甲靠在乙肩上，轻声说，其实只要和你一起，去哪里都行。乙笑着揉了揉甲的头发，说那当然，我们的计划永远有效。茶几上那本旅行手册被合上，放在一旁，取而代之的是新打印的植物园地图和手写的行程单。"
+}

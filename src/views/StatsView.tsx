@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, Blocks } from 'lucide-react';
+import { BookOpen, Blocks, MessageSquare, type LucideIcon } from 'lucide-react';
 import { useProgress } from '../contexts/ProgressContext';
 import { useScenePracticeStats } from '../hooks/useScenePracticeStats';
 
@@ -21,20 +21,20 @@ function ProgressRing({
   accentClass: string;
   trackClass: string;
 }) {
-  const r = 54;
+  const r = 34;
   const c = 2 * Math.PI * r;
   const offset = c - (percent / 100) * c;
 
   return (
-    <div className="relative w-40 h-40 mx-auto">
-      <svg className="w-full h-full -rotate-90" viewBox="0 0 120 120" aria-hidden>
-        <circle cx="60" cy="60" r={r} fill="none" strokeWidth="10" className={trackClass} />
+    <div className="relative h-[5.5rem] w-[5.5rem] shrink-0">
+      <svg className="h-full w-full -rotate-90" viewBox="0 0 80 80" aria-hidden>
+        <circle cx="40" cy="40" r={r} fill="none" strokeWidth="7" className={trackClass} />
         <circle
-          cx="60"
-          cy="60"
+          cx="40"
+          cy="40"
           r={r}
           fill="none"
-          strokeWidth="10"
+          strokeWidth="7"
           strokeLinecap="round"
           className={accentClass}
           strokeDasharray={c}
@@ -43,10 +43,71 @@ function ProgressRing({
         />
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className="text-4xl font-black text-slate-800 tabular-nums leading-none">{current}</span>
-        <span className="text-[10px] text-slate-400 font-black mt-1">/ {total}</span>
+        <span className="text-lg font-black tabular-nums leading-none text-slate-800">
+          {current.toLocaleString()}
+        </span>
+        <span className="mt-0.5 text-[9px] font-bold text-slate-400">/ {total.toLocaleString()}</span>
       </div>
     </div>
+  );
+}
+
+function StatCard({
+  icon: Icon,
+  iconClass,
+  title,
+  current,
+  total,
+  percent,
+  accentClass,
+  trackClass,
+  percentClass,
+  hint,
+  actionLabel,
+  onAction,
+}: {
+  icon: LucideIcon;
+  iconClass: string;
+  title: string;
+  current: number;
+  total: number;
+  percent: number;
+  accentClass: string;
+  trackClass: string;
+  percentClass: string;
+  hint: string;
+  actionLabel: string;
+  onAction: () => void;
+}) {
+  return (
+    <section className="flex flex-col rounded-2xl border border-slate-100 bg-white p-4 shadow-sm">
+      <div className="mb-3 flex items-center gap-1.5">
+        <Icon className={`h-4 w-4 ${iconClass}`} />
+        <h3 className="text-sm font-bold text-slate-800">{title}</h3>
+      </div>
+
+      <div className="flex items-center gap-3">
+        <ProgressRing
+          current={current}
+          total={total}
+          percent={percent}
+          accentClass={accentClass}
+          trackClass={trackClass}
+        />
+        <div className="min-w-0 flex-1">
+          <p className={`text-xl font-black tabular-nums leading-none ${percentClass}`}>{percent}%</p>
+          <p className="mt-1.5 text-[10px] font-medium leading-snug text-slate-500">{hint}</p>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        onClick={onAction}
+        className={`mt-3 self-start text-[10px] font-bold ${percentClass} hover:opacity-80 cursor-pointer`}
+      >
+        {actionLabel}
+      </button>
+    </section>
   );
 }
 
@@ -56,63 +117,56 @@ export const StatsView: React.FC<StatsViewProps> = ({ totalWords, setActiveTab }
 
   return (
     <div className="space-y-4 pb-4">
-      <header className="px-1">
-        <h2 className="text-2xl font-black text-slate-800 tracking-tight">学习进度</h2>
-        <p className="text-sm text-slate-500 font-medium mt-0.5">850 词 + 生活场景，练多少看多少</p>
+      <header className="px-0.5">
+        <h2 className="text-xl font-black tracking-tight text-slate-800">学习进度</h2>
+        <p className="mt-0.5 text-xs font-medium text-slate-500">850 词 + 生活场景，练多少看多少</p>
       </header>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <section className="bg-white rounded-3xl border border-slate-100 shadow-sm p-6 flex flex-col items-center text-center">
-          <div className="flex items-center gap-2 mb-6 self-start">
-            <BookOpen className="w-5 h-5 text-indigo-500" />
-            <h3 className="text-base font-black text-slate-800">850 词掌握</h3>
-          </div>
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+        <StatCard
+          icon={BookOpen}
+          iconClass="text-indigo-500"
+          title="850 词掌握"
+          current={masteredCount}
+          total={totalWords}
+          percent={progressPercent}
+          accentClass="stroke-indigo-500"
+          trackClass="stroke-slate-100"
+          percentClass="text-indigo-600"
+          hint="词典里标记「已掌握」"
+          actionLabel="去词典 →"
+          onAction={() => setActiveTab('browser')}
+        />
 
-          <ProgressRing
-            current={masteredCount}
-            total={totalWords}
-            percent={progressPercent}
-            accentClass="stroke-indigo-500"
-            trackClass="stroke-slate-100"
-          />
+        <StatCard
+          icon={Blocks}
+          iconClass="text-[#2f7d4f]"
+          title="场景掌握"
+          current={sceneStats.practicedSceneCount}
+          total={sceneStats.totalSceneCount}
+          percent={sceneStats.scenePercent}
+          accentClass="stroke-[#2f7d4f]"
+          trackClass="stroke-emerald-100"
+          percentClass="text-[#2f7d4f]"
+          hint="场景里点「已练完」计数"
+          actionLabel="去练场景 →"
+          onAction={() => setActiveTab('assembler')}
+        />
 
-          <p className="mt-5 text-2xl font-black text-indigo-600 tabular-nums">{progressPercent}%</p>
-          <p className="text-xs text-slate-500 font-medium mt-1">在词典里标记「已掌握」</p>
-
-          <button
-            type="button"
-            onClick={() => setActiveTab('browser')}
-            className="mt-5 text-xs font-black text-indigo-600 hover:text-indigo-500 cursor-pointer"
-          >
-            去词典 →
-          </button>
-        </section>
-
-        <section className="bg-white rounded-3xl border border-emerald-100 shadow-sm p-6 flex flex-col items-center text-center">
-          <div className="flex items-center gap-2 mb-6 self-start">
-            <Blocks className="w-5 h-5 text-[#2f7d4f]" />
-            <h3 className="text-base font-black text-slate-800">场景掌握</h3>
-          </div>
-
-          <ProgressRing
-            current={sceneStats.practicedSceneCount}
-            total={sceneStats.totalSceneCount || 0}
-            percent={sceneStats.scenePercent}
-            accentClass="stroke-[#2f7d4f]"
-            trackClass="stroke-emerald-100"
-          />
-
-          <p className="mt-5 text-2xl font-black text-[#2f7d4f] tabular-nums">{sceneStats.scenePercent}%</p>
-          <p className="text-xs text-slate-500 font-medium mt-1">在场景里标记「已练完」</p>
-
-          <button
-            type="button"
-            onClick={() => setActiveTab('assembler')}
-            className="mt-5 text-xs font-black text-[#2f7d4f] hover:opacity-80 cursor-pointer"
-          >
-            去练场景 →
-          </button>
-        </section>
+        <StatCard
+          icon={MessageSquare}
+          iconClass="text-amber-600"
+          title="口语句子"
+          current={sceneStats.practicedSentenceCount}
+          total={sceneStats.totalSentenceCount}
+          percent={sceneStats.sentencePercent}
+          accentClass="stroke-amber-500"
+          trackClass="stroke-amber-100"
+          percentClass="text-amber-600"
+          hint="按场景整批累计，不逐句记"
+          actionLabel="去练场景 →"
+          onAction={() => setActiveTab('assembler')}
+        />
       </div>
     </div>
   );

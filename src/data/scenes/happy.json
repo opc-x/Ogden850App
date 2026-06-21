@@ -1,0 +1,820 @@
+{
+  "slug": "happy",
+  "sceneKey": "Happy",
+  "titleZh": "分享开心事",
+  "titleEn": "Sharing Good News",
+  "tier": "P2",
+  "freqRank": 42,
+  "emoji": "😊",
+  "gradient": "linear-gradient(135deg,#fef9c3,#eab308)",
+  "storyHook": "报喜，对方祝贺，一起高兴",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "报喜",
+      "goal": "有好消息"
+    },
+    {
+      "beat": "进行",
+      "title": "分享细节",
+      "goal": "讲经过"
+    },
+    {
+      "beat": "收束",
+      "title": "一起庆祝",
+      "goal": "约定庆祝"
+    }
+  ],
+  "illustration": {
+    "label": "开心",
+    "motifs": [
+      "smile",
+      "sun",
+      "jump"
+    ],
+    "accent": "#ca8a04"
+  },
+  "narrative": {
+    "when": "周三下午五点，刚收到一个好消息",
+    "where": "甲的办公室门口",
+    "who": "甲（报喜的人）· 乙（同事/朋友）",
+    "how": "迫不及待地把好消息告诉对方",
+    "method": "说出好消息、分享细节经过、对方表示祝贺、约时间一起庆祝",
+    "event": "甲这次的申请通过了，第一时间想告诉乙"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "I have some good news!",
+      "zh": "我有好消息！",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Oh, do say.",
+      "zh": "哦，快说说。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "My request went through.",
+      "zh": "我的申请通过了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "That is great! How did it go?",
+      "zh": "太好了！怎么通过的？",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "I got your note an hour back.",
+      "zh": "我一小时前收到了你的消息。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "You are over the moon.",
+      "zh": "你肯定高兴坏了吧。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "I was jumping up and down.",
+      "zh": "我高兴得跳了起来。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "I am so pleased for you.",
+      "zh": "我真为你高兴。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "Let us get a drink after this.",
+      "zh": "我们之后喝一杯。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Yes, let's do that.",
+      "zh": "好，就这么定了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "I would like to go to that new place on High Street.",
+      "zh": "我想去高街那家新店。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Right, the one with the warm plates?",
+      "zh": "对，那家有热菜的那家？",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Yes, they have cold plates too.",
+      "zh": "对，他们也有冷盘。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Is it all right if we get a table for the end of the week?",
+      "zh": "我们周末订个位子可以吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "I will book it under my name.",
+      "zh": "我用我的名字订。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "What time on day seven?",
+      "zh": "第七天几点？",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Seven, if that is good for you.",
+      "zh": "七点，你要是方便的话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Seven is all right. I will put it in my book.",
+      "zh": "七点没问题，我记上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "I am so happy this came through at last.",
+      "zh": "真高兴这事终于成了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "You worked hard for it. You have my respect.",
+      "zh": "你下了功夫，我佩服你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Your help with the idea was a great part of it.",
+      "zh": "你帮我改方案，功劳不小。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "I only gave a little push. You did the rest.",
+      "zh": "我就推了一把，主要是你干的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Still, I am happy you were there when I needed it.",
+      "zh": "不过，需要的时候有你在，我很高兴。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "That is what friends are for. So, we get the warm plate?",
+      "zh": "朋友就该这样。那，我们点热菜？",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Yes, and a cold plate to start. I will take the note.",
+      "zh": "好，先来个冷盘。我买单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Did the process take long?",
+      "zh": "过程花了很久吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "Six months, with many changes to the idea.",
+      "zh": "半年，方案改了好多遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "That is a long time. You kept at it.",
+      "zh": "时间不短，你坚持下来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "I almost gave up two times, but here we are.",
+      "zh": "我差点放弃两次，但总算成了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "That is good. That is what is important.",
+      "zh": "结果好就行，这才是关键。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "True. And now I can put my mind at rest.",
+      "zh": "没错，现在我可以放心了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "So, what is the first thing you will do?",
+      "zh": "那你第一件事要做什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Have a good sleep. I have not had one in weeks.",
+      "zh": "好好睡一觉，我好几周没睡好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Quite right. You have got it.",
+      "zh": "没错。这是你应得的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Then on the last day of the week, we have a happy time. I am ready.",
+      "zh": "那周末我们庆祝一下，我准备好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "That is good. What time on the last day?",
+      "zh": "那很好。最后一天几点？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "Seven in the evening, if that is good for you.",
+      "zh": "晚上七点，你看行吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Seven is good. Where will we go?",
+      "zh": "七点行。我们去哪儿？",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "That place you said was good. The one with the warm plates.",
+      "zh": "你说好的那家，做热菜的那家。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "Oh, I see it. That is a good one.",
+      "zh": "哦，我知道那家。选得好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "I will get the list of food before we go.",
+      "zh": "出发前我先看看菜单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "Do that. I would like a cold plate first.",
+      "zh": "行。我想先来个冷盘。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "Then a warm plate with cow meat, not too sharp.",
+      "zh": "再来份牛肉热菜，不要太辣。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "I will have the fish. Keep it soft.",
+      "zh": "我来鱼，口味清淡点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Let us get a sweet thing after?",
+      "zh": "吃完要不要来个甜品？",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Right, I would like the one with milk fat.",
+      "zh": "好，我想要那个带奶油的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "Right. I will have the fruit one.",
+      "zh": "行。我来水果的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "This will be a great day. I am happy.",
+      "zh": "这会是美好的一天，我很开心。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "You have done well. Let us be happy.",
+      "zh": "你干得漂亮，咱们好好乐一乐。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "I will meet you at seven on the last day.",
+      "zh": "最后一天七点我跟你碰头。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "I am pleased it went through.",
+      "zh": "真高兴这事成了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "You worked hard for it. Well done.",
+      "zh": "你下了不少功夫，干得漂亮。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Your help with the idea was a great thing.",
+      "zh": "你帮我改想法起了大作用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Oh, that was nothing. You did the hard part.",
+      "zh": "哪儿的话，难的是你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Still, I had to say it to you first.",
+      "zh": "不过我还是第一个告诉了你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "That is kind. So what then?",
+      "zh": "你有心了。那然后呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "A meeting with the head is on for the week after this.",
+      "zh": "下周跟头儿开个会。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "You will do well. I have no doubt.",
+      "zh": "你肯定行，我一点都不怀疑。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "Let us get a drink this week end to mark it?",
+      "zh": "周末要不要喝一杯庆祝下？",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Yes, that is a great idea. I am in.",
+      "zh": "好主意，算我一个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "I was ill at rest when the letter came.",
+      "zh": "信来的时候我紧张坏了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Did you see it right away?",
+      "zh": "你一眼就看到了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "Yes, the green stamp was right there.",
+      "zh": "嗯，绿色的章就在那儿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "That was a great feeling.",
+      "zh": "那感觉一定很棒。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "I almost sent my cup flying.",
+      "zh": "我差点把杯子打飞了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "I would have loved to see that.",
+      "zh": "我真想看看那场面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "You are the first I have said it to after my family.",
+      "zh": "除了家人，你是我第一个告诉的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "How long did you keep still?",
+      "zh": "你等了多久？",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "Three months of waiting, and much change.",
+      "zh": "等了三个月，改了好多遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "It was all good in the end.",
+      "zh": "最后一切都值了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "You helped me with the writing.",
+      "zh": "你帮我改过方案。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Oh, that was nothing.",
+      "zh": "哎呀，那不算什么。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "No, your ideas made it better.",
+      "zh": "不，你的想法让方案更好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Then I am happy I was able to help.",
+      "zh": "那我挺高兴能帮上忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "Would you like a drink this week-end?",
+      "zh": "周末要不要喝一杯？",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "I would like that very much.",
+      "zh": "我很乐意。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "The last day of the week at our old place?",
+      "zh": "周六晚上老地方？",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "Very good. I will make a booking.",
+      "zh": "太好了，我来订位。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "This time it is on me.",
+      "zh": "这次我请客。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "That is good. I am happy for you.",
+      "zh": "行啊，真为你高兴。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "I still can't quite take it in.",
+      "zh": "我还是有点不敢相信。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "You worked so hard for it.",
+      "zh": "你为这个付出了那么多。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "All those late nights were a good use of time.",
+      "zh": "那些加班的夜晚都值了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "You were right there with me.",
+      "zh": "你一直陪着我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "I only gave a little help.",
+      "zh": "我只是帮了点小忙。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Your notes on the idea made a great change.",
+      "zh": "你给方案提的意见起了大作用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "Well then, we are a good group.",
+      "zh": "那我们是个好团队。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "I will send you the paper.",
+      "zh": "我把文件发给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Please do. I would like to see it.",
+      "zh": "发吧，我想看看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "I will put it on the net for you now.",
+      "zh": "我现在就发到网上给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Right. What about a drink this rest day?",
+      "zh": "那休息日去喝一杯怎么样？",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "That is a good idea. The end of the week?",
+      "zh": "好主意。周末？",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Yes. That place with the warm plates?",
+      "zh": "嗯。那家热菜馆子？",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Oh, I was going to say the same thing!",
+      "zh": "哦，我也正想说这家！",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "Let us get a table at eight?",
+      "zh": "我们订八点的位子？",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Eight is good. I will make a booking.",
+      "zh": "八点可以。我来订位。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "Good. This one is on me.",
+      "zh": "好。这次我请客。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "No, no. Let me get this one.",
+      "zh": "别别，这顿我来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "Right. We will sort it out then.",
+      "zh": "行，到时候再说。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "I am looking forward to it.",
+      "zh": "我已经开始期待了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Me too. It has been a long time.",
+      "zh": "我也是。等了好久。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "You did all the hard work.",
+      "zh": "辛苦的是你。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "We did it together. Your help was key.",
+      "zh": "我们一起做到的。你的帮忙很关键。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "Quite. But you are the one who got it through.",
+      "zh": "对。不过是你把它办成的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "I still am not quite able to take it in.",
+      "zh": "我还是不太敢相信。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "You will get used to it. It is true now.",
+      "zh": "你会习惯的。现在它是真的了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "I will send you the details after some time.",
+      "zh": "我过一会儿把详情发给你。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "Do that. I would like to see the full letter.",
+      "zh": "发吧。我想看完整的信。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Right. I will see you on day six then.",
+      "zh": "好。那第六天见。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "Yes. Have a good evening.",
+      "zh": "嗯。晚上好。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周三下午，甲刚收到申请通过的好消息，迫不及待地冲到办公室门口，与好友乙分享这份喜悦。两人约定周末庆祝，笑声在走廊回荡。",
+  "storyScript": "【开场·报喜】\n周三下午五点，办公室的走廊里还残留着午后的暖意。甲从工位上弹起来，三步并作两步冲到门口，差点撞上正要下班的乙。甲的眼睛亮得像装了灯泡，嘴角压都压不住，一把拉住乙的胳膊：有好消息！乙被这阵仗逗笑了，顺势靠在门框上，等着听下文。\n\n【进行·分享细节】\n甲深吸一口气，把手机屏幕怼到乙眼前——是那封等了三个月的申请通过函。甲说，上周补交材料时心里还在打鼓，今天下午正对着电脑发呆，邮件提示音一响，心脏差点跳出来。点开一看，审批栏里赫然盖着绿色的通过章。甲说当时自己愣了三秒，然后从椅子上蹦起来，差点把咖啡杯扫到地上。乙听到这里已经笑出声，连连拍着甲的肩膀说太好了。甲又补充道，这次申请准备了整整半年，光是方案就改了十几版，连周末都在查资料。乙听完，眼神里满是佩服和高兴。\n\n【进行·分享细节】\n乙问起具体流程，甲便手舞足蹈地比划起来：从最初提交时的忐忑，到中间两次补件的煎熬，再到今天突然降临的惊喜。甲说，刚才给家里打完电话，第一个就想告诉乙，因为乙一直帮自己改方案、提建议，这份通过函里也有乙的功劳。乙摆摆手说哪里哪里，但脸上的笑意更深了。两人站在门口聊了好一会儿，夕阳把他们的影子拉得很长。\n\n【收束·一起庆祝】\n乙提议今晚就去吃顿好的，甲却摇头说今晚要加班收尾，但周末一定空出来。乙立刻掏出手机翻日历，两人当场敲定周六晚上去那家念叨了很久的馆子。甲说这次必须乙来点菜，自己请客。乙笑着应下，临走前又回头补了一句：到时候好好喝一杯。甲站在门口，看着乙的背影消失在走廊尽头，低头又看了一眼手机上的通过函，心里暖洋洋的。周末的约定，让这份喜悦又多了几分期待。"
+}

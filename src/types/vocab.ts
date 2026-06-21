@@ -53,6 +53,7 @@ export interface SentenceToken {
   bare: string;
   wordId: string | null;
   role: TokenRole;
+  category: OgdenCategory | null;
   isWhitespace: boolean;
 }
 

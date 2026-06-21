@@ -10,7 +10,7 @@ import {
   GraduationCap,
   Languages,
 } from 'lucide-react';
-import { Word, CATEGORY_LABELS } from '../../types/word';
+import { Word, CATEGORY_LABELS, categoryBadgeClass } from '../../types/word';
 import type { GuideSentence } from '../../types/vocab';
 import WordCardVisual from './WordCardVisual';
 import { speakGuideSentence } from '../../data/speak';
@@ -124,7 +124,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-0 sm:p-4 select-none">
+    <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center p-0 sm:p-4">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -145,17 +145,18 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         </div>
 
         <header className="shrink-0 px-5 sm:px-7 pb-4 flex justify-between items-start gap-4 border-b border-slate-100">
-          <div className="min-w-0 space-y-2.5">
-            <span className="inline-flex text-[10px] font-bold text-cyan-700 bg-cyan-50 px-2 py-0.5 rounded-md border border-cyan-100">
-              {CATEGORY_LABELS[selectedWord.category]?.zh}
-            </span>
-
-            <div className="flex flex-wrap items-end gap-x-2.5 gap-y-1">
+          <div className="min-w-0 space-y-2">
+            <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
               <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-none">
                 {selectedWord.word}
               </h2>
+              <span
+                className={`inline-flex shrink-0 text-[10px] font-bold px-2 py-0.5 rounded-md border ${categoryBadgeClass(selectedWord.category)}`}
+              >
+                {CATEGORY_LABELS[selectedWord.category]?.zh}
+              </span>
               {selectedWord.ipa && (
-                <span className="font-ipa ipa-badge text-base sm:text-lg pb-0.5">
+                <span className="font-ipa ipa-badge text-base sm:text-lg">
                   /{selectedWord.ipa}/
                 </span>
               )}
@@ -252,33 +253,34 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                                 const surface = partSurface(p as GuideSentence['parts'][number] | [string, string]);
                                 const words = surface.replace(/[^a-zA-Z\s]/g, '').toLowerCase().split(/\s+/);
                                 const isTarget = words.includes(selectedWord.word.toLowerCase());
+                                const showSpace = i < item.parts.length - 1 && !/^[.,?!;:']/.test(partSurface(item.parts[i + 1] as GuideSentence['parts'][number] | [string, string]));
                                 return (
                                   <span
                                     key={i}
                                     className={isTarget ? 'text-[#2f7d4f]' : ''}
                                   >
-                                    {surface}{' '}
+                                    {surface}{showSpace ? ' ' : ''}
                                   </span>
                                 );
                               })
                             : item.en}
                         </p>
-                        <div className="flex items-center gap-0.5 shrink-0 pt-0.5">
+                        <div className="flex items-center gap-1 shrink-0">
                           <button
                             type="button"
                             onClick={(e) => {
                               e.stopPropagation();
                               speakGuideSentence(selectedWord.id, idx, guideSentenceEn(item));
                             }}
-                            className="p-1.5 rounded-lg text-slate-300 hover:text-slate-500 hover:bg-slate-50 transition-colors cursor-pointer active:scale-95"
+                            className="p-2 -m-1 rounded-lg text-[15px] text-slate-300 hover:text-slate-500 hover:bg-slate-50 transition-colors cursor-pointer active:scale-95"
                             title="朗读例句"
                           >
-                            <Volume2 className="w-3.5 h-3.5" />
+                            <Volume2 className="w-[1em] h-[1em]" strokeWidth={2.25} />
                           </button>
                           <button
                             type="button"
                             onClick={(e) => toggleCnReveal(idx, e)}
-                            className={`p-1.5 rounded-lg transition-colors cursor-pointer active:scale-95 ${
+                            className={`p-2 -m-1 rounded-lg text-[12px] transition-colors cursor-pointer active:scale-95 ${
                               cnVisible
                                 ? 'text-slate-400 bg-slate-50'
                                 : 'text-slate-300 hover:text-slate-400 hover:bg-slate-50'
@@ -287,7 +289,8 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                             aria-pressed={cnVisible}
                           >
                             <Languages
-                              className={`w-3.5 h-3.5 ${cnVisible ? 'fill-slate-200/80' : ''}`}
+                              className={`w-[1em] h-[1em] ${cnVisible ? 'fill-slate-200/80' : ''}`}
+                              strokeWidth={2}
                             />
                           </button>
                         </div>

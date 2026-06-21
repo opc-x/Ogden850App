@@ -34,7 +34,6 @@ interface HomeViewProps {
 
 type CategoryTile = {
   key: string;
-  label: string;
   icon: LucideIcon;
   hoverBorder: string;
   iconBg: string;
@@ -45,7 +44,6 @@ type CategoryTile = {
 const CATEGORY_TILES: CategoryTile[] = [
   {
     key: 'actions',
-    label: '动作与方向',
     icon: Move,
     hoverBorder: 'hover:border-emerald-200',
     iconBg: 'bg-emerald-50',
@@ -54,7 +52,6 @@ const CATEGORY_TILES: CategoryTile[] = [
   },
   {
     key: 'picturables',
-    label: '可见物/实物',
     icon: Eye,
     hoverBorder: 'hover:border-amber-200',
     iconBg: 'bg-amber-50',
@@ -63,7 +60,6 @@ const CATEGORY_TILES: CategoryTile[] = [
   },
   {
     key: 'generals',
-    label: '普通名词',
     icon: Package,
     hoverBorder: 'hover:border-orange-200',
     iconBg: 'bg-orange-50',
@@ -72,7 +68,6 @@ const CATEGORY_TILES: CategoryTile[] = [
   },
   {
     key: 'qualities',
-    label: '性质词',
     icon: Palette,
     hoverBorder: 'hover:border-sky-200',
     iconBg: 'bg-sky-50',
@@ -81,7 +76,6 @@ const CATEGORY_TILES: CategoryTile[] = [
   },
   {
     key: 'opposites',
-    label: '反义词',
     icon: Blend,
     hoverBorder: 'hover:border-rose-200',
     iconBg: 'bg-rose-50',
@@ -316,26 +310,28 @@ export const HomeView: React.FC<HomeViewProps> = ({
       {/* Categories + starred — grouped panel */}
       <section className="bg-white rounded-3xl border border-slate-200/80 shadow-[0_2px_14px_rgba(15,23,42,0.04)] overflow-hidden">
         <div className="px-5 pt-5 pb-1">
-          <SectionTitle>核心词汇分类</SectionTitle>
+          <SectionTitle>850 词分类</SectionTitle>
         </div>
 
         <div className="grid grid-cols-2 gap-3 p-5 pt-3">
-          {CATEGORY_TILES.map(({ key, label, icon: Icon, hoverBorder, iconBg, iconText, countTone }) => (
+          {CATEGORY_TILES.map(({ key, icon: Icon, hoverBorder, iconBg, iconText, countTone }) => (
             <button
               key={key}
               type="button"
               onClick={() => handleCategoryClick(key)}
-              className={`bg-slate-50/60 p-4 rounded-2xl border border-slate-100/90 ${hoverBorder} hover:bg-white transition-all cursor-pointer flex flex-col gap-3 active:scale-[0.98] text-left min-h-[5.5rem]`}
+              className={`bg-slate-50/60 p-4 rounded-2xl border border-slate-100/90 ${hoverBorder} hover:bg-white transition-all cursor-pointer flex flex-col gap-2 active:scale-[0.98] text-left min-h-[4.75rem]`}
             >
-              <div className={`w-10 h-10 rounded-xl ${iconBg} flex items-center justify-center ${iconText}`}>
-                <Icon className="w-[18px] h-[18px]" />
-              </div>
-              <div>
-                <h3 className="font-bold text-slate-800 text-sm leading-snug">{label}</h3>
-                <p className={`text-xs font-semibold tabular-nums mt-1 ${countTone}`}>
+              <div className="flex items-center justify-between gap-2">
+                <div className={`w-10 h-10 rounded-xl ${iconBg} flex items-center justify-center shrink-0 ${iconText}`}>
+                  <Icon className="w-[18px] h-[18px]" />
+                </div>
+                <p className={`text-xs font-semibold tabular-nums ${countTone}`}>
                   {categoryCounts[key] ?? 0} 词
                 </p>
               </div>
+              <h3 className="font-bold text-slate-800 text-sm leading-snug">
+                {CATEGORY_LABELS[key]?.zh}
+              </h3>
             </button>
           ))}
         </div>

@@ -1,0 +1,820 @@
+{
+  "slug": "email",
+  "sceneKey": "Email",
+  "titleZh": "写邮件回复",
+  "titleEn": "Writing Email",
+  "tier": "P2",
+  "freqRank": 27,
+  "emoji": "✉️",
+  "gradient": "linear-gradient(135deg,#f1f5f9,#cbd5e1)",
+  "storyHook": "读信、回复、发送确认",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "收到邮件",
+      "goal": "打开理解"
+    },
+    {
+      "beat": "进行",
+      "title": "撰写回复",
+      "goal": "打字检查"
+    },
+    {
+      "beat": "收束",
+      "title": "发送确认",
+      "goal": "点发送"
+    }
+  ],
+  "illustration": {
+    "label": "电子邮件",
+    "motifs": [
+      "letter",
+      "keyboard",
+      "send"
+    ],
+    "accent": "#64748b"
+  },
+  "narrative": {
+    "when": "周一上午九点，刚打开电脑",
+    "where": "甲的办公桌前",
+    "who": "甲（收件人）· 乙（同事，发邮件来的人）",
+    "how": "打开邮箱看新邮件，认真阅读后回复",
+    "method": "打开邮件读内容、思考怎么回、打字回复、确认发送",
+    "event": "乙发来一封紧急邮件，甲要在中午前给出回复"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Good morning. I have a new letter.",
+      "zh": "早上好。我收到一封新信。",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "This note is from the second one. The name says 'quick'.",
+      "zh": "这是乙发来的。标题写着‘紧急’。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "I will open it now.",
+      "zh": "我现在打开看看。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "He has to get a paper before 12.",
+      "zh": "他必须在中午前拿到一份报告。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "That is three hours from now.",
+      "zh": "离中午还有三个小时。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "I have the numbers for last three months.",
+      "zh": "我有过去三个月的数据。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "I have a note or two to put in.",
+      "zh": "我得加一两句说明。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "I will go through it again to be safe.",
+      "zh": "我再过一遍，确保安全。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "No, it is clear. I see what he would like.",
+      "zh": "没问题，很清楚了。我知道他要什么。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Right, time to give an answer.",
+      "zh": "好了，准备回答。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Right, I will put it down now.",
+      "zh": "好，我现在就写下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "Dear friend, thanks for your letter.",
+      "zh": "朋友你好，来信收到。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "I have the numbers you need.",
+      "zh": "你要的数字我这里有。",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "Let me put it all together.",
+      "zh": "我把它整理好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "I will send it before twelve.",
+      "zh": "中午前发给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Right, I will make a note of the numbers.",
+      "zh": "好，我把数字记下来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Here is the list for the last three months.",
+      "zh": "这是过去三个月的清单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Right, that is all he had a desire for.",
+      "zh": "行，他要的就是这些。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "I will put it in the body of the letter.",
+      "zh": "我把它写在邮件正文里。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "Do I need to say more?",
+      "zh": "我还要多说点什么吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "No, keep it short and clear.",
+      "zh": "不用，简短清楚就行。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Right, then I will send it off.",
+      "zh": "好，那我这就发出去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "Let me have another look at the name.",
+      "zh": "让我再看一眼名字。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "It is right. Ready to go.",
+      "zh": "没错。可以发了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "There, it is sent. Done.",
+      "zh": "好了，发出去了。搞定。",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Right, the letter is off. What now?",
+      "zh": "好了，邮件发出去了。接下来呢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "I will keep for his word.",
+      "zh": "我等他的回话。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Do you have any other work?",
+      "zh": "你还有其他工作吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "Yes, but this one was the chief one.",
+      "zh": "有，但这封是最要紧的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Good thing you did it before the middle of the day.",
+      "zh": "好在你在中午前搞定了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "True. I was not certain I would have all the numbers.",
+      "zh": "是啊。我本来还不确定能不能凑齐所有数据。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "But you did. That is a weight off.",
+      "zh": "但你做到了。这下轻松了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Right, let us get a cup of tea.",
+      "zh": "好，我们去喝杯茶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "That sounds good. My drink is cold.",
+      "zh": "好主意。我的饮料都凉了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "Right. Let us go before another letter comes.",
+      "zh": "行。趁另一封邮件来之前赶紧去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "What did you put in the letter?",
+      "zh": "你在信里写了什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "I gave the numbers and a short note.",
+      "zh": "我附上了数据，还加了一段简短说明。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "Will you send more after this?",
+      "zh": "你会在这之后补发吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "No, I kept it short. That is all I have.",
+      "zh": "没有，我写得很简短。我手头就这些。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "That is right. Better than being kept waiting.",
+      "zh": "有道理。总比让人干等着强。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "A",
+      "en": "Let us go over the numbers again.",
+      "zh": "我们再把数据核对一遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "B",
+      "en": "I did that before sending.",
+      "zh": "我发之前已经核对过了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "A",
+      "en": "One small error and we look foolish.",
+      "zh": "一个小错误就会让我们显得很不专业。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "B",
+      "en": "Right. I will have another look.",
+      "zh": "有道理。我再检查一遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "A",
+      "en": "Good. The table is clear and simple.",
+      "zh": "好。表格清晰又简单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "B",
+      "en": "Yes. I put notes under the numbers.",
+      "zh": "是的。我在数字下面加了注释。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "A",
+      "en": "That will help him see the story.",
+      "zh": "这样他能看出数据背后的情况。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "B",
+      "en": "I hope so. He was quick.",
+      "zh": "希望如此。他当时很快。",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "A",
+      "en": "You did well. Now we keep quiet for his answer.",
+      "zh": "你做得很好。现在我们安静等他回复。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "B",
+      "en": "Right. Let us get that tea before he sends word back.",
+      "zh": "对。趁他还没回复，我们去喝杯茶。",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "A",
+      "en": "Right, I will put the words on paper now.",
+      "zh": "好，我现在开始写文字。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "B",
+      "en": "Put his place first.",
+      "zh": "先填他的地址。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "A",
+      "en": "Got it. What is the line about?",
+      "zh": "明白。是关于什么内容的标题？",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "B",
+      "en": "Quick answer on the numbers.",
+      "zh": "关于数字的快速回复。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "A",
+      "en": "Good. Now the body. Keep it short.",
+      "zh": "好。现在写正文。简短些。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "B",
+      "en": "Dear friend, your note came. I have put the numbers here.",
+      "zh": "朋友，你好。来信收到，数据附上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "A",
+      "en": "That is clear. Then say he may send word if he has a question.",
+      "zh": "很清楚。然后说有问题可以随时联系。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "B",
+      "en": "Say if anything is not clear. Best, A.",
+      "zh": "如有不清楚的地方请说。祝好，甲。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "A",
+      "en": "I will put the two papers with it now.",
+      "zh": "我现在把两份文件附上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "B",
+      "en": "Right. See the name and send it.",
+      "zh": "好。看看名字，然后发送。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "A",
+      "en": "Right. I will put the two papers with it now.",
+      "zh": "好。我现在把这两份文件附上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "B",
+      "en": "Right. Have a look at the name and send it.",
+      "zh": "好。看一眼名字就发出去。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "A",
+      "en": "I have put them in. Let me see the name.",
+      "zh": "我已经附上了。让我看看名字。",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "B",
+      "en": "That is for the second person. Right.",
+      "zh": "是给第二个人的。没错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "A",
+      "en": "Now the body. I will say it again.",
+      "zh": "现在看正文。我再念一遍。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "B",
+      "en": "Do not make it long. Short and clear is best.",
+      "zh": "别写太长。简短清楚最好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "A",
+      "en": "It is short. I have said all that is needed.",
+      "zh": "很短。我已经说了所有需要说的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "B",
+      "en": "Then send it. Time is going.",
+      "zh": "那就发吧。时间在流逝。",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "A",
+      "en": "One more look at the papers. Are they right?",
+      "zh": "再看一眼附件。对吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "B",
+      "en": "Yes, they are. Send it now.",
+      "zh": "是的，没问题。现在发送。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "A",
+      "en": "Right, here goes.",
+      "zh": "好，这就发。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "B",
+      "en": "Let me see the time.",
+      "zh": "等等，我看下时间。",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "A",
+      "en": "Ten forty. Still an hour and twenty minutes.",
+      "zh": "十点四十。还有一个小时二十分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "B",
+      "en": "Good. No need to go quick.",
+      "zh": "好。不用着急。",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "A",
+      "en": "I will put the papers in first.",
+      "zh": "我先附上文件。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "B",
+      "en": "The list and the note are there.",
+      "zh": "列表和说明都在里面了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "A",
+      "en": "Dear friend, thanks for your note.",
+      "zh": "亲爱的朋友，感谢你的来信。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "B",
+      "en": "I have put the numbers in this note.",
+      "zh": "我已将数字附在此便条中。",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "A",
+      "en": "Short and clear, like you said.",
+      "zh": "简短清楚，就像你说的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "B",
+      "en": "If you have any questions, say so.",
+      "zh": "如果有问题，请告诉我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "A",
+      "en": "Right, that is good. Now I will send it.",
+      "zh": "好的，这样就行了。现在我要发送了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "B",
+      "en": "Let me see the note again.",
+      "zh": "让我再看一遍便条。",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "A",
+      "en": "Yes, all is clear. No errors.",
+      "zh": "是的，都很清楚。没有错误。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "B",
+      "en": "Good. Then put the papers with it.",
+      "zh": "好。那就把文件附上吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "A",
+      "en": "I have done that. Two papers are there.",
+      "zh": "我已经附上了。两个文件都在里面。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "B",
+      "en": "Now the send button. Here goes.",
+      "zh": "现在点发送按钮。来了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "A",
+      "en": "It is sent. The box says 'done'.",
+      "zh": "发送成功。屏幕上显示‘完成’。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "B",
+      "en": "Good work. That was quick.",
+      "zh": "干得好。挺快的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "A",
+      "en": "Yes. I have time for a rest now.",
+      "zh": "是的。我现在有时间休息一下了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "B",
+      "en": "Take your drink. It is still warm.",
+      "zh": "喝你的饮料吧。还温着呢。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "A",
+      "en": "Right, I will take a rest now.",
+      "zh": "好了，我现在要休息一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "B",
+      "en": "You have done well this morning.",
+      "zh": "你今天上午干得不错。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "A",
+      "en": "Thanks. It was not hard.",
+      "zh": "谢谢。其实不难。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "B",
+      "en": "Still, you kept your head.",
+      "zh": "不过，你保持了冷静。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "A",
+      "en": "That is true. I did not let the quick get to me.",
+      "zh": "那倒是。我没让急事影响自己。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "B",
+      "en": "Good. Now you can put your feet up.",
+      "zh": "好。现在你可以放松一下了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "A",
+      "en": "I will. But first, I will send a note to say it is done.",
+      "zh": "我会的。但首先，我要发个消息说已经完成了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "B",
+      "en": "That is a good idea. Keep them in the picture.",
+      "zh": "好主意。让他们了解情况。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "A",
+      "en": "There. Done. Now I am free.",
+      "zh": "好了。完成了。现在我没事了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "B",
+      "en": "Great. Let us get another cup of tea.",
+      "zh": "太好了。我们再喝杯茶吧。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "A",
+      "en": "Right, I will send a quick note to say it is done.",
+      "zh": "好，我发个简讯说搞定了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "B",
+      "en": "Good. Keep it short and clear.",
+      "zh": "好。简短清楚就行。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "A",
+      "en": "Just a line or two. No need for more.",
+      "zh": "一两行就行。不用多写。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "B",
+      "en": "That is right. I will put 'Done' as the name.",
+      "zh": "有道理。我就把主题写成‘已完成’。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "A",
+      "en": "That is good. Then they see it quick.",
+      "zh": "这样行。他们一眼就看到了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "B",
+      "en": "There. Sent. Now I am free.",
+      "zh": "好了。发出去了。现在我没事了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "A",
+      "en": "Well, great. Let us get another cup of tea.",
+      "zh": "好。我们再喝杯茶吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "B",
+      "en": "I would like that. My first cup is cold.",
+      "zh": "好啊。我第一杯都凉了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "A",
+      "en": "Same here. Let us go to the place for drinks.",
+      "zh": "我也是。我们去茶水间吧。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "B",
+      "en": "After you. I am ready for a rest.",
+      "zh": "你先请。我准备好歇会儿了。",
+      "beat": "收束"
+    }
+  ],
+  "storyBlurb": "周一清晨，甲刚打开电脑就看到乙的紧急邮件，必须在中午前回复。他认真阅读、思考措辞，最终在截止时间前发送确认。",
+  "storyScript": "【开场·收到邮件】周一上午九点，办公室的日光灯刚亮起。甲端着咖啡坐到工位前，按下电脑电源键。屏幕亮起的瞬间，邮箱图标跳出红色数字——一封新邮件。他点开，发件人是同事乙，标题写着「紧急：请于今日中午前回复」。甲眉头微皱，放下杯子，双击打开。邮件正文不长，但措辞急切：乙负责的项目出现突发状况，需要甲提供一份数据报告才能继续推进。甲扫了一眼时间，距离中午还有三个小时，足够处理。他深吸一口气，将邮件从头到尾又读了一遍，确保没有遗漏任何细节。\n\n【进行·撰写回复】甲打开一个空白邮件窗口，光标在收件人栏闪烁。他先输入乙的地址，然后敲下主题：「关于紧急数据的回复」。正文怎么写？甲托腮思考片刻，决定先理清思路：乙需要的是上季度销售数据，但自己手头只有部分统计，需要补充说明。他新建一个文档，快速列出关键数字，又附上简要分析。确认无误后，甲开始打字。手指在键盘上敲击，一行行文字跃然屏上：先致谢乙的来信，再说明数据已附上，最后提醒乙如有疑问可随时联系。写完后，甲逐句检查措辞是否准确、语气是否恰当。他删掉了一个多余的形容词，又调整了句子的顺序，让逻辑更清晰。\n\n【收束·发送确认】甲将光标移到附件图标，点击「插入」——刚刚整理好的数据表格和说明文档依次附上。他再次核对收件人、主题和正文，确认没有错别字或格式问题。一切就绪，甲的手指悬在「发送」按钮上方。他看了一眼屏幕右下角的时间：十点四十分，距离中午还有一小时二十分，时间充裕。甲轻点鼠标，邮件瞬间飞出。屏幕上弹出「邮件已发送」的提示，他靠回椅背，长舒一口气。窗外的阳光正好洒在键盘上，甲端起已经微凉的咖啡，抿了一口，嘴角浮起一丝轻松的笑意。"
+}

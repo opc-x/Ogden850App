@@ -1,0 +1,820 @@
+{
+  "slug": "wifi",
+  "sceneKey": "WiFi",
+  "titleZh": "连接无线网络",
+  "titleEn": "Connecting WiFi",
+  "tier": "P2",
+  "freqRank": 25,
+  "emoji": "📶",
+  "gradient": "linear-gradient(135deg,#ecfdf5,#10b981)",
+  "storyHook": "找网络、输密码、连上上网",
+  "storyBlurb": "比赛直播在即，甲的网络却突然中断。在室友乙的帮助下，他靠近路由器重输密码，终于连上网络。",
+  "storyScript": "【开场·发现连不上】晚上九点，客厅的灯光昏黄。甲瘫在沙发上，手机屏幕上是即将开始的比赛直播倒计时。他兴奋地调整坐姿，却发现画面卡在缓冲界面。刷新几次，依然无响应。甲心头一紧，退出重进，网络图标显示已断开。他起身走到路由器旁，信号满格，但手机就是连不上网。焦急中，他喊来室友乙。\n\n【进行·找名字重试】乙接过手机，看了一眼列表，发现甲连错了隔壁的网络。他指着屏幕上的名字说，这个才是我们的。甲恍然大悟，连忙选中正确的网络。乙提醒他，密码可能记错了，建议重新输入。甲翻出手机备忘录里的密码，一个字母一个字母地敲，手指因紧张而微微颤抖。点击连接，等待，却弹出密码错误的提示。\n\n【进行·输入密码】乙让甲冷静，自己拿过手机仔细输入。他一边输入一边念出每个字符，确保大小写无误。甲在一旁盯着屏幕，手心冒汗。按下连接键，转圈，几秒后，网络图标亮起。乙把手机还给甲，说试试看。甲打开直播软件，画面流畅加载，比赛刚好开始。\n\n【收束·连接成功】甲长舒一口气，瘫回沙发，嘴角上扬。乙笑着拍拍他的肩，转身回房。客厅里只剩下直播的解说声和甲的欢呼。网络稳定，画面清晰，甲沉浸在比赛中，刚才的慌乱已烟消云散。",
+  "storyOutline": [
+    {
+      "beat": "开场",
+      "title": "发现连不上",
+      "goal": "说明没网"
+    },
+    {
+      "beat": "进行",
+      "title": "输入密码",
+      "goal": "找名字重试"
+    },
+    {
+      "beat": "收束",
+      "title": "连接成功",
+      "goal": "打开页面"
+    }
+  ],
+  "illustration": {
+    "label": "无线网络",
+    "motifs": [
+      "wifi",
+      "machine",
+      "lock"
+    ],
+    "accent": "#059669"
+  },
+  "narrative": {
+    "when": "晚上九点，正要看一场重要的比赛直播",
+    "where": "甲的客厅，路由器在角落",
+    "who": "甲（住户）· 乙（懂技术的室友）",
+    "how": "拿着手机走到路由器附近找信号",
+    "method": "发现连不上、检查名字、重新输入密码、连接成功",
+    "event": "甲的网突然断了，直播马上要开始"
+  },
+  "targetTurns": 110,
+  "turns": [
+    {
+      "seq": 1,
+      "speaker": "A",
+      "en": "Hey — is the net down?",
+      "zh": "嘿——网断了吗？",
+      "beat": "开场"
+    },
+    {
+      "seq": 2,
+      "speaker": "B",
+      "en": "Not on my side. Works fine here.",
+      "zh": "我这边没有，好好的呢。",
+      "beat": "开场"
+    },
+    {
+      "seq": 3,
+      "speaker": "A",
+      "en": "Mine just stopped. The play starts in two minutes.",
+      "zh": "我的刚断，比赛还有两分钟开始。",
+      "beat": "开场"
+    },
+    {
+      "seq": 4,
+      "speaker": "B",
+      "en": "Hold on. I am coming.",
+      "zh": "等着，我过来看看。",
+      "beat": "开场"
+    },
+    {
+      "seq": 5,
+      "speaker": "A",
+      "en": "Do not take too long. I can not miss the start.",
+      "zh": "快点，我不能错过开场。",
+      "beat": "开场"
+    },
+    {
+      "seq": 6,
+      "speaker": "B",
+      "en": "Let me see your screen.",
+      "zh": "把屏幕给我看看。",
+      "beat": "开场"
+    },
+    {
+      "seq": 7,
+      "speaker": "A",
+      "en": "It says no net. But I am standing right next to the box.",
+      "zh": "显示无连接，但我就站在路由器旁边。",
+      "beat": "开场"
+    },
+    {
+      "seq": 8,
+      "speaker": "B",
+      "en": "You are on the wrong net.",
+      "zh": "你连错网了。",
+      "beat": "开场"
+    },
+    {
+      "seq": 9,
+      "speaker": "A",
+      "en": "What? They all look the same.",
+      "zh": "什么？这几个看起来都一样。",
+      "beat": "开场"
+    },
+    {
+      "seq": 10,
+      "speaker": "B",
+      "en": "Look at the name. You are on the next house.",
+      "zh": "看名字，你连的是隔壁家的。",
+      "beat": "开场"
+    },
+    {
+      "seq": 11,
+      "speaker": "A",
+      "en": "Their secret word used to work.",
+      "zh": "他们的密码以前能用。",
+      "beat": "进行"
+    },
+    {
+      "seq": 12,
+      "speaker": "B",
+      "en": "They must have changed it. Take off this one and pick ours.",
+      "zh": "他们一定换了密码，断开这个，选我们的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 13,
+      "speaker": "A",
+      "en": "Which one is ours?",
+      "zh": "哪个是我们的？",
+      "beat": "进行"
+    },
+    {
+      "seq": 14,
+      "speaker": "B",
+      "en": "The one in the middle. You see the numbers at the end?",
+      "zh": "中间那个，看到最后面那些数字了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 15,
+      "speaker": "A",
+      "en": "Five two four... yes. Got it.",
+      "zh": "5 2 4……看到了，就这个。",
+      "beat": "进行"
+    },
+    {
+      "seq": 16,
+      "speaker": "B",
+      "en": "Now put in the secret word.",
+      "zh": "现在输密码。",
+      "beat": "进行"
+    },
+    {
+      "seq": 17,
+      "speaker": "A",
+      "en": "Is it still the same as when we set it up?",
+      "zh": "还是我们设置时的那个密码吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 18,
+      "speaker": "B",
+      "en": "Yes. Same as before.",
+      "zh": "是的，和之前一样。",
+      "beat": "进行"
+    },
+    {
+      "seq": 19,
+      "speaker": "A",
+      "en": "Going in now.",
+      "zh": "输进去了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 20,
+      "speaker": "B",
+      "en": "The secret word starts with a big letter.",
+      "zh": "密码开头有一个大写字母。",
+      "beat": "进行"
+    },
+    {
+      "seq": 21,
+      "speaker": "A",
+      "en": "Oh. Let me do it again.",
+      "zh": "哦，我重新输。",
+      "beat": "进行"
+    },
+    {
+      "seq": 22,
+      "speaker": "B",
+      "en": "Take your time.",
+      "zh": "不急。",
+      "beat": "进行"
+    },
+    {
+      "seq": 23,
+      "speaker": "A",
+      "en": "The play starts in one minute.",
+      "zh": "比赛还有一分钟开始了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 24,
+      "speaker": "B",
+      "en": "Then type faster.",
+      "zh": "那就打快一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 25,
+      "speaker": "A",
+      "en": "Done. Come on...",
+      "zh": "输好了，来吧……",
+      "beat": "进行"
+    },
+    {
+      "seq": 26,
+      "speaker": "B",
+      "en": "Is it going through?",
+      "zh": "在连接吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 27,
+      "speaker": "A",
+      "en": "The circle is going round.",
+      "zh": "在转圈。",
+      "beat": "进行"
+    },
+    {
+      "seq": 28,
+      "speaker": "B",
+      "en": "Good sign.",
+      "zh": "好迹象。",
+      "beat": "进行"
+    },
+    {
+      "seq": 29,
+      "speaker": "A",
+      "en": "It says wrong secret word.",
+      "zh": "它显示密码错误。",
+      "beat": "进行"
+    },
+    {
+      "seq": 30,
+      "speaker": "B",
+      "en": "Did you use the big letter?",
+      "zh": "大写字母注意了吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 31,
+      "speaker": "A",
+      "en": "I thought I did.",
+      "zh": "我以为我注意了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 32,
+      "speaker": "B",
+      "en": "Let me type it.",
+      "zh": "我来输。",
+      "beat": "进行"
+    },
+    {
+      "seq": 33,
+      "speaker": "A",
+      "en": "Here.",
+      "zh": "给你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 34,
+      "speaker": "B",
+      "en": "Big letter first, then the numbers. Going slowly.",
+      "zh": "先大写字母，然后数字，慢慢来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 35,
+      "speaker": "A",
+      "en": "What is taking so long?",
+      "zh": "怎么这么慢？",
+      "beat": "进行"
+    },
+    {
+      "seq": 36,
+      "speaker": "B",
+      "en": "I am being careful. Three wrong tries and it blocks us for five minutes.",
+      "zh": "我在谨慎，错三次要被锁五分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 37,
+      "speaker": "A",
+      "en": "What? We already tried twice.",
+      "zh": "什么？我们已经试了两次了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 38,
+      "speaker": "B",
+      "en": "I know. That is why I am going slowly.",
+      "zh": "我知道，所以我在慢慢来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 39,
+      "speaker": "A",
+      "en": "The play has started.",
+      "zh": "比赛开始了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 40,
+      "speaker": "B",
+      "en": "I know. Two seconds.",
+      "zh": "我知道，两秒就好。",
+      "beat": "进行"
+    },
+    {
+      "seq": 41,
+      "speaker": "B",
+      "en": "There.",
+      "zh": "好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 42,
+      "speaker": "A",
+      "en": "Is it...",
+      "zh": "有了吗……",
+      "beat": "进行"
+    },
+    {
+      "seq": 43,
+      "speaker": "B",
+      "en": "Wait for it.",
+      "zh": "等一下。",
+      "beat": "进行"
+    },
+    {
+      "seq": 44,
+      "speaker": "A",
+      "en": "Come on, come on...",
+      "zh": "来吧，来吧……",
+      "beat": "进行"
+    },
+    {
+      "seq": 45,
+      "speaker": "B",
+      "en": "There. It is through.",
+      "zh": "好，连上了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 46,
+      "speaker": "A",
+      "en": "YES.",
+      "zh": "太好了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 47,
+      "speaker": "B",
+      "en": "Open the play thing.",
+      "zh": "打开直播软件。",
+      "beat": "进行"
+    },
+    {
+      "seq": 48,
+      "speaker": "A",
+      "en": "It is going. I can see the numbers!",
+      "zh": "在加载！我能看到比分了！",
+      "beat": "进行"
+    },
+    {
+      "seq": 49,
+      "speaker": "B",
+      "en": "You missed the first two minutes.",
+      "zh": "你错过了头两分钟。",
+      "beat": "进行"
+    },
+    {
+      "seq": 50,
+      "speaker": "A",
+      "en": "What happened?",
+      "zh": "发生了什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 51,
+      "speaker": "B",
+      "en": "Nothing. Still no score.",
+      "zh": "没什么，还是零比零。",
+      "beat": "进行"
+    },
+    {
+      "seq": 52,
+      "speaker": "A",
+      "en": "Oh, thank goodness.",
+      "zh": "谢天谢地。",
+      "beat": "进行"
+    },
+    {
+      "seq": 53,
+      "speaker": "B",
+      "en": "You owe me a cold drink.",
+      "zh": "你欠我一杯冷饮。",
+      "beat": "进行"
+    },
+    {
+      "seq": 54,
+      "speaker": "A",
+      "en": "Done. I will get it now.",
+      "zh": "成交，我现在就去拿。",
+      "beat": "进行"
+    },
+    {
+      "seq": 55,
+      "speaker": "B",
+      "en": "Quick. I want to watch too.",
+      "zh": "快点，我也想看。",
+      "beat": "进行"
+    },
+    {
+      "seq": 56,
+      "speaker": "A",
+      "en": "Cold water or the sweet kind?",
+      "zh": "冰水还是甜饮料？",
+      "beat": "进行"
+    },
+    {
+      "seq": 57,
+      "speaker": "B",
+      "en": "Sweet.",
+      "zh": "甜的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 58,
+      "speaker": "A",
+      "en": "Here. And thank you.",
+      "zh": "给，谢谢你。",
+      "beat": "进行"
+    },
+    {
+      "seq": 59,
+      "speaker": "B",
+      "en": "Do not join strange nets in the future. That is how this happened.",
+      "zh": "以后别随便连陌生网络，就是这样断掉的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 60,
+      "speaker": "A",
+      "en": "I thought it was ours.",
+      "zh": "我以为是我们的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 61,
+      "speaker": "B",
+      "en": "Always check the name.",
+      "zh": "每次都要看名字。",
+      "beat": "进行"
+    },
+    {
+      "seq": 62,
+      "speaker": "A",
+      "en": "I will from now on.",
+      "zh": "以后我记住了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 63,
+      "speaker": "B",
+      "en": "Is the picture clear?",
+      "zh": "画面清楚吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 64,
+      "speaker": "A",
+      "en": "Very clear. No waiting at all.",
+      "zh": "非常清楚，一点都不卡。",
+      "beat": "进行"
+    },
+    {
+      "seq": 65,
+      "speaker": "B",
+      "en": "Good. Move your seat a bit to the right.",
+      "zh": "好，你的椅子往右移一点。",
+      "beat": "进行"
+    },
+    {
+      "seq": 66,
+      "speaker": "A",
+      "en": "Does that make a difference?",
+      "zh": "这有区别吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 67,
+      "speaker": "B",
+      "en": "If the sign is low, yes. But yours is full, so not really.",
+      "zh": "信号弱的时候有区别，但你已经满格了，所以没差。",
+      "beat": "进行"
+    },
+    {
+      "seq": 68,
+      "speaker": "A",
+      "en": "Then why did you tell me to move?",
+      "zh": "那你为什么让我移？",
+      "beat": "进行"
+    },
+    {
+      "seq": 69,
+      "speaker": "B",
+      "en": "Old way of doing things.",
+      "zh": "老习惯。",
+      "beat": "进行"
+    },
+    {
+      "seq": 70,
+      "speaker": "A",
+      "en": "Your old way almost made me miss the ball.",
+      "zh": "你的老习惯差点让我错过进球。",
+      "beat": "进行"
+    },
+    {
+      "seq": 71,
+      "speaker": "B",
+      "en": "It has not gone in yet. Watch.",
+      "zh": "还没进呢，看着。",
+      "beat": "进行"
+    },
+    {
+      "seq": 72,
+      "speaker": "A",
+      "en": "Does this happen a lot? Net going off?",
+      "zh": "网络断线经常发生吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 73,
+      "speaker": "B",
+      "en": "Not often. Last time was on a rainy night.",
+      "zh": "不常有，上次是在下雨天晚上。",
+      "beat": "进行"
+    },
+    {
+      "seq": 74,
+      "speaker": "A",
+      "en": "Rain can do that?",
+      "zh": "下雨会影响网络？",
+      "beat": "进行"
+    },
+    {
+      "seq": 75,
+      "speaker": "B",
+      "en": "Heavy rain can. The sign comes from outside.",
+      "zh": "大雨会，信号是从外面来的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 76,
+      "speaker": "A",
+      "en": "I never thought about where the sign comes from.",
+      "zh": "我从来没想过信号从哪里来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 77,
+      "speaker": "B",
+      "en": "Most people do not.",
+      "zh": "大多数人都没想过。",
+      "beat": "进行"
+    },
+    {
+      "seq": 78,
+      "speaker": "A",
+      "en": "Should I keep the secret word written somewhere?",
+      "zh": "我应该把密码写在某个地方吗？",
+      "beat": "进行"
+    },
+    {
+      "seq": 79,
+      "speaker": "B",
+      "en": "Your phone should have it now after going through.",
+      "zh": "连上之后你的手机应该自动保存了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 80,
+      "speaker": "A",
+      "en": "So I just pick the name next time?",
+      "zh": "以后我只要选名字就能连上了？",
+      "beat": "进行"
+    },
+    {
+      "seq": 81,
+      "speaker": "B",
+      "en": "Yes. Unless someone changes the secret word.",
+      "zh": "是的，除非有人改了密码。",
+      "beat": "进行"
+    },
+    {
+      "seq": 82,
+      "speaker": "A",
+      "en": "Who would change it?",
+      "zh": "谁会改密码？",
+      "beat": "进行"
+    },
+    {
+      "seq": 83,
+      "speaker": "B",
+      "en": "Me.",
+      "zh": "我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 84,
+      "speaker": "A",
+      "en": "What? Why?",
+      "zh": "什么？为什么？",
+      "beat": "进行"
+    },
+    {
+      "seq": 85,
+      "speaker": "B",
+      "en": "Every few months. For safety.",
+      "zh": "每隔几个月，为了安全。",
+      "beat": "进行"
+    },
+    {
+      "seq": 86,
+      "speaker": "A",
+      "en": "Tell me before you change it next time.",
+      "zh": "下次改之前告诉我。",
+      "beat": "进行"
+    },
+    {
+      "seq": 87,
+      "speaker": "B",
+      "en": "I left a note on the table last time.",
+      "zh": "上次我在桌子上留了一张纸条的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 88,
+      "speaker": "A",
+      "en": "I thought that was a shopping list.",
+      "zh": "我以为那是购物单。",
+      "beat": "进行"
+    },
+    {
+      "seq": 89,
+      "speaker": "B",
+      "en": "It said new secret word at the top.",
+      "zh": "纸条最上面写着「新密码」。",
+      "beat": "进行"
+    },
+    {
+      "seq": 90,
+      "speaker": "A",
+      "en": "I only read the numbers.",
+      "zh": "我只看了数字部分。",
+      "beat": "进行"
+    },
+    {
+      "seq": 91,
+      "speaker": "B",
+      "en": "Those numbers were the price of eggs.",
+      "zh": "那些数字是鸡蛋的价格。",
+      "beat": "进行"
+    },
+    {
+      "seq": 92,
+      "speaker": "A",
+      "en": "No wonder it did not work.",
+      "zh": "难怪用不了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 93,
+      "speaker": "B",
+      "en": "Next time I will call you.",
+      "zh": "下次我直接叫你来。",
+      "beat": "进行"
+    },
+    {
+      "seq": 94,
+      "speaker": "A",
+      "en": "Yes. Please. No more notes.",
+      "zh": "好，请这样做，别留纸条了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 95,
+      "speaker": "B",
+      "en": "Done.",
+      "zh": "成交。",
+      "beat": "进行"
+    },
+    {
+      "seq": 96,
+      "speaker": "A",
+      "en": "The net is very good now.",
+      "zh": "现在网络很稳定。",
+      "beat": "进行"
+    },
+    {
+      "seq": 97,
+      "speaker": "B",
+      "en": "It always is once you are on the right one.",
+      "zh": "一旦连上正确网络就一直很稳定。",
+      "beat": "进行"
+    },
+    {
+      "seq": 98,
+      "speaker": "A",
+      "en": "Half time soon.",
+      "zh": "快到半场了。",
+      "beat": "进行"
+    },
+    {
+      "seq": 99,
+      "speaker": "B",
+      "en": "I will get some small food.",
+      "zh": "我去拿点吃的。",
+      "beat": "进行"
+    },
+    {
+      "seq": 100,
+      "speaker": "A",
+      "en": "There are small round things in the cook place.",
+      "zh": "厨房有一些小圆饼干。",
+      "beat": "进行"
+    },
+    {
+      "seq": 101,
+      "speaker": "B",
+      "en": "From that place near the bus stop?",
+      "zh": "是公交站旁边那家店买的？",
+      "beat": "收束"
+    },
+    {
+      "seq": 102,
+      "speaker": "A",
+      "en": "Yes. I went this morning.",
+      "zh": "是，我今天早上去买的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 103,
+      "speaker": "B",
+      "en": "These are good.",
+      "zh": "这些不错。",
+      "beat": "收束"
+    },
+    {
+      "seq": 104,
+      "speaker": "A",
+      "en": "I know. I had three on the way home.",
+      "zh": "我知道，回家的路上我已经吃了三个了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 105,
+      "speaker": "B",
+      "en": "Three.",
+      "zh": "三个。",
+      "beat": "收束"
+    },
+    {
+      "seq": 106,
+      "speaker": "A",
+      "en": "Do not judge me. The play is on.",
+      "zh": "别评价我，比赛开始了。",
+      "beat": "收束"
+    },
+    {
+      "seq": 107,
+      "speaker": "B",
+      "en": "Right. I will stay for the second part.",
+      "zh": "好吧，我留下来看下半场。",
+      "beat": "收束"
+    },
+    {
+      "seq": 108,
+      "speaker": "A",
+      "en": "I thought you would.",
+      "zh": "我就知道你会留下来的。",
+      "beat": "收束"
+    },
+    {
+      "seq": 109,
+      "speaker": "B",
+      "en": "You said I owe you a cold drink once.",
+      "zh": "你说过你欠我一杯冷饮来着。",
+      "beat": "收束"
+    },
+    {
+      "seq": 110,
+      "speaker": "A",
+      "en": "That was the other way round.",
+      "zh": "搞反了，是你欠我的。",
+      "beat": "收束"
+    }
+  ]
+}
