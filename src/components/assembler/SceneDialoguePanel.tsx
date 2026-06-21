@@ -160,9 +160,15 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
     );
   }
 
+  const recommendedScene =
+    allScenes.find((s) => s.status === 'ready' && s.sentenceCount > 0) ?? allScenes[0];
+
   return (
     <section>
-      <SceneStatsSummary />
+      <SceneStatsSummary
+        recommendedSceneTitle={recommendedScene?.titleZh}
+        onStart={recommendedScene ? () => setActive(recommendedScene) : undefined}
+      />
       <div className="flex items-baseline justify-between gap-2 mb-3">
         <h2 className="text-sm font-black text-slate-800">{SCENE_LIST_TITLE}</h2>
         <span className="text-[10px] text-slate-400 font-medium shrink-0">共 {allScenes.length} 个 · 按频率排序</span>
