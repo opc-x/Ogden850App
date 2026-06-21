@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Headphones, Mic, BrainCircuit, RefreshCw } from 'lucide-react';
+import { ArrowRight, Headphones, Mic, BrainCircuit, RefreshCw, Mail, Lock, X } from 'lucide-react';
 import {
   WORD_COUNT,
   SCENE_TARGET_COUNT,
@@ -53,6 +53,12 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+  // 邮箱注册 / 登录抽屉
+  const [emailSheet, setEmailSheet] = useState(false);
+  const [emailMode, setEmailMode] = useState<'register' | 'login'>('register');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
   const handleGoogle = async () => {
     setBusy(true);
     setError(null);
@@ -62,6 +68,24 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
       await auth.signInWithGoogle();
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Google 登录失败，请重试');
+      setBusy(false);
+    }
+  };
+
+  const handleEmail = async () => {
+    setBusy(true);
+    setError(null);
+    try {
+      localStorage.setItem('ogden850_has_seen_onboarding', 'true');
+      if (emailMode === 'register') {
+        await auth.signUpWithEmail(email, password, '');
+      } else {
+        await auth.signInWithEmail(email, password);
+      }
+      onComplete();
+    } catch (e) {
+      setError(e instanceof Error ? e.message : '操作失败，请重试');
+    } finally {
       setBusy(false);
     }
   };
@@ -179,9 +203,18 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
           Google 一键登录 / 注册
         </button>
 
-        {error && (
+        {error && !emailSheet && (
           <p className="mt-2 text-center text-xs text-rose-600">{error}</p>
         )}
+
+        <button
+          onClick={() => { setError(null); setEmailMode('register'); setEmailSheet(true); }}
+          disabled={busy}
+          className="mt-3 w-full bg-white border border-emerald-200 text-[#2f7d4f] font-bold py-3.5 rounded-2xl flex justify-center items-center gap-2 active:scale-[0.97] transition-all text-sm disabled:opacity-60"
+        >
+          <Mail className="w-4 h-4" />
+          用邮箱注册 / 登录
+        </button>
 
         <button
           onClick={onComplete}
@@ -196,6 +229,82 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
           已上线 {DIALOGUE_MARKETING_LABEL} 句真实场景对话 · 持续更新
         </p>
       </motion.div>
+
+      {/* 邮箱注册 / 登录抽屉 */}
+      {emailSheet && (
+        <div className="absolute inset-0 z-50 flex items-end justify-center">
+          <div
+            className="absolute inset-0 bg-slate-900/40 backdrop-blur-sm"
+            onClick={() => !busy && setEmailSheet(false)}
+          />
+          <motion.div
+            initial={{ y: '100%' }}
+            animate={{ y: 0 }}
+            transition={{ type: 'spring', damping: 28, stiffness: 280 }}
+            className="relative w-full max-w-md bg-white rounded-t-3xl px-6 pt-5 pb-8 shadow-2xl"
+          >
+            <div className="flex items-center justify-between">
+              <h2 className="text-lg font-black text-slate-800">
+                {emailMode === 'register' ? '邮箱注册' : '邮箱登录'}
+              </h2>
+              <button
+                onClick={() => !busy && setEmailSheet(false)}
+                className="text-slate-400 hover:text-slate-600 p-1"
+                aria-label="关闭"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+
+            <div className="mt-5 space-y-3">
+              <div className="relative">
+                <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                <input
+                  type="email"
+                  inputMode="email"
+                  autoComplete="email"
+                  placeholder="邮箱地址"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full bg-slate-50 border border-slate-200 rounded-2xl py-3.5 pl-11 pr-3 text-sm outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-300"
+                />
+              </div>
+              <div className="relative">
+                <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                <input
+                  type="password"
+                  autoComplete={emailMode === 'register' ? 'new-password' : 'current-password'}
+                  placeholder="密码（至少 6 位）"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="w-full bg-slate-50 border border-slate-200 rounded-2xl py-3.5 pl-11 pr-3 text-sm outline-none focus:ring-2 focus:ring-emerald-500/30 focus:border-emerald-300"
+                />
+              </div>
+
+              {error && (
+                <p className="text-xs text-rose-600 bg-rose-50 border border-rose-100 rounded-xl px-3 py-2">{error}</p>
+              )}
+
+              <button
+                onClick={handleEmail}
+                disabled={busy || !email.trim() || password.length < 6}
+                className="w-full bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] text-white font-black py-3.5 rounded-2xl flex justify-center items-center gap-2 shadow-lg shadow-emerald-500/25 active:scale-[0.97] transition-all disabled:opacity-50"
+              >
+                {busy ? <RefreshCw className="w-4 h-4 animate-spin" /> : null}
+                {emailMode === 'register' ? '注册并登录' : '登录'}
+              </button>
+
+              <button
+                onClick={() => { setError(null); setEmailMode(emailMode === 'register' ? 'login' : 'register'); }}
+                disabled={busy}
+                className="w-full text-center text-[13px] font-bold text-slate-400 hover:text-slate-600 transition-colors pt-1 disabled:opacity-60"
+              >
+                {emailMode === 'register' ? '已有账号？去登录' : '没有账号？去注册'}
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      )}
     </div>
   );
 };
