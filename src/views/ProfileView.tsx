@@ -33,7 +33,7 @@ export function ProfileView({ totalWords, setActiveTab }: ProfileViewProps) {
       </header>
 
       {auth.isAuthenticated && auth.profile ? (
-        <section className="bg-gradient-to-br from-[#c65a30] via-[#e07a3a] to-amber-400 rounded-3xl p-5 text-white shadow-lg shadow-orange-200/40">
+        <section className="bg-gradient-to-br from-[#2f7d4f] via-[#e07a3a] to-amber-400 rounded-3xl p-5 text-white shadow-lg shadow-emerald-200/40">
           <div className="flex items-start gap-4">
             <div className="w-16 h-16 rounded-2xl bg-white/20 border border-white/30 flex items-center justify-center text-2xl font-black overflow-hidden shrink-0">
               {auth.profile.avatarUrl ? (
@@ -116,7 +116,7 @@ export function ProfileView({ totalWords, setActiveTab }: ProfileViewProps) {
       <button
         type="button"
         onClick={() => setActiveTab('stats')}
-        className="w-full text-center text-xs font-bold text-slate-400 hover:text-[#c65a30] py-2"
+        className="w-full text-center text-xs font-bold text-slate-400 hover:text-[#2f7d4f] py-2"
       >
         查看详细学习统计 →
       </button>

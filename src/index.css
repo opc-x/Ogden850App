@@ -2,16 +2,16 @@
 
 @theme {
   --font-sans: "Public Sans", system-ui, -apple-system, sans-serif;
-  --color-primary: #c65f37;
-  --color-primary-container: #ffeedb;
-  --color-on-primary-container: #833113;
+  --color-primary: #2f7d4f;
+  --color-primary-container: #e6f4ea;
+  --color-on-primary-container: #15412a;
 }
 
 :root {
   --ink: #1e293b;
   --border: #cbd5e1;
   --accent: #06b6d4;
-  --accent-warm: #f59e0b;
+  --accent-warm: #4faa6a;
   --accent-soft: #cffafe;
   --mono: "SF Mono", "Fira Code", monospace;
   --serif: "Georgia", serif;

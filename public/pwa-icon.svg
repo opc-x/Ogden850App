@@ -9,21 +9,21 @@
     <!-- Background Gradient (More visible) -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="40%" stop-color="#fff1eb" />
-      <stop offset="100%" stop-color="#f9d5c1" />
+      <stop offset="40%" stop-color="#e6f4ea" />
+      <stop offset="100%" stop-color="#bfe3cc" />
     </linearGradient>
     
     <!-- Colored Gradient Border -->
     <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffb380" />
-      <stop offset="50%" stop-color="#f78f65" />
-      <stop offset="100%" stop-color="#d65725" />
+      <stop offset="0%" stop-color="#a7d9b8" />
+      <stop offset="50%" stop-color="#5cb377" />
+      <stop offset="100%" stop-color="#2f7d4f" />
     </linearGradient>
 
     <!-- Text Gradient -->
     <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#d45b27" />
-      <stop offset="100%" stop-color="#9a3a12" />
+      <stop offset="0%" stop-color="#2f7d4f" />
+      <stop offset="100%" stop-color="#15412a" />
     </linearGradient>
 
     <!-- Soft Inner Glow/Shadow for Text -->

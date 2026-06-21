@@ -25,7 +25,7 @@ export const SceneCard = React.memo(function SceneCard({ scene, onClick }: Scene
           ? 'border-slate-100 opacity-60 cursor-not-allowed'
           : practiced
             ? 'border-emerald-200 hover:border-emerald-300 hover:shadow-md cursor-pointer active:scale-[0.98]'
-            : 'border-slate-100 hover:border-orange-300 hover:shadow-md cursor-pointer active:scale-[0.98]'
+            : 'border-slate-100 hover:border-emerald-300 hover:shadow-md cursor-pointer active:scale-[0.98]'
       }`}
     >
       <SceneCover
@@ -35,7 +35,7 @@ export const SceneCard = React.memo(function SceneCard({ scene, onClick }: Scene
         className="aspect-[5/2] w-full"
       />
       <div className="flex items-center justify-between gap-2 px-3 py-2.5">
-        <p className="font-black text-slate-800 text-sm truncate group-hover:text-[#c65a30] transition-colors min-w-0">
+        <p className="font-black text-slate-800 text-sm truncate group-hover:text-[#2f7d4f] transition-colors min-w-0">
           {scene.titleZh}
         </p>
         <span

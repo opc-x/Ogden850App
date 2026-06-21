@@ -136,7 +136,7 @@ export function UserAuthForm({ compact, onSuccess }: UserAuthFormProps) {
             placeholder="昵称（可选）"
             value={displayName}
             onChange={(e) => setDisplayName(e.target.value)}
-            className="w-full bg-slate-50 border border-slate-200 rounded-xl py-2.5 pl-10 pr-3 text-sm outline-none focus:ring-2 focus:ring-orange-500/30"
+            className="w-full bg-slate-50 border border-slate-200 rounded-xl py-2.5 pl-10 pr-3 text-sm outline-none focus:ring-2 focus:ring-emerald-500/30"
           />
         </div>
       )}
@@ -148,7 +148,7 @@ export function UserAuthForm({ compact, onSuccess }: UserAuthFormProps) {
           placeholder="邮箱"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full bg-slate-50 border border-slate-200 rounded-xl py-2.5 pl-10 pr-3 text-sm outline-none focus:ring-2 focus:ring-orange-500/30"
+          className="w-full bg-slate-50 border border-slate-200 rounded-xl py-2.5 pl-10 pr-3 text-sm outline-none focus:ring-2 focus:ring-emerald-500/30"
         />
       </div>
 
@@ -159,7 +159,7 @@ export function UserAuthForm({ compact, onSuccess }: UserAuthFormProps) {
           placeholder="密码（至少 6 位）"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full bg-slate-50 border border-slate-200 rounded-xl py-2.5 pl-10 pr-3 text-sm outline-none focus:ring-2 focus:ring-orange-500/30"
+          className="w-full bg-slate-50 border border-slate-200 rounded-xl py-2.5 pl-10 pr-3 text-sm outline-none focus:ring-2 focus:ring-emerald-500/30"
         />
       </div>
 
@@ -177,7 +177,7 @@ export function UserAuthForm({ compact, onSuccess }: UserAuthFormProps) {
               : auth.signUpWithEmail(email, password, displayName),
           )
         }
-        className="w-full py-3 rounded-xl bg-gradient-to-r from-[#c65a30] to-[#e07a3a] text-white font-black text-sm disabled:opacity-50 flex items-center justify-center gap-2"
+        className="w-full py-3 rounded-xl bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] text-white font-black text-sm disabled:opacity-50 flex items-center justify-center gap-2"
       >
         {busy ? <RefreshCw className="w-4 h-4 animate-spin" /> : null}
         {tab === 'login' ? '登录' : '注册并登录'}

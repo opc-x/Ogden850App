@@ -28,7 +28,7 @@ export default defineConfig(({ mode }) => {
           short_name: 'Ogden 850',
           description: 'Learn Basic English efficiently.',
           theme_color: '#ffffff',
-          background_color: '#fff8f5',
+          background_color: '#f0f9f2',
           display: 'standalone',
           icons: [
             {

@@ -222,7 +222,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                 <button
                   type="button"
                   onClick={() => onLoadContext(selectedWord)}
-                  className="px-5 py-2.5 bg-[#c65a30] text-white font-bold text-sm rounded-xl hover:bg-[#b5522c] active:scale-95 transition-all cursor-pointer inline-flex items-center gap-2 shadow-sm shadow-orange-500/20"
+                  className="px-5 py-2.5 bg-[#2f7d4f] text-white font-bold text-sm rounded-xl hover:bg-[#b5522c] active:scale-95 transition-all cursor-pointer inline-flex items-center gap-2 shadow-sm shadow-emerald-500/20"
                 >
                   <RefreshCw className="w-4 h-4" />
                   立刻加载
@@ -255,7 +255,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                                 return (
                                   <span
                                     key={i}
-                                    className={isTarget ? 'text-[#c65a30]' : ''}
+                                    className={isTarget ? 'text-[#2f7d4f]' : ''}
                                   >
                                     {surface}{' '}
                                   </span>

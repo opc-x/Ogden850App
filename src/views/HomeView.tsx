@@ -184,7 +184,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 <span className="text-xs font-semibold text-slate-500">匹配 {filteredWords.length} 词</span>
                 <button
                   onClick={handleBrowseAllFromSearch}
-                  className="text-xs font-semibold text-[#c65a30] hover:underline"
+                  className="text-xs font-semibold text-[#2f7d4f] hover:underline"
                 >
                   浏览全部
                 </button>
@@ -210,7 +210,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                           {CATEGORY_LABELS[word.category]?.zh}
                         </span>
                       </div>
-                      <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-[#c65a30] shrink-0" />
+                      <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-[#2f7d4f] shrink-0" />
                     </div>
                   ))}
                 </div>
@@ -234,16 +234,16 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </p>
           </div>
           <div className="text-right shrink-0 pt-0.5">
-            <span className="text-3xl font-black text-[#c65a30] tabular-nums leading-none">{progressPercent}%</span>
+            <span className="text-3xl font-black text-[#2f7d4f] tabular-nums leading-none">{progressPercent}%</span>
             <p className="text-[10px] text-slate-400 font-medium mt-1">词汇覆盖率</p>
           </div>
         </div>
-        <div className="w-full h-2 bg-orange-100/40 rounded-full overflow-hidden mt-4">
+        <div className="w-full h-2 bg-emerald-100/40 rounded-full overflow-hidden mt-4">
           <motion.div
             initial={{ width: 0 }}
             animate={{ width: `${progressPercent}%` }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="h-full bg-gradient-to-r from-[#c65a30] to-[#faa144] rounded-full"
+            className="h-full bg-gradient-to-r from-[#2f7d4f] to-[#5cb377] rounded-full"
           />
         </div>
       </section>
@@ -252,27 +252,27 @@ export const HomeView: React.FC<HomeViewProps> = ({
       <section className="space-y-3">
         <SectionTitle
           trailing={
-            <span className="text-[11px] font-semibold text-orange-700/75 bg-orange-50 px-2.5 py-1 rounded-full border border-orange-100/80">
+            <span className="text-[11px] font-semibold text-emerald-700/75 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100/80">
               18 词
             </span>
           }
         >
           <span className="inline-flex items-center gap-2">
-            <Brain className="w-[18px] h-[18px] text-orange-500" />
+            <Brain className="w-[18px] h-[18px] text-emerald-500" />
             核心动词
           </span>
         </SectionTitle>
         <button
           type="button"
           onClick={startOperatorsRoutine}
-          className="relative w-full h-[7.75rem] sm:h-[8.75rem] rounded-2xl overflow-hidden border border-orange-100/90 text-left group active:scale-[0.99] transition-transform shadow-sm"
+          className="relative w-full h-[7.75rem] sm:h-[8.75rem] rounded-2xl overflow-hidden border border-emerald-100/90 text-left group active:scale-[0.99] transition-transform shadow-sm"
         >
           <img
             alt=""
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuA67Z_foag2kUgf83Cki6FUcrkpIy1uxkVg5KKhduemzlJKdZaVVBnknU6ttRReZHcSdPmgjUxJ0-Hlh8Ob9LwsLnMhuEWghK6m-Nz3nmdVSGR_Z_bqXl41yTfdyG-kXNzY90SD95b6nIL9-rvi9yZFHtfS9GHVLCq3wPWi7t6cfWzgm9CcShrewK756MNR6ifoe3g1VVx4iLJJ8FXJ-iBjP5DcQvB_Qz1_dPf6WoDw-LWuu0bhjsfT5KkAxnWl6Siod6DuFgvvDrws"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-orange-950/78 via-orange-900/20 to-transparent flex flex-col justify-end p-5">
+          <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/78 via-emerald-900/20 to-transparent flex flex-col justify-end p-5">
             <p className="text-white font-bold text-[17px] flex items-center gap-1.5 leading-tight">
               掌握语言的引擎 <Sparkles className="w-4 h-4 text-amber-300" />
             </p>
