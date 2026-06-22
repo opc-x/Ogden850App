@@ -1,4 +1,4 @@
-import { useState, useEffect, type MouseEvent } from 'react';
+import { useState, useEffect, useMemo, type MouseEvent } from 'react';
 import { Volume2, ChevronLeft, BookOpen, RefreshCw, CheckCircle2, Circle, Languages } from 'lucide-react';
 import type { SceneCatalogItem } from '../../types/scene';
 import { useSceneCatalog } from '../../hooks/useSceneCatalog';
@@ -7,9 +7,10 @@ import { usePracticedScenes, useProgressActions } from '../../contexts/ProgressC
 import { ClickableSentence } from '../word/ClickableSentence';
 import { OgdenCategoryLegend } from '../word/OgdenCategoryLegend';
 import { speakText, isSpeechSupported } from '../../data/speak';
-import { SceneCover } from './SceneCover';
-import { SceneCard } from './SceneCard';
+import { SceneCover, SCENE_COVER_ASPECT_CLASS } from './SceneCover';
+import { CharacterAvatar, SceneCharacterStrip, fallbackCharacter } from '../scene/CharacterAvatar';
 import { SceneStatsSummary } from './SceneStatsSummary';
+import { SceneThumbnailList } from './SceneThumbnailList';
 import { SCENE_LIST_TITLE } from '../../data/marketing';
 
 interface SceneDialoguePanelProps {
@@ -32,6 +33,17 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
   useEffect(() => {
     setRevealedZh(new Set());
   }, [active?.sceneKey]);
+
+  const sceneCharacters = useMemo(() => {
+    if (!active || !turns.length) return null;
+    const a = turns.find((t) => t.speaker === 'A');
+    const b = turns.find((t) => t.speaker === 'B');
+    if (!a && !b) return null;
+    return {
+      A: a ? { name: a.speakerZh, emoji: a.speakerEmoji } : fallbackCharacter('A'),
+      B: b ? { name: b.speakerZh, emoji: b.speakerEmoji } : fallbackCharacter('B'),
+    };
+  }, [active, turns]);
 
   const toggleZhReveal = (turnId: string, e: MouseEvent) => {
     e.stopPropagation();
@@ -57,8 +69,9 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
 
   if (active) {
     const practiced = Boolean(practicedScenes[active.sceneKey]);
+
     return (
-      <div className="flex flex-col gap-3 flex-1 min-h-0">
+      <div className="flex w-full mx-auto flex-col gap-3 flex-1 min-h-0">
         <button
           type="button"
           onClick={() => setActive(null)}
@@ -68,15 +81,23 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
           返回全部 {allScenes.length} 场景
         </button>
 
-        <div className="flex flex-col flex-1 min-h-0 bg-white border border-emerald-100 rounded-3xl overflow-hidden shadow-sm">
+        <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-sm">
           <SceneCover
             slug={active.slug}
             gradient={active.gradient}
             titleZh={active.titleZh}
             overlayTitle={active.titleZh}
             overlayMeta={turnsLoading ? '…' : `${turns.length} 句`}
-            className="aspect-[5/2] w-full shrink-0 rounded-none"
+            fit="contain"
+            className={`${SCENE_COVER_ASPECT_CLASS} w-full shrink-0 rounded-t-3xl`}
           />
+
+          <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
+          {sceneCharacters && !turnsLoading ? (
+            <div className="shrink-0 border-b border-slate-100/80 px-4">
+              <SceneCharacterStrip characters={sceneCharacters} />
+            </div>
+          ) : null}
 
           <div className="shrink-0 border-b border-slate-100/80 px-4 py-2">
             <div className="flex items-center justify-between gap-2">
@@ -113,13 +134,10 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
                 return (
                   <li key={t.id}>
                     <div className={`flex items-center gap-2.5 ${t.speaker === 'A' ? '' : 'flex-row-reverse'}`}>
-                      <div
-                        className={`shrink-0 w-9 h-9 rounded-full flex items-center justify-center text-[11px] font-black ${
-                          t.speaker === 'A' ? 'bg-cyan-100 text-cyan-700' : 'bg-emerald-100 text-[#2f7d4f]'
-                        }`}
-                      >
-                        {t.speakerZh}
-                      </div>
+                      <CharacterAvatar
+                        speaker={t.speaker}
+                        character={{ name: t.speakerZh, emoji: t.speakerEmoji }}
+                      />
                       <div
                         className={`min-w-0 max-w-[calc(100%-3rem)] rounded-xl border px-2.5 py-1.5 ${
                           t.speaker === 'A'
@@ -194,28 +212,23 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
             </button>
             )}
           </div>
+          </div>
         </div>
       </div>
     );
   }
 
   return (
-    <section>
-      <SceneStatsSummary />
-      <div className="flex items-baseline justify-between gap-2 mb-3">
-        <h2 className="text-base font-black text-slate-800">{SCENE_LIST_TITLE}</h2>
+    <section className="w-full mx-auto space-y-2">
+      <SceneStatsSummary onSceneSelect={setActive} />
+      <div className="flex items-baseline justify-between gap-2 px-0.5">
+        <h2 className="text-[15px] font-black text-slate-800">{SCENE_LIST_TITLE}</h2>
         <span className="text-[10px] text-slate-400 font-medium shrink-0 tabular-nums">
           共 {allScenes.length} 场景
           {stats ? ` · ${stats.dialogueReady.toLocaleString()} 句` : ''} · 按频率排序
         </span>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-        {allScenes.map((scene) => (
-          <div key={scene.slug}>
-            <SceneCard scene={scene} onClick={() => setActive(scene)} />
-          </div>
-        ))}
-      </div>
+      <SceneThumbnailList scenes={allScenes} onSelect={setActive} />
     </section>
   );
 }

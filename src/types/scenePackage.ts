@@ -1,4 +1,4 @@
-import type { SceneIllustrationMeta, SceneTier, StoryBeat, StoryChapter, StoryNarrative } from './scene';
+import type { SceneCharacters, SceneIllustrationMeta, SceneTier, StoryBeat, StoryChapter, StoryNarrative } from './scene';
 
 /** 一场景一整包 — 故事脚本 + 对话，静态 JSON 唯一真相源 */
 export interface SceneTurnPackage {
@@ -27,6 +27,8 @@ export interface ScenePackage {
   storyBlurb?: string;
   /** 完整故事母本 — 供 LLM 扩写 turns，开发模式可折叠查看 */
   storyScript?: string;
+  /** 角色身份 — A/B 各自的简称，用于对话气泡头像 */
+  characters?: SceneCharacters;
   /** 目标句数（默认 110） */
   targetTurns: number;
   turns: SceneTurnPackage[];

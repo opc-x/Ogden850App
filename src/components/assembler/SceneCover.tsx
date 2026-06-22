@@ -1,6 +1,17 @@
 import { useState } from 'react';
 import { sceneCoverUrl } from '../../lib/sceneAsset';
 
+/** 场景封面原生比例 1536×614 ≈ 5:2 */
+export const SCENE_COVER_ASPECT_CLASS = 'aspect-[5/2]';
+
+/** 列表网格封面 — 降饱和 + 微提亮，视觉更清爽 */
+export const SCENE_COVER_SOFT_CLASS =
+  'saturate-[0.72] brightness-[1.06] contrast-[0.97] group-hover:saturate-[0.82] group-hover:brightness-[1.04] transition-[filter] duration-300';
+
+/** 顶部轮播 hero — 比列表缩略图更鲜艳，接近原图 */
+export const SCENE_COVER_CAROUSEL_CLASS =
+  'saturate-[0.92] brightness-[1.02] contrast-[1.01] transition-[filter] duration-300';
+
 /** 场景封面 — 插画 webp；加载失败时保留渐变底，不显示破碎图标 */
 export function SceneCover({
   slug,
@@ -8,6 +19,8 @@ export function SceneCover({
   titleZh,
   overlayTitle,
   overlayMeta,
+  tone = 'default',
+  fit,
   className = '',
 }: {
   slug: string;
@@ -16,14 +29,21 @@ export function SceneCover({
   /** 叠在封面底部的浅色标题（详情页用） */
   overlayTitle?: string;
   overlayMeta?: string;
+  /** soft = 列表缩略图，降饱和更清爽 */
+  tone?: 'default' | 'soft';
+  /** contain = 完整展示 5:2 插画；cover = 铺满裁切（详情叠字用） */
+  fit?: 'cover' | 'contain';
   className?: string;
 }) {
   const [failed, setFailed] = useState(false);
+  const imgTone = tone === 'soft' ? SCENE_COVER_SOFT_CLASS : '';
+  const objectFit = fit ?? (overlayTitle || tone === 'soft' ? 'contain' : 'cover');
+  const useContain = objectFit === 'contain';
 
   return (
     <div
-      className={`relative overflow-hidden ${className}`}
-      style={{ background: gradient }}
+      className={`relative overflow-hidden ${useContain ? 'bg-slate-50' : ''} ${className}`}
+      style={{ background: useContain ? undefined : gradient }}
       aria-label={titleZh}
     >
       {!failed && (
@@ -33,7 +53,11 @@ export function SceneCover({
           aria-hidden
           decoding="async"
           onError={() => setFailed(true)}
-          className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+          className={
+            useContain
+              ? `pointer-events-none h-full w-full select-none object-contain object-center ${imgTone}`
+              : `absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105 ${imgTone}`
+          }
         />
       )}
 

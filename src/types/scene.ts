@@ -22,6 +22,16 @@ export interface StoryNarrative {
   event: string;
 }
 
+export interface SceneCharacter {
+  name: string;
+  emoji: string;
+}
+
+export interface SceneCharacters {
+  A: SceneCharacter;
+  B: SceneCharacter;
+}
+
 export interface SceneMetadata {
   sceneKey: string;
   titleEn?: string;
@@ -30,6 +40,7 @@ export interface SceneMetadata {
   storyOutline?: StoryChapter[];
   illustration?: SceneIllustrationMeta;
   narrative?: StoryNarrative;
+  characters?: SceneCharacters;
 }
 
 export interface SceneCatalogItem {
@@ -53,6 +64,7 @@ export interface DialogueTurn {
   seq: number;
   speaker: 'A' | 'B';
   speakerZh: string;
+  speakerEmoji: string;
   en: string;
   zh?: string;
   audio?: string;

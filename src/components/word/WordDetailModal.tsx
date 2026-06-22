@@ -138,7 +138,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
         animate={{ y: 0, scale: 1, opacity: 1 }}
         exit={{ y: '100dvh', scale: 0.98, opacity: 0 }}
         transition={{ type: 'spring', damping: 28, stiffness: 300, mass: 0.8 }}
-        className="relative w-full sm:max-w-xl bg-white sm:rounded-[1.75rem] rounded-t-[1.75rem] shadow-[0_24px_64px_-20px_rgba(15,23,42,0.35)] border border-slate-200/80 overflow-hidden max-h-[88vh] sm:max-h-[90vh] flex flex-col"
+        className="relative w-full max-w-[430px] sm:max-w-[430px] bg-white sm:rounded-[1.75rem] rounded-t-[1.75rem] shadow-[0_24px_64px_-20px_rgba(15,23,42,0.35)] border border-slate-200/80 overflow-hidden max-h-[88vh] sm:max-h-[90vh] flex flex-col"
       >
         <div className="w-full flex justify-center pt-3 pb-1 shrink-0">
           <div className="w-10 h-1 rounded-full bg-slate-200" />

@@ -1,20 +1,18 @@
 import { API_ROUTES } from '../router/api';
-import type { CoachEvalResult, UserRole } from '../types/coach';
-import type { DialogueTurn } from '../types/scene';
+import { evaluateCoachLocally } from '../lib/coachLocalEval';
+import type { CoachEvalResult, CoachEvaluatePayload } from '../types/coach';
 
-export interface CoachEvaluatePayload {
-  sceneTitleZh: string;
-  sceneTitleEn: string;
-  storyHook?: string;
-  userRole: UserRole;
-  expectedLine: Pick<DialogueTurn, 'en' | 'zh' | 'storyBeat'>;
-  userAttempt: string;
-  priorContext: Array<{ speaker: 'A' | 'B'; en: string }>;
-  referenceSnippet: Array<{ speaker: 'A' | 'B'; en: string }>;
+/** 默认本地评判，零 API 费用；仅 VITE_COACH_USE_API=true 时走 DeepSeek */
+function useRemoteCoachApi(): boolean {
+  return import.meta.env.VITE_COACH_USE_API === 'true';
 }
 
 export const CoachService = {
   async evaluateAttempt(payload: CoachEvaluatePayload): Promise<CoachEvalResult> {
+    if (!useRemoteCoachApi()) {
+      return evaluateCoachLocally(payload);
+    }
+
     const response = await fetch(API_ROUTES.AI.SCENE_COACH, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

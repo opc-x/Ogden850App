@@ -20,7 +20,7 @@ function nextUserTurnIndex(turns: DialogueTurn[], role: UserRole, from: number) 
 }
 
 export function useSceneCoach() {
-  const [phase, setPhase] = useState<CoachPhase>('pick');
+  const [phase, setPhase] = useState<CoachPhase>('practice');
   const [scene, setScene] = useState<SceneCatalogItem | null>(null);
   const [turns, setTurns] = useState<DialogueTurn[]>([]);
   const [userRole, setUserRole] = useState<UserRole>('B');
@@ -29,6 +29,7 @@ export function useSceneCoach() {
   const [input, setInput] = useState('');
   const [evaluating, setEvaluating] = useState(false);
   const [completedUserTurns, setCompletedUserTurns] = useState(0);
+  const [sessionKey, setSessionKey] = useState(0);
 
   const totalUserTurns = useMemo(
     () => (turns.length ? countUserTurns(turns, userRole) : 0),
@@ -37,6 +38,7 @@ export function useSceneCoach() {
 
   const currentTurn = playhead >= 0 && playhead < turns.length ? turns[playhead] : null;
   const isUserTurn = currentTurn?.speaker === userRole;
+  const isComplete = phase === 'complete';
 
   const appendThread = useCallback((items: CoachThreadItem[]) => {
     setThread((prev) => [...prev, ...items]);
@@ -79,42 +81,27 @@ export function useSceneCoach() {
       setUserRole(role);
       setCompletedUserTurns(0);
       setInput('');
-      setThread([
-        {
-          id: uid(),
-          kind: 'system',
-          zh: `已锁定「${selected.titleZh}」场景台词，陪练范围仅限本剧 ${dialogueTurns.length} 句对话。你扮演${role === 'A' ? '甲' : '乙'}，对方由陪练朗读。`,
-        },
-      ]);
+      setEvaluating(false);
+      setPlayhead(0);
       setPhase('practice');
+      setSessionKey((k) => k + 1);
+      setThread([]);
+
       const firstUserIdx = nextUserTurnIndex(dialogueTurns, role, 0);
       if (firstUserIdx === -1) {
         setPhase('complete');
+        appendThread([
+          { id: uid(), kind: 'system', zh: '本场景没有你的台词回合，请换场景或换角色。' },
+        ]);
         return;
       }
       await pushPartnerLinesUntilUser(0, dialogueTurns, role);
     },
-    [pushPartnerLinesUntilUser],
+    [pushPartnerLinesUntilUser, appendThread],
   );
 
-  const selectScene = useCallback((selected: SceneCatalogItem) => {
-    setScene(selected);
-    setPhase('briefing');
-  }, []);
-
-  const reset = useCallback(() => {
-    setPhase('pick');
-    setScene(null);
-    setTurns([]);
-    setPlayhead(0);
-    setThread([]);
-    setInput('');
-    setEvaluating(false);
-    setCompletedUserTurns(0);
-  }, []);
-
   const submitAttempt = useCallback(async () => {
-    if (!scene || !currentTurn || !isUserTurn || !input.trim() || evaluating) return;
+    if (!scene || !currentTurn || !isUserTurn || !input.trim() || evaluating || isComplete) return;
 
     const attempt = input.trim();
     setInput('');
@@ -159,13 +146,6 @@ export function useSceneCoach() {
         if (nextIdx >= turns.length || done >= totalUserTurns) {
           setPhase('complete');
           setPlayhead(turns.length);
-          appendThread([
-            {
-              id: uid(),
-              kind: 'system',
-              zh: '🎉 本场景台词练完啦！你今天已经能在真实情境里说出这些句子了。',
-            },
-          ]);
         } else {
           await pushPartnerLinesUntilUser(nextIdx, turns, userRole);
         }
@@ -175,7 +155,7 @@ export function useSceneCoach() {
         {
           id: uid(),
           kind: 'system',
-          zh: e instanceof Error ? e.message : '评判服务暂时不可用，请稍后重试。',
+          zh: e instanceof Error ? e.message : '评判暂时不可用，请稍后重试。',
         },
       ]);
     } finally {
@@ -187,6 +167,7 @@ export function useSceneCoach() {
     isUserTurn,
     input,
     evaluating,
+    isComplete,
     appendThread,
     turns,
     playhead,
@@ -201,7 +182,6 @@ export function useSceneCoach() {
 
   return {
     phase,
-    setPhase,
     scene,
     turns,
     userRole,
@@ -212,12 +192,12 @@ export function useSceneCoach() {
     evaluating,
     currentTurn,
     isUserTurn,
+    isComplete,
     completedUserTurns,
     totalUserTurns,
     progressPct,
-    selectScene,
+    sessionKey,
     beginPractice,
     submitAttempt,
-    reset,
   };
-}
+};

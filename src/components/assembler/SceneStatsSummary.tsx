@@ -1,6 +1,8 @@
+import type { SceneCatalogItem } from '../../types/scene';
 import { SCENE_PROGRESS_GRADIENT } from '../../data/marketing';
 import { useProgressStats } from '../../contexts/ProgressContext';
 import { useSceneCatalog } from '../../hooks/useSceneCatalog';
+import { ScenePreviewCarousel } from './ScenePreviewCarousel';
 
 function FormulaTerm({
   label,
@@ -12,28 +14,28 @@ function FormulaTerm({
   accent?: boolean;
 }) {
   return (
-    <span className="inline-flex items-baseline gap-1">
+    <span className="inline-flex items-baseline gap-0.5">
       <span
-        className={`text-2xl font-black tabular-nums leading-none sm:text-[1.65rem] ${
+        className={`text-lg font-black tabular-nums leading-none sm:text-xl ${
           accent ? 'text-[#2f7d4f]' : 'text-slate-800'
         }`}
       >
         {value}
       </span>
-      <span className="text-[11px] font-medium text-slate-500">{label}</span>
+      <span className="text-[10px] font-medium text-slate-500">{label}</span>
     </span>
   );
 }
 
 function FormulaOp({ children }: { children: string }) {
   return (
-    <span aria-hidden className="select-none text-xl font-medium leading-none text-slate-300">
+    <span aria-hidden className="select-none text-base font-medium leading-none text-slate-300">
       {children}
     </span>
   );
 }
 
-export function SceneStatsSummary() {
+export function SceneStatsSummary({ onSceneSelect }: { onSceneSelect?: (scene: SceneCatalogItem) => void }) {
   const { scenes, stats } = useSceneCatalog();
   const { practicedSceneCount } = useProgressStats();
 
@@ -49,43 +51,35 @@ export function SceneStatsSummary() {
   const sceneProgressPct =
     totalScenes > 0 ? Math.min(100, Math.round((learnedScenes / totalScenes) * 100)) : 0;
 
-  return (
-    <section className="mb-6">
-      <div
-        className="relative overflow-hidden rounded-3xl border border-slate-200/50 bg-gradient-to-b from-white via-white to-slate-50/80 px-5 py-5 sm:px-6 sm:py-6
-          shadow-[0_12px_36px_-10px_rgba(15,23,42,0.14),0_4px_10px_-4px_rgba(15,23,42,0.06),inset_0_1px_0_rgba(255,255,255,0.95),inset_0_-1px_0_rgba(15,23,42,0.04)]"
-      >
-        {/* 顶光高光 — 模拟光从上方打下来 */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 top-0 h-[55%] bg-gradient-to-b from-white via-white/40 to-transparent"
-        />
+  const previewScenes = scenes;
 
-        <div className="relative">
-          <div className="flex flex-wrap items-baseline justify-center gap-x-2 gap-y-1.5 sm:gap-x-2.5">
+  return (
+    <section className="mb-3">
+      <div className="overflow-hidden rounded-2xl border border-slate-200/80 bg-white shadow-sm">
+        <div className="border-b border-slate-100/90 px-3.5 py-2.5 sm:px-4">
+          <div className="flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
             <FormulaTerm label="核心词根" value={stats.wordCount} />
             <FormulaOp>×</FormulaOp>
             <FormulaTerm label="真实场景" value={stats.sceneTarget} />
             <FormulaOp>≈</FormulaOp>
             <FormulaTerm label="句生活口语" value={dialogueLabel} accent />
           </div>
-
-          <div className="mt-4">
-            <div className="mb-1.5 flex justify-end">
-              <span className="text-[11px] font-semibold tabular-nums text-slate-500">
-                <span className="text-amber-700">{learnedScenes}</span>
-                <span className="mx-0.5 font-normal text-slate-400">/</span>
-                {totalScenes}
-              </span>
-            </div>
-            <div className="h-2.5 w-full overflow-hidden rounded-full border border-slate-200/90 bg-slate-100/90 shadow-[inset_0_1px_2px_rgba(15,23,42,0.06)]">
+          <div className="mt-1.5 flex items-center gap-2">
+            <div className="h-1 min-w-0 flex-1 overflow-hidden rounded-full bg-slate-100">
               <div
-                className="h-full min-w-[0.5rem] rounded-full shadow-[0_1px_2px_rgba(180,83,9,0.3)] transition-all duration-500"
+                className="h-full min-w-[0.25rem] rounded-full transition-all duration-500"
                 style={{ width: `${sceneProgressPct}%`, background: SCENE_PROGRESS_GRADIENT }}
               />
             </div>
+            <span className="shrink-0 text-[10px] font-semibold tabular-nums text-slate-500">
+              <span className="text-amber-700">{learnedScenes}</span>
+              <span className="mx-0.5 font-normal text-slate-400">/</span>
+              {totalScenes}
+            </span>
           </div>
         </div>
+
+        <ScenePreviewCarousel scenes={previewScenes} onSelect={onSceneSelect} />
       </div>
     </section>
   );
