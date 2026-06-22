@@ -12,6 +12,11 @@ import {
 
 let currentAudio: HTMLAudioElement | null = null;
 
+function dispatchAudioLifecycle(phase: 'start' | 'end'): void {
+  if (typeof window === 'undefined') return;
+  window.dispatchEvent(new CustomEvent(`ogden:audio-${phase}`));
+}
+
 export type AudioMissingKind = 'word' | 'guide' | 'sentence';
 
 export interface AudioMissingDetail {
@@ -26,7 +31,10 @@ export interface AudioMissingDetail {
 function stopAudio(): void {
   if (currentAudio) {
     currentAudio.pause();
+    currentAudio.onplaying = null;
+    currentAudio.onended = null;
     currentAudio = null;
+    dispatchAudioLifecycle('end');
   }
 }
 
@@ -77,6 +85,15 @@ function playMp3(
     };
 
     audio.onerror = fail;
+    audio.onplaying = () => {
+      if (currentAudio !== audio) return;
+      dispatchAudioLifecycle('start');
+    };
+    audio.onended = () => {
+      if (currentAudio !== audio) return;
+      currentAudio = null;
+      dispatchAudioLifecycle('end');
+    };
     // 生产站 SPA 对缺失 MP3 会 200 返回 HTML，onerror 不触发
     audio.onloadedmetadata = () => {
       if (!isPlayableAudioDuration(audio.duration)) fail();

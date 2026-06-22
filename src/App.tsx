@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo, useRef, lazy, Suspense, useCallback } from 'react';
 import {
   BookOpen, Home, Blocks,
-  Sparkles, User,
+  Sparkles,
   RefreshCw, X, Download, Share, BarChart3,
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -17,7 +17,7 @@ import { useProgress } from './contexts/ProgressContext';
 import { useWords } from './contexts/WordsContext';
 import { ASSEMBLER_NAV_HINT, ASSEMBLER_NAV_LABEL } from './data/marketing';
 import { MobileWrapper } from './components/layout/MobileWrapper';
-import { useAuth } from './contexts/AuthContext';
+import { HeaderUserButton } from './components/profile/HeaderUserButton';
 const HomeView = lazy(() => import('./views/HomeView').then(m => ({ default: m.HomeView })));
 const BrowserView = lazy(() => import('./views/BrowserView').then(m => ({ default: m.BrowserView })));
 const StatsView = lazy(() => import('./views/StatsView').then(m => ({ default: m.StatsView })));
@@ -55,7 +55,6 @@ function AppContent() {
   const location = useLocation();
   const navigate = useNavigate();
   const { learningStatus, starredWords, toggleStar, setWordStatus, masteredCount, learningCount } = useProgress();
-  const { isAuthenticated } = useAuth();
   const [generatingForId, setGeneratingForId] = useState<string | null>(null);
 
   const activeTab = location.pathname === '/' ? 'onboarding' : location.pathname.substring(1);
@@ -241,16 +240,7 @@ function AppContent() {
             <p className="text-xs text-emerald-800/60 font-bold">语言掌握中</p>
             <p className="text-sm font-extrabold text-[#2f7d4f]">{masteredCount + learningCount} / 850 词</p>
           </div>
-          <div 
-            onClick={() => setActiveTab('profile')}
-            className="w-10 h-10 flex items-center justify-center text-[#2f7d4f] cursor-pointer relative group active:scale-95 transition-all hover:opacity-80"
-            title={isAuthenticated ? '我的账号' : '登录 / 注册'}
-          >
-            <User className="w-6 h-6" strokeWidth={2.25} />
-            <span className={`absolute bottom-0.5 right-0.5 w-2.5 h-2.5 rounded-full border-2 border-white ${
-              isAuthenticated ? 'bg-emerald-500' : 'bg-slate-300'
-            }`} />
-          </div>
+          <HeaderUserButton onClick={() => setActiveTab('profile')} />
         </div>
       </header>
 
@@ -258,8 +248,12 @@ function AppContent() {
       <main
         className={
           assemblerSceneDetailOpen && activeTab === 'assembler'
-            ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full px-4 sm:px-6 py-6 pb-28'
-            : 'flex-1 overflow-y-auto overscroll-y-contain w-full px-4 sm:px-6 py-6 pb-28'
+            ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full mx-auto px-4 sm:px-6 py-4'
+            : activeTab === 'assembler'
+              ? 'flex-1 overflow-y-auto overscroll-y-contain w-full mx-auto px-4 sm:px-6 pt-3 pb-4'
+              : activeTab === 'chat'
+                ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full px-0 pt-1'
+                : 'flex-1 overflow-y-auto overscroll-y-contain w-full px-4 sm:px-6 py-6 pb-6'
         }
       >
         
@@ -313,7 +307,9 @@ function AppContent() {
         )}
         {activeTab === 'chat' && (
           <Suspense fallback={<ViewFallback />}>
-            <CoachView />
+            <div className="flex flex-col flex-1 min-h-0 w-full">
+              <CoachView />
+            </div>
           </Suspense>
         )}
 
@@ -353,7 +349,7 @@ function AppContent() {
       {/* Mobile bottom nav — tonal contrast, no pill backgrounds */}
       <nav
         id="bottom-bar-nav"
-        className="flex-none w-full bg-white/95 backdrop-blur-xl border-t border-slate-200/60 flex justify-around items-center pt-3 pb-safe px-2 z-50 absolute bottom-0 shadow-[0_-10px_20px_rgba(0,0,0,0.03)]"
+        className="flex-none w-full bg-white/95 backdrop-blur-xl border-t border-slate-200/60 flex justify-around items-center pt-3 pb-safe px-2 z-50 shadow-[0_-10px_20px_rgba(0,0,0,0.03)]"
       >
         <button id="nav-home" onClick={() => setActiveTab('home')} className={mobileNavItemClass(activeTab === 'home')}>
           <MobileNavIcon active={activeTab === 'home'}><Home className="w-5 h-5" strokeWidth={activeTab === 'home' ? 2.25 : 1.75} /></MobileNavIcon>

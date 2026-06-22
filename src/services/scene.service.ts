@@ -2,6 +2,8 @@ import type {
   DialogueTurn,
   SceneAggregateStats,
   SceneCatalogItem,
+  SceneCharacter,
+  SceneCharacters,
   StoryNarrative,
 } from '../types/scene';
 import {
@@ -12,6 +14,7 @@ import {
   WORD_COUNT,
 } from '../data/marketing';
 import { SCENE_STORY_SCRIPTS, slugifySceneKey } from '../data/sceneStoryScripts';
+import { getScenePackageBySlug } from '../data/scenes/loadScenes';
 import { getStoryNarrative } from '../data/storyNarrative';
 import {
   countTurnsBySceneKey,
@@ -43,13 +46,30 @@ function scriptToCatalogItem(script: (typeof SCENE_STORY_SCRIPTS)[number]): Scen
   };
 }
 
-function mapRow(row: SceneDialogueRow): DialogueTurn {
+function normalizeCharacter(raw: string | SceneCharacter, speaker: 'A' | 'B'): SceneCharacter {
+  if (typeof raw === 'string') {
+    return { name: raw, emoji: speaker === 'A' ? '👤' : '👥' };
+  }
+  return raw;
+}
+
+function normalizeCharacters(raw?: Partial<Record<'A' | 'B', string | SceneCharacter>>): SceneCharacters | undefined {
+  if (!raw?.A && !raw?.B) return undefined;
+  return {
+    A: normalizeCharacter(raw.A ?? '甲', 'A'),
+    B: normalizeCharacter(raw.B ?? '乙', 'B'),
+  };
+}
+
+function mapRow(row: SceneDialogueRow, characters?: SceneCharacters): DialogueTurn {
   const speaker = row.speaker;
+  const character = characters?.[speaker] ?? normalizeCharacter(speaker === 'A' ? '甲' : '乙', speaker);
   return {
     id: row.id,
     seq: row.seq,
     speaker,
-    speakerZh: speaker === 'A' ? '甲' : '乙',
+    speakerZh: character.name,
+    speakerEmoji: character.emoji,
     en: row.sentence,
     zh: row.zh,
     audio: `/audio/sentences/${row.id}.mp3`,
@@ -109,10 +129,20 @@ export const SceneService = {
   async fetchDialogueTurnsBySlug(slug: string): Promise<DialogueTurn[]> {
     const script = getSceneStoryBySlug(slug);
     if (!script) return [];
-    return getDialogueRowsBySceneKey(script.sceneKey).map(mapRow);
+    const pkg = getScenePackageBySlug(slug);
+    const characters = normalizeCharacters(pkg?.characters);
+    return getDialogueRowsBySceneKey(script.sceneKey).map((row) => mapRow(row, characters));
   },
 
   async fetchDialogueTurnsBySceneKey(sceneKey: string): Promise<DialogueTurn[]> {
-    return getDialogueRowsBySceneKey(sceneKey).map(mapRow);
+    const slug = slugifySceneKey(sceneKey);
+    const pkg = getScenePackageBySlug(slug);
+    const characters = normalizeCharacters(pkg?.characters);
+    return getDialogueRowsBySceneKey(sceneKey).map((row) => mapRow(row, characters));
+  },
+
+  async fetchCharactersBySlug(slug: string): Promise<SceneCharacters | null> {
+    const pkg = getScenePackageBySlug(slug);
+    return normalizeCharacters(pkg?.characters) ?? null;
   },
 };

@@ -15,7 +15,7 @@ export function AssemblerView({ onWordClick, onSceneDetailChange }: AssemblerVie
   };
 
   return (
-    <div className={detailOpen ? 'h-full min-h-0 flex flex-col' : 'space-y-4 pb-4'}>
+    <div className={`w-full ${detailOpen ? 'h-full min-h-0 flex flex-col' : 'pb-2'}`}>
       <SceneDialoguePanel onWordClick={onWordClick} onSceneDetailChange={handleDetailChange} />
     </div>
   );

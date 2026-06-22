@@ -1,4 +1,5 @@
 import type { Session, User } from '@supabase/supabase-js';
+import { defaultAvatarUrl } from '../lib/defaultAvatar';
 import { supabase } from '../lib/supabase';
 import type { AuthProvider, GuestCredentials, UserProfile } from '../types/auth';
 
@@ -75,13 +76,15 @@ export const AuthService = {
   },
 
   async signUpWithEmail(email: string, password: string, displayName?: string): Promise<User> {
+    const trimmedEmail = email.trim();
     const { data, error } = await supabase.auth.signUp({
-      email: email.trim(),
+      email: trimmedEmail,
       password,
       options: {
         data: {
           auth_provider: 'email',
-          display_name: displayName?.trim() || email.split('@')[0],
+          display_name: displayName?.trim() || trimmedEmail.split('@')[0],
+          avatar_url: defaultAvatarUrl(trimmedEmail),
           is_guest: false,
         },
       },
@@ -91,7 +94,7 @@ export const AuthService = {
 
     if (!data.session) {
       const { error: signInErr } = await supabase.auth.signInWithPassword({
-        email: email.trim(),
+        email: trimmedEmail,
         password,
       });
       if (signInErr) throw new Error(signInErr.message);
@@ -148,6 +151,7 @@ export const AuthService = {
           is_guest: true,
           auth_provider: 'guest',
           display_name: displayName,
+          avatar_url: defaultAvatarUrl(creds.email),
         },
       },
     });

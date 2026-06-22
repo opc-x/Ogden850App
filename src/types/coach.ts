@@ -1,6 +1,6 @@
 import type { DialogueTurn, SceneCatalogItem } from './scene';
 
-export type CoachPhase = 'pick' | 'briefing' | 'practice' | 'complete';
+export type CoachPhase = 'practice' | 'complete';
 export type UserRole = 'A' | 'B';
 
 export interface CoachEvalResult {
@@ -12,6 +12,17 @@ export interface CoachEvalResult {
   tip: string;
   mood: 'great' | 'good' | 'retry';
   offlineFallback?: boolean;
+}
+
+export interface CoachEvaluatePayload {
+  sceneTitleZh: string;
+  sceneTitleEn: string;
+  storyHook?: string;
+  userRole: UserRole;
+  expectedLine: Pick<DialogueTurn, 'en' | 'zh' | 'storyBeat'>;
+  userAttempt: string;
+  priorContext: Array<{ speaker: 'A' | 'B'; en: string }>;
+  referenceSnippet: Array<{ speaker: 'A' | 'B'; en: string }>;
 }
 
 export interface CoachThreadItem {

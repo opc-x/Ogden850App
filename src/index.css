@@ -15,6 +15,8 @@
   --accent-soft: #cffafe;
   --mono: "SF Mono", "Fira Code", monospace;
   --serif: "Georgia", serif;
+  /* 底栏高度（icon+label+pt），供固定输入坞避让 */
+  --bottom-nav-height: 3.75rem;
   /* IPA 音标：Charis SIL 斜体 + Noto Sans 兜底（覆盖更多 IPA 字形） */
   --font-ipa: "Charis SIL", "Noto Sans", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --ipa-color: #0e7490;
