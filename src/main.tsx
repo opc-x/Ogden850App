@@ -5,7 +5,10 @@ import { ProgressProvider } from './contexts/ProgressContext.tsx';
 import { AuthProvider } from './contexts/AuthContext.tsx';
 import { WordsProvider } from './contexts/WordsContext.tsx';
 import { repairSupabaseAuthStorage } from './services/auth.service';
+import { initAppViewport } from './lib/appViewport';
 import './index.css';
+
+initAppViewport();
 
 const GUIDE_DATA_VERSION = '2026-06-21';
 const guideDataVersionKey = 'ogden850_guide_data_version';

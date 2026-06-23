@@ -20,6 +20,8 @@
   --accent-soft: #cffafe;
   --mono: "SF Mono", "Fira Code", monospace;
   --serif: "Georgia", serif;
+  /* 浏览器：svh（含 Safari 底栏）；PWA：main.tsx 写入 visualViewport 像素高度 */
+  --app-height: 100svh;
   /* 底栏高度（icon+label+pt），供固定输入坞 / 主内容区避让 */
   --bottom-nav-height: 4.25rem;
   /* IPA 音标：Charis SIL 斜体 + Noto Sans 兜底（覆盖更多 IPA 字形） */
@@ -55,25 +57,31 @@ html {
 body {
   background-color: #f8f9fa;
   margin: 0;
-  overflow: hidden; /* Prevent body scrolling entirely for app layout */
-  height: 100%;
-  min-height: 100svh;
-  min-height: -webkit-fill-available;
+  overflow: hidden;
+  height: var(--app-height);
+  min-height: var(--app-height);
+  max-height: var(--app-height);
 }
 
 #root {
-  height: 100%;
-  min-height: 100svh;
-  min-height: -webkit-fill-available;
+  height: var(--app-height);
+  min-height: var(--app-height);
+  max-height: var(--app-height);
 }
 
-/* svh + fill-available：Safari 浏览器与 PWA 独立模式都能铺满，避免 dvh/100% 链在 standalone 底部留白 */
+/* 浏览器=svh；PWA 全屏=--app-height(px)，避免 svh 按「含底栏」算高导致 standalone 底部留白 */
 @utility h-app-screen {
-  height: 100svh;
-  min-height: 100svh;
-  max-height: 100svh;
-  min-height: -webkit-fill-available;
-  max-height: -webkit-fill-available;
+  height: var(--app-height);
+  min-height: var(--app-height);
+  max-height: var(--app-height);
+}
+
+html.pwa-standalone [data-app-shell-root] {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: var(--app-height);
+  max-height: var(--app-height);
 }
 
 @utility pb-bottom-nav {
