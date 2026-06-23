@@ -22,11 +22,10 @@ describe('appViewport', () => {
     });
   });
 
-  it('uses screen.height as --app-height when keyboard is hidden', () => {
-    Object.defineProperty(window.screen, 'height', { configurable: true, value: 852 });
+  it('adds pwa-standalone class and removes --app-height when keyboard is hidden', () => {
     syncAppViewportHeight();
     expect(document.documentElement.classList.contains('pwa-standalone')).toBe(true);
-    expect(document.documentElement.style.getPropertyValue('--app-height')).toBe('852px');
+    expect(document.documentElement.style.getPropertyValue('--app-height')).toBe('');
   });
 
   it('sets --app-height when virtual keyboard shrinks viewport', () => {
