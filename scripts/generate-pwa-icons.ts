@@ -1,14 +1,13 @@
 /**
- * Regenerate PWA / apple-touch icons with Pacifico "Ogden" on full-bleed gradient.
- * iOS applies its own rounded mask — no baked border or transparency at edges.
+ * Regenerate PWA icons from the original pwa-icon.svg design.
+ * Fix: render full-bleed opaque square (old PNG had transparent corners → iOS white border).
  */
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 
 const root = process.cwd();
-const fontPath = path.join(root, 'public/fonts/Pacifico-Regular.ttf');
-const fontB64 = fs.readFileSync(fontPath).toString('base64');
+const fontB64 = fs.readFileSync(path.join(root, 'public/fonts/Pacifico-Regular.ttf')).toString('base64');
 
 const outputs: Array<{ file: string; size: number }> = [
   { file: 'public/ogden-192.png', size: 192 },
@@ -16,6 +15,7 @@ const outputs: Array<{ file: string; size: number }> = [
   { file: 'public/apple-touch-icon.png', size: 180 },
 ];
 
+/** Matches public/pwa-icon.svg — full opaque canvas, inner gradient stroke kept. */
 function buildIconSvg(): string {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <defs>
@@ -28,27 +28,32 @@ function buildIconSvg(): string {
       }
     </style>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#e8f5ec" />
-      <stop offset="38%" stop-color="#b8e0c8" />
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#e6f4ea" />
+      <stop offset="100%" stop-color="#bfe3cc" />
+    </linearGradient>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a7d9b8" />
+      <stop offset="50%" stop-color="#5cb377" />
       <stop offset="100%" stop-color="#2f7d4f" />
     </linearGradient>
-    <linearGradient id="word" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="55%" stop-color="#f4fff7" />
-      <stop offset="100%" stop-color="#dff5e6" />
+    <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2f7d4f" />
+      <stop offset="100%" stop-color="#15412a" />
     </linearGradient>
-    <filter id="txtShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#15412a" flood-opacity="0.22" />
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#c65a30" flood-opacity="0.2" />
     </filter>
   </defs>
   <rect width="512" height="512" fill="url(#bg)" />
+  <rect x="24" y="24" width="464" height="464" rx="100" fill="none" stroke="url(#border)" stroke-width="5" />
   <text
     x="256"
-    y="268"
+    y="250"
     font-family="Pacifico, cursive"
-    font-size="188"
-    fill="url(#word)"
-    filter="url(#txtShadow)"
+    font-size="180"
+    fill="url(#text)"
+    filter="url(#shadow)"
     text-anchor="middle"
     dominant-baseline="middle"
   >Ogden</text>
@@ -56,8 +61,7 @@ function buildIconSvg(): string {
 }
 
 async function renderIcon(size: number) {
-  const svg = Buffer.from(buildIconSvg());
-  return sharp(svg)
+  return sharp(Buffer.from(buildIconSvg()))
     .resize(size, size, { fit: 'cover' })
     .png({ compressionLevel: 9, palette: false })
     .toBuffer();
@@ -65,10 +69,16 @@ async function renderIcon(size: number) {
 
 async function main() {
   for (const { file, size } of outputs) {
-    const out = path.join(root, file);
-    await renderIcon(size).then((buf) => sharp(buf).toFile(out));
+    await renderIcon(size).then((buf) => sharp(buf).toFile(path.join(root, file)));
     console.log(`wrote ${file} (${size}x${size})`);
   }
+
+  const { data } = await renderIcon(512).then((buf) =>
+    sharp(buf).raw().toBuffer({ resolveWithObject: true }),
+  );
+  let transp = 0;
+  for (let i = 3; i < data.length; i += 4) if (data[i] < 255) transp++;
+  console.log(`alpha pixels on 512: ${transp} (expect 0)`);
 }
 
 main().catch((err) => {
