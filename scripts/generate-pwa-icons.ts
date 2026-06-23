@@ -1,5 +1,6 @@
 /**
- * Full-bleed Ogden icon: keep only text+shadow from master, redraw background gradient edge-to-edge.
+ * PWA icons from master: resize, then fill transparent corners
+ * via nearest-opaque-pixel color bleed (BFS propagation).
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -14,74 +15,107 @@ const outputs: Array<{ file: string; size: number }> = [
   { file: 'public/apple-touch-icon.png', size: 180 },
 ];
 
-const GRADIENT_TOP = { r: 77, g: 184, b: 138 };
-const GRADIENT_MID = { r: 58, g: 155, b: 114 };
-const GRADIENT_BOTTOM = { r: 38, g: 107, b: 80 };
+/** Pixels below this are treated as empty and filled by bleed. */
+const FILL_ALPHA = 200;
 
-function lerp(a: number, b: number, t: number) {
-  return Math.round(a + (b - a) * t);
+function dist2(x1: number, y1: number, x2: number, y2: number) {
+  const dx = x1 - x2;
+  const dy = y1 - y2;
+  return dx * dx + dy * dy;
 }
 
-function gradientAtY(y: number, height: number) {
-  const t = height <= 1 ? 0 : y / (height - 1);
-  if (t <= 0.55) {
-    const u = t / 0.55;
-    return {
-      r: lerp(GRADIENT_TOP.r, GRADIENT_MID.r, u),
-      g: lerp(GRADIENT_TOP.g, GRADIENT_MID.g, u),
-      b: lerp(GRADIENT_TOP.b, GRADIENT_MID.b, u),
-    };
+function jfaSteps(size: number): number[] {
+  const steps: number[] = [];
+  let step = Math.ceil(size / 2);
+  while (step >= 1) {
+    steps.push(step);
+    step = Math.floor(step / 2);
   }
-  const u = (t - 0.55) / 0.45;
-  return {
-    r: lerp(GRADIENT_MID.r, GRADIENT_BOTTOM.r, u),
-    g: lerp(GRADIENT_MID.g, GRADIENT_BOTTOM.g, u),
-    b: lerp(GRADIENT_MID.b, GRADIENT_BOTTOM.b, u),
-  };
+  if (steps.at(-1) !== 1) steps.push(1);
+  return steps;
 }
 
-/** Keep white Ogden / 850 lettering only; redraw all background pixels. */
-function isForegroundText(r: number, g: number, b: number, a: number) {
-  if (a < 24) return false;
-  const lum = 0.299 * r + 0.587 * g + 0.114 * b;
-  return lum > 168;
+/** Fill transparent pixels with RGB from the nearest opaque pixel (Euclidean, via JFA). */
+function bleedNearestOpaque(data: Buffer, width: number, height: number): Buffer {
+  const out = Buffer.from(data);
+  const pixelCount = width * height;
+  const seedX = new Int32Array(pixelCount).fill(-1);
+  const seedY = new Int32Array(pixelCount).fill(-1);
+  const nextX = new Int32Array(pixelCount);
+  const nextY = new Int32Array(pixelCount);
+
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      const p = y * width + x;
+      if (data[p * 4 + 3] >= FILL_ALPHA) {
+        seedX[p] = x;
+        seedY[p] = y;
+      }
+    }
+  }
+
+  for (const step of jfaSteps(Math.max(width, height))) {
+    for (let y = 0; y < height; y++) {
+      for (let x = 0; x < width; x++) {
+        const p = y * width + x;
+        let bestX = seedX[p];
+        let bestY = seedY[p];
+        let bestDist = bestX >= 0 ? dist2(x, y, bestX, bestY) : Number.POSITIVE_INFINITY;
+
+        for (let dy = -1; dy <= 1; dy++) {
+          for (let dx = -1; dx <= 1; dx++) {
+            const nx = x + dx * step;
+            const ny = y + dy * step;
+            if (nx < 0 || nx >= width || ny < 0 || ny >= height) continue;
+            const np = ny * width + nx;
+            const sx = seedX[np];
+            const sy = seedY[np];
+            if (sx < 0) continue;
+            const d = dist2(x, y, sx, sy);
+            if (d < bestDist) {
+              bestDist = d;
+              bestX = sx;
+              bestY = sy;
+            }
+          }
+        }
+
+        nextX[p] = bestX;
+        nextY[p] = bestY;
+      }
+    }
+    seedX.set(nextX);
+    seedY.set(nextY);
+  }
+
+  for (let p = 0; p < pixelCount; p++) {
+    const sx = seedX[p];
+    const sy = seedY[p];
+    if (sx < 0) continue;
+
+    const dst = p * 4;
+    if (data[dst + 3] < FILL_ALPHA) {
+      const src = (sy * width + sx) * 4;
+      out[dst] = data[src];
+      out[dst + 1] = data[src + 1];
+      out[dst + 2] = data[src + 2];
+    }
+    out[dst + 3] = 255;
+  }
+
+  return out;
 }
 
-async function flattenMaster(size: number): Promise<Buffer> {
+async function renderIcon(size: number): Promise<Buffer> {
   const { data, info } = await sharp(masterPath)
     .resize(size, size, { fit: 'fill' })
     .ensureAlpha()
     .raw()
     .toBuffer({ resolveWithObject: true });
 
-  const out = Buffer.alloc(data.length);
-  const { width: w, height: h } = info;
+  const bled = bleedNearestOpaque(data, info.width, info.height);
 
-  for (let y = 0; y < h; y++) {
-    const bg = gradientAtY(y, h);
-    for (let x = 0; x < w; x++) {
-      const i = (y * w + x) * 4;
-      const r = data[i];
-      const g = data[i + 1];
-      const b = data[i + 2];
-      const a = data[i + 3];
-
-      if (isForegroundText(r, g, b, a)) {
-        out[i] = r;
-        out[i + 1] = g;
-        out[i + 2] = b;
-        out[i + 3] = 255;
-        continue;
-      }
-
-      out[i] = bg.r;
-      out[i + 1] = bg.g;
-      out[i + 2] = bg.b;
-      out[i + 3] = 255;
-    }
-  }
-
-  return sharp(out, { raw: { width: w, height: h, channels: 4 } })
+  return sharp(bled, { raw: { width: info.width, height: info.height, channels: 4 } })
     .png({ compressionLevel: 9, palette: false })
     .toBuffer();
 }
@@ -92,7 +126,7 @@ async function main() {
   }
 
   for (const { file, size } of outputs) {
-    await flattenMaster(size).then((buf) => sharp(buf).toFile(path.join(root, file)));
+    await renderIcon(size).then((buf) => sharp(buf).toFile(path.join(root, file)));
     console.log(`wrote ${file} (${size}x${size})`);
   }
 }
