@@ -174,9 +174,9 @@ function GlassNavButton({
       onClick={onClick}
       disabled={disabled}
       aria-label={dir === 'prev' ? '上一个场景' : '下一个场景'}
-      className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-white/90 text-slate-500 shadow-none ring-1 ring-slate-200/60 transition-all enabled:hover:bg-emerald-50 enabled:hover:text-[#2f7d4f] enabled:hover:ring-emerald-200/70 enabled:active:scale-90 disabled:opacity-30"
+      className="relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100/80 text-slate-400 ring-1 ring-slate-200/40 transition-all before:absolute before:-inset-2 before:content-[''] enabled:hover:bg-emerald-50/80 enabled:hover:text-[#2f7d4f] enabled:hover:ring-emerald-200/50 enabled:active:scale-90 disabled:opacity-30 sm:h-6 sm:w-6 sm:bg-white/90 sm:text-slate-500 sm:ring-slate-200/60 sm:before:content-none sm:enabled:hover:ring-emerald-200/70"
     >
-      <Icon className="h-3.5 w-3.5" strokeWidth={2.25} />
+      <Icon className="h-4 w-4 sm:h-3.5 sm:w-3.5" strokeWidth={2.25} />
     </button>
   );
 }
@@ -372,10 +372,10 @@ export function ScenePreviewCarousel({
         ))}
       </div>
 
-      <div className="mt-1 flex justify-center px-4 pb-2">
-        <div className="inline-flex max-w-full items-center gap-1 rounded-full border border-slate-200/50 bg-white/80 px-1 py-0.5 shadow-none backdrop-blur-sm">
+      <div className="mt-1.5 flex justify-center px-4 pb-2 sm:mt-1">
+        <div className="inline-flex max-w-full items-center gap-1.5 rounded-full border border-slate-200/35 bg-slate-50/60 px-1.5 py-0.5 backdrop-blur-sm sm:gap-1 sm:border-slate-200/50 sm:bg-white/80 sm:px-1">
           <GlassNavButton dir="prev" disabled={!canLoop} onClick={() => goStep(-1, 'right')} />
-          <p className="max-w-[8rem] truncate px-0.5 text-center text-caption font-medium leading-none text-slate-500 sm:max-w-[9rem]">
+          <p className="max-w-[9.5rem] truncate px-0.5 text-center text-caption font-medium leading-none text-slate-400 sm:max-w-[9rem] sm:text-slate-500">
             {onSelect && activeScene ? (
               <button
                 type="button"
