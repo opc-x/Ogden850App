@@ -1,7 +1,5 @@
 /**
- * Flatten the original Ogden icon master onto an opaque gradient plate.
- * Master art: white Pacifico "Ogden" + "850" on green (scripts/assets/ogden-icon-master.png).
- * Old exports had transparent rounded corners → iOS painted a white rim; we only fix that.
+ * Full-bleed Ogden icon: keep only text+shadow from master, redraw background gradient edge-to-edge.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -16,25 +14,74 @@ const outputs: Array<{ file: string; size: number }> = [
   { file: 'public/apple-touch-icon.png', size: 180 },
 ];
 
-function gradientPlate(size: number): Buffer {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}">
-    <defs>
-      <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="#4db88a" />
-        <stop offset="55%" stop-color="#3a9b72" />
-        <stop offset="100%" stop-color="#266b50" />
-      </linearGradient>
-    </defs>
-    <rect width="${size}" height="${size}" fill="url(#g)" />
-  </svg>`;
-  return Buffer.from(svg);
+const GRADIENT_TOP = { r: 77, g: 184, b: 138 };
+const GRADIENT_MID = { r: 58, g: 155, b: 114 };
+const GRADIENT_BOTTOM = { r: 38, g: 107, b: 80 };
+
+function lerp(a: number, b: number, t: number) {
+  return Math.round(a + (b - a) * t);
 }
 
-async function renderIcon(size: number) {
-  const bg = await sharp(gradientPlate(size)).png().toBuffer();
-  const art = await sharp(masterPath).resize(size, size, { fit: 'fill' }).png().toBuffer();
-  return sharp(bg)
-    .composite([{ input: art, blend: 'over' }])
+function gradientAtY(y: number, height: number) {
+  const t = height <= 1 ? 0 : y / (height - 1);
+  if (t <= 0.55) {
+    const u = t / 0.55;
+    return {
+      r: lerp(GRADIENT_TOP.r, GRADIENT_MID.r, u),
+      g: lerp(GRADIENT_TOP.g, GRADIENT_MID.g, u),
+      b: lerp(GRADIENT_TOP.b, GRADIENT_MID.b, u),
+    };
+  }
+  const u = (t - 0.55) / 0.45;
+  return {
+    r: lerp(GRADIENT_MID.r, GRADIENT_BOTTOM.r, u),
+    g: lerp(GRADIENT_MID.g, GRADIENT_BOTTOM.g, u),
+    b: lerp(GRADIENT_MID.b, GRADIENT_BOTTOM.b, u),
+  };
+}
+
+/** Keep white Ogden / 850 lettering only; redraw all background pixels. */
+function isForegroundText(r: number, g: number, b: number, a: number) {
+  if (a < 24) return false;
+  const lum = 0.299 * r + 0.587 * g + 0.114 * b;
+  return lum > 168;
+}
+
+async function flattenMaster(size: number): Promise<Buffer> {
+  const { data, info } = await sharp(masterPath)
+    .resize(size, size, { fit: 'fill' })
+    .ensureAlpha()
+    .raw()
+    .toBuffer({ resolveWithObject: true });
+
+  const out = Buffer.alloc(data.length);
+  const { width: w, height: h } = info;
+
+  for (let y = 0; y < h; y++) {
+    const bg = gradientAtY(y, h);
+    for (let x = 0; x < w; x++) {
+      const i = (y * w + x) * 4;
+      const r = data[i];
+      const g = data[i + 1];
+      const b = data[i + 2];
+      const a = data[i + 3];
+
+      if (isForegroundText(r, g, b, a)) {
+        out[i] = r;
+        out[i + 1] = g;
+        out[i + 2] = b;
+        out[i + 3] = 255;
+        continue;
+      }
+
+      out[i] = bg.r;
+      out[i + 1] = bg.g;
+      out[i + 2] = bg.b;
+      out[i + 3] = 255;
+    }
+  }
+
+  return sharp(out, { raw: { width: w, height: h, channels: 4 } })
     .png({ compressionLevel: 9, palette: false })
     .toBuffer();
 }
@@ -45,17 +92,9 @@ async function main() {
   }
 
   for (const { file, size } of outputs) {
-    const buf = await renderIcon(size);
-    await sharp(buf).toFile(path.join(root, file));
+    await flattenMaster(size).then((buf) => sharp(buf).toFile(path.join(root, file)));
     console.log(`wrote ${file} (${size}x${size})`);
   }
-
-  const { data } = await renderIcon(512).then((buf) =>
-    sharp(buf).raw().toBuffer({ resolveWithObject: true }),
-  );
-  let transp = 0;
-  for (let i = 3; i < data.length; i += 4) if (data[i] < 255) transp++;
-  console.log(`alpha pixels on 512: ${transp} (expect 0)`);
 }
 
 main().catch((err) => {
