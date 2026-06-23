@@ -76,12 +76,13 @@ body {
 }
 
 /*
- * PWA standalone：viewport = 793px（不含状态栏 59px），
- * 但 canvas 画满 852px 物理屏。让 html 背景色匹配 nav 栏，
- * 间隙自然融合为白色，tab 栏在 793px 内正常显示不被裁剪。
+ * PWA standalone：用 screen.height 撑满物理屏幕，
+ * pb-safe 加大保底确保 tab 文字在 Home Indicator 上方。
  */
 html.pwa-standalone {
-  background: #fff;
+  position: fixed;
+  inset: 0;
+  width: 100%;
   overflow: hidden;
   overscroll-behavior: none;
 }
@@ -119,7 +120,7 @@ html.pwa-standalone [data-app-shell] {
 }
 
 @utility pb-safe {
-  padding-bottom: max(2rem, calc(0.5rem + env(safe-area-inset-bottom, 0px)));
+  padding-bottom: max(3.5rem, calc(0.5rem + env(safe-area-inset-bottom, 0px)));
 }
 
 @utility pt-safe {
