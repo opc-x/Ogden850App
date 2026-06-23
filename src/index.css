@@ -75,14 +75,8 @@ body {
   max-height: var(--app-height);
 }
 
-/*
- * PWA standalone：screen.height 撑满物理屏幕。
- * --pwa-bottom-gap = 物理屏与 viewport 的差值(≈状态栏高度)，
- * 用于把 nav/CTA 内容推入 viewport 内（文字不被 iOS 裁剪），
- * 背景色填满 gap 区域模拟原生 tab bar 效果。
- */
+/* PWA standalone：screen.height 撑满物理屏，模拟原生全屏 */
 html.pwa-standalone {
-  --pwa-bottom-gap: calc(var(--app-height, 100dvh) - 100dvh);
   position: fixed;
   inset: 0;
   width: 100%;
@@ -109,11 +103,11 @@ html.pwa-standalone [data-app-shell] {
 }
 
 @utility pb-bottom-nav {
-  padding-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom, 0px) + var(--pwa-bottom-gap, 0px));
+  padding-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom, 0px));
 }
 
 @utility bottom-nav-offset {
-  bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom, 0px) + var(--pwa-bottom-gap, 0px) + 0.5rem);
+  bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom, 0px) + 0.5rem);
 }
 
 @media (min-width: 768px) {
@@ -123,7 +117,7 @@ html.pwa-standalone [data-app-shell] {
 }
 
 @utility pb-safe {
-  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px) + var(--pwa-bottom-gap, 0px));
+  padding-bottom: max(3.25rem, calc(0.5rem + env(safe-area-inset-bottom, 0px)));
 }
 
 @utility pt-safe {
