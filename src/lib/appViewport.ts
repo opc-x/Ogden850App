@@ -1,8 +1,8 @@
 import { isPwaInstalled } from './pwaInstall';
 
 /**
- * PWA standalone: CSS 用 --app-height:100dvh 撑满全屏，
- * 这里只切 class + 虚拟键盘弹出时用像素值覆盖 --app-height 缩高。
+ * PWA standalone: viewport 单位不含状态栏，用 screen.height 撑满物理屏幕。
+ * 虚拟键盘弹出时切到 visualViewport.height 缩高。
  * 浏览器标签页仍走 CSS --app-height: 100svh。
  */
 export function syncAppViewportHeight(): void {
@@ -14,7 +14,7 @@ export function syncAppViewportHeight(): void {
     if (vv && vv.height < window.innerHeight - 1) {
       root.style.setProperty('--app-height', `${Math.round(vv.height)}px`);
     } else {
-      root.style.removeProperty('--app-height');
+      root.style.setProperty('--app-height', `${window.screen.height}px`);
     }
     return;
   }

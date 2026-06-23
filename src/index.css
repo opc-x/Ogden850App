@@ -76,13 +76,15 @@ body {
 }
 
 /*
- * PWA standalone：不用 position:fixed（它从 y=0 开始，撑不满屏幕底部），
- * 让文档流自然从状态栏下方开始，100dvh 刚好填到屏幕底部。
- * overscroll-behavior:none 代替 fixed 防弹跳。
+ * PWA standalone：viewport 单位(svh/dvh/vh)都不含状态栏高度(793px)，
+ * 但 canvas 画满 852px 物理屏，导致底部有间隙。
+ * 改用 JS 写入 screen.height 像素值作为 --app-height，撑满整屏。
+ * pt-safe/pb-safe 避开状态栏和 Home Indicator。
  */
 html.pwa-standalone {
-  --app-height: 100dvh;
-  height: 100%;
+  position: fixed;
+  inset: 0;
+  width: 100%;
   overflow: hidden;
   overscroll-behavior: none;
 }
