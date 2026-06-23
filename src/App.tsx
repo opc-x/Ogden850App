@@ -55,6 +55,36 @@ function MobileNavIcon({ active, children }: { active: boolean; children: React.
   );
 }
 
+/** 🔧 临时调试——显示 viewport 数值，修好后删除整个组件 */
+function PwaDebugBar() {
+  const [info, setInfo] = useState('');
+  useEffect(() => {
+    const update = () => {
+      const ih = window.innerHeight;
+      const sh = window.screen.height;
+      const vvh = window.visualViewport?.height ?? 0;
+      const dh = document.documentElement.clientHeight;
+      const bh = document.body.clientHeight;
+      const rh = document.getElementById('root')?.clientHeight ?? 0;
+      const cls = document.documentElement.classList.contains('pwa-standalone') ? 'PWA' : 'BRW';
+      const appH = getComputedStyle(document.documentElement).getPropertyValue('--app-height');
+      const nav = (window.navigator as Navigator & { standalone?: boolean }).standalone;
+      setInfo(
+        `${cls} nav.sa=${nav} iH=${ih} scr=${sh} vv=${Math.round(vvh)} doc=${dh} body=${bh} root=${rh} --app-h=${appH}`
+      );
+    };
+    update();
+    window.visualViewport?.addEventListener('resize', update);
+    return () => window.visualViewport?.removeEventListener('resize', update);
+  }, []);
+  if (!info) return null;
+  return (
+    <div className="fixed top-0 left-0 right-0 z-[9999] bg-red-600 text-white text-[9px] font-mono px-2 py-0.5 text-center pointer-events-none">
+      {info}
+    </div>
+  );
+}
+
 function AppContent() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -390,6 +420,9 @@ function AppContent() {
         onDismiss={pwaInstall.dismiss}
         onInstall={() => void pwaInstall.install()}
       />
+
+      {/* 🔧 临时调试条——定位 PWA 底部间隙，修好后删除 */}
+      <PwaDebugBar />
         </div>
       )}
     </MobileWrapper>
