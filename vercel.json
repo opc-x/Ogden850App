@@ -1,9 +1,23 @@
 {
   "name": "ogden850app",
+  "functions": {
+    "api/transcribe.ts": {
+      "includeFiles": "api/_lib/rivaProtos/**",
+      "maxDuration": 30,
+      "memory": 1024
+    },
+    "api/scene-coach.ts": {
+      "maxDuration": 30
+    }
+  },
   "rewrites": [
     {
       "source": "/api/(.*)",
       "destination": "/api/$1"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
     }
   ]
 }

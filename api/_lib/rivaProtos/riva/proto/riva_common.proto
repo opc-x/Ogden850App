@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package nvidia.riva;
+
+option cc_enable_arenas = true;
+
+message RequestId {
+  string value = 1;
+}

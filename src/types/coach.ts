@@ -3,14 +3,27 @@ import type { DialogueTurn, SceneCatalogItem } from './scene';
 export type CoachPhase = 'practice' | 'complete';
 export type UserRole = 'A' | 'B';
 
+/** 语义对即可过关，不必逐字匹配参考句 */
+export const COACH_PASS_THRESHOLD = 60;
+
+export interface CoachEvalDimensions {
+  semantic: number;
+  vocabulary: number;
+  fluency: number;
+}
+
 export interface CoachEvalResult {
   score: number;
   passed: boolean;
+  semantic?: number;
+  vocabulary?: number;
+  fluency?: number;
   encouragement: string;
   correction: string | null;
   analysis: string;
   tip: string;
   mood: 'great' | 'good' | 'retry';
+  provider?: 'deepseek' | 'gemini' | 'openrouter' | 'local';
   offlineFallback?: boolean;
 }
 

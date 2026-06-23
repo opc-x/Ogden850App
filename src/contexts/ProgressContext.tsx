@@ -8,6 +8,13 @@ import React, {
   ReactNode,
 } from 'react';
 import { useWords } from './WordsContext';
+import { useAuth } from './AuthContext';
+import {
+  clearProgressForUser,
+  migrateLegacyProgressToUser,
+  readProgressJson,
+  writeProgressJson,
+} from '../lib/progressStorage';
 
 type LearningStatusMap = Record<string, 'learning' | 'mastered'>;
 type StarredWordsMap = Record<string, boolean>;
@@ -48,41 +55,54 @@ const ProgressMetaContext = createContext<ProgressMeta | undefined>(undefined);
 
 export const ProgressProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const { words } = useWords();
+  const { user, loading: authLoading } = useAuth();
+  const userId = user?.id ?? null;
   const [isInitialized, setIsInitialized] = useState(false);
   const [learningStatus, setLearningStatus] = useState<LearningStatusMap>({});
   const [starredWords, setStarredWords] = useState<StarredWordsMap>({});
   const [practicedScenes, setPracticedScenes] = useState<PracticedScenesMap>({});
 
   useEffect(() => {
+    if (authLoading) return;
+
+    setIsInitialized(false);
+
+    if (!userId) {
+      setLearningStatus({});
+      setStarredWords({});
+      setPracticedScenes({});
+      setIsInitialized(true);
+      return;
+    }
+
     try {
-      const storedStatus = localStorage.getItem('ogden850_learning_status');
-      if (storedStatus) setLearningStatus(JSON.parse(storedStatus));
-
-      const storedStarred = localStorage.getItem('ogden850_starred');
-      if (storedStarred) setStarredWords(JSON.parse(storedStarred));
-
-      const storedScenes = localStorage.getItem('ogden850_practiced_scenes');
-      if (storedScenes) setPracticedScenes(JSON.parse(storedScenes));
+      migrateLegacyProgressToUser(userId);
+      setLearningStatus(readProgressJson<LearningStatusMap>('learningStatus', userId) ?? {});
+      setStarredWords(readProgressJson<StarredWordsMap>('starred', userId) ?? {});
+      setPracticedScenes(readProgressJson<PracticedScenesMap>('practicedScenes', userId) ?? {});
     } catch (e) {
       console.warn('Could not load progress from local storage', e);
+      setLearningStatus({});
+      setStarredWords({});
+      setPracticedScenes({});
     }
     setIsInitialized(true);
-  }, []);
+  }, [userId, authLoading]);
 
   useEffect(() => {
-    if (!isInitialized) return;
-    localStorage.setItem('ogden850_learning_status', JSON.stringify(learningStatus));
-  }, [learningStatus, isInitialized]);
+    if (!isInitialized || !userId) return;
+    writeProgressJson('learningStatus', userId, learningStatus);
+  }, [learningStatus, isInitialized, userId]);
 
   useEffect(() => {
-    if (!isInitialized) return;
-    localStorage.setItem('ogden850_starred', JSON.stringify(starredWords));
-  }, [starredWords, isInitialized]);
+    if (!isInitialized || !userId) return;
+    writeProgressJson('starred', userId, starredWords);
+  }, [starredWords, isInitialized, userId]);
 
   useEffect(() => {
-    if (!isInitialized) return;
-    localStorage.setItem('ogden850_practiced_scenes', JSON.stringify(practicedScenes));
-  }, [practicedScenes, isInitialized]);
+    if (!isInitialized || !userId) return;
+    writeProgressJson('practicedScenes', userId, practicedScenes);
+  }, [practicedScenes, isInitialized, userId]);
 
   const toggleStar = useCallback((wordId: string, e?: React.MouseEvent) => {
     if (e) e.stopPropagation();
@@ -113,14 +133,13 @@ export const ProgressProvider: React.FC<{ children: ReactNode }> = ({ children }
   }, []);
 
   const resetProgressData = useCallback(() => {
+    if (!userId) return;
     if (!confirm('警告：这将会清除您在本地保存的所有学习进度与收藏夹。确认重置？')) return;
     setLearningStatus({});
     setStarredWords({});
     setPracticedScenes({});
-    localStorage.removeItem('ogden850_learning_status');
-    localStorage.removeItem('ogden850_starred');
-    localStorage.removeItem('ogden850_practiced_scenes');
-  }, []);
+    clearProgressForUser(userId);
+  }, [userId]);
 
   const masteredCount = useMemo(
     () => Object.values(learningStatus).filter((s) => s === 'mastered').length,

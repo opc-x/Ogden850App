@@ -5,6 +5,7 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { resolveSupabaseEnv } from './src/lib/supabaseConfig';
+import { transcribeDevApi } from './vite/transcribeDevPlugin';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
@@ -16,8 +17,9 @@ export default defineConfig(({ mode }) => {
       'import.meta.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(anonKey),
     },
     plugins: [
-      react(), 
+      react(),
       tailwindcss(),
+      transcribeDevApi(),
       VitePWA({
         registerType: 'autoUpdate',
         workbox: {

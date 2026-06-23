@@ -15,6 +15,7 @@ import { WordDetailModal } from './components/word/WordDetailModal';
 import { AppLogo } from './components/AppLogo';
 import { useProgress } from './contexts/ProgressContext';
 import { useWords } from './contexts/WordsContext';
+import { useAuth } from './contexts/AuthContext';
 import { ASSEMBLER_NAV_HINT, ASSEMBLER_NAV_LABEL } from './data/marketing';
 import { MobileWrapper } from './components/layout/MobileWrapper';
 import { HeaderUserButton } from './components/profile/HeaderUserButton';
@@ -55,6 +56,7 @@ function AppContent() {
   const location = useLocation();
   const navigate = useNavigate();
   const { learningStatus, starredWords, toggleStar, setWordStatus, masteredCount, learningCount } = useProgress();
+  const { isAuthenticated, loading: authLoading } = useAuth();
   const [generatingForId, setGeneratingForId] = useState<string | null>(null);
 
   const activeTab = location.pathname === '/' ? 'onboarding' : location.pathname.substring(1);
@@ -77,6 +79,13 @@ function AppContent() {
   useEffect(() => {
     if (activeTab !== 'assembler') setAssemblerSceneDetailOpen(false);
   }, [activeTab]);
+
+  useEffect(() => {
+    if (authLoading) return;
+    if (isAuthenticated && location.pathname === '/') {
+      navigate('/home', { replace: true });
+    }
+  }, [authLoading, isAuthenticated, location.pathname, navigate]);
 
   useEffect(() => {
     const handler = (e: any) => {

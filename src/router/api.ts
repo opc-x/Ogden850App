@@ -5,11 +5,12 @@
 
 export const API_ROUTES = {
   // --- AI 相关接口 ---
-  AI: {
-    EVALUATE_SENTENCE: '/api/evaluate-sentence',
-    SCENE_COACH: '/api/scene-coach',
-    LOAD_WORD_CONTEXT: '/api/word-context',
-  },
+    AI: {
+      EVALUATE_SENTENCE: '/api/evaluate-sentence',
+      SCENE_COACH: '/api/scene-coach',
+      TRANSCRIBE: '/api/transcribe',
+      LOAD_WORD_CONTEXT: '/api/word-context',
+    },
 
   // --- 词汇 & 场景对话 ---
   VOCAB: {

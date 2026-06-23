@@ -14,7 +14,6 @@
     "import:vocab": "tsx scripts/import-vocab.ts",
     "fix:ipa": "tsx scripts/fix-ipa-unicode.ts",
     "sync:dialogues": "tsx scripts/sync-scene-dialogues.ts",
-    "tts:generate": "tsx scripts/generate-word-tts.ts",
     "audio:guides": "tsx scripts/generate-guide-audio.ts",
     "audio:scenes": "tsx scripts/generate-scene-dialogue-audio.ts",
     "audio:audit-guides": "tsx scripts/audit-guide-audio.ts",
@@ -46,12 +45,18 @@
     "db:migrate": "tsx scripts/apply-migration.ts",
     "generate:covers": "tsx scripts/generate-scene-covers.ts",
     "generate:illustrations": "tsx scripts/generate-scene-illustrations.ts",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:multi-account": "PLAYWRIGHT_USE_MOCK_AUTH=true playwright test e2e/multi-account.spec.ts",
+    "test:e2e:landing": "playwright test e2e/landing-auth.spec.ts",
     "dev:backend": "vercel dev",
     "prepare": "git config core.hooksPath .githooks 2>/dev/null || true"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
+    "@grpc/grpc-js": "^1.14.4",
+    "@grpc/proto-loader": "^0.8.1",
     "@supabase/supabase-js": "^2.108.2",
     "@tailwindcss/vite": "^4.1.14",
     "@tanstack/react-virtual": "^3.14.3",
@@ -66,6 +71,7 @@
     "vite": "^6.2.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.61.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",

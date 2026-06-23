@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import type { SceneCatalogItem } from '../../types/scene';
 import { SceneCover, SCENE_COVER_ASPECT_CLASS } from '../assembler/SceneCover';
+import { SceneCrystalFrame } from '../assembler/SceneCrystalFrame';
 
 const STRIP_INACTIVE = 'w-[5.25rem]';
 const STRIP_ACTIVE = 'w-[8.75rem]';
@@ -66,44 +67,16 @@ export function CoachSceneStrip({
                 : `${STRIP_INACTIVE} snap-start opacity-65 hover:opacity-90`
             }`}
           >
-            <div
-              className={`relative rounded-xl transition-all duration-300 ${
-                active
-                  ? 'p-[2px] bg-gradient-to-br from-[#2f7d4f]/50 via-white/95 to-cyan-100/70 shadow-[0_0_0_1px_rgba(255,255,255,0.55)_inset,0_4px_20px_rgba(47,125,79,0.22)]'
-                  : 'ring-1 ring-slate-100/90'
-              }`}
-            >
-              <div
-                className={`relative overflow-hidden bg-slate-50 ${
-                  active ? 'rounded-[10px]' : 'rounded-[11px]'
-                }`}
-              >
-                <SceneCover
-                  slug={scene.slug}
-                  gradient={scene.gradient}
-                  titleZh={scene.titleZh}
-                  fit="contain"
-                  tone={active ? 'default' : 'soft'}
-                  className={`w-full ${SCENE_COVER_ASPECT_CLASS}`}
-                />
-                {active && (
-                  <>
-                    <div
-                      className="pointer-events-none absolute inset-x-0 top-0 h-3 bg-gradient-to-b from-white/50 to-transparent"
-                      aria-hidden
-                    />
-                    <div
-                      className="pointer-events-none absolute inset-0 rounded-[10px] ring-1 ring-inset ring-white/60"
-                      aria-hidden
-                    />
-                    <div
-                      className="pointer-events-none absolute inset-x-2 bottom-0 h-px bg-gradient-to-r from-transparent via-white/70 to-transparent"
-                      aria-hidden
-                    />
-                  </>
-                )}
-              </div>
-            </div>
+            <SceneCrystalFrame active={active}>
+              <SceneCover
+                slug={scene.slug}
+                gradient={scene.gradient}
+                titleZh={scene.titleZh}
+                fit="contain"
+                tone={active ? 'default' : 'soft'}
+                className={`w-full ${SCENE_COVER_ASPECT_CLASS}`}
+              />
+            </SceneCrystalFrame>
           </button>
         );
       })}

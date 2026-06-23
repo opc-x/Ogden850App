@@ -1,5 +1,6 @@
-import { useState, useEffect, useMemo, type MouseEvent } from 'react';
-import { Volume2, ChevronLeft, BookOpen, RefreshCw, CheckCircle2, Circle, Languages } from 'lucide-react';
+import { useState, useEffect, useMemo, useRef, useCallback, type MouseEvent } from 'react';
+import { ChevronLeft, BookOpen, RefreshCw, CheckCircle2, Circle } from 'lucide-react';
+import { DialogueBubbleActions } from '../dialogue/DialogueBubbleActions';
 import type { SceneCatalogItem } from '../../types/scene';
 import { useSceneCatalog } from '../../hooks/useSceneCatalog';
 import { useSceneDialogues } from '../../hooks/useSceneDialogues';
@@ -25,6 +26,28 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
   const [active, setActive] = useState<SceneCatalogItem | null>(null);
   const { turns, loading: turnsLoading, error: turnsError } = useSceneDialogues(active?.sceneKey ?? null);
   const [revealedZh, setRevealedZh] = useState<Set<string>>(() => new Set());
+  const [speakingRole, setSpeakingRole] = useState<'A' | 'B' | null>(null);
+  const pendingSpeakerRef = useRef<'A' | 'B' | null>(null);
+  const highlightTimerRef = useRef<number | null>(null);
+
+  const clearHighlightTimer = useCallback(() => {
+    if (highlightTimerRef.current != null) {
+      window.clearTimeout(highlightTimerRef.current);
+      highlightTimerRef.current = null;
+    }
+  }, []);
+
+  const flashSpeaker = useCallback((speaker: 'A' | 'B', durationMs?: number) => {
+    pendingSpeakerRef.current = speaker;
+    setSpeakingRole(speaker);
+    clearHighlightTimer();
+    if (durationMs != null) {
+      highlightTimerRef.current = window.setTimeout(() => {
+        setSpeakingRole((current) => (current === speaker ? null : current));
+        highlightTimerRef.current = null;
+      }, durationMs);
+    }
+  }, [clearHighlightTimer]);
 
   useEffect(() => {
     onSceneDetailChange?.(active !== null);
@@ -32,7 +55,46 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
 
   useEffect(() => {
     setRevealedZh(new Set());
-  }, [active?.sceneKey]);
+    setSpeakingRole(null);
+    pendingSpeakerRef.current = null;
+    clearHighlightTimer();
+  }, [active?.sceneKey, clearHighlightTimer]);
+
+  useEffect(() => {
+    const onStart = () => {
+      if (pendingSpeakerRef.current) {
+        setSpeakingRole(pendingSpeakerRef.current);
+      }
+    };
+    const onEnd = () => {
+      clearHighlightTimer();
+      setSpeakingRole(null);
+    };
+    window.addEventListener('ogden:audio-start', onStart);
+    window.addEventListener('ogden:audio-end', onEnd);
+    return () => {
+      window.removeEventListener('ogden:audio-start', onStart);
+      window.removeEventListener('ogden:audio-end', onEnd);
+    };
+  }, [clearHighlightTimer]);
+
+  const handleSpeak = useCallback((speaker: 'A' | 'B', en: string, turnId: number) => {
+    clearHighlightTimer();
+    flashSpeaker(speaker);
+    void speakText(en, turnId);
+  }, [clearHighlightTimer, flashSpeaker]);
+
+  const handleToggleZh = useCallback((speaker: 'A' | 'B', turnId: number, e: MouseEvent) => {
+    e.stopPropagation();
+    flashSpeaker(speaker, 1500);
+    const key = String(turnId);
+    setRevealedZh((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
+      return next;
+    });
+  }, [flashSpeaker]);
 
   const sceneCharacters = useMemo(() => {
     if (!active || !turns.length) return null;
@@ -44,16 +106,6 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
       B: b ? { name: b.speakerZh, emoji: b.speakerEmoji } : fallbackCharacter('B'),
     };
   }, [active, turns]);
-
-  const toggleZhReveal = (turnId: string, e: MouseEvent) => {
-    e.stopPropagation();
-    setRevealedZh((prev) => {
-      const next = new Set(prev);
-      if (next.has(turnId)) next.delete(turnId);
-      else next.add(turnId);
-      return next;
-    });
-  };
 
   if (catalogLoading) {
     return (
@@ -95,7 +147,7 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
           <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
           {sceneCharacters && !turnsLoading ? (
             <div className="shrink-0 border-b border-slate-100/80 px-4">
-              <SceneCharacterStrip characters={sceneCharacters} />
+              <SceneCharacterStrip characters={sceneCharacters} speakingRole={speakingRole} />
             </div>
           ) : null}
 
@@ -126,17 +178,14 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
             ) : (
             <ul className="space-y-2.5">
               {turns.map((t) => {
-                const zhVisible = revealedZh.has(t.id);
-                const speechBtn =
-                  'inline-flex items-center justify-center p-0 min-w-[18px] min-h-[18px] rounded transition-colors cursor-pointer active:scale-95 align-middle';
-                const hintBtn =
-                  'inline-flex items-center justify-center p-0 min-w-[16px] min-h-[16px] rounded transition-colors cursor-pointer active:scale-95 align-middle';
+                const zhVisible = revealedZh.has(String(t.id));
                 return (
                   <li key={t.id}>
                     <div className={`flex items-center gap-2.5 ${t.speaker === 'A' ? '' : 'flex-row-reverse'}`}>
                       <CharacterAvatar
                         speaker={t.speaker}
                         character={{ name: t.speakerZh, emoji: t.speakerEmoji }}
+                        speaking={speakingRole === t.speaker}
                       />
                       <div
                         className={`min-w-0 max-w-[calc(100%-3rem)] rounded-xl border px-2.5 py-1.5 ${
@@ -145,38 +194,21 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
                             : 'bg-[#fff8f5] border-emerald-100 rounded-tr-sm'
                         }`}
                       >
-                        <p className="text-[11px] font-medium text-slate-800 leading-[1.45]">
-                          <ClickableSentence sentence={t.en} onWordClick={onWordClick} />
-                          <span className="inline-flex items-center gap-0.5 ml-2 align-middle whitespace-nowrap">
-                            {isSpeechSupported() && (
-                              <button
-                                type="button"
-                                className={`${speechBtn} text-cyan-600/65 hover:text-cyan-600 hover:bg-cyan-50/60`}
-                                onClick={() => void speakText(t.en, t.id)}
-                                aria-label="朗读"
-                                title="朗读"
-                              >
-                                <Volume2 className="w-3.5 h-3.5" strokeWidth={2} />
-                              </button>
-                            )}
-                            {t.zh ? (
-                              <button
-                                type="button"
-                                onClick={(e) => toggleZhReveal(t.id, e)}
-                                className={`${hintBtn} ${
-                                  zhVisible
-                                    ? 'text-slate-400 bg-slate-100/70'
-                                    : 'text-slate-300 hover:text-slate-400 hover:bg-slate-100/50'
-                                }`}
-                                title={zhVisible ? '隐藏中文' : '看中文'}
-                                aria-pressed={zhVisible}
-                                aria-label={zhVisible ? '隐藏中文' : '看中文'}
-                              >
-                                <Languages className={`w-3 h-3 ${zhVisible ? 'fill-slate-200/80' : ''}`} />
-                              </button>
-                            ) : null}
-                          </span>
-                        </p>
+                        <div className="flex items-center">
+                          <p className="min-w-0 flex-1 text-[11px] font-medium text-slate-800 leading-[1.45]">
+                            <ClickableSentence sentence={t.en} onWordClick={onWordClick} />
+                          </p>
+                          <DialogueBubbleActions
+                            onSpeak={
+                              isSpeechSupported()
+                                ? () => handleSpeak(t.speaker, t.en, t.id)
+                                : undefined
+                            }
+                            zh={t.zh}
+                            zhVisible={zhVisible}
+                            onToggleZh={(e) => handleToggleZh(t.speaker, t.id, e)}
+                          />
+                        </div>
                         {zhVisible && t.zh ? (
                           <p className="mt-1.5 text-[11px] text-slate-400 leading-relaxed">{t.zh}</p>
                         ) : null}
@@ -219,7 +251,7 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
   }
 
   return (
-    <section className="w-full mx-auto space-y-2">
+    <section className="w-full mx-auto space-y-4">
       <SceneStatsSummary onSceneSelect={setActive} />
       <div className="flex items-baseline justify-between gap-2 px-0.5">
         <h2 className="text-[15px] font-black text-slate-800">{SCENE_LIST_TITLE}</h2>

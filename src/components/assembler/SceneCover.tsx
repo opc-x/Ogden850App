@@ -42,8 +42,8 @@ export function SceneCover({
 
   return (
     <div
-      className={`relative overflow-hidden ${useContain ? 'bg-slate-50' : ''} ${className}`}
-      style={{ background: useContain ? undefined : gradient }}
+      className={`relative overflow-hidden ${className}`}
+      style={{ background: failed || !useContain ? gradient : undefined }}
       aria-label={titleZh}
     >
       {!failed && (

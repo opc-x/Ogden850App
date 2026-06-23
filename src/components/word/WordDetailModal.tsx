@@ -31,6 +31,16 @@ function guideSentenceEn(item: GuideSentence): string {
   return item.en?.trim() ?? '';
 }
 
+const SPEAK_BTN_CLASS =
+  'p-2 bg-cyan-500 text-white hover:bg-cyan-600 transition-colors rounded-xl shadow-sm shadow-cyan-500/25 active:scale-95 cursor-pointer';
+
+const TRANSLATE_BTN_CLASS = (active: boolean) =>
+  `p-2 rounded-xl border transition-colors active:scale-95 cursor-pointer ${
+    active
+      ? 'border-slate-200 bg-slate-100 text-slate-500'
+      : 'border-slate-200/80 bg-white text-slate-400 hover:text-slate-600 hover:bg-slate-50'
+  }`;
+
 function WordHeroStage({ word }: { word: Word }) {
   return (
     <div className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-slate-50 via-white to-white border border-slate-100/80 px-6 py-7 sm:py-8">
@@ -163,7 +173,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
               <button
                 type="button"
                 onClick={() => onPlaySpeech(selectedWord.word)}
-                className="p-2 bg-cyan-500 text-white hover:bg-cyan-600 transition-colors rounded-xl shadow-sm shadow-cyan-500/25 active:scale-95 cursor-pointer"
+                className={SPEAK_BTN_CLASS}
                 title="朗读发音"
               >
                 <Volume2 className="w-4 h-4" />
@@ -246,7 +256,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                       key={idx}
                       className="w-full text-left p-4 rounded-2xl bg-white border border-slate-200/90 hover:border-slate-300/80 transition-colors"
                     >
-                      <div className="flex items-start gap-2.5">
+                      <div className="flex items-center gap-2.5">
                         <p className="flex-1 min-w-0 text-[15px] font-bold text-slate-800 leading-snug">
                           {item.parts?.length
                             ? item.parts.map((p, i) => {
@@ -265,32 +275,30 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                               })
                             : item.en}
                         </p>
-                        <div className="flex items-center gap-1 shrink-0">
+                        <div className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap">
                           <button
                             type="button"
                             onClick={(e) => {
                               e.stopPropagation();
                               speakGuideSentence(selectedWord.id, idx, guideSentenceEn(item));
                             }}
-                            className="p-2 -m-1 rounded-lg text-[15px] text-slate-300 hover:text-slate-500 hover:bg-slate-50 transition-colors cursor-pointer active:scale-95"
+                            className={SPEAK_BTN_CLASS}
                             title="朗读例句"
+                            aria-label="朗读例句"
                           >
-                            <Volume2 className="w-[1em] h-[1em]" strokeWidth={2.25} />
+                            <Volume2 className="w-4 h-4" />
                           </button>
                           <button
                             type="button"
                             onClick={(e) => toggleCnReveal(idx, e)}
-                            className={`p-2 -m-1 rounded-lg text-[12px] transition-colors cursor-pointer active:scale-95 ${
-                              cnVisible
-                                ? 'text-slate-400 bg-slate-50'
-                                : 'text-slate-300 hover:text-slate-400 hover:bg-slate-50'
-                            }`}
+                            className={TRANSLATE_BTN_CLASS(cnVisible)}
                             title={cnVisible ? '隐藏中文' : '看中文'}
                             aria-pressed={cnVisible}
+                            aria-label={cnVisible ? '隐藏中文' : '看中文'}
                           >
                             <Languages
-                              className={`w-[1em] h-[1em] ${cnVisible ? 'fill-slate-200/80' : ''}`}
-                              strokeWidth={2}
+                              className={`w-4 h-4 ${cnVisible ? 'fill-slate-200/80' : ''}`}
+                              strokeWidth={2.25}
                             />
                           </button>
                         </div>

@@ -4,6 +4,7 @@ import App from './App.tsx';
 import { ProgressProvider } from './contexts/ProgressContext.tsx';
 import { AuthProvider } from './contexts/AuthContext.tsx';
 import { WordsProvider } from './contexts/WordsContext.tsx';
+import { repairSupabaseAuthStorage } from './services/auth.service';
 import './index.css';
 
 const GUIDE_DATA_VERSION = '2026-06-21';
@@ -27,14 +28,16 @@ if (import.meta.env.DEV) {
   void clearStaleClientCaches();
 }
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <WordsProvider>
-      <AuthProvider>
-        <ProgressProvider>
-          <App />
-        </ProgressProvider>
-      </AuthProvider>
-    </WordsProvider>
-  </StrictMode>,
-);
+void repairSupabaseAuthStorage().then(() => {
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <WordsProvider>
+        <AuthProvider>
+          <ProgressProvider>
+            <App />
+          </ProgressProvider>
+        </AuthProvider>
+      </WordsProvider>
+    </StrictMode>,
+  );
+});
