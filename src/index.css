@@ -76,12 +76,13 @@ body {
 }
 
 /*
- * PWA standalone：viewport = 793px，canvas = 852px。
- * 不撑满 852px（超出 viewport 的内容会被裁剪），
- * 改用白色背景填充 canvas 间隙，与 nav 栏底色融合。
+ * PWA standalone：用 screen.height 撑满物理屏幕，
+ * 模拟原生 app 全屏效果。
  */
 html.pwa-standalone {
-  background: #fff;
+  position: fixed;
+  inset: 0;
+  width: 100%;
   overflow: hidden;
   overscroll-behavior: none;
 }
@@ -119,7 +120,7 @@ html.pwa-standalone [data-app-shell] {
 }
 
 @utility pb-safe {
-  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
+  padding-bottom: max(2.75rem, calc(0.5rem + env(safe-area-inset-bottom, 0px)));
 }
 
 @utility pt-safe {
