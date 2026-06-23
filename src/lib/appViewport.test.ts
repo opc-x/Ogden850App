@@ -22,10 +22,20 @@ describe('appViewport', () => {
     });
   });
 
-  it('uses visualViewport height in standalone mode', () => {
+  it('adds pwa-standalone class and omits --app-height when keyboard is hidden', () => {
     syncAppViewportHeight();
     expect(document.documentElement.classList.contains('pwa-standalone')).toBe(true);
-    expect(document.documentElement.style.getPropertyValue('--app-height')).toBe('812px');
+    expect(document.documentElement.style.getPropertyValue('--app-height')).toBe('');
+  });
+
+  it('sets --app-height when virtual keyboard shrinks viewport', () => {
+    Object.defineProperty(window, 'visualViewport', {
+      configurable: true,
+      value: { height: 400, addEventListener: vi.fn(), removeEventListener: vi.fn() },
+    });
+    syncAppViewportHeight();
+    expect(document.documentElement.classList.contains('pwa-standalone')).toBe(true);
+    expect(document.documentElement.style.getPropertyValue('--app-height')).toBe('400px');
   });
 
   it('clears standalone sizing in browser mode', () => {
