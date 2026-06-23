@@ -55,46 +55,6 @@ function MobileNavIcon({ active, children }: { active: boolean; children: React.
   );
 }
 
-/** 🔧 临时调试——给各层上色 + 显示高度链，修好后删除整个组件 */
-function PwaDebugBar() {
-  const [info, setInfo] = useState('');
-  useEffect(() => {
-    const update = () => {
-      const ih = window.innerHeight;
-      const sh = window.screen.height;
-      const rh = document.getElementById('root')?.clientHeight ?? 0;
-      const shellRoot = document.querySelector('[data-app-shell-root]') as HTMLElement | null;
-      const shell = document.querySelector('[data-app-shell]') as HTMLElement | null;
-      const navEl = document.getElementById('bottom-bar-nav');
-      const srh = shellRoot?.clientHeight ?? 0;
-      const seh = shell?.clientHeight ?? 0;
-      const navBottom = navEl ? navEl.getBoundingClientRect().bottom : 0;
-      const cs = getComputedStyle(document.documentElement);
-      const sab = cs.getPropertyValue('env(safe-area-inset-bottom)') || 'N/A';
-
-      // 给各层上色定位谁没到底
-      document.body.style.background = '#ff0000'; // 红 = body
-      const root = document.getElementById('root');
-      if (root) root.style.background = '#0000ff'; // 蓝 = root
-      if (shellRoot) shellRoot.style.background = '#ff00ff'; // 紫 = shell-root
-      if (shell) shell.style.background = '#00ff00'; // 绿 = shell
-
-      setInfo(
-        `root=${rh} sr=${srh} sh=${seh} navBot=${Math.round(navBottom)} scr=${sh} iH=${ih} sab=${sab}`
-      );
-    };
-    update();
-    window.visualViewport?.addEventListener('resize', update);
-    return () => window.visualViewport?.removeEventListener('resize', update);
-  }, []);
-  if (!info) return null;
-  return (
-    <div className="fixed top-0 left-0 right-0 z-[9999] bg-red-600 text-white text-[9px] font-mono px-2 py-0.5 text-center pointer-events-none">
-      {info}
-    </div>
-  );
-}
-
 function AppContent() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -431,8 +391,6 @@ function AppContent() {
         onInstall={() => void pwaInstall.install()}
       />
 
-      {/* 🔧 临时调试条——定位 PWA 底部间隙，修好后删除 */}
-      <PwaDebugBar />
         </div>
       )}
     </MobileWrapper>
