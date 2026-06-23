@@ -14,7 +14,7 @@ export function syncAppViewportHeight(): void {
     if (vv && vv.height < window.innerHeight - 1) {
       root.style.setProperty('--app-height', `${Math.round(vv.height)}px`);
     } else {
-      root.style.setProperty('--app-height', `${window.screen.height}px`);
+      root.style.removeProperty('--app-height');
     }
     return;
   }
