@@ -55,22 +55,32 @@ function MobileNavIcon({ active, children }: { active: boolean; children: React.
   );
 }
 
-/** 🔧 临时调试——显示 viewport 数值，修好后删除整个组件 */
+/** 🔧 临时调试——给各层上色 + 显示高度链，修好后删除整个组件 */
 function PwaDebugBar() {
   const [info, setInfo] = useState('');
   useEffect(() => {
     const update = () => {
       const ih = window.innerHeight;
       const sh = window.screen.height;
-      const vvh = window.visualViewport?.height ?? 0;
-      const dh = document.documentElement.clientHeight;
-      const bh = document.body.clientHeight;
       const rh = document.getElementById('root')?.clientHeight ?? 0;
-      const cls = document.documentElement.classList.contains('pwa-standalone') ? 'PWA' : 'BRW';
-      const appH = getComputedStyle(document.documentElement).getPropertyValue('--app-height');
-      const nav = (window.navigator as Navigator & { standalone?: boolean }).standalone;
+      const shellRoot = document.querySelector('[data-app-shell-root]') as HTMLElement | null;
+      const shell = document.querySelector('[data-app-shell]') as HTMLElement | null;
+      const navEl = document.getElementById('bottom-bar-nav');
+      const srh = shellRoot?.clientHeight ?? 0;
+      const seh = shell?.clientHeight ?? 0;
+      const navBottom = navEl ? navEl.getBoundingClientRect().bottom : 0;
+      const cs = getComputedStyle(document.documentElement);
+      const sab = cs.getPropertyValue('env(safe-area-inset-bottom)') || 'N/A';
+
+      // 给各层上色定位谁没到底
+      document.body.style.background = '#ff0000'; // 红 = body
+      const root = document.getElementById('root');
+      if (root) root.style.background = '#0000ff'; // 蓝 = root
+      if (shellRoot) shellRoot.style.background = '#ff00ff'; // 紫 = shell-root
+      if (shell) shell.style.background = '#00ff00'; // 绿 = shell
+
       setInfo(
-        `${cls} nav.sa=${nav} iH=${ih} scr=${sh} vv=${Math.round(vvh)} doc=${dh} body=${bh} root=${rh} --app-h=${appH}`
+        `root=${rh} sr=${srh} sh=${seh} navBot=${Math.round(navBottom)} scr=${sh} iH=${ih} sab=${sab}`
       );
     };
     update();
