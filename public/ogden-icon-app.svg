@@ -1,36 +1,34 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <defs>
-    <linearGradient id="bg" gradientUnits="userSpaceOnUse" x1="40" y1="24" x2="472" y2="488">
-      <stop offset="0%" stop-color="#1f6b3f" />
-      <stop offset="45%" stop-color="#2f7d4f" />
-      <stop offset="100%" stop-color="#5cb377" />
+    <style>
+      @font-face {
+        font-family: 'Pacifico';
+        src: url('./fonts/Pacifico-Regular.ttf') format('truetype');
+      }
+    </style>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5ec" />
+      <stop offset="38%" stop-color="#b8e0c8" />
+      <stop offset="100%" stop-color="#2f7d4f" />
     </linearGradient>
-    <linearGradient id="txt" gradientUnits="userSpaceOnUse" x1="96" y1="160" x2="416" y2="360">
+    <linearGradient id="word" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#e8f5ec" />
+      <stop offset="55%" stop-color="#f4fff7" />
+      <stop offset="100%" stop-color="#dff5e6" />
     </linearGradient>
+    <filter id="txtShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#15412a" flood-opacity="0.22" />
+    </filter>
   </defs>
   <rect width="512" height="512" fill="url(#bg)" />
   <text
     x="256"
-    y="228"
-    font-family="Georgia, 'Times New Roman', serif"
-    font-size="118"
-    font-weight="700"
-    font-style="italic"
-    fill="url(#txt)"
+    y="268"
+    font-family="Pacifico, cursive"
+    font-size="188"
+    fill="url(#word)"
+    filter="url(#txtShadow)"
     text-anchor="middle"
     dominant-baseline="middle"
   >Ogden</text>
-  <text
-    x="256"
-    y="332"
-    font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
-    font-size="76"
-    font-weight="800"
-    letter-spacing="-2"
-    fill="url(#txt)"
-    text-anchor="middle"
-    dominant-baseline="middle"
-  >850</text>
 </svg>
