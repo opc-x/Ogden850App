@@ -1,6 +1,6 @@
 import { Copy, Download, ExternalLink, Sparkles, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState, type ReactNode } from 'react';
 import { getIosInstallGuide } from '../../lib/iosInstallGuide';
 import type { IosBrowser, PwaPlatform } from '../../lib/pwaInstall';
 import { IosInstallSteps } from './IosInstallSteps';
@@ -14,6 +14,23 @@ type PwaInstallBannerProps = {
   onDismiss: () => void;
   onInstall: () => void;
 };
+
+function InstallBannerCompact({ children }: { children: ReactNode }) {
+  return (
+    <div className="flex gap-4">
+      <div className="w-12 h-12 shrink-0 bg-slate-50 rounded-2xl border border-slate-200 flex items-center justify-center shadow-sm">
+        <img src="/ogden-192.png" className="w-8 h-8 rounded-lg" alt="Ogden 850" />
+      </div>
+      <div className="space-y-1 pr-6">
+        <h4 className="font-black text-slate-800 flex items-center gap-1.5">
+          <Sparkles className="w-4 h-4 text-indigo-500" />
+          安装 Ogden 850
+        </h4>
+        {children}
+      </div>
+    </div>
+  );
+}
 
 export function PwaInstallBanner({
   visible,
@@ -55,6 +72,7 @@ export function PwaInstallBanner({
   const isAndroidInApp = platform === 'in-app-browser' && iosBrowser !== 'in-app';
   const isAndroidFallback = platform === 'android-fallback';
   const showNativeButton = canNativeInstall;
+  const isCompactIos = isIosBrowser || isIosInApp;
 
   return (
     <AnimatePresence>
@@ -62,9 +80,7 @@ export function PwaInstallBanner({
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
-        className={`absolute left-3 right-3 z-50 bg-white/98 backdrop-blur-xl rounded-3xl border shadow-2xl border-indigo-200 ${
-          isIosBrowser || isIosInApp ? 'bottom-nav-offset p-4 pt-5' : 'bottom-nav-offset p-5'
-        }`}
+        className="absolute left-3 right-3 z-50 bg-white/98 backdrop-blur-xl rounded-2xl border shadow-2xl border-indigo-200 bottom-nav-offset p-5"
       >
         <button
           type="button"
@@ -75,11 +91,17 @@ export function PwaInstallBanner({
           <X className="w-5 h-5" />
         </button>
 
-        {isIosBrowser && <IosInstallSteps guide={iosGuide} />}
+        {isIosBrowser && (
+          <InstallBannerCompact>
+            <IosInstallSteps guide={iosGuide} />
+          </InstallBannerCompact>
+        )}
 
         {isIosInApp && (
           <>
-            <IosInstallSteps guide={iosGuide} inAppFollowUp />
+            <InstallBannerCompact>
+              <IosInstallSteps guide={iosGuide} inAppFollowUp />
+            </InstallBannerCompact>
             <button
               type="button"
               onClick={() => void copyLink()}
@@ -90,36 +112,27 @@ export function PwaInstallBanner({
           </>
         )}
 
-        {!isIosBrowser && !isIosInApp && (
+        {!isCompactIos && (
           <>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 shrink-0 bg-slate-50 rounded-2xl border border-slate-200 flex items-center justify-center shadow-sm">
-                <img src="/ogden-192.png" className="w-8 h-8 rounded-lg" alt="Ogden 850" />
-              </div>
-              <div className="space-y-1 pr-6">
-                <h4 className="font-black text-slate-800 flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-indigo-500" />
-                  安装 Ogden 850
-                </h4>
-                {isAndroidInApp ? (
-                  <p className="text-xs text-slate-600 font-medium leading-relaxed">
-                    微信等内置浏览器无法安装，请用 Chrome 打开此页面。
-                  </p>
-                ) : showNativeButton ? (
-                  <p className="text-xs text-slate-500 font-medium mt-0.5">点击下方按钮，确认后即可安装到桌面。</p>
-                ) : waitingForPrompt && isAndroidFallback ? (
-                  <p className="text-xs text-slate-500 font-medium mt-0.5">正在准备安装…</p>
-                ) : isAndroidFallback ? (
-                  <p className="text-xs text-slate-600 font-medium leading-relaxed">
-                    请用 Chrome 打开本站；若已安装 Chrome，可在菜单中选择「安装应用」或「添加到主屏幕」。
-                  </p>
-                ) : (
-                  <p className="text-xs text-slate-600 font-medium leading-relaxed">
-                    点击地址栏右侧 <b>安装</b> 图标，或菜单中的「安装 Ogden 850」。
-                  </p>
-                )}
-              </div>
-            </div>
+            <InstallBannerCompact>
+              {isAndroidInApp ? (
+                <p className="text-xs text-slate-600 font-medium leading-relaxed">
+                  微信等内置浏览器无法安装，请用 Chrome 打开此页面。
+                </p>
+              ) : showNativeButton ? (
+                <p className="text-xs text-slate-500 font-medium mt-0.5">点击下方按钮，确认后即可安装到桌面。</p>
+              ) : waitingForPrompt && isAndroidFallback ? (
+                <p className="text-xs text-slate-500 font-medium mt-0.5">正在准备安装…</p>
+              ) : isAndroidFallback ? (
+                <p className="text-xs text-slate-600 font-medium leading-relaxed">
+                  请用 Chrome 打开本站；若已安装 Chrome，可在菜单中选择「安装应用」或「添加到主屏幕」。
+                </p>
+              ) : (
+                <p className="text-xs text-slate-600 font-medium leading-relaxed">
+                  点击地址栏右侧 <b>安装</b> 图标，或菜单中的「安装 Ogden 850」。
+                </p>
+              )}
+            </InstallBannerCompact>
 
             {showNativeButton && (
               <button
@@ -152,7 +165,7 @@ export function PwaInstallBanner({
           </>
         )}
 
-        {(isIosBrowser || isIosInApp) && (
+        {isCompactIos && (
           <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white drop-shadow-md" />
         )}
       </motion.div>
