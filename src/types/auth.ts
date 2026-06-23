@@ -5,6 +5,7 @@ export interface UserProfile {
   email: string | null;
   displayName: string | null;
   avatarUrl: string | null;
+  /** 数据层标记；个人页展示「访客」徽章 */
   isGuest: boolean;
   authProvider: AuthProvider;
   createdAt: string;

@@ -19,7 +19,7 @@ function nextUserTurnIndex(turns: DialogueTurn[], role: UserRole, from: number) 
   return -1;
 }
 
-export function useSceneCoach() {
+export function useSceneCoach(feedbackEnabled = true, autoSpeak = false) {
   const [phase, setPhase] = useState<CoachPhase>('practice');
   const [scene, setScene] = useState<SceneCatalogItem | null>(null);
   const [turns, setTurns] = useState<DialogueTurn[]>([]);
@@ -65,13 +65,13 @@ export function useSceneCoach() {
       if (additions.length) {
         appendThread(additions);
         const last = additions[additions.length - 1];
-        if (last.en) await speakText(last.en, last.dialogueTurnId);
+        if (autoSpeak && last.en) await speakText(last.en, last.dialogueTurnId);
       }
 
       setPlayhead(idx);
       return idx;
     },
-    [appendThread],
+    [appendThread, autoSpeak],
   );
 
   const beginPractice = useCallback(
@@ -100,17 +100,35 @@ export function useSceneCoach() {
     [pushPartnerLinesUntilUser, appendThread],
   );
 
-  const submitAttempt = useCallback(async () => {
-    if (!scene || !currentTurn || !isUserTurn || !input.trim() || evaluating || isComplete) return;
+  const submitAttempt = useCallback(async (overrideAttempt?: string) => {
+    const attempt = (overrideAttempt ?? input).trim();
+    if (!scene || !currentTurn || !isUserTurn || !attempt || evaluating || isComplete) return;
 
-    const attempt = input.trim();
     setInput('');
-    setEvaluating(true);
 
     appendThread([
       { id: uid(), kind: 'user', en: attempt, speaker: userRole, userRaw: attempt },
     ]);
 
+    const advanceAfterAttempt = async () => {
+      const done = completedUserTurns + 1;
+      setCompletedUserTurns(done);
+
+      const nextIdx = playhead + 1;
+      if (nextIdx >= turns.length || done >= totalUserTurns) {
+        setPhase('complete');
+        setPlayhead(turns.length);
+      } else {
+        await pushPartnerLinesUntilUser(nextIdx, turns, userRole);
+      }
+    };
+
+    if (!feedbackEnabled) {
+      await advanceAfterAttempt();
+      return;
+    }
+
+    setEvaluating(true);
     try {
       const priorContext = turns
         .slice(0, playhead)
@@ -136,19 +154,16 @@ export function useSceneCoach() {
         referenceSnippet,
       });
 
-      appendThread([{ id: uid(), kind: 'feedback', eval: evalResult }]);
+      appendThread([
+        {
+          id: uid(),
+          kind: 'feedback',
+          eval: evalResult,
+        },
+      ]);
 
       if (evalResult.passed) {
-        const done = completedUserTurns + 1;
-        setCompletedUserTurns(done);
-
-        const nextIdx = playhead + 1;
-        if (nextIdx >= turns.length || done >= totalUserTurns) {
-          setPhase('complete');
-          setPlayhead(turns.length);
-        } else {
-          await pushPartnerLinesUntilUser(nextIdx, turns, userRole);
-        }
+        await advanceAfterAttempt();
       }
     } catch (e) {
       appendThread([
@@ -175,6 +190,7 @@ export function useSceneCoach() {
     completedUserTurns,
     totalUserTurns,
     pushPartnerLinesUntilUser,
+    feedbackEnabled,
   ]);
 
   const progressPct =

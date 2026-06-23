@@ -51,7 +51,7 @@ export const BrowserWordCard = React.memo(function BrowserWordCard({
             </h3>
             <div className="flex items-center gap-1 shrink-0">
               {word.ipa && (
-                <span className="font-ipa ipa-badge text-[13px] sm:text-sm leading-none">
+                <span className="font-ipa ipa-badge text-sm sm:text-sm leading-none">
                   /{word.ipa}/
                 </span>
               )}
@@ -67,7 +67,7 @@ export const BrowserWordCard = React.memo(function BrowserWordCard({
             </div>
           </div>
 
-          <p className="text-[11px] sm:text-xs font-semibold text-slate-500 leading-snug line-clamp-2">
+          <p className="text-body-sm sm:text-sm font-semibold text-slate-500 leading-snug line-clamp-2">
             {word.translation}
           </p>
         </div>

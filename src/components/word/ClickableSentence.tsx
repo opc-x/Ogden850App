@@ -9,9 +9,9 @@ interface ClickableSentenceProps {
 }
 
 const LINK_CLASS =
-  'cursor-pointer border-0 p-0 m-0 bg-transparent font-inherit inline font-bold underline underline-offset-2 decoration-current/35 hover:brightness-90 active:opacity-90 touch-manipulation';
+  'cursor-pointer border-0 p-0 m-0 bg-transparent font-inherit inline font-semibold underline underline-offset-2 decoration-current/20 hover:decoration-current/35 active:opacity-90 touch-manipulation';
 
-const HIGHLIGHT_CLASS = 'font-bold';
+const HIGHLIGHT_CLASS = 'font-semibold';
 
 export function ClickableSentence({ sentence, onWordClick, className }: ClickableSentenceProps) {
   const tokens = tokenizeSentence(sentence);

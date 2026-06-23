@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from 'motion/react';
 import { X } from 'lucide-react';
+import { APP_SHELL_MAX_WIDTH_CLASS } from '../../constants/layout';
 import {
   SceneCover,
   SCENE_COVER_ASPECT_CLASS,
@@ -13,15 +14,22 @@ export function CoachSceneHero({
   expanded,
   onExpand,
   onCollapse,
+  compact = false,
 }: {
   scene: SceneCatalogItem | null;
   loading: boolean;
   expanded: boolean;
   onExpand: () => void;
   onCollapse: () => void;
+  /** PC /web：限制 hero 高度，给对话区留空间 */
+  compact?: boolean;
 }) {
+  const coverClass = compact
+    ? 'aspect-[5/2] max-h-[7.5rem] w-full'
+    : `w-full ${SCENE_COVER_ASPECT_CLASS}`;
+
   if (loading) {
-    return <div className={`w-full rounded-2xl bg-slate-100 animate-pulse ${SCENE_COVER_ASPECT_CLASS}`} />;
+    return <div className={`rounded-2xl bg-slate-100 animate-pulse ${coverClass}`} />;
   }
 
   if (!scene) return null;
@@ -41,7 +49,7 @@ export function CoachSceneHero({
           overlayTitle={scene.titleZh}
           fit="cover"
           tone="default"
-          className={`w-full ${SCENE_COVER_ASPECT_CLASS} ${SCENE_COVER_CAROUSEL_CLASS}`}
+          className={`${coverClass} ${SCENE_COVER_CAROUSEL_CLASS}`}
         />
       </button>
 
@@ -75,7 +83,7 @@ export function CoachSceneHero({
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.96, opacity: 0 }}
                 transition={{ duration: 0.25, ease: 'easeOut' }}
-                className="w-full max-w-[430px]"
+                className={`w-full ${APP_SHELL_MAX_WIDTH_CLASS}`}
               >
                 <SceneCover
                   slug={scene.slug}
@@ -88,7 +96,7 @@ export function CoachSceneHero({
               </motion.div>
             </div>
 
-            <p className="shrink-0 px-4 pb-4 text-center text-[11px] font-medium text-white/45">
+            <p className="shrink-0 px-4 pb-4 text-center text-body-sm font-medium text-white/45">
               边看图边开口 · 轻触右上角关闭
             </p>
           </motion.div>

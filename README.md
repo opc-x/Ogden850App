@@ -16,13 +16,13 @@ To maintain a clean, scalable, and readable codebase, the project follows a mode
 
 ```text
 src/
-├── config/              # ⚙️ Global configurations (API Keys, TTS endpoints, constants)
+├── config/              # ⚙️ Global configurations (storage keys, constants)
 │   └── index.ts
 ├── router/              # 🚦 (Controller) API route maps & Frontend route orchestration
 │   └── api.ts           # Mapping for backend API routes
 ├── services/            # 🧠 (Model/Logic) Pure business logic & External API calls
 │   ├── ai.service.ts    # AI Evaluation and LLM Prompts
-│   ├── tts.service.ts   # Sonia Neural 预录 MP3（本地 → CDN），无 Web Speech
+│   ├── tts.service.ts   # Sonia 预录 MP3 播放（本地 public/ → omega CDN），无实时合成
 │   ├── firebase.ts      # Cloud database connectivity
 │   └── progress.ts      # State syncing managers
 ├── views/               # 🎨 (View) Pure UI Layout Pages
@@ -48,9 +48,17 @@ src/
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in `.env.local` to your Gemini API key (if running script generators).
+2. Set API keys in `.env.local` only if you run LLM/audit scripts (not needed for pronunciation).
 3. Run the app:
    `npm run dev`
+
+### 🔊 发音（预录 MP3，非实时 TTS）
+
+- 音源：`edge-tts` · `en-GB-SoniaNeural`
+- 场景对话：`npm run audio:scenes` → `public/audio/sentences/{id}.mp3`（须随部署提交）
+- 单词例句：`npm run audio:guides` → `public/assets/audio/guides/`
+- 850 词：`npm run audio:sync`（从 omega CDN 拉取）
+- 播放：`tts.service.ts` 只读 MP3，**无** `/api/tts`、无 Gemini 实时合成
 
 ## 📦 Deployment
 The application is automatically deployed to Vercel on every major update.

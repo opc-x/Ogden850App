@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import {
-  Mail, Lock, User, Sparkles, RefreshCw, Copy, Check,
+  Mail, Lock, User, RefreshCw,
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
-import type { GuestCredentials } from '../../types/auth';
 
 type AuthTab = 'login' | 'register';
 
@@ -31,8 +30,6 @@ export function UserAuthForm({ compact, onSuccess }: UserAuthFormProps) {
   const [displayName, setDisplayName] = useState('');
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [guestCreds, setGuestCreds] = useState<GuestCredentials | null>(null);
-  const [copied, setCopied] = useState(false);
 
   const run = async (fn: () => Promise<void>) => {
     setBusy(true);
@@ -47,38 +44,10 @@ export function UserAuthForm({ compact, onSuccess }: UserAuthFormProps) {
     }
   };
 
-  if (guestCreds) {
-    return (
-      <div className="space-y-3">
-        <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-3">
-          <p className="text-sm font-black text-emerald-800">访客账号已创建</p>
-          <p className="text-xs text-emerald-700 mt-1">凭证已落库，本设备会自动记住。</p>
-        </div>
-        <div className="bg-slate-50 rounded-xl p-3 space-y-1 text-xs font-mono">
-          <p><span className="text-slate-400">账号 </span>{guestCreds.email}</p>
-          <p><span className="text-slate-400">密码 </span>{guestCreds.password}</p>
-        </div>
-        <button
-          type="button"
-          onClick={async () => {
-            const text = `账号：${guestCreds.email}\n密码：${guestCreds.password}`;
-            await navigator.clipboard.writeText(text);
-            setCopied(true);
-            setTimeout(() => setCopied(false), 2000);
-          }}
-          className="w-full py-2.5 rounded-xl border border-slate-200 font-bold text-xs flex items-center justify-center gap-2"
-        >
-          {copied ? <Check className="w-3.5 h-3.5 text-emerald-500" /> : <Copy className="w-3.5 h-3.5" />}
-          {copied ? '已复制' : '复制凭证'}
-        </button>
-      </div>
-    );
-  }
-
   return (
     <div className={`space-y-3 ${compact ? '' : 'bg-white rounded-2xl border border-slate-100 p-4 shadow-sm'}`}>
       {!compact && (
-        <p className="text-[10px] font-black text-slate-400 uppercase tracking-wider">登录 / 注册</p>
+        <p className="text-caption font-black text-slate-400 uppercase tracking-wider">登录 / 注册</p>
       )}
 
       <button
@@ -89,28 +58,6 @@ export function UserAuthForm({ compact, onSuccess }: UserAuthFormProps) {
       >
         <GoogleIcon />
         Google 登录
-      </button>
-
-      <button
-        type="button"
-        disabled={busy}
-        onClick={async () => {
-          setBusy(true);
-          setError(null);
-          try {
-            const creds = await auth.signInAsGuest();
-            setGuestCreds(creds);
-            onSuccess?.();
-          } catch (e) {
-            setError(e instanceof Error ? e.message : '访客登录失败');
-          } finally {
-            setBusy(false);
-          }
-        }}
-        className="w-full py-3 rounded-xl bg-slate-800 text-white font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-50"
-      >
-        <Sparkles className="w-4 h-4" />
-        访客体验
       </button>
 
       <div className="flex gap-1 p-1 bg-slate-100 rounded-xl">

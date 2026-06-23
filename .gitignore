@@ -17,6 +17,7 @@ coverage/
 # Playwright / MCP artifacts
 .playwright-mcp/
 .playwright-screenshots/
+test-results/
 
 # Design pilot outputs (audit JSON, not source)
 Designs/
@@ -24,8 +25,8 @@ Designs/
 # Vite PWA dev service worker (regenerated on dev)
 dev-dist/
 
-# 场景对话句 MP3（从 omega 同步，体积大，不提交）
-public/audio/
+# 场景对话句 MP3（edge-tts 预生成，须随部署提交；npm run audio:scenes）
+# public/audio/  — 勿忽略，否则 Vercel 线上无声
 
 # 850 词 MP3 不提交（生产走 omega CDN fallback）
 public/assets/audio/*

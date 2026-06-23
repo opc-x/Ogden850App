@@ -2,9 +2,9 @@ import React, { useState, useEffect, useMemo, useRef, lazy, Suspense, useCallbac
 import {
   BookOpen, Home, Blocks,
   Sparkles,
-  RefreshCw, X, Download, Share, BarChart3,
+  RefreshCw, BarChart3,
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { AnimatePresence } from 'motion/react';
 import type { Word } from './types/word';
 import type { WordGuideRow } from './types/vocab';
 import { LandingPage } from './components/onboarding/LandingPage';
@@ -15,9 +15,13 @@ import { WordDetailModal } from './components/word/WordDetailModal';
 import { AppLogo } from './components/AppLogo';
 import { useProgress } from './contexts/ProgressContext';
 import { useWords } from './contexts/WordsContext';
+import { useAuth } from './contexts/AuthContext';
 import { ASSEMBLER_NAV_HINT, ASSEMBLER_NAV_LABEL } from './data/marketing';
 import { MobileWrapper } from './components/layout/MobileWrapper';
+import { PwaInstallBanner } from './components/layout/PwaInstallBanner';
+import { usePwaInstallPrompt } from './hooks/usePwaInstallPrompt';
 import { HeaderUserButton } from './components/profile/HeaderUserButton';
+import { WebShellView } from './views/WebShellView';
 const HomeView = lazy(() => import('./views/HomeView').then(m => ({ default: m.HomeView })));
 const BrowserView = lazy(() => import('./views/BrowserView').then(m => ({ default: m.BrowserView })));
 const StatsView = lazy(() => import('./views/StatsView').then(m => ({ default: m.StatsView })));
@@ -36,7 +40,7 @@ function ViewFallback() {
 function mobileNavItemClass(isActive: boolean) {
   return [
     'flex flex-col items-center justify-center gap-0.5',
-    'transition-colors duration-200 outline-none w-14 py-2 cursor-pointer',
+    'transition-colors duration-200 outline-none w-14 md:w-16 py-2 cursor-pointer',
     isActive
       ? 'text-[#2f7d4f]'
       : 'text-[#2f7d4f]/45 hover:text-[#2f7d4f]/70 active:text-[#2f7d4f]/60',
@@ -54,7 +58,12 @@ function MobileNavIcon({ active, children }: { active: boolean; children: React.
 function AppContent() {
   const location = useLocation();
   const navigate = useNavigate();
+
+  if (location.pathname === '/web' || location.pathname.startsWith('/web/')) {
+    return <WebShellView />;
+  }
   const { learningStatus, starredWords, toggleStar, setWordStatus, masteredCount, learningCount } = useProgress();
+  const { isAuthenticated, loading: authLoading } = useAuth();
   const [generatingForId, setGeneratingForId] = useState<string | null>(null);
 
   const activeTab = location.pathname === '/' ? 'onboarding' : location.pathname.substring(1);
@@ -65,10 +74,10 @@ function AppContent() {
   const [dynamicGuide, setDynamicGuide] = useState<WordGuideRow | null>(null);
   const [browserCategory, setBrowserCategory] = useState<string>('all');
   const [browserStatus, setBrowserStatus] = useState<'all' | 'starred' | 'learning' | 'mastered'>('all');
-  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
-  const [showIOSInstallPrompt, setShowIOSInstallPrompt] = useState(false);
   const [assemblerSceneDetailOpen, setAssemblerSceneDetailOpen] = useState(false);
+  const pwaInstall = usePwaInstallPrompt(activeTab);
   const guideRequestRef = useRef(0);
+  const explicitLandingVisit = useRef(false);
 
   const { words, loading: wordsLoading, ready: wordsReady, error: wordsError } = useWords();
 
@@ -79,32 +88,15 @@ function AppContent() {
   }, [activeTab]);
 
   useEffect(() => {
-    const handler = (e: any) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-    };
-    window.addEventListener('beforeinstallprompt', handler);
-
-    // iOS Detection
-    const _isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as any).MSStream;
-    const isStandalone = (window.navigator as any).standalone || window.matchMedia('(display-mode: standalone)').matches;
-    
-    if (_isIOS && !isStandalone) {
-      setTimeout(() => setShowIOSInstallPrompt(true), 2000);
+    if (authLoading) return;
+    if (location.pathname !== '/') {
+      explicitLandingVisit.current = false;
+      return;
     }
-
-    return () => window.removeEventListener('beforeinstallprompt', handler);
-  }, []);
-
-  const handleInstallClick = async () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === 'accepted') {
-        setDeferredPrompt(null);
-      }
+    if (isAuthenticated && !explicitLandingVisit.current) {
+      navigate('/home', { replace: true });
     }
-  };
+  }, [authLoading, isAuthenticated, location.pathname, navigate]);
 
   useEffect(() => {
     VocabService.invalidateGuideCache();
@@ -200,7 +192,7 @@ function AppContent() {
               Ogden 850
             </h1>
           </header>
-          <main className="flex-1 overflow-y-auto w-full px-4 sm:px-6 py-6 pb-28">
+          <main className="flex-1 overflow-y-auto w-full px-4 sm:px-6 py-6 pb-bottom-nav">
             <ViewFallback />
           </main>
         </div>
@@ -224,13 +216,16 @@ function AppContent() {
         <div className="flex items-center gap-3">
           <div>
             <h1 
-              onClick={() => setActiveTab('home')}
+              onClick={() => {
+                explicitLandingVisit.current = true;
+                setActiveTab('onboarding');
+              }}
               style={{ fontFamily: "'Pacifico', cursive", fontSize: "1.75rem", backgroundImage: "linear-gradient(120deg, #1f6b3f 0%, #2f7d4f 45%, #5cb377 100%)" }}
               className="font-extrabold tracking-tight bg-clip-text text-transparent cursor-pointer hover:opacity-90 select-none pb-1"
             >
               Ogden 850
             </h1>
-            <p className="text-[10px] text-emerald-800/60 font-semibold tracking-wider -mt-1 scale-90 origin-left hidden">温馨基本英语 · 暖心伴读</p>
+            <p className="text-caption text-emerald-800/60 font-semibold tracking-wider -mt-1 scale-90 origin-left hidden">温馨基本英语 · 暖心伴读</p>
           </div>
         </div>
         
@@ -248,12 +243,12 @@ function AppContent() {
       <main
         className={
           assemblerSceneDetailOpen && activeTab === 'assembler'
-            ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full mx-auto px-4 sm:px-6 py-4'
+            ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full mx-auto px-4 sm:px-6 py-4 pb-bottom-nav'
             : activeTab === 'assembler'
-              ? 'flex-1 overflow-y-auto overscroll-y-contain w-full mx-auto px-4 sm:px-6 pt-3 pb-4'
+              ? 'flex-1 overflow-y-auto overscroll-y-contain w-full mx-auto px-4 sm:px-6 pt-3 pb-bottom-nav'
               : activeTab === 'chat'
-                ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full px-0 pt-1'
-                : 'flex-1 overflow-y-auto overscroll-y-contain w-full px-4 sm:px-6 py-6 pb-6'
+                ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full px-0 pt-1 pb-bottom-nav'
+                : 'flex-1 overflow-y-auto overscroll-y-contain w-full px-4 sm:px-6 py-6 pb-bottom-nav'
         }
       >
         
@@ -349,11 +344,11 @@ function AppContent() {
       {/* Mobile bottom nav — tonal contrast, no pill backgrounds */}
       <nav
         id="bottom-bar-nav"
-        className="flex-none w-full bg-white/95 backdrop-blur-xl border-t border-slate-200/60 flex justify-around items-center pt-3 pb-safe px-2 z-50 shadow-[0_-10px_20px_rgba(0,0,0,0.03)]"
+        className="absolute inset-x-0 bottom-0 w-full bg-white/95 backdrop-blur-xl border-t border-slate-200/60 flex justify-around items-center pt-2.5 pb-safe px-2 z-50 shadow-[0_-10px_20px_rgba(0,0,0,0.03)]"
       >
         <button id="nav-home" onClick={() => setActiveTab('home')} className={mobileNavItemClass(activeTab === 'home')}>
           <MobileNavIcon active={activeTab === 'home'}><Home className="w-5 h-5" strokeWidth={activeTab === 'home' ? 2.25 : 1.75} /></MobileNavIcon>
-          <span className={`text-[10px] tracking-wide ${activeTab === 'home' ? 'font-bold' : 'font-medium'}`}>主页</span>
+          <span className={`text-caption tracking-wide ${activeTab === 'home' ? 'font-bold' : 'font-medium'}`}>主页</span>
         </button>
 
         <button
@@ -362,7 +357,7 @@ function AppContent() {
           className={mobileNavItemClass(activeTab === 'browser')}
         >
           <MobileNavIcon active={activeTab === 'browser'}><BookOpen className="w-5 h-5" strokeWidth={activeTab === 'browser' ? 2.25 : 1.75} /></MobileNavIcon>
-          <span className={`text-[10px] tracking-wide ${activeTab === 'browser' ? 'font-bold' : 'font-medium'}`}>词典</span>
+          <span className={`text-caption tracking-wide ${activeTab === 'browser' ? 'font-bold' : 'font-medium'}`}>词典</span>
         </button>
 
         <button
@@ -372,88 +367,29 @@ function AppContent() {
           title={ASSEMBLER_NAV_HINT}
         >
           <MobileNavIcon active={activeTab === 'assembler'}><Blocks className="w-5 h-5" strokeWidth={activeTab === 'assembler' ? 2.25 : 1.75} /></MobileNavIcon>
-          <span className={`text-[10px] tracking-wide ${activeTab === 'assembler' ? 'font-bold' : 'font-medium'}`}>{ASSEMBLER_NAV_LABEL}</span>
+          <span className={`text-caption tracking-wide ${activeTab === 'assembler' ? 'font-bold' : 'font-medium'}`}>{ASSEMBLER_NAV_LABEL}</span>
         </button>
 
         <button id="nav-stats" onClick={() => setActiveTab('stats')} className={mobileNavItemClass(activeTab === 'stats')}>
           <MobileNavIcon active={activeTab === 'stats'}><BarChart3 className="w-5 h-5" strokeWidth={activeTab === 'stats' ? 2.25 : 1.75} /></MobileNavIcon>
-          <span className={`text-[10px] tracking-wide ${activeTab === 'stats' ? 'font-bold' : 'font-medium'}`}>统计</span>
+          <span className={`text-caption tracking-wide ${activeTab === 'stats' ? 'font-bold' : 'font-medium'}`}>统计</span>
         </button>
 
         <button id="nav-chat" onClick={() => setActiveTab('chat')} className={mobileNavItemClass(activeTab === 'chat')}>
           <MobileNavIcon active={activeTab === 'chat'}><Sparkles className="w-5 h-5" strokeWidth={activeTab === 'chat' ? 2.25 : 1.75} /></MobileNavIcon>
-          <span className={`text-[10px] tracking-wide ${activeTab === 'chat' ? 'font-bold' : 'font-medium'}`}>AI 陪练</span>
+          <span className={`text-caption tracking-wide ${activeTab === 'chat' ? 'font-bold' : 'font-medium'}`}>AI 陪练</span>
         </button>
       </nav>
 
-      {/* PWA Install Banners */}
-      <AnimatePresence>
-        {/* iOS Install Guide */}
-        {showIOSInstallPrompt && (
-          <motion.div 
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            className="absolute bottom-24 left-4 right-4 z-50 bg-white/95 backdrop-blur-xl p-5 rounded-3xl border border-indigo-200 shadow-2xl"
-          >
-            <button 
-              onClick={() => setShowIOSInstallPrompt(false)}
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 shrink-0 bg-slate-50 rounded-2xl border border-slate-200 flex items-center justify-center shadow-sm">
-                <img src="/pwa-192x192.png" className="w-8 h-8 rounded-lg" alt="App Icon" />
-              </div>
-              <div className="space-y-1">
-                <h4 className="font-black text-slate-800 flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-indigo-500" />
-                  获取最佳沉浸体验
-                </h4>
-                <p className="text-xs text-slate-600 font-medium leading-relaxed">
-                  点击底部的 <Share className="inline w-3.5 h-3.5 mx-0.5 text-blue-500" /> <b>分享</b> 按钮，<br/>
-                  选择 <b className="text-slate-700 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200">添加到主屏幕</b> 即可一键安装此原生 App！
-                </p>
-              </div>
-            </div>
-            {/* Arrow pointing down for mobile */}
-            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white sm:hidden drop-shadow-md"></div>
-          </motion.div>
-        )}
-
-        {/* Android / Desktop Install Button */}
-        {deferredPrompt && (
-          <motion.div 
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            className="absolute bottom-24 left-4 right-4 z-50 bg-white/95 backdrop-blur-xl p-5 rounded-3xl border border-emerald-200 shadow-2xl"
-          >
-            <button 
-              onClick={() => setDeferredPrompt(null)}
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 shrink-0 bg-slate-50 rounded-2xl border border-slate-200 flex items-center justify-center shadow-sm">
-                <img src="/pwa-192x192.png" className="w-8 h-8 rounded-lg" alt="App Icon" />
-              </div>
-              <div className="flex-1">
-                <h4 className="font-black text-slate-800">安装 Ogden Basic</h4>
-                <p className="text-xs text-slate-500 font-medium mt-0.5">秒开无广告，沉浸学习体验</p>
-              </div>
-            </div>
-            <button
-              onClick={handleInstallClick}
-              className="mt-4 w-full bg-emerald-600 hover:bg-emerald-500 text-white font-black py-3 rounded-xl flex justify-center items-center gap-2 shadow-[0_0_15px_rgba(16,185,129,0.4)] active:scale-95 transition-all cursor-pointer"
-            >
-              <Download className="w-5 h-5" /> 立即安装到设备
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <PwaInstallBanner
+        visible={pwaInstall.visible}
+        platform={pwaInstall.platform}
+        iosBrowser={pwaInstall.iosBrowser}
+        canNativeInstall={pwaInstall.canNativeInstall}
+        waitingForPrompt={pwaInstall.waitingForPrompt}
+        onDismiss={pwaInstall.dismiss}
+        onInstall={() => void pwaInstall.install()}
+      />
         </div>
       )}
     </MobileWrapper>

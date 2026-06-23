@@ -1,11 +1,9 @@
 import type { CoachEvalResult, CoachEvaluatePayload } from '../types/coach';
+import { COACH_PASS_THRESHOLD } from '../types/coach';
+import { buildPerfectScriptResult, isExactScriptMatch, normalizeCoachText } from './coachScriptMatch';
 
 function normalize(text: string): string {
-  return text
-    .toLowerCase()
-    .replace(/[^\w\s']/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
+  return normalizeCoachText(text);
 }
 
 function tokenize(text: string): string[] {
@@ -69,82 +67,84 @@ function pick<T>(items: T[], seed: number): T {
 }
 
 const ENCOURAGE_GREAT = [
-  '太棒了！这句和参考台词非常接近，语感很自然。',
-  '说得真好！你已经能把这句在情境里流利说出来了。',
-  '出色！发音和用词都很到位，继续保持这份自信。',
+  '太棒了！意思传达到位，语感很自然。',
+  '说得真好！这句在情境里已经很流利了。',
+  '出色！核心意思对了，继续保持自信。',
 ];
 
 const ENCOURAGE_GOOD = [
-  '不错！意思传达到了，再练几遍会更顺口。',
-  '很好，核心意思对了，离流利只差一点点。',
-  '进步明显！这句你已经基本掌握了。',
+  '不错！意思对了，再练几遍会更顺口。',
+  '很好，语义准确，离流利只差一点点。',
+  '进步明显！这句已经可以过关了。',
 ];
 
 const ENCOURAGE_RETRY = [
-  '别灰心，对照参考台词再试一次，你已经迈出很重要的一步。',
-  '没关系，口语就是多练几遍，注意关键词的顺序。',
-  '差一点就对了，听一遍标准发音再跟读试试。',
+  '别灰心，抓住这句要表达的核心意思再试一次。',
+  '差一点就对了，不必背原文，想清楚中文意思再说英文。',
+  '听一遍参考发音，用你自己的话说出同样意思。',
 ];
 
 const TIPS = [
-  '先听陪练朗读，抓住句首两三个关键词再说。',
-  '不必一字不差，同义词可以，但核心意思要对。',
-  '放慢语速，把每个词说清楚比说得快更重要。',
-  '对照中文提示，先在脑子里想英文再开口。',
-];
-
-const ANALYSIS_PASS = [
-  '与参考台词语义匹配良好，用词在 Ogden 基础范围内。',
-  '表达准确，语序自然，可以继续推进下一句。',
-  '关键信息都覆盖到了，这句可以过关。',
-];
-
-const ANALYSIS_RETRY = [
-  '与参考台词还有差距，注意动词和关键词是否齐全。',
-  '部分关键词缺失或顺序不对，对照更佳表达再练。',
-  '意思可能偏了，先确认这句在剧情里要表达什么。',
+  '不必一字不差，同义词可以，核心意思对就行。',
+  '先想中文意思，再用简单英文说出来。',
+  '放慢语速，把动词和关键词说清楚最重要。',
 ];
 
 export function evaluateCoachLocally(payload: CoachEvaluatePayload): CoachEvalResult {
   const attempt = payload.userAttempt.trim();
   const expected = payload.expectedLine.en.trim();
-  const normAttempt = normalize(attempt);
-  const normExpected = normalize(expected);
 
-  let score: number;
-  if (normAttempt === normExpected) {
-    score = 98;
-  } else {
-    const jac = jaccard(wordSet(attempt), wordSet(expected));
-    const lev = similarityRatio(attempt, expected);
-    const cover = contentWordCoverage(attempt, expected);
-    const blended = jac * 0.35 + lev * 0.35 + cover * 0.3;
-    score = Math.round(Math.min(97, Math.max(0, blended * 100)));
-    if (normExpected.includes(normAttempt) && normAttempt.length >= 8) {
-      score = Math.max(score, 82);
-    }
+  if (isExactScriptMatch(attempt, expected)) {
+    return buildPerfectScriptResult({ provider: 'local', offlineFallback: true });
   }
 
-  const passed = score >= 70;
+  const normAttempt = normalize(attempt);
+  const normExpected = normalize(expected);
+  const attemptWords = tokenize(attempt);
+
+  let semantic: number;
+  const jac = jaccard(wordSet(attempt), wordSet(expected));
+  const lev = similarityRatio(attempt, expected);
+  const cover = contentWordCoverage(attempt, expected);
+  const blended = jac * 0.3 + lev * 0.25 + cover * 0.45;
+  semantic = Math.round(Math.min(97, Math.max(0, blended * 100)));
+  if (attemptWords.length >= 3 && cover >= 0.35) {
+    semantic = Math.max(semantic, 68);
+  }
+  if (normExpected.includes(normAttempt) && normAttempt.length >= 6) {
+    semantic = Math.max(semantic, 78);
+  }
+
+  const vocabulary = attemptWords.length >= 2 ? Math.min(95, semantic + 4) : Math.max(0, semantic - 12);
+  const fluency = attemptWords.length >= 4 ? Math.min(92, semantic) : Math.max(0, semantic - 8);
+  const score = Math.round(semantic * 0.5 + vocabulary * 0.25 + fluency * 0.25);
+
+  const passed = score >= COACH_PASS_THRESHOLD;
   const mood: CoachEvalResult['mood'] =
-    score >= 85 ? 'great' : score >= 70 ? 'good' : 'retry';
+    score >= 85 ? 'great' : score >= COACH_PASS_THRESHOLD ? 'good' : 'retry';
 
   const seed = score + attempt.length;
   const encouragement = pick(
     mood === 'great' ? ENCOURAGE_GREAT : mood === 'good' ? ENCOURAGE_GOOD : ENCOURAGE_RETRY,
     seed,
   );
-  const analysis = pick(passed ? ANALYSIS_PASS : ANALYSIS_RETRY, seed + 1);
+  const analysis = passed
+    ? '意思传达到位，可以继续下一句。'
+    : `再想想这句要表达什么，用简单英文说出来。`;
   const tip = pick(TIPS, seed + 2);
 
   return {
     score,
     passed,
+    semantic,
+    vocabulary,
+    fluency,
     encouragement,
     correction: passed ? null : expected,
     analysis,
     tip,
     mood,
+    provider: 'local',
     offlineFallback: true,
   };
 }

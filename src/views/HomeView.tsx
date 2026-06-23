@@ -87,7 +87,7 @@ const CATEGORY_TILES: CategoryTile[] = [
 function SectionTitle({ children, trailing }: { children: React.ReactNode; trailing?: React.ReactNode }) {
   return (
     <div className="flex items-center justify-between gap-3 px-0.5">
-      <h2 className="text-[15px] font-black text-slate-800 tracking-tight">{children}</h2>
+      <h2 className="text-base font-black text-slate-800 tracking-tight">{children}</h2>
       {trailing}
     </div>
   );
@@ -200,7 +200,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                       <div className="flex items-center gap-3 min-w-0">
                         <WordCardVisual word={word} size="inline" />
                         <span className="font-bold text-slate-800 text-sm">{word.word}</span>
-                        <span className="text-[10px] text-slate-500 font-medium px-2 py-0.5 bg-slate-100 rounded-full shrink-0">
+                        <span className="text-caption text-slate-500 font-medium px-2 py-0.5 bg-slate-100 rounded-full shrink-0">
                           {CATEGORY_LABELS[word.category]?.zh}
                         </span>
                       </div>
@@ -218,7 +218,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       <section className="bg-white rounded-3xl px-5 py-4 border border-slate-200/80 shadow-[0_2px_14px_rgba(15,23,42,0.04)]">
         <div className="flex items-start justify-between gap-4">
           <div className="min-w-0 space-y-1">
-            <p className="text-[11px] font-semibold text-emerald-600/85 uppercase tracking-[0.12em]">学习进度</p>
+            <p className="text-body-sm font-semibold text-emerald-600/85 uppercase tracking-[0.12em]">学习进度</p>
             <p className="text-xl font-black text-slate-800 leading-tight">
               已掌握 <span className="text-emerald-600">{masteredCount}</span>
               <span className="text-slate-400 font-bold text-base"> / {totalWords}</span>
@@ -229,7 +229,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           </div>
           <div className="text-right shrink-0 pt-0.5">
             <span className="text-3xl font-black text-[#2f7d4f] tabular-nums leading-none">{progressPercent}%</span>
-            <p className="text-[10px] text-slate-400 font-medium mt-1">词汇覆盖率</p>
+            <p className="text-caption text-slate-400 font-medium mt-1">词汇覆盖率</p>
           </div>
         </div>
         <div className="w-full h-2 bg-emerald-100/40 rounded-full overflow-hidden mt-4">
@@ -246,7 +246,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
       <section className="space-y-3">
         <SectionTitle
           trailing={
-            <span className="text-[11px] font-semibold text-emerald-700/75 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100/80">
+            <span className="text-body-sm font-semibold text-emerald-700/75 bg-emerald-50 px-2.5 py-1 rounded-full border border-emerald-100/80">
               18 词
             </span>
           }
@@ -280,7 +280,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
               <p className="text-emerald-50/85 text-xs leading-relaxed mt-2 max-w-[20rem]">
                 只需 18 个核心动词，就能拼出 Basic English 的绝大多数句式
               </p>
-              <span className="mt-3.5 inline-flex items-center gap-1 text-[13px] font-bold text-white/95">
+              <span className="mt-3.5 inline-flex items-center gap-1 text-sm font-bold text-white/95">
                 开始学习
                 <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
               </span>
@@ -292,7 +292,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
                 {['come', 'get', 'give', 'go', 'let', 'make', 'put', 'take'].map((v, i) => (
                   <span
                     key={v}
-                    className={`rounded-lg px-2 py-1 text-[11px] font-bold tabular-nums backdrop-blur-sm ${
+                    className={`rounded-lg px-2 py-1 text-body-sm font-bold tabular-nums backdrop-blur-sm ${
                       i % 3 === 0
                         ? 'bg-white/95 text-[#1f6b3f]'
                         : 'bg-white/15 text-white border border-white/25'
@@ -313,7 +313,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <SectionTitle>850 词分类</SectionTitle>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 p-5 pt-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 p-5 pt-3">
           {CATEGORY_TILES.map(({ key, icon: Icon, hoverBorder, iconBg, iconText, countTone }) => (
             <button
               key={key}

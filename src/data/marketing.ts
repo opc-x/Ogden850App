@@ -1,6 +1,8 @@
 /** Marketing copy — UI skin only */
 export const WORD_COUNT = 850;
 export const COVERAGE_CLAIM = 90;
+/** 对外展示用，避免过于精确 */
+export const COVERAGE_MARKETING_LABEL = '90%+';
 export const SCENE_TARGET_COUNT = 50;
 export const DIALOGUE_TARGET_COUNT = 5410;
 export const DIALOGUE_MARKETING_LABEL = '5410+';
@@ -8,6 +10,14 @@ export const DIALOGUE_PROGRESS_LABEL = '对话入库进度';
 
 /** App logo 品牌渐变 — 120° 深绿 → 浅绿 */
 export const BRAND_GRADIENT = 'linear-gradient(120deg, #1f6b3f 0%, #2f7d4f 45%, #5cb377 100%)';
+export const BRAND_GRADIENT_HOVER =
+  'linear-gradient(120deg, #1a5e36 0%, #286942 45%, #52a86c 100%)';
+
+/** Landing 浮层底 — 与薄荷背景同调、略浅，非纯白 */
+export const LANDING_SURFACE_BG = '#f6fbf8';
+/** Landing 浮层边框 — logo 色系极浅渐变，若有若无 */
+export const LANDING_BORDER_GRADIENT =
+  'linear-gradient(120deg, rgba(31, 107, 63, 0.1) 0%, rgba(47, 125, 79, 0.06) 45%, rgba(92, 179, 119, 0.1) 100%)';
 
 /** 卡片底：logo 同色标，左深右浅（可见渐变，非纯色） */
 export const BRAND_GRADIENT_CARD =
@@ -26,7 +36,7 @@ export const MARKETING_SUBHEADLINE =
   '像追剧一样练英语——每个场景是一部迷你剧，练完今天就能张嘴说';
 export const MARKETING_COVERAGE_TAGLINE =
   '不背词表 · 进剧情开口 · 生词一点就懂 · 练完立刻能用';
-export const MARKETING_HERO_BADGE = 'Ogden Basic English · 最小词集科学验证';
+export const MARKETING_HERO_BADGE = 'Ogden Basic English · 始于 1930 · 一壶老酒，越陈越香';
 
 export interface MarketingValueProp {
   emoji: string;
@@ -41,9 +51,22 @@ export const MARKETING_VALUE_PROPS: MarketingValueProp[] = [
 ];
 
 export const MARKETING_BEFORE_AFTER = {
-  before: '背了 3000 词，点餐还是愣住',
+  before: '背了 3000 English words，点餐还是愣住',
   after: '练完超市场景，问价结账脱口而出',
 } as const;
+
+export interface LandingFeatureCopy {
+  title: string;
+  desc: string;
+}
+
+/** Landing 页卖点 — 顺序即展示优先级 */
+export const LANDING_FEATURES: LandingFeatureCopy[] = [
+  { title: 'AI 陪练', desc: '仅用 850 词根畅聊' },
+  { title: '看图说话', desc: '每张词配图，抽象词一点就秒懂' },
+  { title: '场景里学', desc: '追剧式练，不背单词' },
+  { title: '跟读模仿', desc: '逐句练到脱口而出' },
+];
 
 export const FORMULA_RULE_LABEL = '句型规则';
 export const SCENE_LIST_TITLE = '全部场景';

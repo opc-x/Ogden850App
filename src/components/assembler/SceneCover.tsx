@@ -42,8 +42,8 @@ export function SceneCover({
 
   return (
     <div
-      className={`relative overflow-hidden ${useContain ? 'bg-slate-50' : ''} ${className}`}
-      style={{ background: useContain ? undefined : gradient }}
+      className={`relative overflow-hidden ${className}`}
+      style={{ background: failed || !useContain ? gradient : undefined }}
       aria-label={titleZh}
     >
       {!failed && (
@@ -72,7 +72,7 @@ export function SceneCover({
               {overlayTitle}
             </h3>
             {overlayMeta ? (
-              <span className="shrink-0 text-[10px] font-semibold tabular-nums text-white/65">
+              <span className="shrink-0 text-caption font-semibold tabular-nums text-white/65">
                 {overlayMeta}
               </span>
             ) : null}

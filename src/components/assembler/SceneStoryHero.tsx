@@ -36,7 +36,7 @@ export function SceneStoryHero({
       <div className="shrink-0 px-5 pt-4 pb-3 border-b border-slate-100/80">
         <div className="flex items-center justify-between gap-3 mb-2">
           <h3 className="text-xl font-black text-slate-800">{titleZh}</h3>
-          <span className="text-[10px] font-bold text-slate-400 shrink-0 tabular-nums">
+          <span className="text-caption font-bold text-slate-400 shrink-0 tabular-nums">
             {loadingCount ? '…' : `${sentenceCount} 句`}
           </span>
         </div>
@@ -44,7 +44,7 @@ export function SceneStoryHero({
         {loading ? (
           <div className="h-4 rounded bg-slate-100 animate-pulse w-[88%] mb-3" />
         ) : story ? (
-          <p className="text-[14px] leading-relaxed text-slate-600 mb-3">{story}</p>
+          <p className="text-sm leading-relaxed text-slate-600 mb-3">{story}</p>
         ) : null}
 
         {isDev && storyScript ? (
@@ -52,7 +52,7 @@ export function SceneStoryHero({
             <button
               type="button"
               onClick={() => setScriptOpen((v) => !v)}
-              className="flex items-center gap-1.5 text-[11px] font-semibold text-violet-600 hover:text-violet-700 cursor-pointer"
+              className="flex items-center gap-1.5 text-body-sm font-semibold text-violet-600 hover:text-violet-700 cursor-pointer"
             >
               <ChevronDown className={`w-3.5 h-3.5 transition-transform ${scriptOpen ? 'rotate-180' : ''}`} />
               {scriptOpen ? '收起' : '展开'}完整故事脚本（DEV）
@@ -60,7 +60,7 @@ export function SceneStoryHero({
             {scriptOpen ? (
               <div className="mt-2 rounded-xl border border-violet-100 bg-violet-50/60 px-3 py-2.5 max-h-48 overflow-y-auto">
                 {storyScript.split(/\n\n+/).map((para) => (
-                  <p key={para.slice(0, 24)} className="text-[12px] leading-[1.7] text-slate-700 mb-2 last:mb-0">
+                  <p key={para.slice(0, 24)} className="text-body-sm leading-[1.7] text-slate-700 mb-2 last:mb-0">
                     {para}
                   </p>
                 ))}
@@ -69,7 +69,7 @@ export function SceneStoryHero({
           </div>
         ) : null}
 
-        <p className="text-[10px] text-slate-400 flex items-center gap-1.5">
+        <p className="text-caption text-slate-400 flex items-center gap-1.5">
           <BookOpen className="w-3 h-3 shrink-0" />
           点词查释义 · 支持朗读跟读
         </p>

@@ -1,6 +1,6 @@
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { resolveSupabaseEnv } from '../../src/lib/supabaseConfig';
+import { resolveSupabaseEnv } from '../../src/lib/supabaseConfig.js';
 
 let client: SupabaseClient | null = null;
 

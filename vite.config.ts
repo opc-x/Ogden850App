@@ -5,6 +5,7 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { resolveSupabaseEnv } from './src/lib/supabaseConfig';
+import { transcribeDevApi } from './vite/transcribeDevPlugin';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
@@ -16,8 +17,9 @@ export default defineConfig(({ mode }) => {
       'import.meta.env.VITE_SUPABASE_ANON_KEY': JSON.stringify(anonKey),
     },
     plugins: [
-      react(), 
+      react(),
       tailwindcss(),
+      transcribeDevApi(),
       VitePWA({
         registerType: 'autoUpdate',
         workbox: {
@@ -27,21 +29,29 @@ export default defineConfig(({ mode }) => {
           name: 'Ogden 850 Basic English',
           short_name: 'Ogden 850',
           description: 'Learn Basic English efficiently.',
-          theme_color: '#ffffff',
-          background_color: '#f0f9f2',
+          theme_color: '#2f7d4f',
+          background_color: '#2f7d4f',
           display: 'standalone',
           icons: [
             {
               src: 'ogden-192.png',
               sizes: '192x192',
-              type: 'image/png'
+              type: 'image/png',
+              purpose: 'any',
             },
             {
               src: 'ogden-512.png',
               sizes: '512x512',
-              type: 'image/png'
-            }
-          ]
+              type: 'image/png',
+              purpose: 'any',
+            },
+            {
+              src: 'ogden-512.png',
+              sizes: '512x512',
+              type: 'image/png',
+              purpose: 'maskable',
+            },
+          ],
         },
         devOptions: {
           enabled: false,

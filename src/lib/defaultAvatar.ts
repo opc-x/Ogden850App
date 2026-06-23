@@ -1,20 +1,9 @@
-/** Gender- and age-neutral DiceBear styles only. */
-const NEUTRAL_STYLES = ['notionists-neutral', 'bottts-neutral', 'shapes', 'thumbs'] as const;
+/** 本地默认头像插画 — 戴耳麦沉浸式小绵羊 */
+export const DEFAULT_AVATAR_URL = '/assets/avatars/default-sheep-avatar.png';
 
-function hashIndex(seed: string, mod: number): number {
-  let h = 0;
-  for (let i = 0; i < seed.length; i += 1) {
-    h = (h * 31 + seed.charCodeAt(i)) | 0;
-  }
-  return Math.abs(h) % mod;
-}
-
-function pickStyle(seed: string): (typeof NEUTRAL_STYLES)[number] {
-  return NEUTRAL_STYLES[hashIndex(seed, NEUTRAL_STYLES.length)];
-}
-
-/** Deterministic neutral avatar URL for email/guest users without OAuth picture. */
-export function defaultAvatarUrl(seed: string): string {
-  const style = pickStyle(seed);
-  return `https://api.dicebear.com/9.x/${style}/svg?seed=${encodeURIComponent(seed)}`;
+/** 未上传自定义头像，或仍为旧版 DiceBear 占位 */
+export function isLegacyDefaultAvatar(url: string | null | undefined): boolean {
+  if (!url) return true;
+  if (url === DEFAULT_AVATAR_URL) return true;
+  return url.includes('dicebear.com');
 }

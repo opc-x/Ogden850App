@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import { LogOut, Calendar, Shield, Mail } from 'lucide-react';
+import { LogOut, Mail } from 'lucide-react';
 import { useAuth } from '../contexts/AuthContext';
 import { useProgress } from '../contexts/ProgressContext';
 import { useScenePracticeStats } from '../hooks/useScenePracticeStats';
 import { UserAuthForm } from '../components/auth/UserAuthForm';
 import { CompactProgressStrip } from '../components/profile/CompactProgressStrip';
+import { EditableProfileIdentity } from '../components/profile/EditableProfileIdentity';
 import { UserAvatar } from '../components/profile/UserAvatar';
+import { LANDING_SURFACE_BG } from '../data/marketing';
 
 function GoogleIcon() {
   return (
@@ -24,9 +26,9 @@ interface ProfileViewProps {
 }
 
 function providerLabel(provider: string) {
-  if (provider === 'google') return 'Google 账号';
-  if (provider === 'guest') return '访客账号';
-  return '邮箱账号';
+  if (provider === 'google') return 'Google';
+  if (provider === 'email') return '邮箱';
+  return '';
 }
 
 export function ProfileView({ totalWords, setActiveTab }: ProfileViewProps) {
@@ -42,58 +44,75 @@ export function ProfileView({ totalWords, setActiveTab }: ProfileViewProps) {
     : null;
 
   return (
-    <div className="space-y-4 pb-4 max-w-lg mx-auto">
+    <div className="space-y-4 pb-4">
       <header className="px-1">
         <h2 className="text-2xl font-black text-slate-800 tracking-tight">我的</h2>
         <p className="text-sm text-slate-500 font-medium mt-0.5">账号信息与学习概览</p>
       </header>
 
       {auth.isAuthenticated && auth.profile ? (
-        <section className="bg-gradient-to-br from-[#2f7d4f] via-[#e07a3a] to-amber-400 rounded-3xl p-5 text-white shadow-lg shadow-emerald-200/40">
-          <div className="flex items-start gap-4">
-            <UserAvatar profile={auth.profile} size="md" />
-            <div className="min-w-0 flex-1">
-              <p className="text-lg font-black truncate">{auth.profile.displayName ?? '学习者'}</p>
-              <p className="text-sm text-white/85 truncate mt-0.5">{auth.profile.email}</p>
-              <div className="flex flex-wrap gap-1.5 mt-2">
-                {auth.profile.isGuest && (
-                  <span className="text-[9px] font-black px-2 py-0.5 rounded-md bg-white/20 border border-white/25">
-                    访客
-                  </span>
-                )}
-                <span className="text-[9px] font-black px-2 py-0.5 rounded-md bg-white/15 border border-white/20">
-                  {providerLabel(auth.profile.authProvider)}
-                </span>
-              </div>
-            </div>
+        <section
+          className="overflow-hidden rounded-3xl border border-emerald-100/80 shadow-sm"
+          style={{ background: `linear-gradient(165deg, ${LANDING_SURFACE_BG} 0%, #ffffff 70%)` }}
+        >
+          <div className="px-5 pb-5 pt-6">
+            <EditableProfileIdentity
+              profile={auth.profile}
+              onSave={async (patch) => auth.updateProfile(patch)}
+              meta={
+                <>
+                  <div className="flex flex-wrap items-center justify-center gap-2">
+                    {auth.profile.isGuest ? (
+                      <span
+                        data-testid="profile-guest-badge"
+                        className="text-caption font-black px-2.5 py-1 rounded-full bg-emerald-50 text-[#2f7d4f] border border-emerald-100"
+                      >
+                        访客
+                      </span>
+                    ) : auth.profile.email ? (
+                      <span
+                        data-testid="profile-email"
+                        className="max-w-[min(100%,18rem)] truncate text-xs font-semibold text-slate-500 px-2.5 py-1 rounded-full bg-white border border-slate-200"
+                      >
+                        {auth.profile.email}
+                      </span>
+                    ) : providerLabel(auth.profile.authProvider) ? (
+                      <span className="text-caption font-black px-2.5 py-1 rounded-full bg-white text-slate-500 border border-slate-200">
+                        {providerLabel(auth.profile.authProvider)}
+                      </span>
+                    ) : null}
+                  </div>
+
+                  <div className="mt-3 grid grid-cols-2 gap-2">
+                    <div className="rounded-2xl border border-white/80 bg-white/70 px-3 py-2.5 text-center shadow-sm">
+                      <p className="text-caption font-bold uppercase tracking-wide text-slate-400">加入</p>
+                      <p className="mt-0.5 text-sm font-black tabular-nums text-slate-700">
+                        {joinedLabel ?? '—'}
+                      </p>
+                    </div>
+                    <div className="rounded-2xl border border-white/80 bg-white/70 px-3 py-2.5 text-center shadow-sm">
+                      <p className="text-caption font-bold uppercase tracking-wide text-slate-400">学习中</p>
+                      <p className="mt-0.5 text-sm font-black tabular-nums text-[#2f7d4f]">
+                        {learningCount + masteredCount} 词
+                      </p>
+                    </div>
+                  </div>
+                </>
+              }
+            />
           </div>
 
-          <div className="grid grid-cols-2 gap-2 mt-4 text-xs">
-            {joinedLabel && (
-              <div className="flex items-center gap-1.5 bg-white/10 rounded-xl px-3 py-2 border border-white/15">
-                <Calendar className="w-3.5 h-3.5 opacity-80" />
-                <span className="font-semibold opacity-90">加入 {joinedLabel}</span>
-              </div>
-            )}
-            <div className="flex items-center gap-1.5 bg-white/10 rounded-xl px-3 py-2 border border-white/15">
-              <Shield className="w-3.5 h-3.5 opacity-80" />
-              <span className="font-semibold opacity-90">学习中 {learningCount + masteredCount} 词</span>
-            </div>
+          <div className="border-t border-emerald-100/70 bg-white/50 px-5 py-3">
+            <button
+              type="button"
+              data-testid="profile-sign-out"
+              onClick={() => void auth.signOut()}
+              className="flex w-full items-center justify-center gap-2 rounded-xl py-2.5 text-sm font-bold text-slate-500 transition-colors hover:bg-white hover:text-rose-600"
+            >
+              <LogOut className="h-4 w-4" />
+              退出登录
+            </button>
           </div>
-
-          {auth.profile.isGuest && (
-            <p className="text-[11px] text-white/80 mt-3 leading-relaxed bg-white/10 rounded-xl px-3 py-2 border border-white/15">
-              访客凭证已保存在本设备。建议注册邮箱，换机也能继续学。
-            </p>
-          )}
-
-          <button
-            type="button"
-            onClick={() => void auth.signOut()}
-            className="mt-4 w-full py-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/25 font-bold text-sm flex items-center justify-center gap-2 transition-colors"
-          >
-            <LogOut className="w-4 h-4" /> 退出登录
-          </button>
         </section>
       ) : (
         <section className="bg-white rounded-3xl border border-slate-100 shadow-sm p-5">
@@ -101,7 +120,7 @@ export function ProfileView({ totalWords, setActiveTab }: ProfileViewProps) {
             <UserAvatar placeholder size="lg" />
             <p className="mt-3 text-lg font-black text-slate-800">未登录</p>
             <p className="text-xs text-slate-500 mt-1 max-w-[240px] leading-relaxed">
-              登录后在此查看昵称、邮箱与学习档案；进度仍保存在本设备
+              登录后在此查看学习档案；也可直接开始体验
             </p>
           </div>
 
@@ -133,16 +152,16 @@ export function ProfileView({ totalWords, setActiveTab }: ProfileViewProps) {
                   setAuthBusy(true);
                   setAuthError(null);
                   try {
-                    await auth.signInAsGuest();
+                    await auth.ensureGuestSession();
                   } catch (e) {
-                    setAuthError(e instanceof Error ? e.message : '访客登录失败');
+                    setAuthError(e instanceof Error ? e.message : '进入失败，请重试');
                   } finally {
                     setAuthBusy(false);
                   }
                 }}
-                className="w-full py-3 rounded-xl bg-slate-800 text-white font-bold text-sm disabled:opacity-50"
+                className="w-full py-3 rounded-xl bg-gradient-to-r from-[#1f6b3f] to-[#5cb377] text-white font-bold text-sm flex items-center justify-center disabled:opacity-50"
               >
-                访客体验
+                开始体验
               </button>
               <button
                 type="button"

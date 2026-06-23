@@ -12,6 +12,7 @@ export function HeaderUserButton({ onClick }: HeaderUserButtonProps) {
   return (
     <button
       type="button"
+      data-testid="header-user"
       onClick={onClick}
       title={title}
       aria-label={title}
