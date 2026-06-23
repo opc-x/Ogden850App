@@ -44,7 +44,7 @@ export function ProfileView({ totalWords, setActiveTab }: ProfileViewProps) {
     : null;
 
   return (
-    <div className="space-y-4 pb-4 max-w-lg mx-auto">
+    <div className="space-y-4 pb-4">
       <header className="px-1">
         <h2 className="text-2xl font-black text-slate-800 tracking-tight">我的</h2>
         <p className="text-sm text-slate-500 font-medium mt-0.5">账号信息与学习概览</p>

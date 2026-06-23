@@ -15,7 +15,7 @@ export function SceneThumbnailList({
   const practicedScenes = usePracticedScenes();
 
   return (
-    <ul className="space-y-3">
+    <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
       {scenes.map((scene) => {
         const building = scene.status === 'building' || scene.sentenceCount === 0;
         const practiced = !building && Boolean(practicedScenes[scene.sceneKey]);
@@ -41,7 +41,7 @@ export function SceneThumbnailList({
                   titleZh={scene.titleZh}
                   fit="contain"
                   tone="default"
-                  className={`w-[6.75rem] shrink-0 sm:w-[7.5rem] ${SCENE_COVER_ASPECT_CLASS}`}
+                  className={`w-[6.75rem] shrink-0 sm:w-[7.5rem] md:w-[8.5rem] ${SCENE_COVER_ASPECT_CLASS}`}
                 />
               </SceneCrystalFrame>
               <div className="flex min-w-0 flex-1 items-center justify-between gap-2">

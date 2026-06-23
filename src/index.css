@@ -54,7 +54,7 @@ html {
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px; /* Desktop */
+    font-size: 16px; /* iPad / Desktop */
   }
 }
 

@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
+import { APP_SHELL_SELECTOR } from '../constants/layout';
 
-/** 与 BrowserView 词卡 grid 断点一致，检测实际容器宽度 */
+/** 与 BrowserView 词卡 grid 断点一致，检测实际壳层宽度 */
 export function useGridColumnCount(): number {
   const [columnCount, setColumnCount] = useState(1);
 
   useEffect(() => {
-    const container = document.querySelector('.max-w-\\[430px\\]') || document.body;
+    const container = document.querySelector(APP_SHELL_SELECTOR) || document.body;
 
     const resolveColumns = (width: number) => {
       if (width >= 1024) return 4;

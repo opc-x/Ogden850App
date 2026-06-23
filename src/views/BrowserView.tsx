@@ -213,7 +213,7 @@ export const BrowserView: React.FC<BrowserViewProps> = ({
 
         <div
           ref={listAnchorRef}
-          className="bg-slate-50/90 rounded-3xl border border-slate-200/90 shadow-[0_2px_14px_rgba(15,23,42,0.04)] p-3 sm:p-4 min-h-[500px]"
+          className="bg-slate-50/90 rounded-3xl border border-slate-200/90 shadow-[0_2px_14px_rgba(15,23,42,0.04)] p-3 sm:p-4 min-h-[min(500px,55vh)] md:min-h-[420px]"
         >
         {browserList.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-20 text-slate-400">

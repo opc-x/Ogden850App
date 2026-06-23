@@ -6,6 +6,8 @@ import { useScenePracticeStats } from '../hooks/useScenePracticeStats';
 interface StatsViewProps {
   totalWords: number;
   setActiveTab: (tab: string) => void;
+  /** PC /web 壳：单列，不影响手机端 md/lg 视口断点 */
+  variant?: 'app' | 'web';
 }
 
 type StatTheme = {
@@ -124,7 +126,7 @@ const STAT_THEMES: StatTheme[] = [
   },
 ];
 
-export const StatsView: React.FC<StatsViewProps> = ({ totalWords, setActiveTab }) => {
+export const StatsView: React.FC<StatsViewProps> = ({ totalWords, setActiveTab, variant = 'app' }) => {
   const { masteredCount, progressPercent } = useProgress();
   const sceneStats = useScenePracticeStats();
 
@@ -149,7 +151,13 @@ export const StatsView: React.FC<StatsViewProps> = ({ totalWords, setActiveTab }
         <p className="mt-0.5 text-xs font-medium text-slate-500">850 词根、场景、对话三种进度，边练边更新</p>
       </header>
 
-      <div className="flex flex-col gap-3">
+      <div
+        className={
+          variant === 'web'
+            ? 'grid grid-cols-1 gap-3'
+            : 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3'
+        }
+      >
         {STAT_THEMES.map((theme, i) => (
           <StatCard
             key={theme.title}

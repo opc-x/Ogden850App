@@ -2,9 +2,9 @@ import React, { useState, useEffect, useMemo, useRef, lazy, Suspense, useCallbac
 import {
   BookOpen, Home, Blocks,
   Sparkles,
-  RefreshCw, X, Download, Share, BarChart3,
+  RefreshCw, BarChart3,
 } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { AnimatePresence } from 'motion/react';
 import type { Word } from './types/word';
 import type { WordGuideRow } from './types/vocab';
 import { LandingPage } from './components/onboarding/LandingPage';
@@ -18,7 +18,10 @@ import { useWords } from './contexts/WordsContext';
 import { useAuth } from './contexts/AuthContext';
 import { ASSEMBLER_NAV_HINT, ASSEMBLER_NAV_LABEL } from './data/marketing';
 import { MobileWrapper } from './components/layout/MobileWrapper';
+import { PwaInstallBanner } from './components/layout/PwaInstallBanner';
+import { usePwaInstallPrompt } from './hooks/usePwaInstallPrompt';
 import { HeaderUserButton } from './components/profile/HeaderUserButton';
+import { WebShellView } from './views/WebShellView';
 const HomeView = lazy(() => import('./views/HomeView').then(m => ({ default: m.HomeView })));
 const BrowserView = lazy(() => import('./views/BrowserView').then(m => ({ default: m.BrowserView })));
 const StatsView = lazy(() => import('./views/StatsView').then(m => ({ default: m.StatsView })));
@@ -37,7 +40,7 @@ function ViewFallback() {
 function mobileNavItemClass(isActive: boolean) {
   return [
     'flex flex-col items-center justify-center gap-0.5',
-    'transition-colors duration-200 outline-none w-14 py-2 cursor-pointer',
+    'transition-colors duration-200 outline-none w-14 md:w-16 py-2 cursor-pointer',
     isActive
       ? 'text-[#2f7d4f]'
       : 'text-[#2f7d4f]/45 hover:text-[#2f7d4f]/70 active:text-[#2f7d4f]/60',
@@ -55,6 +58,10 @@ function MobileNavIcon({ active, children }: { active: boolean; children: React.
 function AppContent() {
   const location = useLocation();
   const navigate = useNavigate();
+
+  if (location.pathname === '/web' || location.pathname.startsWith('/web/')) {
+    return <WebShellView />;
+  }
   const { learningStatus, starredWords, toggleStar, setWordStatus, masteredCount, learningCount } = useProgress();
   const { isAuthenticated, loading: authLoading } = useAuth();
   const [generatingForId, setGeneratingForId] = useState<string | null>(null);
@@ -67,10 +74,10 @@ function AppContent() {
   const [dynamicGuide, setDynamicGuide] = useState<WordGuideRow | null>(null);
   const [browserCategory, setBrowserCategory] = useState<string>('all');
   const [browserStatus, setBrowserStatus] = useState<'all' | 'starred' | 'learning' | 'mastered'>('all');
-  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
-  const [showIOSInstallPrompt, setShowIOSInstallPrompt] = useState(false);
   const [assemblerSceneDetailOpen, setAssemblerSceneDetailOpen] = useState(false);
+  const pwaInstall = usePwaInstallPrompt(activeTab);
   const guideRequestRef = useRef(0);
+  const explicitLandingVisit = useRef(false);
 
   const { words, loading: wordsLoading, ready: wordsReady, error: wordsError } = useWords();
 
@@ -82,38 +89,14 @@ function AppContent() {
 
   useEffect(() => {
     if (authLoading) return;
-    if (isAuthenticated && location.pathname === '/') {
+    if (location.pathname !== '/') {
+      explicitLandingVisit.current = false;
+      return;
+    }
+    if (isAuthenticated && !explicitLandingVisit.current) {
       navigate('/home', { replace: true });
     }
   }, [authLoading, isAuthenticated, location.pathname, navigate]);
-
-  useEffect(() => {
-    const handler = (e: any) => {
-      e.preventDefault();
-      setDeferredPrompt(e);
-    };
-    window.addEventListener('beforeinstallprompt', handler);
-
-    // iOS Detection
-    const _isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as any).MSStream;
-    const isStandalone = (window.navigator as any).standalone || window.matchMedia('(display-mode: standalone)').matches;
-    
-    if (_isIOS && !isStandalone) {
-      setTimeout(() => setShowIOSInstallPrompt(true), 2000);
-    }
-
-    return () => window.removeEventListener('beforeinstallprompt', handler);
-  }, []);
-
-  const handleInstallClick = async () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      const { outcome } = await deferredPrompt.userChoice;
-      if (outcome === 'accepted') {
-        setDeferredPrompt(null);
-      }
-    }
-  };
 
   useEffect(() => {
     VocabService.invalidateGuideCache();
@@ -233,7 +216,10 @@ function AppContent() {
         <div className="flex items-center gap-3">
           <div>
             <h1 
-              onClick={() => setActiveTab('home')}
+              onClick={() => {
+                explicitLandingVisit.current = true;
+                setActiveTab('onboarding');
+              }}
               style={{ fontFamily: "'Pacifico', cursive", fontSize: "1.75rem", backgroundImage: "linear-gradient(120deg, #1f6b3f 0%, #2f7d4f 45%, #5cb377 100%)" }}
               className="font-extrabold tracking-tight bg-clip-text text-transparent cursor-pointer hover:opacity-90 select-none pb-1"
             >
@@ -395,74 +381,15 @@ function AppContent() {
         </button>
       </nav>
 
-      {/* PWA Install Banners */}
-      <AnimatePresence>
-        {/* iOS Install Guide */}
-        {showIOSInstallPrompt && (
-          <motion.div 
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            className="absolute bottom-24 left-4 right-4 z-50 bg-white/95 backdrop-blur-xl p-5 rounded-3xl border border-indigo-200 shadow-2xl"
-          >
-            <button 
-              onClick={() => setShowIOSInstallPrompt(false)}
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 shrink-0 bg-slate-50 rounded-2xl border border-slate-200 flex items-center justify-center shadow-sm">
-                <img src="/pwa-192x192.png" className="w-8 h-8 rounded-lg" alt="App Icon" />
-              </div>
-              <div className="space-y-1">
-                <h4 className="font-black text-slate-800 flex items-center gap-1.5">
-                  <Sparkles className="w-4 h-4 text-indigo-500" />
-                  获取最佳沉浸体验
-                </h4>
-                <p className="text-xs text-slate-600 font-medium leading-relaxed">
-                  点击底部的 <Share className="inline w-3.5 h-3.5 mx-0.5 text-blue-500" /> <b>分享</b> 按钮，<br/>
-                  选择 <b className="text-slate-700 bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200">添加到主屏幕</b> 即可一键安装此原生 App！
-                </p>
-              </div>
-            </div>
-            {/* Arrow pointing down for mobile */}
-            <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-white sm:hidden drop-shadow-md"></div>
-          </motion.div>
-        )}
-
-        {/* Android / Desktop Install Button */}
-        {deferredPrompt && (
-          <motion.div 
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            className="absolute bottom-24 left-4 right-4 z-50 bg-white/95 backdrop-blur-xl p-5 rounded-3xl border border-emerald-200 shadow-2xl"
-          >
-            <button 
-              onClick={() => setDeferredPrompt(null)}
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
-            >
-              <X className="w-5 h-5" />
-            </button>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 shrink-0 bg-slate-50 rounded-2xl border border-slate-200 flex items-center justify-center shadow-sm">
-                <img src="/pwa-192x192.png" className="w-8 h-8 rounded-lg" alt="App Icon" />
-              </div>
-              <div className="flex-1">
-                <h4 className="font-black text-slate-800">安装 Ogden Basic</h4>
-                <p className="text-xs text-slate-500 font-medium mt-0.5">秒开无广告，沉浸学习体验</p>
-              </div>
-            </div>
-            <button
-              onClick={handleInstallClick}
-              className="mt-4 w-full bg-emerald-600 hover:bg-emerald-500 text-white font-black py-3 rounded-xl flex justify-center items-center gap-2 shadow-[0_0_15px_rgba(16,185,129,0.4)] active:scale-95 transition-all cursor-pointer"
-            >
-              <Download className="w-5 h-5" /> 立即安装到设备
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <PwaInstallBanner
+        visible={pwaInstall.visible}
+        platform={pwaInstall.platform}
+        iosBrowser={pwaInstall.iosBrowser}
+        canNativeInstall={pwaInstall.canNativeInstall}
+        waitingForPrompt={pwaInstall.waitingForPrompt}
+        onDismiss={pwaInstall.dismiss}
+        onInstall={() => void pwaInstall.install()}
+      />
         </div>
       )}
     </MobileWrapper>

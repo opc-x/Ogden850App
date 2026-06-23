@@ -122,7 +122,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
       <div className="pointer-events-none absolute -top-24 -right-16 h-64 w-64 rounded-full bg-[#a8d5b8]/35 blur-3xl" />
       <div className="pointer-events-none absolute top-1/3 -left-20 h-56 w-56 rounded-full bg-[#c5e6d0]/25 blur-3xl" />
 
-      <div className="relative flex-1 w-full flex flex-col px-6 pt-10 overflow-y-auto">
+      <div className="relative flex-1 w-full flex flex-col px-6 sm:px-10 md:px-12 pt-10 overflow-y-auto max-w-2xl md:mx-auto">
         {/* 品牌 */}
         <motion.div {...fadeUp} transition={{ duration: 0.5 }}>
           <span
@@ -161,7 +161,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
         <motion.p
           {...fadeUp}
           transition={{ duration: 0.5, delay: 0.22 }}
-          className="mt-2 text-[15px] leading-relaxed font-semibold max-w-[320px] text-pretty"
+          className="mt-2 text-[15px] leading-relaxed font-semibold max-w-[320px] sm:max-w-md md:max-w-lg text-pretty"
         >
           <span
             style={{ backgroundImage: 'linear-gradient(105deg, #64748b 0%, #4a7c62 52%, #2f7d4f 100%)' }}
@@ -227,7 +227,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
       <motion.div
         {...fadeUp}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="relative w-full px-6 pt-4 pb-6 shrink-0"
+        className="relative w-full px-6 sm:px-10 md:px-12 pt-4 pb-6 shrink-0 max-w-2xl md:mx-auto"
       >
         <button
           type="button"

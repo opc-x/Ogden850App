@@ -313,7 +313,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
           <SectionTitle>850 词分类</SectionTitle>
         </div>
 
-        <div className="grid grid-cols-2 gap-3 p-5 pt-3">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 p-5 pt-3">
           {CATEGORY_TILES.map(({ key, icon: Icon, hoverBorder, iconBg, iconText, countTone }) => (
             <button
               key={key}

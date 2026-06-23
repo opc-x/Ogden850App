@@ -4,7 +4,7 @@ import type { SceneCatalogItem } from '../../types/scene';
 import { SceneCover, SCENE_COVER_ASPECT_CLASS, SCENE_COVER_CAROUSEL_CLASS } from './SceneCover';
 import { SceneCrystalFrame } from './SceneCrystalFrame';
 
-const CARD_WIDTH_CLASS = 'w-[50vw] max-w-[12.5rem] sm:w-[12.5rem]';
+const CARD_WIDTH_CLASS = 'w-[11rem] sm:w-[12.5rem] md:w-[14rem] lg:w-[15rem] shrink-0';
 const BUFFER = 2;
 
 const DOCK_MAX_SCALE = 1.14;

@@ -133,7 +133,7 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
           返回全部 {allScenes.length} 场景
         </button>
 
-        <div className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-sm">
+        <div className="flex min-h-0 flex-1 flex-col md:flex-row overflow-hidden rounded-3xl border border-emerald-100 bg-white shadow-sm">
           <SceneCover
             slug={active.slug}
             gradient={active.gradient}
@@ -141,10 +141,10 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
             overlayTitle={active.titleZh}
             overlayMeta={turnsLoading ? '…' : `${turns.length} 句`}
             fit="contain"
-            className={`${SCENE_COVER_ASPECT_CLASS} w-full shrink-0 rounded-t-3xl`}
+            className={`${SCENE_COVER_ASPECT_CLASS} w-full shrink-0 rounded-t-3xl md:rounded-t-none md:rounded-l-3xl md:w-[min(42%,18rem)] md:max-h-full md:self-stretch`}
           />
 
-          <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
+          <div className="flex min-h-0 flex-1 flex-col overflow-hidden md:border-l md:border-emerald-100/80">
           {sceneCharacters && !turnsLoading ? (
             <div className="shrink-0 border-b border-slate-100/80 px-4">
               <SceneCharacterStrip characters={sceneCharacters} speakingRole={speakingRole} />

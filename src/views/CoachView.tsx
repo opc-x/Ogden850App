@@ -181,7 +181,7 @@ function ThreadBubble({
   return null;
 }
 
-export function CoachView() {
+export function CoachView({ compactChrome = false }: { compactChrome?: boolean } = {}) {
   const { scenes, loading: scenesLoading, error: scenesError } = useSceneCatalog();
   const { feedbackEnabled, setFeedbackEnabled } = useCoachFeedbackEnabled();
   const [inputMode, setInputMode] = useState<'voice' | 'type'>('type');
@@ -360,6 +360,7 @@ export function CoachView() {
             expanded={sceneExpanded}
             onExpand={() => setSceneExpanded(true)}
             onCollapse={() => setSceneExpanded(false)}
+            compact={compactChrome}
           />
           {confettiBurst > 0 ? (
             <CoachConfetti burstKey={confettiBurst} hits={confettiHits} />
@@ -371,6 +372,7 @@ export function CoachView() {
           activeSlug={activeScene?.slug ?? null}
           loading={scenesLoading}
           onSelect={handleSceneChange}
+          compact={compactChrome}
         />
 
         <div className="flex items-center gap-1 px-0.5">
@@ -448,7 +450,9 @@ export function CoachView() {
       )}
 
       {/* 对话主区 — 从上往下排列，新消息在底部并自动滚到底 */}
-      <div className="flex-1 min-h-0 overflow-y-auto w-full bg-[#ededed]">
+      <div
+        className={`flex-1 min-h-0 overflow-y-auto w-full bg-[#ededed]${compactChrome ? ' min-h-[14rem]' : ''}`}
+      >
         <div className="w-full flex flex-col py-2 px-3 space-y-3">
           {(scenesLoading || turnsLoading) && coach.thread.length === 0 && (
             <div className="flex justify-center py-8">

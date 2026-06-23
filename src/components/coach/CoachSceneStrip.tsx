@@ -3,23 +3,27 @@ import type { SceneCatalogItem } from '../../types/scene';
 import { SceneCover, SCENE_COVER_ASPECT_CLASS } from '../assembler/SceneCover';
 import { SceneCrystalFrame } from '../assembler/SceneCrystalFrame';
 
-const STRIP_INACTIVE = 'w-[5.25rem]';
-const STRIP_ACTIVE = 'w-[8.75rem]';
-
 /** 陪练场景条 — 选中项放大 + 水晶描边，与上方 Hero 联动 */
 export function CoachSceneStrip({
   scenes,
   activeSlug,
   loading,
   onSelect,
+  compact = false,
 }: {
   scenes: SceneCatalogItem[];
   activeSlug: string | null;
   loading: boolean;
   onSelect: (slug: string) => void;
+  compact?: boolean;
 }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const itemRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+  const stripInactive = compact ? 'w-[4rem]' : 'w-[5.25rem] md:w-[6.5rem]';
+  const stripActive = compact ? 'w-[6rem]' : 'w-[8.75rem] md:w-[10.5rem]';
+  const thumbClass = compact
+    ? 'w-full aspect-[5/2] max-h-[3.25rem]'
+    : `w-full ${SCENE_COVER_ASPECT_CLASS}`;
 
   useEffect(() => {
     if (!activeSlug) return;
@@ -33,7 +37,7 @@ export function CoachSceneStrip({
         {Array.from({ length: 5 }).map((_, i) => (
           <div
             key={i}
-            className={`${i === 2 ? STRIP_ACTIVE : STRIP_INACTIVE} shrink-0 rounded-xl bg-slate-100 animate-pulse aspect-[5/2]`}
+            className={`${i === 2 ? stripActive : stripInactive} shrink-0 rounded-xl bg-slate-100 animate-pulse aspect-[5/2]`}
           />
         ))}
       </div>
@@ -63,8 +67,8 @@ export function CoachSceneStrip({
             title={scene.titleZh}
             className={`group shrink-0 transition-all duration-300 ease-out active:scale-[0.98] ${
               active
-                ? `${STRIP_ACTIVE} z-10 snap-center -my-0.5`
-                : `${STRIP_INACTIVE} snap-start opacity-65 hover:opacity-90`
+                ? `${stripActive} z-10 snap-center -my-0.5`
+                : `${stripInactive} snap-start opacity-65 hover:opacity-90`
             }`}
           >
             <SceneCrystalFrame active={active}>
@@ -74,7 +78,7 @@ export function CoachSceneStrip({
                 titleZh={scene.titleZh}
                 fit="contain"
                 tone={active ? 'default' : 'soft'}
-                className={`w-full ${SCENE_COVER_ASPECT_CLASS}`}
+                className={thumbClass}
               />
             </SceneCrystalFrame>
           </button>
