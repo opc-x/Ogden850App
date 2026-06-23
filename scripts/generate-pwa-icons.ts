@@ -1,6 +1,6 @@
 /**
  * PWA icons from master: resize, then fill transparent corners
- * via nearest-opaque-pixel color bleed (BFS propagation).
+ * by diffusing squircle-edge colors outward (smooth, no radial or Voronoi stripes).
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -15,95 +15,125 @@ const outputs: Array<{ file: string; size: number }> = [
   { file: 'public/apple-touch-icon.png', size: 180 },
 ];
 
-/** Pixels below this are treated as empty and filled by bleed. */
+/** Pixels below this are treated as empty and filled by edge diffusion. */
 const FILL_ALPHA = 200;
 
-function dist2(x1: number, y1: number, x2: number, y2: number) {
-  const dx = x1 - x2;
-  const dy = y1 - y2;
-  return dx * dx + dy * dy;
+function isOpaque(data: Buffer, idx: number): boolean {
+  return data[idx + 3] >= FILL_ALPHA;
 }
 
-function jfaSteps(size: number): number[] {
-  const steps: number[] = [];
-  let step = Math.ceil(size / 2);
-  while (step >= 1) {
-    steps.push(step);
-    step = Math.floor(step / 2);
-  }
-  if (steps.at(-1) !== 1) steps.push(1);
-  return steps;
+function needsFill(data: Buffer, idx: number): boolean {
+  return data[idx + 3] < FILL_ALPHA;
 }
 
-/** Fill transparent pixels with RGB from the nearest opaque pixel (Euclidean, via JFA). */
-function bleedNearestOpaque(data: Buffer, width: number, height: number): Buffer {
-  const out = Buffer.from(data);
+/**
+ * Fill transparent pixels by repeatedly averaging colors from already-set neighbors.
+ * Opaque squircle pixels stay fixed; exterior corners inherit a smooth green gradient.
+ */
+function diffuseEdgeFill(data: Buffer, width: number, height: number): Buffer {
   const pixelCount = width * height;
-  const seedX = new Int32Array(pixelCount).fill(-1);
-  const seedY = new Int32Array(pixelCount).fill(-1);
-  const nextX = new Int32Array(pixelCount);
-  const nextY = new Int32Array(pixelCount);
+  const out = Buffer.from(data);
+  const known = new Uint8Array(pixelCount);
+  const r = new Float32Array(pixelCount);
+  const g = new Float32Array(pixelCount);
+  const b = new Float32Array(pixelCount);
 
-  for (let y = 0; y < height; y++) {
-    for (let x = 0; x < width; x++) {
-      const p = y * width + x;
-      if (data[p * 4 + 3] >= FILL_ALPHA) {
-        seedX[p] = x;
-        seedY[p] = y;
-      }
+  for (let p = 0; p < pixelCount; p++) {
+    const idx = p * 4;
+    if (!needsFill(data, idx)) {
+      known[p] = 1;
+      r[p] = data[idx];
+      g[p] = data[idx + 1];
+      b[p] = data[idx + 2];
+      out[idx + 3] = 255;
     }
   }
 
-  for (const step of jfaSteps(Math.max(width, height))) {
-    for (let y = 0; y < height; y++) {
-      for (let x = 0; x < width; x++) {
-        const p = y * width + x;
-        let bestX = seedX[p];
-        let bestY = seedY[p];
-        let bestDist = bestX >= 0 ? dist2(x, y, bestX, bestY) : Number.POSITIVE_INFINITY;
+  const queue: number[] = [];
+  for (let p = 0; p < pixelCount; p++) {
+    if (known[p]) continue;
+    if (hasKnownNeighbor(p, width, height, known)) queue.push(p);
+  }
 
-        for (let dy = -1; dy <= 1; dy++) {
-          for (let dx = -1; dx <= 1; dx++) {
-            const nx = x + dx * step;
-            const ny = y + dy * step;
-            if (nx < 0 || nx >= width || ny < 0 || ny >= height) continue;
-            const np = ny * width + nx;
-            const sx = seedX[np];
-            const sy = seedY[np];
-            if (sx < 0) continue;
-            const d = dist2(x, y, sx, sy);
-            if (d < bestDist) {
-              bestDist = d;
-              bestX = sx;
-              bestY = sy;
-            }
-          }
-        }
+  let head = 0;
+  while (head < queue.length) {
+    const p = queue[head++];
+    if (known[p]) continue;
 
-        nextX[p] = bestX;
-        nextY[p] = bestY;
-      }
+    const x = p % width;
+    const y = (p - x) / width;
+    let sr = 0;
+    let sg = 0;
+    let sb = 0;
+    let count = 0;
+
+    for (const [nx, ny] of neighborCoords(x, y, width, height)) {
+      const np = ny * width + nx;
+      if (!known[np]) continue;
+      sr += r[np];
+      sg += g[np];
+      sb += b[np];
+      count++;
     }
-    seedX.set(nextX);
-    seedY.set(nextY);
+
+    if (count === 0) continue;
+
+    r[p] = sr / count;
+    g[p] = sg / count;
+    b[p] = sb / count;
+    known[p] = 1;
+
+    const idx = p * 4;
+    out[idx] = Math.round(r[p]);
+    out[idx + 1] = Math.round(g[p]);
+    out[idx + 2] = Math.round(b[p]);
+    out[idx + 3] = 255;
+
+    for (const [nx, ny] of neighborCoords(x, y, width, height)) {
+      const np = ny * width + nx;
+      if (!known[np] && hasKnownNeighbor(np, width, height, known)) queue.push(np);
+    }
   }
 
   for (let p = 0; p < pixelCount; p++) {
-    const sx = seedX[p];
-    const sy = seedY[p];
-    if (sx < 0) continue;
-
-    const dst = p * 4;
-    if (data[dst + 3] < FILL_ALPHA) {
-      const src = (sy * width + sx) * 4;
-      out[dst] = data[src];
-      out[dst + 1] = data[src + 1];
-      out[dst + 2] = data[src + 2];
+    const idx = p * 4;
+    if (!known[p]) {
+      out[idx] = data[idx];
+      out[idx + 1] = data[idx + 1];
+      out[idx + 2] = data[idx + 2];
     }
-    out[dst + 3] = 255;
+    out[idx + 3] = 255;
   }
 
   return out;
+}
+
+function neighborCoords(
+  x: number,
+  y: number,
+  width: number,
+  height: number,
+): Array<[number, number]> {
+  const coords: Array<[number, number]> = [];
+  if (x > 0) coords.push([x - 1, y]);
+  if (x + 1 < width) coords.push([x + 1, y]);
+  if (y > 0) coords.push([x, y - 1]);
+  if (y + 1 < height) coords.push([x, y + 1]);
+  return coords;
+}
+
+function hasKnownNeighbor(
+  p: number,
+  width: number,
+  height: number,
+  known: Uint8Array,
+): boolean {
+  const x = p % width;
+  const y = (p - x) / width;
+  for (const [nx, ny] of neighborCoords(x, y, width, height)) {
+    if (known[ny * width + nx]) return true;
+  }
+  return false;
 }
 
 async function renderIcon(size: number): Promise<Buffer> {
@@ -113,9 +143,9 @@ async function renderIcon(size: number): Promise<Buffer> {
     .raw()
     .toBuffer({ resolveWithObject: true });
 
-  const bled = bleedNearestOpaque(data, info.width, info.height);
+  const filled = diffuseEdgeFill(data, info.width, info.height);
 
-  return sharp(bled, { raw: { width: info.width, height: info.height, channels: 4 } })
+  return sharp(filled, { raw: { width: info.width, height: info.height, channels: 4 } })
     .png({ compressionLevel: 9, palette: false })
     .toBuffer();
 }
