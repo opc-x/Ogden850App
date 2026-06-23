@@ -203,7 +203,7 @@ function AppContent() {
   return (
     <MobileWrapper>
       {activeTab === 'onboarding' ? (
-        <div className="flex min-h-0 flex-1 flex-col overflow-hidden">
+        <div className="flex min-h-0 flex-1 flex-col overflow-hidden h-full">
         <LandingPage onComplete={() => {
           localStorage.setItem('ogden850_has_seen_onboarding', 'true');
           setActiveTab('home');

@@ -57,20 +57,23 @@ body {
   margin: 0;
   overflow: hidden; /* Prevent body scrolling entirely for app layout */
   height: 100%;
-  min-height: 100dvh;
+  min-height: 100svh;
   min-height: -webkit-fill-available;
 }
 
 #root {
   height: 100%;
-  min-height: 100dvh;
+  min-height: 100svh;
   min-height: -webkit-fill-available;
 }
 
+/* svh + fill-available：Safari 浏览器与 PWA 独立模式都能铺满，避免 dvh/100% 链在 standalone 底部留白 */
 @utility h-app-screen {
-  height: 100%;
-  min-height: 100dvh;
+  height: 100svh;
+  min-height: 100svh;
+  max-height: 100svh;
   min-height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
 }
 
 @utility pb-bottom-nav {

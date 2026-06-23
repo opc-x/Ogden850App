@@ -325,7 +325,7 @@ export function WebShellView() {
       <div className="flex-1 flex justify-center min-h-screen overflow-hidden bg-[#e8eaed]">
         <div
           data-app-shell
-          className={`w-full ${activeTab === 'chat' ? 'max-w-[430px]' : APP_SHELL_MAX_WIDTH_CLASS} h-[100dvh] bg-[#f8f9fa] text-slate-800 flex flex-col font-sans relative overflow-hidden sm:shadow-xl ${activeTab === 'chat' ? '' : '@container'}`}
+          className={`w-full ${activeTab === 'chat' ? 'max-w-[430px]' : APP_SHELL_MAX_WIDTH_CLASS} h-app-screen bg-[#f8f9fa] text-slate-800 flex flex-col font-sans relative overflow-hidden sm:shadow-xl ${activeTab === 'chat' ? '' : '@container'}`}
         >
           {renderContent()}
 

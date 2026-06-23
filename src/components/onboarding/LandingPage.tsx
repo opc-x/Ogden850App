@@ -117,7 +117,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
   };
 
   return (
-    <div className="relative w-full h-full overflow-hidden bg-gradient-to-b from-[#e8f5ec] via-[#f3faf5] to-white flex flex-col pt-safe pb-safe">
+    <div className="relative flex flex-1 min-h-0 w-full overflow-hidden bg-gradient-to-b from-[#e8f5ec] via-[#f3faf5] to-white flex-col pt-safe pb-safe">
       {/* 柔和光晕背景 */}
       <div className="pointer-events-none absolute -top-24 -right-16 h-64 w-64 rounded-full bg-[#a8d5b8]/35 blur-3xl" />
       <div className="pointer-events-none absolute top-1/3 -left-20 h-56 w-56 rounded-full bg-[#c5e6d0]/25 blur-3xl" />
