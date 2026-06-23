@@ -6,7 +6,7 @@ function IosInstallHint({ guide }: { guide: IosInstallGuide }) {
     case 'edge':
       return (
         <>
-          点屏幕右下方 <b>···</b>，选「添加到主屏幕」。
+          点底部 <b>分享</b>，再选「添加到主屏幕」。
         </>
       );
     case 'chrome':
@@ -57,7 +57,7 @@ export function IosInstallSteps({ guide, inAppFollowUp }: IosInstallStepsProps) 
       </p>
       {followUp && (
         <p className="text-xs text-emerald-700 font-medium leading-relaxed">
-          Safari 打开后：点右下方 <b>···</b>，选「添加到主屏幕」。
+          Safari 打开后：点底部 <b>分享</b>，再选「添加到主屏幕」。
         </p>
       )}
     </div>

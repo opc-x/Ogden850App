@@ -15,6 +15,9 @@ const outputs: Array<{ file: string; size: number }> = [
   { file: 'public/apple-touch-icon.png', size: 180 },
 ];
 
+/** Scale master art so "Ogden 850" fills more of the squircle at small PWA sizes. */
+const MASTER_CONTENT_ZOOM = 1.26;
+
 /** Pixels below this are treated as empty and filled by edge diffusion. */
 const FILL_ALPHA = 200;
 
@@ -136,8 +139,21 @@ function hasKnownNeighbor(
   return false;
 }
 
-async function renderIcon(size: number): Promise<Buffer> {
-  const { data, info } = await sharp(masterPath)
+async function loadZoomedMaster(): Promise<Buffer> {
+  const meta = await sharp(masterPath).metadata();
+  const base = meta.width ?? 1024;
+  const zoomed = Math.round(base * MASTER_CONTENT_ZOOM);
+  const offset = Math.floor((zoomed - base) / 2);
+
+  return sharp(masterPath)
+    .resize(zoomed, zoomed, { fit: 'fill' })
+    .extract({ left: offset, top: offset, width: base, height: base })
+    .png()
+    .toBuffer();
+}
+
+async function renderIcon(zoomedMaster: Buffer, size: number): Promise<Buffer> {
+  const { data, info } = await sharp(zoomedMaster)
     .resize(size, size, { fit: 'fill' })
     .ensureAlpha()
     .raw()
@@ -155,8 +171,10 @@ async function main() {
     throw new Error(`Missing master icon at ${masterPath}`);
   }
 
+  const zoomedMaster = await loadZoomedMaster();
+
   for (const { file, size } of outputs) {
-    await renderIcon(size).then((buf) => sharp(buf).toFile(path.join(root, file)));
+    await renderIcon(zoomedMaster, size).then((buf) => sharp(buf).toFile(path.join(root, file)));
     console.log(`wrote ${file} (${size}x${size})`);
   }
 }

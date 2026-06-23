@@ -17,8 +17,9 @@ export function getIosInstallGuide(browser: IosBrowser): IosInstallGuide {
       return {
         browser: 'safari',
         browserLabel: 'Safari',
-        step1Title: '点屏幕右下方「···」',
-        step1Chip: '···',
+        step1Title: '点底部「分享」',
+        step1Chip: '分享',
+        step1Extra: '图标是方框 + 向上箭头',
         step2Title: '在弹出菜单里点「添加到主屏幕」',
       };
     case 'chrome':
@@ -42,8 +43,9 @@ export function getIosInstallGuide(browser: IosBrowser): IosInstallGuide {
       return {
         browser: 'edge',
         browserLabel: 'Edge',
-        step1Title: '点屏幕右下方「···」',
-        step1Chip: '···',
+        step1Title: '点底部「分享」',
+        step1Chip: '分享',
+        step1Extra: '图标是方框 + 向上箭头',
         step2Title: '在弹出菜单里点「添加到主屏幕」',
       };
     case 'opera':
@@ -77,7 +79,7 @@ export function getIosInstallGuide(browser: IosBrowser): IosInstallGuide {
 export function getIosInAppFollowUp(): Pick<IosInstallGuide, 'step1Title' | 'step2Title' | 'step1Chip'> {
   return {
     step1Chip: ADD_HOME_CHIP,
-    step1Title: 'Safari 打开后，点右下方「···」',
+    step1Title: 'Safari 打开后，点底部「分享」',
     step2Title: '再点「添加到主屏幕」',
   };
 }

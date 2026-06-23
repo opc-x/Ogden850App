@@ -88,7 +88,7 @@ describe('iOS browser detection', () => {
   it('detects Chrome on iPhone', () => {
     mockUa('Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/120.0.6099.119 Mobile/15E148 Safari/604.1');
     expect(detectIosBrowser()).toBe('chrome');
-    expect(getIosInstallGuide('safari').step1Title).toContain('右下方');
+    expect(getIosInstallGuide('safari').step1Title).toContain('分享');
     expect(getIosInstallGuide('chrome').step1Chip).toBe('分享');
   });
 
