@@ -183,7 +183,7 @@ function AppContent() {
   if (wordsLoading && activeTab !== 'onboarding') {
     return (
       <MobileWrapper>
-        <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden">
+        <div className="relative flex h-full min-h-0 flex-1 flex-col overflow-hidden">
           <header className="flex-none w-full bg-white/90 backdrop-blur-xl flex items-center justify-between px-4 sm:px-6 py-3 border-b border-slate-200/60 z-40 pt-safe">
             <h1
               style={{ fontFamily: "'Pacifico', cursive", fontSize: '1.75rem' }}
@@ -203,14 +203,14 @@ function AppContent() {
   return (
     <MobileWrapper>
       {activeTab === 'onboarding' ? (
-        <div className="flex min-h-0 flex-1 flex-col overflow-hidden h-full">
+        <div className="flex h-full min-h-0 flex-1 flex-col overflow-hidden">
         <LandingPage onComplete={() => {
           localStorage.setItem('ogden850_has_seen_onboarding', 'true');
           setActiveTab('home');
         }} />
         </div>
       ) : (
-        <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden">
+        <div className="relative flex h-full min-h-0 flex-1 flex-col overflow-hidden">
           {/* Top Header App Bar */}
           <header className="flex-none w-full bg-white/90 backdrop-blur-xl flex items-center justify-between px-4 sm:px-6 py-3 border-b border-slate-200/60 z-40 pt-safe">
         <div className="flex items-center gap-3">

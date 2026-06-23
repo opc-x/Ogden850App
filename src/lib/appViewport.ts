@@ -6,7 +6,8 @@ export function syncAppViewportHeight(): void {
 
   if (isPwaInstalled()) {
     root.classList.add('pwa-standalone');
-    const height = Math.round(window.visualViewport?.height ?? window.innerHeight);
+    const vv = window.visualViewport?.height ?? 0;
+    const height = Math.round(Math.max(window.innerHeight, vv));
     root.style.setProperty('--app-height', `${height}px`);
     return;
   }
@@ -21,7 +22,8 @@ export function initAppViewport(): void {
   window.visualViewport?.addEventListener('resize', syncAppViewportHeight);
   window.visualViewport?.addEventListener('scroll', syncAppViewportHeight);
   window.addEventListener('resize', syncAppViewportHeight);
+  window.addEventListener('pageshow', syncAppViewportHeight);
   window.addEventListener('orientationchange', () => {
-    window.setTimeout(syncAppViewportHeight, 120);
+    window.setTimeout(syncAppViewportHeight, 150);
   });
 }

@@ -69,19 +69,34 @@ body {
   max-height: var(--app-height);
 }
 
-/* 浏览器=svh；PWA 全屏=--app-height(px)，避免 svh 按「含底栏」算高导致 standalone 底部留白 */
 @utility h-app-screen {
   height: var(--app-height);
   min-height: var(--app-height);
   max-height: var(--app-height);
 }
 
-html.pwa-standalone [data-app-shell-root] {
+/* PWA：锁死整屏，子级用 h-full / flex-1 传递高度（勿再用 svh 限高壳子） */
+html.pwa-standalone,
+html.pwa-standalone body,
+html.pwa-standalone #root {
   position: fixed;
   inset: 0;
   width: 100%;
   height: var(--app-height);
   max-height: var(--app-height);
+  overflow: hidden;
+}
+
+html.pwa-standalone #root {
+  display: flex;
+  flex-direction: column;
+}
+
+html.pwa-standalone [data-app-shell-root],
+html.pwa-standalone [data-app-shell] {
+  height: 100%;
+  min-height: 0;
+  flex: 1 1 auto;
 }
 
 @utility pb-bottom-nav {

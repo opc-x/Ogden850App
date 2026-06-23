@@ -10,7 +10,7 @@ import './index.css';
 
 initAppViewport();
 
-const GUIDE_DATA_VERSION = '2026-06-21';
+const GUIDE_DATA_VERSION = '2026-06-24-pwa-viewport';
 const guideDataVersionKey = 'ogden850_guide_data_version';
 
 async function clearStaleClientCaches() {

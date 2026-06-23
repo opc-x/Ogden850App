@@ -117,7 +117,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
   };
 
   return (
-    <div className="relative flex flex-1 min-h-0 w-full overflow-hidden bg-gradient-to-b from-[#e8f5ec] via-[#f3faf5] to-white flex-col pt-safe pb-safe">
+    <div className="relative flex h-full min-h-0 w-full flex-col overflow-hidden bg-gradient-to-b from-[#e8f5ec] via-[#f3faf5] to-white pt-safe">
       {/* 柔和光晕背景 */}
       <div className="pointer-events-none absolute -top-24 -right-16 h-64 w-64 rounded-full bg-[#a8d5b8]/35 blur-3xl" />
       <div className="pointer-events-none absolute top-1/3 -left-20 h-56 w-56 rounded-full bg-[#c5e6d0]/25 blur-3xl" />
@@ -227,7 +227,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
       <motion.div
         {...fadeUp}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="relative w-full px-6 sm:px-10 md:px-12 pt-4 pb-6 shrink-0 max-w-2xl md:mx-auto"
+        className="relative w-full shrink-0 px-6 sm:px-10 md:px-12 pt-4 pb-safe max-w-2xl md:mx-auto"
       >
         <button
           type="button"
