@@ -41,7 +41,7 @@ export function OgdenCategoryLegend({
         return (
           <span key={key} className="inline-flex min-w-0 items-center gap-1.5">
             <span className={`h-2 w-2 shrink-0 rounded-[2px] ${cat.dot}`} aria-hidden />
-            <span className="truncate text-[10px] leading-tight text-slate-600">{cat.zh}</span>
+            <span className="truncate text-caption leading-tight text-slate-600">{cat.zh}</span>
           </span>
         );
       })}

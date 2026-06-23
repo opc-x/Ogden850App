@@ -48,14 +48,14 @@ export function SceneThumbnailList({
                 <div className="min-w-0">
                   <p className="truncate text-sm font-bold text-slate-800">{scene.titleZh}</p>
                   {(building || practiced) && (
-                    <p className="mt-0.5 text-[11px] font-medium text-slate-400">
+                    <p className="mt-0.5 text-body-sm font-medium text-slate-400">
                       {building ? '生成中' : '已练完'}
                     </p>
                   )}
                 </div>
                 <div className="flex shrink-0 items-center gap-1">
                   {!building && (
-                    <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-bold tabular-nums text-slate-600">
+                    <span className="rounded-full bg-slate-100 px-2 py-0.5 text-caption font-bold tabular-nums text-slate-600">
                       {scene.sentenceCount} 句
                     </span>
                   )}

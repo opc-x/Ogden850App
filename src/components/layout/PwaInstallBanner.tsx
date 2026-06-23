@@ -63,7 +63,7 @@ export function PwaInstallBanner({
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}
         className={`absolute left-3 right-3 z-50 bg-white/98 backdrop-blur-xl rounded-3xl border shadow-2xl border-indigo-200 ${
-          isIosBrowser || isIosInApp ? 'bottom-[5.5rem] p-4 pt-5' : 'bottom-24 p-5'
+          isIosBrowser || isIosInApp ? 'bottom-nav-offset p-4 pt-5' : 'bottom-nav-offset p-5'
         }`}
       >
         <button

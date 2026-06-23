@@ -50,11 +50,11 @@ function CoachRoleChip({
       }`}
     >
       <span className="text-sm leading-none">{character.emoji}</span>
-      <span className="truncate text-[10px] font-bold text-slate-700">{character.name}</span>
+      <span className="truncate text-caption font-bold text-slate-700">{character.name}</span>
       {isUser ? (
-        <span className="shrink-0 text-[9px] font-black text-[#2f7d4f]">你</span>
+        <span className="shrink-0 text-caption font-black text-[#2f7d4f]">你</span>
       ) : (
-        <span className="shrink-0 text-[9px] font-semibold text-slate-400">陪练</span>
+        <span className="shrink-0 text-caption font-semibold text-slate-400">陪练</span>
       )}
     </button>
   );
@@ -95,7 +95,7 @@ function ChatDialogueBubble({
         size="sm"
       />
       <div
-        className={`min-w-0 max-w-[78%] rounded-lg px-2.5 py-1.5 text-[13px] leading-[1.45] font-normal ${bubbleClass}`}
+        className={`min-w-0 max-w-[78%] rounded-lg px-2.5 py-1.5 text-sm leading-[1.45] font-normal ${bubbleClass}`}
       >
         <div className="flex items-center">
           <p className={`min-w-0 flex-1 ${isSelf ? 'text-slate-900' : 'text-slate-800'}`}>{en}</p>
@@ -109,7 +109,7 @@ function ChatDialogueBubble({
           )}
         </div>
         {showTools && cnVisible && zh && (
-          <p className="mt-1 text-[11px] text-slate-400 leading-relaxed border-t border-slate-100/80 pt-1">
+          <p className="mt-1 text-body-sm text-slate-400 leading-relaxed border-t border-slate-100/80 pt-1">
             {zh}
           </p>
         )}
@@ -135,7 +135,7 @@ function ThreadBubble({
 }) {
   if (item.kind === 'system') {
     return (
-      <p className="text-center text-[10px] text-rose-500 font-medium px-4 py-1">
+      <p className="text-center text-caption text-rose-500 font-medium px-4 py-1">
         {item.zh}
       </p>
     );
@@ -383,7 +383,7 @@ export function CoachView({ compactChrome = false }: { compactChrome?: boolean }
             isSpeaking={speakingRole === 'A'}
             onSelect={handleRoleChange}
           />
-          <span className="text-[10px] font-medium text-slate-300 shrink-0">对</span>
+          <span className="text-caption font-medium text-slate-300 shrink-0">对</span>
           <CoachRoleChip
             role="B"
             character={sceneCharacters.B}
@@ -404,7 +404,7 @@ export function CoachView({ compactChrome = false }: { compactChrome?: boolean }
             title={feedbackEnabled ? '关闭教练' : '开启教练'}
           >
             <CoachAvatar size="xs" />
-            <span className="text-[10px] font-semibold text-slate-600">教练</span>
+            <span className="text-caption font-semibold text-slate-600">教练</span>
             <span
               className={`relative h-3.5 w-6 shrink-0 rounded-full transition-colors ${
                 feedbackEnabled ? 'bg-amber-400' : 'bg-slate-200'
@@ -417,7 +417,7 @@ export function CoachView({ compactChrome = false }: { compactChrome?: boolean }
               />
             </span>
           </button>
-          <span className="text-[10px] font-bold text-slate-400 tabular-nums shrink-0">
+          <span className="text-caption font-bold text-slate-400 tabular-nums shrink-0">
             {coach.completedUserTurns}/{coach.totalUserTurns || '—'}
           </span>
         </div>
@@ -437,7 +437,7 @@ export function CoachView({ compactChrome = false }: { compactChrome?: boolean }
             <button
               type="button"
               onClick={handleRestart}
-              className="text-[10px] font-bold text-[#2f7d4f] flex items-center gap-0.5"
+              className="text-caption font-bold text-[#2f7d4f] flex items-center gap-0.5"
             >
               <RotateCcw className="w-3 h-3" />
             </button>
@@ -483,7 +483,7 @@ export function CoachView({ compactChrome = false }: { compactChrome?: boolean }
           {coach.evaluating && feedbackEnabled && (
             <div className="flex items-end gap-2 pl-1 py-1">
               <CoachAvatar size="sm" />
-              <span className="text-[12px] italic text-slate-400 flex items-center gap-1.5">
+              <span className="text-body-sm italic text-slate-400 flex items-center gap-1.5">
                 <RefreshCw className="w-3 h-3 animate-spin opacity-60" />
                 点评中…
               </span>
@@ -499,13 +499,13 @@ export function CoachView({ compactChrome = false }: { compactChrome?: boolean }
           scriptHintOpen ? (
             <div className="rounded-xl border border-amber-200/80 bg-amber-50/40 px-3 py-2.5">
               <div className="flex items-start gap-2 min-w-0">
-                <span className="shrink-0 text-[10px] font-bold text-amber-700 bg-amber-100/80 px-1.5 py-0.5 rounded">
+                <span className="shrink-0 text-caption font-bold text-amber-700 bg-amber-100/80 px-1.5 py-0.5 rounded">
                   台词提示
                 </span>
                 <div className="min-w-0 flex-1">
-                  <p className="text-[13px] text-slate-800 leading-snug">{coach.currentTurn.en}</p>
+                  <p className="text-sm text-slate-800 leading-snug">{coach.currentTurn.en}</p>
                   {hintZhVisible && coach.currentTurn.zh ? (
-                    <p className="mt-1 text-[11px] text-slate-500 leading-relaxed">{coach.currentTurn.zh}</p>
+                    <p className="mt-1 text-body-sm text-slate-500 leading-relaxed">{coach.currentTurn.zh}</p>
                   ) : null}
                 </div>
                 <div className="shrink-0 flex items-center gap-0.5">
@@ -548,7 +548,7 @@ export function CoachView({ compactChrome = false }: { compactChrome?: boolean }
             <button
               type="button"
               onClick={() => setScriptHintOpen(true)}
-              className="flex w-full items-center justify-center gap-1.5 rounded-full border border-dashed border-slate-200/70 bg-white/55 py-1.5 text-[11px] font-normal italic text-slate-400 active:scale-[0.99] transition-transform"
+              className="flex w-full items-center justify-center gap-1.5 rounded-full border border-dashed border-slate-200/70 bg-white/55 py-1.5 text-body-sm font-normal italic text-slate-400 active:scale-[0.99] transition-transform"
             >
               <Lightbulb className="w-3 h-3 text-amber-400/75" strokeWidth={1.75} />
               不知道说什么？看台词提示
@@ -557,7 +557,7 @@ export function CoachView({ compactChrome = false }: { compactChrome?: boolean }
         )}
 
         {voiceError ? (
-          <p className="text-[11px] text-rose-600 text-center">{voiceError}</p>
+          <p className="text-body-sm text-rose-600 text-center">{voiceError}</p>
         ) : null}
 
         <div className="flex items-center gap-2">

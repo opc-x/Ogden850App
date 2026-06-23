@@ -153,7 +153,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
         <motion.p
           {...fadeUp}
           transition={{ duration: 0.5, delay: 0.16 }}
-          className="mt-6 text-[15px] font-bold text-slate-700 text-pretty"
+          className="mt-6 text-base font-bold text-slate-700 text-pretty"
         >
           <PainHook />
         </motion.p>
@@ -161,7 +161,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
         <motion.p
           {...fadeUp}
           transition={{ duration: 0.5, delay: 0.22 }}
-          className="mt-2 text-[15px] leading-relaxed font-semibold max-w-[320px] sm:max-w-md md:max-w-lg text-pretty"
+          className="mt-2 text-base leading-relaxed font-semibold max-w-[320px] sm:max-w-md md:max-w-lg text-pretty"
         >
           <span
             style={{ backgroundImage: 'linear-gradient(105deg, #64748b 0%, #4a7c62 52%, #2f7d4f 100%)' }}
@@ -179,7 +179,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
           style={{ background: LANDING_BORDER_GRADIENT }}
         >
           <div
-            className="inline-flex flex-wrap items-center gap-x-1.5 gap-y-1 rounded-full px-3.5 py-2 text-[11px] font-semibold text-slate-600"
+            className="inline-flex flex-wrap items-center gap-x-1.5 gap-y-1 rounded-full px-3.5 py-2 text-body-sm font-semibold text-slate-600"
             style={{ background: LANDING_SURFACE_BG }}
           >
             <span className="tabular-nums text-[#2f7d4f]">{WORD_COUNT}</span>
@@ -270,10 +270,10 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
           </button>
         </div>
 
-        <p className="mt-3 text-center text-[11px] font-semibold text-slate-500">
+        <p className="mt-3 text-center text-body-sm font-semibold text-slate-500">
           {MARKETING_HERO_BADGE}
         </p>
-        <p className="mt-1 text-center text-[10px] font-medium text-slate-400/90">
+        <p className="mt-1 text-center text-caption font-medium text-slate-400/90">
           已上线 {DIALOGUE_MARKETING_LABEL} 句真实场景对话 · 持续更新
         </p>
       </motion.div>
@@ -348,7 +348,7 @@ export const LandingPage: React.FC<{ onComplete: () => void }> = ({ onComplete }
               <button
                 onClick={() => { setError(null); setEmailMode(emailMode === 'register' ? 'login' : 'register'); }}
                 disabled={busy}
-                className="w-full text-center text-[13px] font-bold text-slate-400 hover:text-slate-600 transition-colors pt-1 disabled:opacity-60"
+                className="w-full text-center text-sm font-bold text-slate-400 hover:text-slate-600 transition-colors pt-1 disabled:opacity-60"
               >
                 {emailMode === 'register' ? '已有账号？去登录' : '没有账号？去注册'}
               </button>

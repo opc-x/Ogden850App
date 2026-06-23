@@ -5,6 +5,11 @@
   --color-primary: #2f7d4f;
   --color-primary-container: #e6f4ea;
   --color-on-primary-container: #15412a;
+  /* 移动端可读字号阶梯（基于 rem，随 html 根字号缩放） */
+  --text-caption: 0.75rem;
+  --text-caption--line-height: 1.25;
+  --text-body-sm: 0.8125rem;
+  --text-body-sm--line-height: 1.45;
 }
 
 :root {
@@ -15,8 +20,8 @@
   --accent-soft: #cffafe;
   --mono: "SF Mono", "Fira Code", monospace;
   --serif: "Georgia", serif;
-  /* 底栏高度（icon+label+pt），供固定输入坞避让 */
-  --bottom-nav-height: 3.75rem;
+  /* 底栏高度（icon+label+pt），供固定输入坞 / 主内容区避让 */
+  --bottom-nav-height: 4.25rem;
   /* IPA 音标：Charis SIL 斜体 + Noto Sans 兜底（覆盖更多 IPA 字形） */
   --font-ipa: "Charis SIL", "Noto Sans", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --ipa-color: #0e7490;
@@ -41,35 +46,54 @@
   line-height: 1.2;
 }
 
-/* Base scaling to emulate Native App dense layout on mobile screens */
+/* 移动端优先：15px 起跳，随屏宽微增，上限 16px（iOS 建议正文 ≥11pt） */
 html {
-  font-size: 14px; /* Dense mobile view */
-}
-
-@media (min-width: 640px) {
-  html {
-    font-size: 15px; /* Tablets */
-  }
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px; /* iPad / Desktop */
-  }
+  font-size: clamp(15px, 4vw, 16px);
+  height: 100%;
 }
 
 body {
   background-color: #f8f9fa;
   margin: 0;
   overflow: hidden; /* Prevent body scrolling entirely for app layout */
+  height: 100%;
+  min-height: 100svh;
+  min-height: -webkit-fill-available;
+}
+
+#root {
+  height: 100%;
+  min-height: 100svh;
+  min-height: -webkit-fill-available;
+}
+
+@utility h-app-screen {
+  height: 100svh;
+  min-height: 100svh;
+  max-height: 100svh;
+  min-height: -webkit-fill-available;
+}
+
+@utility pb-bottom-nav {
+  padding-bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom, 0px));
+}
+
+@utility bottom-nav-offset {
+  bottom: calc(var(--bottom-nav-height) + env(safe-area-inset-bottom, 0px) + 0.5rem);
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 @utility pb-safe {
-  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+  padding-bottom: calc(0.5rem + env(safe-area-inset-bottom, 0px));
 }
 
 @utility pt-safe {
-  padding-top: calc(0.5rem + env(safe-area-inset-top));
+  padding-top: calc(0.5rem + env(safe-area-inset-top, 0px));
 }
 
 /* 850 词卡插图容器 — 透明正方形容器，PNG 与白色卡面融合 */

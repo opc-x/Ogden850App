@@ -65,7 +65,7 @@ export function ProfileView({ totalWords, setActiveTab }: ProfileViewProps) {
                     {auth.profile.isGuest ? (
                       <span
                         data-testid="profile-guest-badge"
-                        className="text-[10px] font-black px-2.5 py-1 rounded-full bg-emerald-50 text-[#2f7d4f] border border-emerald-100"
+                        className="text-caption font-black px-2.5 py-1 rounded-full bg-emerald-50 text-[#2f7d4f] border border-emerald-100"
                       >
                         访客
                       </span>
@@ -77,7 +77,7 @@ export function ProfileView({ totalWords, setActiveTab }: ProfileViewProps) {
                         {auth.profile.email}
                       </span>
                     ) : providerLabel(auth.profile.authProvider) ? (
-                      <span className="text-[10px] font-black px-2.5 py-1 rounded-full bg-white text-slate-500 border border-slate-200">
+                      <span className="text-caption font-black px-2.5 py-1 rounded-full bg-white text-slate-500 border border-slate-200">
                         {providerLabel(auth.profile.authProvider)}
                       </span>
                     ) : null}
@@ -85,13 +85,13 @@ export function ProfileView({ totalWords, setActiveTab }: ProfileViewProps) {
 
                   <div className="mt-3 grid grid-cols-2 gap-2">
                     <div className="rounded-2xl border border-white/80 bg-white/70 px-3 py-2.5 text-center shadow-sm">
-                      <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">加入</p>
+                      <p className="text-caption font-bold uppercase tracking-wide text-slate-400">加入</p>
                       <p className="mt-0.5 text-sm font-black tabular-nums text-slate-700">
                         {joinedLabel ?? '—'}
                       </p>
                     </div>
                     <div className="rounded-2xl border border-white/80 bg-white/70 px-3 py-2.5 text-center shadow-sm">
-                      <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">学习中</p>
+                      <p className="text-caption font-bold uppercase tracking-wide text-slate-400">学习中</p>
                       <p className="mt-0.5 text-sm font-black tabular-nums text-[#2f7d4f]">
                         {learningCount + masteredCount} 词
                       </p>

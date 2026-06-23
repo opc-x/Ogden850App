@@ -40,7 +40,7 @@ export const SceneCard = React.memo(function SceneCard({ scene, onClick }: Scene
           {scene.titleZh}
         </p>
         <span
-          className={`shrink-0 text-[9px] font-black px-1.5 py-0.5 rounded-md border ${
+          className={`shrink-0 text-caption font-black px-1.5 py-0.5 rounded-md border ${
             building
               ? 'text-slate-400 bg-slate-50 border-slate-100'
               : 'text-emerald-600/85 bg-emerald-50/70 border-emerald-100/80'

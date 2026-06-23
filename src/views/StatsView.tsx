@@ -72,9 +72,9 @@ const StatCard: FC<StatCardProps> = ({ theme, current, total, percent, onAction 
       </div>
 
       <div className="mt-2.5 flex items-center justify-between gap-2">
-        <p className="min-w-0 text-[11px] font-medium leading-snug text-slate-500">{theme.hint}</p>
+        <p className="min-w-0 text-body-sm font-medium leading-snug text-slate-500">{theme.hint}</p>
         <span
-          className={`inline-flex shrink-0 items-center gap-0.5 text-[11px] font-bold ${theme.percent} group-hover:opacity-80`}
+          className={`inline-flex shrink-0 items-center gap-0.5 text-body-sm font-bold ${theme.percent} group-hover:opacity-80`}
         >
           {theme.actionLabel}
           <ChevronRight className="h-3.5 w-3.5" strokeWidth={2.5} />

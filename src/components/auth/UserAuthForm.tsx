@@ -47,7 +47,7 @@ export function UserAuthForm({ compact, onSuccess }: UserAuthFormProps) {
   return (
     <div className={`space-y-3 ${compact ? '' : 'bg-white rounded-2xl border border-slate-100 p-4 shadow-sm'}`}>
       {!compact && (
-        <p className="text-[10px] font-black text-slate-400 uppercase tracking-wider">登录 / 注册</p>
+        <p className="text-caption font-black text-slate-400 uppercase tracking-wider">登录 / 注册</p>
       )}
 
       <button

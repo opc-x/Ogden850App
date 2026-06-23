@@ -100,7 +100,7 @@ export function EditableProfileIdentity({ profile, onSave, meta }: EditableProfi
           data-testid="profile-avatar-reset"
           disabled={busy}
           onClick={() => void resetAvatar()}
-          className="mt-2 inline-flex items-center gap-1 text-[11px] font-bold text-slate-400 hover:text-[#2f7d4f] disabled:opacity-50"
+          className="mt-2 inline-flex items-center gap-1 text-body-sm font-bold text-slate-400 hover:text-[#2f7d4f] disabled:opacity-50"
         >
           <RotateCcw className="h-3 w-3" />
           恢复默认头像

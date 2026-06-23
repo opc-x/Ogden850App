@@ -156,7 +156,7 @@ export const BrowserView: React.FC<BrowserViewProps> = ({
                     ) : null}
                     <span>{cat === 'all' ? '全部分类' : CATEGORY_LABELS[cat]?.zh}</span>
                     <span
-                      className={`text-[10px] tabular-nums ${
+                      className={`text-caption tabular-nums ${
                         selected ? 'opacity-60' : 'text-slate-400'
                       }`}
                     >

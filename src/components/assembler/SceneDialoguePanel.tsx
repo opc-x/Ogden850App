@@ -153,7 +153,7 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
 
           <div className="shrink-0 border-b border-slate-100/80 px-4 py-2">
             <div className="flex items-center justify-between gap-2">
-              <p className="text-[10px] text-slate-400 flex items-center gap-1.5 min-w-0">
+              <p className="text-caption text-slate-400 flex items-center gap-1.5 min-w-0">
                 <BookOpen className="w-3 h-3 shrink-0" />
                 点词查释义 · 支持朗读跟读
               </p>
@@ -195,7 +195,7 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
                         }`}
                       >
                         <div className="flex items-center">
-                          <p className="min-w-0 flex-1 text-[11px] font-medium text-slate-800 leading-[1.45]">
+                          <p className="min-w-0 flex-1 text-body-sm font-medium text-slate-800 leading-[1.45]">
                             <ClickableSentence sentence={t.en} onWordClick={onWordClick} />
                           </p>
                           <DialogueBubbleActions
@@ -210,7 +210,7 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
                           />
                         </div>
                         {zhVisible && t.zh ? (
-                          <p className="mt-1.5 text-[11px] text-slate-400 leading-relaxed">{t.zh}</p>
+                          <p className="mt-1.5 text-body-sm text-slate-400 leading-relaxed">{t.zh}</p>
                         ) : null}
                       </div>
                     </div>
@@ -254,8 +254,8 @@ export function SceneDialoguePanel({ onWordClick, onSceneDetailChange }: SceneDi
     <section className="w-full mx-auto space-y-4">
       <SceneStatsSummary onSceneSelect={setActive} />
       <div className="flex items-baseline justify-between gap-2 px-0.5">
-        <h2 className="text-[15px] font-black text-slate-800">{SCENE_LIST_TITLE}</h2>
-        <span className="text-[10px] text-slate-400 font-medium shrink-0 tabular-nums">
+        <h2 className="text-base font-black text-slate-800">{SCENE_LIST_TITLE}</h2>
+        <span className="text-caption text-slate-400 font-medium shrink-0 tabular-nums">
           共 {allScenes.length} 场景
           {stats ? ` · ${stats.dialogueReady.toLocaleString()} 句` : ''} · 按频率排序
         </span>

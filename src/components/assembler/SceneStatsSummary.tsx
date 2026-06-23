@@ -20,7 +20,7 @@ function FormulaTerm({
       >
         {value}
       </span>
-      <span className="text-[10px] font-medium text-slate-500">{label}</span>
+      <span className="text-caption font-medium text-slate-500">{label}</span>
     </span>
   );
 }

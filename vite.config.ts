@@ -29,21 +29,29 @@ export default defineConfig(({ mode }) => {
           name: 'Ogden 850 Basic English',
           short_name: 'Ogden 850',
           description: 'Learn Basic English efficiently.',
-          theme_color: '#ffffff',
-          background_color: '#f0f9f2',
+          theme_color: '#2f7d4f',
+          background_color: '#2f7d4f',
           display: 'standalone',
           icons: [
             {
               src: 'ogden-192.png',
               sizes: '192x192',
-              type: 'image/png'
+              type: 'image/png',
+              purpose: 'any',
             },
             {
               src: 'ogden-512.png',
               sizes: '512x512',
-              type: 'image/png'
-            }
-          ]
+              type: 'image/png',
+              purpose: 'any',
+            },
+            {
+              src: 'ogden-512.png',
+              sizes: '512x512',
+              type: 'image/png',
+              purpose: 'maskable',
+            },
+          ],
         },
         devOptions: {
           enabled: false,

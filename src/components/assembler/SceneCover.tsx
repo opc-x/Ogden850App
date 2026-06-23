@@ -72,7 +72,7 @@ export function SceneCover({
               {overlayTitle}
             </h3>
             {overlayMeta ? (
-              <span className="shrink-0 text-[10px] font-semibold tabular-nums text-white/65">
+              <span className="shrink-0 text-caption font-semibold tabular-nums text-white/65">
                 {overlayMeta}
               </span>
             ) : null}

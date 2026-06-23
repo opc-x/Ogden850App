@@ -96,7 +96,7 @@ export function CoachSceneHero({
               </motion.div>
             </div>
 
-            <p className="shrink-0 px-4 pb-4 text-center text-[11px] font-medium text-white/45">
+            <p className="shrink-0 px-4 pb-4 text-center text-body-sm font-medium text-white/45">
               边看图边开口 · 轻触右上角关闭
             </p>
           </motion.div>

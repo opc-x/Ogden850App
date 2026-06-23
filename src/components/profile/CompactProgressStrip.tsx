@@ -21,8 +21,8 @@ function MiniBar({
     <div className="flex-1 min-w-0">
       <div className="flex items-center gap-1.5 mb-2">
         <Icon className={`w-3.5 h-3.5 ${accent}`} />
-        <span className="text-[11px] font-black text-slate-700 truncate">{label}</span>
-        <span className="text-[10px] font-bold text-slate-400 ml-auto tabular-nums shrink-0">
+        <span className="text-body-sm font-black text-slate-700 truncate">{label}</span>
+        <span className="text-caption font-bold text-slate-400 ml-auto tabular-nums shrink-0">
           {current}/{total}
         </span>
       </div>
@@ -62,7 +62,7 @@ export function CompactProgressStrip({
 }: CompactProgressStripProps) {
   return (
     <section className="bg-white rounded-2xl border border-slate-100 shadow-sm p-4">
-      <p className="text-[10px] font-black text-slate-400 uppercase tracking-wider mb-3">学习概览</p>
+      <p className="text-caption font-black text-slate-400 uppercase tracking-wider mb-3">学习概览</p>
       <div className="flex gap-4">
         <button
           type="button"

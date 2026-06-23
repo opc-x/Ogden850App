@@ -192,7 +192,7 @@ function AppContent() {
               Ogden 850
             </h1>
           </header>
-          <main className="flex-1 overflow-y-auto w-full px-4 sm:px-6 py-6 pb-28">
+          <main className="flex-1 overflow-y-auto w-full px-4 sm:px-6 py-6 pb-bottom-nav">
             <ViewFallback />
           </main>
         </div>
@@ -225,7 +225,7 @@ function AppContent() {
             >
               Ogden 850
             </h1>
-            <p className="text-[10px] text-emerald-800/60 font-semibold tracking-wider -mt-1 scale-90 origin-left hidden">温馨基本英语 · 暖心伴读</p>
+            <p className="text-caption text-emerald-800/60 font-semibold tracking-wider -mt-1 scale-90 origin-left hidden">温馨基本英语 · 暖心伴读</p>
           </div>
         </div>
         
@@ -243,12 +243,12 @@ function AppContent() {
       <main
         className={
           assemblerSceneDetailOpen && activeTab === 'assembler'
-            ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full mx-auto px-4 sm:px-6 py-4'
+            ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full mx-auto px-4 sm:px-6 py-4 pb-bottom-nav'
             : activeTab === 'assembler'
-              ? 'flex-1 overflow-y-auto overscroll-y-contain w-full mx-auto px-4 sm:px-6 pt-3 pb-4'
+              ? 'flex-1 overflow-y-auto overscroll-y-contain w-full mx-auto px-4 sm:px-6 pt-3 pb-bottom-nav'
               : activeTab === 'chat'
-                ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full px-0 pt-1'
-                : 'flex-1 overflow-y-auto overscroll-y-contain w-full px-4 sm:px-6 py-6 pb-6'
+                ? 'flex flex-col flex-1 min-h-0 overflow-hidden w-full px-0 pt-1 pb-bottom-nav'
+                : 'flex-1 overflow-y-auto overscroll-y-contain w-full px-4 sm:px-6 py-6 pb-bottom-nav'
         }
       >
         
@@ -344,11 +344,11 @@ function AppContent() {
       {/* Mobile bottom nav — tonal contrast, no pill backgrounds */}
       <nav
         id="bottom-bar-nav"
-        className="flex-none w-full bg-white/95 backdrop-blur-xl border-t border-slate-200/60 flex justify-around items-center pt-3 pb-safe px-2 z-50 shadow-[0_-10px_20px_rgba(0,0,0,0.03)]"
+        className="absolute inset-x-0 bottom-0 w-full bg-white/95 backdrop-blur-xl border-t border-slate-200/60 flex justify-around items-center pt-2.5 pb-safe px-2 z-50 shadow-[0_-10px_20px_rgba(0,0,0,0.03)]"
       >
         <button id="nav-home" onClick={() => setActiveTab('home')} className={mobileNavItemClass(activeTab === 'home')}>
           <MobileNavIcon active={activeTab === 'home'}><Home className="w-5 h-5" strokeWidth={activeTab === 'home' ? 2.25 : 1.75} /></MobileNavIcon>
-          <span className={`text-[10px] tracking-wide ${activeTab === 'home' ? 'font-bold' : 'font-medium'}`}>主页</span>
+          <span className={`text-caption tracking-wide ${activeTab === 'home' ? 'font-bold' : 'font-medium'}`}>主页</span>
         </button>
 
         <button
@@ -357,7 +357,7 @@ function AppContent() {
           className={mobileNavItemClass(activeTab === 'browser')}
         >
           <MobileNavIcon active={activeTab === 'browser'}><BookOpen className="w-5 h-5" strokeWidth={activeTab === 'browser' ? 2.25 : 1.75} /></MobileNavIcon>
-          <span className={`text-[10px] tracking-wide ${activeTab === 'browser' ? 'font-bold' : 'font-medium'}`}>词典</span>
+          <span className={`text-caption tracking-wide ${activeTab === 'browser' ? 'font-bold' : 'font-medium'}`}>词典</span>
         </button>
 
         <button
@@ -367,17 +367,17 @@ function AppContent() {
           title={ASSEMBLER_NAV_HINT}
         >
           <MobileNavIcon active={activeTab === 'assembler'}><Blocks className="w-5 h-5" strokeWidth={activeTab === 'assembler' ? 2.25 : 1.75} /></MobileNavIcon>
-          <span className={`text-[10px] tracking-wide ${activeTab === 'assembler' ? 'font-bold' : 'font-medium'}`}>{ASSEMBLER_NAV_LABEL}</span>
+          <span className={`text-caption tracking-wide ${activeTab === 'assembler' ? 'font-bold' : 'font-medium'}`}>{ASSEMBLER_NAV_LABEL}</span>
         </button>
 
         <button id="nav-stats" onClick={() => setActiveTab('stats')} className={mobileNavItemClass(activeTab === 'stats')}>
           <MobileNavIcon active={activeTab === 'stats'}><BarChart3 className="w-5 h-5" strokeWidth={activeTab === 'stats' ? 2.25 : 1.75} /></MobileNavIcon>
-          <span className={`text-[10px] tracking-wide ${activeTab === 'stats' ? 'font-bold' : 'font-medium'}`}>统计</span>
+          <span className={`text-caption tracking-wide ${activeTab === 'stats' ? 'font-bold' : 'font-medium'}`}>统计</span>
         </button>
 
         <button id="nav-chat" onClick={() => setActiveTab('chat')} className={mobileNavItemClass(activeTab === 'chat')}>
           <MobileNavIcon active={activeTab === 'chat'}><Sparkles className="w-5 h-5" strokeWidth={activeTab === 'chat' ? 2.25 : 1.75} /></MobileNavIcon>
-          <span className={`text-[10px] tracking-wide ${activeTab === 'chat' ? 'font-bold' : 'font-medium'}`}>AI 陪练</span>
+          <span className={`text-caption tracking-wide ${activeTab === 'chat' ? 'font-bold' : 'font-medium'}`}>AI 陪练</span>
         </button>
       </nav>
 

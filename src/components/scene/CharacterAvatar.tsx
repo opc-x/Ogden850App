@@ -15,7 +15,7 @@ export function CharacterAvatar({
   speaking = false,
   size = 'md',
 }: CharacterAvatarProps) {
-  const dim = size === 'sm' ? 'w-8 h-8 text-[15px]' : 'w-9 h-9 text-[17px]';
+  const dim = size === 'sm' ? 'w-8 h-8 text-base' : 'w-9 h-9 text-lg';
 
   return (
     <div
@@ -66,7 +66,7 @@ export function SceneCharacterStrip({
               size="sm"
               speaking={speaking}
             />
-            <span className="text-[11px] font-semibold text-slate-600 truncate">
+            <span className="text-body-sm font-semibold text-slate-600 truncate">
               {characters[role].name}
             </span>
           </div>

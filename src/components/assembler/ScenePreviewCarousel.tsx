@@ -375,7 +375,7 @@ export function ScenePreviewCarousel({
       <div className="mt-1 flex justify-center px-4 pb-2">
         <div className="inline-flex max-w-full items-center gap-1 rounded-full border border-slate-200/50 bg-white/80 px-1 py-0.5 shadow-none backdrop-blur-sm">
           <GlassNavButton dir="prev" disabled={!canLoop} onClick={() => goStep(-1, 'right')} />
-          <p className="max-w-[8rem] truncate px-0.5 text-center text-[9px] font-medium leading-none text-slate-500 sm:max-w-[9rem]">
+          <p className="max-w-[8rem] truncate px-0.5 text-center text-caption font-medium leading-none text-slate-500 sm:max-w-[9rem]">
             {onSelect && activeScene ? (
               <button
                 type="button"

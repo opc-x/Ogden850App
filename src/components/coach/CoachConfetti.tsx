@@ -168,18 +168,18 @@ export function CoachConfetti({ burstKey, hits = [] }: CoachConfettiProps) {
                   'linear-gradient(145deg, rgba(255,255,255,0.72) 0%, rgba(236,253,245,0.65) 45%, rgba(254,249,195,0.55) 100%)',
               }}
             >
-              <p className="text-[11px] font-bold tracking-[0.2em] text-[#2f7d4f]/80 uppercase">
+              <p className="text-body-sm font-bold tracking-[0.2em] text-[#2f7d4f]/80 uppercase">
                 Ogden 850
               </p>
-              <p className="mt-1 text-[20px] font-black text-[#2f7d4f] leading-tight">词根命中</p>
-              <p className="mt-0.5 text-[11px] text-slate-500">
+              <p className="mt-1 text-xl font-black text-[#2f7d4f] leading-tight">词根命中</p>
+              <p className="mt-0.5 text-body-sm text-slate-500">
                 本句说出 {roots.length} 个词根
               </p>
               <div className="mt-3 flex flex-wrap justify-center gap-1.5">
                 {roots.map((root) => (
                   <span
                     key={root}
-                    className="rounded-full border border-[#2f7d4f]/20 bg-white/80 px-2.5 py-1 text-[14px] font-bold text-slate-800"
+                    className="rounded-full border border-[#2f7d4f]/20 bg-white/80 px-2.5 py-1 text-sm font-bold text-slate-800"
                   >
                     {root}
                   </span>

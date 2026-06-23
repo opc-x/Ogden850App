@@ -33,13 +33,13 @@ export function CoachFeedbackStrip({ ev }: { ev: CoachEvalResult }) {
       <div className="min-w-0 flex-1">
         <div className="flex items-center gap-2 min-h-[22px]">
           <span
-            className={`shrink-0 text-[13px] font-black tabular-nums leading-none ${
+            className={`shrink-0 text-sm font-black tabular-nums leading-none ${
               passed ? 'text-emerald-600' : 'text-amber-600'
             }`}
           >
             {ev.score}分
           </span>
-          <p className="min-w-0 flex-1 truncate text-[11px] italic text-slate-400 leading-snug">
+          <p className="min-w-0 flex-1 truncate text-body-sm italic text-slate-400 leading-snug">
             {ev.encouragement}
           </p>
           {hasDetails ? (
@@ -67,7 +67,7 @@ export function CoachFeedbackStrip({ ev }: { ev: CoachEvalResult }) {
               transition={{ duration: 0.18 }}
               className="overflow-hidden"
             >
-              <div className="pt-1 pb-0.5 space-y-0.5 text-[10px] italic text-slate-400 leading-relaxed border-l border-slate-200/80 pl-2 ml-0.5">
+              <div className="pt-1 pb-0.5 space-y-0.5 text-caption italic text-slate-400 leading-relaxed border-l border-slate-200/80 pl-2 ml-0.5">
                 <p className="not-italic tabular-nums text-slate-400/90">
                   语义{semantic} · 用词{vocabulary} · 流利{fluency}
                 </p>

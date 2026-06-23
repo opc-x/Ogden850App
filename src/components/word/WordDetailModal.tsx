@@ -56,7 +56,7 @@ function WordHeroStage({ word }: { word: Word }) {
 function HookAside({ children }: { children: React.ReactNode }) {
   return (
     <div className="rounded-2xl border border-slate-100 bg-slate-50/60 px-4 py-3.5">
-      <p className="text-[10px] font-bold text-slate-400 tracking-wide mb-1.5">一秒秒懂</p>
+      <p className="text-caption font-bold text-slate-400 tracking-wide mb-1.5">一秒秒懂</p>
       {children}
     </div>
   );
@@ -162,7 +162,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                 {selectedWord.word}
               </h2>
               <span
-                className={`inline-flex shrink-0 text-[10px] font-bold px-2 py-0.5 rounded-md border ${categoryBadgeClass(selectedWord.category)}`}
+                className={`inline-flex shrink-0 text-caption font-bold px-2 py-0.5 rounded-md border ${categoryBadgeClass(selectedWord.category)}`}
               >
                 {CATEGORY_LABELS[selectedWord.category]?.zh}
               </span>
@@ -207,7 +207,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
             <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="space-y-4">
               <WordHeroStage word={selectedWord} />
               <HookAside>
-                <div className="text-[13px] sm:text-sm text-slate-600 leading-relaxed font-medium space-y-1.5">
+                <div className="text-sm sm:text-sm text-slate-600 leading-relaxed font-medium space-y-1.5">
                   {(dynamicGuide.hook ?? '')
                     .split('\n')
                     .filter((line) => line.trim())
@@ -245,7 +245,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
 
           {dynamicGuide && (
             <section className="space-y-3 pt-1">
-              <h3 className="text-[11px] font-bold text-slate-400 tracking-wide flex items-center gap-1.5">
+              <h3 className="text-body-sm font-bold text-slate-400 tracking-wide flex items-center gap-1.5">
                 <BookMarked className="w-3.5 h-3.5 text-cyan-500" />
                 绝佳搭配例句
               </h3>
@@ -258,7 +258,7 @@ export const WordDetailModal: React.FC<WordDetailModalProps> = ({
                       className="w-full text-left p-4 rounded-2xl bg-white border border-slate-200/90 hover:border-slate-300/80 transition-colors"
                     >
                       <div className="flex items-center gap-2.5">
-                        <p className="flex-1 min-w-0 text-[15px] font-bold text-slate-800 leading-snug">
+                        <p className="flex-1 min-w-0 text-base font-bold text-slate-800 leading-snug">
                           {item.parts?.length
                             ? item.parts.map((p, i) => {
                                 const surface = partSurface(p as GuideSentence['parts'][number] | [string, string]);
